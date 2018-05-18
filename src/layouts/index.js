@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import { css } from 'react-emotion'
 
 import Flex from '../components/Flex'
-import Header from '../components/Header'
+import Header from '../components/header'
 import theme from '../constants/theme'
 import './index.css'
 
