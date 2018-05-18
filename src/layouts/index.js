@@ -1,31 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { ThemeProvider } from 'styled-components'
+import { css } from 'react-emotion'
 
-import Header from '../components/header'
+import Flex from '../components/Flex'
+import Header from '../components/Header'
+import theme from '../constants/theme'
 import './index.css'
 
 const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
+  <ThemeProvider theme={theme}>
     <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
+      className={css({
+        height: '100vh',
+      })}
     >
-      {children()}
+      <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          { name: 'description', content: data.site.siteMetadata.description },
+          { name: 'keywords', content: data.site.siteMetadata.keywords },
+        ]}
+      />
+      <Header />
+      <Flex pl={3} pr={3}>
+        <div className={css({ height: 'calc(100vh - 5rem)' })}>
+          {children()}
+        </div>
+      </Flex>
     </div>
-  </div>
+  </ThemeProvider>
 )
 
 Layout.propTypes = {
