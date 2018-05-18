@@ -1,5 +1,7 @@
 ---
-title: 'Home'
-templateKey: 'home'
-heroHeader: "Flock has you covered"
+heroHeader: Flock has you covered test test test
+title: Home
+templateKey: home
+path: /
 ---
+
