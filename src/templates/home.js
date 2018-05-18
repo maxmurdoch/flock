@@ -7,19 +7,17 @@ import Flex from '../components/Flex'
 import Box from '../components/Box'
 
 const IndexPage = ({ data }) => {
-  const { title, heroHeader } = data.allMarkdownRemark.edges[0].node.frontmatter
+  const {
+    title,
+    hero: { header, description, button },
+  } = data.allMarkdownRemark.edges[0].node.frontmatter
 
   return (
     <Flex background="silver" flexDirection="column">
-      <h1>{heroHeader}</h1>
-      <h2>{title}</h2>
+      <h1>{header}</h1>
       <Box>
-        <p>
-          Fly safer with our on-demand drone insurance. Instant, customisable
-          policies for commercial and recreational pilots, starting from just
-          £3.
-        </p>
-        <Button>Download</Button>
+        <p>{description}</p>
+        <Button to={button.to}>{button.text}</Button>
       </Box>
       <Flex width="100%" justifyContent="space-between">
         <Text>Underwritten by Allianz</Text>
@@ -132,7 +130,14 @@ export const query = graphql`
           frontmatter {
             title
             templateKey
-            heroHeader
+            hero {
+              header
+              description
+              button {
+                text
+                to
+              }
+            }
           }
         }
       }

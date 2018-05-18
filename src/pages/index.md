@@ -1,5 +1,10 @@
 ---
 title: 'Home'
 templateKey: 'home'
-heroHeader: "Flock has you covered"
+hero:
+  header: "Flock has you covered"
+  description: "Flock has you covered"
+  button:
+    text: "Download"
+    to: "/download"
 ---

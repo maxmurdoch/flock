@@ -14,10 +14,20 @@ collections:
         label: Home
         file: "src/pages/index.md"
         fields:
-          - {label: "Hero header", name: "heroHeader", widget: "string"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Template key", name: "templateKey", widget: "string"}
-          - {label: "Path", name: "path", widget: "string"}
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Header", name: "header", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - name: "button"
+                label: "Button"
+                widget: "object"
+                fields:
+                  - {label: "Text", name: "text", widget: "string"}
+                  - {label: "To", name: "to", widget: "string"}
       - name: about
         label: About
         file: "src/pages/about/index.md"
