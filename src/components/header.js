@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { css } from 'react-emotion'
+
 import blackLogo from '../images/logo-black.svg'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
