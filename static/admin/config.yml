@@ -2,10 +2,28 @@ backend:
   name: github
   repo: maxmurdoch/flock
 
-media_folder: static/assets
-public_folder: assets
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home
+        file: "src/pages/index.md"
+        fields:
+          - {label: "Hero header", name: "heroHeader", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Template key", name: "templateKey", widget: "string"}
+          - {label: "Path", name: "path", widget: "string"}
+      - name: about
+        label: About
+        file: "src/pages/about/index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+
   - name: blog
     label: Blog
     folder: blog
@@ -15,3 +33,13 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+
+  - name: segment
+    label: Segment
+    folder: segment
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: heroMainText, label: Hero main text }
+
