@@ -1,33 +1,38 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { css } from 'react-emotion'
+import blackLogo from '../images/logo-black.svg'
+import Flex from '../components/Flex'
+import Box from '../components/Box'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
+const Header = ({ siteTitle }) => {
+  const linkClass = css({
+    paddingLeft: '2rem',
+  })
+
+  return (
+    <Flex
+      className={css({
+        display: 'flex',
+        height: '5rem',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+      })}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
+      <img className={css({ margin: 0 })} src={blackLogo} />
+      <nav>
+        <Link className={linkClass} to="/">
+          Home
         </Link>
-      </h1>
-    </div>
-  </div>
-)
+        <Link className={linkClass} to="/products">
+          Products
+        </Link>
+        <Link className={linkClass} to="/support">
+          Support
+        </Link>
+      </nav>
+    </Flex>
+  )
+}
 
 export default Header
