@@ -8,6 +8,10 @@ import {
   flexDirection,
   flex,
   height,
+  backgroundImage,
+  backgroundPosition,
+  backgroundRepeat,
+  backgroundSize,
   background,
   borderTop,
   borderRight,
@@ -24,6 +28,11 @@ const overflow = style({
 const Flex = styled('div')`
   display: flex;
   ${overflow}
+  ${background}
+  ${backgroundImage}
+  ${backgroundPosition}
+  ${backgroundRepeat}
+  ${backgroundSize}
   ${borderLeft}
   ${borderRight}
   ${borderTop}
@@ -37,7 +46,6 @@ const Flex = styled('div')`
   ${flexDirection}
   ${flex}
   ${height}
-  ${background}
 `
 
 export default Flex

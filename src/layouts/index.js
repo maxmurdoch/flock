@@ -1,35 +1,54 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { StickyContainer } from 'react-sticky'
+import { injectGlobal } from 'emotion'
+import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
+import chivo from '../fonts/chivo/Chivo-Regular.woff2'
 import Helmet from 'react-helmet'
 import { ThemeProvider } from 'styled-components'
 import { css } from 'react-emotion'
 
 import Flex from '../components/Flex'
-import Header from '../components/header'
+import Nav from '../components/Nav'
 import theme from '../constants/theme'
 import './index.css'
 
+injectGlobal`
+* {
+  font-family: 'Chivo';
+}
+@font-face {
+  font-family: 'ITC';
+  font-style: normal;
+  font-weight: 700;
+  src: url(${itc}) format('woff');
+}
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(${chivo}) format('woff2');
+}
+`
+
 const Layout = ({ children, data }) => (
   <ThemeProvider theme={theme}>
-    <div
-      className={css({
-        height: '100vh',
-      })}
-    >
+    <StickyContainer>
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: data.site.siteMetadata.description },
+          {
+            name: 'description',
+            content: data.site.siteMetadata.description,
+          },
           { name: 'keywords', content: data.site.siteMetadata.keywords },
         ]}
       />
-      <Header />
-      <Flex pl={3} pr={3}>
-        <div className={css({ height: 'calc(100vh - 5rem)' })}>
-          {children()}
-        </div>
+      <Nav />
+      <Flex>
+        <div>{children()}</div>
       </Flex>
-    </div>
+    </StickyContainer>
   </ThemeProvider>
 )
 
