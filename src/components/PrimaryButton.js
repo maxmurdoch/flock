@@ -5,7 +5,7 @@ import { colors } from '../constants/theme'
 
 const PrimaryButton = ({ children, ...props }) => {
   return (
-    <Button background={colors.yellow} pt={2} pb={2} pl={3} pr={3} {...props}>
+    <Button background={colors.yellow} {...props}>
       <BodyText fontWeight="700">{children}</BodyText>
     </Button>
   )

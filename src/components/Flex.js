@@ -19,6 +19,8 @@ import {
   borderBottom,
   style,
   space,
+  width,
+  position,
 } from 'styled-system'
 
 const overflow = style({
@@ -46,6 +48,8 @@ const Flex = styled('div')`
   ${flexDirection}
   ${flex}
   ${height}
+  ${width}
+  ${position}
 `
 
 export default Flex

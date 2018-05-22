@@ -30,7 +30,7 @@ const Nav = ({ siteTitle }) => {
         const activateStickyStyle = distanceFromTop < -50
         const activeLinkStyle = {
           borderBottom: `4px solid ${
-            activateStickyStyle ? colors.black : colors.yellow
+            activateStickyStyle ? colors.white : colors.yellow
           }`,
         }
 
@@ -40,6 +40,7 @@ const Nav = ({ siteTitle }) => {
             className={css({
               display: 'flex',
               justifyContent: 'center',
+              zIndex: 1,
               transition:
                 'background-color 200ms ease-in-out, borderBottom 200ms ease-in-out',
               backgroundColor: activateStickyStyle

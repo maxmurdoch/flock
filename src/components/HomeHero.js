@@ -32,9 +32,9 @@ const HomeHero = ({ header, description, button }) => {
         backgroundPosition="bottom right"
       >
         <SiteContainer>
-          <Box width={['100%', '50%']}>
-            <H1 mb={4}>{header}</H1>
-            <BodyText mb={4}>{description}</BodyText>
+          <Box width={['100%', '50%']} pb={4}>
+            <H1 mb={3}>{header}</H1>
+            <BodyText mb={3}>{description}</BodyText>
             <PrimaryButton to={button.to}>{button.text}</PrimaryButton>
           </Box>
         </SiteContainer>

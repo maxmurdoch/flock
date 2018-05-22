@@ -9,8 +9,8 @@ const SiteContainer = ({ children }) => {
       className={css({
         width: '100%',
         maxWidth: 1200,
-        paddingLeft: R.nth(4, space),
-        paddingRight: R.nth(4, space),
+        paddingLeft: R.nth(1, space),
+        paddingRight: R.nth(1, space),
       })}
     >
       {children}

@@ -5,7 +5,7 @@ import { injectGlobal } from 'emotion'
 import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
 import chivo from '../fonts/chivo/Chivo-Regular.woff2'
 import Helmet from 'react-helmet'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'emotion-theming'
 import { css } from 'react-emotion'
 
 import Flex from '../components/Flex'
