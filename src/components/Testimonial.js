@@ -1,4 +1,5 @@
 import React from 'react'
+import Flex from './Flex'
 import Slider from 'react-slick'
 
 const Testimonial = ({ children }) => {
