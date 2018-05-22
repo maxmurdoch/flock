@@ -5,17 +5,23 @@ import { Sticky } from 'react-sticky'
 
 import SiteContainer from './SiteContainer'
 import blackLogo from '../images/logo-black.svg'
+import SmallText from './SmallText'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
+import SecondaryButton from '../components/SecondaryButton'
 import { colors } from '../constants/theme'
 import { active } from 'styled-system'
 
 const Nav = ({ siteTitle }) => {
   const linkClass = css({
-    margin: '0 1rem 0',
+    margin: '0 0.5rem 0',
     padding: '0 1rem 0.5rem',
     color: 'initial',
     textDecoration: 'none',
+  })
+  const navClass = css({
+    display: 'flex',
+    alignItems: 'baseline',
   })
 
   return (
@@ -54,14 +60,14 @@ const Nav = ({ siteTitle }) => {
                   className={css({ width: '6rem', margin: 0 })}
                   src={blackLogo}
                 />
-                <nav>
+                <nav className={navClass}>
                   <Link
                     activeStyle={activeLinkStyle}
                     className={linkClass}
                     exact={true}
                     to="/"
                   >
-                    Home
+                    <SmallText>Home</SmallText>
                   </Link>
                   <Link
                     activeStyle={activeLinkStyle}
@@ -69,7 +75,7 @@ const Nav = ({ siteTitle }) => {
                     exact={true}
                     to="/products"
                   >
-                    Products
+                    <SmallText>Products</SmallText>
                   </Link>
                   <Link
                     activeStyle={activeLinkStyle}
@@ -77,8 +83,14 @@ const Nav = ({ siteTitle }) => {
                     exact={true}
                     to="/support"
                   >
-                    Support
+                    <SmallText>Support</SmallText>
                   </Link>
+                  <SecondaryButton
+                    onClick={() => console.log('clicked')}
+                    ml={3}
+                  >
+                    <SmallText>Download</SmallText>
+                  </SecondaryButton>
                 </nav>
               </Flex>
             </SiteContainer>
