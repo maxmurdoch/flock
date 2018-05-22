@@ -47,9 +47,7 @@ const Layout = ({ children, data }) => (
         ]}
       />
       <Nav />
-      <Flex>
-        <div>{children()}</div>
-      </Flex>
+      <div>{children()}</div>
     </StickyContainer>
   </ThemeProvider>
 )

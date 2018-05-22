@@ -21,6 +21,8 @@ const HomeHero = ({ header, description, button }) => {
       height="calc(100vh - 5rem)"
       flexDirection="column"
       justifyContent="space-between"
+      width="100%"
+      flex="1 1 auto"
     >
       <Flex
         alignItems="center"
