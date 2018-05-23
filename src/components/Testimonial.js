@@ -97,68 +97,75 @@ const Testimonial = ({ children, testimonials }) => {
               }, testimonials)}
             </Slider>
 
-            <div
-              className={css({
-                position: 'absolute',
-                bottom: 40,
-                left: 0,
-                right: 0,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              })}
-            >
-              <Dot slide={0} className={dotClassName} />
-              <Dot slide={1} className={dotClassName} />
-              <Dot slide={2} className={dotClassName} />
-            </div>
-            <ButtonBack
-              className={css({
-                background: 'none',
-                border: 'none',
-                position: 'absolute',
-                bottom: 0,
-                top: 0,
-                left: 40,
-                padding: 0,
-                '&:disabled': {
-                  opacity: 0.6,
-                },
-              })}
-            >
-              <img
-                className={css({
-                  width: '2rem',
-                  height: '2rem',
-                  marginBottom: 0,
-                })}
-                src={backArrow}
-              />
-            </ButtonBack>
-            <ButtonNext
-              className={css({
-                background: 'none',
-                border: 'none',
-                position: 'absolute',
-                bottom: 0,
-                top: 0,
-                right: 40,
-                padding: 0,
-                '&:disabled': {
-                  opacity: 0.6,
-                },
-              })}
-            >
-              <img
-                className={css({
-                  width: '2rem',
-                  height: '2rem',
-                  marginBottom: 0,
-                  transform: 'rotate(180deg)',
-                })}
-                src={backArrow}
-              />
-            </ButtonNext>
+            {R.gt(R.length(testimonials), 1) ? (
+              <div>
+                <div
+                  className={css({
+                    position: 'absolute',
+                    bottom: 40,
+                    left: 0,
+                    right: 0,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  })}
+                >
+                  {R.map(
+                    (_, index) => (
+                      <Dot slide={index} className={dotClassName} />
+                    ),
+                    testimonials
+                  )}
+                </div>
+                <ButtonBack
+                  className={css({
+                    background: 'none',
+                    border: 'none',
+                    position: 'absolute',
+                    bottom: 0,
+                    top: 0,
+                    left: 40,
+                    padding: 0,
+                    '&:disabled': {
+                      opacity: 0.6,
+                    },
+                  })}
+                >
+                  <img
+                    className={css({
+                      width: '2rem',
+                      height: '2rem',
+                      marginBottom: 0,
+                    })}
+                    src={backArrow}
+                  />
+                </ButtonBack>
+                <ButtonNext
+                  className={css({
+                    background: 'none',
+                    border: 'none',
+                    position: 'absolute',
+                    bottom: 0,
+                    top: 0,
+                    right: 40,
+                    padding: 0,
+                    '&:disabled': {
+                      opacity: 0.6,
+                    },
+                  })}
+                >
+                  <img
+                    className={css({
+                      width: '2rem',
+                      height: '2rem',
+                      marginBottom: 0,
+                      transform: 'rotate(180deg)',
+                    })}
+                    src={backArrow}
+                  />
+                </ButtonNext>
+              </div>
+            ) : null}
           </CarouselProvider>
         </Flex>
       </SiteContainer>
