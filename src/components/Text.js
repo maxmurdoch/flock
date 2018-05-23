@@ -1,4 +1,5 @@
 import React from 'react'
+import R from 'ramda'
 import { injectGlobal } from 'emotion'
 import styled from 'react-emotion'
 import PropTypes from 'prop-types'
@@ -10,6 +11,7 @@ import {
   lineHeight as styledLineHeight,
   space,
   textAlign,
+  style,
 } from 'styled-system'
 
 injectGlobal`
@@ -25,6 +27,14 @@ injectGlobal`
   -moz-osx-font-smoothing: grayscale;
 }
 `
+const textShadow = style({
+  prop: 'shadow',
+  cssProperty: 'textShadow',
+  key: 'shadows',
+  numberToPx: false,
+  getter: R.identity,
+  alias: 'sh',
+})
 
 const Text = ({ tag = 'p', fontWeight = 300, children, ...props }) => {
   const Component = styled(tag)`
