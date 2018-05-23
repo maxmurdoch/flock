@@ -9,33 +9,13 @@ import Box from '../components/Box'
 import StopWorrying from '../components/StopWorrying'
 import WhatKindOfPilot from '../components/WhatKindOfPilot'
 import Testimonial from '../components/Testimonial'
-import testimonialAirShot from '../images/testimonial-air-shot.png'
 
 const IndexPage = ({ data }) => {
   const {
     title,
+    testimonials,
     hero: { header, description, button },
   } = data.allMarkdownRemark.edges[0].node.frontmatter
-  const testimonials = [
-    {
-      quote:
-        ' With all the current drone laws in the UK, having Flock is an added peace of mind. Another bonus is that Flock will insure non professional drone pilots. Thie is a brilliant app!',
-      author: 'David Dennison, Parrot Mambo FPV pilot',
-      image: testimonialAirShot,
-    },
-    {
-      quote:
-        ' With all the current drone laws in the UK, having Flock is an added peace of mind. Another bonus is that Flock will insure non professional drone pilots. Thie is a brilliant app!',
-      author: 'David Dennison, Parrot Mambo FPV pilot',
-      image: testimonialAirShot,
-    },
-    {
-      quote:
-        ' With all the current drone laws in the UK, having Flock is an added peace of mind. Another bonus is that Flock will insure non professional drone pilots. Thie is a brilliant app!',
-      author: 'David Dennison, Parrot Mambo FPV pilot',
-      image: testimonialAirShot,
-    },
-  ]
 
   return (
     <div>
@@ -67,6 +47,11 @@ export const query = graphql`
                 text
                 to
               }
+            }
+            testimonials {
+              quote
+              author
+              image
             }
           }
         }

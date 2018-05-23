@@ -50,7 +50,6 @@ const Testimonial = ({ children, testimonials }) => {
             <Slider
               className={css({
                 width: '100%',
-                height: 310,
               })}
             >
               {mapWithIndex(({ quote, author, image }, index) => {
@@ -58,7 +57,8 @@ const Testimonial = ({ children, testimonials }) => {
                   <Slide
                     innerClassName={css({
                       backgroundImage: `url(${image})`,
-                      backgroundSize: 'contain',
+                      backgroundSize: 'cover',
+                      backgroundRepeat: 'no-repeat',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
