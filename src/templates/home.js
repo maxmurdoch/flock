@@ -22,7 +22,9 @@ const IndexPage = ({ data }) => {
       <HomeHero header={header} description={description} button={button} />
       <StopWorrying />
       <WhatKindOfPilot />
-      <Testimonial testimonials={testimonials} />
+      <Box pb={3}>
+        <Testimonial testimonials={testimonials} />
+      </Box>
     </div>
   )
 }

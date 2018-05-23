@@ -21,6 +21,7 @@ import {
   space,
   width,
   position,
+  zIndex,
 } from 'styled-system'
 
 const overflow = style({
@@ -50,6 +51,7 @@ const Flex = styled('div')`
   ${height}
   ${width}
   ${position}
+  ${zIndex}
 `
 
 export default Flex

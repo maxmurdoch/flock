@@ -62,10 +62,23 @@ const Testimonial = ({ children, testimonials }) => {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
+                      '&:before': {
+                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                        content: "''",
+                        display: 'block',
+                        position: 'absolute',
+                        width: '100%',
+                        height: '100%',
+                      },
                     })}
                     index={index}
                   >
-                    <Flex alignItems="center" justifyContent="center">
+                    <Flex
+                      position="relative"
+                      zIndex="3"
+                      alignItems="center"
+                      justifyContent="center"
+                    >
                       <Box width="40em">
                         <BodyText textAlign="center" color="white" mb={2}>
                           {quote}
