@@ -9,6 +9,7 @@ import {
   color,
   lineHeight as styledLineHeight,
   space,
+  textAlign,
 } from 'styled-system'
 
 injectGlobal`
@@ -34,6 +35,7 @@ const Text = ({ tag = 'p', fontWeight = 300, children, ...props }) => {
   ${color}
   ${styledLineHeight}
   ${space}
+  ${textAlign}
 `
   return (
     <Component fontWeight={fontWeight} {...props}>

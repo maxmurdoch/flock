@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="26px" viewBox="0 0 15 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>back-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components-/-Testimonial--image" transform="translate(-38.000000, -142.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Testimonial">
+                <g id="Knik-Arrow-Black" transform="translate(590.000000, 155.000000) rotate(-90.000000) translate(-590.000000, -155.000000) translate(578.000000, -395.000000)">
+                    <polyline id="back-arrow" points="0 12 12 0 24 12"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

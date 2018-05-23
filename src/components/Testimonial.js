@@ -1,8 +1,23 @@
 import React from 'react'
+import R from 'ramda'
+import { css } from 'emotion'
 import Flex from './Flex'
-import Slider from 'react-slick'
+import Box from './Box'
+import SiteContainer from './SiteContainer'
+import BodyText from './BodyText'
+import SmallText from './SmallText'
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+  Dot,
+} from 'pure-react-carousel'
+import 'pure-react-carousel/dist/react-carousel.es.css'
+import backArrow from '../images/icons/back-arrow.svg'
 
-const Testimonial = ({ children }) => {
+const Testimonial = ({ children, testimonials }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -10,18 +25,130 @@ const Testimonial = ({ children }) => {
     slidesToShow: 1,
     slidestoscroll: 1,
   }
+  const dotClassName = css({
+    background: 'transparent',
+    width: 12,
+    height: 12,
+    margin: '0 8px',
+    border: '2px solid #fff',
+    padding: 0,
+    borderRadius: '50%',
+    '&:disabled': { background: 'white' },
+  })
+  const mapWithIndex = R.addIndex(R.map)
 
   return (
-    <Flex>
-      <h2>Single item</h2>
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-      </Slider>
+    <Flex justifyContent="center">
+      <SiteContainer>
+        <Flex flexWrap={true}>
+          <CarouselProvider
+            className={css({ width: '100%', position: 'relative' })}
+            naturalSlideHeight={310}
+            naturalSlideWidth={1180}
+            totalSlides={R.length(testimonials)}
+          >
+            <Slider
+              className={css({
+                width: '100%',
+                height: 310,
+              })}
+            >
+              {mapWithIndex(({ quote, author, image }, index) => {
+                return (
+                  <Slide
+                    innerClassName={css({
+                      backgroundImage: `url(${image})`,
+                      backgroundSize: 'contain',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    })}
+                    index={index}
+                  >
+                    <Flex alignItems="center" justifyContent="center">
+                      <Box width="40em">
+                        <BodyText textAlign="center" color="white" mb={2}>
+                          {quote}
+                        </BodyText>
+                        <SmallText
+                          fontWeight="700"
+                          textAlign="center"
+                          color="white"
+                        >
+                          — {author}
+                        </SmallText>
+                      </Box>
+                    </Flex>
+                  </Slide>
+                )
+              }, testimonials)}
+            </Slider>
+
+            <div
+              className={css({
+                position: 'absolute',
+                bottom: 40,
+                left: 0,
+                right: 0,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              })}
+            >
+              <Dot slide={0} className={dotClassName} />
+              <Dot slide={1} className={dotClassName} />
+              <Dot slide={2} className={dotClassName} />
+            </div>
+            <ButtonBack
+              className={css({
+                background: 'none',
+                border: 'none',
+                position: 'absolute',
+                bottom: 0,
+                top: 0,
+                left: 40,
+                padding: 0,
+                '&:disabled': {
+                  opacity: 0.6,
+                },
+              })}
+            >
+              <img
+                className={css({
+                  width: '2rem',
+                  height: '2rem',
+                  marginBottom: 0,
+                })}
+                src={backArrow}
+              />
+            </ButtonBack>
+            <ButtonNext
+              className={css({
+                background: 'none',
+                border: 'none',
+                position: 'absolute',
+                bottom: 0,
+                top: 0,
+                right: 40,
+                padding: 0,
+                '&:disabled': {
+                  opacity: 0.6,
+                },
+              })}
+            >
+              <img
+                className={css({
+                  width: '2rem',
+                  height: '2rem',
+                  marginBottom: 0,
+                  transform: 'rotate(180deg)',
+                })}
+                src={backArrow}
+              />
+            </ButtonNext>
+          </CarouselProvider>
+        </Flex>
+      </SiteContainer>
     </Flex>
   )
 }
