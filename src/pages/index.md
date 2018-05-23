@@ -7,7 +7,7 @@ hero:
     to: /download
   description: >-
     Fly safer with our on-demand drone insurance. Instant, customisable policies
-    for commercial and pilots, starting from just £3.
+    for commercial and recreational pilots, starting from just £3.
   header: Pay-as-you-fly drone insurance
 testimonials:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
