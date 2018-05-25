@@ -1,7 +1,7 @@
 import React from 'react'
 import { injectGlobal } from 'emotion'
 import styled from 'react-emotion'
-import { fontSize, color, lineHeight, space } from 'styled-system'
+import { fontSize, color, lineHeight, space, textAlign } from 'styled-system'
 import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
 
 injectGlobal`
@@ -19,6 +19,7 @@ const StyledH2 = styled.h2`
   ${fontSize}
   ${space}
   ${lineHeight}
+  ${textAlign}
   ${color}
 `
 

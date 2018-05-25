@@ -3,13 +3,17 @@ import Link from 'gatsby-link'
 
 import HomeHero from '../components/HomeHero'
 import Text from '../components/Text'
-import Button from '../components/Button'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
 import StopWorrying from '../components/StopWorrying'
 import WhatKindOfPilot from '../components/WhatKindOfPilot'
 import Testimonial from '../components/Testimonial'
 import HowFlockWorks from '../components/HowFlockWorks'
+import HowToCalculateRisk from '../components/HowToCalculateRisk'
+import WhatFlockCovers from '../components/WhatFlockCovers'
+import DownloadFlock from '../components/DownloadFlock'
+import Featured from '../components/Featured'
+import Footer from '../components/Footer'
 
 const IndexPage = ({ data }) => {
   const {
@@ -17,8 +21,9 @@ const IndexPage = ({ data }) => {
     testimonials,
     hero: { header, description, button },
     howFlockWorks,
+    howToCalculateRisk,
+    whatFlockCovers,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
-  console.log(data.allMarkdownRemark.edges[0].node)
 
   return (
     <div>
@@ -29,6 +34,14 @@ const IndexPage = ({ data }) => {
         <Testimonial testimonials={testimonials} />
       </Box>
       <HowFlockWorks data={howFlockWorks} />
+      <HowToCalculateRisk data={howToCalculateRisk} />
+      <WhatFlockCovers data={whatFlockCovers} />
+      <Box pb={5}>
+        <Testimonial testimonials={testimonials} />
+      </Box>
+      <DownloadFlock />
+      <Featured />
+      <Footer />
     </div>
   )
 }
