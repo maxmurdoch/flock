@@ -3,7 +3,7 @@ import Text from './Text'
 
 const BodyText = ({ children, ...props }) => {
   return (
-    <Text fontSize={[2, 3, 4]} {...props}>
+    <Text fontSize={[2, 3, 3]} {...props}>
       {children}
     </Text>
   )

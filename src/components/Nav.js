@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Sticky } from 'react-sticky'
+import debounce from 'debounce'
 import Link from 'gatsby-link'
 import { css } from 'react-emotion'
-import { Sticky } from 'react-sticky'
 
 import SiteContainer from './SiteContainer'
 import blackLogo from '../images/logo-black.svg'
@@ -25,27 +26,37 @@ const Nav = ({ siteTitle }) => {
   })
 
   return (
-    <Sticky>
-      {({ isSticky, style, distanceFromTop }) => {
+    <Sticky disableCompensation={true}>
+      {({
+        style,
+
+        // the following are also available but unused in this example
+        isSticky,
+        wasSticky,
+        distanceFromTop,
+        distanceFromBottom,
+        calculatedHeight,
+      }) => {
         const activateStickyStyle = distanceFromTop < -50
         const activeLinkStyle = {
           borderBottom: `4px solid ${
             activateStickyStyle ? colors.white : colors.yellow
           }`,
         }
-
         return (
           <header
             style={style}
             className={css({
               display: 'flex',
+              position: 'fixed',
+              width: '100%',
               justifyContent: 'center',
               zIndex: 1,
               transition:
                 'background-color 200ms ease-in-out, borderBottom 200ms ease-in-out',
               backgroundColor: activateStickyStyle
                 ? colors.yellow
-                : colors.backgrounds.light,
+                : 'transparent',
             })}
           >
             <SiteContainer>

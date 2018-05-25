@@ -18,7 +18,7 @@ import { colors } from '../constants/theme'
 const HomeHero = ({ header, description, button }) => {
   return (
     <Flex
-      height="calc(100vh - 5rem)"
+      height="calc(100vh)"
       flexDirection="column"
       justifyContent="space-between"
       width="100%"
@@ -27,14 +27,14 @@ const HomeHero = ({ header, description, button }) => {
       <Flex
         alignItems="center"
         justifyContent="center"
-        flex="1 1 auto"
         background={colors.backgrounds.light}
+        flex="1 1 auto"
         backgroundImage={bigFlock}
         backgroundRepeat="no-repeat"
         backgroundPosition="bottom right"
       >
         <SiteContainer>
-          <Box width={['100%', '50%']} pb={4}>
+          <Box width={['100%', '50%']}>
             <H1 mb={3}>{header}</H1>
             <BodyText mb={3}>{description}</BodyText>
             <PrimaryButton to={button.to}>{button.text}</PrimaryButton>

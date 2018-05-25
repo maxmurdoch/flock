@@ -9,13 +9,16 @@ import Box from '../components/Box'
 import StopWorrying from '../components/StopWorrying'
 import WhatKindOfPilot from '../components/WhatKindOfPilot'
 import Testimonial from '../components/Testimonial'
+import HowFlockWorks from '../components/HowFlockWorks'
 
 const IndexPage = ({ data }) => {
   const {
     title,
     testimonials,
     hero: { header, description, button },
+    howFlockWorks,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
+  console.log(data.allMarkdownRemark.edges[0].node)
 
   return (
     <div>
@@ -25,6 +28,7 @@ const IndexPage = ({ data }) => {
       <Box pb={3}>
         <Testimonial testimonials={testimonials} />
       </Box>
+      <HowFlockWorks data={howFlockWorks} />
     </div>
   )
 }
@@ -54,6 +58,14 @@ export const query = graphql`
               quote
               author
               image
+            }
+            howFlockWorks {
+              title
+              description
+              listOfHow {
+                title
+                text
+              }
             }
           }
         }

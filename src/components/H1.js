@@ -11,7 +11,7 @@ const StyledH1 = styled.h1`
 `
 
 const H1 = ({ children, ...props }) => (
-  <StyledH1 fontSize={[60]} {...props}>
+  <StyledH1 fontSize={[4, 5, 5]} mb={1} {...props}>
     {children}
   </StyledH1>
 )

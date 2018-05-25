@@ -3,7 +3,7 @@ import Text from './Text'
 
 const SmallText = ({ children, ...props }) => {
   return (
-    <Text fontSize={[2, 2, 2]} {...props}>
+    <Text fontSize={[1, 1, 1]} {...props}>
       {children}
     </Text>
   )
