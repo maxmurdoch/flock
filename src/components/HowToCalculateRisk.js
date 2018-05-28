@@ -10,34 +10,9 @@ import LI from './LI'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
 import iPhone from '../../static/images/uploads/risk-iphone-mockup.png'
-import buildingIcon from '../images/icons/icons-house.svg'
-import circleIcon from '../images/icons/icons-circle.svg'
-import planeIcon from '../images/icons/icons-plane.svg'
-import cloudIcon from '../images/icons/icons-cloud.svg'
 
 const HowToCalculateRisk = ({ data }) => {
-  const title = 'How we calculate risk'
-  const description =
-    'Get much more than an insurance policy. We’ll help you fly safer by providing a risk report for your flight. Simply enter your flight’s details and instantly see surrounding hazards'
-
-  const riskCalculationMethods = [
-    {
-      title: 'Inabited spaces',
-      icon: buildingIcon,
-    },
-    {
-      title: 'Ground hazards',
-      icon: circleIcon,
-    },
-    {
-      title: 'Restricted airspace',
-      icon: planeIcon,
-    },
-    {
-      title: 'Hyperlocal weather',
-      icon: cloudIcon,
-    },
-  ]
+  const { title, description, calculations } = data
 
   return (
     <Flex background="rgba(49, 49, 49, 1)" justifyContent="center" pt={5}>
@@ -70,7 +45,7 @@ const HowToCalculateRisk = ({ data }) => {
                     </Flex>
                   </LI>
                 )
-              }, riskCalculationMethods)}
+              }, calculations)}
             </ul>
           </Box>
         </Flex>

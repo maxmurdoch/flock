@@ -21,20 +21,22 @@ const IndexPage = ({ data }) => {
     testimonials,
     hero: { header, description, button },
     howFlockWorks,
-    howToCalculateRisk,
+    stopWorrying,
+    kindOfPilot,
     whatFlockCovers,
+    risk,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
   return (
     <div>
       <HomeHero header={header} description={description} button={button} />
-      <StopWorrying />
-      <WhatKindOfPilot />
+      <StopWorrying data={stopWorrying} />
+      <WhatKindOfPilot data={kindOfPilot} />
       <Box pb={3}>
         <Testimonial testimonials={testimonials} />
       </Box>
       <HowFlockWorks data={howFlockWorks} />
-      <HowToCalculateRisk data={howToCalculateRisk} />
+      <HowToCalculateRisk data={risk} />
       <WhatFlockCovers data={whatFlockCovers} />
       <Box pb={5}>
         <Testimonial testimonials={testimonials} />
@@ -71,6 +73,32 @@ export const query = graphql`
               quote
               author
               image
+            }
+            stopWorrying {
+              title
+              description
+              reasons {
+                title
+                text
+              }
+            }
+            kindOfPilot {
+              title
+              description
+              pilots {
+                title
+                icon
+                text
+              }
+            }
+            risk {
+              title
+              description
+              calculations {
+                title
+                icon
+                text
+              }
             }
             howFlockWorks {
               title
