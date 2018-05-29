@@ -8,7 +8,7 @@ hero:
   description: >-
     Fly safer with our on-demand drone insurance. Instant, customisable policies
     for commercial and recreational pilots, starting from just £3.
-  header: Pay-as-you-fly drone insurance
+  header: Pay-as-you-fly drone cake
 testimonials:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/air-shot-houses.jpeg
@@ -21,5 +21,8 @@ testimonials:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
+howFlockWorks:
+  description: dummy
+  title: dummy
 ---
 
