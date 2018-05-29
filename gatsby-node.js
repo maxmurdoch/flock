@@ -38,7 +38,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     }
 
     const markdownPages = result.data.allMarkdownRemark.edges
-    console.log(markdownPages)
 
     markdownPages.forEach(edge => {
       const {

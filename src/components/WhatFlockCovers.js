@@ -13,7 +13,7 @@ import tick from '../images/icons/icons-tick.svg'
 const TickGrid = ({ list }) => {
   return (
     <Flex width="100%" flexWrap={true}>
-      {R.map(text => {
+      {R.map(({ text }) => {
         return (
           <Box width={['100%', '33.33%']} display="flex" pb={4}>
             <img className={css({ marginBottom: 0 })} src={tick} />
@@ -26,9 +26,7 @@ const TickGrid = ({ list }) => {
 }
 
 const WhatFlockCovers = ({ data }) => {
-  const title = 'What Flock covers'
-  const description =
-    'Pay for drone insurance only when you need it. Get a customised policy for your flight, starting from  one hour.'
+  const { title, description, listOfWhatFlockCovers } = data
 
   return (
     <Flex justifyContent="center" mt={5}>
@@ -40,19 +38,7 @@ const WhatFlockCovers = ({ data }) => {
           </Box>
         </Flex>
         <Flex mt={4}>
-          <TickGrid
-            list={[
-              'This is an item',
-              'This is another item',
-              'This is another item',
-              'This is an item',
-              'This is another item',
-              'This is another item',
-              'This is an item',
-              'This is another item',
-              'This is an item',
-            ]}
-          />
+          <TickGrid list={listOfWhatFlockCovers} />
         </Flex>
       </SiteContainer>
     </Flex>

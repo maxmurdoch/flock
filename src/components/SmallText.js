@@ -1,11 +1,20 @@
 import React, { Children } from 'react'
-import Text from './Text'
+import styled from 'react-emotion'
+import { fontSize, color, lineHeight, space, textAlign } from 'styled-system'
 
-const SmallText = ({ children, ...props }) => {
+const StyledSmallText = styled.p`
+  font-size: 16px;
+  line-height: 24px; 
+  ${space}
+  ${textAlign}
+  ${color}
+`
+
+const SmallText = ({ children, mb = 0, ...props }) => {
   return (
-    <Text fontSize={[1, 1, 1]} {...props}>
+    <StyledSmallText mb={mb} {...props}>
       {children}
-    </Text>
+    </StyledSmallText>
   )
 }
 

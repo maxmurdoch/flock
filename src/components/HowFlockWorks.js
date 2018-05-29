@@ -18,12 +18,12 @@ const HowFlockWorks = ({ data: { title, description, listOfHow } }) => {
     <Flex background="rgba(49, 49, 49, 1)" justifyContent="center" pt={5}>
       <SiteContainer>
         <Flex flexWrap={true}>
-          <Box width={['100%', '50%']} pb={4}>
-            <H2 color="yellow">{title}</H2>
-            <BodyText color="white">{description}</BodyText>
-          </Box>
-          <Flex width="100%">
-            <Box width="33.33%">
+          <Box width={['100%', '50%']}>
+            <Box pb={4}>
+              <H2 color="yellow">{title}</H2>
+              <BodyText color="white">{description}</BodyText>
+            </Box>
+            <Box width="66.66%">
               <ol
                 className={css({
                   marginLeft: 0,
@@ -45,7 +45,7 @@ const HowFlockWorks = ({ data: { title, description, listOfHow } }) => {
                       <Flex
                         flexDirection="column"
                         className={css({
-                          borderLeft: `2px solid ${colors.yellow}`,
+                          borderLeft: `3px solid ${colors.yellow}`,
                           paddingLeft: R.nth(1, space),
                           marginLeft: `-${R.nth(1, space)}`,
                         })}
@@ -58,10 +58,10 @@ const HowFlockWorks = ({ data: { title, description, listOfHow } }) => {
                 }, listOfHow)}
               </ol>
             </Box>
-            <Box width="50%">
-              <img src={iPhoneX} />
-            </Box>
-          </Flex>
+          </Box>
+          <Box width="50%">
+            <img src={iPhoneX} />
+          </Box>
         </Flex>
       </SiteContainer>
     </Flex>

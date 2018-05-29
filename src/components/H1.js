@@ -5,13 +5,14 @@ import { fontSize, color, space } from 'styled-system'
 const StyledH1 = styled.h1`
   font-family: 'ITC', sans-serif;
   font-weight: 900;
-  ${fontSize};
+  font-size: 60px;
+  line-height: 66px;
   ${space};
   ${color};
 `
 
 const H1 = ({ children, ...props }) => (
-  <StyledH1 fontSize={[4, 5, 5]} mb={1} {...props}>
+  <StyledH1 mb={1} {...props}>
     {children}
   </StyledH1>
 )

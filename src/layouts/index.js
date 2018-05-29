@@ -1,9 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StickyContainer } from 'react-sticky'
-import { injectGlobal } from 'emotion'
-import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
-import chivo from '../fonts/chivo/Chivo-Regular.woff2'
 import Helmet from 'react-helmet'
 import { ThemeProvider } from 'emotion-theming'
 import { css } from 'react-emotion'
@@ -12,27 +9,6 @@ import Flex from '../components/Flex'
 import Nav from '../components/Nav'
 import theme from '../constants/theme'
 import './index.css'
-
-injectGlobal`
-* {
-  font-family: 'Chivo';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-}
-@font-face {
-  font-family: 'ITC';
-  font-style: normal;
-  font-weight: 700;
-  src: url(${itc}) format('woff');
-}
-@font-face {
-  font-family: 'Chivo';
-  font-style: normal;
-  font-weight: 400;
-  src: url(${chivo}) format('woff2');
-}
-`
 
 const Layout = ({ children, data }) => (
   <ThemeProvider theme={theme}>

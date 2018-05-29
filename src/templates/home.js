@@ -15,10 +15,11 @@ import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
 
-const IndexPage = ({ data }) => {
+const HomePageTemplate = ({ data }) => {
   const {
     title,
-    testimonials,
+    firstTestimonial,
+    secondTestimonial,
     hero: { header, description, button },
     howFlockWorks,
     stopWorrying,
@@ -33,13 +34,13 @@ const IndexPage = ({ data }) => {
       <StopWorrying data={stopWorrying} />
       <WhatKindOfPilot data={kindOfPilot} />
       <Box pb={3}>
-        <Testimonial testimonials={testimonials} />
+        <Testimonial testimonials={firstTestimonial} />
       </Box>
       <HowFlockWorks data={howFlockWorks} />
       <HowToCalculateRisk data={risk} />
       <WhatFlockCovers data={whatFlockCovers} />
       <Box pb={5}>
-        <Testimonial testimonials={testimonials} />
+        <Testimonial testimonials={secondTestimonial} />
       </Box>
       <DownloadFlock />
       <Featured />
@@ -48,7 +49,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default HomePageTemplate
 
 export const query = graphql`
   query HomePage {
@@ -69,7 +70,12 @@ export const query = graphql`
                 to
               }
             }
-            testimonials {
+            firstTestimonial {
+              quote
+              author
+              image
+            }
+            secondTestimonial {
               quote
               author
               image
@@ -105,6 +111,13 @@ export const query = graphql`
               description
               listOfHow {
                 title
+                text
+              }
+            }
+            whatFlockCovers {
+              title
+              description
+              listOfWhatFlockCovers {
                 text
               }
             }
