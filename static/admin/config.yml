@@ -28,8 +28,15 @@ collections:
                 fields:
                   - {label: "Text", name: "text", widget: "string"}
                   - {label: "To", name: "to", widget: "string"}
-          - label: 'Testimonials'
-            name: 'testimonials'
+          - label: 'First testimonials'
+            name: 'firstTestimonial'
+            widget: 'list'
+            fields:
+              - {label: 'Author', name: 'author', widget: 'string'}
+              - {label: 'Quote', name: 'quote', widget: 'markdown'}
+              - {label: 'Image', name: 'image', widget: 'image'}
+          - label: 'Second testimonials'
+            name: 'secondTestimonial'
             widget: 'list'
             fields:
               - {label: 'Author', name: 'author', widget: 'string'}
