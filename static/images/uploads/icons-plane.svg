@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icons-plane</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="19.402 0.0001 19.402 18.7916 0.0001 18.7916 0.0001 0.0001"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-655.000000, -3469.000000)">
+            <g id="How-it-works-+-Risk" transform="translate(0.000000, 2046.000000)">
+                <g id="Group-16" transform="translate(65.000000, 908.000000)">
+                    <g transform="translate(585.000000, 0.000000)" id="Group-15">
+                        <g transform="translate(0.000000, 304.000000)">
+                            <g id="Group-9" transform="translate(0.000000, 207.000000)">
+                                <g id="risk/airport-/-yellow" transform="translate(0.500000, 0.500000)">
+                                    <g id="Page-1" transform="translate(4.500000, 3.500000)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="Clip-2"></g>
+                                        <path d="M9.6741,0.0001 C8.3371,0.0001 7.2501,1.1361 7.2501,2.5331 L7.3701,6.1481 L0.0001,10.3591 L0.0001,13.8721 L0.0001,13.8241 L0.0001,13.8721 L7.5581,11.6091 L7.7631,15.6151 L6.2361,16.8941 L6.2361,18.7921 L9.7001,18.4181 L13.1661,18.7921 L13.1661,16.8941 L11.5901,15.6391 L11.7911,11.6461 L19.4021,13.9251 L19.4021,10.3591 L11.9791,6.1201 L12.0971,2.5511 L12.0981,2.5331 C12.0981,1.1361 11.0111,0.0001 9.6741,0.0001 M9.6741,1.4441 C10.2091,1.4441 10.6461,1.9241 10.6531,2.5171 L10.5351,6.0721 L10.5061,6.9421 L11.2631,7.3741 L17.9581,11.1971 L17.9571,11.9851 L12.2051,10.2621 L10.4421,9.7341 L10.0751,16.9991 L9.2791,16.9991 L8.9041,9.6981 L7.1431,10.2261 L1.4441,11.9321 L1.4441,11.1971 L8.0871,7.4021 L8.8431,6.9701 L8.8141,6.1001 L8.6941,2.5141 C8.7031,1.9221 9.1391,1.4441 9.6741,1.4441" id="Fill-1" fill="#FFE001" mask="url(#mask-2)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

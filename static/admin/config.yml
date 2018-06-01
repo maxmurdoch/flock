@@ -53,7 +53,8 @@ collections:
                 widget: 'list'
                 fields:
                   - {label: 'Title', name: 'title', widget: 'string'}
-                  - {label: 'Text', name: 'text', widget: 'string'}
+                  - {label: 'Text', name: 'text', widget: 'markdown'}
+                  - {label: 'Image', name: 'image', widget: 'image'}
           - label: 'Stop worrying'
             name: 'stopWorrying'
             widget: 'object'
@@ -90,7 +91,7 @@ collections:
                 widget: 'list'
                 fields:
                   - {label: 'Title', name: 'title', widget: 'string'} 
-                  - {label: 'Text', name: 'text', widget: 'markdown'} 
+                  - {label: 'List', name: 'list', widget: 'list'} 
                   - {label: 'Icon', name: 'icon', widget: 'image'} 
           - label: 'How Flock works'
             name: 'howFlockWorks'

@@ -39,12 +39,15 @@ kindOfPilot:
     - title: 'Commercial pilot'
       icon:  'images/uploads/drone-camera.svg'
       text: 'Flock’s EC785/2004 compliant policies offer flexible hull and liability insurance from just £5 a day.'
+      link: '/commercial'
     - title: 'Trainee pilot'
       icon:  'images/uploads/drone.svg'
       text: 'From flight assessment insurance, to providing proof-of-insurance in your PfCO application, Flock’s got you covered.'
+      link: '/trainee'
     - title: 'Recreational pilot'
       icon:  'images/uploads/drone-diamond.svg'
       text: 'Enjoy your favourite hobby without worrying about insurance. Get covered from just £3 with the touch of a button.'
+      link: '/recreational'
 
 howFlockWorks:
   title: 'How Flock works'
@@ -52,10 +55,13 @@ howFlockWorks:
   listOfHow:
     - title: '1. Enter your flight details'
       text: 'Choose your flight area, and the date and time you want to fly. Receive an instant quote at the bottom of your screen.'
+      image: 'images/uploads/phone--flight-details@2x.png'
     - title: '2. Customise your policy'
       text: 'Select your cover duration and your public liability limit to suit the exact needs of your job. We’ll update your quote so you can see the difference.'
+      image: 'images/uploads/phone--customise-policy@2x.png'
     - title: '3. Get flying'
       text: 'Pay for the policy in a couple of taps. You’re covered! We’ll also send you all the important documentation in an email.'
+      image: 'images/uploads/phone--get-flying@2x.png'
 
 risk:
   title: 'How we calculate risk'
@@ -63,16 +69,32 @@ risk:
   calculations:
     - title: 'Inhabited spaces'
       icon: 'images/uploads/icons-house.svg'
-      text: 'text text text'
-    - title: 'Inhabited spaces'
-      icon: 'images/uploads/icons-house.svg'
-      text: 'text text text'
-    - title: 'Inhabited spaces'
-      icon: 'images/uploads/icons-house.svg'
-      text: 'text text text'
-    - title: 'Inhabited spaces'
-      icon: 'images/uploads/icons-house.svg'
-      text: 'text text text'
+      list:
+        - 'Airports'
+        - 'Heliports'
+        - 'Controlled airspace'
+        - 'Special use airspace'
+    - title: 'Ground hazards'
+      icon: 'images/uploads/icons-circle.svg'
+      list:
+        - 'Airports'
+        - 'Heliports'
+        - 'Controlled airspace'
+        - 'Special use airspace'
+    - title: 'Restricted airspace'
+      icon: 'images/uploads/icons-plane.svg'
+      list:
+        - 'Airports'
+        - 'Heliports'
+        - 'Controlled airspace'
+        - 'Special use airspace'
+    - title: 'Hyperlocal weather'
+      icon: 'images/uploads/icons-cloud.svg'
+      list:
+        - 'Airports'
+        - 'Heliports'
+        - 'Controlled airspace'
+        - 'Special use airspace'
 
 whatFlockCovers:
   title: 'What Flock covers'

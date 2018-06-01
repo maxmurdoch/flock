@@ -95,6 +95,7 @@ export const query = graphql`
                 title
                 icon
                 text
+                link
               }
             }
             risk {
@@ -103,7 +104,7 @@ export const query = graphql`
               calculations {
                 title
                 icon
-                text
+                list
               }
             }
             howFlockWorks {
@@ -112,6 +113,7 @@ export const query = graphql`
               listOfHow {
                 title
                 text
+                image
               }
             }
             whatFlockCovers {
