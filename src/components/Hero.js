@@ -15,7 +15,13 @@ import support from '../images/icons/support.png'
 import bigFlock from '../images/big-arrow.svg'
 import { colors } from '../constants/theme'
 
-const HomeHero = ({ header, description, button }) => {
+const Hero = ({
+  textColor = colors.black,
+  headerClassName,
+  header,
+  description,
+  button,
+}) => {
   return (
     <Flex
       height="calc(100vh)"
@@ -27,16 +33,17 @@ const HomeHero = ({ header, description, button }) => {
       <Flex
         alignItems="center"
         justifyContent="center"
-        background={colors.backgrounds.light}
+        className={headerClassName}
         flex="1 1 auto"
-        backgroundImage={bigFlock}
-        backgroundRepeat="no-repeat"
-        backgroundPosition="bottom right"
       >
         <SiteContainer>
           <Box width={['100%', '50%']}>
-            <H1 mb={3}>{header}</H1>
-            <BodyText mb={3}>{description}</BodyText>
+            <H1 color={textColor} mb={3}>
+              {header}
+            </H1>
+            <BodyText color={textColor} mb={3}>
+              {description}
+            </BodyText>
             <PrimaryButton to={button.to}>{button.text}</PrimaryButton>
           </Box>
         </SiteContainer>
@@ -91,4 +98,4 @@ const HomeHero = ({ header, description, button }) => {
   )
 }
 
-export default HomeHero
+export default Hero

@@ -6,7 +6,6 @@ import { ThemeProvider } from 'emotion-theming'
 import { css } from 'react-emotion'
 
 import Flex from '../components/Flex'
-import Nav from '../components/Nav'
 import theme from '../constants/theme'
 import './index.css'
 
@@ -23,7 +22,6 @@ const Layout = ({ children, data }) => (
           { name: 'keywords', content: data.site.siteMetadata.keywords },
         ]}
       />
-      <Nav />
       <div>{children()}</div>
     </StickyContainer>
   </ThemeProvider>

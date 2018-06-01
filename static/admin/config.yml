@@ -105,6 +105,7 @@ collections:
                 fields:
                   - {label: 'Title', name: 'title', widget: 'string'} 
                   - {label: 'Text', name: 'text', widget: 'markdown'} 
+                  - {label: 'Image', name: 'image', widget: 'image'} 
           - label: 'What Flock covers'
             name: 'whatFlockCovers'
             widget: 'object'
@@ -129,22 +130,68 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
 
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: products
+    label: Products
+    folder: src/pages/products
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - name: hero
+        label: Hero
+        widget: object
+        fields:
+          - name: 'button'
+            label: 'Button'
+            fields:
+              - {name: 'text', label: 'Text', widget: 'string'}
+              - {name: 'to', label: 'To', widget: 'string'}
+          - {name: 'description', label: 'Description', widget: 'markdown'}
+          - {name: 'header', label: 'Header', widget: 'string'}
+      - label: 'Why'
+        name: 'why'
+        widget: 'object'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', name: 'description', widget: 'markdown'}
+          - label: 'List'
+            name: 'list'
+            widget: 'list'
+            fields:
+              - {label: 'Title', name: 'title', widget: 'string'} 
+              - {label: 'Text', name: 'text', widget: 'markdown'} 
+      - label: 'How'
+        name: 'how'
+        widget: 'object'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', name: 'description', widget: 'markdown'}
+          - label: 'List'
+            name: 'list'
+            widget: 'list'
+            fields:
+              - {label: 'Title', name: 'title', widget: 'string'} 
+              - {label: 'Text', name: 'text', widget: 'markdown'} 
+              - {label: 'Image', name: 'image', widget: 'image'} 
+      - label: 'Risk'
+        name: 'risk'
+        widget: 'object'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', name: 'description', widget: 'markdown'}
+          - label: 'List'
+            name: 'list'
+            widget: 'list'
+            fields:
+              - {label: 'Title', name: 'title', widget: 'string'} 
+              - {label: 'List', name: 'list', widget: 'list'} 
+              - {label: 'Icon', name: 'icon', widget: 'image'} 
+      - label: 'Testimonials'
+        name: 'testimonial'
+        widget: 'list'
+        fields:
+          - {label: 'Author', name: 'author', widget: 'string'}
+          - {label: 'Quote', name: 'quote', widget: 'markdown'}
+          - {label: 'Image', name: 'image', widget: 'image'}
 
-  - name: segment
-    label: Segment
-    folder: segment
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: heroMainText, label: Hero main text }
 
