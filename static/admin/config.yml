@@ -142,6 +142,7 @@ collections:
         fields:
           - name: 'button'
             label: 'Button'
+            widget: 'object'
             fields:
               - {name: 'text', label: 'Text', widget: 'string'}
               - {name: 'to', label: 'To', widget: 'string'}
