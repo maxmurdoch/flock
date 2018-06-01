@@ -7,6 +7,7 @@ hero:
     to: /download
   description: 'Pay for drone insurance only when you need it. Get a customised policy for your flight.'
   header: Pay-as-you-fly drone insurance for professionals
+  backgroundImage: '../../images/uploads/hobbyist-background.png'
 why:
   title: 'Why do professionals use Flock?'
   description: 'It’s time for a new kind of insurance. Control your cover from the get-go with the Flock Cover app.'

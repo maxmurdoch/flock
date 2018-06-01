@@ -43,7 +43,7 @@ const CalculateRiskSimple = ({ title, description, list }) => (
                         })}
                         src={icon}
                       />
-                      <SmallText pl={3} color={colors.white}>
+                      <SmallText pl={3} color={colors.yellow}>
                         {title}
                       </SmallText>
                     </Box>

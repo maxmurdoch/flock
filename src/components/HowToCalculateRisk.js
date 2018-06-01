@@ -19,7 +19,7 @@ class HowToCalculateRisk extends Component {
   constructor() {
     super()
     this.state = {
-      activeIndex: 0,
+      activeIndex: null,
       isHovered: [],
     }
   }

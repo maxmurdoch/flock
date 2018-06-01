@@ -13,13 +13,12 @@ import OtherProducts from '../components/OtherProducts'
 import ToggleiPhone from '../components/ToggleiPhone'
 import CalculateRiskSimple from '../components/CalculateRiskSimple'
 import Testimonial from '../components/Testimonial'
-import hobbyistBackground from '../images/hobbyist-background.png'
 
 import Hero from '../components/Hero'
 
 const SegmentPageTemplate = ({ data }) => {
   const {
-    hero: { header, description, button },
+    hero: { header, description, button, backgroundImage },
     why,
     how,
     risk,
@@ -31,7 +30,7 @@ const SegmentPageTemplate = ({ data }) => {
       <LightNav />
       <Hero
         headerClassName={css({
-          backgroundImage: `url(${hobbyistBackground})`,
+          backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
         })}
         textColor={colors.white}
@@ -84,6 +83,7 @@ export const query = graphql`
           }
           description
           header
+          backgroundImage
         }
         why {
           title

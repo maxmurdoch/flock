@@ -11,7 +11,7 @@ import { space, colors } from '../constants/theme'
 
 const SegmentLink = ({ title, text, icon, link }) => {
   return (
-    <Flex position="relative">
+    <Flex position="relative" zIndex="0">
       <Link className={styles.link} to={link}>
         <img
           className={css({

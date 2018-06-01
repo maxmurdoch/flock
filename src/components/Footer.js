@@ -18,16 +18,16 @@ const Footer = ({}) => {
       text: 'Home',
     },
     {
-      to: '/commercial-pilots',
+      to: '/products/commercial',
       text: 'Commercial pilots',
     },
     {
-      to: '/trainee-pilots',
+      to: '/products/trainee',
       text: 'Trainee pilots',
     },
     {
-      to: '/recreational-pilots',
-      text: 'Recreational pilots',
+      to: '/products/hobbyist',
+      text: 'Hobbyist pilots',
     },
     {
       to: '/support',
