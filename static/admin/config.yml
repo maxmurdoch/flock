@@ -135,7 +135,6 @@ collections:
     folder: src/pages/products
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: title, label: Title }
       - name: hero
         label: Hero
