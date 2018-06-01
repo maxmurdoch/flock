@@ -1,5 +1,4 @@
 ---
-path: hobbyists
 title: Hobbyists
 templateKey: product
 hero:

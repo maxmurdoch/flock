@@ -193,5 +193,19 @@ collections:
           - {label: 'Author', name: 'author', widget: 'string'}
           - {label: 'Quote', name: 'quote', widget: 'markdown'}
           - {label: 'Image', name: 'image', widget: 'image'}
+      - label: 'Other products'
+        name: 'otherProducts'
+        widget: 'object'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', name: 'description', widget: 'markdown'}
+          - label: 'Products'
+            name: 'products'
+            widget: 'list'
+            fields:
+              - {label: 'Title', name: 'title', widget: 'string'}
+              - {label: 'Text', name: 'text', widget: 'markdown'}
+              - {label: 'Icon', name: 'icon', widget: 'image'}
+              - {label: 'Link', name: 'link', widget: 'string'}
 
 
