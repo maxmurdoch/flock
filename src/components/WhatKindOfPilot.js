@@ -27,11 +27,17 @@ const WhatKindOfPilot = ({ data }) => {
             <BodyText>{description}</BodyText>
           </Box>
         </Flex>
-        <Flex alignItems="stretch" position="relative" zIndex={0} mb={5}>
+        <Flex
+          alignItems="stretch"
+          flexDirection={['column', 'row']}
+          position="relative"
+          zIndex={0}
+          mb={5}
+        >
           {R.map(({ title, icon, text, link }) => {
             const isLast = R.equals(R.prop('title', R.last(pilots)), title)
             return (
-              <Box width="33.33%" mr={isLast ? 0 : 2}>
+              <Box width={['100%', '33.33%']} mb={[2, 0]} mr={isLast ? 0 : 2}>
                 <SegmentLink
                   title={title}
                   text={text}

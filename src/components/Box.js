@@ -9,6 +9,7 @@ import {
   borderLeft,
   borderTop,
   borderBottom,
+  order,
   color,
   display,
   flex,
@@ -27,29 +28,30 @@ import {
 } from 'styled-system'
 
 const Box = styled('div')`
-${height}
-${maxWidth}
-${border}
-${borderRight}
-${borderLeft}
-${borderTop}
-${borderBottom}
-${position}
-${minHeight}
-${display}
-${alignItems}
 ${alignContent}
-${justifyContent}
-${flexWrap}
+${alignItems}
+${alignSelf}
+${background}
+${border}
+${borderBottom}
+${borderLeft}
+${borderRight}
+${borderTop}
+${color}
+${display}
+${flex}
 ${flexBasis}
 ${flexDirection}
-${flex}
+${flexWrap}
+${height}
+${justifyContent}
 ${justifySelf}
-${alignSelf}
+${maxWidth}
+${minHeight}
+${order}
+${position}
 ${space}
 ${width}
-${color}
-${background}
 ${zIndex}
 `
 

@@ -21,7 +21,7 @@ const TextGrid = ({ title, description, list }) => (
         <Flex pt={4} pb={5} borderBottom="1px solid #000" flexWrap={true}>
           {R.map(({ title, text }) => {
             return (
-              <Box width={['100%', '33.33%']} pr={[0, 2]} mb={4}>
+              <Box width={['100%', '33.33%']} pr={[0, 2]} mb={[2, 4]}>
                 <H3>{title}</H3>
                 <SmallText>{text}</SmallText>
               </Box>
@@ -38,8 +38,10 @@ export default TextGrid
 TextGrid.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  list: PropTypes.objectOf({
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-  }).isRequired,
+  list: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+    })
+  ),
 }

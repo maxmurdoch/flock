@@ -39,7 +39,7 @@ class HowFlockWorks extends Component {
     return (
       <Flex background="rgba(49, 49, 49, 1)" justifyContent="center" pt={5}>
         <SiteContainer>
-          <Flex flexWrap={true}>
+          <Flex flexDirection={['row-reverse', 'column']}>
             <Box width={['100%', '50%']}>
               <Box pb={4}>
                 <H2 color="yellow">{title}</H2>

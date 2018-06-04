@@ -1,5 +1,6 @@
 import React from 'react'
 
+import ArrowText from './ArrowText'
 import BodyText from './BodyText'
 import Flex from './Flex'
 import Box from './Box'
@@ -23,7 +24,9 @@ const DownloadFlock = ({}) => {
             </BodyText>
           </Box>
           <Box pt={3} width="100%" display="flex" justifyContent="center">
-            <PrimaryButton>Download</PrimaryButton>
+            <PrimaryButton>
+              <ArrowText moveOnHover={false}>Download</ArrowText>
+            </PrimaryButton>
           </Box>
         </Flex>
         <BigSectionLine />

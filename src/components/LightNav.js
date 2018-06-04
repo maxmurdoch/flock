@@ -68,10 +68,12 @@ const Nav = ({ siteTitle }) => {
                   justifyContent: 'space-between',
                 })}
               >
-                <img
-                  className={css({ width: '6rem', margin: 0 })}
-                  src={activateStickyStyle ? blackLogo : whiteLogo}
-                />
+                <Link to={'/'}>
+                  <img
+                    className={css({ width: '6rem', margin: 0 })}
+                    src={activateStickyStyle ? blackLogo : whiteLogo}
+                  />
+                </Link>
                 <nav className={navClass}>
                   <Link
                     activeStyle={activeLinkStyle}

@@ -39,11 +39,14 @@ class ToggleiPhone extends Component {
       <Flex background="rgba(49, 49, 49, 1)" justifyContent="center" pt={5}>
         <SiteContainer>
           <Flex flexWrap={true}>
-            <Box width={['100%', '50%']}>
-              <Box pb={4}>
+            <Box width={['100%']} order={[0, 1]}>
+              <Box width={['100%', '50%']} pb={4}>
                 <H2 color="yellow">{title}</H2>
                 <BodyText color="white">{description}</BodyText>
               </Box>
+            </Box>
+
+            <Box width={['100%', '50%']} order={[2, 2]}>
               <Box width="66.66%">
                 <ol
                   className={css({
@@ -131,7 +134,7 @@ class ToggleiPhone extends Component {
                 </ol>
               </Box>
             </Box>
-            <Box width="50%" position="relative" zIndex="0">
+            <Box width="50%" position="relative" zIndex="0" order={[1, 3]}>
               <img
                 className={css({
                   zIndex: 1,
@@ -143,12 +146,7 @@ class ToggleiPhone extends Component {
                 })}
                 src={R.path([this.state.activeIndex, 'image'], list)}
               />
-              <img
-                className={css({
-                  position: 'absolute',
-                })}
-                src={iPhoneX}
-              />
+              <img src={iPhoneX} />
             </Box>
           </Flex>
         </SiteContainer>
@@ -162,7 +160,7 @@ export default ToggleiPhone
 ToggleiPhone.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  list: PropTypes.objectOf({
+  list: PropTypes.arrayOf({
     title: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,

@@ -5,6 +5,7 @@ import H1 from './H1'
 import SiteContainer from './SiteContainer'
 import Box from './Box'
 import Flex from './Flex'
+import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import Text from './Text'
 import SmallText from './SmallText'
@@ -38,13 +39,15 @@ const Hero = ({
       >
         <SiteContainer>
           <Box width={['100%', '50%']}>
-            <H1 color={textColor} mb={3}>
+            <H1 color={textColor} mb={[2, 3]}>
               {header}
             </H1>
-            <BodyText color={textColor} mb={3}>
+            <BodyText color={textColor} mb={[2, 3]}>
               {description}
             </BodyText>
-            <PrimaryButton to={button.to}>{button.text}</PrimaryButton>
+            <PrimaryButton to={button.to}>
+              <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+            </PrimaryButton>
           </Box>
         </SiteContainer>
       </Flex>
@@ -57,8 +60,9 @@ const Hero = ({
             borderBottom="1px solid black"
             width="100%"
             justifyContent="space-between"
+            flexDirection={['column', 'row']}
           >
-            <Flex alignItems="center">
+            <Flex alignItems="center" mb={[2, 0]}>
               <SmallText>Underwritten by</SmallText>
               <img
                 className={css({
@@ -69,7 +73,7 @@ const Hero = ({
                 src={allianz}
               />
             </Flex>
-            <Flex alignItems="center">
+            <Flex alignItems="center" mb={[2, 0]}>
               <img
                 className={css({
                   marginBottom: 0,
@@ -80,7 +84,7 @@ const Hero = ({
               />
               <SmallText>FCA & CAA regulated</SmallText>
             </Flex>
-            <Flex alignItems="center">
+            <Flex alignItems="center" mb={[2, 0]}>
               <img
                 className={css({
                   marginBottom: 0,
