@@ -12,7 +12,7 @@ import Testimonial from '../components/Testimonial'
 import HowFlockWorks from '../components/HowFlockWorks'
 import ToggleiPhone from '../components/ToggleiPhone'
 import HowToCalculateRisk from '../components/HowToCalculateRisk'
-import Nav from '../components/Nav'
+import DarkNav from '../components/DarkNav'
 import WhatFlockCovers from '../components/WhatFlockCovers'
 import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
@@ -35,7 +35,7 @@ const HomePageTemplate = ({ data }) => {
 
   return (
     <div>
-      <Nav />
+      <DarkNav />
       <Hero
         headerClassName={css({
           background: colors.backgrounds.light,

@@ -8,15 +8,16 @@ import { css } from 'react-emotion'
 
 import ArrowText from './ArrowText'
 import SiteContainer from './SiteContainer'
-import blackLogo from '../images/logo-black.svg'
 import SmallText from './SmallText'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
 import SecondaryButton from '../components/SecondaryButton'
 import ProductLink from './ProductLink'
+import ProductNavDropDown from './ProductNavDropDown'
 import downArrow from '../images/icons/small-arrow-black.svg'
 import { colors, space } from '../constants/theme'
 import { active } from 'styled-system'
+import { textColor } from 'styled-system/dist/styles'
 
 class Nav extends Component {
   constructor() {
@@ -25,14 +26,10 @@ class Nav extends Component {
       productsIsOpen: false,
     }
   }
+
   render() {
-    const { siteTitle } = this.props
-    const linkClass = css({
-      margin: '0 0.5rem 0',
-      padding: '0 1rem 0.5rem',
-      color: 'initial',
-      textDecoration: 'none',
-    })
+    const { Logo, DownloadButton, textColor, arrowImage } = this.props
+
     const navClass = css({
       display: 'flex',
       alignItems: 'baseline',
@@ -57,6 +54,13 @@ class Nav extends Component {
               activateStickyStyle ? colors.white : colors.yellow
             }`,
           }
+          const linkClass = css({
+            margin: '0 0.5rem 0',
+            padding: '0 1rem 0.5rem',
+            color: textColor({ isSticky: activateStickyStyle }),
+            textDecoration: 'none',
+          })
+
           return (
             <header
               style={style}
@@ -83,10 +87,7 @@ class Nav extends Component {
                 >
                   <Box width="100%">
                     <Link to={'/'}>
-                      <img
-                        className={css({ width: '6rem', margin: 0 })}
-                        src={blackLogo}
-                      />
+                      <Logo isSticky={activateStickyStyle} />
                     </Link>
                   </Box>
                   <Box width="100%">
@@ -116,7 +117,9 @@ class Nav extends Component {
                           className={css({
                             position: 'relative',
                             '&:after': {
-                              content: `url(${downArrow})`,
+                              content: `url(${arrowImage({
+                                isSticky: activateStickyStyle,
+                              })})`,
                               transform: this.state.productsIsOpen
                                 ? 'rotate(180deg)'
                                 : null,
@@ -137,59 +140,12 @@ class Nav extends Component {
                       >
                         <SmallText>Support</SmallText>
                       </Link>
-                      <SecondaryButton
-                        onClick={() => console.log('clicked')}
-                        ml={3}
-                        Text={SmallText}
-                      >
-                        <ArrowText moveOnHover={false}>Download</ArrowText>
-                      </SecondaryButton>
+                      <DownloadButton isSticky={activateStickyStyle} />
                     </nav>
                   </Box>
                 </Flex>
               </SiteContainer>
-              <Collapse
-                isOpened={this.state.productsIsOpen}
-                className={css({
-                  width: '100%',
-                })}
-                springConfig={{ stiffness: 1000, damping: 50 }}
-              >
-                <Flex
-                  justifyContent="center"
-                  width="100%"
-                  background={colors.backgrounds.dark}
-                >
-                  <SiteContainer>
-                    <Flex alignItems="stretch">
-                      {R.map(
-                        ({ image, to, text }) => (
-                          <Box width="33.33%">
-                            <ProductLink to={to} image={image} text={text} />
-                          </Box>
-                        ),
-                        [
-                          {
-                            to: '/products/commercial',
-                            image: '/images/uploads/drone-camera.svg',
-                            text: 'Commercial pilot',
-                          },
-                          {
-                            to: '/products/trainee',
-                            image: '/images/uploads/drone.svg',
-                            text: 'Trainee pilot',
-                          },
-                          {
-                            to: '/products/hobbyists',
-                            image: '/images/uploads/drone-diamond.svg',
-                            text: 'Hobbyist pilot',
-                          },
-                        ]
-                      )}
-                    </Flex>
-                  </SiteContainer>
-                </Flex>
-              </Collapse>
+              <ProductNavDropDown productsIsOpen={this.state.productsIsOpen} />
             </header>
           )
         }}
@@ -199,3 +155,8 @@ class Nav extends Component {
 }
 
 export default Nav
+
+Nav.defaultProps = {
+  textColor: () => colors.black,
+  arrowImage: () => downArrow,
+}
