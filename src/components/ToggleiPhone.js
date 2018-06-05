@@ -36,7 +36,7 @@ class ToggleiPhone extends Component {
     const { title, description, list } = this.props
 
     return (
-      <Flex background="rgba(49, 49, 49, 1)" justifyContent="center" pt={5}>
+      <Flex background={colors.backgrounds.dark} justifyContent="center" pt={5}>
         <SiteContainer>
           <Flex flexWrap={true}>
             <Box width={['100%']} order={[0, 1]}>

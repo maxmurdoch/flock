@@ -3,10 +3,12 @@ const colors = {
     primary: '#000',
   },
   backgrounds: {
+    white: '#FFF',
     light: '#F7F7F4',
-    dark: '#393D3C',
+    dark: 'rgba(49, 49, 49, 1)',
   },
   yellow: '#FFE001',
+  dark: '#393D3C',
   black: '#000',
   white: '#FFF',
 }
