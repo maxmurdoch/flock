@@ -37,7 +37,7 @@ class HowFlockWorks extends Component {
     } = this.props
 
     return (
-      <Flex background="rgba(49, 49, 49, 1)" justifyContent="center" pt={5}>
+      <Flex background={colors.backgrounds.dark} justifyContent="center" pt={5}>
         <SiteContainer>
           <Flex flexDirection={['row-reverse', 'column']}>
             <Box width={['100%', '50%']}>
@@ -45,7 +45,7 @@ class HowFlockWorks extends Component {
                 <H2 color="yellow">{title}</H2>
                 <BodyText color="white">{description}</BodyText>
               </Box>
-              <Box width="66.66%">
+              <Box width={['100%', '66.66%']}>
                 <ol
                   className={css({
                     marginLeft: 0,
@@ -132,7 +132,7 @@ class HowFlockWorks extends Component {
                 </ol>
               </Box>
             </Box>
-            <Box width="50%" position="relative" zIndex="0">
+            <Box width={['100%', '50%']} position="relative" zIndex="0">
               <img
                 className={css({
                   zIndex: 1,

@@ -13,16 +13,20 @@ const OtherSegments = ({ title, description, products }) => {
     <Flex justifyContent="center" mb={5}>
       <SiteContainer>
         <Flex flexWrap={true}>
-          <Box width="50%" mb={3}>
+          <Box width={['100%', '50%']} mb={3}>
             <H2>{title}</H2>
             <BodyText>{description}</BodyText>
           </Box>
-          <Flex>
+          <Flex flexWrap={['wrap', 'nowrap']}>
             {R.map(({ title, text, icon, link }) => {
               const isLast = R.equals(R.prop('title', R.last(products)), title)
 
               return (
-                <Box mr={isLast ? 0 : 3} width="50%">
+                <Box
+                  mr={[0, isLast ? 0 : 3]}
+                  mb={[2, 0]}
+                  width={['100%', '50%']}
+                >
                   <SegmentLink
                     title={title}
                     text={text}

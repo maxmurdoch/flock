@@ -47,7 +47,7 @@ class ToggleiPhone extends Component {
             </Box>
 
             <Box width={['100%', '50%']} order={[2, 2]}>
-              <Box width="66.66%">
+              <Box width={['100%', '66.66%']}>
                 <ol
                   className={css({
                     marginLeft: 0,
@@ -63,6 +63,8 @@ class ToggleiPhone extends Component {
                           paddingBottom: R.nth(3, space),
                           '&:last-of-type': {
                             borderBottom: 0,
+                            paddingBottom: 0,
+                            marginBottom: 0,
                           },
                         })}
                       >
@@ -134,7 +136,12 @@ class ToggleiPhone extends Component {
                 </ol>
               </Box>
             </Box>
-            <Box width="50%" position="relative" zIndex="0" order={[1, 3]}>
+            <Box
+              width={['100%', '50%']}
+              position="relative"
+              zIndex="0"
+              order={[1, 3]}
+            >
               <img
                 className={css({
                   zIndex: 1,

@@ -1,4 +1,6 @@
 import React from 'react'
+import R from 'ramda'
+import Media from 'react-media'
 import { css } from 'emotion'
 import Link from 'gatsby-link'
 
@@ -7,6 +9,7 @@ import Flex from '../components/Flex'
 import Box from '../components/Box'
 import { colors } from '../constants/theme'
 import LightNav from '../components/LightNav'
+import MobileNav from '../components/MobileNav'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import DownloadFlock from '../components/DownloadFlock'
@@ -18,42 +21,12 @@ import Testimonial from '../components/Testimonial'
 
 import Hero from '../components/Hero'
 import H2 from '../components/H2'
-import coverNote from '../../static/images/uploads/cover-note.svg'
 import SiteContainer from '../components/SiteContainer'
 import BodyText from '../components/BodyText'
 import SmallText from '../components/SmallText'
-import { color } from '../constants/theme'
+import CoverNote from '../components/CoverNote'
+import { color, breakpoints } from '../constants/theme'
 
-const ApplyForCover = () => {
-  return (
-    <Flex justifyContent="center">
-      <SiteContainer>
-        <Flex>
-          <Box width="50%">
-            <H2>Applying for your PfCO?</H2>
-            <BodyText mb={2}>
-              You no longer need to commit to an annual insurance policy in
-              order to get your proof of insurance for your PfCO renewal.
-            </BodyText>
-            <SmallText mb={2}>
-              Flock’s Cover Note is accepted by the CAA as proof of EC785/2004
-              compliant insurance, and you can get yours instantly without
-              having to pay a penny.
-            </SmallText>
-            <SmallText mb={2}>
-              <Link className={css({ color: 'inherit' })}>
-                Learn how to get your cover note within our app →
-              </Link>
-            </SmallText>
-          </Box>
-          <Box width="50%">
-            <img src={coverNote} />
-          </Box>
-        </Flex>
-      </SiteContainer>
-    </Flex>
-  )
-}
 const SegmentPageTemplate = ({ data }) => {
   const {
     hero: { header, description, button, backgroundImage },
@@ -65,7 +38,9 @@ const SegmentPageTemplate = ({ data }) => {
   } = data.markdownRemark.frontmatter
   return (
     <div>
-      <LightNav />
+      <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+        {matches => (matches ? <LightNav /> : <MobileNav />)}
+      </Media>
       <Hero
         headerClassName={css({
           backgroundImage: `url(${backgroundImage})`,
@@ -81,7 +56,7 @@ const SegmentPageTemplate = ({ data }) => {
         description={why.description}
         list={why.list}
       />
-      <ApplyForCover />
+      <CoverNote />
       <ToggleiPhone
         title={how.title}
         description={how.description}

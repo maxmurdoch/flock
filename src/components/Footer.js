@@ -59,7 +59,7 @@ const Footer = ({}) => {
   return (
     <Flex background="black" justifyContent="center">
       <SiteContainer>
-        <Flex>
+        <Flex flexWrap={true}>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
             {R.map(({ to, text }) => {
               return (
@@ -102,11 +102,11 @@ const Footer = ({}) => {
             </Link>
           </Flex>
         </Flex>
-        <Flex borderTop="1px solid white" pt={3} mt={3} pb={3}>
-          <Box width={['100%', '33.33%']}>
-            <img src={logo} />
+        <Flex borderTop="1px solid white" pt={3} mt={3} pb={3} flexWrap={true}>
+          <Box width={['100%', '33.33%']} mb={[2, 0]}>
+            <img src={logo} className={css({ marginBottom: 0 })} />
           </Box>
-          <Box width={['100%', '33.33%']}>
+          <Box width={['100%', '33.33%']} mb={[2, 0]}>
             <SmallText fontWeight="700" color="white">
               Flock Cover is regulated by the FCA.
             </SmallText>

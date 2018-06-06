@@ -14,10 +14,14 @@ import { colors, space } from '../constants/theme'
 const mapIndex = R.addIndex(R.map)
 
 const CalculateRiskSimple = ({ title, description, list }) => (
-  <Flex background="rgba(49, 49, 49, 1)" justifyContent="center" pt={5}>
+  <Flex
+    background={colors.backgrounds.dark}
+    justifyContent="center"
+    pt={[2, 5]}
+  >
     <SiteContainer>
       <Flex flexWrap={true}>
-        <Box width="50%" pb={3}>
+        <Box width={['100%', '50%']} pb={3}>
           <H2 color="yellow">{title}</H2>
           <BodyText color="white">{description}</BodyText>
         </Box>
@@ -25,12 +29,13 @@ const CalculateRiskSimple = ({ title, description, list }) => (
           <ul
             className={css({
               display: 'flex',
+              flexWrap: 'wrap',
               marginLeft: 0,
               marginBottom: R.nth(3, space),
               listStyleType: 'none',
             })}
           >
-            {R.addIndex(R.map)(({ title, list, icon }, index) => {
+            {mapIndex(({ title, list, icon }, index) => {
               return (
                 <LI width={['100%', '25%']} mb={0} pt={3} pb={3}>
                   <Flex justifyContent="space-between">

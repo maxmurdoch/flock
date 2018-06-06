@@ -116,7 +116,7 @@ class Nav extends Component {
                         <SmallText
                           className={css({
                             position: 'relative',
-                            '&:after': {
+                            '&::after': {
                               content: `url(${arrowImage({
                                 isSticky: activateStickyStyle,
                               })})`,
