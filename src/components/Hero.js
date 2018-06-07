@@ -1,4 +1,6 @@
 import React from 'react'
+import R from 'ramda'
+import Media from 'react-media'
 import { css } from 'emotion'
 
 import H1 from './H1'
@@ -7,14 +9,13 @@ import Box from './Box'
 import Flex from './Flex'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
-import Text from './Text'
+import SecondaryButton from './SecondaryButton'
 import SmallText from './SmallText'
 import BodyText from './BodyText'
 import allianz from '../images/logo/allianz/black.png'
 import tick from '../images/icons/black-tick.png'
 import support from '../images/icons/support.png'
-import bigFlock from '../images/big-arrow.svg'
-import { colors } from '../constants/theme'
+import { colors, breakpoints } from '../constants/theme'
 
 const Hero = ({
   textColor = colors.black,
@@ -45,9 +46,19 @@ const Hero = ({
             <BodyText color={textColor} mb={[2, 3]}>
               {description}
             </BodyText>
-            <PrimaryButton to={button.to}>
-              <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-            </PrimaryButton>
+            <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+              {matches =>
+                matches ? (
+                  <PrimaryButton to={button.to}>
+                    <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                  </PrimaryButton>
+                ) : (
+                  <SecondaryButton to={button.to}>
+                    <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                  </SecondaryButton>
+                )
+              }
+            </Media>
           </Box>
         </SiteContainer>
       </Flex>
@@ -84,7 +95,7 @@ const Hero = ({
               />
               <SmallText>FCA & CAA regulated</SmallText>
             </Flex>
-            <Flex alignItems="center" mb={[2, 0]}>
+            <Flex alignItems="center" mb={0}>
               <img
                 className={css({
                   marginBottom: 0,

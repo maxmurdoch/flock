@@ -14,7 +14,7 @@ class ArrowText extends Component {
 
   render() {
     return (
-      <Flex
+      <span
         onMouseOver={() => {
           this.setState({ isHovered: true })
         }}
@@ -39,7 +39,7 @@ class ArrowText extends Component {
         >
           →
         </i>
-      </Flex>
+      </span>
     )
   }
 }

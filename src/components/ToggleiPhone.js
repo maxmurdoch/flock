@@ -13,7 +13,6 @@ import BodyText from './BodyText'
 import SmallText from './SmallText'
 import iPhoneX from '../../static/images/uploads/iphone-x.png'
 import { colors, space } from '../constants/theme'
-import ToggleActive from '../components/ToggleActive'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -67,6 +66,7 @@ class ToggleiPhone extends Component {
                             marginBottom: 0,
                           },
                         })}
+                        key={index}
                       >
                         <Flex
                           onMouseEnter={() => {
@@ -137,7 +137,7 @@ class ToggleiPhone extends Component {
               </Box>
             </Box>
             <Box
-              width={['100%', '50%']}
+              width={['60%', '50%']}
               position="relative"
               zIndex="0"
               order={[1, 3]}
@@ -167,9 +167,5 @@ export default ToggleiPhone
 ToggleiPhone.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  list: PropTypes.arrayOf({
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-  }).isRequired,
+  list: PropTypes.array.isRequired,
 }

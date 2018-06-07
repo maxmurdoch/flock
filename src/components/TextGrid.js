@@ -9,6 +9,7 @@ import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
 import Box from './Box'
+const mapIndex = R.addIndex(R.map)
 
 const TextGrid = ({ title, description, list }) => (
   <Flex justifyContent="center" pt={5} pb={5}>
@@ -19,9 +20,14 @@ const TextGrid = ({ title, description, list }) => (
           <BodyText>{description}</BodyText>
         </Box>
         <Flex pt={4} pb={5} borderBottom="1px solid #000" flexWrap={true}>
-          {R.map(({ title, text }) => {
+          {mapIndex(({ title, text }, index) => {
             return (
-              <Box width={['100%', '33.33%']} pr={[0, 2]} mb={[2, 4]}>
+              <Box
+                width={['100%', '33.33%']}
+                pr={[0, 2]}
+                mb={[2, 4]}
+                key={index}
+              >
                 <H3>{title}</H3>
                 <SmallText>{text}</SmallText>
               </Box>

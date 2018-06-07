@@ -7,7 +7,6 @@ import Link from 'gatsby-link'
 import BigSectionLine from '../components/BigSectionLine'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
-import { colors } from '../constants/theme'
 import LightNav from '../components/LightNav'
 import MobileNav from '../components/MobileNav'
 import TextGrid from '../components/TextGrid'
@@ -16,7 +15,8 @@ import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import OtherProducts from '../components/OtherProducts'
 import ToggleiPhone from '../components/ToggleiPhone'
-import CalculateRiskSimple from '../components/CalculateRiskSimple'
+import CalculateRiskFlat from '../components/CalculateRiskFlat'
+import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import Testimonial from '../components/Testimonial'
 
 import Hero from '../components/Hero'
@@ -25,7 +25,7 @@ import SiteContainer from '../components/SiteContainer'
 import BodyText from '../components/BodyText'
 import SmallText from '../components/SmallText'
 import CoverNote from '../components/CoverNote'
-import { color, breakpoints } from '../constants/theme'
+import { colors, breakpoints } from '../constants/theme'
 
 const SegmentPageTemplate = ({ data }) => {
   const {
@@ -70,11 +70,23 @@ const SegmentPageTemplate = ({ data }) => {
           />
         </SiteContainer>
       </Flex>
-      <CalculateRiskSimple
-        title={risk.title}
-        description={risk.description}
-        list={risk.list}
-      />
+      <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+        {matches =>
+          matches ? (
+            <CalculateRiskFlat
+              title={risk.title}
+              description={risk.description}
+              list={risk.list}
+            />
+          ) : (
+            <CalculateRiskDropDown
+              title={risk.title}
+              description={risk.description}
+              list={risk.list}
+            />
+          )
+        }
+      </Media>
       <Box pt={3} pb={3}>
         <Testimonial testimonials={testimonial} />
       </Box>

@@ -27,7 +27,7 @@ const CoverNote = () => {
               having to pay a penny.
             </SmallText>
             <SmallText mb={2}>
-              <Link className={css({ color: 'initial' })}>
+              <Link to="/download" className={css({ color: 'initial' })}>
                 Learn how to get your cover note within our app →
               </Link>
             </SmallText>

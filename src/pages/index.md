@@ -66,7 +66,7 @@ howFlockWorks:
 risk:
   title: 'How we calculate risk'
   description: 'Get much more than an insurance policy. We’ll help you fly safer by providing a risk report for your flight. Simply enter your flight’s details and instantly see surrounding hazards.'
-  calculations:
+  list:
     - title: 'Inhabited spaces'
       icon: 'images/uploads/icons-house.svg'
       list:

@@ -11,6 +11,8 @@ import Box from './Box'
 import SiteContainer from './SiteContainer'
 import { colors, space } from '../constants/theme'
 
+const mapIndex = R.addIndex(R.map)
+
 const Footer = ({}) => {
   const firstFooterLinks = [
     {
@@ -57,22 +59,22 @@ const Footer = ({}) => {
     },
   ]
   return (
-    <Flex background="black" justifyContent="center">
+    <Flex background={colors.backgrounds.dark} justifyContent="center">
       <SiteContainer>
         <Flex flexWrap={true}>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
-            {R.map(({ to, text }) => {
+            {mapIndex(({ to, text }, index) => {
               return (
-                <Link className={styles.link} to={to}>
+                <Link className={styles.link} to={to} key={index}>
                   {text}
                 </Link>
               )
             }, firstFooterLinks)}
           </Flex>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
-            {R.map(({ to, text }) => {
+            {mapIndex(({ to, text }, index) => {
               return (
-                <Link className={styles.link} to={to}>
+                <Link className={styles.link} to={to} key={index}>
                   {text}
                 </Link>
               )

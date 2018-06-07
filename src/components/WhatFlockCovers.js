@@ -10,12 +10,13 @@ import SiteContainer from './SiteContainer'
 import H2 from './H2'
 import tick from '../images/icons/icons-tick.svg'
 
+const mapIndex = R.addIndex(R.map)
 const TickGrid = ({ list }) => {
   return (
     <Flex width="100%" flexWrap={true}>
-      {R.map(({ text }) => {
+      {mapIndex(({ text }, index) => {
         return (
-          <Box width={['100%', '33.33%']} display="flex" pb={4}>
+          <Box width={['100%', '33.33%']} display="flex" pb={4} key={index}>
             <img className={css({ marginBottom: 0 })} src={tick} />
             <SmallText pl={2}>{text}</SmallText>
           </Box>

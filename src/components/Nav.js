@@ -1,23 +1,16 @@
 import React, { Component } from 'react'
-import { Collapse } from 'react-collapse'
 import R from 'ramda'
 import { Sticky } from 'react-sticky'
-import debounce from 'debounce'
 import Link from 'gatsby-link'
 import { css } from 'react-emotion'
 
-import ArrowText from './ArrowText'
 import SiteContainer from './SiteContainer'
 import SmallText from './SmallText'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
-import SecondaryButton from '../components/SecondaryButton'
-import ProductLink from './ProductLink'
 import ProductNavDropDown from './ProductNavDropDown'
 import downArrow from '../images/icons/small-arrow-black.svg'
 import { colors, space } from '../constants/theme'
-import { active } from 'styled-system'
-import { textColor } from 'styled-system/dist/styles'
 
 class Nav extends Component {
   constructor() {

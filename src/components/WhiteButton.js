@@ -3,10 +3,10 @@ import Button from './Button'
 import BodyText from './BodyText'
 import { colors } from '../constants/theme'
 
-const WhiteButton = ({ children, ...props }) => {
+const WhiteButton = ({ children, Text = BodyText, ...props }) => {
   return (
     <Button background={colors.white} color={colors.black} {...props}>
-      <BodyText fontWeight="700">{children}</BodyText>
+      <Text fontWeight="700">{children}</Text>
     </Button>
   )
 }

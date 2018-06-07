@@ -10,6 +10,8 @@ import Box from './Box'
 import ProductLink from './ProductLink'
 import { colors } from '../constants/theme'
 
+const mapIndex = R.addIndex(R.map)
+
 const ProductNavDropDown = ({ productsIsOpen }) => {
   return (
     <Collapse
@@ -24,9 +26,9 @@ const ProductNavDropDown = ({ productsIsOpen }) => {
       >
         <SiteContainer>
           <Flex alignItems="stretch">
-            {R.map(
-              ({ image, to, text }) => (
-                <Box width="33.33%">
+            {mapIndex(
+              ({ image, to, text }, index) => (
+                <Box width="33.33%" key={index}>
                   <ProductLink to={to} image={image} text={text} />
                 </Box>
               ),

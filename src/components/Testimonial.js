@@ -1,5 +1,6 @@
 import React from 'react'
 import R from 'ramda'
+import Media from 'react-media'
 import { css } from 'emotion'
 import Flex from './Flex'
 import Box from './Box'
@@ -16,6 +17,7 @@ import {
 } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import backArrow from '../images/icons/back-arrow.svg'
+import { breakpoints } from '../constants/theme'
 
 const mapWithIndex = R.addIndex(R.map)
 
@@ -35,6 +37,7 @@ const Testimonial = ({ children, testimonials }) => (
                 <Slide
                   innerClassName={styles.slide}
                   index={index}
+                  key={index}
                   style={{ backgroundImage: `url(${image})` }}
                 >
                   <Flex
@@ -70,16 +73,26 @@ const Testimonial = ({ children, testimonials }) => (
             <div>
               <div className={styles.dotGroup}>
                 {mapWithIndex(
-                  (_, index) => <Dot slide={index} className={styles.dot} />,
+                  (_, index) => (
+                    <Dot key={index} slide={index} className={styles.dot} />
+                  ),
                   testimonials
                 )}
               </div>
-              <ButtonBack className={styles.buttonBack}>
-                <img className={styles.backArrow} src={backArrow} />
-              </ButtonBack>
-              <ButtonNext className={styles.buttonNext}>
-                <img className={styles.nextArrow} src={backArrow} />
-              </ButtonNext>
+              <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+                {matches =>
+                  matches ? (
+                    <div>
+                      <ButtonBack className={styles.buttonBack}>
+                        <img className={styles.backArrow} src={backArrow} />
+                      </ButtonBack>
+                      <ButtonNext className={styles.buttonNext}>
+                        <img className={styles.nextArrow} src={backArrow} />
+                      </ButtonNext>
+                    </div>
+                  ) : null
+                }
+              </Media>
             </div>
           ) : null}
         </CarouselProvider>
@@ -112,6 +125,7 @@ const styles = {
   }),
   carouselProvider: css({ width: '100%', position: 'relative' }),
   slider: css({
+    height: '100%',
     width: '100%',
   }),
   slide: css({

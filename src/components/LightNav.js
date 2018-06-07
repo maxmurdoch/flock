@@ -37,8 +37,12 @@ const LightNav = () => {
             <ArrowText moveOnHover={false}>Download</ArrowText>
           </SecondaryButton>
         ) : (
-          <WhiteButton onClick={() => console.log('clicked')} ml={3}>
-            <SmallText>Download</SmallText>
+          <WhiteButton
+            Text={SmallText}
+            onClick={() => console.log('clicked')}
+            ml={3}
+          >
+            Download
           </WhiteButton>
         )
       }

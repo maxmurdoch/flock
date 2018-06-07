@@ -8,7 +8,9 @@ import Box from './Box'
 import SegmentLink from './SegmentLink'
 import H2 from './H2'
 
-const OtherSegments = ({ title, description, products }) => {
+const mapIndex = R.addIndex(R.map)
+
+const OtherProducts = ({ title, description, products }) => {
   return (
     <Flex justifyContent="center" mb={5}>
       <SiteContainer>
@@ -18,11 +20,12 @@ const OtherSegments = ({ title, description, products }) => {
             <BodyText>{description}</BodyText>
           </Box>
           <Flex flexWrap={['wrap', 'nowrap']}>
-            {R.map(({ title, text, icon, link }) => {
+            {mapIndex(({ title, text, icon, link }, index) => {
               const isLast = R.equals(R.prop('title', R.last(products)), title)
 
               return (
                 <Box
+                  key={index}
                   mr={[0, isLast ? 0 : 3]}
                   mb={[2, 0]}
                   width={['100%', '50%']}
@@ -43,4 +46,4 @@ const OtherSegments = ({ title, description, products }) => {
   )
 }
 
-export default OtherSegments
+export default OtherProducts

@@ -1,24 +1,24 @@
 import React from 'react'
+import R from 'ramda'
+import Media from 'react-media'
 import { css } from 'emotion'
-import Link from 'gatsby-link'
 
+import MobileNav from '../components/MobileNav'
 import Hero from '../components/Hero'
-import Text from '../components/Text'
-import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
 import WhatKindOfPilot from '../components/WhatKindOfPilot'
 import Testimonial from '../components/Testimonial'
-import HowFlockWorks from '../components/HowFlockWorks'
 import ToggleiPhone from '../components/ToggleiPhone'
-import HowToCalculateRisk from '../components/HowToCalculateRisk'
+import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import DarkNav from '../components/DarkNav'
 import WhatFlockCovers from '../components/WhatFlockCovers'
 import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
-import { colors } from '../constants/theme'
+import { colors, breakpoints } from '../constants/theme'
 import bigFlock from '../images/big-arrow.svg'
+import mobileFlock from '../images/mobile-arrow-hero.svg'
 
 const HomePageTemplate = ({ data }) => {
   const {
@@ -35,13 +35,21 @@ const HomePageTemplate = ({ data }) => {
 
   return (
     <div>
-      <DarkNav />
+      <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+        {matches => (matches ? <DarkNav /> : <MobileNav />)}
+      </Media>
+
       <Hero
         headerClassName={css({
           background: colors.backgrounds.light,
-          backgroundImage: `url(${bigFlock})`,
+          backgroundImage: `url(${mobileFlock})`,
+          backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'bottom right',
+          backgroundPosition: 'bottom left',
+          [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+            backgroundImage: `url(${bigFlock})`,
+            backgroundPosition: 'bottom right',
+          },
         })}
         header={header}
         description={description}
@@ -61,7 +69,11 @@ const HomePageTemplate = ({ data }) => {
         description={howFlockWorks.description}
         list={howFlockWorks.listOfHow}
       />
-      <HowToCalculateRisk data={risk} />
+      <CalculateRiskDropDown
+        title={risk.title}
+        list={risk.list}
+        description={risk.description}
+      />
       <WhatFlockCovers data={whatFlockCovers} />
       <Box pb={5}>
         <Testimonial testimonials={secondTestimonial} />
@@ -121,7 +133,7 @@ export const query = graphql`
         risk {
           title
           description
-          calculations {
+          list {
             title
             icon
             list

@@ -15,7 +15,7 @@ import downArrow from '../images/icons/small-down-arrow-white.svg'
 import { colors, space } from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
-class HowToCalculateRisk extends Component {
+class CalculateRiskDropDown extends Component {
   constructor() {
     super()
     this.state = {
@@ -26,17 +26,18 @@ class HowToCalculateRisk extends Component {
 
   componentDidMount() {
     this.setState({
-      isHovered: mapIndex(R.F, this.props.data.calculations),
+      isHovered: mapIndex(R.F, this.props.list),
     })
   }
 
   render() {
-    const { title, description, calculations } = this.props.data
+    const { title, description } = this.props
+    const listOfCalculations = R.clone(this.props.list)
 
     return (
-      <Flex background="rgba(49, 49, 49, 1)" justifyContent="center" pt={5}>
+      <Flex background={colors.backgrounds.dark} justifyContent="center" pt={5}>
         <SiteContainer>
-          <Flex>
+          <Flex flexDirection="column">
             <Box width={['100%', '50%']}>
               <img width="75%" src={iPhone} />
             </Box>
@@ -48,7 +49,7 @@ class HowToCalculateRisk extends Component {
                   const isActive = R.equals(this.state.activeIndex, index)
                   const isHovered = R.path(['isHovered', index], this.state)
                   const isLast = R.equals(
-                    R.prop('title', R.last(calculations)),
+                    R.prop('title', R.last(listOfCalculations)),
                     title
                   )
 
@@ -61,6 +62,7 @@ class HowToCalculateRisk extends Component {
                         cursor: isHovered ? 'pointer' : 'default',
                       })}
                       pt={3}
+                      key={index}
                       pb={3}
                       onMouseEnter={() => {
                         this.setState((previousState, props) => {
@@ -137,6 +139,7 @@ class HowToCalculateRisk extends Component {
                             {mapIndex(
                               (item, index) => (
                                 <li
+                                  key={index}
                                   className={css({
                                     marginTop: R.nth(2, space),
                                     transition: `opacity ${R.add(
@@ -158,7 +161,7 @@ class HowToCalculateRisk extends Component {
                       </Collapse>
                     </LI>
                   )
-                }, calculations)}
+                }, listOfCalculations)}
               </ul>
             </Box>
           </Flex>
@@ -168,4 +171,4 @@ class HowToCalculateRisk extends Component {
   }
 }
 
-export default HowToCalculateRisk
+export default CalculateRiskDropDown

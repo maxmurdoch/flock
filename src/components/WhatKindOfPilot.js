@@ -1,19 +1,14 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import R from 'ramda'
-import { css } from 'emotion'
 
-import H1 from './H1'
 import H2 from './H2'
-import H3 from './H3'
-import H4 from './H4'
 import Flex from './Flex'
 import Box from './Box'
 import BodyText from './BodyText'
-import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
 import SegmentLink from './SegmentLink'
-import { colors, space } from '../constants/theme'
+
+const mapIndex = R.addIndex(R.map)
 
 const WhatKindOfPilot = ({ data }) => {
   const { title, description, pilots } = data
@@ -34,10 +29,15 @@ const WhatKindOfPilot = ({ data }) => {
           zIndex={0}
           mb={5}
         >
-          {R.map(({ title, icon, text, link }) => {
+          {mapIndex(({ title, icon, text, link }, index) => {
             const isLast = R.equals(R.prop('title', R.last(pilots)), title)
             return (
-              <Box width={['100%', '33.33%']} mb={[2, 0]} mr={isLast ? 0 : 2}>
+              <Box
+                width={['100%', '33.33%']}
+                mb={[2, 0]}
+                mr={isLast ? 0 : 2}
+                key={index}
+              >
                 <SegmentLink
                   title={title}
                   text={text}

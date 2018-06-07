@@ -13,7 +13,7 @@ import { colors, space } from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
-const CalculateRiskSimple = ({ title, description, list }) => (
+const CalculateRiskFlat = ({ title, description, list }) => (
   <Flex
     background={colors.backgrounds.dark}
     justifyContent="center"
@@ -37,7 +37,13 @@ const CalculateRiskSimple = ({ title, description, list }) => (
           >
             {mapIndex(({ title, list, icon }, index) => {
               return (
-                <LI width={['100%', '25%']} mb={0} pt={3} pb={3}>
+                <LI
+                  width={['100%', '50%', '25%']}
+                  mb={0}
+                  pt={3}
+                  pb={3}
+                  key={index}
+                >
                   <Flex justifyContent="space-between">
                     <Box display="flex" position="relative">
                       <img
@@ -63,6 +69,7 @@ const CalculateRiskSimple = ({ title, description, list }) => (
                       {mapIndex(
                         (item, index) => (
                           <li
+                            key={index}
                             className={css({
                               marginTop: R.nth(2, space),
                             })}
@@ -84,4 +91,4 @@ const CalculateRiskSimple = ({ title, description, list }) => (
   </Flex>
 )
 
-export default CalculateRiskSimple
+export default CalculateRiskFlat

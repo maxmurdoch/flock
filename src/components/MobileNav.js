@@ -85,7 +85,12 @@ const MobileNav = ({ isOpen, toggleMenu, textColor, arrowImage }) => {
         })
 
         return (
-          <Flex style={style} flexWrap={true} position="relative" zIndex="2">
+          <Flex
+            style={{ width: '100%', position: 'fixed', top: 0, ...style }}
+            flexWrap={true}
+            position="relative"
+            zIndex="2"
+          >
             <Flex
               background={colors.yellow}
               pt={2}
@@ -152,9 +157,7 @@ const MobileNav = ({ isOpen, toggleMenu, textColor, arrowImage }) => {
                     {mapIndex(
                       ({ text, to, className }, index) => (
                         <Link to={to} className={className}>
-                          <ArrowText>
-                            <SmallText>{text}</SmallText>
-                          </ArrowText>
+                          <SmallText>{text}</SmallText>
                         </Link>
                       ),
                       navList
