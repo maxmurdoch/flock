@@ -13,7 +13,13 @@ const DownloadFlock = ({}) => {
   return (
     <Flex justifyContent="center">
       <SiteContainer>
-        <Flex justifyContent="center" alignItems="center" flexDirection="column">
+        <Flex
+          justifyContent="center"
+          alignItems="center"
+          flexDirection="column"
+          pb={3}
+          pt={3}
+        >
           <Box width={['100%', '80%']}>
             <H2 textAlign="center">Download the Flock app to get covered</H2>
           </Box>
