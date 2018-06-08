@@ -2,11 +2,11 @@ import React from 'react'
 import R from 'ramda'
 import Media from 'react-media'
 import { css } from 'emotion'
-import Link from 'gatsby-link'
 
 import BigSectionLine from '../components/BigSectionLine'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
+import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
 import MobileNav from '../components/MobileNav'
 import TextGrid from '../components/TextGrid'
@@ -20,10 +20,7 @@ import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import Testimonial from '../components/Testimonial'
 
 import Hero from '../components/Hero'
-import H2 from '../components/H2'
 import SiteContainer from '../components/SiteContainer'
-import BodyText from '../components/BodyText'
-import SmallText from '../components/SmallText'
 import CoverNote from '../components/CoverNote'
 import { colors, breakpoints } from '../constants/theme'
 
@@ -31,6 +28,8 @@ const SegmentPageTemplate = ({ data }) => {
   const {
     hero: { header, description, button, backgroundImage },
     why,
+    showCoverNote,
+    doINeedInsurance,
     how,
     risk,
     testimonial,
@@ -56,7 +55,22 @@ const SegmentPageTemplate = ({ data }) => {
         description={why.description}
         list={why.list}
       />
-      <CoverNote />
+      <div>
+        <Flex justifyContent="center">
+          <SiteContainer>
+            <BigSectionLine />
+          </SiteContainer>
+        </Flex>
+        {showCoverNote ? (
+          <CoverNote />
+        ) : (
+          <TextSection
+            title={doINeedInsurance.title}
+            bigText={doINeedInsurance.bigText}
+            smallText={doINeedInsurance.smallText}
+          />
+        )}
+      </div>
       <ToggleiPhone
         title={how.title}
         description={how.description}
@@ -126,6 +140,12 @@ export const query = graphql`
             title
             text
           }
+        }
+        showCoverNote
+        doINeedInsurance {
+          title
+          bigText
+          smallText
         }
         how {
           title

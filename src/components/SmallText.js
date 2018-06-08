@@ -10,6 +10,7 @@ import {
 } from 'styled-system'
 
 const StyledSmallText = styled.p`
+font-family: 'Chivo';
   font-size: 16px;
   line-height: 24px; 
   ${space}

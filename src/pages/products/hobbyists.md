@@ -24,6 +24,17 @@ why:
       text: 'We know two jobs are never the same. Choose your liability limit on a per-flight basis, with options ranging from £1-10M.'
     - title: 'Instant support'
       text: 'Every pilot gets access to customer support through the app. If something goes wrong, you can make a claim with the tap of a button'
+showCoverNote: false
+doINeedInsurance:
+  title: Do I need insurance
+  bigText: >-
+    Recreational drone pilots are not required by law to fly with insurance. However, a flying metal robot with spinning propellers has the potential to cause some pretty hefty damage; and paying a little now may save you a lot in the long run.
+  smallText: >-
+    Flock’s public liability insurance provides cover for the worst case scenarios; such as your drone accidentally hitting someone, or damaging another’s property. It also provides legal compensation if a noise complaint or Invasion of Priavy claim is made against you.
+    
+
+    With the Flock Cover app, you can get insured on the spot for as little as £3. It’s as quick and easy as ordering an Uber, and gives you total peace of mind the second you take off.
+
 how:
   title: 'How hobbyists use Flock'
   description: 'Insuring your drone or flight has never been simpler. All it takes is a matter of taps.'

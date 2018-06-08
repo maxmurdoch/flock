@@ -37,7 +37,7 @@ class CalculateRiskDropDown extends Component {
     return (
       <Flex background={colors.backgrounds.dark} justifyContent="center" pt={5}>
         <SiteContainer>
-          <Flex flexDirection="column">
+          <Flex flexDirection={['column', 'row']}>
             <Box width={['100%', '50%']}>
               <img width="75%" src={iPhone} />
             </Box>
@@ -45,7 +45,7 @@ class CalculateRiskDropDown extends Component {
               <H2 color="yellow">{title}</H2>
               <BodyText color="white">{description}</BodyText>
               <ul className={css({ marginLeft: 0, listStyleType: 'none' })}>
-                {R.addIndex(R.map)(({ title, list, icon }, index) => {
+                {mapIndex(({ title, list, icon }, index) => {
                   const isActive = R.equals(this.state.activeIndex, index)
                   const isHovered = R.path(['isHovered', index], this.state)
                   const isLast = R.equals(

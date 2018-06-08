@@ -24,6 +24,7 @@ why:
       text: 'We know two jobs are never the same. Choose your liability limit on a per-flight basis, with options ranging from £1-10M.'
     - title: 'Instant support'
       text: 'Every pilot gets access to customer support through the app. If something goes wrong, you can make a claim with the tap of a button'
+showCoverNote: true
 how:
   title: 'How hobbyists use Flock'
   description: 'Insuring your drone or flight has never been simpler. All it takes is a matter of taps.'

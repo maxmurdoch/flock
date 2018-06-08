@@ -160,6 +160,16 @@ collections:
             fields:
               - {label: 'Title', name: 'title', widget: 'string'} 
               - {label: 'Text', name: 'text', widget: 'markdown'} 
+      - label: 'Show cover note'
+        name: 'showCoverNote'
+        widget: 'boolean'
+      - label: 'Do I need insurance'
+        name: 'doINeedInsurance'
+        widget: object
+        fields:
+          - {title: Title, name: title, widget: string}
+          - {title: BigText, name: bigText, widget: markdown}
+          - {title: SmallText, name: smallText, widget: markdown}
       - label: 'How'
         name: 'how'
         widget: 'object'

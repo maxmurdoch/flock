@@ -21,7 +21,7 @@ class ArrowText extends Component {
         onMouseOut={() => {
           this.setState({ isHovered: false })
         }}
-        className={this.props.className}
+        className={css({ display: 'flex' }, this.props.className)}
       >
         {this.props.children}
         <i

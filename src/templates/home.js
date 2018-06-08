@@ -22,7 +22,6 @@ import mobileFlock from '../images/mobile-arrow-hero.svg'
 
 const HomePageTemplate = ({ data }) => {
   const {
-    title,
     firstTestimonial,
     secondTestimonial,
     hero: { header, description, button },
