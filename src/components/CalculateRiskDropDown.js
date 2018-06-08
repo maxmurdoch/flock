@@ -128,7 +128,10 @@ class CalculateRiskDropDown extends Component {
                           src={downArrow}
                         />
                       </Flex>
-                      <Collapse isOpened={isActive}>
+                      <Collapse
+                        isOpened={isActive}
+                        springConfig={{ stiffness: 1000, damping: 50 }}
+                      >
                         <Flex>
                           <ul
                             className={css({
@@ -144,7 +147,7 @@ class CalculateRiskDropDown extends Component {
                                     marginTop: R.nth(2, space),
                                     transition: `opacity ${R.add(
                                       200,
-                                      R.multiply(R.inc(index), 200)
+                                      R.multiply(R.inc(index), 100)
                                     )}ms ease-in-out`,
                                     opacity: isActive ? 1 : 0,
                                   })}

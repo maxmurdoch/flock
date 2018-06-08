@@ -15,8 +15,8 @@ import greyArrow from '../images/grey-arrow.svg'
 const TextSection = ({ title, bigText, smallText }) => {
   return (
     <Flex
-      pt={5}
-      pb={5}
+      pt={[2, 5]}
+      pb={[3, 5]}
       justifyContent="center"
       className={css({
         background: `url(${yellowArrowCorner}), url(${greyArrow})`,
