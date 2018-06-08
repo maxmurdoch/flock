@@ -26,8 +26,10 @@ const TextSection = ({ title, bigText, smallText }) => {
     >
       <SiteContainer>
         <Flex flexWrap="wrap">
-          <Box width="100%" mb={2}>
-            <H2>{title}</H2>
+          <Box width={['100%', '33.33%']} mb={2}>
+            <Markdown>
+              <H2>{title}</H2>
+            </Markdown>
           </Box>
           <Flex flexWrap="wrap" justifyContent="space-between">
             <Box width={['100%', '100%', `${100 / 12 * 7}%`]} mb={3}>

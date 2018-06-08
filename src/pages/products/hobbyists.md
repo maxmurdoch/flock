@@ -26,7 +26,10 @@ why:
       text: 'Every pilot gets access to customer support through the app. If something goes wrong, you can make a claim with the tap of a button'
 showCoverNote: false
 doINeedInsurance:
-  title: Do I need insurance
+  title: >-
+    I fly my drone for fun,
+
+    do I need insurance?
   bigText: >-
     Recreational drone pilots are not required by law to fly with insurance. However, a flying metal robot with spinning propellers has the potential to cause some pretty hefty damage; and paying a little now may save you a lot in the long run.
   smallText: >-

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import R from 'ramda'
 import Media from 'react-media'
 import { css } from 'emotion'
@@ -7,175 +7,128 @@ import Box from './Box'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-  Dot,
-} from 'pure-react-carousel'
-import 'pure-react-carousel/dist/react-carousel.es.css'
 import backArrow from '../images/icons/back-arrow.svg'
-import { breakpoints } from '../constants/theme'
+import { colors, breakpoints } from '../constants/theme'
 
-const mapWithIndex = R.addIndex(R.map)
+const mapIndex = R.addIndex(R.map)
 
-const Testimonial = ({ children, testimonials }) => (
-  <Flex justifyContent="center">
-    <SiteContainer>
-      <Flex flexWrap={true}>
-        <CarouselProvider
-          className={styles.carouselProvider}
-          naturalSlideHeight={310}
-          naturalSlideWidth={1180}
-          totalSlides={R.length(testimonials)}
-        >
-          <Slider className={styles.slider}>
-            {mapWithIndex(({ quote, author, image }, index) => {
-              return (
-                <Slide
-                  innerClassName={styles.slide}
-                  index={index}
-                  key={index}
-                  style={{ backgroundImage: `url(${image})` }}
+class Testimonial extends Component {
+  constructor() {
+    super()
+    this.state = {
+      active: 0,
+    }
+  }
+
+  render() {
+    const { testimonials } = this.props
+    const activeTestimonial = R.nth(this.state.active, testimonials)
+
+    return (
+      <Flex justifyContent="center" position="relative" zIndex="0">
+        <SiteContainer>
+          <Flex
+            flexWrap="wrap"
+            justifyContent="center"
+            background={`url(${R.prop('image', activeTestimonial)})`}
+            className={styles.background}
+            pt={4}
+            pb={4}
+          >
+            <Flex flexWrap="wrap" justifyContent="center" zIndex={2}>
+              <Box width={['100%', '75%']}>
+                <BodyText
+                  textAlign="center"
+                  mb={3}
+                  color={colors.white}
+                  className={styles.quote}
                 >
-                  <Flex
-                    position="relative"
-                    zIndex="3"
-                    alignItems="center"
-                    justifyContent="center"
+                  {R.prop('quote', activeTestimonial)}
+                </BodyText>
+              </Box>
+            </Flex>
+            <Flex flexWrap={true} justifyContent="center" zIndex={2}>
+              {mapIndex(({ quote, author, image }, index) => {
+                const isActive = R.equals(index, this.state.active)
+                return isActive ? (
+                  <button
+                    className={styles.button}
+                    onClick={event => {
+                      event.preventDefault()
+
+                      return this.setState({
+                        active: index,
+                      })
+                    }}
                   >
-                    <Box width="40em">
-                      <BodyText
-                        textShadow="0 1px rgba(0, 0, 0, 0.2)"
-                        textAlign="center"
-                        color="white"
-                        mb={2}
-                      >
-                        {quote}
-                      </BodyText>
-                      <SmallText
-                        fontWeight="700"
-                        textAlign="center"
-                        color="white"
-                      >
-                        — {author}
+                    <Box
+                      pl={2}
+                      pr={2}
+                      pb={2}
+                      borderBottom={`3px solid ${colors.yellow}`}
+                    >
+                      <SmallText fontWeight="700" color={colors.white}>
+                        {author}
                       </SmallText>
                     </Box>
-                  </Flex>
-                </Slide>
-              )
-            }, testimonials)}
-          </Slider>
+                  </button>
+                ) : (
+                  <button
+                    className={styles.button}
+                    onClick={event => {
+                      event.preventDefault()
 
-          {R.gt(R.length(testimonials), 1) ? (
-            <div>
-              <div className={styles.dotGroup}>
-                {mapWithIndex(
-                  (_, index) => (
-                    <Dot key={index} slide={index} className={styles.dot} />
-                  ),
-                  testimonials
-                )}
-              </div>
-              <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-                {matches =>
-                  matches ? (
-                    <div>
-                      <ButtonBack className={styles.buttonBack}>
-                        <img className={styles.backArrow} src={backArrow} />
-                      </ButtonBack>
-                      <ButtonNext className={styles.buttonNext}>
-                        <img className={styles.nextArrow} src={backArrow} />
-                      </ButtonNext>
-                    </div>
-                  ) : null
-                }
-              </Media>
-            </div>
-          ) : null}
-        </CarouselProvider>
+                      return this.setState({
+                        active: index,
+                      })
+                    }}
+                  >
+                    <Box pl={2} pr={2} pb={2}>
+                      <SmallText fontWeight="700" color={colors.white}>
+                        {author}
+                      </SmallText>
+                    </Box>
+                  </button>
+                )
+              }, testimonials)}
+            </Flex>
+          </Flex>
+        </SiteContainer>
       </Flex>
-    </SiteContainer>
-  </Flex>
-)
+    )
+  }
+}
 
 export default Testimonial
 
 const styles = {
-  dotGroup: css({
-    position: 'absolute',
-    bottom: 40,
-    left: 0,
-    right: 0,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+  button: css({
+    background: 'none',
+    border: 'none',
   }),
-  dot: css({
-    background: 'transparent',
-    width: 12,
-    height: 12,
-    margin: '0 8px',
-    border: '2px solid #fff',
-    padding: 0,
-    borderRadius: '50%',
-    '&:disabled': { background: 'white' },
-  }),
-  carouselProvider: css({ width: '100%', position: 'relative' }),
-  slider: css({
-    height: '100%',
-    width: '100%',
-  }),
-  slide: css({
+  background: css({
+    position: 'relative',
+    zIndex: 1,
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    '&:before': {
-      backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    '&::before': {
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
       content: "''",
       display: 'block',
+      top: 0,
+      zIndex: 0,
       position: 'absolute',
       width: '100%',
       height: '100%',
     },
   }),
-  buttonBack: css({
-    background: 'none',
-    border: 'none',
-    position: 'absolute',
-    bottom: 0,
-    top: 0,
-    left: 40,
-    padding: 0,
-    '&:disabled': {
-      opacity: 0.6,
+  quote: css({
+    '&::before': {
+      content: "'“'",
+      display: 'inline-block',
     },
-  }),
-  buttonNext: css({
-    background: 'none',
-    border: 'none',
-    position: 'absolute',
-    bottom: 0,
-    top: 0,
-    right: 40,
-    padding: 0,
-    '&:disabled': {
-      opacity: 0.6,
+    '&::after': {
+      content: "'”'",
+      display: 'inline-block',
     },
-  }),
-  nextArrow: css({
-    width: '2rem',
-    height: '2rem',
-    marginBottom: 0,
-    transform: 'rotate(180deg)',
-  }),
-  backArrow: css({
-    width: '2rem',
-    height: '2rem',
-    marginBottom: 0,
   }),
 }

@@ -167,7 +167,7 @@ collections:
         name: 'doINeedInsurance'
         widget: object
         fields:
-          - {title: Title, name: title, widget: string}
+          - {title: Title, name: title, widget: markdown}
           - {title: BigText, name: bigText, widget: markdown}
           - {title: SmallText, name: smallText, widget: markdown}
       - label: 'How'

@@ -3,8 +3,11 @@ import R from 'ramda'
 import Media from 'react-media'
 import { css } from 'emotion'
 
+import SiteContainer from '../components/SiteContainer'
+import BigSectionLine from '../components/BigSectionLine'
 import MobileNav from '../components/MobileNav'
 import Hero from '../components/Hero'
+import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
 import WhatKindOfPilot from '../components/WhatKindOfPilot'
@@ -68,6 +71,14 @@ const HomePageTemplate = ({ data }) => {
         description={howFlockWorks.description}
         list={howFlockWorks.listOfHow}
       />
+      <Flex justifyContent="center" background={colors.backgrounds.dark}>
+        <SiteContainer>
+          <BigSectionLine
+            backgroundColor={colors.backgrounds.dark}
+            borderColor={colors.white}
+          />
+        </SiteContainer>
+      </Flex>
       <CalculateRiskDropDown
         title={risk.title}
         list={risk.list}
