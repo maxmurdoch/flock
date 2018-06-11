@@ -13,11 +13,12 @@ import downArrow from '../images/icons/small-arrow-black.svg'
 import { colors, space } from '../constants/theme'
 
 class Nav extends Component {
-  constructor() {
-    super()
-    this.state = {
-      productsIsOpen: false,
-    }
+  static defaultProps = {
+    textColor: () => colors.black,
+    arrowImage: () => downArrow,
+  }
+  state = {
+    productsIsOpen: false,
   }
 
   render() {
@@ -148,8 +149,3 @@ class Nav extends Component {
 }
 
 export default Nav
-
-Nav.defaultProps = {
-  textColor: () => colors.black,
-  arrowImage: () => downArrow,
-}

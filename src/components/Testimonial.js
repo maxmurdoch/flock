@@ -13,11 +13,8 @@ import { colors, breakpoints } from '../constants/theme'
 const mapIndex = R.addIndex(R.map)
 
 class Testimonial extends Component {
-  constructor() {
-    super()
-    this.state = {
-      active: 0,
-    }
+  state = {
+    active: 0,
   }
 
   render() {
@@ -39,20 +36,63 @@ class Testimonial extends Component {
               <Box width={['100%', '75%']}>
                 <BodyText
                   textAlign="center"
-                  mb={3}
+                  mb={2}
                   color={colors.white}
                   className={styles.quote}
                 >
                   {R.prop('quote', activeTestimonial)}
                 </BodyText>
+                <SmallText
+                  textAlign="center"
+                  fontWeight="700"
+                  color={colors.white}
+                  mb={3}
+                >
+                  — {R.prop('author', activeTestimonial)}
+                </SmallText>
               </Box>
             </Flex>
-            <Flex flexWrap={true} justifyContent="center" zIndex={2}>
+            <Flex
+              flexWrap={true}
+              justifyContent="center"
+              alignItems="center"
+              zIndex={2}
+            >
               {mapIndex(({ quote, author, image }, index) => {
                 const isActive = R.equals(index, this.state.active)
-                return isActive ? (
+                const button = css({
+                  padding: 0,
+                  margin: 10,
+                  width: 32,
+                  height: 32,
+                  position: 'relative',
+                  background: 'none',
+                  border: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  outline: 0,
+                  '&:hover .dot': {
+                    padding: 10,
+                    background: 'rgba(255, 255, 255, 1)',
+                  },
+                })
+                const dot = css({
+                  padding: 8,
+                  transition:
+                    '200ms padding ease-in-out, 200ms background ease-in-out',
+                  borderRadius: '100%',
+                  background: 'rgba(255, 255, 255, 0.6)',
+                })
+                const activeDot = css({
+                  padding: 12,
+                  background: 'rgba(255, 255, 255, 1)',
+                })
+
+                return (
                   <button
-                    className={styles.button}
+                    className={button}
                     onClick={event => {
                       event.preventDefault()
 
@@ -61,33 +101,9 @@ class Testimonial extends Component {
                       })
                     }}
                   >
-                    <Box
-                      pl={2}
-                      pr={2}
-                      pb={2}
-                      borderBottom={`3px solid ${colors.yellow}`}
-                    >
-                      <SmallText fontWeight="700" color={colors.white}>
-                        {author}
-                      </SmallText>
-                    </Box>
-                  </button>
-                ) : (
-                  <button
-                    className={styles.button}
-                    onClick={event => {
-                      event.preventDefault()
-
-                      return this.setState({
-                        active: index,
-                      })
-                    }}
-                  >
-                    <Box pl={2} pr={2} pb={2}>
-                      <SmallText fontWeight="700" color={colors.white}>
-                        {author}
-                      </SmallText>
-                    </Box>
+                    <div
+                      className={`${dot} ${isActive ? activeDot : null} dot`}
+                    />
                   </button>
                 )
               }, testimonials)}

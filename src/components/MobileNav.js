@@ -7,7 +7,6 @@ import R from 'ramda'
 import { css } from 'react-emotion'
 
 import ArrowText from './ArrowText'
-import H2 from './H2'
 import Flex from './Flex'
 import Box from './Box'
 import SmallText from './SmallText'
@@ -16,7 +15,6 @@ import SiteContainer from './SiteContainer'
 import hamburger from '../images/icons/hamburger.svg'
 import blackLogo from '../images/logo-black.svg'
 import { colors, space } from '../constants/theme'
-import BigSectionLine from './BigSectionLine'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -60,29 +58,11 @@ const navList = [
   },
 ]
 
-const MobileNav = ({ isOpen, toggleMenu, textColor, arrowImage }) => {
+const MobileNav = ({ isOpen, toggleMenu, textColor = () => colors.black }) => {
   return (
     <Sticky disableCompensation={true}>
-      {({
-        style,
-        isSticky,
-        wasSticky,
-        distanceFromTop,
-        distanceFromBottom,
-        calculatedHeight,
-      }) => {
+      {({ style, distanceFromTop }) => {
         const activateStickyStyle = distanceFromTop < -50
-        const activeLinkStyle = {
-          borderBottom: `4px solid ${
-            activateStickyStyle ? colors.white : colors.yellow
-          }`,
-        }
-        const linkClass = css({
-          margin: '0 0.5rem 0',
-          padding: '0 1rem 0.5rem',
-          color: textColor({ isSticky: activateStickyStyle }),
-          textDecoration: 'none',
-        })
 
         return (
           <Flex
@@ -185,8 +165,3 @@ const MobileNav = ({ isOpen, toggleMenu, textColor, arrowImage }) => {
 
 const addOpenCloseToggleState = withState('isOpen', 'toggleMenu', false)
 export default addOpenCloseToggleState(MobileNav)
-
-MobileNav.defaultProps = {
-  textColor: () => colors.black,
-  arrowImage: () => downArrow,
-}

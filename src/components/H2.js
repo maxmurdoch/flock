@@ -1,13 +1,23 @@
 import React from 'react'
-import { injectGlobal } from 'emotion'
+import R from 'ramda'
 import styled from 'react-emotion'
-import { fontSize, color, lineHeight, space, textAlign } from 'styled-system'
+import { color, lineHeight, space, textAlign } from 'styled-system'
+import { breakpoints } from '../constants/theme'
 
 const StyledH2 = styled.h2`
   font-family: 'ITC', sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px; 
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 34px;
+  text-transform: uppercase;
+
+  @media (min-width: ${R.nth(0, breakpoints)}) {
+    font-size: 36px;
+    text-transform: none;
+    line-height: 44px; 
+  }
+
   ${space}
   ${lineHeight}
   ${textAlign}

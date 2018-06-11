@@ -5,11 +5,12 @@ import { css } from 'react-emotion'
 import Flex from './Flex'
 
 class ArrowText extends Component {
-  constructor() {
-    super()
-    this.state = {
-      isHovered: false,
-    }
+  static defaultProps = {
+    moveOnHover: true,
+  }
+
+  state = {
+    isHovered: false,
   }
 
   render() {
@@ -45,7 +46,3 @@ class ArrowText extends Component {
 }
 
 export default ArrowText
-
-ArrowText.defaultProps = {
-  moveOnHover: true,
-}

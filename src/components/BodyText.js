@@ -1,7 +1,7 @@
 import React, { Children } from 'react'
 import R from 'ramda'
 import styled from 'react-emotion'
-import { fontSize, color, lineHeight, space, textAlign } from 'styled-system'
+import { color, space, textAlign } from 'styled-system'
 import { breakpoints } from '../constants/theme'
 
 const StyledBodyText = styled.p`

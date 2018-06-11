@@ -82,6 +82,11 @@ testimonial:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
+  - author: Ron Swanson
+    image: /images/uploads/testimonial-air-shot.png
+    quote: >-
+      I hate drones. But I have one. And I insure my property because I'm a
+      responsible adult. Flock are the best drone insurers. I use Flock.
 otherProducts:
   title: 'What kind of pilot are you?'
   description: 'Chances are we can provide coverage tailored specifically to you. Select below to learn more.'
