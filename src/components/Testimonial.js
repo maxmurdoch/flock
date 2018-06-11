@@ -29,7 +29,7 @@ class Testimonial extends Component {
             justifyContent="center"
             background={`url(${R.prop('image', activeTestimonial)})`}
             className={styles.background}
-            pt={4}
+            pt={6}
             pb={4}
           >
             <Flex flexWrap="wrap" justifyContent="center" zIndex={2}>
