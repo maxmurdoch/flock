@@ -29,8 +29,10 @@ class Testimonial extends Component {
             justifyContent="center"
             background={`url(${R.prop('image', activeTestimonial)})`}
             className={styles.background}
-            pt={6}
-            pb={4}
+            pt={[3, 6]}
+            pb={[2, 4]}
+            pl={[2, 0]}
+            pr={[2, 0]}
           >
             <Flex flexWrap="wrap" justifyContent="center" zIndex={2}>
               <Box width={['100%', '75%']}>
@@ -46,7 +48,7 @@ class Testimonial extends Component {
                   textAlign="center"
                   fontWeight="700"
                   color={colors.white}
-                  mb={3}
+                  mb={[2, 3]}
                 >
                   — {R.prop('author', activeTestimonial)}
                 </SmallText>
