@@ -9,7 +9,7 @@ import H2 from './H2'
 import SiteContainer from './SiteContainer'
 import BigSectionLine from './BigSectionLine'
 
-const DownloadFlock = ({}) => {
+const DownloadFlock = () => {
   return (
     <Flex justifyContent="center">
       <SiteContainer>
@@ -17,7 +17,6 @@ const DownloadFlock = ({}) => {
           justifyContent="center"
           alignItems="center"
           flexDirection="column"
-          pb={3}
           pt={3}
         >
           <Box width={['100%', '80%']}>

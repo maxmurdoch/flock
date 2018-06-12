@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { css } from 'emotion'
+import React from 'react'
+import {css} from 'emotion'
 import R from 'ramda'
 
 import SiteContainer from './SiteContainer'
@@ -9,11 +9,11 @@ import H2 from './H2'
 import LI from './LI'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import { colors, space } from '../constants/theme'
+import {colors, space} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
-const CalculateRiskFlat = ({ title, description, list }) => (
+const CalculateRiskFlat = ({title, description, list}) => (
   <Flex
     background={colors.backgrounds.dark}
     justifyContent="center"
@@ -32,10 +32,10 @@ const CalculateRiskFlat = ({ title, description, list }) => (
               flexWrap: 'wrap',
               marginLeft: 0,
               marginBottom: R.nth(3, space),
-              listStyleType: 'none',
+              listStyleType: 'none'
             })}
           >
-            {mapIndex(({ title, list, icon }, index) => {
+            {mapIndex(({title, list, icon}, index) => {
               return (
                 <LI
                   width={['100%', '50%', '25%']}
@@ -50,7 +50,7 @@ const CalculateRiskFlat = ({ title, description, list }) => (
                         className={css({
                           position: 'absolute',
                           left: 0,
-                          marginBottom: 0,
+                          marginBottom: 0
                         })}
                         src={icon}
                       />
@@ -63,7 +63,7 @@ const CalculateRiskFlat = ({ title, description, list }) => (
                     <ul
                       className={css({
                         listStyleType: 'none',
-                        marginLeft: R.nth(3, space),
+                        marginLeft: R.nth(3, space)
                       })}
                     >
                       {mapIndex(
@@ -71,7 +71,7 @@ const CalculateRiskFlat = ({ title, description, list }) => (
                           <li
                             key={index}
                             className={css({
-                              marginTop: R.nth(2, space),
+                              marginTop: R.nth(2, space)
                             })}
                           >
                             <SmallText color={colors.white}>{item}</SmallText>

@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import R from 'ramda'
-import { Sticky } from 'react-sticky'
+import {Sticky} from 'react-sticky'
 import Link from 'gatsby-link'
-import { css } from 'react-emotion'
+import {css} from 'react-emotion'
 
 import SiteContainer from './SiteContainer'
 import SmallText from './SmallText'
@@ -10,35 +10,29 @@ import Flex from '../components/Flex'
 import Box from '../components/Box'
 import ProductNavDropDown from './ProductNavDropDown'
 import downArrow from '../images/icons/small-arrow-black.svg'
-import { colors, space } from '../constants/theme'
+import {colors, space} from '../constants/theme'
 
 class Nav extends Component {
   static defaultProps = {
     textColor: () => colors.black,
-    arrowImage: () => downArrow,
+    arrowImage: () => downArrow
   }
   state = {
-    productsIsOpen: false,
+    productsIsOpen: false
   }
 
   render() {
-    const { Logo, DownloadButton, textColor, arrowImage } = this.props
+    const {Logo, DownloadButton, textColor, arrowImage} = this.props
 
     const navClass = css({
       display: 'flex',
       alignItems: 'baseline',
+      justifyContent: 'flex-end'
     })
 
     return (
       <Sticky disableCompensation={true}>
-        {({
-          style,
-          isSticky,
-          wasSticky,
-          distanceFromTop,
-          distanceFromBottom,
-          calculatedHeight,
-        }) => {
+        {({style, distanceFromTop}) => {
           const activateStickyStyle = R.or(
             distanceFromTop < -50,
             this.state.productsIsOpen
@@ -46,13 +40,17 @@ class Nav extends Component {
           const activeLinkStyle = {
             borderBottom: `4px solid ${
               activateStickyStyle ? colors.white : colors.yellow
-            }`,
+            }`
           }
           const linkClass = css({
-            margin: '0 0.5rem 0',
-            padding: '0 1rem 0.5rem',
-            color: textColor({ isSticky: activateStickyStyle }),
+            color: textColor({isSticky: activateStickyStyle}),
             textDecoration: 'none',
+            margin: `0 ${R.nth(1, space)}px 0`,
+            padding: `${R.nth(1, space)}px ${R.nth(2, space)}px`
+          })
+          const downloadButtonClass = css({
+            marginLeft: R.nth(1, space),
+            paddingLeft: R.nth(2, space)
           })
 
           return (
@@ -69,7 +67,7 @@ class Nav extends Component {
                   'background-color 200ms ease-in-out, borderBottom 200ms ease-in-out',
                 backgroundColor: activateStickyStyle
                   ? colors.yellow
-                  : 'transparent',
+                  : 'transparent'
               })}
             >
               <SiteContainer>
@@ -90,20 +88,12 @@ class Nav extends Component {
                         activeStyle={activeLinkStyle}
                         className={linkClass}
                         exact={true}
-                        to="/"
-                      >
-                        <SmallText>Home</SmallText>
-                      </Link>
-                      <Link
-                        activeStyle={activeLinkStyle}
-                        className={linkClass}
-                        exact={true}
                         to="/products"
                         onClick={event => {
                           event.preventDefault()
 
                           this.setState({
-                            productsIsOpen: R.not(this.state.productsIsOpen),
+                            productsIsOpen: R.not(this.state.productsIsOpen)
                           })
                         }}
                       >
@@ -112,15 +102,15 @@ class Nav extends Component {
                             position: 'relative',
                             '&::after': {
                               content: `url(${arrowImage({
-                                isSticky: activateStickyStyle,
+                                isSticky: activateStickyStyle
                               })})`,
                               transform: this.state.productsIsOpen
                                 ? 'rotate(180deg)'
                                 : null,
                               position: 'absolute',
                               paddingLeft: this.state.productIsOpen ? 0 : 5,
-                              paddingRight: this.state.productIsOpen ? 0 : 5,
-                            },
+                              paddingRight: this.state.productIsOpen ? 0 : 5
+                            }
                           })}
                         >
                           Products
@@ -130,11 +120,21 @@ class Nav extends Component {
                         activeStyle={activeLinkStyle}
                         className={linkClass}
                         exact={true}
+                        to="/pricing"
+                      >
+                        <SmallText>Pricing</SmallText>
+                      </Link>
+                      <Link
+                        activeStyle={activeLinkStyle}
+                        className={linkClass}
+                        exact={true}
                         to="/support"
                       >
                         <SmallText>Support</SmallText>
                       </Link>
-                      <DownloadButton isSticky={activateStickyStyle} />
+                      <div className={downloadButtonClass}>
+                        <DownloadButton isSticky={activateStickyStyle} />
+                      </div>
                     </nav>
                   </Box>
                 </Flex>

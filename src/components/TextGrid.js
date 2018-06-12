@@ -12,21 +12,21 @@ import Box from './Box'
 
 const mapIndex = R.addIndex(R.map)
 
-const TextGrid = ({ title, description, list }) => (
-  <Flex justifyContent="center" pt={5}>
+const TextGrid = ({title, description, list}) => (
+  <Flex justifyContent="center" pt={[3, 5]}>
     <SiteContainer>
       <Flex flexWrap={true}>
         <Box width={['100%', '50%']}>
           <H2>{title}</H2>
           <BodyText>{description}</BodyText>
         </Box>
-        <Flex pt={4} flexWrap={true}>
-          {mapIndex(({ title, text }, index) => {
+        <Flex flexWrap={true}>
+          {mapIndex(({title, text}, index) => {
             return (
               <Box
                 width={['100%', '33.33%']}
                 pr={[0, 2]}
-                mb={[2, 4]}
+                mt={[2, 4]}
                 key={index}
               >
                 <H3>{title}</H3>
@@ -48,7 +48,7 @@ TextGrid.propTypes = {
   list: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired
     })
-  ),
+  )
 }

@@ -1,8 +1,18 @@
-import React, { Children } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import styled from 'react-emotion'
-import { color, space, textAlign } from 'styled-system'
-import { breakpoints } from '../constants/theme'
+import {color, space, textAlign, style} from 'styled-system'
+import {breakpoints} from '../constants/theme'
+
+const textShadow = style({
+  prop: 'textShadow',
+  cssProperty: 'textShadow',
+  key: 'shadows',
+  numberToPx: false,
+  getter: R.identity,
+  alias: 'sh'
+})
 
 const StyledBodyText = styled.p`
   font-size: 18px;
@@ -13,12 +23,13 @@ const StyledBodyText = styled.p`
     line-height: 34px;
   }
 
+  ${textShadow}
   ${space}
   ${textAlign}
   ${color}
 `
 
-const BodyText = ({ children, mb = 0, ...props }) => {
+const BodyText = ({children, mb = 0, ...props}) => {
   return (
     <StyledBodyText mb={mb} {...props}>
       {children}
@@ -27,3 +38,8 @@ const BodyText = ({ children, mb = 0, ...props }) => {
 }
 
 export default BodyText
+
+BodyText.propTypes = {
+  children: PropTypes.element,
+  mb: PropTypes.number
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import R from 'ramda'
 import Media from 'react-media'
-import { css } from 'emotion'
+import {css} from 'emotion'
 
 import H1 from './H1'
 import SiteContainer from './SiteContainer'
@@ -15,14 +15,14 @@ import BodyText from './BodyText'
 import allianz from '../images/logo/allianz/black.png'
 import tick from '../images/icons/black-tick.png'
 import support from '../images/icons/support.png'
-import { colors, breakpoints } from '../constants/theme'
+import {colors, breakpoints} from '../constants/theme'
 
 const Hero = ({
   textColor = colors.black,
   headerClassName,
   header,
   description,
-  button,
+  button
 }) => {
   return (
     <Flex
@@ -65,8 +65,8 @@ const Hero = ({
       <Flex justifyContent="center">
         <SiteContainer>
           <Flex
-            pt={3}
-            pb={3}
+            pt={2}
+            pb={2}
             background={colors.white}
             borderBottom="1px solid black"
             width="100%"
@@ -79,7 +79,7 @@ const Hero = ({
                 className={css({
                   marginLeft: '0.5rem',
                   width: '5rem',
-                  marginBottom: 0,
+                  marginBottom: 0
                 })}
                 src={allianz}
               />
@@ -89,7 +89,7 @@ const Hero = ({
                 className={css({
                   marginBottom: 0,
                   marginRight: '0.5rem',
-                  width: '1rem',
+                  width: '1rem'
                 })}
                 src={tick}
               />
@@ -100,7 +100,7 @@ const Hero = ({
                 className={css({
                   marginBottom: 0,
                   marginRight: '0.5rem',
-                  width: '1rem',
+                  width: '1rem'
                 })}
                 src={support}
               />

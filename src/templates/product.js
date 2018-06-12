@@ -1,7 +1,7 @@
 import React from 'react'
 import R from 'ramda'
 import Media from 'react-media'
-import { css } from 'emotion'
+import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
 import Flex from '../components/Flex'
@@ -22,19 +22,20 @@ import Testimonial from '../components/Testimonial'
 import Hero from '../components/Hero'
 import SiteContainer from '../components/SiteContainer'
 import CoverNote from '../components/CoverNote'
-import { colors, breakpoints } from '../constants/theme'
+import {colors, breakpoints} from '../constants/theme'
 
-const SegmentPageTemplate = ({ data }) => {
+const SegmentPageTemplate = ({data}) => {
   const {
-    hero: { header, description, button, backgroundImage },
+    hero: {header, description, button, backgroundImage},
     why,
     showCoverNote,
     doINeedInsurance,
     how,
     risk,
     testimonial,
-    otherProducts,
+    otherProducts
   } = data.markdownRemark.frontmatter
+
   return (
     <div>
       <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
@@ -43,7 +44,7 @@ const SegmentPageTemplate = ({ data }) => {
       <Hero
         headerClassName={css({
           backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: 'cover',
+          backgroundSize: 'cover'
         })}
         textColor={colors.white}
         header={header}
@@ -55,35 +56,21 @@ const SegmentPageTemplate = ({ data }) => {
         description={why.description}
         list={why.list}
       />
-      <div>
-        <Flex justifyContent="center">
-          <SiteContainer>
-            <BigSectionLine />
-          </SiteContainer>
-        </Flex>
-        {showCoverNote ? (
-          <CoverNote />
-        ) : (
-          <TextSection
-            title={doINeedInsurance.title}
-            bigText={doINeedInsurance.bigText}
-            smallText={doINeedInsurance.smallText}
-          />
-        )}
-      </div>
+      <BigSectionLine />
+      {showCoverNote ? (
+        <CoverNote />
+      ) : (
+        <TextSection
+          title={doINeedInsurance.title}
+          bigText={doINeedInsurance.bigText}
+          smallText={doINeedInsurance.smallText}
+        />
+      )}
       <ToggleiPhone
         title={how.title}
         description={how.description}
         list={how.list}
       />
-      <Flex background={colors.backgrounds.dark} justifyContent="center">
-        <SiteContainer>
-          <BigSectionLine
-            borderColor={colors.white}
-            backgroundColor={colors.backgrounds.dark}
-          />
-        </SiteContainer>
-      </Flex>
       <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
         {matches =>
           matches ? (
@@ -120,7 +107,7 @@ export default SegmentPageTemplate
 
 export const query = graphql`
   query ProductPageQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       html
       frontmatter {
         title

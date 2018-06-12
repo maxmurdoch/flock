@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { css } from 'react-emotion'
+import {css} from 'react-emotion'
 
 import Flex from './Flex'
 import Box from './Box'
@@ -12,7 +12,7 @@ import coverNote from '../../static/images/uploads/cover-note.svg'
 
 const CoverNote = () => {
   return (
-    <Flex justifyContent="center">
+    <Flex justifyContent="center" pt={0}>
       <SiteContainer>
         <Flex flexWrap={true}>
           <Box width={['100%', '50%']} order={[1, 0]}>
@@ -27,14 +27,14 @@ const CoverNote = () => {
               having to pay a penny.
             </SmallText>
             <SmallText mb={2}>
-              <Link to="/download" className={css({ color: 'initial' })}>
+              <Link to="/download" className={css({color: 'initial'})}>
                 Learn how to get your cover note within our app →
               </Link>
             </SmallText>
           </Box>
-          <Box width={['100%', '50%']} order={[0, 1]}>
+          <Flex justifyContent="center" width={['100%', '50%']} order={[0, 1]}>
             <img src={coverNote} />
-          </Box>
+          </Flex>
         </Flex>
       </SiteContainer>
     </Flex>

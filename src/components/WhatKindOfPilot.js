@@ -10,13 +10,13 @@ import SegmentLink from './SegmentLink'
 
 const mapIndex = R.addIndex(R.map)
 
-const WhatKindOfPilot = ({ data }) => {
-  const { title, description, pilots } = data
+const WhatKindOfPilot = ({data}) => {
+  const {title, description, pilots} = data
 
   return (
     <Flex justifyContent="center">
       <SiteContainer>
-        <Flex mb={4}>
+        <Flex mb={[3, 4]}>
           <Box width={['100%', '50%']}>
             <H2 mb={2}>{title}</H2>
             <BodyText>{description}</BodyText>
@@ -27,9 +27,9 @@ const WhatKindOfPilot = ({ data }) => {
           flexDirection={['column', 'row']}
           position="relative"
           zIndex={0}
-          mb={5}
+          mb={[0, 5]}
         >
-          {mapIndex(({ title, icon, text, link }, index) => {
+          {mapIndex(({title, icon, text, link}, index) => {
             const isLast = R.equals(R.prop('title', R.last(pilots)), title)
             return (
               <Box

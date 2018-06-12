@@ -31,7 +31,7 @@ doINeedInsurance:
 
     do I need insurance?
   bigText: >-
-    Recreational drone pilots are not required by law to fly with insurance. However, a flying metal robot with spinning propellers has the potential to cause some pretty hefty damage; and paying a little now may save you a lot in the long run.
+    Hobbyist drone pilots are not required by law to fly with insurance. However, a flying metal robot with spinning propellers has the potential to cause some pretty hefty damage; and paying a little now may save you a lot in the long run.
   smallText: >-
     Flock’s public liability insurance provides cover for the worst case scenarios; such as your drone accidentally hitting someone, or damaging another’s property. It also provides legal compensation if a noise complaint or Invasion of Priavy claim is made against you.
     

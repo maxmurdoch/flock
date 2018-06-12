@@ -74,9 +74,9 @@ testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/air-shot-houses.jpeg
     quote: >-
-      “With all the current drone laws in the UK, having Flock is an added peace
+      With all the current drone laws in the UK, having Flock is an added peace
       of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!”
+      pilots. This is a brilliant app!
   - author: Ron Swanson
     image: /images/uploads/testimonial-air-shot.png
     quote: >-

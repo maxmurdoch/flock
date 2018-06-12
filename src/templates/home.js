@@ -1,7 +1,7 @@
 import React from 'react'
 import R from 'ramda'
 import Media from 'react-media'
-import { css } from 'emotion'
+import {css} from 'emotion'
 
 import SiteContainer from '../components/SiteContainer'
 import BigSectionLine from '../components/BigSectionLine'
@@ -19,20 +19,20 @@ import WhatFlockCovers from '../components/WhatFlockCovers'
 import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
-import { colors, breakpoints } from '../constants/theme'
+import {colors, breakpoints} from '../constants/theme'
 import bigFlock from '../images/big-arrow.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
 
-const HomePageTemplate = ({ data }) => {
+const HomePageTemplate = ({data}) => {
   const {
     firstTestimonial,
     secondTestimonial,
-    hero: { header, description, button },
+    hero: {header, description, button},
     howFlockWorks,
     stopWorrying,
     kindOfPilot,
     whatFlockCovers,
-    risk,
+    risk
   } = data.markdownRemark.frontmatter
 
   return (
@@ -40,7 +40,6 @@ const HomePageTemplate = ({ data }) => {
       <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
         {matches => (matches ? <DarkNav /> : <MobileNav />)}
       </Media>
-
       <Hero
         headerClassName={css({
           background: colors.backgrounds.light,
@@ -50,8 +49,8 @@ const HomePageTemplate = ({ data }) => {
           backgroundPosition: 'bottom left',
           [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
             backgroundImage: `url(${bigFlock})`,
-            backgroundPosition: 'bottom right',
-          },
+            backgroundPosition: 'bottom right'
+          }
         })}
         header={header}
         description={description}
@@ -62,8 +61,18 @@ const HomePageTemplate = ({ data }) => {
         description={stopWorrying.description}
         list={stopWorrying.reasons}
       />
+      <Flex justifyContent="center">
+        <SiteContainer>
+          <Flex pb={[3, 4]} pt={[2, 2]}>
+            <Box
+              borderTop={`1px solid ${R.prop('black', colors)}`}
+              width="100%"
+            />
+          </Flex>
+        </SiteContainer>
+      </Flex>
       <WhatKindOfPilot data={kindOfPilot} />
-      <Box pb={3}>
+      <Box pb={[2, 3]}>
         <Testimonial testimonials={firstTestimonial} />
       </Box>
       <ToggleiPhone
@@ -71,21 +80,13 @@ const HomePageTemplate = ({ data }) => {
         description={howFlockWorks.description}
         list={howFlockWorks.listOfHow}
       />
-      <Flex justifyContent="center" background={colors.backgrounds.dark}>
-        <SiteContainer>
-          <BigSectionLine
-            backgroundColor={colors.backgrounds.dark}
-            borderColor={colors.white}
-          />
-        </SiteContainer>
-      </Flex>
       <CalculateRiskDropDown
         title={risk.title}
         list={risk.list}
         description={risk.description}
       />
       <WhatFlockCovers data={whatFlockCovers} />
-      <Box pb={5}>
+      <Box pb={[2, 5]}>
         <Testimonial testimonials={secondTestimonial} />
       </Box>
       <DownloadFlock />
@@ -99,7 +100,7 @@ export default HomePageTemplate
 
 export const query = graphql`
   query HomePage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       id
       frontmatter {
         title

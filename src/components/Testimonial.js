@@ -1,24 +1,23 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
-import Media from 'react-media'
-import { css } from 'emotion'
+import {css} from 'emotion'
 import Flex from './Flex'
 import Box from './Box'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import backArrow from '../images/icons/back-arrow.svg'
-import { colors, breakpoints } from '../constants/theme'
+import {colors, boxShadows} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
 class Testimonial extends Component {
   state = {
-    active: 0,
+    active: 0
   }
 
   render() {
-    const { testimonials } = this.props
+    const {testimonials} = this.props
     const activeTestimonial = R.nth(this.state.active, testimonials)
 
     return (
@@ -29,14 +28,15 @@ class Testimonial extends Component {
             justifyContent="center"
             background={`url(${R.prop('image', activeTestimonial)})`}
             className={styles.background}
-            pt={[3, 6]}
-            pb={[2, 4]}
+            pt={[3, 5]}
+            pb={[2, 3]}
             pl={[2, 0]}
             pr={[2, 0]}
           >
             <Flex flexWrap="wrap" justifyContent="center" zIndex={2}>
               <Box width={['100%', '75%']}>
                 <BodyText
+                  textShadow="0 1px 0 rgba(0, 0, 0, 0.2)"
                   textAlign="center"
                   mb={2}
                   color={colors.white}
@@ -45,6 +45,7 @@ class Testimonial extends Component {
                   {R.prop('quote', activeTestimonial)}
                 </BodyText>
                 <SmallText
+                  textShadow="0 1px 0 rgba(0, 0, 0, 0.2)"
                   textAlign="center"
                   fontWeight="700"
                   color={colors.white}
@@ -60,13 +61,13 @@ class Testimonial extends Component {
               alignItems="center"
               zIndex={2}
             >
-              {mapIndex(({ quote, author, image }, index) => {
+              {mapIndex(({quote, author, image}, index) => {
                 const isActive = R.equals(index, this.state.active)
                 const button = css({
                   padding: 0,
                   margin: 10,
-                  width: 32,
-                  height: 32,
+                  width: 24,
+                  height: 24,
                   position: 'relative',
                   background: 'none',
                   border: 'none',
@@ -76,20 +77,20 @@ class Testimonial extends Component {
                   cursor: 'pointer',
                   outline: 0,
                   '&:hover .dot': {
-                    padding: 10,
-                    background: 'rgba(255, 255, 255, 1)',
-                  },
+                    padding: 8,
+                    background: 'rgba(255, 255, 255, 1)'
+                  }
                 })
                 const dot = css({
-                  padding: 8,
+                  padding: 6,
                   transition:
                     '200ms padding ease-in-out, 200ms background ease-in-out',
                   borderRadius: '100%',
-                  background: 'rgba(255, 255, 255, 0.6)',
+                  background: 'rgba(255, 255, 255, 0.6)'
                 })
                 const activeDot = css({
-                  padding: 12,
-                  background: 'rgba(255, 255, 255, 1)',
+                  padding: 10,
+                  background: 'rgba(255, 255, 255, 1)'
                 })
 
                 return (
@@ -99,7 +100,7 @@ class Testimonial extends Component {
                       event.preventDefault()
 
                       return this.setState({
-                        active: index,
+                        active: index
                       })
                     }}
                   >
@@ -119,34 +120,39 @@ class Testimonial extends Component {
 
 export default Testimonial
 
+Testimonial.propTypes = {
+  testimonials: PropTypes.array
+}
+
 const styles = {
   button: css({
     background: 'none',
-    border: 'none',
+    border: 'none'
   }),
   background: css({
+    boxShadow: R.nth(0, boxShadows),
     position: 'relative',
     zIndex: 1,
     backgroundSize: 'cover',
     '&::before': {
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      content: "''",
+      content: '\'\'',
       display: 'block',
       top: 0,
       zIndex: 0,
       position: 'absolute',
       width: '100%',
-      height: '100%',
-    },
+      height: '100%'
+    }
   }),
   quote: css({
     '&::before': {
-      content: "'“'",
-      display: 'inline-block',
+      content: '\'“\'',
+      display: 'inline-block'
     },
     '&::after': {
-      content: "'”'",
-      display: 'inline-block',
-    },
-  }),
+      content: '\'”\'',
+      display: 'inline-block'
+    }
+  })
 }

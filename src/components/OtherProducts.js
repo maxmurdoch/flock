@@ -10,9 +10,9 @@ import H2 from './H2'
 
 const mapIndex = R.addIndex(R.map)
 
-const OtherProducts = ({ title, description, products }) => {
+const OtherProducts = ({title, description, products}) => {
   return (
-    <Flex justifyContent="center" mb={5}>
+    <Flex justifyContent="center" mb={[2, 5]}>
       <SiteContainer>
         <Flex flexWrap={true}>
           <Box width={['100%', '50%']} mb={3}>
@@ -20,7 +20,7 @@ const OtherProducts = ({ title, description, products }) => {
             <BodyText>{description}</BodyText>
           </Box>
           <Flex flexWrap={['wrap', 'nowrap']}>
-            {mapIndex(({ title, text, icon, link }, index) => {
+            {mapIndex(({title, text, icon, link}, index) => {
               const isLast = R.equals(R.prop('title', R.last(products)), title)
 
               return (

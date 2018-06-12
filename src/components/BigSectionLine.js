@@ -1,16 +1,21 @@
 import React from 'react'
 
+import SiteContainer from './SiteContainer'
 import Flex from './Flex'
 import Box from './Box'
-import { colors } from '../constants/theme'
+import {colors} from '../constants/theme'
 
 const BigSectionLine = ({
   borderColor = colors.dark,
-  backgroundColor = colors.backgrounds.white,
+  backgroundColor = colors.backgrounds.white
 }) => {
   return (
-    <Flex pb={[2, 4]} pt={[2, 4]} background={backgroundColor}>
-      <Box borderTop={`1px solid ${borderColor}`} width="100%" />
+    <Flex justifyContent="center">
+      <SiteContainer>
+        <Flex pb={[2, 5]} pt={[2, 5]} background={backgroundColor}>
+          <Box borderTop={`1px solid ${borderColor}`} width="100%" />
+        </Flex>
+      </SiteContainer>
     </Flex>
   )
 }

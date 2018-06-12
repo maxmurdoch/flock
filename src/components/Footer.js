@@ -32,11 +32,11 @@ const Footer = ({}) => {
       text: 'Hobbyist pilots',
     },
     {
-      to: '/support',
+      to: 'https://help.flockcover.com',
       text: 'Support',
     },
     {
-      to: '/make-a-claim',
+      to: 'https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim',
       text: 'Make a claim',
     },
   ]
@@ -46,11 +46,15 @@ const Footer = ({}) => {
       text: 'About us',
     },
     {
-      to: '/careers',
+      to: 'https://blog.flockcover.com',
+      text: 'Blog',
+    },
+    {
+      to: 'https://flockcover.workable.com',
       text: 'Careers',
     },
     {
-      to: '/faq',
+      to: 'https://help.flockcover.com',
       text: 'FAQ',
     },
     {

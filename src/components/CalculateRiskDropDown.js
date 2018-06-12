@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Collapse } from 'react-collapse'
-import { css } from 'emotion'
+import React, {Component} from 'react'
+import {Collapse} from 'react-collapse'
+import {css} from 'emotion'
 import R from 'ramda'
 
 import SiteContainer from './SiteContainer'
@@ -12,7 +12,7 @@ import BodyText from './BodyText'
 import SmallText from './SmallText'
 import iPhone from '../../static/images/uploads/risk-iphone-mockup.png'
 import downArrow from '../images/icons/small-down-arrow-white.svg'
-import { colors, space } from '../constants/theme'
+import {colors, space} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 class CalculateRiskDropDown extends Component {
@@ -20,32 +20,38 @@ class CalculateRiskDropDown extends Component {
     super()
     this.state = {
       activeIndex: null,
-      isHovered: [],
+      isHovered: []
     }
   }
 
   componentDidMount() {
     this.setState({
-      isHovered: mapIndex(R.F, this.props.list),
+      isHovered: mapIndex(R.F, this.props.list)
     })
   }
 
   render() {
-    const { title, description } = this.props
+    const {title, description} = this.props
     const listOfCalculations = R.clone(this.props.list)
 
     return (
-      <Flex background={colors.backgrounds.dark} justifyContent="center" pt={5}>
+      <Flex
+        background={colors.backgrounds.dark}
+        justifyContent="center"
+        pt={[2, 5]}
+      >
         <SiteContainer>
           <Flex flexDirection={['column', 'row']}>
-            <Box width={['100%', '50%']}>
-              <img width="75%" src={iPhone} />
-            </Box>
+            <Flex justifyContent="center">
+              <Box width={['75%', '60%']}>
+                <img width="100%" src={iPhone} />
+              </Box>
+            </Flex>
             <Box width={['100%', '50%']}>
               <H2 color="yellow">{title}</H2>
               <BodyText color="white">{description}</BodyText>
-              <ul className={css({ marginLeft: 0, listStyleType: 'none' })}>
-                {mapIndex(({ title, list, icon }, index) => {
+              <ul className={css({marginLeft: 0, listStyleType: 'none'})}>
+                {mapIndex(({title, list, icon}, index) => {
                   const isActive = R.equals(this.state.activeIndex, index)
                   const isHovered = R.path(['isHovered', index], this.state)
                   const isLast = R.equals(
@@ -59,13 +65,13 @@ class CalculateRiskDropDown extends Component {
                       mb={0}
                       className={css({
                         borderBottom: isLast ? 'none' : '1px solid white',
-                        cursor: isHovered ? 'pointer' : 'default',
+                        cursor: isHovered ? 'pointer' : 'default'
                       })}
                       pt={3}
                       key={index}
                       pb={3}
                       onMouseEnter={() => {
-                        this.setState((previousState, props) => {
+                        this.setState(previousState => {
                           const newIsHovered = R.update(
                             index,
                             true,
@@ -80,7 +86,7 @@ class CalculateRiskDropDown extends Component {
                         })
                       }}
                       onMouseLeave={() => {
-                        this.setState((previousState, props) => {
+                        this.setState(previousState => {
                           const newIsHovered = R.update(
                             index,
                             false,
@@ -96,7 +102,7 @@ class CalculateRiskDropDown extends Component {
                       }}
                       onClick={() => {
                         return this.setState({
-                          activeIndex: isActive ? null : index,
+                          activeIndex: isActive ? null : index
                         })
                       }}
                     >
@@ -106,7 +112,7 @@ class CalculateRiskDropDown extends Component {
                             className={css({
                               position: 'absolute',
                               left: 0,
-                              marginBottom: 0,
+                              marginBottom: 0
                             })}
                             src={icon}
                           />
@@ -123,20 +129,20 @@ class CalculateRiskDropDown extends Component {
                         </Box>
                         <img
                           className={css({
-                            transform: isActive ? 'rotate(180deg)' : 'none',
+                            transform: isActive ? 'rotate(180deg)' : 'none'
                           })}
                           src={downArrow}
                         />
                       </Flex>
                       <Collapse
                         isOpened={isActive}
-                        springConfig={{ stiffness: 1000, damping: 50 }}
+                        springConfig={{stiffness: 1000, damping: 50}}
                       >
                         <Flex>
                           <ul
                             className={css({
                               listStyleType: 'none',
-                              marginLeft: R.nth(3, space),
+                              marginLeft: R.nth(3, space)
                             })}
                           >
                             {mapIndex(
@@ -149,7 +155,7 @@ class CalculateRiskDropDown extends Component {
                                       200,
                                       R.multiply(R.inc(index), 100)
                                     )}ms ease-in-out`,
-                                    opacity: isActive ? 1 : 0,
+                                    opacity: isActive ? 1 : 0
                                   })}
                                 >
                                   <SmallText color={colors.white}>

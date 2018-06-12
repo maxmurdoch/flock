@@ -21,16 +21,18 @@ import {
   space,
   width,
   position,
-  zIndex,
+  order,
+  zIndex
 } from 'styled-system'
 
 const overflow = style({
-  prop: 'overflow',
+  prop: 'overflow'
 })
 
 const Flex = styled('div')`
   display: flex;
   ${overflow}
+  ${order}
   ${background}
   ${backgroundImage}
   ${backgroundPosition}

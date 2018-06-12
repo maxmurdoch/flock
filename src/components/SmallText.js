@@ -1,15 +1,18 @@
-import React, { Children } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import styled from 'react-emotion'
-import {
-  fontSize,
-  color,
-  lineHeight,
-  space,
-  textAlign,
-  fontWeight,
-} from 'styled-system'
-import { breakpoints } from '../constants/theme'
+import {color, space, textAlign, fontWeight, style} from 'styled-system'
+import {breakpoints} from '../constants/theme'
+
+const textShadow = style({
+  prop: 'textShadow',
+  cssProperty: 'textShadow',
+  key: 'shadows',
+  numberToPx: false,
+  getter: R.identity,
+  alias: 'sh'
+})
 
 const StyledSmallText = styled.p`
 font-family: 'Chivo';
@@ -21,13 +24,14 @@ font-family: 'Chivo';
     line-height: 24px;
   }
 
+  ${textShadow}
   ${space}
   ${fontWeight}
   ${textAlign}
   ${color}
 `
 
-const SmallText = ({ children, fontWeight = 400, mb = 0, ...props }) => {
+const SmallText = ({children, fontWeight = 400, mb = 0, ...props}) => {
   return (
     <StyledSmallText fontWeight={fontWeight} mb={mb} {...props}>
       {children}
@@ -36,3 +40,9 @@ const SmallText = ({ children, fontWeight = 400, mb = 0, ...props }) => {
 }
 
 export default SmallText
+
+SmallText.propTypes = {
+  children: PropTypes.element,
+  mb: PropTypes.number,
+  fontWeight: PropTypes.number
+}
