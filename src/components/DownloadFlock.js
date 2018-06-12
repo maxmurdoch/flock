@@ -17,7 +17,6 @@ const DownloadFlock = () => {
           justifyContent="center"
           alignItems="center"
           flexDirection="column"
-          pt={3}
         >
           <Box width={['100%', '80%']}>
             <H2 textAlign="center">Download the Flock app to get covered</H2>
@@ -39,7 +38,6 @@ const DownloadFlock = () => {
             </PrimaryButton>
           </Box>
         </Flex>
-        <BigSectionLine />
       </SiteContainer>
     </Flex>
   )

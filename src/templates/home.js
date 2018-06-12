@@ -15,7 +15,6 @@ import Testimonial from '../components/Testimonial'
 import ToggleiPhone from '../components/ToggleiPhone'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import DarkNav from '../components/DarkNav'
-import WhatFlockCovers from '../components/WhatFlockCovers'
 import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
@@ -31,7 +30,6 @@ const HomePageTemplate = ({data}) => {
     howFlockWorks,
     stopWorrying,
     kindOfPilot,
-    whatFlockCovers,
     risk
   } = data.markdownRemark.frontmatter
 
@@ -61,16 +59,7 @@ const HomePageTemplate = ({data}) => {
         description={stopWorrying.description}
         list={stopWorrying.reasons}
       />
-      <Flex justifyContent="center">
-        <SiteContainer>
-          <Flex pb={[3, 4]} pt={[2, 2]}>
-            <Box
-              borderTop={`1px solid ${R.prop('black', colors)}`}
-              width="100%"
-            />
-          </Flex>
-        </SiteContainer>
-      </Flex>
+      <BigSectionLine />
       <WhatKindOfPilot data={kindOfPilot} />
       <Box pb={[2, 3]}>
         <Testimonial testimonials={firstTestimonial} />
@@ -85,7 +74,6 @@ const HomePageTemplate = ({data}) => {
         list={risk.list}
         description={risk.description}
       />
-      <WhatFlockCovers data={whatFlockCovers} />
       <Box pb={[2, 5]}>
         <Testimonial testimonials={secondTestimonial} />
       </Box>
@@ -157,13 +145,6 @@ export const query = graphql`
             title
             text
             image
-          }
-        }
-        whatFlockCovers {
-          title
-          description
-          listOfWhatFlockCovers {
-            text
           }
         }
       }

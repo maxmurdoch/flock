@@ -1,8 +1,8 @@
 import React from 'react'
 import R from 'ramda'
 import styled from 'react-emotion'
-import { color, space } from 'styled-system'
-import { breakpoints } from '../constants/theme'
+import {color, space, textAlign} from 'styled-system'
+import {breakpoints} from '../constants/theme'
 
 const StyledH1 = styled.h1`
   font-family: 'ITC', sans-serif;
@@ -15,11 +15,12 @@ const StyledH1 = styled.h1`
     line-height: 66px;
   }
 
-  ${space}
+  ${textAlign}
+  ${space} 
   ${color}
 `
 
-const H1 = ({ children, ...props }) => (
+const H1 = ({children, ...props}) => (
   <StyledH1 mb={[0, 1]} {...props}>
     {children}
   </StyledH1>

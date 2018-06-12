@@ -26,7 +26,7 @@ const Hero = ({
 }) => {
   return (
     <Flex
-      height="calc(100vh)"
+      height="100vh"
       flexDirection="column"
       justifyContent="space-between"
       width="100%"

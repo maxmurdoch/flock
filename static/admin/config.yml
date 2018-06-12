@@ -130,6 +130,25 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
 
+      - name: pricing
+        label: Pricing
+        file: "src/pages/pricing.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - name: 'button'
+                label: 'Button'
+                widget: 'object'
+                fields:
+                  - {name: 'text', label: 'Text', widget: 'string'}
+                  - {name: 'to', label: 'To', widget: 'string'}
+              - {name: 'description', label: 'Description', widget: 'markdown'}
+              - {name: 'header', label: 'Header', widget: 'string'}
+
+
   - name: products
     label: Products
     folder: src/pages/products

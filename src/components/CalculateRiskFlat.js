@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {css} from 'emotion'
 import R from 'ramda'
 
@@ -92,3 +93,9 @@ const CalculateRiskFlat = ({title, description, list}) => (
 )
 
 export default CalculateRiskFlat
+
+CalculateRiskFlat.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  list: PropTypes.array
+}

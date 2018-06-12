@@ -4,7 +4,6 @@ import Media from 'react-media'
 import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
-import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
@@ -20,7 +19,6 @@ import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import Testimonial from '../components/Testimonial'
 
 import Hero from '../components/Hero'
-import SiteContainer from '../components/SiteContainer'
 import CoverNote from '../components/CoverNote'
 import {colors, breakpoints} from '../constants/theme'
 
