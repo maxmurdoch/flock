@@ -108,8 +108,8 @@ class Nav extends Component {
                                 ? 'rotate(180deg)'
                                 : null,
                               position: 'relative',
-                              paddingLeft: this.state.productIsOpen ? 0 : 5,
-                              paddingRight: this.state.productIsOpen ? 0 : 5
+                              paddingLeft: this.state.productsIsOpen ? 0 : 10,
+                              paddingRight: this.state.productsIsOpen ? 10 : 0
                             }
                           })}
                         >
