@@ -68,5 +68,5 @@ otherProducts:
     - title: 'Hobbyist pilot'
       icon:  'images/uploads/drone-diamond.svg'
       text: 'Enjoy your favourite hobby without worrying about insurance. Get covered from just £3 with the touch of a button.'
-      link: '/products/hobbyists'
+      link: '/products/hobbyist'
 ---
