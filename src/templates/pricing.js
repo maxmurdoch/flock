@@ -7,11 +7,13 @@ import LightNav from '../components/LightNav'
 import Testimonial from '../components/Testimonial'
 import Download from '../components/DownloadFlock'
 import Flex from '../components/Flex'
+import Box from '../components/Box'
 import MobileNav from '../components/MobileNav'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import OtherProducts from '../components/OtherProducts'
 import BigSectionLine from '../components/BigSectionLine'
+import riskNumber from '../../static/images/uploads/risk-number.svg'
 
 import PricingHero from '../components/PricingHero'
 import {colors, breakpoints} from '../constants/theme'
@@ -45,9 +47,19 @@ const PricingTemplate = ({data}) => {
           textColor={colors.white}
           header={header}
         />
-        <Calculator />
+        <Box
+          className={css({
+            transform: 'translateY(-50%)'
+          })}
+        >
+          <Calculator />
+        </Box>
       </div>
-      <TextGrid description={pricing.description} list={pricing.list} />
+      <TextGrid
+        description={pricing.description}
+        list={pricing.list}
+        image={riskNumber}
+      />
       <Flex mt={[2, 5]} mb={[2, 5]} justifyContent="center">
         <SiteContainer>
           <Testimonial testimonials={testimonials} />
@@ -55,11 +67,13 @@ const PricingTemplate = ({data}) => {
       </Flex>
       <Download />
       <BigSectionLine />
-      <OtherProducts
-        products={otherProducts.products}
-        description={otherProducts.description}
-        title={otherProducts.title}
-      />
+      <Box mb={[2, 5]}>
+        <OtherProducts
+          products={otherProducts.products}
+          description={otherProducts.description}
+          title={otherProducts.title}
+        />
+      </Box>
       <Footer />
     </div>
   )

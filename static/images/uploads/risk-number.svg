@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="296px" height="101px" viewBox="0 0 296 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>risk-number</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFDF00" offset="0%"></stop>
+            <stop stop-color="#FF004D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pricing" transform="translate(-56.000000, -757.000000)">
+            <g id="Group-13" transform="translate(55.000000, 759.000000)">
+                <g id="Group-11">
+                    <g id="risk-number" transform="translate(1.000000, 0.000000)">
+                        <text id="23" font-family="ITCAvantGardePro-Bold, ITC Avant Garde Gothic Pro" font-size="60" font-weight="bold" fill="#FF4006">
+                            <tspan x="110.42" y="44">23</tspan>
+                        </text>
+                        <rect id="Rectangle-4" fill="url(#linearGradient-1)" x="0" y="80" width="295.750011" height="10.9200004"></rect>
+                        <path d="M0.910000035,80.0337963 L0.910000035,97.6174141" id="Line" stroke="#0D0D0D" stroke-width="1.82000007" stroke-linecap="square"></path>
+                        <path d="M294.840011,80.0337963 L294.840011,97.6174141" id="Line-Copy" stroke="#0D0D0D" stroke-width="1.82000007" stroke-linecap="square"></path>
+                        <path d="M146.510006,80.0337963 L146.510006,97.6174141" id="Line-Copy-2" stroke="#0D0D0D" stroke-width="1.82000007" stroke-linecap="square"></path>
+                        <g id="icons/flock-logo-drone" transform="translate(110.050002, 70.165003) rotate(180.000000) translate(-110.050002, -70.165003) translate(103.680002, 65.160003)" fill="#000000">
+                            <path d="M9.64907482,3.27561011 L12.7925822,6.55106858 L12.7676547,9.80106871 L9.59911586,9.77528537 L6.45539971,6.49971773 L3.26161562,9.72393537 L0.0930767535,9.69815204 L0.118004254,6.44836858 L6.5053595,-6.50000025e-05 L9.64918212,3.27550179 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

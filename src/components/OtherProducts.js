@@ -12,7 +12,7 @@ const mapIndex = R.addIndex(R.map)
 
 const OtherProducts = ({title, description, products}) => {
   return (
-    <Flex justifyContent="center" mb={[2, 5]}>
+    <Flex justifyContent="center">
       <SiteContainer>
         <Flex flexWrap={true}>
           <Box width={['100%', '50%']} mb={3}>

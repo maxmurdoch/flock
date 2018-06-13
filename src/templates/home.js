@@ -3,14 +3,13 @@ import R from 'ramda'
 import Media from 'react-media'
 import {css} from 'emotion'
 
-import SiteContainer from '../components/SiteContainer'
 import BigSectionLine from '../components/BigSectionLine'
 import MobileNav from '../components/MobileNav'
 import Hero from '../components/Hero'
-import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
-import WhatKindOfPilot from '../components/WhatKindOfPilot'
+import OtherProducts from '../components/OtherProducts'
+import Calculator from '../components/Calculator'
 import Testimonial from '../components/Testimonial'
 import ToggleiPhone from '../components/ToggleiPhone'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
@@ -54,13 +53,21 @@ const HomePageTemplate = ({data}) => {
         description={description}
         button={button}
       />
-      <TextGrid
-        title={stopWorrying.title}
-        description={stopWorrying.description}
-        list={stopWorrying.reasons}
-      />
+      <Box mt={[2, 5]}>
+        <TextGrid
+          title={stopWorrying.title}
+          description={stopWorrying.description}
+          list={stopWorrying.reasons}
+        />
+      </Box>
       <BigSectionLine />
-      <WhatKindOfPilot data={kindOfPilot} />
+      <Box mb={[2, 3]}>
+        <OtherProducts
+          title={kindOfPilot.title}
+          description={kindOfPilot.description}
+          products={kindOfPilot.products}
+        />
+      </Box>
       <Box pb={[2, 3]}>
         <Testimonial testimonials={firstTestimonial} />
       </Box>
@@ -74,10 +81,16 @@ const HomePageTemplate = ({data}) => {
         list={risk.list}
         description={risk.description}
       />
-      <Box pb={[2, 5]}>
+      <Box pt={[2, 5]}>
+        <Calculator />
+      </Box>
+      <Box pt={[2, 5]}>
         <Testimonial testimonials={secondTestimonial} />
       </Box>
-      <DownloadFlock />
+      <Box pt={[2, 5]}>
+        <DownloadFlock />
+      </Box>
+      <BigSectionLine />
       <Featured />
       <Footer />
     </div>
@@ -122,7 +135,7 @@ export const query = graphql`
         kindOfPilot {
           title
           description
-          pilots {
+          products {
             title
             icon
             text

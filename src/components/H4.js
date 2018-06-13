@@ -1,10 +1,8 @@
 import React from 'react'
-import { injectGlobal } from 'emotion'
 import styled from 'react-emotion'
-import { fontSize, color, space } from 'styled-system'
-import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
+import {fontSize, color, space} from 'styled-system'
 
-const H4 = ({ children, tag = 'h4', ...props }) => {
+const H4 = ({children, tag = 'h4', ...props}) => {
   const Component = styled(tag)`
     font-family: 'ITC', sans-serif;
     font-weight: 700;

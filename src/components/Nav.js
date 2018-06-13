@@ -87,7 +87,6 @@ class Nav extends Component {
                       <Link
                         activeStyle={activeLinkStyle}
                         className={linkClass}
-                        exact={true}
                         to="/products"
                         onClick={event => {
                           event.preventDefault()
@@ -104,10 +103,11 @@ class Nav extends Component {
                               content: `url(${arrowImage({
                                 isSticky: activateStickyStyle
                               })})`,
+                              display: 'inline-block',
                               transform: this.state.productsIsOpen
                                 ? 'rotate(180deg)'
                                 : null,
-                              position: 'absolute',
+                              position: 'relative',
                               paddingLeft: this.state.productIsOpen ? 0 : 5,
                               paddingRight: this.state.productIsOpen ? 0 : 5
                             }
@@ -124,14 +124,12 @@ class Nav extends Component {
                       >
                         <SmallText>Pricing</SmallText>
                       </Link>
-                      <Link
-                        activeStyle={activeLinkStyle}
+                      <a
                         className={linkClass}
-                        exact={true}
-                        to="/support"
+                        href="https://help.flockcover.com"
                       >
                         <SmallText>Support</SmallText>
-                      </Link>
+                      </a>
                       <div className={downloadButtonClass}>
                         <DownloadButton isSticky={activateStickyStyle} />
                       </div>

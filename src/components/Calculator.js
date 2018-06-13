@@ -105,11 +105,23 @@ class Calculator extends Component {
               }, data.questions)}
             </Flex>
             <Flex width="33.33%">
-              <Box background={colors.yellow} mt={3}>
-                Prices from
-                {this.state.price}
-                per year
-              </Box>
+              <Flex
+                flex="1 1 auto"
+                background={colors.yellow}
+                alignItems="center"
+                justifyContent="center"
+                mt={3}
+                flexDirection="column"
+              >
+                <SmallText textAlign="center">Prices from</SmallText>
+                <p className={css({marginBottom: 0})}>
+                  {this.state.price}
+                  per year
+                </p>
+                <SmallText textAlign="center">
+                  that’s {this.state.costPerFlight} per flight
+                </SmallText>
+              </Flex>
             </Flex>
           </Flex>
         </SiteContainer>
@@ -124,8 +136,5 @@ const styles = {
   container: css({
     backgroundColor: R.path(['backgrounds', 'light'], colors),
     boxShadow: R.nth(0, boxShadows)
-  }),
-  outerContainer: css({
-    transform: 'translateY(-50%)'
   })
 }

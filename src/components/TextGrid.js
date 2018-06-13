@@ -12,12 +12,13 @@ import Box from './Box'
 
 const mapIndex = R.addIndex(R.map)
 
-const TextGrid = ({title, description, list}) => (
-  <Flex justifyContent="center" pt={[3, 5]}>
+const TextGrid = ({title, description, list, image}) => (
+  <Flex justifyContent="center">
     <SiteContainer>
       <Flex flexWrap={true}>
         <Box width={['100%', '50%']}>
           {title ? <H2>{title}</H2> : null}
+          {image ? <img src={image} /> : null}
           <BodyText>{description}</BodyText>
         </Box>
         <Flex flexWrap={true}>
@@ -45,6 +46,7 @@ export default TextGrid
 TextGrid.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  image: PropTypes.string,
   list: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,

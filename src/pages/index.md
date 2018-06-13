@@ -35,7 +35,7 @@ stopWorrying:
 kindOfPilot:
   title: 'What kind of pilot are you?'
   description: 'Chances are we can provide coverage tailored specifically to you. Select below to learn more.'
-  pilots:
+  products:
     - title: 'Commercial pilot'
       icon:  'images/uploads/drone-camera.svg'
       text: 'Flock’s EC785/2004 compliant policies offer flexible hull and liability insurance from just £5 a day.'
@@ -95,23 +95,6 @@ risk:
         - 'Heliports'
         - 'Controlled airspace'
         - 'Special use airspace'
-
-whatFlockCovers:
-  title: 'What Flock covers'
-  description: 'Pay for drone insurance only when you need it. Get a customised policy for your flight, starting from one hour.'
-  listOfWhatFlockCovers:
-    - text: 'This is an item'
-    - text: 'This is another item'
-    - text: 'This is an item'
-    - text: 'This is another item'
-    - text: 'This is an item'
-    - text: 'This is another item'
-    - text: 'This is an item'
-    - text: 'This is another item'
-    - text: 'This is an item'
-    - text: 'This is another item'
-    - text: 'This is an item'
-    - text: 'This is another item'
 
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
