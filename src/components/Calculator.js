@@ -8,6 +8,7 @@ import Flex from './Flex'
 import Box from './Box'
 import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
+import H4 from './H4'
 import {colors, boxShadows} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
@@ -15,6 +16,7 @@ const mapIndex = R.addIndex(R.map)
 const data = {
   questions: [
     {
+      key: 'typeOfPilot',
       label: 'What type of pilot are you?',
       options: [
         {
@@ -32,6 +34,7 @@ const data = {
       ]
     },
     {
+      key: 'kindOfDrone',
       label: 'What kind of drone do you fly?',
       options: [
         {
@@ -49,6 +52,7 @@ const data = {
       ]
     },
     {
+      key: 'howOften',
       label: 'How often do you fly?',
       options: [
         {
@@ -66,6 +70,7 @@ const data = {
       ]
     },
     {
+      key: 'where',
       label: 'Where do you mainly fly?',
       options: [
         {
@@ -86,7 +91,27 @@ const data = {
 }
 class Calculator extends Component {
   state = {
-    price: 0
+    values: R.map(R.path(['options', 0]), data.questions),
+    price: null
+  }
+
+  componentDidMount() {
+    this.setState({
+      price: R.reduce(
+        R.multiply,
+        50,
+        R.map(R.prop('value'), this.state.values)
+      )
+    })
+  }
+
+  handleChange(value, index) {
+    const newValues = R.update(index, value, this.state.values)
+
+    this.setState({
+      values: newValues,
+      price: R.reduce(R.multiply, 50, R.map(R.prop('value'), newValues))
+    })
   }
 
   render() {
@@ -95,11 +120,20 @@ class Calculator extends Component {
         <SiteContainer>
           <Flex pl={3} pr={3} pb={3} className={styles.container}>
             <Flex width="66.66%" flexWrap="wrap">
-              {mapIndex((question, key) => {
+              {mapIndex((question, index) => {
                 return (
-                  <Box width="50%" mt={3} pr={2} key={key}>
-                    <SmallText mb={1}>{question.label}</SmallText>
-                    <Select options={question.options} />
+                  <Box width="50%" mt={3} pr={2} key={index}>
+                    <label htmlFor={question.key}>
+                      <SmallText mb={1}>{question.label}</SmallText>
+                    </label>
+                    <Select
+                      id={question.key}
+                      value={R.nth(index, this.state.values)}
+                      onChange={value => {
+                        return this.handleChange(value, index)
+                      }}
+                      options={question.options}
+                    />
                   </Box>
                 )
               }, data.questions)}
@@ -114,13 +148,9 @@ class Calculator extends Component {
                 flexDirection="column"
               >
                 <SmallText textAlign="center">Prices from</SmallText>
-                <p className={css({marginBottom: 0})}>
-                  {this.state.price}
-                  per year
-                </p>
-                <SmallText textAlign="center">
-                  that’s {this.state.costPerFlight} per flight
-                </SmallText>
+                <H4 className={css({marginBottom: 0})}>
+                  £{Math.round(this.state.price)} per year
+                </H4>
               </Flex>
             </Flex>
           </Flex>
