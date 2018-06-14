@@ -54,7 +54,7 @@ howFlockWorks:
       title: 3. Get flying
   title: How Flock works
 stopWorrying:
-  description: Control your cover from the palm of your hand with the Flock Cover app.
+  description: Control your insurance from the palm of your hand with the Flock Cover app.
   reasons:
     - text: >-
         Get covered only for the hours you fly. Policies can be purchased on the
