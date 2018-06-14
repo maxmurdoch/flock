@@ -60,7 +60,9 @@ stopWorrying:
         Get covered only for the hours you fly. Policies can be purchased on the
         spot, or planned up to 10 days in advance.
       title: Flexible policies
-    - text: 'Flock’s pricing is risk-dependent: the safer you fly, the less you pay.'
+    - text: >-
+        Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
+        Simple!
       title: Fairer pricing
     - text: >-
         Get a real-time quote in 30 seconds. You can even see when and where
@@ -69,27 +71,24 @@ stopWorrying:
   title: It's time for a new kind of insurance.
 kindOfPilot:
   description: >-
-    Chances are we can provide coverage tailored specifically to you. Select
-    below to learn more.
+    Chances are we can provide insurance tailored specifically to you. See below
+    to learn more.
   products:
     - icon: images/uploads/drone-camera.svg
       text: >-
         Flock’s EC785/2004 compliant policies offer flexible hull and liability
         insurance from just £5 a day.
       title: Commercial pilot
-      link: '/products/commercial'
     - icon: images/uploads/drone.svg
       text: >-
-        From flight assessment insurance, to providing proof-of-insurance in
+        From flight assessment insurance, to providing proof-of-insurance for 
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
-      link: '/products/trainee'
     - icon: images/uploads/drone-diamond.svg
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
         from just £3 with the touch of a button.
       title: Hobbyist pilot
-      link: '/products/hobbyist'
   title: What kind of drone pilot are you?
 risk:
   description: >-
@@ -126,6 +125,9 @@ risk:
         - Special use airspace
       title: Hyperlocal weather
   title: How we calculate risk
+whatFlockCovers:
+  description: jijo
+  title: xxx
 featured:
   image: images/uploads/featured-list.png
   title: We’ve been featured
