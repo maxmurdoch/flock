@@ -57,22 +57,20 @@ stopWorrying:
   description: Control your insurance from the palm of your hand with the Flock Cover app.
   reasons:
     - text: >-
-        Get covered only for the hours you fly. Policies can be purchased on the
-        spot, or planned up to 10 days in advance.
-      title: Flexible policies
-    - text: >-
-        Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
-        Simple!
+        Pay for insurance only when you fly. Flock’s pricing is risk-dependent:
+        the safer you fly, the less you pay. Simple!
       title: Fairer pricing
     - text: >-
-        Get a real-time quote in 30 seconds. You can even see when and where
-        it’s cheapest to insure your flight.
+        Customise your insurance from the ground up. Policies can be purchased
+        on the spot, or scheduled up to 10 days in advance.
+      title: 'Flexible policies '
+    - text: Get a real-time quote in 30 seconds.
       title: Total transparency
   title: It's time for a new kind of insurance.
 kindOfPilot:
   description: >-
-    Chances are we can provide insurance tailored specifically to you. See below
-    to learn more.
+    Chances are we can provide insurance tailored specifically to you. Click
+    below to learn more.
   products:
     - icon: images/uploads/drone-camera.svg
       text: >-
