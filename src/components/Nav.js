@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
 import R from 'ramda'
-import {Sticky} from 'react-sticky'
+import React, {Component} from 'react'
 import Link from 'gatsby-link'
+import {Sticky} from 'react-sticky'
 import {css} from 'react-emotion'
 
 import SiteContainer from './SiteContainer'
@@ -17,6 +17,7 @@ class Nav extends Component {
     textColor: () => colors.black,
     arrowImage: () => downArrow
   }
+
   state = {
     productsIsOpen: false
   }
@@ -46,7 +47,7 @@ class Nav extends Component {
             color: textColor({isSticky: activateStickyStyle}),
             textDecoration: 'none',
             margin: `0 ${R.nth(1, space)}px 0`,
-            padding: `${R.nth(1, space)}px ${R.nth(2, space)}px`
+            padding: `${R.nth(1, space)}px ${R.nth(1, space)}px`
           })
           const downloadButtonClass = css({
             marginLeft: R.nth(1, space),

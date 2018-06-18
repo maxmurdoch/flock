@@ -30,8 +30,8 @@ class Testimonial extends Component {
             className={styles.background}
             pt={[3, 5]}
             pb={[2, 3]}
-            pl={[2, 0]}
-            pr={[2, 0]}
+            pl={[0, 0]}
+            pr={[0, 0]}
           >
             <Flex flexWrap="wrap" justifyContent="center" zIndex={2}>
               <Box width={['100%', '75%']}>

@@ -17,7 +17,6 @@ import riskNumber from '../../static/images/uploads/risk-number.svg'
 
 import PricingHero from '../components/PricingHero'
 import {colors, breakpoints} from '../constants/theme'
-import SiteContainer from '../components/SiteContainer'
 import Calculator from '../components/Calculator'
 
 const PricingTemplate = ({data}) => {
@@ -49,7 +48,10 @@ const PricingTemplate = ({data}) => {
         />
         <Box
           className={css({
-            transform: 'translateY(-50%)'
+            transform: 'translateY(-20%)',
+            [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+              transform: 'translateY(-50%)'
+            }
           })}
         >
           <Calculator />
@@ -61,9 +63,7 @@ const PricingTemplate = ({data}) => {
         image={riskNumber}
       />
       <Flex mt={[2, 5]} mb={[2, 5]} justifyContent="center">
-        <SiteContainer>
-          <Testimonial testimonials={testimonials} />
-        </SiteContainer>
+        <Testimonial testimonials={testimonials} />
       </Flex>
       <Download />
       <BigSectionLine />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'emotion'
+import {css} from 'emotion'
 import R from 'ramda'
 import Link from 'gatsby-link'
 
@@ -9,65 +9,69 @@ import BodyText from './BodyText'
 import Flex from './Flex'
 import Box from './Box'
 import SiteContainer from './SiteContainer'
-import { colors, space } from '../constants/theme'
+import {colors, space} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
-const Footer = ({}) => {
+const Footer = ({containerClassName}) => {
   const firstFooterLinks = [
     {
       to: '/',
-      text: 'Home',
+      text: 'Home'
     },
     {
       to: '/products/commercial',
-      text: 'Commercial pilots',
+      text: 'Commercial pilots'
     },
     {
       to: '/products/trainee',
-      text: 'Trainee pilots',
+      text: 'Trainee pilots'
     },
     {
       to: '/products/hobbyist',
-      text: 'Hobbyist pilots',
+      text: 'Hobbyist pilots'
     },
     {
       to: 'https://help.flockcover.com',
-      text: 'Support',
+      text: 'Support'
     },
     {
       to: 'https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim',
-      text: 'Make a claim',
-    },
+      text: 'Make a claim'
+    }
   ]
   const secondFooterLinks = [
     {
       to: '/about',
-      text: 'About us',
+      text: 'About us'
     },
     {
       to: 'https://blog.flockcover.com',
-      text: 'Blog',
+      text: 'Blog'
     },
     {
       to: 'https://flockcover.workable.com',
-      text: 'Careers',
+      text: 'Careers'
     },
     {
       to: 'https://help.flockcover.com',
-      text: 'FAQ',
+      text: 'FAQ'
     },
     {
       to: '/media-pack',
-      text: 'Media pack',
-    },
+      text: 'Media pack'
+    }
   ]
   return (
-    <Flex background={colors.backgrounds.dark} justifyContent="center">
+    <Flex
+      className={containerClassName}
+      background={colors.backgrounds.dark}
+      justifyContent="center"
+    >
       <SiteContainer>
         <Flex flexWrap={true}>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
-            {mapIndex(({ to, text }, index) => {
+            {mapIndex(({to, text}, index) => {
               return (
                 <Link className={styles.link} to={to} key={index}>
                   {text}
@@ -76,7 +80,7 @@ const Footer = ({}) => {
             }, firstFooterLinks)}
           </Flex>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
-            {mapIndex(({ to, text }, index) => {
+            {mapIndex(({to, text}, index) => {
               return (
                 <Link className={styles.link} to={to} key={index}>
                   {text}
@@ -92,7 +96,7 @@ const Footer = ({}) => {
               to="mailto:hello@flockcover.com"
               className={css({
                 color: 'white',
-                paddingBottom: R.nth(1, space),
+                paddingBottom: R.nth(1, space)
               })}
             >
               hello@flockcover.com
@@ -101,7 +105,7 @@ const Footer = ({}) => {
               to="tel:+44 (0) 1234 480260"
               className={css({
                 color: 'white',
-                paddingBottom: R.nth(1, space),
+                paddingBottom: R.nth(1, space)
               })}
             >
               +44 (0) 1234 480260
@@ -110,7 +114,7 @@ const Footer = ({}) => {
         </Flex>
         <Flex borderTop="1px solid white" pt={3} mt={3} pb={3} flexWrap={true}>
           <Box width={['100%', '33.33%']} mb={[2, 0]}>
-            <img src={logo} className={css({ marginBottom: 0 })} />
+            <img src={logo} className={css({marginBottom: 0})} />
           </Box>
           <Box width={['100%', '33.33%']} mb={[2, 0]}>
             <SmallText fontWeight="700" color="white">
@@ -137,6 +141,6 @@ export default Footer
 const styles = {
   link: css({
     color: R.prop('yellow', colors),
-    paddingBottom: R.nth(2, space),
-  }),
+    paddingBottom: R.nth(2, space)
+  })
 }

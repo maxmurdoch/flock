@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import styled from 'react-emotion'
-import {color, space, textAlign, style} from 'styled-system'
+import {color, space, textAlign, style, fontWeight} from 'styled-system'
 import {breakpoints} from '../constants/theme'
 
 const textShadow = style({
@@ -23,6 +23,7 @@ const StyledBodyText = styled.p`
     line-height: 34px;
   }
 
+  ${fontWeight}
   ${textShadow}
   ${space}
   ${textAlign}

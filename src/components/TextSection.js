@@ -1,6 +1,6 @@
 import React from 'react'
 import Markdown from 'react-remarkable'
-import { css } from 'react-emotion'
+import {css} from 'react-emotion'
 
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
@@ -12,7 +12,7 @@ import SmallText from './SmallText'
 import yellowArrowCorner from '../images/yellow-arrow-corner.svg'
 import greyArrow from '../images/grey-arrow.svg'
 
-const TextSection = ({ title, bigText, smallText }) => {
+const TextSection = ({title, bigText, smallText}) => {
   return (
     <Flex
       pt={[2, 5]}
@@ -21,7 +21,7 @@ const TextSection = ({ title, bigText, smallText }) => {
       className={css({
         background: `url(${yellowArrowCorner}), url(${greyArrow})`,
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'bottom left',
+        backgroundPosition: 'bottom left'
       })}
     >
       <SiteContainer>
@@ -32,7 +32,7 @@ const TextSection = ({ title, bigText, smallText }) => {
             </Markdown>
           </Box>
           <Flex flexWrap="wrap" justifyContent="space-between">
-            <Box width={['100%', '100%', `${100 / 12 * 7}%`]} mb={3}>
+            <Box width={['100%', '100%', `${(100 / 12) * 7}%`]} mb={3}>
               <BodyText>{bigText}</BodyText>
             </Box>
             <Box width={['100%', '100%', '33.33%']}>

@@ -1,7 +1,6 @@
 import React from 'react'
 import R from 'ramda'
 import {css} from 'react-emotion'
-import Link from 'gatsby-link'
 import {Collapse} from 'react-collapse'
 
 import SiteContainer from './SiteContainer'

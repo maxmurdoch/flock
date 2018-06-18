@@ -1,8 +1,8 @@
 import React from 'react'
 import R from 'ramda'
 import styled from 'react-emotion'
-import { color, space } from 'styled-system'
-import { breakpoints } from '../constants/theme'
+import {color, space} from 'styled-system'
+import {breakpoints} from '../constants/theme'
 
 const StyledH3 = styled.h3`
   font-family: 'ITC', sans-serif;
@@ -13,13 +13,13 @@ const StyledH3 = styled.h3`
   @media (min-width: ${R.nth(0, breakpoints)}) {
     font-size: 17px;
     text-transform: uppercase;
-    line-height: 34px; 
+    line-height: 34px;
   }
 
   ${color} ${space};
 `
 
-const H3 = ({ children, ...props }) => {
+const H3 = ({children, ...props}) => {
   return (
     <StyledH3 mb={1} {...props}>
       {children}

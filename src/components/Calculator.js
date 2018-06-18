@@ -118,15 +118,28 @@ class Calculator extends Component {
     return (
       <Flex justifyContent="center" className={styles.outerContainer}>
         <SiteContainer>
-          <Flex pl={3} pr={3} pb={3} className={styles.container}>
-            <Flex width="66.66%" flexWrap="wrap">
+          <Flex
+            pt={[2, 0]}
+            pl={[2, 3]}
+            pr={[2, 3]}
+            pb={[2, 3]}
+            className={styles.container}
+            flexDirection={['column', 'row']}
+          >
+            <Flex width={['100%', '66.66%']} flexWrap="wrap">
               {mapIndex((question, index) => {
                 return (
-                  <Box width="50%" mt={3} pr={2} key={index}>
+                  <Box
+                    width={['100%', '50%']}
+                    mt={[1, 3]}
+                    pr={[0, 2]}
+                    key={index}
+                  >
                     <label htmlFor={question.key}>
                       <SmallText mb={1}>{question.label}</SmallText>
                     </label>
                     <Select
+                      clearable={false}
                       id={question.key}
                       value={R.nth(index, this.state.values)}
                       onChange={value => {
@@ -138,13 +151,14 @@ class Calculator extends Component {
                 )
               }, data.questions)}
             </Flex>
-            <Flex width="33.33%">
+            <Flex width={['100%', '33.33%']}>
               <Flex
                 flex="1 1 auto"
                 background={colors.yellow}
+                p={3}
                 alignItems="center"
                 justifyContent="center"
-                mt={3}
+                mt={[2, 3]}
                 flexDirection="column"
               >
                 <SmallText textAlign="center">Prices from</SmallText>

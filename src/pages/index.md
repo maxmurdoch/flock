@@ -126,9 +126,6 @@ risk:
         - Special use airspace
       title: Hyperlocal weather
   title: How we calculate risk
-whatFlockCovers:
-  description: jijo
-  title: xxx
 featured:
   image: images/uploads/featured-list.png
   title: We’ve been featured

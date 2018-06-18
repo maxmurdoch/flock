@@ -30,11 +30,10 @@ doINeedInsurance:
     I fly my drone for fun,
 
     do I need insurance?
-  bigText: >-
+  bigText: |
     Hobbyist drone pilots are not required by law to fly with insurance. However, a flying metal robot with spinning propellers has the potential to cause some pretty hefty damage; and paying a little now may save you a lot in the long run.
-  smallText: >-
+  smallText: |
     Flock’s public liability insurance provides cover for the worst case scenarios; such as your drone accidentally hitting someone, or damaging another’s property. It also provides legal compensation if a noise complaint or Invasion of Priavy claim is made against you.
-    
 
     With the Flock Cover app, you can get insured on the spot for as little as £3. It’s as quick and easy as ordering an Uber, and gives you total peace of mind the second you take off.
 

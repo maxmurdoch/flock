@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
 import {css} from 'emotion'
@@ -46,19 +47,21 @@ const Hero = ({
             <BodyText color={textColor} mb={[2, 3]}>
               {description}
             </BodyText>
-            <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-              {matches =>
-                matches ? (
-                  <PrimaryButton to={button.to}>
-                    <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                  </PrimaryButton>
-                ) : (
-                  <SecondaryButton to={button.to}>
-                    <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                  </SecondaryButton>
-                )
-              }
-            </Media>
+            {button ? (
+              <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+                {matches =>
+                  matches ? (
+                    <PrimaryButton to={button.to}>
+                      <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                    </PrimaryButton>
+                  ) : (
+                    <SecondaryButton to={button.to}>
+                      <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                    </SecondaryButton>
+                  )
+                }
+              </Media>
+            ) : null}
           </Box>
         </SiteContainer>
       </Flex>
@@ -114,3 +117,11 @@ const Hero = ({
 }
 
 export default Hero
+
+Hero.propTypes = {
+  textColor: PropTypes.string,
+  headerClassName: PropTypes.string,
+  header: PropTypes.string,
+  description: PropTypes.string,
+  button: PropTypes.object
+}

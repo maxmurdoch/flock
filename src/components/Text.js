@@ -10,10 +10,19 @@ import {
   lineHeight as styledLineHeight,
   space,
   textAlign,
-  style,
+  style
 } from 'styled-system'
 
-const Text = ({ tag = 'p', fontWeight = 300, children, ...props }) => {
+const textShadow = style({
+  prop: 'textShadow',
+  cssProperty: 'textShadow',
+  key: 'shadows',
+  numberToPx: false,
+  getter: R.identity,
+  alias: 'sh'
+})
+
+const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
   const Component = styled(tag)`
   margin: 0;
   line-height: 1.5;
@@ -23,6 +32,7 @@ const Text = ({ tag = 'p', fontWeight = 300, children, ...props }) => {
   ${styledLineHeight}
   ${space}
   ${textAlign}
+  ${textShadow}
 `
   return (
     <Component fontWeight={fontWeight} {...props}>
@@ -37,9 +47,9 @@ Text.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.array,
-    PropTypes.element,
+    PropTypes.element
   ]),
-  fontSize: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  fontSize: PropTypes.oneOfType([PropTypes.array, PropTypes.string])
 }
 
 export default Text

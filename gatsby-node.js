@@ -7,28 +7,26 @@
 // You can delete this file if you're not using it
 
 const R = require('ramda')
-const { kebabCase } = require('voca')
 const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
+const {createFilePath} = require('gatsby-source-filesystem')
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
+  const {createNodeField} = boundActionCreators
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    console.log('slug is', value)
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = createFilePath({node, getNode})
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
-      value,
+      value
     })
   }
 }
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({boundActionCreators, graphql}) => {
+  const {createPage} = boundActionCreators
 
-  return new Promise((resolve, reject) => {
+  return new Promise(resolve => {
     return graphql(`
       {
         allMarkdownRemark(limit: 1000) {
@@ -52,13 +50,21 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         return Promise.reject(result.errors)
       }
 
-      const markdownPages = result.data.allMarkdownRemark.edges
+      const isSettingsPage = R.pathEq(
+        ['node', 'frontmatter', 'title'],
+        'settings'
+      )
 
-      markdownPages.forEach(({ node }) => {
+      const markdownPages = R.reject(
+        isSettingsPage,
+        result.data.allMarkdownRemark.edges
+      )
+
+      markdownPages.forEach(({node}) => {
         const {
-          fields: { slug },
+          fields: {slug},
           id,
-          frontmatter: { title },
+          frontmatter: {title}
         } = node
         createPage({
           path: node.fields.slug,
@@ -69,8 +75,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           context: {
             title,
             id,
-            slug,
-          },
+            slug
+          }
         })
       })
       resolve()
