@@ -1,17 +1,16 @@
 ---
-title: Trainee
+title: Hobbyist
 hero:
   button:
     text: Download
     to: /download
-  description: >-
-    Pay for drone insurance only when you need it. Get a customised policy for
-    your flight.
-  header: Pay-as-you-fly drone insurance for professionals
+  description: |-
+    * On-demand insurance from £3
+    * Policies from 1-8 hours 
+    * Public Liability insurance up to £250 K
+  header: 'Pay-as-you-fly drone insurance for hobbyists '
 why:
-  description: >-
-    It’s time for a new kind of insurance. Control your cover from the get-go
-    with the Flock Cover app.
+  description: ''
   list:
     - text: >-
         Policies range from 1-8 hours, and can be purchased on the spot, or
@@ -37,7 +36,7 @@ why:
         Every pilot gets access to customer support through the app. If
         something goes wrong, you can make a claim with the tap of a button
       title: Instant support
-  title: Why do professionals use Flock?
+  title: Why do hobbyists use Flock?
 showCoverNote: false
 doINeedInsurance:
   bigText: >-
