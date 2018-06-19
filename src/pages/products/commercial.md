@@ -1,6 +1,5 @@
 ---
 title: Commercial
-templateKey: product
 siteMetadata:
   description: drone insurance
   keywords:
@@ -41,12 +40,12 @@ why:
         onto your clients.
       title: Bill as an expense
     - text: >-
-        Policies can be purchased on the spot, or scheduled up to 10 days in
-        advance.
-      title: Choose when and where
+        Plan a flight up to 10 days in advance. Change of plan? No problem,
+        simply cancel with one tap.
+      title: 'Flexible Policies '
     - text: >-
-        Every pilot gets access to customer support through the app. If
-        something goes wrong, you can make a claim with the tap of a button
+        Chat to our customer support team through the app, or give us a call.
+        Whichever you prefer.
       title: Instant support
   title: Why do professionals use Flock Cover?
 showCoverNote: true
@@ -54,7 +53,7 @@ doINeedInsurance:
   title: ''
 how:
   description: >-
-    Insuring your drone flight has never been simpler. All it takes is a matter
+    Insuring your drone flight has never been easier. All it takes is a matter
     of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
@@ -65,12 +64,12 @@ how:
     - image: ../../images/uploads/phone--customise-policy@2x.png
       text: >-
         Select your cover duration and liability limit. You can even set the
-        price you want your hull and equipment to be insured for.
+        amount you want your hull and equipment to be insured for.
       title: 2. Customise your policy
     - image: ../../images/uploads/phone--get-flying@2x.png
       text: >-
         Pay for the policy and you're good to go! All the important
-        documentation is instantly emailed to you.
+        documentation is sent straight to your email inbox.
       title: 3. Get flying
   title: How commercial pilots use Flock Cover
 risk:
@@ -88,7 +87,7 @@ risk:
       list:
         - Building density
         - Parks
-        - xxxx
+        - Power plants
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       list:
@@ -121,7 +120,7 @@ otherProducts:
     below to learn more.
   products:
     - icon: /images/uploads/drone.svg
-      link: '/products/training '
+      link: '/products/trainee  '
       text: >-
         From flight assessment insurance, to providing proof-of-insurance in
         your PfCO application, Flock’s got you covered.
