@@ -5,7 +5,7 @@ hero:
   button:
     text: Download
     to: /download
-  description: 'Drone insurance by the hour, only when you need it.'
+  description: 'Smarter drone insurance by the hour, only when you need it.'
   header: 'Pay-as-you-fly drone insurance '
 firstTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
@@ -33,8 +33,8 @@ secondTestimonial:
       responsible adult. Flock are the best drone insurers. I use Flock.
 howFlockWorks:
   description: >-
-    Insuring your drone or flight has never been simpler. All it takes is a
-    matter of taps.
+    Insuring your drone flight has never been simpler. With the Flock Cover app
+    it's just a matter of tap, tap, take off.
   listOfHow:
     - image: images/uploads/phone--flight-details@2x.png
       text: >-
@@ -52,7 +52,7 @@ howFlockWorks:
         Pay for the policy in a couple of taps. You’re covered! We’ll also send
         you all the important documentation in an email.
       title: 3. Get flying
-  title: How Flock works
+  title: How Flock Cover works
 stopWorrying:
   description: Control your insurance from the palm of your hand with the Flock Cover app.
   reasons:
