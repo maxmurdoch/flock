@@ -30,8 +30,8 @@ doINeedInsurance:
   bigText: >-
     Hobbyist drone pilots are not required by law to fly with insurance.
     However, a flying metal robot with spinning propellers has the potential to
-    cause some pretty hefty damage; and paying a little now may save you a lot
-    in the long run.
+    cause some pretty hefty damage. So paying a little now may save you a lot in
+    the long run.
 
 
     Flock’s public liability insurance provides cover for the worst case
@@ -52,8 +52,8 @@ how:
       title: 1. Enter your flight details
     - image: ../../images/uploads/phone--customise-policy@2x.png
       text: >-
-        Select how long you want to be insured for. From 1-8 hours, get covered
-        only for the hours you fly.
+        Select how long you want to be insured for. With options from 1-8 hours,
+        get covered only for the hours you fly.
       title: 2. Customise your policy
     - image: ../../images/uploads/phone--get-flying@2x.png
       text: >-
