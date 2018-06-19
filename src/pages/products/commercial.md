@@ -50,7 +50,7 @@ why:
   title: Why do professionals use Flock Cover?
 showCoverNote: true
 doINeedInsurance:
-  title: '\[block not needed]'
+  title: ''
 how:
   description: >-
     Insuring your drone flight has never been simpler. All it takes is a matter
