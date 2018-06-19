@@ -1,4 +1,5 @@
 import React from 'react'
+import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
@@ -45,7 +46,7 @@ const Hero = ({
               {header}
             </H1>
             <BodyText color={textColor} mb={[2, 3]}>
-              {description}
+              <Markdown>{description}</Markdown>
             </BodyText>
             {button ? (
               <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>

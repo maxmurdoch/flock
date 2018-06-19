@@ -10,6 +10,7 @@ hero:
     * Policies from 1-8 hours 
     * Public Liability insurance up to £250 K
   header: 'Pay-as-you-fly drone insurance for hobbyists '
+  backgroundImage: '../../images/uploads/hobbyist-background.png'
 why:
   description: ''
   list:

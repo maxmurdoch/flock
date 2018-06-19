@@ -233,6 +233,7 @@ collections:
               - {name: 'to', label: 'To', widget: 'string'}
           - {name: 'description', label: 'Description', widget: 'markdown'}
           - {name: 'header', label: 'Header', widget: 'string'}
+          - {name: 'backgroundImage', label: 'Background image', widget: 'image'}
       - label: 'Why'
         name: 'why'
         widget: 'object'

@@ -9,6 +9,7 @@ hero:
     Pay for drone insurance only when you need it. Get a customised policy for
     your flight.
   header: Pay-as-you-fly drone insurance for professionals
+  backgroundImage: '../../images/uploads/trainee-pilots.png'
 why:
   description: >-
     It’s time for a new kind of insurance. Control your cover from the get-go
