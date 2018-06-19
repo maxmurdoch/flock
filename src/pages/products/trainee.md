@@ -1,5 +1,6 @@
 ---
 title: Trainee
+templateKey: product
 hero:
   button:
     text: Download

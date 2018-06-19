@@ -1,5 +1,6 @@
 ---
 title: Hobbyist
+templateKey: product
 hero:
   button:
     text: Download
