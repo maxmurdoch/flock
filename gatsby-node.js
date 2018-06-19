@@ -55,6 +55,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         'settings'
       )
 
+      // remove settings page because it's just a place to store global info in the CMS
       const markdownPages = R.reject(
         isSettingsPage,
         result.data.allMarkdownRemark.edges
@@ -66,12 +67,12 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           id,
           frontmatter: {title}
         } = node
+
         createPage({
           path: node.fields.slug,
           component: path.resolve(
             `src/templates/${String(node.frontmatter.templateKey)}.js`
           ),
-          // additional data can be passed via context
           context: {
             title,
             id,

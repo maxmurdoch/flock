@@ -16,6 +16,12 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Template key", name: "templateKey", widget: "string"}
+          - name: "siteMetadata"
+            label: "Site metadata"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
           - label: "Hero"
             name: "hero"
             widget: "object"

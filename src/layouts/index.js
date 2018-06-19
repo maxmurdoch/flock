@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { injectGlobal } from 'emotion'
-import { StickyContainer } from 'react-sticky'
+import {injectGlobal} from 'emotion'
+import {StickyContainer} from 'react-sticky'
 import Helmet from 'react-helmet'
-import { ThemeProvider } from 'emotion-theming'
+import {ThemeProvider} from 'emotion-theming'
 
 import theme from '../constants/theme'
 import './index.css'
@@ -38,35 +38,47 @@ h1, h2, h3, h4, h5, h6 {
   src: url(${chivo}) format('woff2');
 }
 `
-const Layout = ({ children, data }) => (
-  <ThemeProvider theme={theme}>
-    <StickyContainer>
-      <Helmet
-        title={data.site.siteMetadata.title}
-        meta={[
-          {
-            name: 'description',
-            content: data.site.siteMetadata.description,
-          },
-          { name: 'keywords', content: data.site.siteMetadata.keywords },
-        ]}
-      />
-      <div>{children()}</div>
-    </StickyContainer>
-  </ThemeProvider>
-)
+const Layout = ({
+  children,
+  data: {
+    markdownRemark: {frontmatter}
+  }
+}) => {
+  return (
+    <ThemeProvider theme={theme}>
+      <StickyContainer>
+        <Helmet
+          title={frontmatter.siteMetadata.title}
+          meta={[
+            {
+              name: 'description',
+              content: frontmatter.siteMetadata.description
+            },
+            {name: 'keywords', content: frontmatter.siteMetadata.keywords}
+          ]}
+        />
+        <div>{children()}</div>
+      </StickyContainer>
+    </ThemeProvider>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
+  data: PropTypes.object
 }
 
 export default Layout
 
 export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
+  query SettingsQuery {
+    markdownRemark(frontmatter: {title: {eq: "settings"}}) {
+      frontmatter {
+        siteMetadata {
+          title
+          description
+          keywords
+        }
       }
     }
   }
