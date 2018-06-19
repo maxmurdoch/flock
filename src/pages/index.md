@@ -74,16 +74,19 @@ kindOfPilot:
         Flock’s EC785/2004 compliant policies offer flexible hull and liability
         insurance from just £5 a day.
       title: Commercial pilot
+      link: /products/commercial
     - icon: images/uploads/drone.svg
       text: >-
         From flight assessment insurance, to providing proof-of-insurance for
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
+      link: /products/trainee
     - icon: images/uploads/drone-diamond.svg
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
         from just £3 with the touch of a button.
       title: Hobbyist pilot
+      link: /products/hobbyist
   title: What kind of drone pilot are you?
 risk:
   description: >-
