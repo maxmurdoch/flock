@@ -13,29 +13,17 @@ why:
   description: ''
   list:
     - text: >-
-        Policies range from 1-8 hours, and can be purchased on the spot, or
-        scheduled up to 10 days in advance.
-      title: Flexible policies
+        Get covered on the spot in under 30 seconds. Like to plan ahead? You can
+        schedule your insurance up to 10 days in advance.
+      title: 'Simple Insurance '
     - text: >-
-        Pay for insurance only when you fly, with no up-front costs. Flock’s
-        pricing is risk-dependent, so the safer the flight, the less you pay.
+        Flock's pricing is risk-dependent, so the safer you fly, the less you
+        pay. Insurance for hobbyist pilots starts from just £3 a day.
       title: Fairer pricing
     - text: >-
-        Fly with peace of mind knowing that Flock’s policies are EC785/2004
-        compliant and approved by the CAA.
-      title: Fully compliant
-    - text: >-
-        Since you can pinpoint the cost of insurance for each job, you can
-        easily pass the costs onto your clients.
-      title: Bill as an expense
-    - text: >-
-        We know two jobs are never the same. Choose your liability limit on a
-        per-flight basis, with options ranging from £1-10M.
-      title: Choose your liability limit
-    - text: >-
-        Every pilot gets access to customer support through the app. If
-        something goes wrong, you can make a claim with the tap of a button
-      title: Instant support
+        Have a question? Chat to us in the app (we have a 2 min average response
+        time) or give us a call. Whichever you prefer.
+      title: Quick support
   title: Why do hobbyists use Flock?
 showCoverNote: false
 doINeedInsurance:
@@ -44,16 +32,11 @@ doINeedInsurance:
     However, a flying metal robot with spinning propellers has the potential to
     cause some pretty hefty damage; and paying a little now may save you a lot
     in the long run.
-  smallText: >-
+
+
     Flock’s public liability insurance provides cover for the worst case
-    scenarios; such as your drone accidentally hitting someone, or damaging
-    another’s property. It also provides legal compensation if a noise complaint
-    or Invasion of Priavy claim is made against you.
-
-
-    With the Flock Cover app, you can get insured on the spot for as little as
-    £3. It’s as quick and easy as ordering an Uber, and gives you total peace of
-    mind the second you take off.
+    scenarios; giving you peace of mind the second you take off.
+  smallText: ''
   title: |-
     I fly my drone for fun,
     do I need insurance?
@@ -69,28 +52,26 @@ how:
       title: 1. Enter your flight details
     - image: ../../images/uploads/phone--customise-policy@2x.png
       text: >-
-        Select your cover duration and your public liability limit to suit the
-        exact needs of your job. We’ll update your quote so you can see the
-        difference.
+        Select how long you want to be insured for. From 1-8 hours, get covered
+        only for the hours you fly.
       title: 2. Customise your policy
     - image: ../../images/uploads/phone--get-flying@2x.png
       text: >-
-        Pay for the policy in a couple of taps. You’re covered! We’ll also send
-        you all the important documentation in an email.
+        Pay for the policy in a couple of taps. You’re covered! We’ll send you
+        all the important documentation in an email.
       title: 3. Get flying
   title: How hobbyists use Flock
 risk:
   description: >-
-    Get much more than an insurance policy. We’ll help you fly safer by
-    providing a risk report for your flight. Simply enter your flight’s details
-    and instantly see surrounding hazards.
+    Know your risks before you fly. Simply enter your flight's details and
+    receive a real-time risk report.
   list:
     - icon: ../../images/uploads/icons-house.svg
       list:
-        - Airports
-        - Heliports
-        - Controlled airspace
-        - Special use airspace
+        - Schools
+        - Hospitals
+        - Churches
+        - Prisons
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
       list:
@@ -108,12 +89,12 @@ risk:
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       list:
-        - Airports
-        - Heliports
-        - Controlled airspace
-        - Special use airspace
+        - Windspeed
+        - Probability of rainfall
+        - Visibility
+        - Temperature
       title: Hyperlocal weather
-  title: How we calculate risk
+  title: Insurance and then some..
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/air-shot-houses.jpeg
