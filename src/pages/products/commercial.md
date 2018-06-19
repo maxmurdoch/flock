@@ -1,75 +1,107 @@
 ---
 title: Commercial
-templateKey: product
+siteMetadata:
+  description: drone insurance
+  keywords:
+    - drones
+    - insurance
+    - on-demand
+    - Flock
+    - commercial drone insurance
+  title: 'Commercial '
 hero:
   button:
     text: Download
     to: /download
-  description: 'Pay for drone insurance only when you need it. Get a customised policy for your flight.'
-  header: Pay-as-you-fly drone insurance for professionals
-  backgroundImage: '../../images/uploads/commercial-background.png'
+  description: |-
+    * On-demand insurance from £5 
+    * Cover from 1-8 hours 
+    * EC785/2004 compliant insurance 
+    * Customisable Public Liability Limits (from £1-10M)
+    * Flexible Hull and equipment insurance (up to £25K)
+  header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  title: 'Why do professionals use Flock?'
-  description: 'It’s time for a new kind of insurance. Control your cover from the get-go with the Flock Cover app.'
+  description: ''
   list:
-    - title: 'Flexible policies'
-      text: 'Policies range from 1-8 hours, and can be purchased on the spot, or scheduled up to 10 days in advance.'
-    - title: 'Fairer pricing'
-      text: 'Pay for insurance only when you fly, with no up-front costs. Flock’s pricing is risk-dependent, so the safer the flight, the less you pay.'
-    - title: 'Fully compliant'
-      text: 'Fly with peace of mind knowing that Flock’s policies are EC785/2004 compliant and approved by the CAA.'
-    - title: 'Bill as an expense'
-      text: 'Since you can pinpoint the cost of insurance for each job, you can easily pass the costs onto your clients.'
-    - title: 'Choose your liability limit'
-      text: 'We know two jobs are never the same. Choose your liability limit on a per-flight basis, with options ranging from £1-10M.'
-    - title: 'Instant support'
-      text: 'Every pilot gets access to customer support through the app. If something goes wrong, you can make a claim with the tap of a button'
+    - text: >-
+        We know two jobs are never the same.  Customise your insurance on a
+        flight-by-flight basis.
+      title: 'Bespoke cover '
+    - text: >-
+        Flock’s pricing is risk-dependent, so the safer the flight, the less you
+        pay. Simple!
+      title: Fairer pricing
+    - text: >-
+        Flock’s policies are EC785/2004 compliant and approved by the Civil
+        Aviation Authority (CAA).
+      title: Fully compliant
+    - text: >-
+        Pinpoint the cost of insurance for each job, and easily pass the costs
+        onto your clients.
+      title: Bill as an expense
+    - text: >-
+        Policies can be purchased on the spot, or scheduled up to 10 days in
+        advance.
+      title: Choose when and where
+    - text: >-
+        Every pilot gets access to customer support through the app. If
+        something goes wrong, you can make a claim with the tap of a button
+      title: Instant support
+  title: Why do professionals use Flock Cover?
 showCoverNote: true
+doINeedInsurance:
+  title: ''
 how:
-  title: 'How hobbyists use Flock'
-  description: 'Insuring your drone or flight has never been simpler. All it takes is a matter of taps.'
+  description: >-
+    Insuring your drone flight has never been simpler. All it takes is a matter
+    of taps.
   list:
-    - title: '1. Enter your flight details'
-      text: 'Choose your flight area, and the date and time you want to fly. Receive an instant quote at the bottom of your screen.'
-      image: '../../images/uploads/phone--flight-details@2x.png'
-    - title: '2. Customise your policy'
-      text: 'Select your cover duration and your public liability limit to suit the exact needs of your job. We’ll update your quote so you can see the difference.'
-      image: '../../images/uploads/phone--customise-policy@2x.png'
-    - title: '3. Get flying'
-      text: 'Pay for the policy in a couple of taps. You’re covered! We’ll also send you all the important documentation in an email.'
-      image: '../../images/uploads/phone--get-flying@2x.png'
+    - image: ../../images/uploads/phone--flight-details@2x.png
+      text: >-
+        Choose your flight area, and the date and time you want to fly. Receive
+        an instant quote at the bottom of your screen.
+      title: 1. Enter your flight details
+    - image: ../../images/uploads/phone--customise-policy@2x.png
+      text: >-
+        Select your cover duration and liability limit. You can even set the
+        price you want your hull and equipment to be insured for.
+      title: 2. Customise your policy
+    - image: ../../images/uploads/phone--get-flying@2x.png
+      text: >-
+        Pay for the policy and you're good to go! All the important
+        documentation is instantly emailed to you.
+      title: 3. Get flying
+  title: How commercial pilots use Flock Cover
 risk:
-  title: 'How we calculate risk'
-  description: 'Get much more than an insurance policy. We’ll help you fly safer by providing a risk report for your flight. Simply enter your flight’s details and instantly see surrounding hazards.'
+  description: >-
+    Know your risks before you fly. Simply enter your flight's details and
+    receive a real-time risk report.
   list:
-    - title: 'Inhabited spaces'
-      icon: '../../images/uploads/icons-house.svg'
+    - icon: ../../images/uploads/icons-house.svg
       list:
-        - 'Airports'
-        - 'Heliports'
-        - 'Controlled airspace'
-        - 'Special use airspace'
-    - title: 'Ground hazards'
-      icon: '../../images/uploads/icons-circle.svg'
+        - Schools
+        - Hospitals
+        - Prisons
+      title: Inhabited spaces
+    - icon: ../../images/uploads/icons-circle.svg
       list:
-        - 'Airports'
-        - 'Heliports'
-        - 'Controlled airspace'
-        - 'Special use airspace'
-    - title: 'Restricted airspace'
-      icon: '../../images/uploads/icons-plane.svg'
+        - Building density
+        - Parks
+        - xxxx
+      title: Ground hazards
+    - icon: ../../images/uploads/icons-plane.svg
       list:
-        - 'Airports'
-        - 'Heliports'
-        - 'Controlled airspace'
-        - 'Special use airspace'
-    - title: 'Hyperlocal weather'
-      icon: '../../images/uploads/icons-cloud.svg'
+        - Airports
+        - Heliports
+        - Restricted airspace
+      title: Restricted airspace
+    - icon: ../../images/uploads/icons-cloud.svg
       list:
-        - 'Airports'
-        - 'Heliports'
-        - 'Controlled airspace'
-        - 'Special use airspace'
+        - Windspeed
+        - Probability of rainfall
+        - Temperature
+      title: Hyperlocal weather
+  title: 'Insurance and then some.. '
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/air-shot-houses.jpeg
@@ -83,15 +115,22 @@ testimonial:
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
 otherProducts:
-  title: 'What kind of pilot are you?'
-  description: 'Chances are we can provide coverage tailored specifically to you. Select below to learn more.'
+  description: >-
+    Chances are we can provide coverage tailored specifically to you. Select
+    below to learn more.
   products:
-    - title: 'Commercial pilot'
-      icon:  '../../images/uploads/drone-camera.svg'
-      text: 'Flock’s EC785/2004 compliant policies offer flexible hull and liability insurance from just £5 a day.'
-      link: '/products/commercial'
-    - title: 'Trainee pilot'
-      icon:  '../../images/uploads/drone.svg'
-      text: 'From flight assessment insurance, to providing proof-of-insurance in your PfCO application, Flock’s got you covered.'
-      link: '/products/trainee'
+    - icon: /images/uploads/drone.svg
+      link: '/products/training '
+      text: >-
+        From flight assessment insurance, to providing proof-of-insurance in
+        your PfCO application, Flock’s got you covered.
+      title: Trainee pilot
+    - icon: /images/uploads/drone-diamond.svg
+      link: '/products/hobbyist '
+      text: >-
+        Enjoy your favourite hobby without worrying about insurance. Get covered
+        from just £3 with the touch of a button.
+      title: 'Hobbyist pilot '
+  title: What kind of pilot are you?
 ---
+
