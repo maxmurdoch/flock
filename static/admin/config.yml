@@ -17,6 +17,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Template key", name: "templateKey", widget: "string"}
           - name: "siteMetadata"
+            required: false
             label: "Site metadata override"
             widget: "object"
             fields:
@@ -138,6 +139,7 @@ collections:
         fields:
           - label: "Site metadata"
             name: "siteMetadata"
+            required: false
             widget: "object"
             fields:
               - {label: 'Title', name: 'title', widget: 'string'}
@@ -151,6 +153,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - name: "siteMetadata"
             label: "Site metadata override"
+            required: false
             widget: "object"
             fields:
               - {label: "Title", name: "title", widget: "string"}
@@ -176,6 +179,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - name: "siteMetadata"
             label: "Site metadata override"
+            required: false
             widget: "object"
             fields:
               - {label: "Title", name: "title", widget: "string"}
@@ -216,6 +220,7 @@ collections:
       - { name: title, label: Title }
       - name: "siteMetadata"
         label: "Site metadata override"
+        required: false
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
