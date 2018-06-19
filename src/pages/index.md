@@ -32,7 +32,9 @@ secondTestimonial:
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
 howFlockWorks:
-  description: 'Insuring your drone flight has never been easier. Simply tap, tap, take off!'
+  description: >-
+    Insuring your drone flight has never been easier. Get covered in under 30
+    seconds with just a few taps.
   listOfHow:
     - image: images/uploads/phone--flight-details@2x.png
       text: >-
@@ -41,26 +43,26 @@ howFlockWorks:
       title: 1. Enter your flight details
     - image: images/uploads/phone--customise-policy@2x.png
       text: >-
-        Select how long you want to fly. We’ll update your quote so you can see
-        the difference.
+        From 1-8 hours, select how long you want to be covered for. We’ll update
+        your quote so you can see the difference.
       title: 2. Customise your policy
     - image: images/uploads/phone--get-flying@2x.png
       text: >-
-        Pay for the policy in a couple of taps. You’re covered! We’ll  send you
-        all the important documentation in an email.
+        Pay for the policy and you're good to go! All the important
+        documentation is sent straight to your email inbox.
       title: 3. Get flying
   title: How Flock Cover works
 stopWorrying:
   description: Control your insurance from the palm of your hand with the Flock Cover app.
   reasons:
     - text: >-
-        Get covered only for the hours you fly. Flock’s pricing is
-        risk-dependent: the safer you fly, the less you pay.
+        Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
+        It's as simple as that!
       title: Fairer pricing
     - text: >-
-        Customise your insurance from the ground up. Policies can be purchased
-        on the spot, or scheduled up to 10 days in advance.
-      title: 'Flexible policies '
+        Pay for drone insurance only when you fly. From 1-8 hours, our policies
+        fit around your flight.
+      title: 'Short-term cover '
     - text: >-
         Get a real-time quote in 30 seconds. You can even see when and where
         it's cheapest to insure your drone flight.
@@ -70,23 +72,23 @@ kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
   products:
     - icon: images/uploads/drone-camera.svg
+      link: /products/commercial
       text: >-
         Flock’s EC785/2004 compliant policies offer flexible hull and liability
         insurance from just £5 a day.
       title: Commercial pilot
-      link: /products/commercial
     - icon: images/uploads/drone.svg
+      link: /products/trainee
       text: >-
         From flight assessment insurance, to providing proof-of-insurance for
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
-      link: /products/trainee
     - icon: images/uploads/drone-diamond.svg
+      link: /products/hobbyist
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
         from just £3 with the touch of a button.
       title: Hobbyist pilot
-      link: /products/hobbyist
   title: What kind of drone pilot are you?
 risk:
   description: >-
@@ -95,36 +97,32 @@ risk:
   list:
     - icon: images/uploads/icons-house.svg
       list:
-        - Airports
-        - Heliports
-        - Controlled airspace
-        - Special use airspace
+        - Schools
+        - Hospitals
+        - Prisons
       title: Inhabited spaces
     - icon: images/uploads/icons-circle.svg
       list:
-        - Schools
-        - Hospitals
-        - Power Plants
-        - ''
+        - Building density
+        - Parks
+        - Power plants
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       list:
         - Airports
         - Heliports
-        - Controlled airspace
-        - Special use airspace
+        - Restricted airspace
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       list:
         - Windspeed
         - Probability of rainfall
-        - Visibility
         - Temperature
       title: Hyperlocal weather
   title: 'Insurance and then some.. '
 whatFlockCovers:
-  description: jijo
-  title: xxx
+  description: ''
+  title: ''
 featured:
   image: images/uploads/featured-list.png
   title: We’ve been featured
