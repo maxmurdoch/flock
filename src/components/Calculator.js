@@ -10,92 +10,76 @@ import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
 import H4 from './H4'
 import {colors, boxShadows} from '../constants/theme'
-import {SSL_OP_NETSCAPE_CA_DN_BUG} from 'constants'
 
-const data = {
-  questions: [
-    {
-      key: 'typeOfPilot',
-      label: 'What type of pilot are you?',
-      options: [
-        {
-          label: 'Professional',
-          value: 1
-        },
-        {
-          label: 'Trainee',
-          value: 1.2
-        },
-        {
-          label: 'Hobbyist',
-          value: 1.4
-        }
-      ]
-    },
-    {
-      key: 'kindOfDrone',
-      label: 'What kind of drone do you fly?',
-      options: [
-        {
-          label: 'Less than 250g',
-          value: 1
-        },
-        {
-          label: 'Less than 500g',
-          value: 1.2
-        },
-        {
-          label: 'More than 500g',
-          value: 1.4
-        }
-      ]
-    },
-    {
-      key: 'howOften',
-      label: 'How often do you fly?',
-      options: [
-        {
-          label: 'Most days',
-          value: 100
-        },
-        {
-          label: 'Most months',
-          value: 20
-        },
-        {
-          label: 'A few times a year',
-          value: 5
-        }
-      ]
-    },
-    {
-      key: 'where',
-      label: 'Where do you mainly fly?',
-      options: [
-        {
-          label: 'Urban environments',
-          value: 1
-        },
-        {
-          label: 'Countryside',
-          value: 1.2
-        },
-        {
-          label: 'Near water',
-          value: 1.4
-        }
-      ]
-    }
-  ]
-}
+const pilotTypeOptions = [
+  {
+    label: 'Professional',
+    value: 1
+  },
+  {
+    label: 'Trainee',
+    value: 1.2
+  },
+  {
+    label: 'Hobbyist',
+    value: 1.4
+  }
+]
+const droneTypeOptions = [
+  {
+    label: 'Less than 250g',
+    value: 1
+  },
+  {
+    label: 'Less than 500g',
+    value: 1.2
+  },
+  {
+    label: 'More than 500g',
+    value: 1.4
+  }
+]
+const flightFrequencyOptions = [
+  {
+    label: 'Most days',
+    value: 100
+  },
+  {
+    label: 'Most months',
+    value: 20
+  },
+  {
+    label: 'A few times a year',
+    value: 5
+  }
+]
+const locationOptions = [
+  {
+    label: 'Urban environments',
+    value: 1
+  },
+  {
+    label: 'Countryside',
+    value: 1.2
+  },
+  {
+    label: 'Near water',
+    value: 1.4
+  }
+]
+
 class Calculator extends Component {
   state = {
-    pilotTypeValue: null,
-    droneTypeValue: null,
-    flightFrequencyValue: null,
-    locationValue: null,
+    pilotTypeValue: R.head(pilotTypeOptions),
+    droneTypeValue: R.head(droneTypeOptions),
+    flightFrequencyValue: R.head(flightFrequencyOptions),
+    locationValue: R.head(locationOptions),
     pricePerFlight: 0,
     pricePerYear: 0
+  }
+
+  componentDidMount() {
+    this.calculatePrice()
   }
 
   calculatePrice() {
@@ -109,18 +93,19 @@ class Calculator extends Component {
     const priceValues = [pilotTypeValue, droneTypeValue, locationValue]
     const pricePerFlight = R.reduce(
       R.multiply,
-      0,
+      3,
       R.map(R.prop('value'), priceValues)
-    )
-    const pricePerYear = R.multiply(flightFrequencyValue.value, pricePerFlight)
+    ).toFixed(2)
+    const pricePerYear = R.multiply(
+      flightFrequencyValue.value,
+      pricePerFlight
+    ).toFixed(2)
+    console.log('called', pricePerFlight, pricePerYear)
     this.setState({pricePerFlight, pricePerYear})
-    console.log(this.state)
-    console.log('here')
   }
 
   handleChange(state) {
-    this.setState(state)
-    this.calculatePrice()
+    this.setState(state, this.calculatePrice)
   }
 
   render() {
@@ -222,20 +207,7 @@ class Calculator extends Component {
                   id="location"
                   value={this.state.locationValue}
                   onChange={value => this.handleChange({locationValue: value})}
-                  options={[
-                    {
-                      label: 'Urban environments',
-                      value: 1
-                    },
-                    {
-                      label: 'Countryside',
-                      value: 1.2
-                    },
-                    {
-                      label: 'Near water',
-                      value: 1.4
-                    }
-                  ]}
+                  options={locationOptions}
                 />
               </Box>
             </Flex>
@@ -254,7 +226,7 @@ class Calculator extends Component {
                   £{Math.round(this.state.pricePerYear)} per year
                 </H4>
                 <SmallText textAlign="center">
-                  Just {this.state.pricePerFlight} per flight
+                  Just £{this.state.pricePerFlight} per flight
                 </SmallText>
               </Flex>
             </Flex>
