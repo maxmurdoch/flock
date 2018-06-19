@@ -47,11 +47,11 @@ class Testimonial extends Component {
                 <SmallText
                   textShadow="0 1px 0 rgba(0, 0, 0, 0.2)"
                   textAlign="center"
-                  fontWeight="700"
+                  fontWeight={700}
                   color={colors.white}
                   mb={[2, 3]}
                 >
-                  — {R.prop('author', activeTestimonial)}
+                  {`— ${R.prop('author', activeTestimonial)}`}
                 </SmallText>
               </Box>
             </Flex>
@@ -61,7 +61,7 @@ class Testimonial extends Component {
               alignItems="center"
               zIndex={2}
             >
-              {mapIndex(({quote, author, image}, index) => {
+              {mapIndex((_, index) => {
                 const isActive = R.equals(index, this.state.active)
                 const button = css({
                   padding: 0,
@@ -95,6 +95,7 @@ class Testimonial extends Component {
 
                 return (
                   <button
+                    key={index}
                     className={button}
                     onClick={event => {
                       event.preventDefault()

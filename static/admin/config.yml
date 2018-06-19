@@ -17,11 +17,12 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Template key", name: "templateKey", widget: "string"}
           - name: "siteMetadata"
-            label: "Site metadata"
+            label: "Site metadata override"
             widget: "object"
             fields:
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
           - label: "Hero"
             name: "hero"
             widget: "object"
@@ -86,6 +87,7 @@ collections:
                   - {label: 'Title', name: 'title', widget: 'string'} 
                   - {label: 'Text', name: 'text', widget: 'markdown'} 
                   - {label: 'Icon', name: 'icon', widget: 'image'} 
+                  - {label: 'Link', name: 'link', widget: 'string'} 
           - label: 'Risk'
             name: 'risk'
             widget: 'object'
@@ -147,6 +149,13 @@ collections:
         file: "src/pages/pricing.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - name: "siteMetadata"
+            label: "Site metadata override"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
           - name: hero
             label: Hero
             widget: object
@@ -165,6 +174,13 @@ collections:
         file: "src/pages/about.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - name: "siteMetadata"
+            label: "Site metadata override"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
           - name: hero
             label: Hero
             widget: object
@@ -198,6 +214,13 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
+      - name: "siteMetadata"
+        label: "Site metadata override"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Keywords", name: "keywords", widget: "list"}
       - name: hero
         label: Hero
         widget: object

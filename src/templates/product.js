@@ -56,7 +56,7 @@ const SegmentPageTemplate = ({data}) => {
           list={why.list}
         />
       </Box>
-      <BigSectionLine />
+      <BigSectionLine pb={0} />
       {showCoverNote ? (
         <CoverNote />
       ) : (

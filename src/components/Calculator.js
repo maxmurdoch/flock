@@ -10,8 +10,7 @@ import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
 import H4 from './H4'
 import {colors, boxShadows} from '../constants/theme'
-
-const mapIndex = R.addIndex(R.map)
+import {SSL_OP_NETSCAPE_CA_DN_BUG} from 'constants'
 
 const data = {
   questions: [
@@ -57,15 +56,15 @@ const data = {
       options: [
         {
           label: 'Most days',
-          value: 1
+          value: 100
         },
         {
           label: 'Most months',
-          value: 1.2
+          value: 20
         },
         {
           label: 'A few times a year',
-          value: 1.4
+          value: 5
         }
       ]
     },
@@ -91,27 +90,37 @@ const data = {
 }
 class Calculator extends Component {
   state = {
-    values: R.map(R.path(['options', 0]), data.questions),
-    price: null
+    pilotTypeValue: null,
+    droneTypeValue: null,
+    flightFrequencyValue: null,
+    locationValue: null,
+    pricePerFlight: 0,
+    pricePerYear: 0
   }
 
-  componentDidMount() {
-    this.setState({
-      price: R.reduce(
-        R.multiply,
-        50,
-        R.map(R.prop('value'), this.state.values)
-      )
-    })
+  calculatePrice() {
+    const {
+      pilotTypeValue,
+      droneTypeValue,
+      flightFrequencyValue,
+      locationValue
+    } = this.state
+
+    const priceValues = [pilotTypeValue, droneTypeValue, locationValue]
+    const pricePerFlight = R.reduce(
+      R.multiply,
+      0,
+      R.map(R.prop('value'), priceValues)
+    )
+    const pricePerYear = R.multiply(flightFrequencyValue.value, pricePerFlight)
+    this.setState({pricePerFlight, pricePerYear})
+    console.log(this.state)
+    console.log('here')
   }
 
-  handleChange(value, index) {
-    const newValues = R.update(index, value, this.state.values)
-
-    this.setState({
-      values: newValues,
-      price: R.reduce(R.multiply, 50, R.map(R.prop('value'), newValues))
-    })
+  handleChange(state) {
+    this.setState(state)
+    this.calculatePrice()
   }
 
   render() {
@@ -127,29 +136,108 @@ class Calculator extends Component {
             flexDirection={['column', 'row']}
           >
             <Flex width={['100%', '66.66%']} flexWrap="wrap">
-              {mapIndex((question, index) => {
-                return (
-                  <Box
-                    width={['100%', '50%']}
-                    mt={[1, 3]}
-                    pr={[0, 2]}
-                    key={index}
-                  >
-                    <label htmlFor={question.key}>
-                      <SmallText mb={1}>{question.label}</SmallText>
-                    </label>
-                    <Select
-                      clearable={false}
-                      id={question.key}
-                      value={R.nth(index, this.state.values)}
-                      onChange={value => {
-                        return this.handleChange(value, index)
-                      }}
-                      options={question.options}
-                    />
-                  </Box>
-                )
-              }, data.questions)}
+              <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
+                <label htmlFor="pilotType">
+                  <SmallText mb={1}>What type of pilot are you?</SmallText>
+                </label>
+                <Select
+                  clearable={false}
+                  id="pilotType"
+                  value={this.state.pilotTypeValue}
+                  onChange={value => this.handleChange({pilotTypeValue: value})}
+                  options={[
+                    {
+                      label: 'Professional',
+                      value: 1
+                    },
+                    {
+                      label: 'Trainee',
+                      value: 1.2
+                    },
+                    {
+                      label: 'Hobbyist',
+                      value: 1.4
+                    }
+                  ]}
+                />
+              </Box>
+              <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
+                <label htmlFor="droneType">
+                  <SmallText mb={1}>What type of drone do you fly?</SmallText>
+                </label>
+                <Select
+                  clearable={false}
+                  id="droneType"
+                  value={this.state.droneTypeValue}
+                  onChange={value => this.handleChange({droneTypeValue: value})}
+                  options={[
+                    {
+                      label: 'Less than 250g',
+                      value: 1
+                    },
+                    {
+                      label: 'Less than 500g',
+                      value: 1.2
+                    },
+                    {
+                      label: 'More than 500g',
+                      value: 1.4
+                    }
+                  ]}
+                />
+              </Box>
+              <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
+                <label htmlFor="flightFrequency">
+                  <SmallText mb={1}>How often do you fly?</SmallText>
+                </label>
+                <Select
+                  clearable={false}
+                  id="flightFrequency"
+                  value={this.state.flightFrequencyValue}
+                  onChange={value =>
+                    this.handleChange({flightFrequencyValue: value})
+                  }
+                  options={[
+                    {
+                      label: 'Most days',
+                      value: 100
+                    },
+                    {
+                      label: 'Most months',
+                      value: 20
+                    },
+                    {
+                      label: 'A few times a year',
+                      value: 5
+                    }
+                  ]}
+                />
+              </Box>
+              <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
+                <label htmlFor="location">
+                  <SmallText mb={1}>How often do you fly?</SmallText>
+                </label>
+                <Select
+                  clearable={false}
+                  id="location"
+                  value={this.state.locationValue}
+                  onChange={value => this.handleChange({locationValue: value})}
+                  options={[
+                    {
+                      label: 'Urban environments',
+                      value: 1
+                    },
+                    {
+                      label: 'Countryside',
+                      value: 1.2
+                    },
+                    {
+                      label: 'Near water',
+                      value: 1.4
+                    }
+                  ]}
+                />
+              </Box>
             </Flex>
             <Flex width={['100%', '33.33%']}>
               <Flex
@@ -163,8 +251,11 @@ class Calculator extends Component {
               >
                 <SmallText textAlign="center">Prices from</SmallText>
                 <H4 className={css({marginBottom: 0})}>
-                  £{Math.round(this.state.price)} per year
+                  £{Math.round(this.state.pricePerYear)} per year
                 </H4>
+                <SmallText textAlign="center">
+                  Just {this.state.pricePerFlight} per flight
+                </SmallText>
               </Flex>
             </Flex>
           </Flex>

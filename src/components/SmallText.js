@@ -42,7 +42,11 @@ const SmallText = ({children, fontWeight = 400, mb = 0, ...props}) => {
 export default SmallText
 
 SmallText.propTypes = {
-  children: PropTypes.element,
-  mb: PropTypes.number,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.string,
+    PropTypes.array
+  ]),
+  mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array]),
   fontWeight: PropTypes.number
 }

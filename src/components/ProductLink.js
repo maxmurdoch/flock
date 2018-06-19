@@ -36,7 +36,7 @@ class ProductLink extends Component {
           src={image}
         />
         <ArrowText isHovered={this.state.isHovered}>
-          <SmallText fontWeight="700" color={colors.white}>
+          <SmallText fontWeight={700} color={colors.white}>
             {text}
           </SmallText>
         </ArrowText>

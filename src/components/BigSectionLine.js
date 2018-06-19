@@ -8,12 +8,13 @@ import {colors} from '../constants/theme'
 
 const BigSectionLine = ({
   borderColor = colors.dark,
-  backgroundColor = colors.backgrounds.white
+  backgroundColor = 'transparent',
+  ...props
 }) => {
   return (
-    <Flex justifyContent="center">
+    <Flex pb={[3, 5]} pt={[3, 5]} justifyContent="center" {...props}>
       <SiteContainer>
-        <Flex pb={[3, 5]} pt={[3, 5]} background={backgroundColor}>
+        <Flex background={backgroundColor}>
           <Box borderTop={`1px solid ${borderColor}`} width="100%" />
         </Flex>
       </SiteContainer>

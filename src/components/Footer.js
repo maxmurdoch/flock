@@ -117,7 +117,7 @@ const Footer = ({containerClassName}) => {
             <img src={logo} className={css({marginBottom: 0})} />
           </Box>
           <Box width={['100%', '33.33%']} mb={[2, 0]}>
-            <SmallText fontWeight="700" color="white">
+            <SmallText fontWeight={700} color="white">
               Flock Cover is regulated by the FCA.
             </SmallText>
             <SmallText color="white">

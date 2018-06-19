@@ -26,7 +26,7 @@ const TextSection = ({title, bigText, smallText}) => {
     >
       <SiteContainer>
         <Flex flexWrap="wrap">
-          <Box width={['100%', '33.33%']} mb={2}>
+          <Box width={['100%', '50%', '33.33%']} mb={2}>
             <Markdown>
               <H2>{title}</H2>
             </Markdown>
