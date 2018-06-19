@@ -134,7 +134,13 @@ collections:
         label: Settings
         file: "src/pages/settings.md"
         fields:
-          - {label: "Site metadata", name: "title", widget: "string"}
+          - label: "Site metadata"
+            name: "siteMetadata"
+            widget: "object"
+            fields:
+              - {label: 'Title', name: 'title', widget: 'string'}
+              - {label: 'Description', name: 'description', widget: 'string'}
+              - {label: 'Keywords', name: 'keywords', widget: 'string'}
 
       - name: pricing
         label: Pricing
