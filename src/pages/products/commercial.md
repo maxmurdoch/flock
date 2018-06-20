@@ -11,6 +11,7 @@ siteMetadata:
     - commercial drone insurance
   title: 'Commercial '
 hero:
+  backgroundImage: ../../images/uploads/commercial-background.png
   button:
     text: Download
     to: /download
@@ -19,35 +20,30 @@ hero:
     * Customisable Public Liability Limits (from £1-10M)
     * Flexible hull and equipment insurance (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
-  backgroundImage: '../../images/uploads/commercial-background.png'
 why:
-  title: Why do professionals fly with Flock?
-  description: 1 in 4 commercial pilots in the UK now use Flock Cover.
+  description: 1 in 4 UK commercial pilots fly with Flock.
   list:
     - text: >-
-        We know two jobs are never the same.  Customise your insurance on a
-        flight-by-flight basis.
+        We know two jobs are never the same.  Customise your insurance
+        flight-by-flight.
       title: 'Bespoke cover '
     - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
         from £5 a day.
       title: Fairer pricing
-    - text: >-
-        Flock’s policies are EC785/2004 compliant and approved by the Civil
-        Aviation Authority (CAA).
+    - text: Flock’s policies are EC785/2004 compliant and CAA approved.
       title: Fully compliant
     - text: >-
         Pinpoint the cost of insurance for each job, and easily pass the costs
         onto your clients.
       title: Bill as an expense
     - text: >-
-        Schedule as many flights as you like within 10 days. Change of plan?
-        Simply cancel beforehand with one tap.
+        Schedule flights up to 10 days in advance. Change of plan? Cancel with
+        one tap.
       title: 'Book in advance '
-    - text: >-
-        Chat to our customer support team through the app, or give us a call.
-        Whichever you prefer.
+    - text: 'Chat to our customer support team through the app, or give us a call.'
       title: Instant support
+  title: 'Why do professionals use Flock Cover? '
 showFlightSchoolList: false
 showCoverNote: true
 doINeedInsurance:
@@ -133,5 +129,5 @@ otherProducts:
         from just £3 with the touch of a button.
       title: 'Hobbyist pilot '
   title: What kind of pilot are you?
-
 ---
+
