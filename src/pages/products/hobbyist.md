@@ -29,13 +29,13 @@ why:
 showCoverNote: false
 doINeedInsurance:
   bigText: >-
-    Whilst it's not against the law in the UK to fly without insurance, flying a
-    metal robot with spinning propellers comes with its risks. So paying a
-    little now may save you a lot in the long run.
+    Whilst it's not against the law in the UK to fly without insurance, a flying
+    metal robot with spinning propellers has the potential to cause some serious
+    damage. 
 
 
-    Flock's public liability insurance can cost the price of your morning
-    coffee; giving you peace of mind the second you take off.
+    Flock's Public Liability insurance starts from just £3, and gives you peace
+    of mind the second you take off.
   smallText: ''
   title: |-
     I fly my drone for fun,
