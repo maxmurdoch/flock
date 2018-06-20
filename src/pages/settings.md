@@ -6,5 +6,6 @@ siteMetadata:
   keywords:
     - insurance
     - drones
-    - pay-as-you-go'
+    - 'pay as you go'
+
 ---
