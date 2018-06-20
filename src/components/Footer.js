@@ -76,7 +76,7 @@ const Footer = ({containerClassName}) => {
             {mapIndex(({to, text}, index) => {
               return (
                 <Link className={styles.link} to={to} key={index}>
-                  {text}
+                  <SmallText>{text}</SmallText>
                 </Link>
               )
             }, firstFooterLinks)}
@@ -85,7 +85,7 @@ const Footer = ({containerClassName}) => {
             {mapIndex(({to, text}, index) => {
               return (
                 <Link className={styles.link} to={to} key={index}>
-                  {text}
+                  <SmallText>{text}</SmallText>
                 </Link>
               )
             }, secondFooterLinks)}
@@ -101,7 +101,7 @@ const Footer = ({containerClassName}) => {
                 paddingBottom: R.nth(1, space)
               })}
             >
-              hello@flockcover.com
+              <SmallText>hello@flockcover.com</SmallText>
             </Link>
             <Link
               to="tel:+44 (0) 1234 480260"
@@ -110,7 +110,7 @@ const Footer = ({containerClassName}) => {
                 paddingBottom: R.nth(1, space)
               })}
             >
-              +44 (0) 1234 480260
+              <SmallText>+44 (0) 1234 480260</SmallText>
             </Link>
           </Flex>
         </Flex>

@@ -13,8 +13,8 @@ import chivo from '../fonts/chivo/Chivo-Regular.woff2'
 
 injectGlobal`
 ::selection {
-  backgroundColor: 'blue',
-  color: 'white'
+  background-color: 'blue';
+  color: 'white';
 }
 * {
   -webkit-font-smoothing: antialiased;

@@ -59,31 +59,34 @@ stopWorrying:
         Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
         It's as simple as that!
       title: Fairer pricing
+      icon: /images/uploads/price-icon.svg
     - text: >-
         Pay for drone insurance only when you fly. From 1-8 hours, our policies
         fit around your flight.
       title: 'Short-term cover '
+      icon: /images/uploads/shield-icon.svg
     - text: >-
         Get a real-time quote in 30 seconds. You can even see when and where
         it's cheapest to fly.
       title: Total transparency
+      icon: /images/uploads/search-icon.svg
   title: It's time for a new kind of insurance.
 kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
   products:
-    - icon: images/uploads/drone-camera.svg
+    - icon: images/uploads/commercial-pilot.svg
       link: /products/commercial
       text: >-
         Flock’s EC785/2004 compliant policies offer flexible hull and liability
         insurance from just £5 a day.
       title: Commercial pilot
-    - icon: images/uploads/drone.svg
+    - icon: images/uploads/trainee-pilot.svg
       link: /products/trainee
       text: >-
         From flight assessment insurance, to providing proof-of-insurance for
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
-    - icon: images/uploads/drone-diamond.svg
+    - icon: images/uploads/recreational-pilot.svg
       link: /products/hobbyist
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered

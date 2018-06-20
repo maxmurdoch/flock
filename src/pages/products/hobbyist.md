@@ -27,6 +27,7 @@ why:
         time) or give us a call. Whichever you prefer.
       title: Quick support
   title: Why do hobbyists use Flock?
+showFlightSchoolList: false
 showCoverNote: false
 doINeedInsurance:
   bigText: >-

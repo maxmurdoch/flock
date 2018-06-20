@@ -140,6 +140,7 @@ export const query = graphql`
           reasons {
             title
             text
+            icon
           }
         }
         kindOfPilot {

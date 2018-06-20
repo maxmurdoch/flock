@@ -1,15 +1,29 @@
 import React, {Component} from 'react'
 import R from 'ramda'
-import {css} from 'react-emotion'
+import {css, injectGlobal} from 'react-emotion'
 import Select from 'react-select'
 import 'react-select/dist/react-select.css'
 
 import Flex from './Flex'
 import Box from './Box'
+import Label from './Label'
 import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
 import H4 from './H4'
 import {colors, boxShadows} from '../constants/theme'
+
+injectGlobal`
+  .Select-control {
+    border-radius: 0;
+    border: 0;
+  }
+  .Select-arrow {
+    border-color: #000 transparent transparent;
+  }
+  .Select-menu-outer {
+    border: 0;
+  }
+`
 
 const pilotTypeOptions = [
   {
@@ -100,7 +114,6 @@ class Calculator extends Component {
       flightFrequencyValue.value,
       pricePerFlight
     ).toFixed(2)
-    console.log('called', pricePerFlight, pricePerYear)
     this.setState({pricePerFlight, pricePerYear})
   }
 
@@ -122,9 +135,7 @@ class Calculator extends Component {
           >
             <Flex width={['100%', '66.66%']} flexWrap="wrap">
               <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
-                <label htmlFor="pilotType">
-                  <SmallText mb={1}>What type of pilot are you?</SmallText>
-                </label>
+                <Label htmlFor="pilotType">What type of pilot are you?</Label>
                 <Select
                   clearable={false}
                   id="pilotType"
@@ -147,9 +158,9 @@ class Calculator extends Component {
                 />
               </Box>
               <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
-                <label htmlFor="droneType">
-                  <SmallText mb={1}>What type of drone do you fly?</SmallText>
-                </label>
+                <Label htmlFor="droneType">
+                  What type of drone do you fly?
+                </Label>
                 <Select
                   clearable={false}
                   id="droneType"
@@ -172,9 +183,7 @@ class Calculator extends Component {
                 />
               </Box>
               <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
-                <label htmlFor="flightFrequency">
-                  <SmallText mb={1}>How often do you fly?</SmallText>
-                </label>
+                <Label htmlFor="flightFrequency">How often do you fly?</Label>
                 <Select
                   clearable={false}
                   id="flightFrequency"
@@ -199,9 +208,7 @@ class Calculator extends Component {
                 />
               </Box>
               <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
-                <label htmlFor="location">
-                  <SmallText mb={1}>How often do you fly?</SmallText>
-                </label>
+                <Label htmlFor="location">How often do you fly?</Label>
                 <Select
                   clearable={false}
                   id="location"
@@ -226,7 +233,7 @@ class Calculator extends Component {
                   £{Math.round(this.state.pricePerYear)} per year
                 </H4>
                 <SmallText textAlign="center">
-                  Just £{this.state.pricePerFlight} per flight
+                  Just ${this.state.pricePerFlight} per flight
                 </SmallText>
               </Flex>
             </Flex>

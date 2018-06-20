@@ -40,6 +40,7 @@ why:
         something goes wrong, you can make a claim with the tap of a button
       title: Instant support
   title: Why do professionals use Flock?
+showFlightSchoolList: true
 showCoverNote: true
 doINeedInsurance:
   title: ''

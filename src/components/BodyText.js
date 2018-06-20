@@ -41,6 +41,10 @@ const BodyText = ({children, mb = 0, ...props}) => {
 export default BodyText
 
 BodyText.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.string,
+    PropTypes.array
+  ]),
   mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array])
 }

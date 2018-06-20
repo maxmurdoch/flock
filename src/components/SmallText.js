@@ -14,7 +14,7 @@ const textShadow = style({
   alias: 'sh'
 })
 
-const StyledSmallText = styled.p`
+const smallTextStyle = `
 font-family: 'Chivo';
   font-size: 14px;
   line-height: 20px; 
@@ -23,6 +23,11 @@ font-family: 'Chivo';
     font-size: 16px;
     line-height: 24px;
   }
+
+`
+
+const StyledSmallText = styled.p`
+  ${smallTextStyle}
 
   ${textShadow}
   ${space}
@@ -39,6 +44,7 @@ const SmallText = ({children, fontWeight = 400, mb = 0, ...props}) => {
   )
 }
 
+export {smallTextStyle}
 export default SmallText
 
 SmallText.propTypes = {

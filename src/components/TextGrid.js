@@ -1,4 +1,5 @@
 import React from 'react'
+import {css} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 
@@ -22,14 +23,17 @@ const TextGrid = ({title, description, list, image}) => (
           <BodyText>{description}</BodyText>
         </Box>
         <Flex flexWrap={true}>
-          {mapIndex(({title, text}, index) => {
+          {mapIndex(({title, text, icon}, index) => {
             return (
               <Box
                 width={['100%', '33.33%']}
-                pr={[0, 2]}
+                pr={[0, 3]}
                 mt={[2, 4]}
                 key={index}
               >
+                {icon ? (
+                  <img src={icon} className={css({marginBottom: 0})} />
+                ) : null}
                 <H3>{title}</H3>
                 <SmallText>{text}</SmallText>
               </Box>

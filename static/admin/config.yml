@@ -252,6 +252,10 @@ collections:
             fields:
               - {label: 'Title', name: 'title', widget: 'string'} 
               - {label: 'Text', name: 'text', widget: 'markdown'} 
+      - label: 'Show flight school list'
+        name: 'showFlightSchoolList'
+        widget: 'boolean'
+        default: false
       - label: 'Show cover note'
         name: 'showCoverNote'
         widget: 'boolean'

@@ -4,6 +4,7 @@ import Media from 'react-media'
 import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
+import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
@@ -16,18 +17,21 @@ import OtherProducts from '../components/OtherProducts'
 import ToggleiPhone from '../components/ToggleiPhone'
 import CalculateRiskFlat from '../components/CalculateRiskFlat'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
+import FlightSchool from '../components/FlightSchool'
 import Testimonial from '../components/Testimonial'
 import map from '../images/map.png'
 
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
 import {colors, breakpoints} from '../constants/theme'
+import SiteContainer from '../components/SiteContainer'
 
 const SegmentPageTemplate = ({data}) => {
   const {
     hero: {header, description, button, backgroundImage},
     why,
     showCoverNote,
+    showFlightSchoolList,
     doINeedInsurance,
     how,
     risk,
@@ -58,6 +62,16 @@ const SegmentPageTemplate = ({data}) => {
           list={why.list}
         />
       </Box>
+      {showFlightSchoolList ? (
+        <div>
+          <BigSectionLine />
+          <Flex justifyContent="center">
+            <SiteContainer>
+              <FlightSchool />
+            </SiteContainer>
+          </Flex>
+        </div>
+      ) : null}
       <BigSectionLine pb={0} />
       {showCoverNote ? (
         <CoverNote />
@@ -144,6 +158,7 @@ export const query = graphql`
           }
         }
         showCoverNote
+        showFlightSchoolList
         doINeedInsurance {
           title
           bigText

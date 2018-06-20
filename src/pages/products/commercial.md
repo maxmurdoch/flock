@@ -21,6 +21,7 @@ hero:
     * Customisable Public Liability Limits (from £1-10M)
     * Flexible Hull and equipment insurance (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
+  backgroundImage: '../../images/uploads/commercial-background.png'
 why:
   description: ''
   list:
@@ -49,6 +50,7 @@ why:
         something goes wrong, you can make a claim with the tap of a button
       title: Instant support
   title: Why do professionals use Flock Cover?
+showFlightSchoolList: false
 showCoverNote: true
 doINeedInsurance:
   title: ''

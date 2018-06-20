@@ -19,16 +19,16 @@ const OtherProducts = ({title, description, products}) => {
             <H2>{title}</H2>
             <BodyText>{description}</BodyText>
           </Box>
-          <Flex flexWrap={['wrap', 'nowrap']}>
+          <Flex flexWrap={['wrap', 'wrap', 'nowrap']}>
             {mapIndex(({title, text, icon, link}, index) => {
               const isLast = R.equals(R.prop('title', R.last(products)), title)
 
               return (
                 <Box
                   key={index}
-                  mr={[0, isLast ? 0 : 3]}
-                  mb={[2, 0]}
-                  width={['100%', '50%']}
+                  mr={[0, 0, isLast ? 0 : 3]}
+                  mb={[2, 2, 0]}
+                  width={['100%', '100%', '50%']}
                 >
                   <SegmentLink
                     title={title}
