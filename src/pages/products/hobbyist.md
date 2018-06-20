@@ -23,9 +23,9 @@ why:
         pay. Simple!
       title: Fairer pricing
     - text: >-
-        Chat to our customer support team through the app, or give us a call.
-        Whichever you prefer.
-      title: Instant Support
+        Pay for insurance only when you fly. Get covered for as little as one
+        hour, or up to a day.
+      title: 'Short-term insurance '
   title: Why do hobbyists use Flock?
 showFlightSchoolList: false
 showCoverNote: false
