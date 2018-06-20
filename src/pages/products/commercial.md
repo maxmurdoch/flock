@@ -93,7 +93,7 @@ risk:
       list:
         - Airports
         - Heliports
-        - Restricted airspace
+        - Controlled airspace
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       list:
