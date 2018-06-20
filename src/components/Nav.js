@@ -1,4 +1,5 @@
 import R from 'ramda'
+import PropTypes from 'prop-types'
 import React, {Component} from 'react'
 import Link from 'gatsby-link'
 import {Sticky} from 'react-sticky'
@@ -51,7 +52,7 @@ class Nav extends Component {
           })
           const downloadButtonClass = css({
             marginLeft: R.nth(1, space),
-            paddingLeft: R.nth(2, space)
+            paddingLeft: R.nth(1, space)
           })
 
           return (
@@ -148,3 +149,10 @@ class Nav extends Component {
 }
 
 export default Nav
+
+Nav.propTypes = {
+  Logo: PropTypes.element,
+  DownloadButton: PropTypes.element,
+  textColor: PropTypes.func,
+  arrowImage: PropTypes.func
+}

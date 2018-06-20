@@ -67,6 +67,8 @@ const Footer = ({containerClassName}) => {
       className={containerClassName}
       background={colors.backgrounds.dark}
       justifyContent="center"
+      pt={[1, 3]}
+      pb={[1, 3]}
     >
       <SiteContainer>
         <Flex flexWrap={true}>

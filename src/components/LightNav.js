@@ -1,6 +1,4 @@
-import React, {Component} from 'react'
-import {Sticky} from 'react-sticky'
-import Link from 'gatsby-link'
+import React from 'react'
 import {css} from 'react-emotion'
 
 import WhiteButton from './WhiteButton'

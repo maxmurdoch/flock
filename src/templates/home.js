@@ -76,7 +76,8 @@ const HomePageTemplate = ({data}) => {
       <div
         className={css({
           background: `${colors.backgrounds.dark} url(${map})`,
-          backgroundSize: 'cover'
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
         })}
       >
         <ToggleiPhone

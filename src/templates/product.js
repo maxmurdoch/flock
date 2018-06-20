@@ -43,7 +43,8 @@ const SegmentPageTemplate = ({data}) => {
       <Hero
         headerClassName={css({
           backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: 'cover'
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
         })}
         textColor={colors.white}
         header={header}
@@ -70,7 +71,8 @@ const SegmentPageTemplate = ({data}) => {
       <div
         className={css({
           background: `${colors.backgrounds.dark} url(${map})`,
-          backgroundPosition: 'cover'
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
         })}
       >
         <ToggleiPhone
