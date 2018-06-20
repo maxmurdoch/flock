@@ -24,3 +24,19 @@ npm run develop
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+## Code style
+
+**React component**
+Import order
+- library imports
+- component imports 
+- local js imports (constants, images)
+
+File order
+- Imports
+- helpers functions and local vars
+- Component
+- style object
+- PropTypes
+- export
