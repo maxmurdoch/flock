@@ -6,10 +6,9 @@ hero:
     text: Download
     to: /download
   description: |-
-    * Flight assessment insurance from £6 
+    * Flight assessment and training insurance from £6 
     * Flexible hull insurance (up to £3K) 
-    * £1M Public Liability cover 
-    * Instant proof-of-insurance for PfCO applications
+    * £1M Public Liability cover
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
 why:
   description: ''
@@ -19,8 +18,8 @@ why:
         advance.
       title: Insurance when you need it
     - text: >-
-        Get cover for the big day from £6. All the important documentation is
-        sent straight to your email inbox.
+        Get flight assessment insurance from £6. You can also use these policies
+        to  cover your training flights.
       title: 'Flight assessment insurance '
     - text: >-
         Flock’s policies are EC785/2004 compliant and approved by the Civil
