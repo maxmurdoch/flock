@@ -21,7 +21,7 @@ hero:
     * Flexible Hull and equipment insurance (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: ''
+  description: 1 in 4 commercial pilots in the UK use Flock Cover.
   list:
     - text: >-
         We know two jobs are never the same.  Customise your insurance on a
@@ -47,14 +47,14 @@ why:
         Chat to our customer support team through the app, or give us a call.
         Whichever you prefer.
       title: Instant support
-  title: Why do professionals use Flock Cover?
+  title: Why do professionals fly with Flock?
 showCoverNote: true
 doINeedInsurance:
   title: ''
 how:
   description: >-
-    Insuring your drone flight has never been easier. Get covered in under 30
-    seconds with just a couple of taps.
+    Insuring your drone flight has never been easier. All it takes is a matter
+    of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
       text: >-
@@ -71,7 +71,7 @@ how:
         Pay for the policy and you're good to go! All the important
         documentation is sent straight to your email inbox.
       title: 3. Get flying
-  title: How commercial pilots use Flock Cover
+  title: How Flock Cover works
 risk:
   description: >-
     Know your risks before you fly. Simply enter your flight's details and
