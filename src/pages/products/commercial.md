@@ -15,13 +15,11 @@ hero:
     to: /download
   description: |-
     * On-demand insurance from £5 
-    * Cover from 1-8 hours 
-    * EC785/2004 compliant insurance 
     * Customisable Public Liability Limits (from £1-10M)
-    * Flexible Hull and equipment insurance (up to £25K)
+    * Flexible hull and equipment insurance (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: 1 in 4 commercial pilots in the UK use Flock Cover.
+  description: 1 in 4 commercial pilots in the UK now use Flock Cover.
   list:
     - text: >-
         We know two jobs are never the same.  Customise your insurance on a
@@ -52,9 +50,9 @@ showCoverNote: true
 doINeedInsurance:
   title: ''
 how:
-  description: >-
-    Insuring your drone flight has never been easier. All it takes is a matter
-    of taps.
+  description: |-
+    Insuring your drone flight has never been easier. \
+    All it takes is a matter of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
       text: >-
