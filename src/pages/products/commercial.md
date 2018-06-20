@@ -21,7 +21,7 @@ hero:
     * Flexible hull and equipment insurance (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: 1 in 4 UK commercial pilots fly with Flock.
+  description: ''
   list:
     - text: >-
         We know two jobs are never the same.  Customise your insurance
@@ -43,7 +43,7 @@ why:
       title: 'Book in advance '
     - text: 'Chat to our customer support team through the app, or give us a call.'
       title: Instant support
-  title: 'Why do professionals use Flock Cover? '
+  title: 'Why do professionals fly with Flock? '
 showFlightSchoolList: false
 showCoverNote: true
 doINeedInsurance:
