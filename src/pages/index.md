@@ -34,7 +34,7 @@ secondTestimonial:
 howFlockWorks:
   description: >-
     Insuring your drone flight has never been easier. Get covered in under 30
-    seconds with just a few taps.
+    seconds with just a couple of taps.
   listOfHow:
     - image: images/uploads/phone--flight-details@2x.png
       text: >-
