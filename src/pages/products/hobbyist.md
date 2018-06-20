@@ -1,7 +1,7 @@
 ---
 title: Hobbyist
-templateKey: product
 hero:
+  backgroundImage: ../../images/uploads/hobbyist-background.png
   button:
     text: Download
     to: /download
@@ -10,47 +10,45 @@ hero:
     * Policies from 1-8 hours 
     * Public Liability insurance up to £250 K
   header: 'Pay-as-you-fly drone insurance for hobbyists '
-  backgroundImage: '../../images/uploads/hobbyist-background.png'
 why:
   description: ''
   list:
     - text: >-
-        Get covered on the spot in under 30 seconds. Like to plan ahead? You can
-        schedule your insurance up to 10 days in advance.
+        Get covered on the spot or plan a flight up to 10 days in advance. It
+        only takes 30 seconds.
       title: 'Simple Insurance '
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
-        pay. Insurance for hobbyist pilots starts from just £3 a day.
+        pay. Simple!
       title: Fairer pricing
     - text: >-
-        Have a question? Chat to us in the app (we have a 2 min average response
-        time) or give us a call. Whichever you prefer.
-      title: Quick support
+        Chat to our customer support team through the app, or give us a call.
+        Whichever you prefer.
+      title: Instant Support
   title: Why do hobbyists use Flock?
 showCoverNote: false
 doINeedInsurance:
   bigText: >-
-    Hobbyist drone pilots are not required by law to fly with insurance.
-    However, a flying metal robot with spinning propellers has the potential to
-    cause some pretty hefty damage. So paying a little now may save you a lot in
-    the long run.
+    Whilst it's not against the law in the UK to fly without insurance, flying a
+    metal robot with spinning propellers comes with its risks. So paying a
+    little now may save you a lot in the long run.
 
 
-    Flock’s public liability insurance provides cover for the worst case
-    scenarios; giving you peace of mind the second you take off.
+    Flock's public liability insurance can cost the price of your morning
+    coffee; giving you peace of mind the second you take off.
   smallText: ''
   title: |-
     I fly my drone for fun,
     do I need insurance?
 how:
   description: >-
-    Insuring your drone or flight has never been simpler. All it takes is a
-    matter of taps.
+    Insuring your drone flight has never been simpler. All it takes is a matter
+    of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
       text: >-
-        Choose your flight area, and the date and time you want to fly. Receive
-        an instant quote at the bottom of your screen.
+        Choose your flight area, and the date and time you want to fly.
+        Instantly receive a real-time quote at the bottom of your screen.
       title: 1. Enter your flight details
     - image: ../../images/uploads/phone--customise-policy@2x.png
       text: >-
@@ -59,8 +57,8 @@ how:
       title: 2. Customise your policy
     - image: ../../images/uploads/phone--get-flying@2x.png
       text: >-
-        Pay for the policy in a couple of taps. You’re covered! We’ll send you
-        all the important documentation in an email.
+        Pay for policy and you're good to go! All the important documentation is
+        sent straight to your email inbox.
       title: 3. Get flying
   title: How hobbyists use Flock
 risk:
@@ -72,28 +70,24 @@ risk:
       list:
         - Schools
         - Hospitals
-        - Churches
         - Prisons
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
       list:
-        - Airports
-        - Heliports
-        - Controlled airspace
-        - Special use airspace
+        - Building density
+        - Parks
+        - Power plants
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       list:
         - Airports
         - Heliports
         - Controlled airspace
-        - Special use airspace
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       list:
         - Windspeed
         - Probability of rainfall
-        - Visibility
         - Temperature
       title: Hyperlocal weather
   title: Insurance and then some..
