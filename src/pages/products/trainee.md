@@ -19,8 +19,8 @@ why:
         advance.
       title: Insurance when you need it
     - text: >-
-        Get flight assessment insurance from £6. You can also use these policies
-        to  cover your training flights.
+        Get flight assessment insurance from £6. Any training flights can also
+        be covered.
       title: 'Flight assessment insurance '
     - text: >-
         Flock’s policies are EC785/2004 compliant and approved by the Civil
@@ -28,17 +28,15 @@ why:
       title: 'Fully compliant  '
     - text: >-
         Once you've got your PfCO, you can easily upgrade to a commercial
-        operator account in the app.
-      title: 'Easy Upgrade '
+        operator account.
+      title: 'Easy to Upgrade '
     - text: >-
         Flight assessment rescheduled? Cancel with a tap beforehand and get a
         full refund.
       title: 'Cancel with a tap '
-    - text: >-
-        Chat to our customer support team through the app, or give us a call.
-        Whichever you prefer.
+    - text: 'Chat to our customer support team through the app, or give us a call.'
       title: Instant support
-  title: Why do trainee pilots use Flock?
+  title: Why do trainee pilots fly with Flock?
 showFlightSchoolList: true
 showCoverNote: true
 doINeedInsurance:
