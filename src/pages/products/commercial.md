@@ -1,6 +1,5 @@
 ---
 title: Commercial
-templateKey: product
 siteMetadata:
   description: drone insurance
   keywords:
@@ -16,21 +15,19 @@ hero:
     to: /download
   description: |-
     * On-demand insurance from £5 
-    * Cover from 1-8 hours 
-    * EC785/2004 compliant insurance 
     * Customisable Public Liability Limits (from £1-10M)
-    * Flexible Hull and equipment insurance (up to £25K)
+    * Flexible hull and equipment insurance (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: ''
+  description: 1 in 4 commercial pilots in the UK now use Flock Cover.
   list:
     - text: >-
         We know two jobs are never the same.  Customise your insurance on a
         flight-by-flight basis.
       title: 'Bespoke cover '
     - text: >-
-        Flock’s pricing is risk-dependent, so the safer the flight, the less you
-        pay. Simple!
+        Flock’s pricing is risk-dependent, with commercial policies starting
+        from £5 a day.
       title: Fairer pricing
     - text: >-
         Flock’s policies are EC785/2004 compliant and approved by the Civil
@@ -41,38 +38,38 @@ why:
         onto your clients.
       title: Bill as an expense
     - text: >-
-        Policies can be purchased on the spot, or scheduled up to 10 days in
-        advance.
-      title: Choose when and where
+        Schedule as many flights as you like within 10 days. Change of plan?
+        Simply cancel beforehand with one tap.
+      title: 'Book in advance '
     - text: >-
-        Every pilot gets access to customer support through the app. If
-        something goes wrong, you can make a claim with the tap of a button
+        Chat to our customer support team through the app, or give us a call.
+        Whichever you prefer.
       title: Instant support
-  title: Why do professionals use Flock Cover?
+  title: Why do professionals fly with Flock?
 showCoverNote: true
 doINeedInsurance:
   title: ''
 how:
-  description: >-
-    Insuring your drone flight has never been simpler. All it takes is a matter
-    of taps.
+  description: |-
+    Insuring your drone flight has never been easier. \
+    All it takes is a matter of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
       text: >-
-        Choose your flight area, and the date and time you want to fly. Receive
-        an instant quote at the bottom of your screen.
+        Choose your flight area, and the date and time you want to fly.
+        Instantly receive a real-time quote at the bottom of your screen.
       title: 1. Enter your flight details
     - image: ../../images/uploads/phone--customise-policy@2x.png
       text: >-
         Select your cover duration and liability limit. You can even set the
-        price you want your hull and equipment to be insured for.
+        amount you want your hull and equipment to be insured for.
       title: 2. Customise your policy
     - image: ../../images/uploads/phone--get-flying@2x.png
       text: >-
         Pay for the policy and you're good to go! All the important
-        documentation is instantly emailed to you.
+        documentation is sent straight to your email inbox.
       title: 3. Get flying
-  title: How commercial pilots use Flock Cover
+  title: How Flock Cover works
 risk:
   description: >-
     Know your risks before you fly. Simply enter your flight's details and
@@ -88,13 +85,13 @@ risk:
       list:
         - Building density
         - Parks
-        - xxxx
+        - Power plants
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       list:
         - Airports
         - Heliports
-        - Restricted airspace
+        - Controlled airspace
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       list:
@@ -121,7 +118,7 @@ otherProducts:
     below to learn more.
   products:
     - icon: /images/uploads/drone.svg
-      link: '/products/training '
+      link: '/products/trainee  '
       text: >-
         From flight assessment insurance, to providing proof-of-insurance in
         your PfCO application, Flock’s got you covered.
