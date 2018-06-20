@@ -18,8 +18,10 @@ import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
 import {colors, breakpoints} from '../constants/theme'
+
 import bigFlock from '../images/big-arrow.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
+import map from '../images/map.png'
 
 const HomePageTemplate = ({data}) => {
   const {
@@ -71,16 +73,23 @@ const HomePageTemplate = ({data}) => {
       <Box pb={[2, 3]}>
         <Testimonial testimonials={firstTestimonial} />
       </Box>
-      <ToggleiPhone
-        title={howFlockWorks.title}
-        description={howFlockWorks.description}
-        list={howFlockWorks.listOfHow}
-      />
-      <CalculateRiskDropDown
-        title={risk.title}
-        list={risk.list}
-        description={risk.description}
-      />
+      <div
+        className={css({
+          background: `${colors.backgrounds.dark} url(${map})`,
+          backgroundSize: 'cover'
+        })}
+      >
+        <ToggleiPhone
+          title={howFlockWorks.title}
+          description={howFlockWorks.description}
+          list={howFlockWorks.listOfHow}
+        />
+        <CalculateRiskDropDown
+          title={risk.title}
+          list={risk.list}
+          description={risk.description}
+        />
+      </div>
       <Box pt={[2, 5]}>
         <Calculator />
       </Box>

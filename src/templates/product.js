@@ -17,6 +17,7 @@ import ToggleiPhone from '../components/ToggleiPhone'
 import CalculateRiskFlat from '../components/CalculateRiskFlat'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import Testimonial from '../components/Testimonial'
+import map from '../images/map.png'
 
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
@@ -66,28 +67,35 @@ const SegmentPageTemplate = ({data}) => {
           smallText={doINeedInsurance.smallText}
         />
       )}
-      <ToggleiPhone
-        title={how.title}
-        description={how.description}
-        list={how.list}
-      />
-      <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-        {matches =>
-          matches ? (
-            <CalculateRiskFlat
-              title={risk.title}
-              description={risk.description}
-              list={risk.list}
-            />
-          ) : (
-            <CalculateRiskDropDown
-              title={risk.title}
-              description={risk.description}
-              list={risk.list}
-            />
-          )
-        }
-      </Media>
+      <div
+        className={css({
+          background: `${colors.backgrounds.dark} url(${map})`,
+          backgroundPosition: 'cover'
+        })}
+      >
+        <ToggleiPhone
+          title={how.title}
+          description={how.description}
+          list={how.list}
+        />
+        <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+          {matches =>
+            matches ? (
+              <CalculateRiskFlat
+                title={risk.title}
+                description={risk.description}
+                list={risk.list}
+              />
+            ) : (
+              <CalculateRiskDropDown
+                title={risk.title}
+                description={risk.description}
+                list={risk.list}
+              />
+            )
+          }
+        </Media>
+      </div>
       <Box pt={[2, 5]}>
         <Testimonial testimonials={testimonial} />
       </Box>
