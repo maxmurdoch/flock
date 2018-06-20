@@ -28,8 +28,8 @@ why:
         flight-by-flight basis.
       title: 'Bespoke cover '
     - text: >-
-        Flock’s pricing is risk-dependent, so the safer the flight, the less you
-        pay. Simple!
+        Flock’s pricing is risk-dependent, with commercial policies starting
+        from £5 a day.
       title: Fairer pricing
     - text: >-
         Flock’s policies are EC785/2004 compliant and approved by the Civil
@@ -40,9 +40,9 @@ why:
         onto your clients.
       title: Bill as an expense
     - text: >-
-        Plan a flight up to 10 days in advance. Change of plan? No problem,
-        simply cancel with one tap.
-      title: 'Flexible Policies '
+        Schedule as many flights as you like within 10 days. Change of plan?
+        Simply cancel beforehand with one tap.
+      title: 'Book in advance '
     - text: >-
         Chat to our customer support team through the app, or give us a call.
         Whichever you prefer.
@@ -53,8 +53,8 @@ doINeedInsurance:
   title: ''
 how:
   description: >-
-    Insuring your drone flight has never been easier. All it takes is a matter
-    of taps.
+    Insuring your drone flight has never been easier. Get covered in under 30
+    seconds with just a couple of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
       text: >-
