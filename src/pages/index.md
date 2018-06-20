@@ -32,9 +32,9 @@ secondTestimonial:
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
 howFlockWorks:
-  description: >-
-    Insuring your drone flight has never been easier. Get covered in under 30
-    seconds with just a few taps.
+  description: |-
+    Insuring your drone flight has never been easier. \
+    All it takes is a matter of taps.
   listOfHow:
     - image: images/uploads/phone--flight-details@2x.png
       text: >-
@@ -51,19 +51,19 @@ howFlockWorks:
         Pay for the policy and you're good to go! All the important
         documentation is sent straight to your email inbox.
       title: 3. Get flying
-  title: How Flock Cover works
+  title: 'How Flock Cover works '
 stopWorrying:
   description: Control your insurance from the palm of your hand with the Flock Cover app.
   reasons:
     - text: >-
         Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
-        It's as simple as that!
+        Simple!
       title: Fairer pricing
       icon: /images/uploads/price-icon.svg
     - text: >-
-        Pay for drone insurance only when you fly. From 1-8 hours, our policies
-        fit around your flight.
-      title: 'Short-term cover '
+        Pay for insurance only when you fly. Get covered for as little as one
+        hour, or up to a day.
+      title: 'Short-term insurance'
       icon: /images/uploads/shield-icon.svg
     - text: >-
         Get a real-time quote in 30 seconds. You can even see when and where

@@ -1,106 +1,98 @@
 ---
 title: Trainee
-templateKey: product
 hero:
+  backgroundImage: ../../images/uploads/trainee-pilots.png
   button:
     text: Download
     to: /download
-  description: >-
-    Pay for drone insurance only when you need it. Get a customised policy for
-    your flight.
-  header: Pay-as-you-fly drone insurance for professionals
-  backgroundImage: '../../images/uploads/trainee-pilots.png'
+  description: |-
+    * Flight assessment and training insurance from £6 
+    * Flexible hull insurance (up to £3K) 
+    * £1M Public Liability cover
+  header: 'Pay-as-you-fly drone insurance for trainee pilots '
 why:
-  description: >-
-    It’s time for a new kind of insurance. Control your cover from the get-go
-    with the Flock Cover app.
+  description: ''
   list:
     - text: >-
-        Policies range from 1-8 hours, and can be purchased on the spot, or
-        scheduled up to 10 days in advance.
-      title: Flexible policies
+        Policies can be purchased on the spot, or pre-booked up to 10 days in
+        advance.
+      title: Insurance when you need it
     - text: >-
-        Pay for insurance only when you fly, with no up-front costs. Flock’s
-        pricing is risk-dependent, so the safer the flight, the less you pay.
-      title: Fairer pricing
+        Get flight assessment insurance from £6. You can also use these policies
+        to  cover your training flights.
+      title: 'Flight assessment insurance '
     - text: >-
-        Fly with peace of mind knowing that Flock’s policies are EC785/2004
-        compliant and approved by the CAA.
-      title: Fully compliant
+        Flock’s policies are EC785/2004 compliant and approved by the Civil
+        Aviation Authority (CAA).
+      title: 'Fully compliant  '
     - text: >-
-        Since you can pinpoint the cost of insurance for each job, you can
-        easily pass the costs onto your clients.
-      title: Bill as an expense
+        Once you've got your PfCO, you can easily upgrade to a commercial
+        operator account in the app.
+      title: 'Easy Upgrade '
     - text: >-
-        We know two jobs are never the same. Choose your liability limit on a
-        per-flight basis, with options ranging from £1-10M.
-      title: Choose your liability limit
+        Flight assessment rescheduled? Cancel with a tap beforehand and get a
+        full refund.
+      title: 'Cancel with a tap '
     - text: >-
-        Every pilot gets access to customer support through the app. If
-        something goes wrong, you can make a claim with the tap of a button
+        Chat to our customer support team through the app, or give us a call.
+        Whichever you prefer.
       title: Instant support
-  title: Why do professionals use Flock?
+  title: Why do trainee pilots use Flock?
 showFlightSchoolList: true
 showCoverNote: true
 doINeedInsurance:
   title: ''
 how:
   description: >-
-    Insuring your drone or flight has never been simpler. All it takes is a
-    matter of taps.
+    Insuring your drone flight has never been simpler. All it takes is a matter
+    of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
       text: >-
-        Choose your flight area, and the date and time you want to fly. Receive
-        an instant quote at the bottom of your screen.
+        Choose your flight area, and the date and time you want to fly.
+        Instantly receive a real-time quote at the bottom of your screen.
       title: 1. Enter your flight details
     - image: ../../images/uploads/phone--customise-policy@2x.png
       text: >-
-        Select your cover duration and your public liability limit to suit the
-        exact needs of your job. We’ll update your quote so you can see the
-        difference.
+        From 1-8 hours, select how long you want to be covered for. You can even
+        set the price you want your hull and equipment to be insured for.
       title: 2. Customise your policy
     - image: ../../images/uploads/phone--get-flying@2x.png
       text: >-
-        Pay for the policy in a couple of taps. You’re covered! We’ll also send
-        you all the important documentation in an email.
+        Pay for the policy and you're good to go! All the important
+        documentation is instantly emailed to you.
       title: 3. Get flying
-  title: How hobbyists use Flock
+  title: How Flock Cover works
 risk:
   description: >-
-    Get much more than an insurance policy. We’ll help you fly safer by
-    providing a risk report for your flight. Simply enter your flight’s details
-    and instantly see surrounding hazards.
+    Know your risks before you fly. Simply enter your flight's details and
+    receive a real-time risk report.
   list:
     - icon: ../../images/uploads/icons-house.svg
       list:
-        - Airports
-        - Heliports
-        - Controlled airspace
-        - Special use airspace
+        - Schools
+        - Hospitals
+        - Prisons
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
       list:
-        - Airports
-        - Heliports
-        - Controlled airspace
-        - Special use airspace
+        - Building density
+        - Parks
+        - Power plants
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       list:
         - Airports
         - Heliports
         - Controlled airspace
-        - Special use airspace
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       list:
-        - Airports
-        - Heliports
-        - Controlled airspace
-        - Special use airspace
+        - Windspeed
+        - Probability of rainfall
+        - Temperature
       title: Hyperlocal weather
-  title: How we calculate risk
+  title: Insurance and then some..
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/air-shot-houses.jpeg
