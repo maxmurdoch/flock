@@ -49,9 +49,9 @@ showCoverNote: true
 doINeedInsurance:
   title: ''
 how:
-  description: |-
-    Insuring your drone flight has never been easier. \
-    All it takes is a matter of taps.
+  description: >-
+    Insuring your drone flight has never been easier. All it takes is a matter
+    of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
       text: >-
@@ -128,6 +128,6 @@ otherProducts:
         Enjoy your favourite hobby without worrying about insurance. Get covered
         from just £3 with the touch of a button.
       title: 'Hobbyist pilot '
-  title: What kind of pilot are you?
+  title: What kind of drone pilot are you?
 ---
 
