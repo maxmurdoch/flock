@@ -58,8 +58,8 @@ how:
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
       text: >-
-        Choose your flight area, and the date and time you want to fly. Receive
-        an instant quote at the bottom of your screen.
+        Choose your flight area, and the date and time you want to fly.
+        Instantly receive a real-time quote at the bottom of your screen.
       title: 1. Enter your flight details
     - image: ../../images/uploads/phone--customise-policy@2x.png
       text: >-
