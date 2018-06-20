@@ -1,5 +1,6 @@
 ---
 title: Commercial
+templateKey: product
 siteMetadata:
   description: drone insurance
   keywords:

@@ -1,5 +1,6 @@
 ---
 title: Trainee
+templateKey: product
 hero:
   backgroundImage: ../../images/uploads/trainee-pilots.png
   button:

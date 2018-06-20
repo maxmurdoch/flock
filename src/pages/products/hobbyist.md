@@ -1,5 +1,6 @@
 ---
 title: Hobbyist
+templateKey: product
 hero:
   backgroundImage: ../../images/uploads/hobbyist-background.png
   button:
