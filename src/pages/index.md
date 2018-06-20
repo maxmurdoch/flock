@@ -34,7 +34,7 @@ secondTestimonial:
 howFlockWorks:
   description: >-
     Insuring your drone flight has never been easier. Get covered in under 30
-    seconds with just a couple of taps.
+    seconds with just a few taps.
   listOfHow:
     - image: images/uploads/phone--flight-details@2x.png
       text: >-
@@ -65,7 +65,7 @@ stopWorrying:
       title: 'Short-term cover '
     - text: >-
         Get a real-time quote in 30 seconds. You can even see when and where
-        it's cheapest to insure your drone flight.
+        it's cheapest to fly.
       title: Total transparency
   title: It's time for a new kind of insurance.
 kindOfPilot:
