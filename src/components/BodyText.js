@@ -1,44 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
-import styled from 'react-emotion'
-import {color, space, textAlign, style, fontWeight} from 'styled-system'
+import Text from './Text'
 import {breakpoints} from '../constants/theme'
-
-const textShadow = style({
-  prop: 'textShadow',
-  cssProperty: 'textShadow',
-  key: 'shadows',
-  numberToPx: false,
-  getter: R.identity,
-  alias: 'sh'
-})
-
-const StyledBodyText = styled.p`
-  font-size: 18px;
-  line-height: 26px; 
-
-  @media (min-width: ${R.nth(0, breakpoints)}) {
-    font-size: 24px;
-    line-height: 34px;
-  }
-
-  ${fontWeight}
-  ${textShadow}
-  ${space}
-  ${textAlign}
-  ${color}
-`
+import {css} from 'emotion'
 
 const BodyText = ({children, mb = 0, ...props}) => {
   return (
-    <StyledBodyText mb={mb} {...props}>
+    <Text mb={mb} className={style.text} {...props}>
       {children}
-    </StyledBodyText>
+    </Text>
   )
 }
 
-export default BodyText
+const style = {
+  text: css({
+    fontsize: 18,
+    lineHeight: '26px',
+
+    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+      fontSize: 24,
+      lineHeight: '34px'
+    }
+  })
+}
 
 BodyText.propTypes = {
   children: PropTypes.oneOfType([
@@ -48,3 +33,5 @@ BodyText.propTypes = {
   ]),
   mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array])
 }
+
+export default BodyText

@@ -1,4 +1,5 @@
 import React from 'react'
+import Markdown from 'react-remarkable'
 import R from 'ramda'
 import styled from 'react-emotion'
 import PropTypes from 'prop-types'
@@ -26,6 +27,7 @@ const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
   const Component = styled(tag)`
   margin: 0;
   line-height: 1.5;
+
   ${styledFontSize}
   ${styledFontWeight}
   ${color}
@@ -36,7 +38,7 @@ const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
 `
   return (
     <Component fontWeight={fontWeight} {...props}>
-      {children}
+      <Markdown>{children}</Markdown>
     </Component>
   )
 }

@@ -1,35 +1,42 @@
 import React from 'react'
+import {css} from 'react-emotion'
+import PropTypes from 'prop-types'
 import R from 'ramda'
-import styled from 'react-emotion'
-import {color, lineHeight, space, textAlign} from 'styled-system'
+
+import Text from './Text'
 import {breakpoints} from '../constants/theme'
 
-const StyledH2 = styled.h2`
-  font-family: 'ITC', sans-serif;
-  font-weight: 700;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 34px;
-  text-transform: uppercase;
-
-  @media (min-width: ${R.nth(0, breakpoints)}) {
-    font-size: 36px;
-    text-transform: none;
-    line-height: 44px; 
-  }
-
-  ${space}
-  ${lineHeight}
-  ${textAlign}
-  ${color}
-`
-
-const H2 = ({children, ...props}) => {
+const H2 = ({children, tag = 'h2', ...props}) => {
   return (
-    <StyledH2 mb={2} lineHeight="1.3" {...props}>
+    <Text tag={tag} mb={1} className={style.text} {...props}>
       {children}
-    </StyledH2>
+    </Text>
   )
+}
+
+const style = {
+  text: css({
+    fontFamily: '"ITC", sans-serif',
+    fontWeight: 700,
+    fontSize: 17,
+    lineHeight: '34px',
+    textTransform: 'uppercase',
+
+    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+      fontSize: 36,
+      textTransform: 'none',
+      lineHeight: '44px'
+    }
+  })
+}
+
+H2.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.string,
+    PropTypes.array
+  ]),
+  tag: PropTypes.string
 }
 
 export default H2

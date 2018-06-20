@@ -1,29 +1,41 @@
 import React from 'react'
+import {css} from 'react-emotion'
+import PropTypes from 'prop-types'
 import R from 'ramda'
-import styled from 'react-emotion'
-import {color, space, textAlign} from 'styled-system'
+
+import Text from './Text'
 import {breakpoints} from '../constants/theme'
 
-const StyledH1 = styled.h1`
-  font-family: 'ITC', sans-serif;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 44px;
+const H1 = ({children, tag = 'h1', ...props}) => {
+  return (
+    <Text tag={tag} mb={1} className={style.text} {...props}>
+      {children}
+    </Text>
+  )
+}
 
-  @media (min-width: ${R.nth(0, breakpoints)}) {
-    font-size: 60px;
-    line-height: 66px;
-  }
+const style = {
+  text: css({
+    fontFamily: '"ITC", sans-serif',
+    fontWeight: 700,
+    fontSize: 36,
+    lineHeight: '44px',
+    textTransform: 'uppercase',
 
-  ${textAlign}
-  ${space} 
-  ${color}
-`
+    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+      fontSize: 60,
+      lineHeight: '66px'
+    }
+  })
+}
 
-const H1 = ({children, ...props}) => (
-  <StyledH1 mb={[0, 1]} {...props}>
-    {children}
-  </StyledH1>
-)
+H1.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.string,
+    PropTypes.array
+  ]),
+  tag: PropTypes.string
+}
 
 export default H1

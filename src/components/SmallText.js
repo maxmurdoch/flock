@@ -1,51 +1,22 @@
 import React from 'react'
+import {css} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
-import styled from 'react-emotion'
-import {color, space, textAlign, fontWeight, style} from 'styled-system'
+import Text from './Text'
 import {breakpoints} from '../constants/theme'
-
-const textShadow = style({
-  prop: 'textShadow',
-  cssProperty: 'textShadow',
-  key: 'shadows',
-  numberToPx: false,
-  getter: R.identity,
-  alias: 'sh'
-})
-
-const smallTextStyle = `
-font-family: 'Chivo';
-  font-size: 14px;
-  line-height: 20px; 
-
-  @media (min-width: ${R.nth(0, breakpoints)}) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-`
-
-const StyledSmallText = styled.p`
-  ${smallTextStyle}
-
-  ${textShadow}
-  ${space}
-  ${fontWeight}
-  ${textAlign}
-  ${color}
-`
 
 const SmallText = ({children, fontWeight = 400, mb = 0, ...props}) => {
   return (
-    <StyledSmallText fontWeight={fontWeight} mb={mb} {...props}>
+    <Text
+      fontWeight={fontWeight}
+      mb={mb}
+      className={style.smallTextStyle}
+      {...props}
+    >
       {children}
-    </StyledSmallText>
+    </Text>
   )
 }
-
-export {smallTextStyle}
-export default SmallText
 
 SmallText.propTypes = {
   children: PropTypes.oneOfType([
@@ -56,3 +27,20 @@ SmallText.propTypes = {
   mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array]),
   fontWeight: PropTypes.number
 }
+
+const smallTextStyle = css({
+  fontFamily: 'Chivo',
+  fontSize: 14,
+  lineHeight: '20px',
+  [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+    fontSize: 16,
+    lineHeight: '24px'
+  }
+})
+
+const style = {
+  smallTextStyle
+}
+
+export {smallTextStyle}
+export default SmallText
