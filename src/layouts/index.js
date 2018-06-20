@@ -1,4 +1,5 @@
 import React from 'react'
+import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import {injectGlobal} from 'emotion'
 import {StickyContainer} from 'react-sticky'
@@ -57,7 +58,9 @@ const Layout = ({
             {name: 'keywords', content: frontmatter.siteMetadata.keywords}
           ]}
         />
-        <div>{children()}</div>
+        <Markdown>
+          <div>{children()}</div>
+        </Markdown>
       </StickyContainer>
     </ThemeProvider>
   )

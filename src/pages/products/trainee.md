@@ -116,13 +116,13 @@ otherProducts:
     Chances are we can provide coverage tailored specifically to you. Select
     below to learn more.
   products:
-    - icon: ../../images/uploads/drone-camera.svg
+    - icon: /images/uploads/commercial-pilot.svg
       link: /products/commercial
       text: >-
         Flock’s EC785/2004 compliant policies offer flexible hull and liability
         insurance from just £5 a day.
       title: Commercial pilot
-    - icon: /images/uploads/drone-diamond.svg
+    - icon: /images/uploads/recreational-pilot.svg
       link: /products/hobbyist
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered

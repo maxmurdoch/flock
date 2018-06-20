@@ -151,6 +151,7 @@ collections:
         file: "src/pages/pricing.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - { name: templateKey, label: Template key, widget: 'hidden', default: product }
           - name: "siteMetadata"
             label: "Site metadata override"
             required: false
@@ -177,6 +178,7 @@ collections:
         file: "src/pages/about.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - { name: templateKey, label: Template key, widget: 'hidden', default: product }
           - name: "siteMetadata"
             label: "Site metadata override"
             required: false
@@ -206,11 +208,12 @@ collections:
             fields:
               - {name: 'title', label: 'Title', widget: 'string'}
               - {name: 'description', label: 'Description', widget: 'markdown'}
-              - {name: 'image', label: 'Image', widget: 'image'}
-              - {name: 'imageHeader', label: 'Image header', widget: 'string'}
-              - {name: 'bigText', label: 'Big text', widget: 'markdown'}
-              - {name: 'smallText', label: 'Small text', widget: 'markdown'}
-
+              - label: 'List'
+                name: 'list'
+                widget: 'list'
+                fields:
+                  - {label: 'Text', name: 'text', widget: 'markdown'} 
+                  - {label: 'Title', name: 'title', widget: 'markdown'} 
 
   - name: products
     label: Products

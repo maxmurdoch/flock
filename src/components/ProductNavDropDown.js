@@ -34,17 +34,17 @@ const ProductNavDropDown = ({productsIsOpen}) => {
               [
                 {
                   to: '/products/commercial',
-                  image: '/images/uploads/drone-camera.svg',
+                  image: '/images/uploads/commercial-pilot.svg',
                   text: 'Commercial pilot'
                 },
                 {
                   to: '/products/trainee',
-                  image: '/images/uploads/drone.svg',
+                  image: '/images/uploads/trainee-pilot.svg',
                   text: 'Trainee pilot'
                 },
                 {
                   to: '/products/hobbyist',
-                  image: '/images/uploads/drone-diamond.svg',
+                  image: '/images/uploads/recreational-pilot.svg',
                   text: 'Hobbyist pilot'
                 }
               ]

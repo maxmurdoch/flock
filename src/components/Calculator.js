@@ -8,8 +8,9 @@ import Flex from './Flex'
 import Box from './Box'
 import Label from './Label'
 import SmallText from './SmallText'
+import BodyText from './BodyText'
 import SiteContainer from './SiteContainer'
-import H4 from './H4'
+import H2 from './H2'
 import {colors, boxShadows} from '../constants/theme'
 
 injectGlobal`
@@ -228,12 +229,14 @@ class Calculator extends Component {
                 mt={[2, 3]}
                 flexDirection="column"
               >
-                <SmallText textAlign="center">Prices from</SmallText>
-                <H4 className={css({marginBottom: 0})}>
+                <SmallText textAlign="center" mb={1}>
+                  Prices from
+                </SmallText>
+                <BodyText fontWeight={700} className={css({marginBottom: 0})}>
                   £{Math.round(this.state.pricePerYear)} per year
-                </H4>
-                <SmallText textAlign="center">
-                  Just ${this.state.pricePerFlight} per flight
+                </BodyText>
+                <SmallText textAlign="center" mt={1}>
+                  That’s £{this.state.pricePerFlight} per flight
                 </SmallText>
               </Flex>
             </Flex>

@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { withState } from 'recompose'
+import React, {Component} from 'react'
+import {withState} from 'recompose'
 import Flex from './Flex'
 import Box from './Box'
 

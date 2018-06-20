@@ -54,7 +54,7 @@ doINeedInsurance:
   title: ''
 how:
   description: |-
-    Insuring your drone flight has never been easier. \
+    Insuring your drone flight has never been easier.
     All it takes is a matter of taps.
   list:
     - image: ../../images/uploads/phone--flight-details@2x.png
@@ -103,6 +103,7 @@ risk:
         - Temperature
       title: Hyperlocal weather
   title: 'Insurance and then some.. '
+
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/air-shot-houses.jpeg
@@ -115,19 +116,20 @@ testimonial:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
+
 otherProducts:
   description: >-
     Chances are we can provide coverage tailored specifically to you. Select
     below to learn more.
   products:
-    - icon: /images/uploads/drone.svg
-      link: '/products/trainee  '
+    - icon: /images/uploads/trainee-pilot.svg
+      link: '/products/trainee'
       text: >-
         From flight assessment insurance, to providing proof-of-insurance in
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
-    - icon: /images/uploads/drone-diamond.svg
-      link: '/products/hobbyist '
+    - icon: /images/uploads/recreational-pilot.svg
+      link: '/products/hobbyist'
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
         from just £3 with the touch of a button.
