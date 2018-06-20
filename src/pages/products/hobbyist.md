@@ -25,7 +25,7 @@ why:
     - text: >-
         Pay for insurance only when you fly. Get covered for as little as one
         hour, or up to a day.
-      title: 'Short-term insurance '
+      title: 'Short-term cover  '
   title: Why do hobbyists use Flock?
 showFlightSchoolList: false
 showCoverNote: false
