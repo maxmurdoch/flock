@@ -7,7 +7,7 @@ const mapIndex = R.addIndex(R.map)
 const NewLineToBr = ({Component = BodyText, children, ...props}) => {
   return (
     <Component {...props}>
-      {R.and(R.is(String, children), R.contains(/[\n\r]/, children))
+      {R.is(String, children) && R.contains(/[\n\r]/, children)
         ? mapIndex((child, key) => {
             return (
               <Fragment key={key}>
