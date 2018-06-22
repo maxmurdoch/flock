@@ -10,7 +10,7 @@ const SmallText = ({children, fontWeight = 400, mb = 0, ...props}) => {
     <Text
       fontWeight={fontWeight}
       mb={mb}
-      className={style.smallTextStyle}
+      customClassName={style.smallTextStyle}
       {...props}
     >
       {children}

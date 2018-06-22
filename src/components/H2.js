@@ -8,7 +8,7 @@ import {breakpoints} from '../constants/theme'
 
 const H2 = ({children, tag = 'h2', ...props}) => {
   return (
-    <Text tag={tag} mb={1} className={style.text} {...props}>
+    <Text tag={tag} mb={1} customClassName={style.text} {...props}>
       {children}
     </Text>
   )

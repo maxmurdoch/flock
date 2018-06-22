@@ -6,7 +6,7 @@ import {StickyContainer} from 'react-sticky'
 import Helmet from 'react-helmet'
 import {ThemeProvider} from 'emotion-theming'
 
-import theme from '../constants/theme'
+import theme, {fontFamilies} from '../constants/theme'
 import './index.css'
 
 import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
@@ -21,10 +21,10 @@ injectGlobal`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  font-family: Chivo, serif;
+  font-family: ${fontFamilies.chivo}
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: ITC, sans-serif;
+  font-family: ${fontFamilies.itc};
 }
 @font-face {
   font-family: 'ITC';

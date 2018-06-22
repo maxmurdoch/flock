@@ -8,7 +8,7 @@ import {breakpoints} from '../constants/theme'
 
 const H1 = ({children, tag = 'h1', ...props}) => {
   return (
-    <Text tag={tag} mb={1} className={style.text} {...props}>
+    <Text tag={tag} mb={1} customClassName={style.text} {...props}>
       {children}
     </Text>
   )
@@ -20,7 +20,6 @@ const style = {
     fontWeight: 700,
     fontSize: 36,
     lineHeight: '44px',
-    textTransform: 'uppercase',
 
     [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
       fontSize: 60,

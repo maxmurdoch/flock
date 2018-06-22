@@ -38,7 +38,7 @@ const FlockStory = ({header, bigText, smallText, image, imageHeader}) => {
             order={[0, 1]}
             flexWrap="wrap"
           >
-            <SmallText mb={2}>{imageHeader}</SmallText>
+            <SmallText mb={3}>{imageHeader}</SmallText>
             <img src={image} />
           </Flex>
         </Flex>

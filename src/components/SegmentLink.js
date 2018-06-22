@@ -8,7 +8,7 @@ import SmallText from './SmallText'
 import H4 from './H4'
 import Flex from './Flex'
 import Box from './Box'
-import {space, colors} from '../constants/theme'
+import {fontFamilies, space, colors} from '../constants/theme'
 
 class SegmentLink extends Component {
   constructor() {
@@ -67,6 +67,7 @@ const styles = {
   link: css({
     zIndex: 1,
     display: 'flex',
+    fontFamily: fontFamilies.chivo,
     backgroundColor: colors.backgrounds.light,
     flexWrap: 'wrap',
     padding: R.nth(2, space),

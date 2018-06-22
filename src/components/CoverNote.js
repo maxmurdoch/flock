@@ -16,7 +16,7 @@ const CoverNote = () => {
       <SiteContainer>
         <Flex flexWrap={true}>
           <Box width={['100%', '50%']} order={[1, 0]}>
-            <H2>Applying for your PfCO?</H2>
+            <H2 mb={2}>Applying for your PfCO?</H2>
             <BodyText mb={2}>
               You no longer need to commit to an annual insurance policy in
               order to get your proof of insurance for your PfCO renewal.
@@ -32,13 +32,27 @@ const CoverNote = () => {
               </Link>
             </SmallText>
           </Box>
-          <Flex justifyContent="center" width={['100%', '50%']} order={[0, 1]}>
-            <img src={coverNote} />
+          <Flex
+            justifyContent="center"
+            width={['100%', '50%']}
+            order={[0, 1]}
+            mt={[2, 0]}
+            pr={[2, 0]}
+          >
+            <Box width={['80%', 'auto']}>
+              <img className={style.image} src={coverNote} />
+            </Box>
           </Flex>
         </Flex>
       </SiteContainer>
     </Flex>
   )
+}
+
+const style = {
+  image: css({
+    marginBottom: 0
+  })
 }
 
 export default CoverNote

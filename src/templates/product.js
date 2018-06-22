@@ -19,7 +19,7 @@ import CalculateRiskFlat from '../components/CalculateRiskFlat'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import FlightSchool from '../components/FlightSchool'
 import Testimonial from '../components/Testimonial'
-import map from '../images/map.png'
+import MapBackground from '../components/MapBackground'
 
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
@@ -82,13 +82,7 @@ const SegmentPageTemplate = ({data}) => {
           smallText={doINeedInsurance.smallText}
         />
       )}
-      <div
-        className={css({
-          background: `${colors.backgrounds.dark} url(${map})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
-        })}
-      >
+      <MapBackground>
         <ToggleiPhone
           title={how.title}
           description={how.description}
@@ -111,7 +105,7 @@ const SegmentPageTemplate = ({data}) => {
             )
           }
         </Media>
-      </div>
+      </MapBackground>
       <Box pt={[2, 5]}>
         <Testimonial testimonials={testimonial} />
       </Box>

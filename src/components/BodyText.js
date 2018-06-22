@@ -7,7 +7,7 @@ import {css} from 'emotion'
 
 const BodyText = ({children, mb = 0, ...props}) => {
   return (
-    <Text mb={mb} className={style.text} {...props}>
+    <Text mb={mb} customClassName={style.text} {...props}>
       {children}
     </Text>
   )
@@ -15,7 +15,7 @@ const BodyText = ({children, mb = 0, ...props}) => {
 
 const style = {
   text: css({
-    fontsize: 18,
+    fontSize: 18,
     lineHeight: '26px',
 
     [`@media (min-width: ${R.nth(0, breakpoints)})`]: {

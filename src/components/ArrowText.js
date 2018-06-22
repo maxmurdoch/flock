@@ -1,41 +1,41 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import R from 'ramda'
-import { css } from 'react-emotion'
-
-import Flex from './Flex'
+import {css} from 'react-emotion'
 
 class ArrowText extends Component {
   static defaultProps = {
-    moveOnHover: true,
+    moveOnHover: true
   }
 
   state = {
-    isHovered: false,
+    isHovered: false
   }
 
   render() {
+    const {className, children, moveOnHover, isHovered} = this.props
+
     return (
       <span
         onMouseOver={() => {
-          this.setState({ isHovered: true })
+          this.setState({isHovered: true})
         }}
         onMouseOut={() => {
-          this.setState({ isHovered: false })
+          this.setState({isHovered: false})
         }}
-        className={css({ display: 'flex' }, this.props.className)}
+        className={css({display: 'flex'}, className)}
       >
-        {this.props.children}
+        {children}
         <i
           className={css({
             color: 'inherit',
             fontStyle: 'normal',
             transition: '200ms padding ease-in-out',
             paddingLeft: R.and(
-              this.props.moveOnHover,
-              R.or(this.state.isHovered, this.props.isHovered)
+              moveOnHover,
+              R.or(this.state.isHovered, isHovered)
             )
               ? 20
-              : 10,
+              : 10
           })}
         >
           →

@@ -17,11 +17,11 @@ import DarkNav from '../components/DarkNav'
 import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
+import MapBackground from '../components/MapBackground'
 import {colors, breakpoints} from '../constants/theme'
 
 import bigFlock from '../images/big-arrow.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
-import map from '../images/map.png'
 
 const HomePageTemplate = ({data}) => {
   const {
@@ -73,13 +73,7 @@ const HomePageTemplate = ({data}) => {
       <Box pb={[2, 3]}>
         <Testimonial testimonials={firstTestimonial} />
       </Box>
-      <div
-        className={css({
-          background: `${colors.backgrounds.dark} url(${map})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
-        })}
-      >
+      <MapBackground>
         <ToggleiPhone
           title={howFlockWorks.title}
           description={howFlockWorks.description}
@@ -90,7 +84,7 @@ const HomePageTemplate = ({data}) => {
           list={risk.list}
           description={risk.description}
         />
-      </div>
+      </MapBackground>
       <Box pt={[2, 5]}>
         <Calculator />
       </Box>

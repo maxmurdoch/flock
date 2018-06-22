@@ -34,7 +34,7 @@ class Testimonial extends Component {
             pr={[0, 0]}
           >
             <Flex flexWrap="wrap" justifyContent="center" zIndex={2}>
-              <Box width={['100%', '75%']}>
+              <Box width={['100%', '75%']} pr={2} pl={2}>
                 <BodyText
                   textShadow="0 1px 0 rgba(0, 0, 0, 0.2)"
                   textAlign="center"

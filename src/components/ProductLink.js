@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import R from 'ramda'
 import {css} from 'react-emotion'
 
 import ArrowText from './ArrowText'
 import SmallText from './SmallText'
-import {colors, space} from '../constants/theme'
+import {colors, space, fontFamilies} from '../constants/theme'
 
 class ProductLink extends Component {
   constructor() {
@@ -35,7 +36,10 @@ class ProductLink extends Component {
           })}
           src={image}
         />
-        <ArrowText isHovered={this.state.isHovered}>
+        <ArrowText
+          className={css({fontFamily: fontFamilies.chivo})}
+          isHovered={this.state.isHovered}
+        >
           <SmallText fontWeight={700} color={colors.white}>
             {text}
           </SmallText>
@@ -56,4 +60,10 @@ const styles = {
     paddingTop: R.nth(3, space),
     paddingBottom: R.nth(3, space)
   })
+}
+
+ProductLink.propTypes = {
+  to: PropTypes.string,
+  image: PropTypes.string,
+  text: PropTypes.string
 }
