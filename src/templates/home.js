@@ -20,8 +20,9 @@ import Footer from '../components/Footer'
 import MapBackground from '../components/MapBackground'
 import {colors, breakpoints} from '../constants/theme'
 
-import bigFlock from '../images/big-arrow.svg'
+import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
+import iPhone from '../../static/images/uploads/white-phone-cropped@2x.png'
 
 const HomePageTemplate = ({data}) => {
   const {
@@ -40,15 +41,15 @@ const HomePageTemplate = ({data}) => {
         {matches => (matches ? <DarkNav /> : <MobileNav />)}
       </Media>
       <Hero
+        RightSideComponent={() => <img src={iPhone} className={style.iphone} />}
         headerClassName={css({
           background: colors.backgrounds.light,
           backgroundImage: `url(${mobileFlock})`,
-          backgroundSize: 'contain',
+          backgroundSize: '45rem',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'bottom left',
           [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
             backgroundImage: `url(${bigFlock})`,
-            backgroundSize: '50%',
             backgroundPosition: 'bottom right'
           }
         })}
@@ -102,7 +103,9 @@ const HomePageTemplate = ({data}) => {
   )
 }
 
-export default HomePageTemplate
+const style = {
+  iphone: css({marginBottom: 0})
+}
 
 export const query = graphql`
   query HomePage($id: String!) {
@@ -170,3 +173,5 @@ export const query = graphql`
     }
   }
 `
+
+export default HomePageTemplate

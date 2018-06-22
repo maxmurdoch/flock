@@ -17,12 +17,12 @@ import allianz from '../images/logo/allianz/black.png'
 import tick from '../images/icons/black-tick.png'
 import support from '../images/icons/support.png'
 import {colors, breakpoints} from '../constants/theme'
-import iPhone from '../../static/images/uploads/white-phone-cropped@2x.png'
 
 const Hero = ({
   textColor = colors.black,
   headerClassName,
   header,
+  RightSideComponent,
   description,
   button
 }) => {
@@ -42,7 +42,7 @@ const Hero = ({
       >
         <SiteContainer>
           <Flex alignItems="center" mt={[3, 5]}>
-            <Box width={['100%', '50%']}>
+            <Box width={['100%', '50%']} mt={[3, 5]} mb={[3, 6]}>
               <H1 color={textColor} mb={[2, 3]}>
                 {header}
               </H1>
@@ -65,13 +65,15 @@ const Hero = ({
                 </Media>
               ) : null}
             </Box>
-            <Flex
-              alignItems="center"
-              justifyContent="center"
-              width={['100%', '50%']}
-            >
-              <img src={iPhone} className={style.iphone} />
-            </Flex>
+            {RightSideComponent ? (
+              <Flex
+                alignItems="center"
+                justifyContent="center"
+                width={['100%', '50%']}
+              >
+                <RightSideComponent />
+              </Flex>
+            ) : null}
           </Flex>
         </SiteContainer>
       </Flex>
@@ -134,10 +136,4 @@ Hero.propTypes = {
   header: PropTypes.string,
   description: PropTypes.string,
   button: PropTypes.object
-}
-
-const style = {
-  iphone: css({
-    marginBottom: 0
-  })
 }
