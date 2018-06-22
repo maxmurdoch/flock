@@ -121,9 +121,9 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
                   >
                     {mapIndex(
                       ({text, to, className}, index) => (
-                        <Link to={to} className={className}>
+                        <Link to={to} className={className} key={index}>
                           <ArrowText>
-                            <SmallText fontWeight="700">{text}</SmallText>
+                            <SmallText fontWeight={700}>{text}</SmallText>
                           </ArrowText>
                         </Link>
                       ),

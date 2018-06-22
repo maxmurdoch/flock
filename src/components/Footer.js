@@ -91,7 +91,7 @@ const Footer = ({containerClassName}) => {
             }, secondFooterLinks)}
           </Flex>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
-            <BodyText color="white" fontWeight="700" mb={1}>
+            <BodyText color="white" fontWeight={700} mb={1}>
               Got a question? Get in touch:
             </BodyText>
             <Link

@@ -26,7 +26,7 @@ const MeetTheTeam = ({title, description, team}) => {
             return (
               <Box key={key} pr={2} width={[`${100 / 6}%`]}>
                 {photo ? <img src={photo} /> : null}
-                <SmallText fontWeight="700">{member}</SmallText>
+                <SmallText fontWeight={700}>{member}</SmallText>
                 <SmallText>{role}</SmallText>
               </Box>
             )

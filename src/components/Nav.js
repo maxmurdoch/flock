@@ -151,8 +151,8 @@ class Nav extends Component {
 export default Nav
 
 Nav.propTypes = {
-  Logo: PropTypes.element,
-  DownloadButton: PropTypes.element,
+  Logo: PropTypes.func,
+  DownloadButton: PropTypes.func,
   textColor: PropTypes.func,
   arrowImage: PropTypes.func
 }
