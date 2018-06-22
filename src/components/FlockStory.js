@@ -1,4 +1,5 @@
 import React from 'react'
+import Markdown from 'react-remarkable'
 import R from 'ramda'
 import {css} from 'react-emotion'
 import PropTypes from 'prop-types'
