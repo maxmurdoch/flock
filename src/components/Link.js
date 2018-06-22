@@ -7,7 +7,7 @@ import {isURL, isEmail} from 'validator'
 const Link = ({children, to, ...props}) => {
   const validators = [isURL(to), isEmail(to), R.test(/^tel:/, to)]
 
-  return R.anyPass(validators) ? (
+  return to && R.anyPass(validators) ? (
     <a href={to} {...props}>
       {children}
     </a>
