@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import R from 'ramda'
 import {css} from 'react-emotion'
 
+import Link from './Link'
 import ArrowText from './ArrowText'
 import SmallText from './SmallText'
 import {colors, space, fontFamilies} from '../constants/theme'

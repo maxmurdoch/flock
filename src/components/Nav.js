@@ -1,10 +1,10 @@
 import R from 'ramda'
 import PropTypes from 'prop-types'
 import React, {Component} from 'react'
-import Link from 'gatsby-link'
 import {Sticky} from 'react-sticky'
 import {css} from 'react-emotion'
 
+import Link from './Link'
 import SiteContainer from './SiteContainer'
 import SmallText from './SmallText'
 import Flex from './Flex'

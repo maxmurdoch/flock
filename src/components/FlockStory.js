@@ -1,7 +1,6 @@
 import React from 'react'
 import R from 'ramda'
 import {css} from 'react-emotion'
-import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 
 import Flex from './Flex'

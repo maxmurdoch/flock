@@ -39,7 +39,7 @@ howFlockWorks:
     Insuring your drone flight has never been easier.
     All it takes is a matter of taps.
   listOfHow:
-    - image: images/uploads/phone--flight-details@2x.png
+    - image: images/uploads/flight-details@2x.png
       text: >-
         Choose your flight area, and the date and time you want to fly.
         Instantly receive a real-time quote at the bottom of your screen.
@@ -54,13 +54,15 @@ howFlockWorks:
         Pay for the policy and you're good to go! All the important
         documentation is sent straight to your email inbox.
       title: 3. Get flying
-  title: 'How Flock Cover works '
+  title: >-
+    How Flock Cover 
+    
+    works
 stopWorrying:
   description: Control your insurance from the palm of your hand with the Flock Cover app.
   reasons:
     - text: >-
-        Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
-        Simple!
+        Flock’s pricing is risk-dependent: the safer you fly, the less you pay. Simple!
       title: Fairer pricing
       icon: /images/uploads/price-icon.svg
     - text: >-
@@ -73,12 +75,11 @@ stopWorrying:
         it's cheapest to fly.
       title: Total transparency
       icon: /images/uploads/search-icon.svg
-  title: It's time for a new kind of insurance.
+  title: >-
+    It's time for a new kind of insurance.
 kindOfPilot:
   description: |-
-    Chances are we can
-
-    provide insurance tailored specifically to you.
+    Chances are we can provide insurance tailored specifically to you.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /products/commercial
@@ -128,7 +129,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: 'Insurance and then some.. '
+  title: 'Insurance and then some... '
 whatFlockCovers:
   description: ''
   title: ''

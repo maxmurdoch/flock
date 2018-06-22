@@ -1,9 +1,9 @@
 import React from 'react'
 import {css} from 'emotion'
 import R from 'ramda'
-import Link from 'gatsby-link'
 
 import logo from '../images/logo-white.svg'
+import Link from './Link'
 import SmallText from './SmallText'
 import BodyText from './BodyText'
 import Flex from './Flex'

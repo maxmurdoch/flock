@@ -18,7 +18,7 @@ const TextGrid = ({title, description, list, image}) => (
     <SiteContainer>
       <Flex flexWrap={true}>
         <Box width={['100%', '50%']}>
-          {title ? <H2>{title}</H2> : null}
+          {title ? <H2 markdown={true}>{title}</H2> : null}
           {image ? <img src={image} /> : null}
           <BodyText>{description}</BodyText>
         </Box>

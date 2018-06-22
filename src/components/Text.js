@@ -3,6 +3,7 @@ import {css} from 'react-emotion'
 import Markdown from 'react-remarkable'
 import R from 'ramda'
 import styled from 'react-emotion'
+import NewLineToBr from './NewLineToBr'
 import PropTypes from 'prop-types'
 import {
   fontSize as styledFontSize,
@@ -51,19 +52,14 @@ const Text = ({
   ${textShadow}
 `
   return (
-    <Component
+    <NewLineToBr
+      Component={Component}
       className={css(className, customClassName)}
       fontWeight={fontWeight}
       {...props}
     >
-      {markdown ? (
-        <Markdown container="span" options={{typographer: true}}>
-          children
-        </Markdown>
-      ) : (
-        children
-      )}
-    </Component>
+      {children}
+    </NewLineToBr>
   )
 }
 

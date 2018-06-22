@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import {css} from 'react-emotion'
 
+import Link from './Link'
 import Flex from './Flex'
 import Box from './Box'
 import H2 from './H2'

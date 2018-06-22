@@ -1,32 +1,45 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css, injectGlobal} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 
 import Text from './Text'
-import {breakpoints} from '../constants/theme'
+import {breakpoints, fontFamilies} from '../constants/theme'
 
 const H1 = ({children, tag = 'h1', ...props}) => {
   return (
-    <Text tag={tag} mb={1} customClassName={style.text} {...props}>
+    <Text
+      tag={tag}
+      mb={1}
+      customClassName={css`
+        ${style.text};
+      `}
+      {...props}
+    >
       {children}
     </Text>
   )
 }
 
 const style = {
-  text: css({
-    fontFamily: '"ITC", sans-serif',
-    fontWeight: 700,
-    fontSize: 36,
-    lineHeight: '44px',
+  text: `
+    font-family: ${fontFamilies.itc};
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
 
-    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-      fontSize: 60,
-      lineHeight: '66px'
+    @media (min-width: ${R.nth(0, breakpoints)}) {
+      font-size: 60px;
+      line-height: 66px;
     }
-  })
+  `
 }
+
+injectGlobal`
+h1 {
+  ${style.text}
+}
+`
 
 H1.propTypes = {
   children: PropTypes.oneOfType([

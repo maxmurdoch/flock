@@ -48,6 +48,7 @@ const HomePageTemplate = ({data}) => {
           backgroundPosition: 'bottom left',
           [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
             backgroundImage: `url(${bigFlock})`,
+            backgroundSize: '50%',
             backgroundPosition: 'bottom right'
           }
         })}

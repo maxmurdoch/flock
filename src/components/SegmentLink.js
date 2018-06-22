@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import {css} from 'emotion'
 import R from 'ramda'
-import Link from 'gatsby-link'
 
+import Link from './Link'
 import ArrowText from './ArrowText'
 import SmallText from './SmallText'
 import H4 from './H4'
@@ -11,11 +12,8 @@ import Box from './Box'
 import {fontFamilies, space, colors} from '../constants/theme'
 
 class SegmentLink extends Component {
-  constructor() {
-    super()
-    this.state = {
-      isHovered: false
-    }
+  state = {
+    isHovered: false
   }
 
   render() {
@@ -78,4 +76,11 @@ const styles = {
       transform: 'translateY(-10px)'
     }
   })
+}
+
+SegmentLink.propTypes = {
+  title: PropTypes.string,
+  text: PropTypes.string,
+  icon: PropTypes.string,
+  link: PropTypes.string
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
@@ -18,6 +17,7 @@ import allianz from '../images/logo/allianz/black.png'
 import tick from '../images/icons/black-tick.png'
 import support from '../images/icons/support.png'
 import {colors, breakpoints} from '../constants/theme'
+import iPhone from '../../static/images/uploads/white-phone-cropped@2x.png'
 
 const Hero = ({
   textColor = colors.black,
@@ -28,7 +28,6 @@ const Hero = ({
 }) => {
   return (
     <Flex
-      height="100vh"
       flexDirection="column"
       justifyContent="space-between"
       width="100%"
@@ -39,34 +38,44 @@ const Hero = ({
         justifyContent="center"
         className={headerClassName}
         flex="1 1 auto"
+        overflow="hidden"
       >
         <SiteContainer>
-          <Box width={['100%', '50%']}>
-            <H1 color={textColor} mb={[2, 3]}>
-              {header}
-            </H1>
-            <BodyText color={textColor} mb={[2, 3]}>
-              <Markdown>{description}</Markdown>
-            </BodyText>
-            {button ? (
-              <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-                {matches =>
-                  matches ? (
-                    <PrimaryButton to={button.to}>
-                      <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                    </PrimaryButton>
-                  ) : (
-                    <SecondaryButton to={button.to}>
-                      <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                    </SecondaryButton>
-                  )
-                }
-              </Media>
-            ) : null}
-          </Box>
+          <Flex alignItems="center" mt={[3, 5]}>
+            <Box width={['100%', '50%']}>
+              <H1 color={textColor} mb={[2, 3]}>
+                {header}
+              </H1>
+              <BodyText color={textColor} mb={[2, 3]}>
+                {description}
+              </BodyText>
+              {button ? (
+                <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+                  {matches =>
+                    matches ? (
+                      <PrimaryButton to={button.to}>
+                        <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                      </PrimaryButton>
+                    ) : (
+                      <SecondaryButton to={button.to}>
+                        <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                      </SecondaryButton>
+                    )
+                  }
+                </Media>
+              ) : null}
+            </Box>
+            <Flex
+              alignItems="center"
+              justifyContent="center"
+              width={['100%', '50%']}
+            >
+              <img src={iPhone} className={style.iphone} />
+            </Flex>
+          </Flex>
         </SiteContainer>
       </Flex>
-      <Flex justifyContent="center">
+      <Flex position="relative" zIndex="1" justifyContent="center">
         <SiteContainer>
           <Flex
             pt={2}
@@ -125,4 +134,10 @@ Hero.propTypes = {
   header: PropTypes.string,
   description: PropTypes.string,
   button: PropTypes.object
+}
+
+const style = {
+  iphone: css({
+    marginBottom: 0
+  })
 }

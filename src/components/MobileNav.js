@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import { Sticky } from 'react-sticky'
-import { Collapse } from 'react-collapse'
-import { withState } from 'recompose'
+import {Sticky} from 'react-sticky'
+import {Collapse} from 'react-collapse'
+import {withState} from 'recompose'
 import R from 'ramda'
-import { css } from 'react-emotion'
+import {css} from 'react-emotion'
 
+import Link from './Link'
 import ArrowText from './ArrowText'
 import Flex from './Flex'
 import Box from './Box'
@@ -14,7 +14,7 @@ import SiteContainer from './SiteContainer'
 
 import hamburger from '../images/icons/hamburger.svg'
 import blackLogo from '../images/logo-black.svg'
-import { colors, space } from '../constants/theme'
+import {colors, space} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -24,49 +24,49 @@ const styles = {
     display: 'flex',
     color: colors.white,
     textDecoration: 'none',
-    marginTop: R.nth(2, space),
-  }),
+    marginTop: R.nth(2, space)
+  })
 }
 const productList = [
   {
     to: '/products/commercial',
     className: styles.product,
-    text: 'Commercial pilot',
+    text: 'Commercial pilot'
   },
   {
     to: '/products/trainee',
     className: styles.product,
-    text: 'Trainee pilot',
+    text: 'Trainee pilot'
   },
   {
     to: '/products/hobbyist',
     className: styles.product,
-    text: 'Hobbyist pilot',
-  },
+    text: 'Hobbyist pilot'
+  }
 ]
 
 const navList = [
   {
     to: '/',
     className: styles.product,
-    text: 'Home',
+    text: 'Home'
   },
   {
     to: '/support',
     className: styles.product,
-    text: 'Support',
-  },
+    text: 'Support'
+  }
 ]
 
-const MobileNav = ({ isOpen, toggleMenu, textColor = () => colors.black }) => {
+const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
   return (
     <Sticky disableCompensation={true}>
-      {({ style, distanceFromTop }) => {
+      {({style, distanceFromTop}) => {
         const activateStickyStyle = distanceFromTop < -50
 
         return (
           <Flex
-            style={{ width: '100%', position: 'fixed', top: 0, ...style }}
+            style={{width: '100%', position: 'fixed', top: 0, ...style}}
             flexWrap={true}
             position="relative"
             zIndex="2"
@@ -82,7 +82,7 @@ const MobileNav = ({ isOpen, toggleMenu, textColor = () => colors.black }) => {
             >
               <Box>
                 <img
-                  className={css({ marginBottom: 0, width: R.nth(5, space) })}
+                  className={css({marginBottom: 0, width: R.nth(5, space)})}
                   src={blackLogo}
                 />
               </Box>
@@ -92,14 +92,14 @@ const MobileNav = ({ isOpen, toggleMenu, textColor = () => colors.black }) => {
                     border: 0,
                     background: 'none',
                     display: 'flex',
-                    alignItems: 'center',
+                    alignItems: 'center'
                   })}
                   onClick={() => toggleMenu(isOpen => R.not(isOpen))}
                 >
                   <img
                     className={css({
                       marginBottom: 0,
-                      paddingRight: 5,
+                      paddingRight: 5
                     })}
                     src={hamburger}
                   />
@@ -109,18 +109,18 @@ const MobileNav = ({ isOpen, toggleMenu, textColor = () => colors.black }) => {
             </Flex>
             <Collapse
               isOpened={isOpen}
-              className={css({ width: '100%' })}
-              springConfig={{ stiffness: 1000, damping: 50 }}
+              className={css({width: '100%'})}
+              springConfig={{stiffness: 1000, damping: 50}}
             >
               <Flex background={colors.backgrounds.dark} width="100%" pb={2}>
                 <SiteContainer>
                   <nav
                     className={css({
-                      width: '100%',
+                      width: '100%'
                     })}
                   >
                     {mapIndex(
-                      ({ text, to, className }, index) => (
+                      ({text, to, className}, index) => (
                         <Link to={to} className={className}>
                           <ArrowText>
                             <SmallText fontWeight="700">{text}</SmallText>
@@ -135,7 +135,7 @@ const MobileNav = ({ isOpen, toggleMenu, textColor = () => colors.black }) => {
                       width="100%"
                     />
                     {mapIndex(
-                      ({ text, to, className }, index) => (
+                      ({text, to, className}, index) => (
                         <Link to={to} className={className}>
                           <SmallText>{text}</SmallText>
                         </Link>

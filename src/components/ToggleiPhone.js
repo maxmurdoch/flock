@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import {css} from 'emotion'
@@ -11,8 +10,7 @@ import H3 from './H3'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import iPhoneX from '../../static/images/uploads/iphone-x.png'
-import {colors, space} from '../constants/theme'
+import {colors, space, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -140,19 +138,15 @@ class ToggleiPhone extends Component {
               width={['100%', '50%']}
             >
               <Flex justifyContent="center">
-                <Box width={['60%', '80%']} position="relative">
+                <Box width={['80%', '100%']} position="relative">
                   <img
                     className={css({
-                      zIndex: 1,
-                      position: 'absolute',
-                      transform: 'rotate(14deg)',
-                      width: '46%',
-                      left: '36%',
-                      top: '12%'
+                      [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+                        transform: 'translateY(-20%) translateX(-18%)'
+                      }
                     })}
                     src={R.path([this.state.activeIndex, 'image'], list)}
                   />
-                  <img src={iPhoneX} className={css({marginBottom: 0})} />
                 </Box>
               </Flex>
             </Box>
