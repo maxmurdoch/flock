@@ -12,7 +12,7 @@ import coverNote from '../../static/images/uploads/cover-note.svg'
 
 const CoverNote = () => {
   return (
-    <Flex justifyContent="center" pt={[2, 5]}>
+    <Flex justifyContent="center" pt={[3, 5]} pb={[3, 5]}>
       <SiteContainer>
         <Flex flexWrap={true}>
           <Box width={['100%', '50%']} order={[1, 0]}>

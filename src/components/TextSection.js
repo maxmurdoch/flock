@@ -1,5 +1,4 @@
 import React from 'react'
-import Markdown from 'react-remarkable'
 import {css} from 'react-emotion'
 
 import SiteContainer from './SiteContainer'
@@ -27,18 +26,14 @@ const TextSection = ({title, bigText, smallText}) => {
       <SiteContainer>
         <Flex flexWrap="wrap">
           <Box width={['100%', '50%', '33.33%']} mb={2}>
-            <H2>
-              <Markdown container="span">{title}</Markdown>
-            </H2>
+            <H2>{title}</H2>
           </Box>
           <Flex flexWrap="wrap" justifyContent="space-between">
             <Box width={['100%', '100%', `${(100 / 12) * 7}%`]} mb={3}>
               <BodyText>{bigText}</BodyText>
             </Box>
             <Box width={['100%', '100%', '33.33%']}>
-              <SmallText>
-                <Markdown container="span">{smallText}</Markdown>
-              </SmallText>
+              <SmallText>{smallText}</SmallText>
             </Box>
           </Flex>
         </Flex>

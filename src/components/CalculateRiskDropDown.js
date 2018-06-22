@@ -10,18 +10,15 @@ import H2 from './H2'
 import LI from './LI'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import iPhone from '../../static/images/uploads/risk-iphone-mockup.png'
+import iPhone from '../../static/images/uploads/risk@2x.png'
 import downArrow from '../images/icons/small-down-arrow-white.svg'
 import {colors, space} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 class CalculateRiskDropDown extends Component {
-  constructor() {
-    super()
-    this.state = {
-      activeIndex: null,
-      isHovered: []
-    }
+  state = {
+    activeIndex: null,
+    isHovered: []
   }
 
   componentDidMount() {
@@ -39,8 +36,8 @@ class CalculateRiskDropDown extends Component {
         <SiteContainer>
           <Flex flexDirection={['column', 'row']}>
             <Flex justifyContent="center">
-              <Box width={['75%', '60%']}>
-                <img width="100%" src={iPhone} />
+              <Box width={['75%', '70%']}>
+                <img width="100%" className={style.iphone} src={iPhone} />
               </Box>
             </Flex>
             <Box width={['100%', '50%']}>
@@ -176,4 +173,9 @@ class CalculateRiskDropDown extends Component {
   }
 }
 
+const style = {
+  iphone: css({
+    paddingRight: R.nth(5, space)
+  })
+}
 export default CalculateRiskDropDown

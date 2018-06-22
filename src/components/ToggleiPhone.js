@@ -40,7 +40,7 @@ class ToggleiPhone extends Component {
               </Box>
             </Box>
 
-            <Box width={['100%', '50%']} order={[2, 2]}>
+            <Box width={['100%', '50%']} order={[2, 2]} pb={[3, 5]}>
               <Box width={['100%', '66.66%']}>
                 <ol
                   className={css({
@@ -142,7 +142,9 @@ class ToggleiPhone extends Component {
                   <img
                     className={css({
                       [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-                        transform: 'translateY(-20%) translateX(-18%)'
+                        position: 'absolute',
+                        top: '-100px',
+                        right: '15%'
                       }
                     })}
                     src={R.path([this.state.activeIndex, 'image'], list)}

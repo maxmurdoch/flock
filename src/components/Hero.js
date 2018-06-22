@@ -1,4 +1,5 @@
 import React from 'react'
+import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
@@ -32,6 +33,8 @@ const Hero = ({
       justifyContent="space-between"
       width="100%"
       flex="1 1 auto"
+      position="relative"
+      zIndex="0"
     >
       <Flex
         alignItems="center"
@@ -47,7 +50,7 @@ const Hero = ({
                 {header}
               </H1>
               <BodyText color={textColor} mb={[2, 3]}>
-                {description}
+                <Markdown>{description}</Markdown>
               </BodyText>
               {button ? (
                 <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
@@ -131,6 +134,7 @@ const Hero = ({
 export default Hero
 
 Hero.propTypes = {
+  RightSideComponent: PropTypes.func,
   textColor: PropTypes.string,
   headerClassName: PropTypes.string,
   header: PropTypes.string,
