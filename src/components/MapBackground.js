@@ -9,7 +9,7 @@ const MapBackground = ({children}) => {
     <div
       className={css({
         background: `${colors.backgrounds.dark} url(${map})`,
-        backgroundSize: 'auto 100vh',
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'bottom',
         backgroundAttachment: 'fixed'
