@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
 import {css} from 'emotion'
@@ -11,6 +12,7 @@ import TextGrid from '../components/TextGrid'
 import OtherProducts from '../components/OtherProducts'
 import Calculator from '../components/Calculator'
 import Testimonial from '../components/Testimonial'
+import TitleAndDescription from '../components/TitleAndDescription'
 import ToggleiPhone from '../components/ToggleiPhone'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import DarkNav from '../components/DarkNav'
@@ -31,6 +33,8 @@ const HomePageTemplate = ({data}) => {
     hero: {header, description, button},
     howFlockWorks,
     stopWorrying,
+    download,
+    calculator,
     kindOfPilot,
     risk
   } = data.markdownRemark.frontmatter
@@ -79,13 +83,21 @@ const HomePageTemplate = ({data}) => {
         />
       </MapBackground>
       <Box pt={[2, 5]}>
+        <TitleAndDescription
+          title={calculator.title}
+          description={calculator.description}
+        />
         <Calculator />
       </Box>
       <Box pt={[2, 5]}>
         <Testimonial testimonials={secondTestimonial} />
       </Box>
       <Box pt={[2, 5]}>
-        <DownloadFlock />
+        <DownloadFlock
+          title={download.title}
+          text={download.text}
+          button={download.button}
+        />
       </Box>
       <BigSectionLine />
       <Featured />
@@ -167,6 +179,14 @@ export const query = graphql`
             list
           }
         }
+        download {
+          title
+          text
+          button {
+            to
+            text
+          }
+        }
         howFlockWorks {
           title
           description
@@ -176,9 +196,17 @@ export const query = graphql`
             image
           }
         }
+        calculator {
+          title
+          description
+        }
       }
     }
   }
 `
+
+HomePageTemplate.propTypes = {
+  data: PropTypes.object
+}
 
 export default HomePageTemplate

@@ -7,7 +7,6 @@ import Box from './Box'
 import PrimaryButton from './PrimaryButton'
 import H2 from './H2'
 import SiteContainer from './SiteContainer'
-import BigSectionLine from './BigSectionLine'
 
 const DownloadFlock = () => {
   return (

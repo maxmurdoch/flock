@@ -1,6 +1,8 @@
 ---
 title: Home
+
 templateKey: home
+
 hero:
   button:
     text: Download
@@ -77,6 +79,7 @@ stopWorrying:
       icon: /images/uploads/search-icon.svg
   title: >-
     It's time for a new kind of insurance.
+
 kindOfPilot:
   description: |-
     Chances are we can provide insurance tailored specifically to you.
@@ -100,6 +103,7 @@ kindOfPilot:
         from just £3 with the touch of a button.
       title: Hobbyist pilot
   title: What kind of drone pilot are you?
+
 risk:
   description: >-
     Know your risks before you fly. Simply enter your flight's details and
@@ -130,11 +134,24 @@ risk:
         - Temperature
       title: Hyperlocal weather
   title: 'Insurance and then some... '
+
+download:
+  title: 'Blah'
+  text: 'blasdfasdf'
+  button:
+    to: 'Download'
+    text: '/download'
+
 whatFlockCovers:
   description: ''
   title: ''
+
 featured:
   image: images/uploads/featured-list.png
   title: We’ve been featured
----
 
+calculator:
+  title: 'Get a rough quote'
+  description: 'Lorem lorem lorem'
+
+---
