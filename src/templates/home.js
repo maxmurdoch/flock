@@ -22,7 +22,7 @@ import {colors, breakpoints} from '../constants/theme'
 
 import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
-import iPhone from '../../static/images/uploads/white-phone-cropped@2x.png'
+import iPhone from '../../static/images/uploads/white-phone@2x.png'
 
 const HomePageTemplate = ({data}) => {
   const {
@@ -42,17 +42,8 @@ const HomePageTemplate = ({data}) => {
       </Media>
       <Hero
         RightSideComponent={() => <img src={iPhone} className={style.iphone} />}
-        headerClassName={css({
-          background: colors.backgrounds.light,
-          backgroundImage: `url(${mobileFlock})`,
-          backgroundSize: '45rem',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'bottom left',
-          [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-            backgroundImage: `url(${bigFlock})`,
-            backgroundPosition: 'bottom right'
-          }
-        })}
+        headerClassName={style.header}
+        headerContainerClassName={style.headerContainer}
         header={header}
         description={description}
         button={button}
@@ -104,7 +95,23 @@ const HomePageTemplate = ({data}) => {
 }
 
 const style = {
-  iphone: css({marginBottom: 0})
+  iphone: css({
+    marginBottom: 0,
+    width: '20rem',
+    transform: 'rotate(11deg)'
+  }),
+  header: css({
+    background: colors.backgrounds.light,
+    backgroundImage: `url(${mobileFlock})`,
+    backgroundSize: '45rem',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom left',
+    width: '100%',
+    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+      backgroundImage: `url(${bigFlock})`,
+      backgroundPosition: 'bottom right'
+    }
+  })
 }
 
 export const query = graphql`

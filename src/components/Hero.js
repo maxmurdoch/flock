@@ -43,7 +43,11 @@ const Hero = ({
         flex="1 1 auto"
         overflow="hidden"
       >
-        <SiteContainer>
+        <SiteContainer
+          className={css({
+            overflow: 'visible'
+          })}
+        >
           <Flex alignItems="center" mt={[3, 5]}>
             <Box width={['100%', '50%']} mt={[3, 5]} mb={[3, 6]}>
               <H1 color={textColor} mb={[2, 3]}>
