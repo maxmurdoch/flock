@@ -32,6 +32,11 @@ const style = {
       font-size: 60px;
       line-height: 66px;
     }
+
+    @media (min-width: ${R.nth(1, breakpoints)}) {
+      font-size: 60px;
+      line-height: 66px;
+    }
   `
 }
 
@@ -42,11 +47,7 @@ h1 {
 `
 
 H1.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  children: PropTypes.node,
   tag: PropTypes.string
 }
 

@@ -26,11 +26,7 @@ const style = {
 }
 
 BodyText.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  children: PropTypes.node,
   mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array])
 }
 

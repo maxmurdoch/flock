@@ -34,7 +34,16 @@ why:
       title: Instant support
   title: Why do trainee pilots fly with Flock?
 showFlightSchoolList: true
-showCoverNote: true
+coverNote:
+  isShowing: true
+  image: ../../images/uploads/cover-note.svg
+  title: 'Applying for your PfCO?'
+  bodyText: 'You no longer need to commit to an annual insurance policy in order to get your proof of insurance for your PfCO renewal.'
+  smallText: 'Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant insurance, and you can get yours instantly without having to pay a penny.'
+  link:
+    to: /download
+    text: Learn how to get your cover note within our app →
+
 doINeedInsurance:
   title: ''
 how:
@@ -123,5 +132,12 @@ otherProducts:
         from just £3 with the touch of a button.
       title: Hobbyist pilot
   title: What kind of pilot are you?
+
+siteMetadataOverride:
+  description: ''
+  title: ''
+  keywords:
+    - ''
+
 ---
 

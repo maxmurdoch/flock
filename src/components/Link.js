@@ -19,11 +19,7 @@ const Link = ({children, onClick, className, to = '', ...props}) => {
 }
 
 Link.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  children: PropTypes.node,
   onClick: PropTypes.func,
   className: PropTypes.string,
   to: PropTypes.string

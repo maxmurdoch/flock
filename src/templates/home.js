@@ -20,6 +20,7 @@ import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
 import MapBackground from '../components/MapBackground'
+import SiteMetadata from '../components/SiteMetadata'
 import {colors, breakpoints} from '../constants/theme'
 
 import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
@@ -32,8 +33,10 @@ const HomePageTemplate = ({data}) => {
     secondTestimonial,
     hero: {header, description, button},
     howFlockWorks,
+    siteMetadataOverride,
     stopWorrying,
     download,
+    featured,
     calculator,
     kindOfPilot,
     risk
@@ -41,6 +44,11 @@ const HomePageTemplate = ({data}) => {
 
   return (
     <div>
+      <SiteMetadata
+        title={siteMetadataOverride.title}
+        description={siteMetadataOverride.description}
+        keywords={siteMetadataOverride.keywords}
+      />
       <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
         {matches => (matches ? <DarkNav /> : <MobileNav />)}
       </Media>
@@ -100,7 +108,7 @@ const HomePageTemplate = ({data}) => {
         />
       </Box>
       <BigSectionLine />
-      <Featured />
+      <Featured title={featured.title} image={featured.image} />
       <Footer />
     </div>
   )
@@ -146,10 +154,14 @@ export const query = graphql`
           author
           image
         }
-        secondTestimonial {
-          quote
-          author
-          image
+        howFlockWorks {
+          title
+          description
+          listOfHow {
+            title
+            text
+            image
+          }
         }
         stopWorrying {
           title
@@ -179,6 +191,15 @@ export const query = graphql`
             list
           }
         }
+        calculator {
+          title
+          description
+        }
+        secondTestimonial {
+          quote
+          author
+          image
+        }
         download {
           title
           text
@@ -187,18 +208,14 @@ export const query = graphql`
             text
           }
         }
-        howFlockWorks {
+        featured {
           title
-          description
-          listOfHow {
-            title
-            text
-            image
-          }
+          image
         }
-        calculator {
+        siteMetadataOverride {
           title
           description
+          keywords
         }
       }
     }

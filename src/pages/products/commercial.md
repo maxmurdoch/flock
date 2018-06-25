@@ -1,15 +1,7 @@
 ---
 title: Commercial
 templateKey: product
-siteMetadata:
-  description: drone insurance
-  keywords:
-    - drones
-    - insurance
-    - on-demand
-    - Flock
-    - commercial drone insurance
-  title: 'Commercial '
+
 hero:
   backgroundImage: ../../images/uploads/commercial-background.png
   button:
@@ -20,11 +12,11 @@ hero:
     * Customisable Public Liability Limits (from £1-10M)
     * Flexible hull and equipment insurance (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
+
 why:
-  description: ''
   list:
     - text: >-
-        We know two jobs are never the same.  Customise your insurance
+        We know two jobs are never the same. Customise your insurance
         flight-by-flight.
       title: 'Bespoke cover '
     - text: >-
@@ -44,10 +36,22 @@ why:
     - text: 'Chat to our customer support team through the app, or give us a call.'
       title: Instant support
   title: 'Why do professionals fly with Flock? '
+
 showFlightSchoolList: false
-showCoverNote: true
+
+coverNote:
+  isShowing: true
+  image: ../../images/uploads/cover-note.svg
+  title: 'Applying for your PfCO?'
+  bodyText: 'You no longer need to commit to an annual insurance policy in order to get your proof of insurance for your PfCO renewal.'
+  smallText: 'Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant insurance, and you can get yours instantly without having to pay a penny.'
+  link:
+    to: /download
+    text: Learn how to get your cover note within our app →
+
 doINeedInsurance:
   title: ''
+
 how:
   description: >-
     Insuring your drone flight has never been easier. All it takes is a matter
@@ -131,5 +135,15 @@ otherProducts:
         from just £3 with the touch of a button.
       title: 'Hobbyist pilot '
   title: What kind of drone pilot are you?
----
 
+siteMetadataOverride:
+  description: drone insurance
+  keywords:
+    - drones
+    - insurance
+    - on-demand
+    - Flock
+    - commercial drone insurance
+  title: 'Commercial '
+
+---

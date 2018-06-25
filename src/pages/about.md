@@ -4,22 +4,6 @@ templateKey: about
 hero:
   header: 'All about Flock Cover'
   backgroundImage: '../../images/uploads/team-shot.png'
-why:
-  title: 'Why do professionals use Flock?'
-  description: 'It’s time for a new kind of insurance. Control your cover from the get-go with the Flock Cover app.'
-  list:
-    - title: 'Flexible policies'
-      text: 'Policies range from 1-8 hours, and can be purchased on the spot, or scheduled up to 10 days in advance.'
-    - title: 'Fairer pricing'
-      text: 'Pay for insurance only when you fly, with no up-front costs. Flock’s pricing is risk-dependent, so the safer the flight, the less you pay.'
-    - title: 'Fully compliant'
-      text: 'Fly with peace of mind knowing that Flock’s policies are EC785/2004 compliant and approved by the CAA.'
-    - title: 'Bill as an expense'
-      text: 'Since you can pinpoint the cost of insurance for each job, you can easily pass the costs onto your clients.'
-    - title: 'Choose your liability limit'
-      text: 'We know two jobs are never the same. Choose your liability limit on a per-flight basis, with options ranging from £1-10M.'
-    - title: 'Instant support'
-      text: 'Every pilot gets access to customer support through the app. If something goes wrong, you can make a claim with the tap of a button'
 
 flockStory:
   header: The Flock story
@@ -58,28 +42,40 @@ meetTheTeam:
   team:
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
+      image: /images/uploads/ron.png
     - member: 'Ed Leon Kinger'
+      role: 'CEO, Founder'
+      image: /images/uploads/ron.png
+    - member: 'Ed Leon Kinger'
+      role: 'CEO, Founder'
+      image: /images/uploads/ron.png
+    - member: 'Ed Leon Kinger'
+      image: /images/uploads/ron.png
       role: 'CEO, Founder'
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
+      image: /images/uploads/ron.png
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
+      image: /images/uploads/ron.png
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
+      image: /images/uploads/ron.png
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
+      image: /images/uploads/ron.png
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
+      image: /images/uploads/ron.png
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
+      image: /images/uploads/ron.png
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
+      image: /images/uploads/ron.png
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
-    - member: 'Ed Leon Kinger'
-      role: 'CEO, Founder'
-    - member: 'Ed Leon Kinger'
-      role: 'CEO, Founder'
+      image: /images/uploads/ron.png
 
 testimonials:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
@@ -114,4 +110,15 @@ otherProducts:
       icon:  'images/uploads/drone-diamond.svg'
       text: 'Enjoy your favourite hobby without worrying about insurance. Get covered from just £3 with the touch of a button.'
       link: '/products/hobbyist'
+
+siteMetadataOverride:
+  description: drone insurance
+  keywords:
+    - drones
+    - insurance
+    - on-demand
+    - Flock
+    - commercial drone insurance
+  title: 'Flock – About'
+
 ---

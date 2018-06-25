@@ -3,6 +3,7 @@ import R from 'ramda'
 import Media from 'react-media'
 import {css} from 'emotion'
 
+import SiteMetadata from '../components/SiteMetadata'
 import LightNav from '../components/LightNav'
 import Download from '../components/DownloadFlock'
 import MobileNav from '../components/MobileNav'
@@ -19,12 +20,18 @@ const PricingTemplate = ({data}) => {
   const {
     hero: {header, backgroundImage},
     flockStory,
+    siteMetadataOverride,
     coreValues,
     meetTheTeam
   } = data.markdownRemark.frontmatter
 
   return (
     <div>
+      <SiteMetadata
+        title={siteMetadataOverride.title}
+        description={siteMetadataOverride.description}
+        keywords={siteMetadataOverride.keywords}
+      />
       <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
         {matches => (matches ? <LightNav /> : <MobileNav />)}
       </Media>
@@ -73,8 +80,6 @@ const PricingTemplate = ({data}) => {
   )
 }
 
-export default PricingTemplate
-
 export const query = graphql`
   query AboutPageQuery($id: String!) {
     markdownRemark(id: {eq: $id}) {
@@ -106,9 +111,17 @@ export const query = graphql`
           team {
             member
             role
+            image
           }
+        }
+        siteMetadataOverride {
+          title
+          description
+          keywords
         }
       }
     }
   }
 `
+
+export default PricingTemplate

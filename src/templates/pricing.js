@@ -12,8 +12,8 @@ import MobileNav from '../components/MobileNav'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import OtherProducts from '../components/OtherProducts'
+import SiteMetadata from '../components/SiteMetadata'
 import BigSectionLine from '../components/BigSectionLine'
-import riskNumber from '../../static/images/uploads/risk-number.svg'
 
 import PricingHero from '../components/PricingHero'
 import {colors, breakpoints} from '../constants/theme'
@@ -22,13 +22,19 @@ import Calculator from '../components/Calculator'
 const PricingTemplate = ({data}) => {
   const {
     hero: {header, backgroundImage},
-    pricing,
+    riskCalculations,
     testimonials,
-    otherProducts
+    otherProducts,
+    siteMetadataOverride
   } = data.markdownRemark.frontmatter
 
   return (
     <div>
+      <SiteMetadata
+        title={siteMetadataOverride.title}
+        description={siteMetadataOverride.description}
+        keywords={siteMetadataOverride.keywords}
+      />
       <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
         {matches => (matches ? <LightNav /> : <MobileNav />)}
       </Media>
@@ -58,9 +64,9 @@ const PricingTemplate = ({data}) => {
         </Box>
       </div>
       <TextGrid
-        description={pricing.description}
-        list={pricing.list}
-        image={riskNumber}
+        description={riskCalculations.description}
+        list={riskCalculations.list}
+        image={riskCalculations.image}
       />
       <Flex mt={[2, 5]} mb={[2, 5]} justifyContent="center">
         <Testimonial testimonials={testimonials} />
@@ -91,7 +97,8 @@ export const query = graphql`
           header
           backgroundImage
         }
-        pricing {
+        riskCalculations {
+          image
           description
           list {
             title
@@ -111,6 +118,11 @@ export const query = graphql`
             icon
             text
           }
+        }
+        siteMetadataOverride {
+          title
+          description
+          keywords
         }
       }
     }

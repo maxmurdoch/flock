@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import R from 'ramda'
 import {injectGlobal} from 'emotion'
 import {StickyContainer} from 'react-sticky'
 import Helmet from 'react-helmet'
@@ -54,7 +55,10 @@ const Layout = ({
               name: 'description',
               content: frontmatter.siteMetadata.description
             },
-            {name: 'keywords', content: frontmatter.siteMetadata.keywords}
+            {
+              name: 'keywords',
+              content: R.join(',', frontmatter.siteMetadata.keywords)
+            }
           ]}
         />
         <div>{children()}</div>

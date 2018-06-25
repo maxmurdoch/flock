@@ -1,6 +1,8 @@
 ---
 title: Hobbyist
+
 templateKey: product
+
 hero:
   backgroundImage: ../../images/uploads/hobbyist-background.png
   button:
@@ -11,6 +13,7 @@ hero:
     * Policies from 1-8 hours 
     * Public Liability insurance up to £250 K
   header: 'Pay-as-you-fly drone insurance for hobbyists '
+
 why:
   description: ''
   list:
@@ -27,8 +30,19 @@ why:
         hour, or up to a day.
       title: 'Short-term cover  '
   title: Why do hobbyists use Flock?
+
 showFlightSchoolList: false
-showCoverNote: false
+
+coverNote:
+  isShowing: false
+  image: ../../images/uploads/cover-note.svg
+  title: 'Applying for your PfCO?'
+  bodyText: 'You no longer need to commit to an annual insurance policy in order to get your proof of insurance for your PfCO renewal.'
+  smallText: 'Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant insurance, and you can get yours instantly without having to pay a penny.'
+  link:
+    to: /download
+    text: Learn how to get your cover note within our app →
+
 doINeedInsurance:
   bigText: >-
     Whilst it's not against the law in the UK to fly without insurance, a flying
@@ -42,6 +56,7 @@ doINeedInsurance:
   title: |-
     I fly my drone for fun,
     do I need insurance?
+
 how:
   description: >-
     Insuring your drone flight has never been simpler. All it takes is a matter
@@ -63,6 +78,7 @@ how:
         sent straight to your email inbox.
       title: 3. Get flying
   title: How hobbyists use Flock
+
 risk:
   description: >-
     Know your risks before you fly. Simply enter your flight's details and
@@ -93,6 +109,7 @@ risk:
         - Temperature
       title: Hyperlocal weather
   title: Insurance and then some..
+
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/air-shot-houses.jpeg
@@ -105,6 +122,7 @@ testimonial:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
+
 otherProducts:
   description: >-
     Chances are we can provide coverage tailored specifically to you. Select
@@ -123,5 +141,16 @@ otherProducts:
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
   title: What kind of pilot are you?
+
+siteMetadataOverride:
+  description: drone insurance
+  keywords:
+    - drones
+    - insurance
+    - on-demand
+    - Flock
+    - commercial drone insurance
+  title: 'Hobbyist'
+
 ---
 

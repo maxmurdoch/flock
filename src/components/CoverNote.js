@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {css} from 'react-emotion'
 
 import Link from './Link'
@@ -8,27 +9,19 @@ import H2 from './H2'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import coverNote from '../../static/images/uploads/cover-note.svg'
 
-const CoverNote = () => {
+const CoverNote = ({title, image, bodyText, smallText, link}) => {
   return (
     <Flex justifyContent="center" pt={[3, 5]} pb={[3, 5]}>
       <SiteContainer>
         <Flex flexWrap={true}>
           <Box width={['100%', '50%']} order={[1, 0]}>
-            <H2 mb={2}>Applying for your PfCO?</H2>
-            <BodyText mb={2}>
-              You no longer need to commit to an annual insurance policy in
-              order to get your proof of insurance for your PfCO renewal.
-            </BodyText>
+            <H2 mb={2}>{title}</H2>
+            <BodyText mb={2}>{bodyText}</BodyText>
+            <SmallText mb={2}>{smallText}</SmallText>
             <SmallText mb={2}>
-              Flock’s Cover Note is accepted by the CAA as proof of EC785/2004
-              compliant insurance, and you can get yours instantly without
-              having to pay a penny.
-            </SmallText>
-            <SmallText mb={2}>
-              <Link to="/download" className={css({color: 'initial'})}>
-                Learn how to get your cover note within our app →
+              <Link to={link.to} className={css({color: 'initial'})}>
+                {link.text}
               </Link>
             </SmallText>
           </Box>
@@ -40,7 +33,7 @@ const CoverNote = () => {
             pr={[2, 0]}
           >
             <Box width={['80%', 'auto']}>
-              <img className={style.image} src={coverNote} />
+              <img className={style.image} src={image} />
             </Box>
           </Flex>
         </Flex>
@@ -53,6 +46,14 @@ const style = {
   image: css({
     marginBottom: 0
   })
+}
+
+CoverNote.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string,
+  bodyText: PropTypes.string,
+  smallText: PropTypes.string,
+  link: PropTypes.object
 }
 
 export default CoverNote

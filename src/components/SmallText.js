@@ -19,11 +19,7 @@ const SmallText = ({children, fontWeight = 400, mb = 0, ...props}) => {
 }
 
 SmallText.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  children: PropTypes.node,
   mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array]),
   fontWeight: PropTypes.number
 }

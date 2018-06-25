@@ -154,4 +154,10 @@ calculator:
   title: 'Get a rough quote'
   description: 'Lorem lorem lorem'
 
+siteMetadataOverride:
+  title: ''
+  description: ''
+  keywords:
+    - ''
+
 ---

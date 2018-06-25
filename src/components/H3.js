@@ -30,11 +30,7 @@ const style = {
 }
 
 H3.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  children: PropTypes.node,
   tag: PropTypes.string
 }
 

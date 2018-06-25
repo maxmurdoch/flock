@@ -21,11 +21,7 @@ const MapBackground = ({children}) => {
 }
 
 MapBackground.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.string,
-    PropTypes.array
-  ])
+  children: PropTypes.node
 }
 
 export default MapBackground

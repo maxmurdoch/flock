@@ -12,6 +12,7 @@ import Flex from './Flex'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import SecondaryButton from './SecondaryButton'
+import ShowIf from './ShowIf'
 import BodyText from './BodyText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import {colors, breakpoints} from '../constants/theme'
@@ -40,20 +41,16 @@ const Hero = ({
         flex="1 1 auto"
         overflow="hidden"
       >
-        <SiteContainer
-          className={css({
-            overflow: 'visible'
-          })}
-        >
+        <SiteContainer className={css({overflow: 'visible'})}>
           <Flex alignItems="center" mt={[3, 5]}>
             <Box width={['100%', '50%']} mt={[3, 5]} mb={[3, 6]}>
               <H1 color={textColor} mb={[2, 3]}>
                 {header}
               </H1>
               <BodyText color={textColor} mb={[2, 3]}>
-                <Markdown>{description}</Markdown>
+                <Markdown container="span">{description}</Markdown>
               </BodyText>
-              {button ? (
+              <ShowIf predicate={R.not(R.isNil(button))}>
                 <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
                   {matches =>
                     matches ? (
@@ -67,9 +64,9 @@ const Hero = ({
                     )
                   }
                 </Media>
-              ) : null}
+              </ShowIf>
             </Box>
-            {RightSideComponent ? (
+            {R.not(R.isNil(RightSideComponent)) ? (
               <Flex
                 alignItems="center"
                 justifyContent="center"

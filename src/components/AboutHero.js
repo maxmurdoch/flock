@@ -7,6 +7,7 @@ import H1 from './H1'
 import SiteContainer from './SiteContainer'
 import Box from './Box'
 import Flex from './Flex'
+import ShowIf from './ShowIf'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import SecondaryButton from './SecondaryButton'
@@ -46,7 +47,7 @@ const AboutHero = ({
             <BodyText textAlign={'center'} color={textColor} mb={[2, 3]}>
               {description}
             </BodyText>
-            {button ? (
+            <ShowIf predicate={button}>
               <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
                 {matches =>
                   matches ? (
@@ -60,7 +61,7 @@ const AboutHero = ({
                   )
                 }
               </Media>
-            ) : null}
+            </ShowIf>
           </Box>
         </SiteContainer>
       </Flex>

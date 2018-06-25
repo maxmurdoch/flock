@@ -9,6 +9,7 @@ import Box from '../components/Box'
 import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
 import MobileNav from '../components/MobileNav'
+import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import DownloadFlock from '../components/DownloadFlock'
@@ -16,6 +17,7 @@ import Featured from '../components/Featured'
 import OtherProducts from '../components/OtherProducts'
 import ToggleiPhone from '../components/ToggleiPhone'
 import CalculateRiskFlat from '../components/CalculateRiskFlat'
+import ShowIf from '../components/ShowIf'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import FlightSchool from '../components/FlightSchool'
 import Testimonial from '../components/Testimonial'
@@ -30,8 +32,9 @@ const SegmentPageTemplate = ({data}) => {
   const {
     hero: {header, description, button, backgroundImage},
     why,
-    showCoverNote,
+    coverNote,
     showFlightSchoolList,
+    siteMetadataOverride,
     doINeedInsurance,
     how,
     risk,
@@ -41,6 +44,11 @@ const SegmentPageTemplate = ({data}) => {
 
   return (
     <div>
+      <SiteMetadata
+        title={siteMetadataOverride.title}
+        description={siteMetadataOverride.description}
+        keywords={siteMetadataOverride.keywords}
+      />
       <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
         {matches => (matches ? <LightNav /> : <MobileNav />)}
       </Media>
@@ -62,7 +70,7 @@ const SegmentPageTemplate = ({data}) => {
           list={why.list}
         />
       </Box>
-      {showFlightSchoolList ? (
+      <ShowIf predicate={showFlightSchoolList}>
         <div>
           <BigSectionLine />
           <Flex justifyContent="center">
@@ -71,10 +79,16 @@ const SegmentPageTemplate = ({data}) => {
             </SiteContainer>
           </Flex>
         </div>
-      ) : null}
+      </ShowIf>
       <BigSectionLine pb={0} />
-      {showCoverNote ? (
-        <CoverNote />
+      {coverNote.isShowing ? (
+        <CoverNote
+          image={coverNote.image}
+          title={coverNote.title}
+          bodyText={coverNote.bodyText}
+          smallText={coverNote.smallText}
+          link={coverNote.link}
+        />
       ) : (
         <TextSection
           title={doINeedInsurance.title}
@@ -151,7 +165,17 @@ export const query = graphql`
             text
           }
         }
-        showCoverNote
+        coverNote {
+          isShowing
+          image
+          title
+          bodyText
+          smallText
+          link {
+            to
+            text
+          }
+        }
         showFlightSchoolList
         doINeedInsurance {
           title
@@ -190,6 +214,11 @@ export const query = graphql`
             icon
             link
           }
+        }
+        siteMetadataOverride {
+          title
+          description
+          keywords
         }
       }
     }

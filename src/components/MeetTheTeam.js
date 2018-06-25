@@ -6,6 +6,7 @@ import H2 from './H2'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
+import ShowIf from './ShowIf'
 import Flex from './Flex'
 import Box from './Box'
 
@@ -17,15 +18,19 @@ const MeetTheTeam = ({title, description, team}) => {
       <SiteContainer>
         <Flex flexWrap={true}>
           <Box width={['100%', '50%']}>
-            {title ? <H2>{title}</H2> : null}
+            <ShowIf predicate={title}>
+              <H2>{title}</H2>
+            </ShowIf>
             <BodyText>{description}</BodyText>
           </Box>
         </Flex>
         <Flex flexWrap="wrap" justifyContent="flex-start">
-          {mapIndex(({member, role, photo}, key) => {
+          {mapIndex(({member, role, image}, key) => {
             return (
               <Box key={key} pr={2} width={[`${100 / 6}%`]}>
-                {photo ? <img src={photo} /> : null}
+                <ShowIf predicate={image}>
+                  <img src={image} />
+                </ShowIf>
                 <SmallText fontWeight={700}>{member}</SmallText>
                 <SmallText>{role}</SmallText>
               </Box>

@@ -69,11 +69,7 @@ Text.propTypes = {
   tag: PropTypes.string,
   fontWeight: PropTypes.number,
   markdown: PropTypes.bool,
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array,
-    PropTypes.element
-  ]),
+  children: PropTypes.node,
   fontSize: PropTypes.oneOfType([PropTypes.array, PropTypes.string])
 }
 

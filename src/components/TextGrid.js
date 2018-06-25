@@ -1,13 +1,14 @@
 import React from 'react'
+import R from 'ramda'
 import {css} from 'react-emotion'
 import PropTypes from 'prop-types'
-import R from 'ramda'
 
 import H2 from './H2'
 import H3 from './H3'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
+import ShowIf from './ShowIf'
 import Flex from './Flex'
 import Box from './Box'
 
@@ -18,9 +19,15 @@ const TextGrid = ({title, description, list, image}) => (
     <SiteContainer>
       <Flex flexWrap={true}>
         <Box width={['100%', '50%']}>
-          {title ? <H2 markdown={true}>{title}</H2> : null}
-          {image ? <img src={image} /> : null}
-          <BodyText>{description}</BodyText>
+          <ShowIf predicate={R.not(R.isEmpty(title))}>
+            <H2 markdown={true}>{title}</H2>
+          </ShowIf>
+          <ShowIf predicate={!!image}>
+            <img src={image} />
+          </ShowIf>
+          <ShowIf predicate={R.not(R.isEmpty(description))}>
+            <BodyText>{description}</BodyText>
+          </ShowIf>
         </Box>
         <Flex flexWrap={true}>
           {mapIndex(({title, text, icon}, index) => {
@@ -31,9 +38,9 @@ const TextGrid = ({title, description, list, image}) => (
                 mt={[2, 4]}
                 key={index}
               >
-                {icon ? (
+                <ShowIf predicate={R.not(R.isEmpty(icon))}>
                   <img src={icon} className={css({marginBottom: 0})} />
-                ) : null}
+                </ShowIf>
                 <H3>{title}</H3>
                 <SmallText>{text}</SmallText>
               </Box>
@@ -48,13 +55,14 @@ const TextGrid = ({title, description, list, image}) => (
 export default TextGrid
 
 TextGrid.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
   image: PropTypes.string,
   list: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired
+      text: PropTypes.string.isRequired,
+      icon: PropTypes.string
     })
   )
 }
