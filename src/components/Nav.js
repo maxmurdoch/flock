@@ -101,6 +101,7 @@ class Nav extends Component {
                         <SmallText
                           className={css({
                             position: 'relative',
+                            display: 'flex',
                             '&::after': {
                               content: `url(${arrowImage({
                                 isSticky: activateStickyStyle
@@ -125,6 +126,14 @@ class Nav extends Component {
                         to="/pricing"
                       >
                         <SmallText>Pricing</SmallText>
+                      </Link>
+                      <Link
+                        activeStyle={activeLinkStyle}
+                        className={linkClass}
+                        exact={true}
+                        to="/about"
+                      >
+                        <SmallText>About</SmallText>
                       </Link>
                       <a
                         className={linkClass}

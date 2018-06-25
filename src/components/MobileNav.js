@@ -52,6 +52,11 @@ const navList = [
     text: 'Home'
   },
   {
+    to: '/about',
+    className: styles.product,
+    text: 'About'
+  },
+  {
     to: '/support',
     className: styles.product,
     text: 'Support'

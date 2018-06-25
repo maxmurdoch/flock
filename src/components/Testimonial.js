@@ -134,17 +134,7 @@ const styles = {
     boxShadow: R.nth(0, boxShadows),
     position: 'relative',
     zIndex: 1,
-    backgroundSize: 'cover',
-    '&::before': {
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      content: '\'\'',
-      display: 'block',
-      top: 0,
-      zIndex: 0,
-      position: 'absolute',
-      width: '100%',
-      height: '100%'
-    }
+    backgroundSize: 'cover'
   }),
   quote: css({
     '&::before': {

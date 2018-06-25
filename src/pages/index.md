@@ -12,27 +12,27 @@ hero:
 
 firstTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
-    image: /images/uploads/air-shot-houses.jpeg
+    image: /images/uploads/testimonial/1@2x.png
     quote: >-
       With all the current drone laws in the UK, having Flock is an added peace
       of mind. Another bonus is that Flock will insure non professional drone
       pilots. This is a brilliant app!
 
   - author: Ron Swanson
-    image: /images/uploads/testimonial-air-shot.png
+    image: /images/uploads/testimonial/2@2x.png
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
 
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
-    image: /images/uploads/air-shot-houses.jpeg
+    image: /images/uploads/testimonial/3@2x.png
     quote: >-
       With all the current drone laws in the UK, having Flock is an added peace
       of mind. Another bonus is that Flock will insure non professional drone
       pilots. This is a brilliant app!
   - author: Ron Swanson
-    image: /images/uploads/testimonial-air-shot.png
+    image: /images/uploads/testimonial/4@2x.png
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
