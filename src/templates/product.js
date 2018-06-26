@@ -33,7 +33,7 @@ const SegmentPageTemplate = ({data}) => {
     hero: {header, description, button, backgroundImage},
     why,
     coverNote,
-    showFlightSchoolList,
+    flightSchool,
     siteMetadataOverride,
     doINeedInsurance,
     how,
@@ -70,12 +70,15 @@ const SegmentPageTemplate = ({data}) => {
           list={why.list}
         />
       </Box>
-      <ShowIf predicate={showFlightSchoolList}>
+      <ShowIf predicate={flightSchool.show}>
         <div>
           <BigSectionLine />
           <Flex justifyContent="center">
             <SiteContainer>
-              <FlightSchool />
+              <FlightSchool
+                title={flightSchool.title}
+                list={flightSchool.list}
+              />
             </SiteContainer>
           </Flex>
         </div>
@@ -176,7 +179,14 @@ export const query = graphql`
             text
           }
         }
-        showFlightSchoolList
+        flightSchool {
+          show
+          title
+          list {
+            image
+            to
+          }
+        }
         doINeedInsurance {
           title
           bigText

@@ -9,11 +9,8 @@ import SmallText from './SmallText'
 import {colors, space, fontFamilies} from '../constants/theme'
 
 class ProductLink extends Component {
-  constructor() {
-    super()
-    this.state = {
-      isHovered: false
-    }
+  state = {
+    isHovered: false
   }
 
   render() {
@@ -21,9 +18,11 @@ class ProductLink extends Component {
     return (
       <Link
         onMouseOver={() => {
+          console.log('over')
           this.setState({isHovered: true})
         }}
         onMouseOut={() => {
+          console.log('out')
           this.setState({isHovered: false})
         }}
         to={to}
@@ -54,7 +53,9 @@ export default ProductLink
 const styles = {
   link: css({
     textDecoration: 'none',
-    display: 'block',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
     color: colors.white,
     height: '100%',
     paddingTop: R.nth(3, space),

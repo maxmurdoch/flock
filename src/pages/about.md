@@ -38,7 +38,7 @@ coreValues:
 
 meetTheTeam:
   title: Meet the team
-  description: 'Our little team is based in our new office in London. Got somethign to offer us? Get in touch!'
+  description: 'Our little team is based in our new office in London. Got something to offer us? Get in touch!'
   team:
     - member: 'Ed Leon Kinger'
       role: 'CEO, Founder'
@@ -99,15 +99,15 @@ otherProducts:
   description: 'Chances are we can provide coverage tailored specifically to you. Select below to learn more.'
   products:
     - title: 'Commercial pilot'
-      icon:  'images/uploads/drone-camera.svg'
+      icon:  'images/uploads/commercial-pilot.svg'
       text: 'Flock’s EC785/2004 compliant policies offer flexible hull and liability insurance from just £5 a day.'
       link: '/products/commercial'
     - title: 'Trainee pilot'
-      icon:  'images/uploads/drone.svg'
+      icon:  'images/uploads/trainee-pilot.svg'
       text: 'From flight assessment insurance, to providing proof-of-insurance in your PfCO application, Flock’s got you covered.'
       link: '/products/trainee'
     - title: 'Hobbyist pilot'
-      icon:  'images/uploads/drone-diamond.svg'
+      icon:  'images/uploads/recreational-pilot.svg'
       text: 'Enjoy your favourite hobby without worrying about insurance. Get covered from just £3 with the touch of a button.'
       link: '/products/hobbyist'
 

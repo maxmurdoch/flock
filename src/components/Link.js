@@ -4,11 +4,11 @@ import GatsbyLink from 'gatsby-link'
 import PropTypes from 'prop-types'
 import {isURL, isEmail} from 'validator'
 
-const Link = ({children, onClick, className, to = '', ...props}) => {
+const Link = ({children, onClick, className, target, to = '', ...props}) => {
   const validators = [isURL(to), isEmail(to), R.test(/^tel:/, to)]
 
   return to && R.anyPass(validators) ? (
-    <a href={to} onClick={onClick} className={className}>
+    <a href={to} onClick={onClick} className={className} target={target}>
       {children}
     </a>
   ) : (
@@ -20,6 +20,7 @@ const Link = ({children, onClick, className, to = '', ...props}) => {
 
 Link.propTypes = {
   children: PropTypes.node,
+  target: PropTypes.string,
   onClick: PropTypes.func,
   className: PropTypes.string,
   to: PropTypes.string
