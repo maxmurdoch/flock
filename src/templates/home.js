@@ -49,7 +49,7 @@ const HomePageTemplate = ({data}) => {
         description={siteMetadataOverride.description}
         keywords={siteMetadataOverride.keywords}
       />
-      <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+      <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
         {matches => (matches ? <DarkNav /> : <MobileNav />)}
       </Media>
       <Hero

@@ -20,7 +20,7 @@ const HeroFeaturesBanner = () => (
         borderBottom="1px solid black"
         width="100%"
         justifyContent="space-between"
-        flexDirection={['column', 'row']}
+        flexDirection={['column', 'row', 'row']}
       >
         <Flex alignItems="center" mb={[2, 0]}>
           <SmallText>Underwritten by</SmallText>

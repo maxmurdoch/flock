@@ -27,7 +27,7 @@ const MeetTheTeam = ({title, description, team}) => {
                   pr={2}
                   width={['50%', '33.33%', `${100 / 6}%`]}
                 >
-                  <ShowIf predicate={image}>
+                  <ShowIf predicate={!!image}>
                     <img src={image} className={style.image} />
                   </ShowIf>
                   <SmallText fontWeight={700}>{member}</SmallText>

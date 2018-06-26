@@ -133,9 +133,10 @@ class Calculator extends Component {
             pb={[2, 3]}
             className={styles.container}
             flexDirection={['column', 'row']}
+            flexWrap="wrap"
           >
-            <Flex width={['100%', '66.66%']} flexWrap="wrap">
-              <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
+            <Flex width={['100%', '100%', '66.66%']} flexWrap="wrap">
+              <Box width={['100%', '50%']} mt={[2, 3]} pr={[0, 2]}>
                 <Label htmlFor="pilotType">What type of pilot are you?</Label>
                 <Select
                   clearable={false}
@@ -158,7 +159,7 @@ class Calculator extends Component {
                   ]}
                 />
               </Box>
-              <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
+              <Box width={['100%', '50%']} mt={[2, 3]} pr={[0, 2]}>
                 <Label htmlFor="droneType">
                   What type of drone do you fly?
                 </Label>
@@ -183,7 +184,7 @@ class Calculator extends Component {
                   ]}
                 />
               </Box>
-              <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
+              <Box width={['100%', '50%']} mt={[2, 3]} pr={[0, 2]}>
                 <Label htmlFor="flightFrequency">How often do you fly?</Label>
                 <Select
                   clearable={false}
@@ -208,7 +209,7 @@ class Calculator extends Component {
                   ]}
                 />
               </Box>
-              <Box width={['100%', '50%']} mt={[1, 3]} pr={[0, 2]}>
+              <Box width={['100%', '50%']} mt={[2, 3]} pr={[0, 2]}>
                 <Label htmlFor="location">How often do you fly?</Label>
                 <Select
                   clearable={false}
@@ -219,7 +220,7 @@ class Calculator extends Component {
                 />
               </Box>
             </Flex>
-            <Flex width={['100%', '33.33%']}>
+            <Flex width={['100%', '100%', '33.33%']}>
               <Flex
                 flex="1 1 auto"
                 background={colors.yellow}

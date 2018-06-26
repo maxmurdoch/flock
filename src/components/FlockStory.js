@@ -28,7 +28,7 @@ const FlockStory = ({header, bigText, smallText, image, imageHeader}) => {
             <BodyText mb={2}>{bigText}</BodyText>
             <div className={css({p: {marginBottom: R.nth(1, space)}})}>
               <SmallText mb={2}>
-                <Markdown>{smallText}</Markdown>
+                <Markdown container="span">{smallText}</Markdown>
               </SmallText>
             </div>
           </Box>

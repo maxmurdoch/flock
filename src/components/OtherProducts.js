@@ -25,9 +25,10 @@ const OtherProducts = ({title, description, products}) => {
 
               return (
                 <Box
+                  flex="1 1 auto"
                   key={index}
-                  mr={[0, 0, isLast ? 0 : 3]}
-                  mb={[2, 2, 0]}
+                  pr={[0, 0, isLast ? 0 : 3]}
+                  mb={[isLast ? 0 : 2, isLast ? 0 : 2, 0]}
                   width={['100%', '100%', '50%']}
                 >
                   <SegmentLink

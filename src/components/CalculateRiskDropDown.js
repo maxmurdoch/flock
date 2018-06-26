@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import {Collapse} from 'react-collapse'
 import {css} from 'emotion'
 import R from 'ramda'
@@ -12,9 +13,10 @@ import BodyText from './BodyText'
 import SmallText from './SmallText'
 import iPhone from '../../static/images/uploads/risk@2x.png'
 import downArrow from '../images/icons/small-down-arrow-white.svg'
-import {colors, space} from '../constants/theme'
+import {colors, space, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
+
 class CalculateRiskDropDown extends Component {
   state = {
     activeIndex: null,
@@ -22,8 +24,10 @@ class CalculateRiskDropDown extends Component {
   }
 
   componentDidMount() {
+    const {list} = this.props
+
     this.setState({
-      isHovered: mapIndex(R.F, this.props.list)
+      isHovered: R.map(R.F, list)
     })
   }
 
@@ -37,7 +41,7 @@ class CalculateRiskDropDown extends Component {
           <Flex flexDirection={['column', 'row']}>
             <Flex justifyContent="center">
               <Box width={['75%', '70%']}>
-                <img width="100%" className={style.iphone} src={iPhone} />
+                <img width="100%" className={style.iPhone} src={iPhone} />
               </Box>
             </Flex>
             <Box width={['100%', '50%']}>
@@ -54,7 +58,7 @@ class CalculateRiskDropDown extends Component {
 
                   return (
                     <LI
-                      width={['100%', '66.66%']}
+                      width={['100%', '100%', '66.66%']}
                       mb={0}
                       className={css({
                         borderBottom: isLast ? 'none' : '1px solid white',
@@ -174,8 +178,20 @@ class CalculateRiskDropDown extends Component {
 }
 
 const style = {
-  iphone: css({
-    paddingRight: R.nth(5, space)
+  iPhone: css({
+    transform: 'translateX(-10%)',
+    width: '100%',
+    maxWidth: '24rem',
+
+    [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
+      maxWidth: '100%'
+    }
   })
 }
+CalculateRiskDropDown.propTypes = {
+  list: PropTypes.array,
+  title: PropTypes.string,
+  description: PropTypes.string
+}
+
 export default CalculateRiskDropDown

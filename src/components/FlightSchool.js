@@ -46,9 +46,6 @@ const style = {
   }),
   link: css({
     width: '10rem',
-    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-      width: '33.33%'
-    },
     [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
       width: '25%'
     }

@@ -34,14 +34,14 @@ class ToggleiPhone extends Component {
         <SiteContainer>
           <Flex flexWrap={true}>
             <Box width={['100%']} order={[0, 1]}>
-              <Box width={['100%', '50%']} pb={4}>
+              <Box width={['100%', '50%']} pb={[2, 4]}>
                 <H2 color="yellow">{title}</H2>
                 <BodyText color="white">{description}</BodyText>
               </Box>
             </Box>
 
             <Box width={['100%', '50%']} order={[2, 2]} pb={[3, 5]}>
-              <Box width={['100%', '66.66%']}>
+              <Box width={['100%', '100%', '66.66%']}>
                 <ol
                   className={css({
                     marginLeft: 0,
@@ -138,15 +138,9 @@ class ToggleiPhone extends Component {
               width={['100%', '50%']}
             >
               <Flex justifyContent="center">
-                <Box width={['80%', '100%']} position="relative">
+                <Box width={['100%']} position="relative">
                   <img
-                    className={css({
-                      [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-                        position: 'absolute',
-                        top: '-100px',
-                        right: '15%'
-                      }
-                    })}
+                    className={style.image}
                     src={R.path([this.state.activeIndex, 'image'], list)}
                   />
                 </Box>
@@ -159,10 +153,26 @@ class ToggleiPhone extends Component {
   }
 }
 
-export default ToggleiPhone
+const style = {
+  image: css({
+    transform: 'translateX(-20px)',
+
+    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+      transform: 'none',
+      position: 'absolute',
+      top: '-100px',
+      left: '-5%'
+    },
+    [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
+      left: '-15%'
+    }
+  })
+}
 
 ToggleiPhone.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   list: PropTypes.array.isRequired
 }
+
+export default ToggleiPhone

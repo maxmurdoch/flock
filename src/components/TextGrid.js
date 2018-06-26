@@ -33,9 +33,10 @@ const TextGrid = ({title, description, list, image}) => (
           {mapIndex(({title, text, icon}, index) => {
             return (
               <Box
-                width={['100%', '33.33%']}
+                flex="1 1 auto"
+                width={['100%', '50%', '33.33%']}
                 pr={[0, 3]}
-                mt={[2, 4]}
+                mt={[3, 3, 4]}
                 key={index}
               >
                 <ShowIf predicate={R.not(R.isEmpty(icon))}>

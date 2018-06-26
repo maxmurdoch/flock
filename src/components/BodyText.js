@@ -19,6 +19,11 @@ const style = {
     lineHeight: '26px',
 
     [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+      fontSize: 20,
+      lineHeight: '28px'
+    },
+
+    [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
       fontSize: 24,
       lineHeight: '34px'
     }

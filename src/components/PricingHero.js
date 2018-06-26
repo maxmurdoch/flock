@@ -19,7 +19,12 @@ const PricingHero = ({textColor = colors.black, headerClassName, header}) => {
       <SiteContainer>
         <Flex justifyContent="center" alignItems="center">
           <Box width={['100%', '50%']}>
-            <H1 textAlign="center" color={textColor} mb={[2, 3]}>
+            <H1
+              textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
+              textAlign="center"
+              color={textColor}
+              mb={[2, 3]}
+            >
               {header}
             </H1>
           </Box>

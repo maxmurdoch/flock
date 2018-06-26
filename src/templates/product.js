@@ -26,7 +26,6 @@ import MapBackground from '../components/MapBackground'
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
 import {colors, breakpoints} from '../constants/theme'
-import SiteContainer from '../components/SiteContainer'
 
 const SegmentPageTemplate = ({data}) => {
   const {
@@ -49,7 +48,7 @@ const SegmentPageTemplate = ({data}) => {
         description={siteMetadataOverride.description}
         keywords={siteMetadataOverride.keywords}
       />
-      <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+      <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
         {matches => (matches ? <LightNav /> : <MobileNav />)}
       </Media>
       <Hero
@@ -71,17 +70,8 @@ const SegmentPageTemplate = ({data}) => {
         />
       </Box>
       <ShowIf predicate={flightSchool.show}>
-        <div>
-          <BigSectionLine />
-          <Flex justifyContent="center">
-            <SiteContainer>
-              <FlightSchool
-                title={flightSchool.title}
-                list={flightSchool.list}
-              />
-            </SiteContainer>
-          </Flex>
-        </div>
+        <BigSectionLine />
+        <FlightSchool title={flightSchool.title} list={flightSchool.list} />
       </ShowIf>
       <BigSectionLine pb={0} />
       {coverNote.isShowing ? (

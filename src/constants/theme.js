@@ -12,7 +12,7 @@ const colors = {
 
 const space = [0, 10, 20, 40, 60, 80, 120]
 
-const breakpoints = ['50em', '60em', '70em']
+const breakpoints = ['38em', '52em', '64em']
 
 const fontFamilies = {
   chivo: 'Chivo, sans-serif',

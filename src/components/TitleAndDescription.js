@@ -10,7 +10,7 @@ import BodyText from './BodyText'
 const TitleAndDescription = ({title, description}) => (
   <Flex justifyContent="center">
     <SiteContainer>
-      <Box width={['100%', '50%']} mb={[2, 3]}>
+      <Box width={['100%', '75%', '50%']} mb={[2, 3]}>
         <H2>{title}</H2>
         <BodyText>{description}</BodyText>
       </Box>

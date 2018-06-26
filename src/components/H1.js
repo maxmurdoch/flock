@@ -29,8 +29,8 @@ const style = {
     line-height: 44px;
 
     @media (min-width: ${R.nth(0, breakpoints)}) {
-      font-size: 60px;
-      line-height: 66px;
+      font-size: 44px;
+      line-height: 50px;
     }
 
     @media (min-width: ${R.nth(1, breakpoints)}) {

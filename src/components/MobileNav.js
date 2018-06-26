@@ -140,8 +140,8 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
                       width="100%"
                     />
                     {mapIndex(
-                      ({text, to, className}, index) => (
-                        <Link to={to} className={className}>
+                      ({text, to, className}, key) => (
+                        <Link key={key} to={to} className={className}>
                           <SmallText>{text}</SmallText>
                         </Link>
                       ),
@@ -154,7 +154,7 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
                     />
                     <Link to="/download" className={styles.product}>
                       <ArrowText>
-                        <SmallText fontWeight="700">Download</SmallText>
+                        <SmallText fontWeight={700}>Download</SmallText>
                       </ArrowText>
                     </Link>
                   </nav>

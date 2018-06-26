@@ -1,4 +1,5 @@
 import React from 'react'
+import R from 'ramda'
 import PropTypes from 'prop-types'
 import {css} from 'react-emotion'
 
@@ -9,13 +10,14 @@ import H2 from './H2'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
+import {breakpoints} from '../constants/theme'
 
 const CoverNote = ({title, image, bodyText, smallText, link}) => {
   return (
     <Flex justifyContent="center" pt={[3, 5]} pb={[3, 5]}>
       <SiteContainer>
         <Flex flexWrap={true}>
-          <Box width={['100%', '50%']} order={[1, 0]}>
+          <Box width={['100%', '100%', '50%']} order={[1, 1, 0]} mt={[2, 0]}>
             <H2 mb={2}>{title}</H2>
             <BodyText mb={2}>{bodyText}</BodyText>
             <SmallText mb={2}>{smallText}</SmallText>
@@ -27,8 +29,8 @@ const CoverNote = ({title, image, bodyText, smallText, link}) => {
           </Box>
           <Flex
             justifyContent="center"
-            width={['100%', '50%']}
-            order={[0, 1]}
+            width={['100%', '100%', '50%']}
+            order={[0, 0, 1]}
             mt={[2, 0]}
             pr={[2, 0]}
           >
@@ -44,7 +46,13 @@ const CoverNote = ({title, image, bodyText, smallText, link}) => {
 
 const style = {
   image: css({
-    marginBottom: 0
+    marginBottom: 0,
+    width: '100%',
+    maxWidth: '20rem',
+
+    [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
+      maxWidth: '100%'
+    }
   })
 }
 

@@ -27,11 +27,16 @@ const style = {
     font-weight: 700;
     font-size: 17px;
     line-height: 34px;
-    text-transform: 'uppercase';
+    text-transform: uppercase;
 
     @media (min-width: ${R.nth(0, breakpoints)}) {
+      text-transform: none;
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    @media (min-width: ${R.nth(1, breakpoints)}) {
       font-size: 36px;
-      text-transform: 'none';
       line-height: 44px;
     }
     `

@@ -36,7 +36,7 @@ class Testimonial extends Component {
             <Flex flexWrap="wrap" justifyContent="center" zIndex={2}>
               <Box width={['100%', '75%']} pr={2} pl={2}>
                 <BodyText
-                  textShadow="0 1px 0 rgba(0, 0, 0, 0.2)"
+                  textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
                   textAlign="center"
                   mb={2}
                   color={colors.white}

@@ -28,7 +28,13 @@ const smallTextStyle = css({
   fontFamily: 'Chivo',
   fontSize: 14,
   lineHeight: '20px',
+
   [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+    fontSize: 15,
+    lineHeight: '20px'
+  },
+
+  [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
     fontSize: 16,
     lineHeight: '24px'
   }
