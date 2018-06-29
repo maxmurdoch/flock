@@ -1,4 +1,5 @@
 import React from 'react'
+import {withPrefix} from 'gatsby-link'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import {css} from 'react-emotion'
@@ -27,7 +28,7 @@ const FlightSchool = ({title, list}) => {
             {mapIndex(({image, to}, key) => {
               return (
                 <Link target="_blank" className={style.link} to={to} key={key}>
-                  <img src={image} className={style.image} />
+                  <img src={withPrefix(image)} className={style.image} />
                 </Link>
               )
             }, list)}

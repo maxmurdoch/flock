@@ -1,4 +1,5 @@
 import React from 'react'
+import {withPrefix} from 'gatsby-link'
 import PropTypes from 'prop-types'
 import {css} from 'emotion'
 import R from 'ramda'
@@ -49,7 +50,7 @@ const CalculateRiskFlat = ({title, description, list}) => (
                           left: 0,
                           marginBottom: 0
                         })}
-                        src={icon}
+                        src={withPrefix(icon)}
                       />
                       <SmallText pl={3} color={colors.yellow}>
                         {title}

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import {withPrefix} from 'gatsby-link'
 import {css} from 'emotion'
 import R from 'ramda'
 
@@ -37,7 +38,7 @@ class SegmentLink extends Component {
               marginBottom: '1rem',
               height: '2rem'
             })}
-            src={icon}
+            src={withPrefix(icon)}
           />
           <Box>
             <ArrowText isHovered={this.state.isHovered}>

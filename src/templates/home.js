@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
+import {StickyContainer} from 'react-sticky'
 import Media from 'react-media'
 import {css} from 'emotion'
 
@@ -27,90 +28,93 @@ import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
 import iPhone from '../../static/images/uploads/white-phone@2x.png'
 
-const HomePageTemplate = ({data}) => {
-  const {
-    firstTestimonial,
-    secondTestimonial,
-    hero: {header, description, button},
-    howFlockWorks,
-    siteMetadataOverride,
-    stopWorrying,
-    download,
-    featured,
-    calculator,
-    kindOfPilot,
-    risk
-  } = data.markdownRemark.frontmatter
-
+const HomeTemplate = ({
+  firstTestimonial,
+  secondTestimonial,
+  hero,
+  howFlockWorks,
+  siteMetadataOverride,
+  stopWorrying,
+  download,
+  featured,
+  calculator,
+  kindOfPilot,
+  risk
+}) => {
   return (
-    <div>
-      <SiteMetadata
-        title={siteMetadataOverride.title}
-        description={siteMetadataOverride.description}
-        keywords={siteMetadataOverride.keywords}
-      />
-      <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
-        {matches => (matches ? <DarkNav /> : <MobileNav />)}
-      </Media>
-      <Hero
-        RightSideComponent={() => <img src={iPhone} className={style.iphone} />}
-        headerClassName={style.header}
-        headerContainerClassName={style.headerContainer}
-        header={header}
-        description={description}
-        button={button}
-      />
-      <Box mt={[2, 5]}>
-        <TextGrid
-          title={stopWorrying.title}
-          description={stopWorrying.description}
-          list={stopWorrying.reasons}
+    <StickyContainer>
+      <div>
+        <SiteMetadata
+          title={siteMetadataOverride.title}
+          description={siteMetadataOverride.description}
+          keywords={siteMetadataOverride.keywords}
         />
-      </Box>
-      <BigSectionLine />
-      <Box mb={[2, 3]}>
-        <OtherProducts
-          title={kindOfPilot.title}
-          description={kindOfPilot.description}
-          products={kindOfPilot.products}
+        <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
+          {matches => (matches ? <DarkNav /> : <MobileNav />)}
+        </Media>
+        <Hero
+          RightSideComponent={() => (
+            <img src={iPhone} className={style.iphone} />
+          )}
+          headerClassName={style.header}
+          headerContainerClassName={style.headerContainer}
+          header={hero.header}
+          textShadow={false}
+          description={hero.description}
+          button={hero.button}
         />
-      </Box>
-      <Box pb={[2, 3]}>
-        <Testimonial testimonials={firstTestimonial} />
-      </Box>
-      <MapBackground>
-        <ToggleiPhone
-          title={howFlockWorks.title}
-          description={howFlockWorks.description}
-          list={howFlockWorks.listOfHow}
-        />
-        <CalculateRiskDropDown
-          title={risk.title}
-          list={risk.list}
-          description={risk.description}
-        />
-      </MapBackground>
-      <Box pt={[2, 5]}>
-        <TitleAndDescription
-          title={calculator.title}
-          description={calculator.description}
-        />
-        <Calculator />
-      </Box>
-      <Box pt={[2, 5]}>
-        <Testimonial testimonials={secondTestimonial} />
-      </Box>
-      <Box pt={[2, 5]}>
-        <DownloadFlock
-          title={download.title}
-          text={download.text}
-          button={download.button}
-        />
-      </Box>
-      <BigSectionLine />
-      <Featured title={featured.title} image={featured.image} />
-      <Footer />
-    </div>
+        <Box mt={[2, 5]}>
+          <TextGrid
+            title={stopWorrying.title}
+            description={stopWorrying.description}
+            list={stopWorrying.reasons}
+          />
+        </Box>
+        <BigSectionLine />
+        <Box mb={[2, 3]}>
+          <OtherProducts
+            title={kindOfPilot.title}
+            description={kindOfPilot.description}
+            products={kindOfPilot.products}
+          />
+        </Box>
+        <Box pb={[2, 3]}>
+          <Testimonial testimonials={firstTestimonial} />
+        </Box>
+        <MapBackground>
+          <ToggleiPhone
+            title={howFlockWorks.title}
+            description={howFlockWorks.description}
+            list={howFlockWorks.listOfHow}
+          />
+          <CalculateRiskDropDown
+            title={risk.title}
+            list={risk.list}
+            description={risk.description}
+          />
+        </MapBackground>
+        <Box pt={[2, 5]}>
+          <TitleAndDescription
+            title={calculator.title}
+            description={calculator.description}
+          />
+          <Calculator />
+        </Box>
+        <Box pt={[2, 5]}>
+          <Testimonial testimonials={secondTestimonial} />
+        </Box>
+        <Box pt={[2, 5]}>
+          <DownloadFlock
+            title={download.title}
+            text={download.text}
+            button={download.button}
+          />
+        </Box>
+        <BigSectionLine />
+        <Featured title={featured.title} image={featured.image} />
+        <Footer />
+      </div>
+    </StickyContainer>
   )
 }
 
@@ -133,6 +137,60 @@ const style = {
     }
   })
 }
+
+HomeTemplate.propTypes = {
+  firstTestimonial: PropTypes.array,
+  secondTestimonial: PropTypes.array,
+  hero: PropTypes.object,
+  howFlockWorks: PropTypes.object,
+  siteMetadataOverride: PropTypes.object,
+  stopWorrying: PropTypes.object,
+  download: PropTypes.object,
+  featured: PropTypes.object,
+  calculator: PropTypes.object,
+  kindOfPilot: PropTypes.object,
+  risk: PropTypes.object
+}
+
+export {HomeTemplate}
+
+const HomePage = ({data}) => {
+  const {
+    firstTestimonial,
+    secondTestimonial,
+    hero,
+    howFlockWorks,
+    siteMetadataOverride,
+    stopWorrying,
+    download,
+    featured,
+    calculator,
+    kindOfPilot,
+    risk
+  } = data.markdownRemark.frontmatter
+
+  return (
+    <HomeTemplate
+      firstTestimonial={firstTestimonial}
+      secondTestimonial={secondTestimonial}
+      hero={hero}
+      howFlockWorks={howFlockWorks}
+      siteMetadataOverride={siteMetadataOverride}
+      stopWorrying={stopWorrying}
+      download={download}
+      featured={featured}
+      calculator={calculator}
+      kindOfPilot={kindOfPilot}
+      risk={risk}
+    />
+  )
+}
+
+HomePage.propTypes = {
+  data: PropTypes.object
+}
+
+export default HomePage
 
 export const query = graphql`
   query HomePage($id: String!) {
@@ -221,9 +279,3 @@ export const query = graphql`
     }
   }
 `
-
-HomePageTemplate.propTypes = {
-  data: PropTypes.object
-}
-
-export default HomePageTemplate

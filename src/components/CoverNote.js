@@ -1,4 +1,5 @@
 import React from 'react'
+import {withPrefix} from 'gatsby-link'
 import R from 'ramda'
 import PropTypes from 'prop-types'
 import {css} from 'react-emotion'
@@ -35,7 +36,7 @@ const CoverNote = ({title, image, bodyText, smallText, link}) => {
             pr={[2, 0]}
           >
             <Box width={['80%', 'auto']}>
-              <img className={style.image} src={image} />
+              <img className={style.image} src={withPrefix(image)} />
             </Box>
           </Flex>
         </Flex>

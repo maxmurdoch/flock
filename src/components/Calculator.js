@@ -10,13 +10,17 @@ import Label from './Label'
 import SmallText from './SmallText'
 import BodyText from './BodyText'
 import SiteContainer from './SiteContainer'
-import H2 from './H2'
 import {colors, boxShadows} from '../constants/theme'
 
 injectGlobal`
   .Select-control {
     border-radius: 0;
     border: 0;
+    height: 52px;
+  }
+  /* we have to do this very specific selector to override built in styles */
+  .Select-placeholder, .Select--single > .Select-control .Select-value {
+    line-height: 52px;
   }
   .Select-arrow {
     border-color: #000 transparent transparent;

@@ -1,6 +1,6 @@
 import React from 'react'
-import { renderToString } from 'react-dom/server'
-import { renderStylesToString } from 'emotion-server'
+import {renderToString} from 'react-dom/server'
+import {renderStylesToString} from 'emotion-server'
 
 class CSSInjector extends React.Component {
   render() {
@@ -18,5 +18,7 @@ class CSSInjector extends React.Component {
     )
   }
 }
+
+CSSInjector.propTypes = {}
 
 export default CSSInjector

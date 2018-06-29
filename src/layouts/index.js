@@ -2,11 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import {injectGlobal} from 'emotion'
-import {StickyContainer} from 'react-sticky'
 import Helmet from 'react-helmet'
 import {ThemeProvider} from 'emotion-theming'
 
-import theme, {fontFamilies} from '../constants/theme'
+import theme, {fontFamilies, colors} from '../constants/theme'
 import './index.css'
 
 import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
@@ -14,8 +13,8 @@ import chivo from '../fonts/chivo/Chivo-Regular.woff2'
 
 injectGlobal`
 ::selection {
-  background-color: 'blue';
-  color: 'white';
+  background-color: ${colors.yellow};
+  color: ${colors.black};
 }
 * {
   -webkit-font-smoothing: antialiased;
@@ -47,7 +46,7 @@ const Layout = ({
 }) => {
   return (
     <ThemeProvider theme={theme}>
-      <StickyContainer>
+      <div>
         <Helmet
           title={frontmatter.siteMetadata.title}
           meta={[
@@ -62,7 +61,7 @@ const Layout = ({
           ]}
         />
         <div>{children()}</div>
-      </StickyContainer>
+      </div>
     </ThemeProvider>
   )
 }

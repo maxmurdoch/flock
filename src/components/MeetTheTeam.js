@@ -1,4 +1,5 @@
 import React from 'react'
+import {withPrefix} from 'gatsby-link'
 import {css} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
@@ -28,7 +29,7 @@ const MeetTheTeam = ({title, description, team}) => {
                   width={['50%', '33.33%', `${100 / 6}%`]}
                 >
                   <ShowIf predicate={!!image}>
-                    <img src={image} className={style.image} />
+                    <img src={withPrefix(image)} className={style.image} />
                   </ShowIf>
                   <SmallText fontWeight={700}>{member}</SmallText>
                   <SmallText>{role}</SmallText>

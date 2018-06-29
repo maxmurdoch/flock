@@ -1,10 +1,10 @@
 import React from 'react'
 import R from 'ramda'
 import Media from 'react-media'
+import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
-import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
@@ -42,94 +42,96 @@ const SegmentPageTemplate = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <div>
-      <SiteMetadata
-        title={siteMetadataOverride.title}
-        description={siteMetadataOverride.description}
-        keywords={siteMetadataOverride.keywords}
-      />
-      <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
-        {matches => (matches ? <LightNav /> : <MobileNav />)}
-      </Media>
-      <Hero
-        headerClassName={css({
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
-        })}
-        textColor={colors.white}
-        header={header}
-        description={description}
-        button={button}
-      />
-      <Box mt={[2, 5]}>
-        <TextGrid
-          title={why.title}
-          description={why.description}
-          list={why.list}
+    <StickyContainer>
+      <div>
+        <SiteMetadata
+          title={siteMetadataOverride.title}
+          description={siteMetadataOverride.description}
+          keywords={siteMetadataOverride.keywords}
         />
-      </Box>
-      <ShowIf predicate={flightSchool.show}>
-        <BigSectionLine />
-        <FlightSchool title={flightSchool.title} list={flightSchool.list} />
-      </ShowIf>
-      <BigSectionLine pb={0} />
-      {coverNote.isShowing ? (
-        <CoverNote
-          image={coverNote.image}
-          title={coverNote.title}
-          bodyText={coverNote.bodyText}
-          smallText={coverNote.smallText}
-          link={coverNote.link}
-        />
-      ) : (
-        <TextSection
-          title={doINeedInsurance.title}
-          bigText={doINeedInsurance.bigText}
-          smallText={doINeedInsurance.smallText}
-        />
-      )}
-      <MapBackground>
-        <ToggleiPhone
-          title={how.title}
-          description={how.description}
-          list={how.list}
-        />
-        <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-          {matches =>
-            matches ? (
-              <CalculateRiskFlat
-                title={risk.title}
-                description={risk.description}
-                list={risk.list}
-              />
-            ) : (
-              <CalculateRiskDropDown
-                title={risk.title}
-                description={risk.description}
-                list={risk.list}
-              />
-            )
-          }
+        <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
+          {matches => (matches ? <LightNav /> : <MobileNav />)}
         </Media>
-      </MapBackground>
-      <Box pt={[2, 5]}>
-        <Testimonial testimonials={testimonial} />
-      </Box>
-      <Box pt={[2, 5]}>
-        <DownloadFlock />
-      </Box>
-      <BigSectionLine />
-      <OtherProducts
-        title={otherProducts.title}
-        description={otherProducts.description}
-        products={otherProducts.products}
-      />
-      <Box pt={[2, 5]}>
-        <Featured />
-      </Box>
-      <Footer />
-    </div>
+        <Hero
+          headerClassName={css({
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+          })}
+          textColor={colors.white}
+          header={header}
+          description={description}
+          button={button}
+        />
+        <Box mt={[2, 5]}>
+          <TextGrid
+            title={why.title}
+            description={why.description}
+            list={why.list}
+          />
+        </Box>
+        <ShowIf predicate={flightSchool.show}>
+          <BigSectionLine />
+          <FlightSchool title={flightSchool.title} list={flightSchool.list} />
+        </ShowIf>
+        <BigSectionLine pb={0} />
+        {coverNote.isShowing ? (
+          <CoverNote
+            image={coverNote.image}
+            title={coverNote.title}
+            bodyText={coverNote.bodyText}
+            smallText={coverNote.smallText}
+            link={coverNote.link}
+          />
+        ) : (
+          <TextSection
+            title={doINeedInsurance.title}
+            bigText={doINeedInsurance.bigText}
+            smallText={doINeedInsurance.smallText}
+          />
+        )}
+        <MapBackground>
+          <ToggleiPhone
+            title={how.title}
+            description={how.description}
+            list={how.list}
+          />
+          <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+            {matches =>
+              matches ? (
+                <CalculateRiskFlat
+                  title={risk.title}
+                  description={risk.description}
+                  list={risk.list}
+                />
+              ) : (
+                <CalculateRiskDropDown
+                  title={risk.title}
+                  description={risk.description}
+                  list={risk.list}
+                />
+              )
+            }
+          </Media>
+        </MapBackground>
+        <Box pt={[2, 5]}>
+          <Testimonial testimonials={testimonial} />
+        </Box>
+        <Box pt={[2, 5]}>
+          <DownloadFlock />
+        </Box>
+        <BigSectionLine />
+        <OtherProducts
+          title={otherProducts.title}
+          description={otherProducts.description}
+          products={otherProducts.products}
+        />
+        <Box pt={[2, 5]}>
+          <Featured />
+        </Box>
+        <Footer />
+      </div>
+    </StickyContainer>
   )
 }
 

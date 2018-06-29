@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {withPrefix} from 'gatsby-link'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import {css} from 'emotion'
@@ -141,7 +142,9 @@ class ToggleiPhone extends Component {
                 <Box width={['100%']} position="relative">
                   <img
                     className={style.image}
-                    src={R.path([this.state.activeIndex, 'image'], list)}
+                    src={withPrefix(
+                      R.path([this.state.activeIndex, 'image'], list)
+                    )}
                   />
                 </Box>
               </Flex>

@@ -20,6 +20,7 @@ import {colors, breakpoints} from '../constants/theme'
 const Hero = ({
   textColor = colors.black,
   headerClassName,
+  textShadow = true,
   header,
   RightSideComponent,
   description,
@@ -45,7 +46,7 @@ const Hero = ({
           <Flex alignItems="center" mt={[3, 5]}>
             <Box width={['100%', '75%', '60%']} mt={[4, 5]} mb={[3, 6]}>
               <H1
-                textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
+                textShadow={textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'}
                 color={textColor}
                 mb={[2, 3]}
               >

@@ -1,9 +1,6 @@
 backend:
-  # Uncomment to use remote markdown data (used on the live site and in the CMS)
   name: github
   repo: maxmurdoch/flock
-  # Uncomment to use local markdown data 
-  # name: test-repo
 
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
@@ -19,7 +16,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Template key", name: "templateKey", widget: "string"}
-
           - label: "Hero"
             name: "hero"
             widget: "object"
@@ -32,7 +28,6 @@ collections:
                 fields:
                   - {label: "Text", name: "text", widget: "string"}
                   - {label: "To", name: "to", widget: "string"}
-
           - label: 'First testimonials'
             name: 'firstTestimonial'
             widget: 'list'
@@ -40,7 +35,6 @@ collections:
               - {label: 'Author', name: 'author', widget: 'string'}
               - {label: 'Quote', name: 'quote', widget: 'markdown'}
               - {label: 'Image', name: 'image', widget: 'image'}
-              
           - label: 'How Flock works'
             name: 'howFlockWorks'
             widget: 'object'
@@ -54,7 +48,6 @@ collections:
                   - {label: 'Title', name: 'title', widget: 'string'} 
                   - {label: 'Text', name: 'text', widget: 'markdown'} 
                   - {label: 'Image', name: 'image', widget: 'image'} 
-
           - label: 'Stop worrying'
             name: 'stopWorrying'
             widget: 'object'
@@ -68,7 +61,6 @@ collections:
                   - {label: 'Title', name: 'title', widget: 'string'} 
                   - {label: 'Text', name: 'text', widget: 'markdown'} 
                   - {label: 'Icon', name: 'image', widget: 'image'} 
-
           - label: 'What kind of pilot?'
             name: 'kindOfPilot'
             widget: 'object'
@@ -83,7 +75,6 @@ collections:
                   - {label: 'Text', name: 'text', widget: 'markdown'} 
                   - {label: 'Icon', name: 'icon', widget: 'image'} 
                   - {label: 'Link', name: 'link', widget: 'string'} 
-
           - label: 'Risk'
             name: 'risk'
             widget: 'object'
@@ -97,14 +88,12 @@ collections:
                   - {label: 'Title', name: 'title', widget: 'string'} 
                   - {label: 'List', name: 'list', widget: 'list'} 
                   - {label: 'Icon', name: 'icon', widget: 'image'} 
-
           - label: 'Calculator'
             name: 'calculator'
             widget: 'object'
             fields:
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'string'}
-
           - label: 'Second testimonials'
             name: 'secondTestimonial'
             widget: 'list'
@@ -112,7 +101,6 @@ collections:
               - {label: 'Author', name: 'author', widget: 'string'}
               - {label: 'Quote', name: 'quote', widget: 'markdown'}
               - {label: 'Image', name: 'image', widget: 'image'}
-
           - label: 'Download'
             name: 'download'
             widget: 'object'
@@ -125,14 +113,12 @@ collections:
                 fields:
                   - {name: 'to', label: 'To', widget: 'string'}
                   - {name: 'text', label: 'Text', widget: 'string'}
-
           - label: 'Featured'
             name: 'featured'
             widget: 'object'
             fields:
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Image', name: 'image', widget: 'image'}
-
           - name: "siteMetadataOverride"
             required: false
             label: "Site metadata override"
@@ -141,7 +127,6 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Keywords", name: "keywords", widget: "list"}
-
       - name: settings
         label: Settings
         file: "src/pages/settings.md"
@@ -154,15 +139,12 @@ collections:
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'string'}
               - {label: 'Keywords', name: 'keywords', widget: 'array'}
-
       - name: pricing
         label: Pricing
         file: "src/pages/pricing.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-
           - { name: templateKey, label: Template key, widget: 'hidden', default: pricing }
-
           - name: hero
             label: Hero
             widget: object
@@ -182,7 +164,6 @@ collections:
                   - {name: 'title', label: 'Title', widget: 'string'}
                   - {name: 'text', label: 'Text', widget: 'string'}
                   - {name: 'icon', label: 'Icon', required: false, widget: image}
-
           - name: 'siteMetadataOverride'
             label: 'Site metadata override'
             required: false
@@ -191,7 +172,6 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Keywords", name: "keywords", widget: "list"}
-
       - name: about
         label: About
         file: "src/pages/about.md"
@@ -204,7 +184,6 @@ collections:
             fields:
               - {name: 'backgroundImage', label: Background image, widget: 'image'}
               - {name: 'header', label: 'Header', widget: 'string'}
-
           - name: flockStory
             label: Flock story
             widget: object
@@ -214,7 +193,6 @@ collections:
               - {name: 'imageHeader', label: 'Image header', widget: 'string'}
               - {name: 'bigText', label: 'Big text', widget: 'markdown'}
               - {name: 'smallText', label: 'Small text', widget: 'markdown'}
-
           - name: coreValues
             label: Core values
             widget: object
@@ -227,7 +205,6 @@ collections:
                 fields:
                   - {label: 'Text', name: 'text', widget: 'markdown'} 
                   - {label: 'Title', name: 'title', widget: 'markdown'} 
-
           - name: meetTheTeam
             label: Meet the team
             widget: object
@@ -241,7 +218,6 @@ collections:
                   - {label: 'Member', name: 'member', widget: 'string'} 
                   - {label: 'Role', name: 'role', widget: 'markdown'} 
                   - {label: 'Image', name: 'image', widget: 'image'} 
-
           - name: "siteMetadataOverride"
             label: "Site metadata override"
             required: false
@@ -257,9 +233,7 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
-
       - { name: templateKey, label: Template key, widget: 'hidden', default: product }
-
       - name: hero
         label: Hero
         widget: object
@@ -273,7 +247,6 @@ collections:
           - {name: 'description', label: 'Description', widget: 'markdown'}
           - {name: 'header', label: 'Header', widget: 'string'}
           - {name: 'backgroundImage', label: 'Background image', widget: 'image'}
-
       - label: 'Why'
         name: 'why'
         widget: 'object'
@@ -286,7 +259,6 @@ collections:
             fields:
               - {label: 'Title', name: 'title', widget: 'string'} 
               - {label: 'Text', name: 'text', widget: 'markdown'} 
-
       - label: 'Flight school'
         name: 'flightSchool'
         widget: 'object'
@@ -299,7 +271,6 @@ collections:
             fields:
               - {name: image, label: Image, widget: image}
               - {name: to, label: Link, widget: string}
-
       - label: 'Cover note'
         name: coverNote
         widget: object
@@ -315,7 +286,6 @@ collections:
             fields:
               - {name: to, label: To, widget: string}
               - {name: text, label: Text, widget: string}
-
       - label: 'Do I need insurance'
         name: 'doINeedInsurance'
         widget: object
@@ -323,7 +293,6 @@ collections:
           - {title: Title, name: title, widget: markdown}
           - {title: BigText, name: bigText, widget: markdown}
           - {title: SmallText, name: smallText, widget: markdown}
-
       - label: 'How'
         name: 'how'
         widget: 'object'
@@ -337,7 +306,6 @@ collections:
               - {label: 'Title', name: 'title', widget: 'string'} 
               - {label: 'Text', name: 'text', widget: 'markdown'} 
               - {label: 'Image', name: 'image', widget: 'image'} 
-
       - label: 'Risk'
         name: 'risk'
         widget: 'object'
@@ -351,7 +319,6 @@ collections:
               - {label: 'Title', name: 'title', widget: 'string'} 
               - {label: 'List', name: 'list', widget: 'list'} 
               - {label: 'Icon', name: 'icon', widget: 'image'} 
-
       - label: 'Testimonials'
         name: 'testimonial'
         widget: 'list'
@@ -359,7 +326,6 @@ collections:
           - {label: 'Author', name: 'author', widget: 'string'}
           - {label: 'Quote', name: 'quote', widget: 'markdown'}
           - {label: 'Image', name: 'image', widget: 'image'}
-
       - label: 'Other products'
         name: 'otherProducts'
         widget: 'object'
@@ -374,7 +340,6 @@ collections:
               - {label: 'Text', name: 'text', widget: 'markdown'}
               - {label: 'Icon', name: 'icon', widget: 'image'}
               - {label: 'Link', name: 'link', widget: 'string'}
-
       - name: "siteMetadataOverride"
         label: "Site metadata override"
         required: false

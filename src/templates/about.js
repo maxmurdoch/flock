@@ -1,6 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
+import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
 import SiteMetadata from '../components/SiteMetadata'
@@ -16,9 +18,81 @@ import AboutHero from '../components/AboutHero'
 import {colors, breakpoints, space} from '../constants/theme'
 import MeetTheTeam from '../components/MeetTheTeam'
 
-const PricingTemplate = ({data}) => {
+const PricingTemplate = ({
+  hero,
+  flockStory,
+  siteMetadataOverride,
+  coreValues,
+  meetTheTeam
+}) => {
+  return (
+    <StickyContainer>
+      <div>
+        <SiteMetadata
+          title={siteMetadataOverride.title}
+          description={siteMetadataOverride.description}
+          keywords={siteMetadataOverride.keywords}
+        />
+        <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+          {matches => (matches ? <LightNav /> : <MobileNav />)}
+        </Media>
+        <AboutHero
+          center={true}
+          headerClassName={css({
+            backgroundImage: `url(${hero.backgroundImage})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            height: '66vh'
+          })}
+          textColor={colors.white}
+          header={hero.header}
+        />
+        <FlockStory
+          header={flockStory.header}
+          bigText={flockStory.bigText}
+          smallText={flockStory.smallText}
+          image={flockStory.image}
+          imageHeader={flockStory.imageHeader}
+        />
+        <BigSectionLine />
+        <TextGrid
+          title={coreValues.title}
+          description={coreValues.description}
+          list={coreValues.list}
+        />
+        <BigSectionLine />
+        <MeetTheTeam
+          title={meetTheTeam.title}
+          description={meetTheTeam.description}
+          team={meetTheTeam.team}
+        />
+        <BigSectionLine />
+        <Download />
+        <Footer
+          containerClassName={css({
+            marginTop: R.nth(3, space),
+            [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+              marginTop: R.nth(5, space)
+            }
+          })}
+        />
+      </div>
+    </StickyContainer>
+  )
+}
+
+PricingTemplate.propTypes = {
+  hero: PropTypes.object,
+  flockStory: PropTypes.object,
+  siteMetadataOverride: PropTypes.object,
+  coreValues: PropTypes.object,
+  meetTheTeam: PropTypes.object
+}
+
+const PricingPage = ({data}) => {
   const {
-    hero: {header, backgroundImage},
+    hero,
     flockStory,
     siteMetadataOverride,
     coreValues,
@@ -26,58 +100,18 @@ const PricingTemplate = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <div>
-      <SiteMetadata
-        title={siteMetadataOverride.title}
-        description={siteMetadataOverride.description}
-        keywords={siteMetadataOverride.keywords}
-      />
-      <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-        {matches => (matches ? <LightNav /> : <MobileNav />)}
-      </Media>
-      <AboutHero
-        center={true}
-        headerClassName={css({
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          height: '66vh'
-        })}
-        textColor={colors.white}
-        header={header}
-      />
-      <FlockStory
-        header={flockStory.header}
-        bigText={flockStory.bigText}
-        smallText={flockStory.smallText}
-        image={flockStory.image}
-        imageHeader={flockStory.imageHeader}
-      />
-      <BigSectionLine />
-      <TextGrid
-        title={coreValues.title}
-        description={coreValues.description}
-        list={coreValues.list}
-      />
-      <BigSectionLine />
-      <MeetTheTeam
-        title={meetTheTeam.title}
-        description={meetTheTeam.description}
-        team={meetTheTeam.team}
-      />
-      <BigSectionLine />
-      <Download />
-      <Footer
-        containerClassName={css({
-          marginTop: R.nth(3, space),
-          [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-            marginTop: R.nth(5, space)
-          }
-        })}
-      />
-    </div>
+    <PricingTemplate
+      hero={hero}
+      flockStory={flockStory}
+      siteMetadataOverride={siteMetadataOverride}
+      coreValues={coreValues}
+      meetTheTeam={meetTheTeam}
+    />
   )
+}
+
+PricingPage.propTypes = {
+  data: PropTypes.object
 }
 
 export const query = graphql`
@@ -124,4 +158,5 @@ export const query = graphql`
   }
 `
 
-export default PricingTemplate
+export {PricingTemplate}
+export default PricingPage

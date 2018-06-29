@@ -1,6 +1,7 @@
 import React from 'react'
 import R from 'ramda'
 import {css} from 'react-emotion'
+import {withPrefix} from 'gatsby-link'
 import PropTypes from 'prop-types'
 
 import H2 from './H2'
@@ -23,7 +24,7 @@ const TextGrid = ({title, description, list, image}) => (
             <H2 markdown={true}>{title}</H2>
           </ShowIf>
           <ShowIf predicate={!!image}>
-            <img src={image} />
+            <img src={withPrefix(image)} />
           </ShowIf>
           <ShowIf predicate={R.not(R.isEmpty(description))}>
             <BodyText>{description}</BodyText>
@@ -40,7 +41,10 @@ const TextGrid = ({title, description, list, image}) => (
                 key={index}
               >
                 <ShowIf predicate={R.not(R.isEmpty(icon))}>
-                  <img src={icon} className={css({marginBottom: 0})} />
+                  <img
+                    src={withPrefix(icon)}
+                    className={css({marginBottom: 0})}
+                  />
                 </ShowIf>
                 <H3>{title}</H3>
                 <SmallText>{text}</SmallText>

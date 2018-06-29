@@ -1,4 +1,5 @@
 import React from 'react'
+import {StickyContainer} from 'react-sticky'
 import R from 'ramda'
 import Media from 'react-media'
 import {css} from 'emotion'
@@ -29,59 +30,61 @@ const PricingTemplate = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <div>
-      <SiteMetadata
-        title={siteMetadataOverride.title}
-        description={siteMetadataOverride.description}
-        keywords={siteMetadataOverride.keywords}
-      />
-      <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-        {matches => (matches ? <LightNav /> : <MobileNav />)}
-      </Media>
-      <div
-        className={css({
-          position: 'relative'
-        })}
-      >
-        <PricingHero
-          headerClassName={css({
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
-          })}
-          textColor={colors.white}
-          header={header}
+    <StickyContainer>
+      <div>
+        <SiteMetadata
+          title={siteMetadataOverride.title}
+          description={siteMetadataOverride.description}
+          keywords={siteMetadataOverride.keywords}
         />
-        <Box
+        <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+          {matches => (matches ? <LightNav /> : <MobileNav />)}
+        </Media>
+        <div
           className={css({
-            transform: 'translateY(-20%)',
-            [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-              transform: 'translateY(-50%)'
-            }
+            position: 'relative'
           })}
         >
-          <Calculator />
-        </Box>
-      </div>
-      <TextGrid
-        description={riskCalculations.description}
-        list={riskCalculations.list}
-        image={riskCalculations.image}
-      />
-      <Flex mt={[2, 5]} mb={[2, 5]} justifyContent="center">
-        <Testimonial testimonials={testimonials} />
-      </Flex>
-      <Download />
-      <BigSectionLine />
-      <Box mb={[2, 5]}>
-        <OtherProducts
-          products={otherProducts.products}
-          description={otherProducts.description}
-          title={otherProducts.title}
+          <PricingHero
+            headerClassName={css({
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            })}
+            textColor={colors.white}
+            header={header}
+          />
+          <Box
+            className={css({
+              transform: 'translateY(-20%)',
+              [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+                transform: 'translateY(-50%)'
+              }
+            })}
+          >
+            <Calculator />
+          </Box>
+        </div>
+        <TextGrid
+          description={riskCalculations.description}
+          list={riskCalculations.list}
+          image={riskCalculations.image}
         />
-      </Box>
-      <Footer />
-    </div>
+        <Flex mt={[2, 5]} mb={[2, 5]} justifyContent="center">
+          <Testimonial testimonials={testimonials} />
+        </Flex>
+        <Download />
+        <BigSectionLine />
+        <Box mb={[2, 5]}>
+          <OtherProducts
+            products={otherProducts.products}
+            description={otherProducts.description}
+            title={otherProducts.title}
+          />
+        </Box>
+        <Footer />
+      </div>
+    </StickyContainer>
   )
 }
 

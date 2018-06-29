@@ -67,7 +67,7 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
   return (
     <Sticky disableCompensation={true}>
       {({style, distanceFromTop}) => {
-        const activateStickyStyle = distanceFromTop < -50
+        const activateStickyStyle = R.or(distanceFromTop < -50, isOpen)
 
         return (
           <Flex
@@ -77,13 +77,16 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
             zIndex="2"
           >
             <Flex
-              background={colors.yellow}
+              background={activateStickyStyle ? colors.yellow : 'transparent'}
               pt={2}
               pr={2}
               pb={2}
               pl={2}
               justifyContent="space-between"
               width="100%"
+              className={css({
+                transition: '200ms background ease-in-out'
+              })}
             >
               <Box>
                 <img

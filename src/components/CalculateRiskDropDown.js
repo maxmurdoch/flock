@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {withPrefix} from 'gatsby-link'
 import PropTypes from 'prop-types'
 import {Collapse} from 'react-collapse'
 import {css} from 'emotion'
@@ -111,7 +112,7 @@ class CalculateRiskDropDown extends Component {
                               left: 0,
                               marginBottom: 0
                             })}
-                            src={icon}
+                            src={withPrefix(icon)}
                           />
                           <SmallText
                             pl={3}

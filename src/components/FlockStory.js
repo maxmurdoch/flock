@@ -1,4 +1,5 @@
 import React from 'react'
+import {withPrefix} from 'gatsby-link'
 import Markdown from 'react-remarkable'
 import R from 'ramda'
 import {css} from 'react-emotion'
@@ -39,7 +40,7 @@ const FlockStory = ({header, bigText, smallText, image, imageHeader}) => {
             flexWrap="wrap"
           >
             <SmallText mb={3}>{imageHeader}</SmallText>
-            <img src={image} />
+            <img src={withPrefix(image)} />
           </Flex>
         </Flex>
       </SiteContainer>
