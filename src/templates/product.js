@@ -29,7 +29,7 @@ import {colors, breakpoints} from '../constants/theme'
 
 const SegmentPageTemplate = ({data}) => {
   const {
-    hero: {header, description, button, backgroundImage},
+    hero,
     why,
     coverNote,
     flightSchool,
@@ -54,14 +54,14 @@ const SegmentPageTemplate = ({data}) => {
         </Media>
         <Hero
           headerClassName={css({
-            backgroundImage: `url(${backgroundImage})`,
+            backgroundImage: `url(${hero.backgroundImage})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
           })}
           textColor={colors.white}
-          header={header}
-          description={description}
-          button={button}
+          header={hero.header}
+          description={hero.description}
+          button={hero.button}
         />
         <Box mt={[3, 5]}>
           <TextGrid

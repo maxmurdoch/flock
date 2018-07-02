@@ -89,10 +89,12 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
               })}
             >
               <Box>
-                <img
-                  className={css({marginBottom: 0, width: R.nth(5, space)})}
-                  src={blackLogo}
-                />
+                <Link to="/">
+                  <img
+                    className={css({marginBottom: 0, width: R.nth(5, space)})}
+                    src={blackLogo}
+                  />
+                </Link>
               </Box>
               <Box>
                 <button
