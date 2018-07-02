@@ -27,6 +27,8 @@ const Hero = ({
   description,
   button
 }) => {
+  console.log(description)
+
   return (
     <Flex
       flexDirection="column"
@@ -57,13 +59,11 @@ const Hero = ({
                   {header}
                 </H1>
               </ScrollAnimation>
-
               <ScrollAnimation animateIn="fadeIn" delay={200}>
                 <BodyText color={textColor} mb={[2, 3]}>
                   <Markdown container="span">{description}</Markdown>
                 </BodyText>
               </ScrollAnimation>
-
               <ShowIf predicate={R.not(R.isNil(button))}>
                 <ScrollAnimation animateIn="fadeIn" delay={400}>
                   <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
