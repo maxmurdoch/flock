@@ -7,6 +7,7 @@ import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
 import MobileNav from '../components/MobileNav'
+import ScrollAnimation from 'react-animate-on-scroll'
 import Hero from '../components/Hero'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
@@ -22,14 +23,15 @@ import Featured from '../components/Featured'
 import Footer from '../components/Footer'
 import MapBackground from '../components/MapBackground'
 import SiteMetadata from '../components/SiteMetadata'
+import ModalVideo from '../components/ModalVideo'
 import {colors, breakpoints} from '../constants/theme'
 
 import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
-import iPhone from '../../static/images/uploads/white-phone@2x.png'
+import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
 
 const HomeTemplate = ({
-  firstTestimonial,
+  video,
   secondTestimonial,
   hero,
   howFlockWorks,
@@ -54,7 +56,9 @@ const HomeTemplate = ({
         </Media>
         <Hero
           RightSideComponent={() => (
-            <img src={iPhone} className={style.iphone} />
+            <ScrollAnimation animateIn="fadeInUp" delay={600}>
+              <img src={iPhone} className={style.iphone} />
+            </ScrollAnimation>
           )}
           headerClassName={style.header}
           headerContainerClassName={style.headerContainer}
@@ -63,7 +67,7 @@ const HomeTemplate = ({
           description={hero.description}
           button={hero.button}
         />
-        <Box mt={[2, 5]}>
+        <Box mt={[3, 5]}>
           <TextGrid
             title={stopWorrying.title}
             description={stopWorrying.description}
@@ -79,7 +83,11 @@ const HomeTemplate = ({
           />
         </Box>
         <Box pb={[2, 3]}>
-          <Testimonial testimonials={firstTestimonial} />
+          <ModalVideo
+            text={video.text}
+            videoId={video.id}
+            coverImage={video.coverImage}
+          />
         </Box>
         <MapBackground>
           <ToggleiPhone
@@ -93,17 +101,17 @@ const HomeTemplate = ({
             description={risk.description}
           />
         </MapBackground>
-        <Box pt={[2, 5]}>
+        <Box pt={[3, 5]}>
           <TitleAndDescription
             title={calculator.title}
             description={calculator.description}
           />
           <Calculator />
         </Box>
-        <Box pt={[2, 5]}>
+        <Box pt={[3, 5]}>
           <Testimonial testimonials={secondTestimonial} />
         </Box>
-        <Box pt={[2, 5]}>
+        <Box pt={[3, 5]}>
           <DownloadFlock
             title={download.title}
             text={download.text}
@@ -121,8 +129,7 @@ const HomeTemplate = ({
 const style = {
   iphone: css({
     marginBottom: 0,
-    width: '20rem',
-    transform: 'rotate(11deg)'
+    display: 'block'
   }),
   header: css({
     background: colors.backgrounds.light,
@@ -139,7 +146,7 @@ const style = {
 }
 
 HomeTemplate.propTypes = {
-  firstTestimonial: PropTypes.array,
+  video: PropTypes.object,
   secondTestimonial: PropTypes.array,
   hero: PropTypes.object,
   howFlockWorks: PropTypes.object,
@@ -156,7 +163,7 @@ export {HomeTemplate}
 
 const HomePage = ({data}) => {
   const {
-    firstTestimonial,
+    video,
     secondTestimonial,
     hero,
     howFlockWorks,
@@ -171,7 +178,7 @@ const HomePage = ({data}) => {
 
   return (
     <HomeTemplate
-      firstTestimonial={firstTestimonial}
+      video={video}
       secondTestimonial={secondTestimonial}
       hero={hero}
       howFlockWorks={howFlockWorks}
@@ -207,10 +214,10 @@ export const query = graphql`
             to
           }
         }
-        firstTestimonial {
-          quote
-          author
-          image
+        video {
+          text
+          id
+          coverImage
         }
         howFlockWorks {
           title

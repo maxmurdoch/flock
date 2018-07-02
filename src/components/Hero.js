@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import R from 'ramda'
@@ -45,40 +46,60 @@ const Hero = ({
         <SiteContainer className={css({overflow: 'visible'})}>
           <Flex alignItems="center" mt={[3, 5]}>
             <Box width={['100%', '75%', '60%']} mt={[4, 5]} mb={[3, 6]}>
-              <H1
-                textShadow={textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'}
-                color={textColor}
-                mb={[2, 3]}
-              >
-                {header}
-              </H1>
-              <BodyText color={textColor} mb={[2, 3]}>
-                <Markdown container="span">{description}</Markdown>
-              </BodyText>
-              <ShowIf predicate={R.not(R.isNil(button))}>
-                <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-                  {matches =>
-                    matches ? (
-                      <PrimaryButton to={button.to}>
-                        <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                      </PrimaryButton>
-                    ) : (
-                      <SecondaryButton to={button.to}>
-                        <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                      </SecondaryButton>
-                    )
+              <ScrollAnimation animateIn="fadeIn">
+                <H1
+                  textShadow={
+                    textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'
                   }
-                </Media>
+                  color={textColor}
+                  mb={[2, 3]}
+                >
+                  {header}
+                </H1>
+              </ScrollAnimation>
+
+              <ScrollAnimation animateIn="fadeIn" delay={200}>
+                <BodyText color={textColor} mb={[2, 3]}>
+                  <Markdown container="span">{description}</Markdown>
+                </BodyText>
+              </ScrollAnimation>
+
+              <ShowIf predicate={R.not(R.isNil(button))}>
+                <ScrollAnimation animateIn="fadeIn" delay={400}>
+                  <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+                    {matches =>
+                      matches ? (
+                        <PrimaryButton to={button.to}>
+                          <ArrowText moveOnHover={false}>
+                            {button.text}
+                          </ArrowText>
+                        </PrimaryButton>
+                      ) : (
+                        <SecondaryButton to={button.to}>
+                          <ArrowText moveOnHover={false}>
+                            {button.text}
+                          </ArrowText>
+                        </SecondaryButton>
+                      )
+                    }
+                  </Media>
+                </ScrollAnimation>
               </ShowIf>
             </Box>
             {R.not(R.isNil(RightSideComponent)) ? (
-              <Flex
-                alignItems="center"
-                justifyContent="center"
-                width={['100%', '50%']}
-              >
-                <RightSideComponent />
-              </Flex>
+              <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+                {matches =>
+                  matches ? (
+                    <Flex
+                      alignItems="flex-end"
+                      justifyContent="center"
+                      width={['100%', '50%']}
+                    >
+                      <RightSideComponent />
+                    </Flex>
+                  ) : null
+                }
+              </Media>
             ) : null}
           </Flex>
         </SiteContainer>
@@ -93,6 +114,7 @@ export default Hero
 Hero.propTypes = {
   RightSideComponent: PropTypes.func,
   textColor: PropTypes.string,
+  textShadow: PropTypes.bool,
   headerClassName: PropTypes.string,
   header: PropTypes.string,
   description: PropTypes.string,

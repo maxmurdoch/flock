@@ -25,19 +25,23 @@ class Testimonial extends Component {
         <SiteContainer>
           <Flex
             flexWrap="wrap"
-            justifyContent="center"
+            justifyContent={['flex-start', 'center']}
             background={`url(${R.prop('image', activeTestimonial)})`}
             className={styles.background}
             pt={[3, 5]}
             pb={[2, 3]}
-            pl={[0, 0]}
-            pr={[0, 0]}
+            pl={2}
+            pr={2}
           >
-            <Flex flexWrap="wrap" justifyContent="center" zIndex={2}>
-              <Box width={['100%', '75%']} pr={2} pl={2}>
+            <Flex
+              flexWrap="wrap"
+              justifyContent={['flex-start', 'center']}
+              zIndex={2}
+            >
+              <Box width={['100%', '75%']}>
                 <BodyText
                   textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
-                  textAlign="center"
+                  textAlign={['left', 'center']}
                   mb={2}
                   color={colors.white}
                   className={styles.quote}
@@ -46,7 +50,7 @@ class Testimonial extends Component {
                 </BodyText>
                 <SmallText
                   textShadow="0 1px 0 rgba(0, 0, 0, 0.2)"
-                  textAlign="center"
+                  textAlign={['left', 'center']}
                   fontWeight={700}
                   color={colors.white}
                   mb={[2, 3]}
@@ -57,7 +61,7 @@ class Testimonial extends Component {
             </Flex>
             <Flex
               flexWrap={true}
-              justifyContent="center"
+              justifyContent={['flex-start', 'center']}
               alignItems="center"
               zIndex={2}
             >
@@ -138,11 +142,12 @@ const styles = {
   }),
   quote: css({
     '&::before': {
-      content: '\'“\'',
+      marginLeft: -5,
+      content: '\'“ \'',
       display: 'inline-block'
     },
     '&::after': {
-      content: '\'”\'',
+      content: '\' ”\'',
       display: 'inline-block'
     }
   })

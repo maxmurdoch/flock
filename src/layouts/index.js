@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {Component} from 'react'
+import 'animate.css/animate.min.css'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import {injectGlobal} from 'emotion'
@@ -38,32 +39,36 @@ h1, h2, h3, h4, h5, h6 {
   src: url(${chivo}) format('woff2');
 }
 `
-const Layout = ({
-  children,
-  data: {
-    markdownRemark: {frontmatter}
+class Layout extends Component {
+  render() {
+    const {
+      children,
+      data: {
+        markdownRemark: {frontmatter}
+      }
+    } = this.props
+
+    return (
+      <ThemeProvider theme={theme}>
+        <div>
+          <Helmet
+            title={frontmatter.siteMetadata.title}
+            meta={[
+              {
+                name: 'description',
+                content: frontmatter.siteMetadata.description
+              },
+              {
+                name: 'keywords',
+                content: R.join(',', frontmatter.siteMetadata.keywords)
+              }
+            ]}
+          />
+          <div>{children()}</div>
+        </div>
+      </ThemeProvider>
+    )
   }
-}) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <Helmet
-          title={frontmatter.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content: frontmatter.siteMetadata.description
-            },
-            {
-              name: 'keywords',
-              content: R.join(',', frontmatter.siteMetadata.keywords)
-            }
-          ]}
-        />
-        <div>{children()}</div>
-      </div>
-    </ThemeProvider>
-  )
 }
 
 Layout.propTypes = {

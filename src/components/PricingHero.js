@@ -18,7 +18,7 @@ const PricingHero = ({textColor = colors.black, headerClassName, header}) => {
     >
       <SiteContainer>
         <Flex justifyContent="center" alignItems="center">
-          <Box width={['100%', '50%']}>
+          <Box width={['100%', '50%']} className="animated fadeInUp">
             <H1
               textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
               textAlign="center"

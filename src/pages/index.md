@@ -10,19 +10,10 @@ hero:
   description: 'Smarter drone insurance by the hour, only when you need it.'
   header: 'Pay-as-you-fly drone insurance'
 
-firstTestimonial:
-  - author: 'David Dennison, Parrot Mambo FPV pilot'
-    image: /images/uploads/testimonial/1@2x.png
-    quote: >-
-      With all the current drone laws in the UK, having Flock is an added peace
-      of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!
-
-  - author: Ron Swanson
-    image: /images/uploads/testimonial/2@2x.png
-    quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
+video:
+  id: 3m_VorqXuNQ
+  coverImage: /images/uploads/testimonial/1@2x.png
+  text: 'See for yourself'
 
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
@@ -60,23 +51,24 @@ howFlockWorks:
     How Flock Cover 
     
     works
+
 stopWorrying:
   description: Control your insurance from the palm of your hand with the Flock Cover app.
   reasons:
     - text: >-
         Flock’s pricing is risk-dependent: the safer you fly, the less you pay. Simple!
       title: Fairer pricing
-      icon: /images/uploads/price-icon.svg
+      icon: /images/uploads/money.svg
     - text: >-
         Pay for insurance only when you fly. Get covered for as little as one
         hour, or up to a day.
       title: 'Short-term insurance'
-      icon: /images/uploads/shield-icon.svg
+      icon: /images/uploads/shield.svg
     - text: >-
         Get a real-time quote in 30 seconds. You can even see when and where
         it's cheapest to fly.
       title: Total transparency
-      icon: /images/uploads/search-icon.svg
+      icon: /images/uploads/magnifying-glass.svg
   title: >-
     It's time for a new kind of insurance.
 

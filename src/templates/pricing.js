@@ -70,12 +70,12 @@ const PricingTemplate = ({data}) => {
           list={riskCalculations.list}
           image={riskCalculations.image}
         />
-        <Flex mt={[2, 5]} mb={[2, 5]} justifyContent="center">
+        <Flex mt={[3, 5]} mb={[3, 5]} justifyContent="center">
           <Testimonial testimonials={testimonials} />
         </Flex>
         <Download />
         <BigSectionLine />
-        <Box mb={[2, 5]}>
+        <Box mb={[3, 5]}>
           <OtherProducts
             products={otherProducts.products}
             description={otherProducts.description}

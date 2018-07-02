@@ -37,7 +37,7 @@ class CalculateRiskDropDown extends Component {
     const listOfCalculations = R.clone(this.props.list)
 
     return (
-      <Flex justifyContent="center" pt={[2, 5]}>
+      <Flex justifyContent="center" pt={[3, 5]}>
         <SiteContainer>
           <Flex flexDirection={['column', 'row']}>
             <Flex justifyContent="center">

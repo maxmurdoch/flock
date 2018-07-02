@@ -16,7 +16,7 @@ import {colors, space} from '../constants/theme'
 const mapIndex = R.addIndex(R.map)
 
 const CalculateRiskFlat = ({title, description, list}) => (
-  <Flex justifyContent="center" pt={[2, 5]}>
+  <Flex justifyContent="center" pt={[3, 5]}>
     <SiteContainer>
       <Flex flexWrap={true}>
         <Box width={['100%', '50%']} pb={3}>

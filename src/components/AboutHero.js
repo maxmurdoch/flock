@@ -8,7 +8,6 @@ import SiteContainer from './SiteContainer'
 import Box from './Box'
 import Flex from './Flex'
 import ShowIf from './ShowIf'
-import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import SecondaryButton from './SecondaryButton'
 import BodyText from './BodyText'
@@ -36,14 +35,16 @@ const AboutHero = ({
       >
         <SiteContainer>
           <Box width={['100%']}>
-            <H1
-              textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
-              textAlign={'center'}
-              color={textColor}
-              mb={0}
-            >
-              {header}
-            </H1>
+            <Box className="animated fadeInUp">
+              <H1
+                textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
+                textAlign={'center'}
+                color={textColor}
+                mb={0}
+              >
+                {header}
+              </H1>
+            </Box>
             <BodyText textAlign={'center'} color={textColor} mb={[2, 3]}>
               {description}
             </BodyText>
@@ -51,12 +52,10 @@ const AboutHero = ({
               <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
                 {matches =>
                   matches ? (
-                    <PrimaryButton to={button.to}>
-                      <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                    </PrimaryButton>
+                    <PrimaryButton to={button.to}>{button.text}</PrimaryButton>
                   ) : (
                     <SecondaryButton to={button.to}>
-                      <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                      {button.text}
                     </SecondaryButton>
                   )
                 }

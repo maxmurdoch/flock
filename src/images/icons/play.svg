@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>play-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-590.000000, -1865.000000)">
+            <g id="Testimonial-Copy-3" transform="translate(50.000000, 1787.000000)">
+                <g id="Group-20" transform="translate(512.000000, 80.000000)">
+                    <g id="play-icon" transform="translate(30.000000, 0.000000)">
+                        <path d="M34.4,67.2 C34.2666667,67.2 34.0888889,67.1555627 33.9555556,67.066688 C33.7333333,66.9333761 33.6,66.6667521 33.6,66.4001282 L33.6,29.6060237 C33.6,29.3393997 33.7333333,29.0727758 33.9555556,28.9394638 C34.2222222,28.7617145 34.4888889,28.7617145 34.7555556,28.8950265 L71.5555556,47.2920787 C71.8222222,47.4253907 72,47.6920147 72,48.0030759 C72,48.3141372 71.8222222,48.5807611 71.5555556,48.7140731 L34.7555556,67.1111254 C34.6222222,67.1555627 34.5333333,67.2 34.4,67.2 Z" id="play" fill="#FFE001"></path>
+                        <circle id="Oval-2" stroke="#FFFFFF" stroke-width="3" cx="48" cy="48" r="48"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

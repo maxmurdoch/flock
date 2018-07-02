@@ -63,7 +63,7 @@ const SegmentPageTemplate = ({data}) => {
           description={description}
           button={button}
         />
-        <Box mt={[2, 5]}>
+        <Box mt={[3, 5]}>
           <TextGrid
             title={why.title}
             description={why.description}
@@ -114,10 +114,10 @@ const SegmentPageTemplate = ({data}) => {
             }
           </Media>
         </MapBackground>
-        <Box pt={[2, 5]}>
+        <Box pt={[3, 5]}>
           <Testimonial testimonials={testimonial} />
         </Box>
-        <Box pt={[2, 5]}>
+        <Box pt={[3, 5]}>
           <DownloadFlock />
         </Box>
         <BigSectionLine />
@@ -126,7 +126,7 @@ const SegmentPageTemplate = ({data}) => {
           description={otherProducts.description}
           products={otherProducts.products}
         />
-        <Box pt={[2, 5]}>
+        <Box pt={[3, 5]}>
           <Featured />
         </Box>
         <Footer />

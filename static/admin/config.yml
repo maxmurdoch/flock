@@ -28,13 +28,13 @@ collections:
                 fields:
                   - {label: "Text", name: "text", widget: "string"}
                   - {label: "To", name: "to", widget: "string"}
-          - label: 'First testimonials'
-            name: 'firstTestimonial'
-            widget: 'list'
+          - label: 'Video'
+            name: video
+            widget: object
             fields:
-              - {label: 'Author', name: 'author', widget: 'string'}
-              - {label: 'Quote', name: 'quote', widget: 'markdown'}
-              - {label: 'Image', name: 'image', widget: 'image'}
+              - {label: 'Text', name: 'text', widget: 'string'}
+              - {label: 'YouTube ID', name: 'id', widget: 'string'}
+              - {label: 'Cover image', name: 'coverImage', widget: 'image'}
           - label: 'How Flock works'
             name: 'howFlockWorks'
             widget: 'object'

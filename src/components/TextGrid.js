@@ -1,8 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import {css} from 'react-emotion'
 import {withPrefix} from 'gatsby-link'
-import PropTypes from 'prop-types'
 
 import H2 from './H2'
 import H3 from './H3'
@@ -31,8 +31,8 @@ const TextGrid = ({title, description, list, image}) => (
           </ShowIf>
         </Box>
         <Flex flexWrap={true}>
-          {mapIndex(({title, text, icon}, index) => {
-            return (
+          {mapIndex(
+            ({title, text, icon}, index) => (
               <Box
                 flex="1 1 auto"
                 width={['100%', '50%', '33.33%']}
@@ -40,7 +40,7 @@ const TextGrid = ({title, description, list, image}) => (
                 mt={[3, 3, 4]}
                 key={index}
               >
-                <ShowIf predicate={R.not(R.isEmpty(icon))}>
+                <ShowIf predicate={!!icon}>
                   <img
                     src={withPrefix(icon)}
                     className={css({marginBottom: 0})}
@@ -49,8 +49,9 @@ const TextGrid = ({title, description, list, image}) => (
                 <H3>{title}</H3>
                 <SmallText>{text}</SmallText>
               </Box>
-            )
-          }, list)}
+            ),
+            list
+          )}
         </Flex>
       </Flex>
     </SiteContainer>

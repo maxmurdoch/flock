@@ -4,7 +4,6 @@ import {css} from 'react-emotion'
 import WhiteButton from './WhiteButton'
 import SecondaryButton from './SecondaryButton'
 import SmallText from './SmallText'
-import ArrowText from './ArrowText'
 import blackLogo from '../images/logo-black.svg'
 import blackDownArrow from '../images/icons/small-arrow-black.svg'
 import whiteDownArrow from '../images/icons/small-down-arrow-white.svg'
@@ -29,11 +28,11 @@ const LightNav = () => {
             onClick={() => console.log('clicked')}
             Text={SmallText}
           >
-            <ArrowText moveOnHover={false}>Download</ArrowText>
+            Download
           </SecondaryButton>
         ) : (
           <WhiteButton Text={SmallText} onClick={() => console.log('clicked')}>
-            <ArrowText moveOnHover={false}>Download</ArrowText>
+            Download
           </WhiteButton>
         )
       }
