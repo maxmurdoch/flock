@@ -46,9 +46,7 @@ class Nav extends Component {
           }
           const linkClass = css({
             color: textColor({isSticky: activateStickyStyle}),
-            textDecoration: 'none',
-            margin: `0 ${R.nth(1, space)}px 0`,
-            padding: `${R.nth(1, space)}px ${R.nth(1, space)}px`
+            textDecoration: 'none'
           })
           const downloadButtonClass = css({
             marginLeft: R.nth(1, space),
@@ -86,61 +84,73 @@ class Nav extends Component {
                   </Box>
                   <Box width="100%">
                     <nav className={navClass}>
-                      <Link
-                        activeStyle={activeLinkStyle}
-                        className={linkClass}
-                        to="/products"
-                        onClick={event => {
-                          event.preventDefault()
+                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                        <Link
+                          activeStyle={activeLinkStyle}
+                          className={linkClass}
+                          to="/products"
+                          onClick={event => {
+                            event.preventDefault()
 
-                          this.setState({
-                            productsIsOpen: R.not(this.state.productsIsOpen)
-                          })
-                        }}
-                      >
-                        <SmallText
-                          className={css({
-                            position: 'relative',
-                            display: 'flex',
-                            '&::after': {
-                              content: `url(${arrowImage({
-                                isSticky: activateStickyStyle
-                              })})`,
-                              display: 'inline-block',
-                              transform: this.state.productsIsOpen
-                                ? 'rotate(180deg)'
-                                : null,
-                              position: 'relative',
-                              paddingLeft: this.state.productsIsOpen ? 0 : 10,
-                              paddingRight: this.state.productsIsOpen ? 10 : 0
-                            }
-                          })}
+                            this.setState({
+                              productsIsOpen: R.not(this.state.productsIsOpen)
+                            })
+                          }}
                         >
-                          Products
-                        </SmallText>
-                      </Link>
-                      <Link
-                        activeStyle={activeLinkStyle}
-                        className={linkClass}
-                        exact={true}
-                        to="/pricing"
-                      >
-                        <SmallText>Pricing</SmallText>
-                      </Link>
-                      <Link
-                        activeStyle={activeLinkStyle}
-                        className={linkClass}
-                        exact={true}
-                        to="/about"
-                      >
-                        <SmallText>About</SmallText>
-                      </Link>
-                      <a
-                        className={linkClass}
-                        href="https://help.flockcover.com"
-                      >
-                        <SmallText>Support</SmallText>
-                      </a>
+                          <SmallText
+                            className={css({
+                              position: 'relative',
+                              display: 'flex',
+                              '&::after': {
+                                content: `url(${arrowImage({
+                                  isSticky: activateStickyStyle
+                                })})`,
+                                display: 'inline-block',
+                                transform: this.state.productsIsOpen
+                                  ? 'rotate(180deg)'
+                                  : null,
+                                position: 'relative',
+                                paddingLeft: this.state.productsIsOpen ? 0 : 10,
+                                paddingRight: this.state.productsIsOpen
+                                  ? 10
+                                  : 0
+                              }
+                            })}
+                          >
+                            Products
+                          </SmallText>
+                        </Link>
+                      </Flex>
+                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                        <Link
+                          activeStyle={activeLinkStyle}
+                          className={linkClass}
+                          exact={true}
+                          to="/pricing"
+                        >
+                          <SmallText>Pricing</SmallText>
+                        </Link>
+                      </Flex>
+
+                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                        <Link
+                          activeStyle={activeLinkStyle}
+                          className={linkClass}
+                          exact={true}
+                          to="/about"
+                        >
+                          <SmallText>About</SmallText>
+                        </Link>
+                      </Flex>
+
+                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                        <a
+                          className={linkClass}
+                          href="https://help.flockcover.com"
+                        >
+                          <SmallText>Support</SmallText>
+                        </a>
+                      </Flex>
                       <div className={downloadButtonClass}>
                         <DownloadButton isSticky={activateStickyStyle} />
                       </div>

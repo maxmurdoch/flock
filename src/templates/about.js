@@ -8,7 +8,7 @@ import {css} from 'emotion'
 import SiteMetadata from '../components/SiteMetadata'
 import LightNav from '../components/LightNav'
 import Download from '../components/DownloadFlock'
-import MobileNav from '../components/MobileNav'
+import LightMobileNav from '../components/LightMobileNav'
 import FlockStory from '../components/FlockStory'
 import Footer from '../components/Footer'
 import BigSectionLine from '../components/BigSectionLine'
@@ -34,7 +34,7 @@ const PricingTemplate = ({
           keywords={siteMetadataOverride.keywords}
         />
         <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-          {matches => (matches ? <LightNav /> : <MobileNav />)}
+          {matches => (matches ? <LightNav /> : <LightMobileNav />)}
         </Media>
         <AboutHero
           center={true}

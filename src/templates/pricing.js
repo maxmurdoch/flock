@@ -9,7 +9,7 @@ import Testimonial from '../components/Testimonial'
 import Download from '../components/DownloadFlock'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
-import MobileNav from '../components/MobileNav'
+import LightMobileNav from '../components/LightMobileNav'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import OtherProducts from '../components/OtherProducts'
@@ -38,7 +38,7 @@ const PricingTemplate = ({data}) => {
           keywords={siteMetadataOverride.keywords}
         />
         <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-          {matches => (matches ? <LightNav /> : <MobileNav />)}
+          {matches => (matches ? <LightNav /> : <LightMobileNav />)}
         </Media>
         <div
           className={css({
@@ -58,6 +58,9 @@ const PricingTemplate = ({data}) => {
             className={css({
               transform: 'translateY(-20%)',
               [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+                transform: 'translateY(-30%)'
+              },
+              [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
                 transform: 'translateY(-50%)'
               }
             })}

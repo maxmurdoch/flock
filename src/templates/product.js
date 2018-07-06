@@ -55,6 +55,7 @@ const SegmentPageTemplate = ({data}) => {
         <Hero
           headerClassName={css({
             backgroundImage: `url(${hero.backgroundImage})`,
+            backgroundPosition: 'top left',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
           })}
