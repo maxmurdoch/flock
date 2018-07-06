@@ -1,14 +1,14 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css, cx} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
 
-const H3 = ({children, tag = 'h3', ...props}) => {
+const H3 = ({children, tag = 'h3', className, ...props}) => {
   return (
-    <Text tag={tag} mb={1} customClassName={style.text} {...props}>
+    <Text tag={tag} mb={1} className={cx(style.text, className)} {...props}>
       {children}
     </Text>
   )

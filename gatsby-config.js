@@ -34,6 +34,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
+    'gatsby-plugin-emotion',
     'gatsby-plugin-netlify-cms'
   ]
 }

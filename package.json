@@ -12,6 +12,7 @@
     "emotion-theming": "^9.1.2",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-emotion": "^1.1.17",
     "gatsby-plugin-netlify": "^1.0.19",
     "gatsby-plugin-netlify-cms": "^2.0.1",
     "gatsby-plugin-react-helmet": "^2.0.10",

@@ -24,7 +24,7 @@ import {
   space,
   width,
   height,
-  zIndex,
+  zIndex
 } from 'styled-system'
 
 const Box = styled('div')`

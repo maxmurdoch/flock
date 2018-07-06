@@ -11,6 +11,7 @@ hero:
     * Flexible hull insurance (up to £3K) 
     * £1M Public Liability cover
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
+
 why:
   description: ''
   list:
@@ -33,6 +34,7 @@ why:
     - text: 'Chat to our customer support team through the app, or give us a call.'
       title: Instant support
   title: Why do trainee pilots fly with Flock?
+
 flightSchool:
   show: true
   title: 'Flock is proud to work with the leading flight schools in the UK'
@@ -53,6 +55,7 @@ flightSchool:
       to: https://3ic.co.uk/
     - image: ../../images/uploads/drone-partners.png
       to: https://dronepartners.co.uk/
+
 coverNote:
   isShowing: true
   image: ../../images/uploads/cover-note.svg
@@ -65,6 +68,7 @@ coverNote:
 
 doINeedInsurance:
   title: ''
+
 how:
   description: >-
     Insuring your drone flight has never been simpler. All it takes is a matter
@@ -86,6 +90,7 @@ how:
         documentation is instantly emailed to you.
       title: 3. Get flying
   title: How Flock Cover works
+
 risk:
   description: >-
     Know your risks before you fly. Simply enter your flight's details and
@@ -116,6 +121,7 @@ risk:
         - Temperature
       title: Hyperlocal weather
   title: Insurance and then some..
+
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/1@2x.png
@@ -159,4 +165,3 @@ siteMetadataOverride:
     - ''
 
 ---
-

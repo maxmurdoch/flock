@@ -11,7 +11,7 @@ const H1 = ({children, tag = 'h1', ...props}) => {
     <Text
       tag={tag}
       mb={1}
-      customClassName={css`
+      className={css`
         ${style.text};
       `}
       {...props}

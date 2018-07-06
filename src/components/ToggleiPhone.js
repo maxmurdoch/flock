@@ -65,36 +65,6 @@ class ToggleiPhone extends Component {
                         key={index}
                       >
                         <Flex
-                          onMouseEnter={() => {
-                            this.setState(previousState => {
-                              const newIsHovered = R.update(
-                                index,
-                                true,
-                                previousState.isHovered
-                              )
-
-                              return R.assoc(
-                                'isHovered',
-                                newIsHovered,
-                                previousState
-                              )
-                            })
-                          }}
-                          onMouseLeave={() => {
-                            this.setState(previousState => {
-                              const newIsHovered = R.update(
-                                index,
-                                false,
-                                previousState.isHovered
-                              )
-
-                              return R.assoc(
-                                'isHovered',
-                                newIsHovered,
-                                previousState
-                              )
-                            })
-                          }}
                           flexDirection="column"
                           style={{
                             borderLeft: R.equals(this.state.activeIndex, index)
@@ -106,7 +76,13 @@ class ToggleiPhone extends Component {
                               ? 'pointer'
                               : 'default',
                             paddingLeft: R.nth(1, space),
-                            marginLeft: `-${R.nth(1, space)}`
+                            marginLeft: `-${R.nth(1, space)}`,
+                            '&:hover .title': {
+                              color: `${colors.yellow} !important`
+                            },
+                            '&:hover': {
+                              cursor: 'pointer'
+                            }
                           })}
                           onClick={() => {
                             return this.setState({activeIndex: index})
@@ -114,13 +90,11 @@ class ToggleiPhone extends Component {
                         >
                           <H3
                             color={
-                              R.or(
-                                R.path(['isHovered', index], this.state),
-                                R.equals(this.state.activeIndex, index)
-                              )
+                              R.equals(this.state.activeIndex, index)
                                 ? colors.yellow
                                 : colors.white
                             }
+                            className="title"
                           >
                             {title}
                           </H3>
@@ -158,10 +132,9 @@ class ToggleiPhone extends Component {
 
 const style = {
   image: css({
-    transform: 'translateX(-20px)',
-
+    transform: 'translateX(-20px) rotate(-7deg)',
     [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-      transform: 'none',
+      transform: 'rotate(-7deg)',
       position: 'absolute',
       top: '-100px',
       left: '-5%'

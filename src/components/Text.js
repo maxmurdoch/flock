@@ -1,5 +1,5 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css, cx} from 'react-emotion'
 import Markdown from 'react-remarkable'
 import R from 'ramda'
 import styled from 'react-emotion'
@@ -26,15 +26,7 @@ const textShadow = style({
   alias: 'sh'
 })
 
-const Text = ({
-  tag = 'p',
-  fontWeight = 300,
-  markdown = false,
-  children,
-  className = null,
-  customClassName = null,
-  ...props
-}) => {
+const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
   const Component = styled(tag)`
   margin: 0;
   line-height: 1.5;
@@ -52,12 +44,7 @@ const Text = ({
   ${textShadow}
 `
   return (
-    <NewLineToBr
-      Component={Component}
-      className={css(className, customClassName)}
-      fontWeight={fontWeight}
-      {...props}
-    >
+    <NewLineToBr Component={Component} fontWeight={fontWeight} {...props}>
       {children}
     </NewLineToBr>
   )
@@ -65,7 +52,6 @@ const Text = ({
 
 Text.propTypes = {
   className: PropTypes.string,
-  customClassName: PropTypes.string,
   tag: PropTypes.string,
   fontWeight: PropTypes.number,
   markdown: PropTypes.bool,

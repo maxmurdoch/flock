@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
-import {css} from 'emotion'
+import {css, cx} from 'emotion'
 
-const BodyText = ({children, mb = 0, ...props}) => {
+const BodyText = ({children, mb = 0, className, ...props}) => {
   return (
-    <Text mb={mb} customClassName={style.text} {...props}>
-      {children}
+    <Text mb={mb} className={cx(style.text, className)} {...props}>
+      {' '}
+      {children}{' '}
     </Text>
   )
 }

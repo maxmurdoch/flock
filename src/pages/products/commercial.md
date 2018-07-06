@@ -18,7 +18,7 @@ why:
     - text: >-
         We know two jobs are never the same. Customise your insurance
         flight-by-flight.
-      title: 'Bespoke cover '
+      title: 'Bespoke cover'
     - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
         from £5 a day.
@@ -78,6 +78,7 @@ how:
         documentation is sent straight to your email inbox.
       title: 3. Get flying
   title: How Flock Cover works
+
 risk:
   description: >-
     Know your risks before you fly. Simply enter your flight's details and
@@ -107,7 +108,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: 'Insurance and then some.. '
+  title: 'Insurance and then some…'
 
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
@@ -149,6 +150,7 @@ siteMetadataOverride:
     - on-demand
     - Flock
     - commercial drone insurance
-  title: 'Commercial '
+
+  title: 'Commercial'
 
 ---

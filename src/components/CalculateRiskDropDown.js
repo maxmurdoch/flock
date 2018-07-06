@@ -40,7 +40,7 @@ class CalculateRiskDropDown extends Component {
       <Flex justifyContent="center" pt={[3, 5]}>
         <SiteContainer>
           <Flex flexDirection={['column', 'row']}>
-            <Flex justifyContent="center">
+            <Flex justifyContent="center" width={['100%', '50%']}>
               <Box width={['75%', '70%']}>
                 <img width="100%" className={style.iPhone} src={iPhone} />
               </Box>

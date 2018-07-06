@@ -63,11 +63,17 @@ const navList = [
   }
 ]
 
-const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
+const MobileNav = ({
+  isOpen,
+  toggleMenu,
+  logo = () => blackLogo,
+  icon = () => hamburger,
+  iconColor = () => colors.dark
+}) => {
   return (
     <Sticky disableCompensation={true}>
       {({style, distanceFromTop}) => {
-        const activateStickyStyle = R.or(distanceFromTop < -50, isOpen)
+        const isSticky = R.or(distanceFromTop < -50, isOpen)
 
         return (
           <Flex
@@ -77,7 +83,7 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
             zIndex="2"
           >
             <Flex
-              background={activateStickyStyle ? colors.yellow : 'transparent'}
+              background={isSticky ? colors.yellow : 'transparent'}
               pt={2}
               pr={2}
               pb={2}
@@ -91,8 +97,11 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
               <Box>
                 <Link to="/">
                   <img
-                    className={css({marginBottom: 0, width: R.nth(5, space)})}
-                    src={blackLogo}
+                    className={css({
+                      marginBottom: 0,
+                      width: R.nth(5, space)
+                    })}
+                    src={logo({isSticky})}
                   />
                 </Link>
               </Box>
@@ -111,9 +120,9 @@ const MobileNav = ({isOpen, toggleMenu, textColor = () => colors.black}) => {
                       marginBottom: 0,
                       paddingRight: 5
                     })}
-                    src={hamburger}
+                    src={icon({isSticky})}
                   />
-                  <SmallText>Menu</SmallText>
+                  <SmallText color={iconColor({isSticky})}>Menu</SmallText>
                 </button>
               </Box>
             </Flex>

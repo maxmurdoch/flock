@@ -5,7 +5,7 @@ import {colors} from '../constants/theme'
 
 const WhiteButton = ({children, Text = BodyText, ...props}) => {
   return (
-    <Button background={colors.white} color={colors.black} {...props}>
+    <Button background={colors.white} color={colors.dark} {...props}>
       <Text fontWeight={700}>{children}</Text>
     </Button>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
@@ -14,7 +15,7 @@ import BodyText from './BodyText'
 import {colors, breakpoints} from '../constants/theme'
 
 const AboutHero = ({
-  textColor = colors.black,
+  textColor = colors.dark,
   headerClassName,
   header,
   description,
@@ -35,7 +36,7 @@ const AboutHero = ({
       >
         <SiteContainer>
           <Box width={['100%']}>
-            <Box className="animated fadeInUp">
+            <ScrollAnimation animateIn="fadeInUp" delay={200}>
               <H1
                 textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
                 textAlign={'center'}
@@ -44,7 +45,7 @@ const AboutHero = ({
               >
                 {header}
               </H1>
-            </Box>
+            </ScrollAnimation>
             <BodyText textAlign={'center'} color={textColor} mb={[2, 3]}>
               {description}
             </BodyText>

@@ -14,7 +14,7 @@ import {colors} from '../constants/theme'
 const LightNav = () => {
   return (
     <Nav
-      textColor={({isSticky}) => (isSticky ? colors.black : colors.white)}
+      textColor={({isSticky}) => (isSticky ? colors.dark : colors.white)}
       arrowImage={({isSticky}) => (isSticky ? blackDownArrow : whiteDownArrow)}
       Logo={({isSticky}) => (
         <img

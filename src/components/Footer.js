@@ -5,7 +5,6 @@ import R from 'ramda'
 import logo from '../images/logo-white.svg'
 import Link from './Link'
 import SmallText from './SmallText'
-import BodyText from './BodyText'
 import Flex from './Flex'
 import Box from './Box'
 import SiteContainer from './SiteContainer'
@@ -30,38 +29,36 @@ const Footer = ({containerClassName}) => {
     {
       to: '/products/hobbyist',
       text: 'Hobbyist pilots'
+    }
+  ]
+
+  const secondFooterLinks = [
+    {
+      to: '/pricing',
+      text: 'Pricing'
+    },
+    {
+      to: '/about',
+      text: 'About us'
     },
     {
       to: 'https://help.flockcover.com',
       text: 'Support'
     },
     {
-      to: 'https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim',
-      text: 'Make a claim'
-    }
-  ]
-  const secondFooterLinks = [
-    {
-      to: '/about',
-      text: 'About us'
-    },
-    {
-      to: 'https://blog.flockcover.com',
-      text: 'Blog'
+      to: 'https://help.flockcover.com',
+      text: 'FAQ'
     },
     {
       to: 'https://flockcover.workable.com',
       text: 'Careers'
     },
     {
-      to: 'https://help.flockcover.com',
-      text: 'FAQ'
-    },
-    {
       to: '/media-pack',
       text: 'Media pack'
     }
   ]
+
   return (
     <Flex
       className={containerClassName}
@@ -73,6 +70,11 @@ const Footer = ({containerClassName}) => {
       <SiteContainer>
         <Flex flexWrap={true}>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
+            <Box pb={2}>
+              <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
+                Products
+              </SmallText>
+            </Box>
             {mapIndex(({to, text}, index) => {
               return (
                 <Link className={styles.link} to={to} key={index}>
@@ -82,6 +84,11 @@ const Footer = ({containerClassName}) => {
             }, firstFooterLinks)}
           </Flex>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
+            <Box pb={2}>
+              <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
+                Company
+              </SmallText>
+            </Box>
             {mapIndex(({to, text}, index) => {
               return (
                 <Link className={styles.link} to={to} key={index}>
@@ -91,25 +98,15 @@ const Footer = ({containerClassName}) => {
             }, secondFooterLinks)}
           </Flex>
           <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
-            <BodyText color="white" fontWeight={700} mb={1}>
-              Got a question? Get in touch:
-            </BodyText>
-            <Link
-              to="mailto:hello@flockcover.com"
-              className={css({
-                color: 'white',
-                paddingBottom: R.nth(1, space)
-              })}
-            >
+            <Box pb={2}>
+              <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
+                Got a question? Get in touch:
+              </SmallText>
+            </Box>
+            <Link to="mailto:hello@flockcover.com" className={styles.link}>
               <SmallText>hello@flockcover.com</SmallText>
             </Link>
-            <Link
-              to="tel:+44 (0) 1234 480260"
-              className={css({
-                color: 'white',
-                paddingBottom: R.nth(1, space)
-              })}
-            >
+            <Link to="tel:+44 (0) 1234 480260" className={styles.header}>
               <SmallText>+44 (0) 1234 480260</SmallText>
             </Link>
           </Flex>
@@ -123,7 +120,13 @@ const Footer = ({containerClassName}) => {
               Flock Cover is regulated by the FCA.
             </SmallText>
             <SmallText color="white">
-              Click here to learn what that means
+              <Link
+                to="https://help.flockcover.com/legal/how-is-flock-regulated"
+                className={styles.link}
+              >
+                Click here
+              </Link>
+              &nbsp;to learn what that means
             </SmallText>
           </Box>
           <Box width={['100%', '33.33%']}>
@@ -143,6 +146,12 @@ export default Footer
 const styles = {
   link: css({
     color: R.prop('yellow', colors),
+    textDecoration: 'none',
     paddingBottom: R.nth(2, space)
+  }),
+  header: css({
+    color: R.prop('white', colors),
+    textDecoration: 'none',
+    paddingBottom: R.nth(1, space)
   })
 }

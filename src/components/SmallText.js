@@ -1,16 +1,22 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css, cx} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
 
-const SmallText = ({children, fontWeight = 400, mb = 0, ...props}) => {
+const SmallText = ({
+  children,
+  fontWeight = 400,
+  className,
+  mb = 0,
+  ...props
+}) => {
   return (
     <Text
       fontWeight={fontWeight}
       mb={mb}
-      customClassName={style.smallTextStyle}
+      className={cx(style.smallTextStyle, className)}
       {...props}
     >
       {children}

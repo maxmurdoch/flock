@@ -15,7 +15,7 @@ import {colors, space} from '../constants/theme'
 
 class Nav extends Component {
   static defaultProps = {
-    textColor: () => colors.black,
+    textColor: () => colors.dark,
     arrowImage: () => downArrow
   }
 

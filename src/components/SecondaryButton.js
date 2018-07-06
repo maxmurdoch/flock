@@ -10,7 +10,7 @@ const SecondaryButton = ({children, Text = BodyText, ...props}) => {
       className={css({
         cursor: 'pointer'
       })}
-      background={colors.black}
+      background={colors.dark}
       color="white"
       {...props}
     >

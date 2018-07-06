@@ -8,7 +8,6 @@ import {css} from 'emotion'
 
 import H1 from './H1'
 import SiteContainer from './SiteContainer'
-import Box from './Box'
 import Flex from './Flex'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
@@ -19,7 +18,7 @@ import HeroFeaturesBanner from './HeroFeaturesBanner'
 import {colors, breakpoints} from '../constants/theme'
 
 const Hero = ({
-  textColor = colors.black,
+  textColor = colors.dark,
   headerClassName,
   textShadow = true,
   header,
@@ -44,9 +43,15 @@ const Hero = ({
         overflow="hidden"
       >
         <SiteContainer className={css({overflow: 'visible'})}>
-          <Flex alignItems="center" mt={[3, 5]}>
-            <Box width={['100%', '75%', '60%']} mt={[4, 5]} mb={[3, 6]}>
-              <ScrollAnimation animateIn="fadeIn">
+          <Flex mt={[3, 5]}>
+            <Flex
+              justifyContent="center"
+              flexDirection="column"
+              width={['100%', '75%', '60%']}
+              mt={[4, 5]}
+              mb={[3, 6]}
+            >
+              <ScrollAnimation duration={0.5} animateIn="fadeInUp">
                 <H1
                   textShadow={
                     textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'
@@ -57,14 +62,18 @@ const Hero = ({
                   {header}
                 </H1>
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" delay={200}>
+              <ScrollAnimation animateIn="fadeInUp" duration={0.5} delay={200}>
                 <BodyText tag="div" color={textColor} mb={[2, 3]}>
                   <Markdown>{description}</Markdown>
                 </BodyText>
               </ScrollAnimation>
               <ShowIf predicate={R.not(R.isNil(button))}>
-                <ScrollAnimation animateIn="fadeIn" delay={400}>
-                  <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+                <ScrollAnimation
+                  animateIn="fadeInUp"
+                  duration={0.5}
+                  delay={400}
+                >
+                  <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
                     {matches =>
                       matches ? (
                         <PrimaryButton to={button.to}>
@@ -83,7 +92,7 @@ const Hero = ({
                   </Media>
                 </ScrollAnimation>
               </ShowIf>
-            </Box>
+            </Flex>
             {R.not(R.isNil(RightSideComponent)) ? (
               <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
                 {matches =>

@@ -15,7 +15,7 @@ import chivo from '../fonts/chivo/Chivo-Regular.woff2'
 injectGlobal`
 ::selection {
   background-color: ${colors.yellow};
-  color: ${colors.black};
+  color: ${colors.dark};
 }
 * {
   -webkit-font-smoothing: antialiased;

@@ -1,14 +1,14 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css, cx} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
 
-const H4 = ({children, tag = 'h4', ...props}) => {
+const H4 = ({children, tag = 'h4', className, mb = 1, ...props}) => {
   return (
-    <Text tag={tag} mb={1} customClassName={style.text} {...props}>
+    <Text tag={tag} mb={mb} className={cx(style.text, className)} {...props}>
       {children}
     </Text>
   )
@@ -35,7 +35,12 @@ const style = {
 
 H4.propTypes = {
   children: PropTypes.node,
-  tag: PropTypes.string
+  tag: PropTypes.string,
+  mb: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+    PropTypes.array
+  ])
 }
 
 export default H4

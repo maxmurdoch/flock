@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import BodyText from './BodyText'
 
@@ -19,6 +20,11 @@ const NewLineToBr = ({Component = BodyText, children, ...props}) => {
         : children}
     </Component>
   )
+}
+
+NewLineToBr.propTypes = {
+  Component: PropTypes.func,
+  children: PropTypes.node
 }
 
 export default NewLineToBr
