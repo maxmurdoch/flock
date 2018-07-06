@@ -8,9 +8,32 @@ import SmallText from './SmallText'
 import Flex from './Flex'
 import Box from './Box'
 import SiteContainer from './SiteContainer'
+import mediumIcon from '../images/medium-icon.svg'
+import linkedInIcon from '../images/linked-in.svg'
+import twitterIcon from '../images/twitter-icon.svg'
+import facebookIcon from '../images/facebook-icon.svg'
 import {colors, space} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
+
+const socialMediaLinks = [
+  {
+    to: 'https://en-gb.facebook.com/flockcover/',
+    src: facebookIcon
+  },
+  {
+    to: 'https://twitter.com/flockcover',
+    src: twitterIcon
+  },
+  {
+    to: 'https://www.linkedin.com/company/flockcover/',
+    src: linkedInIcon
+  },
+  {
+    to: 'https://blog.flockcover.com/',
+    src: mediumIcon
+  }
+]
 
 const Footer = ({containerClassName}) => {
   const firstFooterLinks = [
@@ -109,6 +132,17 @@ const Footer = ({containerClassName}) => {
             <Link to="tel:+44 (0) 1234 480260" className={styles.header}>
               <SmallText>+44 (0) 1234 480260</SmallText>
             </Link>
+            <Flex alignItems="flex-end" pt={2}>
+              {R.addIndex(R.map)(({to, src}, key) => {
+                return (
+                  <Box key={key} pr={2}>
+                    <Link to={to} target="_blank">
+                      <img src={src} />
+                    </Link>
+                  </Box>
+                )
+              }, socialMediaLinks)}
+            </Flex>
           </Flex>
         </Flex>
         <Flex borderTop="1px solid white" pt={3} mt={3} pb={3} flexWrap={true}>

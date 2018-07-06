@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components-/-Footer" transform="translate(-892.000000, -172.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(850.000000, 168.000000)">
+                <g id="twitter" transform="translate(42.000000, 4.000000)">
+                    <path d="M24,0.0111955013 C22.9553291,0.748079945 21.7986631,1.31167831 20.5745455,1.68028641 C19.2287559,0.132873095 17.06004,-0.409770705 15.1440889,0.321508338 C13.2281378,1.05278738 11.9725094,2.90243282 12,4.95301368 L12,6.04392277 C8.10617981,6.14488903 4.42039125,4.28970878 2.18181818,1.10210459 C2.18181818,1.10210459 -2.18181818,10.9202864 7.63636364,15.2839228 C5.38966643,16.8089769 2.71326209,17.5736639 0,17.465741 C9.81818182,22.9202864 21.8181818,17.465741 21.8181818,4.92028641 C21.8171772,4.61641765 21.7879609,4.31329848 21.7309091,4.01483186 C22.8442943,2.91682432 23.6299935,1.53051854 24,0.0111955013 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

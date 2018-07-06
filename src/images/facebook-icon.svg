@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="24px" viewBox="0 0 12 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components-/-Footer" transform="translate(-850.000000, -168.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(850.000000, 168.000000)">
+                <g id="facebook">
+                    <path d="M12,0 L8.72727273,0 C5.71481046,4.84460956e-16 3.27272727,2.44208318 3.27272727,5.45454545 L3.27272727,8.72727273 L0,8.72727273 L0,13.0909091 L3.27272727,13.0909091 L3.27272727,24 L7.63636364,24 L7.63636364,13.0909091 L10.9090909,13.0909091 L12,8.72727273 L7.63636364,8.72727273 L7.63636364,5.45454545 C7.63636364,4.852053 8.12478027,4.36363636 8.72727273,4.36363636 L12,4.36363636 L12,0 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
