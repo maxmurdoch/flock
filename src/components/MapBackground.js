@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {css} from 'emotion'
-import map from '../images/map.png'
+import map from '../images/map.jpg'
 import {colors} from '../constants/theme'
 
 const MapBackground = ({children}) => {

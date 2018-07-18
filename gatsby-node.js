@@ -7,6 +7,7 @@
 // You can delete this file if you're not using it
 
 const R = require('ramda')
+const {fmImagesToRelative} = require('gatsby-remark-relative-images')
 const path = require('path')
 const {createFilePath} = require('gatsby-source-filesystem')
 
@@ -21,6 +22,8 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
       value
     })
   }
+  // https://github.com/danielmahon/gatsby-remark-relative-images#to-convert-frontmatter-images
+  fmImagesToRelative(node)
 }
 
 exports.createPages = ({boundActionCreators, graphql}) => {
