@@ -51,7 +51,11 @@ const Hero = ({
               mt={[4, 5]}
               mb={[3, 6]}
             >
-              <ScrollAnimation duration={0.5} animateIn="fadeInUp">
+              <ScrollAnimation
+                duration={0.5}
+                animateIn="fadeInUp"
+                animateOnce={true}
+              >
                 <H1
                   textShadow={
                     textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'
@@ -62,7 +66,12 @@ const Hero = ({
                   {header}
                 </H1>
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeInUp" duration={0.5} delay={200}>
+              <ScrollAnimation
+                animateIn="fadeInUp"
+                duration={0.5}
+                delay={200}
+                animateOnce={true}
+              >
                 <BodyText tag="div" color={textColor} mb={[2, 3]}>
                   <Markdown>{description}</Markdown>
                 </BodyText>
@@ -72,6 +81,7 @@ const Hero = ({
                   animateIn="fadeInUp"
                   duration={0.5}
                   delay={400}
+                  animateOnce={true}
                 >
                   <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
                     {matches =>

@@ -56,7 +56,12 @@ const HomeTemplate = ({
         </Media>
         <Hero
           RightSideComponent={() => (
-            <ScrollAnimation animateIn="fadeInUp" duration={0.6} delay={600}>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={0.6}
+              delay={600}
+              animateOnce={true}
+            >
               <img src={iPhone} className={style.iphone} />
             </ScrollAnimation>
           )}

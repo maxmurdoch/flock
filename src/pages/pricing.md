@@ -5,7 +5,7 @@ templateKey: pricing
 
 hero:
   header: 'How much could you save?'
-  backgroundImage: '../../images/uploads/pricing-header.png'
+  backgroundImage: '../../images/uploads/pricing-header.jpg'
 
 riskCalculations:
   image: '../../images/uploads/risk-number.svg'
@@ -27,18 +27,18 @@ riskCalculations:
 
 testimonials:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
-    image: /images/uploads/testimonial/1@2x.png
+    image: /images/uploads/testimonial/1.jpg
     quote: >-
       With all the current drone laws in the UK, having Flock is an added peace
       of mind. Another bonus is that Flock will insure non professional drone
       pilots. This is a brilliant app!
   - author: Ron Swanson
-    image: /images/uploads/testimonial/2@2x.png
+    image: /images/uploads/testimonial/2.jpg
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
   - author: Ron Swanson
-    image: /images/uploads/testimonial/4@2x.png
+    image: /images/uploads/testimonial/4.jpg
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.

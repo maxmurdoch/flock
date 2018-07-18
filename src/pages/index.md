@@ -12,18 +12,18 @@ hero:
 
 video:
   id: 3m_VorqXuNQ
-  coverImage: /images/uploads/testimonial/1@2x.png
+  coverImage: /images/uploads/testimonial/1.jpg
   text: 'See for yourself'
 
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
-    image: /images/uploads/testimonial/3@2x.png
+    image: /images/uploads/testimonial/3.jpg
     quote: >-
       With all the current drone laws in the UK, having Flock is an added peace
       of mind. Another bonus is that Flock will insure non professional drone
       pilots. This is a brilliant app!
   - author: Ron Swanson
-    image: /images/uploads/testimonial/4@2x.png
+    image: /images/uploads/testimonial/4.jpg
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.

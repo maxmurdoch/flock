@@ -36,7 +36,11 @@ const AboutHero = ({
       >
         <SiteContainer>
           <Box width={['100%']}>
-            <ScrollAnimation animateIn="fadeInUp" delay={200}>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              delay={200}
+              animateOnce={true}
+            >
               <H1
                 textShadow="0 1px 0 rgba(0, 0, 0, 0.3)"
                 textAlign={'center'}

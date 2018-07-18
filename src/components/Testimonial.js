@@ -60,61 +60,68 @@ class Testimonial extends Component {
               </Box>
             </Flex>
             <Flex
-              flexWrap={true}
+              borderTop="1px solid white"
+              width="80%"
+              pt={[2, 3]}
               justifyContent={['flex-start', 'center']}
-              alignItems="center"
-              zIndex={2}
             >
-              {mapIndex((_, index) => {
-                const isActive = R.equals(index, this.state.active)
-                const button = css({
-                  padding: 0,
-                  margin: 10,
-                  width: 24,
-                  height: 24,
-                  position: 'relative',
-                  background: 'none',
-                  border: 'none',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  cursor: 'pointer',
-                  outline: 0,
-                  '&:hover .dot': {
-                    padding: 8,
+              <Flex
+                flexWrap={true}
+                justifyContent={['flex-start', 'center']}
+                alignItems="center"
+                zIndex={2}
+              >
+                {mapIndex((_, index) => {
+                  const isActive = R.equals(index, this.state.active)
+                  const button = css({
+                    padding: 0,
+                    margin: 10,
+                    width: 24,
+                    height: 24,
+                    position: 'relative',
+                    background: 'none',
+                    border: 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    outline: 0,
+                    '&:hover .dot': {
+                      padding: 8,
+                      background: 'rgba(255, 255, 255, 1)'
+                    }
+                  })
+                  const dot = css({
+                    padding: 6,
+                    transition:
+                      '200ms padding ease-in-out, 200ms background ease-in-out',
+                    borderRadius: '100%',
+                    background: 'rgba(255, 255, 255, 0.6)'
+                  })
+                  const activeDot = css({
+                    padding: 10,
                     background: 'rgba(255, 255, 255, 1)'
-                  }
-                })
-                const dot = css({
-                  padding: 6,
-                  transition:
-                    '200ms padding ease-in-out, 200ms background ease-in-out',
-                  borderRadius: '100%',
-                  background: 'rgba(255, 255, 255, 0.6)'
-                })
-                const activeDot = css({
-                  padding: 10,
-                  background: 'rgba(255, 255, 255, 1)'
-                })
+                  })
 
-                return (
-                  <button
-                    key={index}
-                    className={button}
-                    onClick={event => {
-                      event.preventDefault()
+                  return (
+                    <button
+                      key={index}
+                      className={button}
+                      onClick={event => {
+                        event.preventDefault()
 
-                      return this.setState({
-                        active: index
-                      })
-                    }}
-                  >
-                    <div
-                      className={`${dot} ${isActive ? activeDot : null} dot`}
-                    />
-                  </button>
-                )
-              }, testimonials)}
+                        return this.setState({
+                          active: index
+                        })
+                      }}
+                    >
+                      <div
+                        className={`${dot} ${isActive ? activeDot : null} dot`}
+                      />
+                    </button>
+                  )
+                }, testimonials)}
+              </Flex>
             </Flex>
           </Flex>
         </SiteContainer>

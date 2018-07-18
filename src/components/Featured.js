@@ -19,6 +19,7 @@ const Featured = () => {
           <img
             src={featuredList}
             className={css({
+              width: '100%',
               paddingTop: R.nth(2, space),
               paddingBottom: R.nth(2, space)
             })}
