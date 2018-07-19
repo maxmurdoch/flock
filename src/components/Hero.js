@@ -51,56 +51,30 @@ const Hero = ({
               mt={[4, 5]}
               mb={[3, 6]}
             >
-              <ScrollAnimation
-                duration={0.5}
-                animateIn="fadeInUp"
-                animateOnce={true}
+              <H1
+                textShadow={textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'}
+                color={textColor}
+                mb={[2, 3]}
               >
-                <H1
-                  textShadow={
-                    textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'
-                  }
-                  color={textColor}
-                  mb={[2, 3]}
-                >
-                  {header}
-                </H1>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInUp"
-                duration={0.5}
-                delay={200}
-                animateOnce={true}
-              >
-                <BodyText tag="div" color={textColor} mb={[2, 3]}>
-                  <Markdown>{description}</Markdown>
-                </BodyText>
-              </ScrollAnimation>
+                {header}
+              </H1>
+              <BodyText tag="div" color={textColor} mb={[2, 3]}>
+                <Markdown>{description}</Markdown>
+              </BodyText>
               <ShowIf predicate={R.not(R.isNil(button))}>
-                <ScrollAnimation
-                  animateIn="fadeInUp"
-                  duration={0.5}
-                  delay={400}
-                  animateOnce={true}
-                >
-                  <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
-                    {matches =>
-                      matches ? (
-                        <PrimaryButton to={button.to}>
-                          <ArrowText moveOnHover={false}>
-                            {button.text}
-                          </ArrowText>
-                        </PrimaryButton>
-                      ) : (
-                        <SecondaryButton to={button.to}>
-                          <ArrowText moveOnHover={false}>
-                            {button.text}
-                          </ArrowText>
-                        </SecondaryButton>
-                      )
-                    }
-                  </Media>
-                </ScrollAnimation>
+                <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
+                  {matches =>
+                    matches ? (
+                      <PrimaryButton to={button.to}>
+                        <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                      </PrimaryButton>
+                    ) : (
+                      <SecondaryButton to={button.to}>
+                        <ArrowText moveOnHover={false}>{button.text}</ArrowText>
+                      </SecondaryButton>
+                    )
+                  }
+                </Media>
               </ShowIf>
             </Flex>
             {R.not(R.isNil(RightSideComponent)) ? (
