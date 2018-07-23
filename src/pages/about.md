@@ -3,7 +3,7 @@ title: About
 templateKey: about
 hero:
   header: 'All about Flock Cover'
-  backgroundImage: '../../images/uploads/team-shot.png'
+  backgroundImage: '../../images/uploads/team-shot.jpg'
 
 flockStory:
   header: The Flock story

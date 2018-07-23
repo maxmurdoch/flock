@@ -1,14 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
-import Media from 'react-media'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
 import SiteMetadata from '../components/SiteMetadata'
-import LightNav from '../components/LightNav'
 import Download from '../components/DownloadFlock'
-import LightMobileNav from '../components/LightMobileNav'
+import LightNav from '../components/LightNav'
 import FlockStory from '../components/FlockStory'
 import Footer from '../components/Footer'
 import BigSectionLine from '../components/BigSectionLine'
@@ -33,9 +31,7 @@ const PricingTemplate = ({
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-          {matches => (matches ? <LightNav /> : <LightMobileNav />)}
-        </Media>
+        <LightNav />
         <AboutHero
           center={true}
           headerClassName={css({

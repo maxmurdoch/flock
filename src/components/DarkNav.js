@@ -1,27 +1,16 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import Media from 'react-media'
+import {nth} from 'ramda'
 
-import blackLogo from '../images/logo-black.svg'
-import SecondaryButton from './SecondaryButton'
-import SmallText from './SmallText'
-import Nav from './Nav'
+import DarkMobileNav from '../components/DarkMobileNav'
+import DarkDesktopNav from '../components/DarkDesktopNav'
 
-const DarkNav = () => {
-  return (
-    <Nav
-      Logo={() => (
-        <img className={css({width: '6rem', margin: 0})} src={blackLogo} />
-      )}
-      DownloadButton={() => (
-        <SecondaryButton
-          onClick={() => console.log('clicked')}
-          Text={SmallText}
-        >
-          Download
-        </SecondaryButton>
-      )}
-    />
-  )
-}
+import {breakpoints} from '../constants/theme'
+
+const DarkNav = () => (
+  <Media query={`(min-width: ${nth(1, breakpoints)}`}>
+    {matches => (matches ? <DarkDesktopNav /> : <DarkMobileNav />)}
+  </Media>
+)
 
 export default DarkNav

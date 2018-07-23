@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import {withPrefix} from 'gatsby-link'
 import PropTypes from 'prop-types'
-import R from 'ramda'
-import {css} from 'emotion'
+import {inc, addIndex, map, nth, path, F, equals, length, gte} from 'ramda'
+import {css, cx, keyframes} from 'emotion'
 
 import Flex from './Flex'
 import Box from './Box'
@@ -11,19 +11,56 @@ import H3 from './H3'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import {colors, space, breakpoints} from '../constants/theme'
+import {phoneWidths, colors, space, breakpoints} from '../constants/theme'
 
-const mapIndex = R.addIndex(R.map)
+const mapIndex = addIndex(map)
 
 class ToggleiPhone extends Component {
-  state = {
-    activeIndex: 0,
-    isHovered: []
+  constructor() {
+    super()
+    this.state = {
+      activeIndex: 0,
+      loopTimerId: null,
+      isHovered: []
+    }
+    this.stepLoop = this.stepLoop.bind(this)
+    this.playLoop = this.playLoop.bind(this)
+    this.pauseLoop = this.pauseLoop.bind(this)
+    this.chooseIndex = this.chooseIndex.bind(this)
+  }
+
+  stepLoop() {
+    const {list} = this.props
+    const {activeIndex} = this.state
+
+    this.setState({
+      activeIndex: gte(inc(activeIndex), length(list)) ? 0 : inc(activeIndex)
+    })
+  }
+
+  chooseIndex(index) {
+    this.pauseLoop()
+    this.setState({
+      activeIndex: index
+    })
+  }
+
+  playLoop() {
+    this.setState({
+      loopTimerId: window.setInterval(this.stepLoop, 3000)
+    })
+  }
+
+  pauseLoop() {
+    this.setState({
+      loopTimerId: window.clearInterval(this.state.loopTimerId)
+    })
   }
 
   componentDidMount() {
+    this.playLoop()
     this.setState({
-      isHovered: mapIndex(R.F, this.props.list)
+      isHovered: mapIndex(F, this.props.list)
     })
   }
 
@@ -31,7 +68,12 @@ class ToggleiPhone extends Component {
     const {title, description, list} = this.props
 
     return (
-      <Flex background="transparent" justifyContent="center" pt={[3, 5]}>
+      <Flex
+        background="transparent"
+        justifyContent="center"
+        pt={[3, 5]}
+        overflow="hidden"
+      >
         <SiteContainer>
           <Flex flexWrap={true}>
             <Box width={['100%']} order={[0, 1]}>
@@ -41,7 +83,7 @@ class ToggleiPhone extends Component {
               </Box>
             </Box>
 
-            <Box width={['100%', '50%']} order={[2, 2]} pb={[3, 5]}>
+            <Box width={['100%', '50%']} order={2} pb={[3, 5]}>
               <Box width={['100%', '100%', '66.66%']}>
                 <ol
                   className={css({
@@ -53,9 +95,9 @@ class ToggleiPhone extends Component {
                     return (
                       <li
                         className={css({
-                          marginBottom: R.nth(3, space),
+                          marginBottom: nth(3, space),
                           borderBottom: `1px solid ${colors.white}`,
-                          paddingBottom: R.nth(3, space),
+                          paddingBottom: nth(3, space),
                           '&:last-of-type': {
                             borderBottom: 0,
                             paddingBottom: 0,
@@ -67,16 +109,16 @@ class ToggleiPhone extends Component {
                         <Flex
                           flexDirection="column"
                           style={{
-                            borderLeft: R.equals(this.state.activeIndex, index)
+                            borderLeft: equals(this.state.activeIndex, index)
                               ? `3px solid ${colors.yellow}`
                               : '3px solid transparent'
                           }}
                           className={css({
-                            cursor: R.path(['isHovered', index], this.state)
+                            cursor: path(['isHovered', index], this.state)
                               ? 'pointer'
                               : 'default',
-                            paddingLeft: R.nth(1, space),
-                            marginLeft: `-${R.nth(1, space)}`,
+                            paddingLeft: nth(1, space),
+                            marginLeft: `-${nth(1, space)}`,
                             '&:hover .title': {
                               color: `${colors.yellow} !important`
                             },
@@ -84,13 +126,11 @@ class ToggleiPhone extends Component {
                               cursor: 'pointer'
                             }
                           })}
-                          onClick={() => {
-                            return this.setState({activeIndex: index})
-                          }}
+                          onClick={() => this.chooseIndex(index)}
                         >
                           <H3
                             color={
-                              R.equals(this.state.activeIndex, index)
+                              equals(this.state.activeIndex, index)
                                 ? colors.yellow
                                 : colors.white
                             }
@@ -113,13 +153,27 @@ class ToggleiPhone extends Component {
               width={['100%', '50%']}
             >
               <Flex justifyContent="center">
-                <Box width={['100%']} position="relative">
-                  <img
-                    className={style.image}
-                    src={withPrefix(
-                      R.path([this.state.activeIndex, 'image'], list)
-                    )}
-                  />
+                <Box
+                  width={phoneWidths}
+                  position="relative"
+                  overflow={'hidden'}
+                >
+                  {mapIndex(
+                    ({image}, index) => (
+                      <img
+                        key={index}
+                        className={cx(
+                          style.animated,
+                          equals(index, this.state.activeIndex)
+                            ? style.fadeInRight
+                            : style.fadeOutRight,
+                          style.image
+                        )}
+                        src={withPrefix(image)}
+                      />
+                    ),
+                    list
+                  )}
                 </Box>
               </Flex>
             </Box>
@@ -130,18 +184,61 @@ class ToggleiPhone extends Component {
   }
 }
 
+const animations = {
+  fadeInRight: keyframes`
+  from {
+    opacity: 1;
+    transform: translate3d(100%, 0, 0) rotate(14deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(7deg);
+  }
+`,
+  fadeOutRight: keyframes`
+  from {
+    z-index: 0;
+    opacity: 1;
+    transform: rotate(7deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) rotate(14deg);
+  }
+`
+}
+
 const style = {
   image: css({
-    transform: 'translateX(-20px) rotate(-7deg)',
-    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-      transform: 'rotate(-7deg)',
+    transform: 'rotate(7deg)',
+    borderRadius: '34px',
+    boxShadow:
+      '-80px 40px 100px rgba(0,0,0,0.15), -50px 20px 60px rgba(0,0,0,0.15), -20px 10px 20px rgba(0,0,0,0.15), inset 20px 0px 12px 16px rgba(0, 0, 0, 0.37)',
+    [`@media (min-width: ${nth(0, breakpoints)})`]: {
       position: 'absolute',
       top: '-100px',
-      left: '-5%'
+      borderRadius: '46px'
     },
-    [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
-      left: '-15%'
+    [`@media (min-width: ${nth(1, breakpoints)})`]: {
+      borderRadius: '53px'
+    },
+    [`@media (min-width: ${nth(2, breakpoints)})`]: {
+      borderRadius: '60px'
     }
+  }),
+  animated: css({
+    animationDuration: '500ms',
+    animationFillMode: 'both'
+  }),
+  fadeOutRight: css({
+    zIndex: 0,
+    animationName: animations.fadeOutRight
+  }),
+  fadeInRight: css({
+    zIndex: 1,
+    animationName: animations.fadeInRight
   })
 }
 

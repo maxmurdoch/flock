@@ -5,25 +5,26 @@ import {
   alignSelf,
   background,
   border,
-  borderRight,
-  borderLeft,
-  borderTop,
   borderBottom,
-  order,
+  borderLeft,
+  borderRight,
+  borderTop,
   color,
   display,
   flex,
   flexBasis,
   flexDirection,
   flexWrap,
+  height,
   justifyContent,
   justifySelf,
   maxWidth,
   minHeight,
+  order,
+  overflow,
   position,
   space,
   width,
-  height,
   zIndex
 } from 'styled-system'
 
@@ -38,6 +39,7 @@ ${borderLeft}
 ${borderRight}
 ${borderTop}
 ${color}
+${overflow}
 ${display}
 ${flex}
 ${flexBasis}

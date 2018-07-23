@@ -1,7 +1,6 @@
 import React from 'react'
 import {StickyContainer} from 'react-sticky'
 import R from 'ramda'
-import Media from 'react-media'
 import {css} from 'emotion'
 
 import LightNav from '../components/LightNav'
@@ -9,7 +8,6 @@ import Testimonial from '../components/Testimonial'
 import Download from '../components/DownloadFlock'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
-import LightMobileNav from '../components/LightMobileNav'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import OtherProducts from '../components/OtherProducts'
@@ -37,9 +35,7 @@ const PricingTemplate = ({data}) => {
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-          {matches => (matches ? <LightNav /> : <LightMobileNav />)}
-        </Media>
+        <LightNav />
         <div
           className={css({
             position: 'relative'

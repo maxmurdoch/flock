@@ -1,5 +1,4 @@
 import React from 'react'
-import ScrollAnimation from 'react-animate-on-scroll'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import R from 'ramda'
@@ -47,6 +46,7 @@ const Hero = ({
             <Flex
               justifyContent="center"
               flexDirection="column"
+              alignItems="flex-start"
               width={['100%', '75%', '60%']}
               mt={[4, 5]}
               mb={[3, 6]}

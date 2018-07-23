@@ -2,12 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import {StickyContainer} from 'react-sticky'
-import Media from 'react-media'
 import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
-import MobileNav from '../components/MobileNav'
-import ScrollAnimation from 'react-animate-on-scroll'
+import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
@@ -17,7 +15,6 @@ import Testimonial from '../components/Testimonial'
 import TitleAndDescription from '../components/TitleAndDescription'
 import ToggleiPhone from '../components/ToggleiPhone'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
-import DarkNav from '../components/DarkNav'
 import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
@@ -51,19 +48,10 @@ const HomeTemplate = ({
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
-          {matches => (matches ? <DarkNav /> : <MobileNav />)}
-        </Media>
+        <DarkNav />
         <Hero
           RightSideComponent={() => (
-            <ScrollAnimation
-              animateIn="fadeInUp"
-              duration={0.6}
-              delay={600}
-              animateOnce={true}
-            >
-              <img src={iPhone} className={style.iphone} />
-            </ScrollAnimation>
+            <img src={iPhone} className={style.iphone} />
           )}
           headerClassName={style.header}
           headerContainerClassName={style.headerContainer}

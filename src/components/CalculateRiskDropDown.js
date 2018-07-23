@@ -12,9 +12,9 @@ import H2 from './H2'
 import LI from './LI'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import iPhone from '../../static/images/uploads/risk@2x.png'
+import iPhone from '../../static/images/uploads/phones/risk-home.png'
 import downArrow from '../images/icons/small-down-arrow-white.svg'
-import {colors, space, breakpoints} from '../constants/theme'
+import {phoneWidths, colors, space, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -37,11 +37,11 @@ class CalculateRiskDropDown extends Component {
     const listOfCalculations = R.clone(this.props.list)
 
     return (
-      <Flex justifyContent="center" pt={[3, 5]}>
+      <Flex justifyContent="center" pt={[3, 5]} pb={[3, 5]}>
         <SiteContainer>
           <Flex flexDirection={['column', 'row']}>
             <Flex justifyContent="center" width={['100%', '50%']}>
-              <Box width={['75%', '70%']}>
+              <Box width={phoneWidths}>
                 <img width="100%" className={style.iPhone} src={iPhone} />
               </Box>
             </Flex>
@@ -180,12 +180,21 @@ class CalculateRiskDropDown extends Component {
 
 const style = {
   iPhone: css({
-    transform: 'translateX(-10%)',
+    boxShadow:
+      '-80px 40px 100px rgba(0,0,0,0.15), -50px 20px 60px rgba(0,0,0,0.15), -20px 10px 20px rgba(0,0,0,0.15), inset 20px 0px 12px 16px rgba(0, 0, 0, 0.37)',
+    transform: 'rotate(-7deg)',
     width: '100%',
-    maxWidth: '24rem',
+    borderRadius: '34px',
 
+    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+      borderRadius: '46px'
+    },
     [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
-      maxWidth: '100%'
+      maxWidth: '100%',
+      borderRadius: '53px'
+    },
+    [`@media (min-width: ${R.nth(2, breakpoints)})`]: {
+      borderRadius: '60px'
     }
   })
 }

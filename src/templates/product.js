@@ -8,7 +8,6 @@ import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
 import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
-import LightMobileNav from '../components/LightMobileNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
@@ -49,9 +48,7 @@ const SegmentPageTemplate = ({data}) => {
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
-          {matches => (matches ? <LightNav /> : <LightMobileNav />)}
-        </Media>
+        <LightNav />
         <Hero
           headerClassName={css({
             backgroundImage: `url(${hero.backgroundImage})`,
