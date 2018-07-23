@@ -1,32 +1,16 @@
 ---
 title: Home
-
 templateKey: home
-
 hero:
   button:
     text: Download
     to: /download
   description: 'Smarter drone insurance by the hour, only when you need it.'
-  header: 'Pay-as-you-fly drone insurance'
-
+  header: Pay-as-you-fly drone insurance
 video:
-  id: 3m_VorqXuNQ
   coverImage: /images/uploads/testimonial/1.jpg
-  text: 'See for yourself'
-
-secondTestimonial:
-  - author: 'David Dennison, Parrot Mambo FPV pilot'
-    image: /images/uploads/testimonial/3.jpg
-    quote: >-
-      With all the current drone laws in the UK, having Flock is an added peace
-      of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!
-  - author: Ron Swanson
-    image: /images/uploads/testimonial/4.jpg
-    quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
+  id: 3m_VorqXuNQ
+  text: See for yourself
 howFlockWorks:
   description: |-
     Insuring your drone flight has never been easier.
@@ -47,40 +31,33 @@ howFlockWorks:
         Pay for the policy and you're good to go! All the important
         documentation is sent straight to your email inbox.
       title: 3. Get flying
-  title: >-
+  title: |-
     How Flock Cover 
-    
     works
-
 stopWorrying:
   description: Control your insurance from the palm of your hand with the Flock Cover app.
   reasons:
     - text: >-
-        Flock’s pricing is risk-dependent: the safer you fly, the less you pay. Simple!
+        Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
+        Simple!
       title: Fairer pricing
-      icon: /images/uploads/money.svg
     - text: >-
         Pay for insurance only when you fly. Get covered for as little as one
         hour, or up to a day.
-      title: 'Short-term insurance'
-      icon: /images/uploads/shield.svg
+      title: Short-term insurance
     - text: >-
         Get a real-time quote in 30 seconds. You can even see when and where
         it's cheapest to fly.
       title: Total transparency
-      icon: /images/uploads/magnifying-glass.svg
-  title: >-
-    It's time for a new kind of insurance.
-
+  title: It's time for a new kind of insurance.
 kindOfPilot:
-  description: |-
-    Chances are we can provide insurance tailored specifically to you.
+  description: Chances are we can provide insurance tailored specifically to you.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /products/commercial
       text: >-
-        Flock’s EC785/2004 compliant policies offer flexible hull and liability
-        insurance from just £5 a day.
+        Flock’s EC785/2004 compliant policies offer equipment and Public
+        Liability insurance from just £4.95 a day.
       title: Commercial pilot
     - icon: images/uploads/trainee-pilot.svg
       link: /products/trainee
@@ -92,64 +69,65 @@ kindOfPilot:
       link: /products/hobbyist
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
-        from just £3 with the touch of a button.
+        from just £2.95 with the tap of a button.
       title: Hobbyist pilot
   title: What kind of drone pilot are you?
-
 risk:
   description: >-
-    Know your risks before you fly. Simply enter your flight's details and
-    receive a real-time risk report.
+    With Flock Cover you get much more than just an insurance policy. The app
+    analyses real-time data in your chosen Flight Area to identify the important
+    risks before take-off.
   list:
     - icon: images/uploads/icons-house.svg
       list:
-        - Schools
-        - Hospitals
-        - Prisons
+        - Flock Cover analyses building data to inform you of nearby schools
+        - hospitals and prisons.
       title: Inhabited spaces
     - icon: images/uploads/icons-circle.svg
       list:
-        - Building density
-        - Parks
-        - Power plants
+        - The app identifies high-risk areas such as power plants
+        - military bases and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       list:
-        - Airports
-        - Heliports
-        - Controlled airspace
+        - Be alerted to surrounding airports and heliports
+        - and keep up to date with the latest NOTAMS.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       list:
-        - Windspeed
-        - Probability of rainfall
-        - Temperature
+        - Receive hyper-local weather information
+        - such as wind speed
+        - temperature and probability of rainfall.
       title: Hyperlocal weather
-  title: 'Insurance and then some... '
-
+  title: 'Know your risks before you fly. '
+calculator:
+  description: Give us an idea of you as a pilot to receive an estimated quote.
+  title: How much could pay-as-you-fly save you?
+secondTestimonial:
+  - author: 'David Dennison, Parrot Mambo FPV pilot'
+    image: /images/uploads/testimonial/3.jpg
+    quote: >-
+      With all the current drone laws in the UK, having Flock is an added peace
+      of mind. Another bonus is that Flock will insure non professional drone
+      pilots. This is a brilliant app!
+  - author: Ron Swanson
+    image: /images/uploads/testimonial/4.jpg
+    quote: >-
+      I hate drones. But I have one. And I insure my property because I'm a
+      responsible adult. Flock are the best drone insurers. I use Flock.
 download:
-  title: 'Blah'
-  text: 'blasdfasdf'
   button:
-    to: 'Download'
-    text: '/download'
-
-whatFlockCovers:
-  description: ''
-  title: ''
-
+    text: /download
+    to: Download
+  text: blasdfasdf
+  title: Blah
 featured:
   image: images/uploads/featured-list.png
   title: We’ve been featured
-
-calculator:
-  title: 'Get a rough quote'
-  description: 'Lorem lorem lorem'
-
 siteMetadataOverride:
-  title: ''
   description: ''
   keywords:
     - ''
-
+  title: ''
 ---
+
