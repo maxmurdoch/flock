@@ -76,7 +76,7 @@ risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
     analyses real-time data in your chosen Flight Area to identify the important
-    risks before take-off.
+    risks before you fly; helping you to fly as safely as possible.
   list:
     - icon: images/uploads/icons-house.svg
       list:
@@ -99,9 +99,9 @@ risk:
         - such as wind speed
         - temperature and probability of rainfall.
       title: Hyperlocal weather
-  title: 'Know your risks before you fly. '
+  title: A safety tool you can trust.
 calculator:
-  description: Give us an idea of you as a pilot to receive an estimated quote.
+  description: Lorem lorem lorem
   title: How much could pay-as-you-fly save you?
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
