@@ -10,15 +10,9 @@ Make sure that you have the Gatsby CLI program installed:
 npm install --global gatsby-cli
 ```
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
+To start a development server:
 ```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-npm run develop
+yarn develop
 ```
 
 ## Deploy
@@ -30,7 +24,7 @@ npm run develop
 **React component**
 Import order
 - library imports
-- component imports 
+- component imports
 - local js imports (constants, images)
 
 File order

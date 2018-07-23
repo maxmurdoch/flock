@@ -48,6 +48,14 @@ module.exports = {
       }
     },
     'gatsby-plugin-emotion',
-    'gatsby-plugin-netlify-cms'
+    'gatsby-plugin-netlify-cms',
+    {
+      resolve: `gatsby-plugin-segment-js`,
+      options: {
+        prodKey: `J5p8puLW0RzI5J7x74TQioRNwBkoRei3`,
+        devKey: `hjQsqleIuNWqPzITXoC5ptb00148l3nN`,
+        trackPage: true
+      }
+    }
   ]
 }
