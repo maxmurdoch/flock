@@ -62,17 +62,17 @@ how:
     Insuring your drone flight has never been easier. All it takes is a matter
     of taps.
   list:
-    - image: ../../images/uploads/phones/flight-details-home.png
+    - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your flight area, and the date and time you want to fly.
         Instantly receive a real-time quote at the bottom of your screen.
       title: 1. Enter your flight details
-    - image: ../../images/uploads/phones/customise-policy-home.png
+    - image: ../../images/uploads/screens/customise-policy-home-screen.png
       text: >-
         Select your cover duration and liability limit. You can even set the
         amount you want your hull and equipment to be insured for.
       title: 2. Customise your policy
-    - image: ../../images/uploads/phones/get-flying-home.png
+    - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
         Pay for the policy and you're good to go! All the important
         documentation is sent straight to your email inbox.

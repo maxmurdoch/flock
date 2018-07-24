@@ -12,13 +12,7 @@ import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
 import iPhone from '../images/phones/iphone-background.png'
-import {
-  screenWidths,
-  phoneWidths,
-  colors,
-  space,
-  breakpoints
-} from '../constants/theme'
+import {colors, space, breakpoints} from '../constants/theme'
 
 const mapIndex = addIndex(map)
 
@@ -54,7 +48,7 @@ class ToggleiPhone extends Component {
 
   playLoop() {
     this.setState({
-      loopTimerId: window.setInterval(this.stepLoop, 3000)
+      loopTimerId: window.setInterval(this.stepLoop, 5000)
     })
   }
 
@@ -154,29 +148,31 @@ class ToggleiPhone extends Component {
               </Box>
             </Box>
             <Box
-              justifyContent="center"
               order={[1, 3]}
               zIndex="0"
               width={['100%', '50%']}
+              height={[450, 450, 'auto']}
             >
               <Flex justifyContent="center" position="relative">
                 <div className={style.container}>
-                  {mapIndex(
-                    ({image}, index) => (
-                      <img
-                        key={index}
-                        className={cx(
-                          style.animated,
-                          equals(index, this.state.activeIndex)
-                            ? style.fadeInRight
-                            : style.fadeOutRight,
-                          style.screen
-                        )}
-                        src={withPrefix(image)}
-                      />
-                    ),
-                    list
-                  )}
+                  <div className={style.screenContainer}>
+                    {mapIndex(
+                      ({image}, index) => (
+                        <img
+                          key={index}
+                          className={cx(
+                            style.animated,
+                            equals(index, this.state.activeIndex)
+                              ? style.fadeInRight
+                              : style.fadeOutLeft,
+                            style.screen
+                          )}
+                          src={withPrefix(image)}
+                        />
+                      ),
+                      list
+                    )}
+                  </div>
                   <img src={iPhone} className={style.phone} />
                 </div>
               </Flex>
@@ -191,25 +187,22 @@ class ToggleiPhone extends Component {
 const animations = {
   fadeInRight: keyframes`
     from {
-      opacity: 1;
-      transform: translate3d(100%, 0, 0) rotate(14deg);
+      z-index: 1;
+      transform: translate3d(200%, 0, 0);
     }
 
     to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0) rotate(7deg);
+      transform: translate3d(0, 0, 0);
     }
 `,
-  fadeOutRight: keyframes`
+  fadeOutLeft: keyframes`
     from {
       z-index: 0;
-      opacity: 1;
-      transform: rotate(7deg);
+      transform: translate3d(0, 0, 0);
     }
 
     to {
-      opacity: 0;
-      transform: translate3d(100%, 0, 0) rotate(14deg);
+      transform: translate3d(-200%, 0, 0);
     }
 `
 }
@@ -217,67 +210,56 @@ const animations = {
 const style = {
   container: css({
     position: 'relative',
-    width: '12rem',
-    borderRadius: '34px',
-    boxShadow:
-      '-80px 40px 100px rgba(0,0,0,0.15), -50px 20px 60px rgba(0,0,0,0.15), -20px 10px 20px rgba(0,0,0,0.15), inset 20px 0px 12px 16px rgba(0, 0, 0, 0.37)',
-    [`@media (min-width: ${nth(0, breakpoints)})`]: {
-      borderRadius: '46px',
-      width: '16rem'
-    },
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center'
+  }),
+  screenContainer: css({
+    zIndex: 1,
+    transform: 'rotate(7deg)',
+    height: 375,
+    width: 172,
+    position: 'absolute',
+    top: 12,
+    left: 0,
+    right: 0,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    overflow: 'hidden',
     [`@media (min-width: ${nth(1, breakpoints)})`]: {
-      borderRadius: '53px',
-      width: '18rem'
-    },
-    [`@media (min-width: ${nth(2, breakpoints)})`]: {
-      borderRadius: '60px'
+      top: -106,
+      left: 4,
+      height: 600,
+      width: 275
     }
   }),
   screen: css({
-    transform: 'rotate(7deg)',
-    width: '9rem',
     position: 'absolute',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    left: 0,
-    right: 0,
     top: 0,
-    [`@media (min-width: ${nth(0, breakpoints)})`]: {
-      top: '-100px',
-      left: 24,
-      right: 24
-    },
-    [`@media (min-width: ${nth(1, breakpoints)})`]: {
-      top: '-105px',
-      left: 25,
-      width: '85%'
-    }
+    left: 0,
+    margin: 0
   }),
   phone: css({
     transform: 'rotate(7deg)',
     position: 'absolute',
     top: 0,
-    width: '12rem',
+    width: 200,
     borderRadius: '34px',
     boxShadow:
       '-80px 40px 100px rgba(0,0,0,0.15), -50px 20px 60px rgba(0,0,0,0.15), -20px 10px 20px rgba(0,0,0,0.15), inset 20px 0px 12px 16px rgba(0, 0, 0, 0.37)',
-    [`@media (min-width: ${nth(0, breakpoints)})`]: {
-      top: '-126px',
-      borderRadius: '46px',
-      width: '16rem'
-    },
     [`@media (min-width: ${nth(1, breakpoints)})`]: {
+      top: '-126px',
       borderRadius: '53px',
       width: '18rem'
     }
   }),
   animated: css({
-    animationDuration: '500ms',
+    animationDuration: '300ms',
     animationFillMode: 'both'
   }),
-  fadeOutRight: css({
+  fadeOutLeft: css({
     zIndex: 0,
-    animationName: animations.fadeOutRight
+    animationName: animations.fadeOutLeft
   }),
   fadeInRight: css({
     zIndex: 1,
