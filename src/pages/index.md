@@ -17,17 +17,17 @@ howFlockWorks:
     Insuring your drone flight has never been easier. All it takes is a matter
     of taps on your mobile phone.
   listOfHow:
-    - image: images/uploads/screens/flight-details-screen.png
+    - image: images/uploads/phones/flight-details-home.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        a  real-time, risk-dependent quote on the spot.
+        a real-time quote instantly.
       title: 1. Enter your flight details
-    - image: images/uploads/screens/customise-policy-recreational-screen.png
+    - image: images/uploads/phones/customise-policy-home.png
       text: >-
         Select how long you want to be insured for. With options from 1-8 hours,
         get covered only for the hours you fly.
       title: 2. Customise your policy
-    - image: images/uploads/screens/get-flying-screen.png
+    - image: images/uploads/phones/get-flying-home.png
       text: >-
         Pay for your policy and you're ready for take-off! All the important
         documentation is sent straight to your email.
@@ -42,17 +42,12 @@ stopWorrying:
         Flock’s pricing is risk-dependent. So the safer you fly, the less you
         pay. It’s as simple as that.
       title: Fairer pricing
-      icon: images/uploads/shield.svg
-    - text: >-
-        Pay for drone insurance only when you fly. Get covered for as little as
-        one hour, or up to a day. You decide.
+    - text: 'Insure your drone for as little as one hour, or up to a day. You decide.'
       title: Short-term insurance
-      icon: images/uploads/money.svg
     - text: >-
-        Build your insurance from the ground up so you only pay for the cover
+        Build your insurance from the ground up, and only ever pay for the cover
         you need.
       title: Total transparency
-      icon: images/uploads/magnifying-glass.svg
   title: 'The smarter new way to insure your drone. '
 kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
@@ -105,7 +100,7 @@ risk:
       title: Hyperlocal weather
   title: Know your risks before you fly.
 calculator:
-  description: Give us an idea of your flying habits for an estimated quote.
+  description: Give us an idea of your flying habits so we can give you an estimated quote.
   title: How much could you save?
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
@@ -128,3 +123,4 @@ siteMetadataOverride:
     - ''
   title: ''
 ---
+
