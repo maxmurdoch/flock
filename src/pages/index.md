@@ -115,13 +115,9 @@ secondTestimonial:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
-download:
-  button:
-    to: 'Download '
-  title: 'Download '
 featured:
   image: images/uploads/featured-list.png
-  title: We’ve been featured
+  title: As featured in
 siteMetadataOverride:
   description: ''
   keywords:
