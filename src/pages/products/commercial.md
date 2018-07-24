@@ -10,9 +10,10 @@ hero:
     * On-demand insurance from £4.95
     * EC785/2004 compliant policies
     * Customisable Public Liability limits (from £1-10M)
-    * Flexible equipment insurance (up to £25K)
+    * Drone and accessory cover (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
+  description: Over 2000 drone pilots in the UK now use Flock Cover.
   list:
     - text: >-
         We know two jobs are never the same. Customise your insurance
@@ -20,7 +21,7 @@ why:
       title: Bespoke cover
     - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
-        from £4.95 a day.
+        from £4.95.
       title: Fairer pricing
     - text: Flock’s policies are EC785/2004 compliant and CAA approved.
       title: Fully compliant
@@ -72,8 +73,8 @@ how:
     - image: ../../images/uploads/screens/customise-policy-home-screen.png
       text: >-
         Select how long you want to be covered for, and your Public Liability
-        limit. You can even set the amount you want your equipment (drone +
-        accessories) to be insured for.
+        limit. You can even set the amount you want your equipment to be insured
+        for.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
