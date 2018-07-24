@@ -82,11 +82,11 @@ const Footer = ({containerClassName}) => {
     },
     {
       to: 'http://help.flockcover.com/legal/privacy-policy',
-      text: 'Cookies Policy'
+      text: 'Privacy Policy'
     },
     {
       to: 'http://help.flockcover.com/legal/cookies-policy',
-      text: 'Privacy Policy'
+      text: 'Cookies Policy'
     }
   ]
 
