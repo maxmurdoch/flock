@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import {StickyContainer} from 'react-sticky'
@@ -16,7 +16,7 @@ import AboutHero from '../components/AboutHero'
 import {colors, breakpoints, space} from '../constants/theme'
 import MeetTheTeam from '../components/MeetTheTeam'
 
-const PricingTemplate = ({
+const AboutTemplate = ({
   hero,
   flockStory,
   siteMetadataOverride,
@@ -53,12 +53,14 @@ const PricingTemplate = ({
         />
         <BigSectionLine />
         {coreValues.isShowing ? (
-          <TextGrid
-            title={coreValues.title}
-            description={coreValues.description}
-            list={coreValues.list}
-          />
-          <BigSectionLine />
+          <Fragment>
+            <TextGrid
+              title={coreValues.title}
+              description={coreValues.description}
+              list={coreValues.list}
+            />
+            <BigSectionLine />
+          </Fragment>
         ) : null}
         <TextGrid
           title={coreValues.title}
@@ -85,7 +87,7 @@ const PricingTemplate = ({
   )
 }
 
-PricingTemplate.propTypes = {
+AboutTemplate.propTypes = {
   hero: PropTypes.object,
   flockStory: PropTypes.object,
   siteMetadataOverride: PropTypes.object,
@@ -93,7 +95,7 @@ PricingTemplate.propTypes = {
   meetTheTeam: PropTypes.object
 }
 
-const PricingPage = ({data}) => {
+const AboutPage = ({data}) => {
   const {
     hero,
     flockStory,
@@ -103,7 +105,7 @@ const PricingPage = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <PricingTemplate
+    <AboutTemplate
       hero={hero}
       flockStory={flockStory}
       siteMetadataOverride={siteMetadataOverride}
@@ -113,13 +115,14 @@ const PricingPage = ({data}) => {
   )
 }
 
-PricingPage.propTypes = {
+AboutPage.propTypes = {
   data: PropTypes.object
 }
 
 export const query = graphql`
   query AboutPageQuery($id: String!) {
     markdownRemark(id: {eq: $id}) {
+      id
       html
       frontmatter {
         title
@@ -162,5 +165,5 @@ export const query = graphql`
   }
 `
 
-export {PricingTemplate}
-export default PricingPage
+export {AboutTemplate}
+export default AboutPage
