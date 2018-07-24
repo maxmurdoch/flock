@@ -75,6 +75,18 @@ const Footer = ({containerClassName}) => {
     {
       to: '/media-pack',
       text: 'Media pack'
+    },
+    {
+      to: 'http://help.flockcover.com/legal/terms-of-use',
+      text: 'Terms of Use'
+    },
+    {
+      to: 'http://help.flockcover.com/legal/privacy-policy',
+      text: 'Cookies Policy'
+    },
+    {
+      to: 'http://help.flockcover.com/legal/cookies-policy',
+      text: 'Privacy Policy'
     }
   ]
 

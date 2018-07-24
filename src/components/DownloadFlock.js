@@ -19,12 +19,11 @@ const DownloadFlock = () => {
           flexDirection="column"
         >
           <Box width={['100%', '80%']}>
-            <H2 textAlign="center">Download the Flock app to get covered</H2>
+            <H2 textAlign="center">Download Flock Cover for free. </H2>
           </Box>
           <Box width={['100%', '50%']}>
             <BodyText textAlign="center">
-              Get our iOS or Android app for free. Have a play and see how to
-              reduce your flight’s risk.
+              Get the Flock Cover app on iOS and Android and receive a real-time quote for your flight in seconds.
             </BodyText>
           </Box>
           <Box
