@@ -7,6 +7,7 @@ import Box from './Box'
 import PrimaryButton from './PrimaryButton'
 import H2 from './H2'
 import SiteContainer from './SiteContainer'
+import trackDownload from '../utils/trackDownload'
 
 const DownloadFlock = () => {
   return (
@@ -32,7 +33,7 @@ const DownloadFlock = () => {
             display="flex"
             justifyContent="center"
           >
-            <PrimaryButton>
+            <PrimaryButton onClick={trackDownload}>
               <ArrowText moveOnHover={false}>Download</ArrowText>
             </PrimaryButton>
           </Box>
