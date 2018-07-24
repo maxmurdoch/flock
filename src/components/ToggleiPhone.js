@@ -11,7 +11,14 @@ import H3 from './H3'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
-import {phoneWidths, colors, space, breakpoints} from '../constants/theme'
+import iPhone from '../images/phones/iphone-background.png'
+import {
+  screenWidths,
+  phoneWidths,
+  colors,
+  space,
+  breakpoints
+} from '../constants/theme'
 
 const mapIndex = addIndex(map)
 
@@ -152,12 +159,8 @@ class ToggleiPhone extends Component {
               zIndex="0"
               width={['100%', '50%']}
             >
-              <Flex justifyContent="center">
-                <Box
-                  width={phoneWidths}
-                  position="relative"
-                  overflow={'hidden'}
-                >
+              <Flex justifyContent="center" position="relative">
+                <div className={style.container}>
                   {mapIndex(
                     ({image}, index) => (
                       <img
@@ -167,14 +170,15 @@ class ToggleiPhone extends Component {
                           equals(index, this.state.activeIndex)
                             ? style.fadeInRight
                             : style.fadeOutRight,
-                          style.image
+                          style.screen
                         )}
                         src={withPrefix(image)}
                       />
                     ),
                     list
                   )}
-                </Box>
+                  <img src={iPhone} className={style.phone} />
+                </div>
               </Flex>
             </Box>
           </Flex>
@@ -186,46 +190,85 @@ class ToggleiPhone extends Component {
 
 const animations = {
   fadeInRight: keyframes`
-  from {
-    opacity: 1;
-    transform: translate3d(100%, 0, 0) rotate(14deg);
-  }
+    from {
+      opacity: 1;
+      transform: translate3d(100%, 0, 0) rotate(14deg);
+    }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) rotate(7deg);
-  }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) rotate(7deg);
+    }
 `,
   fadeOutRight: keyframes`
-  from {
-    z-index: 0;
-    opacity: 1;
-    transform: rotate(7deg);
-  }
+    from {
+      z-index: 0;
+      opacity: 1;
+      transform: rotate(7deg);
+    }
 
-  to {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0) rotate(14deg);
-  }
+    to {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0) rotate(14deg);
+    }
 `
 }
 
 const style = {
-  image: css({
-    transform: 'rotate(7deg)',
+  container: css({
+    position: 'relative',
+    width: '12rem',
     borderRadius: '34px',
     boxShadow:
       '-80px 40px 100px rgba(0,0,0,0.15), -50px 20px 60px rgba(0,0,0,0.15), -20px 10px 20px rgba(0,0,0,0.15), inset 20px 0px 12px 16px rgba(0, 0, 0, 0.37)',
     [`@media (min-width: ${nth(0, breakpoints)})`]: {
-      position: 'absolute',
-      top: '-100px',
-      borderRadius: '46px'
+      borderRadius: '46px',
+      width: '16rem'
     },
     [`@media (min-width: ${nth(1, breakpoints)})`]: {
-      borderRadius: '53px'
+      borderRadius: '53px',
+      width: '18rem'
     },
     [`@media (min-width: ${nth(2, breakpoints)})`]: {
       borderRadius: '60px'
+    }
+  }),
+  screen: css({
+    transform: 'rotate(7deg)',
+    width: '9rem',
+    position: 'absolute',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    left: 0,
+    right: 0,
+    top: 0,
+    [`@media (min-width: ${nth(0, breakpoints)})`]: {
+      top: '-100px',
+      left: 24,
+      right: 24
+    },
+    [`@media (min-width: ${nth(1, breakpoints)})`]: {
+      top: '-105px',
+      left: 25,
+      width: '85%'
+    }
+  }),
+  phone: css({
+    transform: 'rotate(7deg)',
+    position: 'absolute',
+    top: 0,
+    width: '12rem',
+    borderRadius: '34px',
+    boxShadow:
+      '-80px 40px 100px rgba(0,0,0,0.15), -50px 20px 60px rgba(0,0,0,0.15), -20px 10px 20px rgba(0,0,0,0.15), inset 20px 0px 12px 16px rgba(0, 0, 0, 0.37)',
+    [`@media (min-width: ${nth(0, breakpoints)})`]: {
+      top: '-126px',
+      borderRadius: '46px',
+      width: '16rem'
+    },
+    [`@media (min-width: ${nth(1, breakpoints)})`]: {
+      borderRadius: '53px',
+      width: '18rem'
     }
   }),
   animated: css({
