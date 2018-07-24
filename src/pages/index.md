@@ -71,7 +71,7 @@ kindOfPilot:
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
         from just £2.95 with the tap of a button.
-      title: Hobbyist pilot
+      title: Recreational pilot
   title: What kind of drone pilot are you?
 risk:
   description: >-
