@@ -41,14 +41,17 @@ stopWorrying:
         Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
         Simple!
       title: Fairer pricing
+      icon: images/uploads/shield.svg
     - text: >-
         Pay for insurance only when you fly. Get covered for as little as one
         hour, or up to a day.
       title: Short-term insurance
+      icon: images/uploads/money.svg
     - text: >-
         Get a real-time quote in 30 seconds. You can even see when and where
         it's cheapest to fly.
       title: Total transparency
+      icon: images/uploads/magnifying-glass.svg
   title: It's time for a new kind of insurance.
 kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
@@ -115,12 +118,6 @@ secondTestimonial:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
-download:
-  button:
-    text: /download
-    to: Download
-  text: blasdfasdf
-  title: Blah
 featured:
   image: images/uploads/featured-list.png
   title: We’ve been featured

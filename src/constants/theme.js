@@ -23,9 +23,11 @@ const boxShadows = [
   '0 15px 20px rgba(0, 0, 0, 0.1), 0 2px 7px rgba(0, 0, 0, 0.1)'
 ]
 
+const screenWidths = ['11rem', '15rem', '17rem']
 const phoneWidths = ['12rem', '16rem', '18rem']
 
 const theme = {
+  screenWidths,
   phoneWidths,
   boxShadows,
   breakpoints,
