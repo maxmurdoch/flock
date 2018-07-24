@@ -7,36 +7,36 @@ hero:
     text: Download
     to: /download
   description: |-
-    * Flight assessment and training insurance 
-    * On-demand policies from £5.95
+    * Flight assessment and training insurance from £5.95
     * Drone and accessory cover (up to £3K) 
     * £1M Public Liability cover
+    * Instant proof-of-insurance for PfCO applications.
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
 why:
   description: >-
-    Flock has helped over 500 trainee drone pilots get their Permission for
-    Commercial Operations (PfCO).
+    So far, Flock has helped over 500 pilots get their Permission for Commercial
+    Operations.
   list:
     - text: >-
-        Policies can be purchased on the spot, or pre-booked up to 10 days in
-        advance.
-      title: Insurance when you need it
-    - text: >-
-        Get flight assessment insurance from £6. Any training flights can also
-        be covered too.
+        Get flight assessment insurance from £5.95. Any training flights can
+        also be covered too.
       title: 'Flight assessment insurance '
+    - text: >-
+        Insurance can be purchased on the spot, or pre-booked up to 10 days in
+        advance.
+      title: 'Cover when you need it '
+    - text: Flight assessment rescheduled? Cancel beforehand and get a full refund.
+      title: 'Cancel with a tap '
+    - text: >-
+        Our customer support team will guide you through applying for your 
+        licence.
+      title: PfCO support
     - text: Flock’s policies are EC785/2004 compliant and approved by the CAA.
-      title: 'Fully compliant  '
+      title: 'Fully Compliant '
     - text: >-
         Once you've got your PfCO, you can easily upgrade to a commercial
         operator account.
       title: 'Easy to Upgrade '
-    - text: Flight assessment rescheduled? Cancel beforehand and get a full refund.
-      title: 'Cancel with a tap '
-    - text: >-
-        Chat to our customer support team through the app. We usually reply in
-        minutes.
-      title: Instant support
   title: Why do trainee pilots fly with Flock?
 flightSchool:
   list:
@@ -69,14 +69,14 @@ coverNote:
     to: /download
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance, and it doesn't cost a penny. 
+    insurance, and doesn't cost a penny. 
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
 how:
   description: >-
     Insuring your drone flight has never been simpler. All it takes is a matter
-    of taps.
+    of taps on your mobile phone.
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
@@ -86,7 +86,7 @@ how:
     - image: ../../images/uploads/screens/customise-policy-trainee-screen.png
       text: >-
         From 1-8 hours, select how long you want to be covered for. You can even
-        set the price you want your hull and equipment to be insured for.
+        set the price you want your equipment to be insured for.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
