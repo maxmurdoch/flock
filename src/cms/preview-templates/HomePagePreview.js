@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import {HomeTemplate} from '../../templates/home'
 
 const HomePagePreview = ({entry}) => {
-  const firstTestimonial = entry.getIn(['data', 'firstTestimonial']).toJS()
   const secondTestimonial = entry.getIn(['data', 'secondTestimonial']).toJS()
   const hero = entry.getIn(['data', 'hero']).toJS()
   const howFlockWorks = entry.getIn(['data', 'howFlockWorks']).toJS()
@@ -19,7 +18,6 @@ const HomePagePreview = ({entry}) => {
 
   return (
     <HomeTemplate
-      firstTestimonial={firstTestimonial}
       secondTestimonial={secondTestimonial}
       hero={hero}
       howFlockWorks={howFlockWorks}
