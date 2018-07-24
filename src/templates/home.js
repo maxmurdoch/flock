@@ -39,6 +39,7 @@ const HomeTemplate = ({
   kindOfPilot,
   risk
 }) => {
+  console.log(video)
   return (
     <StickyContainer>
       <div>
@@ -205,6 +206,7 @@ export const query = graphql`
           }
         }
         video {
+          isShowing
           text
           id
           coverImage
