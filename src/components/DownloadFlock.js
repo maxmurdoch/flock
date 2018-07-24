@@ -23,7 +23,7 @@ const DownloadFlock = () => {
           </Box>
           <Box width={['100%', '50%']}>
             <BodyText textAlign="center">
-              Get the Flock Cover app on iOS and Android and receive a real-time quote for your flight in seconds.
+              Get the Flock Cover app on iOS and Android to receive a real-time quote for your flight in seconds.
             </BodyText>
           </Box>
           <Box
