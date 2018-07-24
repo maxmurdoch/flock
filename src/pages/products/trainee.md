@@ -13,7 +13,7 @@ hero:
     * £1M Public Liability cover
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
 why:
-  description: ''
+  description: Flock has helped over 500 trainee pilots get their PfCO.
   list:
     - text: >-
         Policies can be purchased on the spot, or pre-booked up to 10 days in
