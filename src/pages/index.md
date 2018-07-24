@@ -24,8 +24,8 @@ howFlockWorks:
       title: 1. Enter your flight details
     - image: images/uploads/phones/customise-policy-home.png
       text: >-
-        From 1-8 hours, select how long you want to be covered for. We’ll
-        instantly update your quote so you can see the difference.
+        Select how long you want to be insured for. With options from 1-8 hours,
+        get covered only for the hours you fly.
       title: 2. Customise your policy
     - image: images/uploads/phones/get-flying-home.png
       text: >-
