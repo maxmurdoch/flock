@@ -57,10 +57,6 @@ const Footer = ({containerClassName}) => {
 
   const secondFooterLinks = [
     {
-      to: '/pricing',
-      text: 'Pricing'
-    },
-    {
       to: '/about',
       text: 'About us'
     },
