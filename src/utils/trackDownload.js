@@ -1,7 +1,7 @@
 'use strict'
 
 const downloadClickHandler = () => {
-  analytics.track('Application Downloaded')
+  analytics.track('Application Download Viewed')
 }
 
 export default downloadClickHandler
