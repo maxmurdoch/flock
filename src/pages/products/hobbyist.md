@@ -9,13 +9,13 @@ hero:
   description: |-
     * On-demand insurance from £2.95
     * Short-term cover from 1-8 hours
-    * Public Liability insurance up to £250 K
+    * Public Liability insurance up to £250,000 
     * Real-time risk assessment
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
   description: >-
-    Enjoy your favourite hobby without worrying about insurance. Get covered on
-    the spot for the price of a coffee.
+    Enjoy your favourite hobby without worrying about insurance. Get covered
+    on-demand for the price of a coffee.
   list:
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
@@ -66,12 +66,12 @@ coverNote:
 doINeedInsurance:
   bigText: >-
     Whilst it's not against the law in the UK to fly without insurance, a flying
-    metal robot with spinning propellers has the potential to cause some serious
+    robot with spinning propellers has the potential to cause some serious
     damage. 
 
 
     Flock's Public Liability insurance starts from just £2.95, and gives you
-    peace of mind the second you take off.
+    peace of mind from the second you take off.
   smallText: ''
   title: |-
     I fly my drone for fun,
@@ -84,7 +84,7 @@ how:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your flight area, and the date and time you want to fly. Receive
-        an real-time quote instantly.
+        a real-time quote instantly.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-home-screen.png
       text: >-
@@ -93,10 +93,10 @@ how:
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay for policy and you're good to go! All the important documentation is
-        sent straight to your email inbox.
+        Pay and you're good to go! Your policy documents are instantly emailed
+        to you.
       title: 3. Get flying
-  title: How hobbyists use Flock
+  title: 'How Flock Cover works '
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
@@ -127,7 +127,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: Know your risks before you fly.
+  title: Know your risks before you fly
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/3@2x.png
