@@ -9,8 +9,8 @@ hero:
   description: |-
     * On-demand insurance from £4.95
     * EC785/2004 compliant policies
-    * Customisable Public Liability limits (from £1-10M)
-    * Drone and accessory cover (up to £25K)
+    * Customisable Public Liability limits, from £1-10M
+    * Drone and accessory cover, up to £25,000
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
   description: Over 2000 UK drone pilots now use Flock Cover.
@@ -68,18 +68,17 @@ how:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        an real-time quote instantly.
+        a real-time quote instantly.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-home-screen.png
       text: >-
-        Select how long you want to be covered for, and your Public Liability
-        limit. You can even set the amount you want your equipment to be insured
-        for.
+        Select your Cover Duration and Public Liability limit. You can even set
+        the amount you want your equipment to be insured for.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay for the policy and you're ready for take-off! All the important
-        documentation is sent straight to your email.
+        Pay for the policy and you're ready to fly! Your policy documents are
+        instantly emailed to you.
       title: 3. Get flying
   title: How Flock Cover works
 risk:
