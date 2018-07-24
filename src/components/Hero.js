@@ -15,6 +15,7 @@ import ShowIf from './ShowIf'
 import BodyText from './BodyText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import {colors, breakpoints} from '../constants/theme'
+import trackDownload from '../utils/trackDownload'
 
 const Hero = ({
   textColor = colors.dark,
@@ -65,11 +66,11 @@ const Hero = ({
                 <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
                   {matches =>
                     matches ? (
-                      <PrimaryButton to={button.to}>
+                      <PrimaryButton to={button.to} onClick={trackDownload}>
                         <ArrowText moveOnHover={false}>{button.text}</ArrowText>
                       </PrimaryButton>
                     ) : (
-                      <SecondaryButton to={button.to}>
+                      <SecondaryButton to={button.to} onClick={trackDownload}>
                         <ArrowText moveOnHover={false}>{button.text}</ArrowText>
                       </SecondaryButton>
                     )
