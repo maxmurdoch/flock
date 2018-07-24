@@ -9,7 +9,7 @@ hero:
   description: |-
     * Flight assessment and training insurance 
     * On-demand policies from £5.95
-    * Flexible equipment cover (up to £3K) 
+    * Drone and accessory cover (up to £3K) 
     * £1M Public Liability cover
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
 why:
