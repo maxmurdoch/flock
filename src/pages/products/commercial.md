@@ -1,27 +1,26 @@
 ---
 title: Commercial
 templateKey: product
-
 hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
   button:
     text: Download
     to: /download
   description: |-
-    * On-demand insurance from £5 
-    * Customisable Public Liability Limits (from £1-10M)
-    * Flexible hull and equipment insurance (up to £25K)
+    * On-demand insurance from £4.95
+    * EC785/2004 compliant policies
+    * Customisable Public Liability limits (from £1-10M)
+    * Flexible equipment insurance (up to £25K)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
-
 why:
   list:
     - text: >-
         We know two jobs are never the same. Customise your insurance
         flight-by-flight.
-      title: 'Bespoke cover'
+      title: Bespoke cover
     - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
-        from £5 a day.
+        from £4.95 a day.
       title: Fairer pricing
     - text: Flock’s policies are EC785/2004 compliant and CAA approved.
       title: Fully compliant
@@ -33,56 +32,60 @@ why:
         Schedule flights up to 10 days in advance. Change of plan? Cancel with
         one tap.
       title: 'Book in advance '
-    - text: 'Chat to our customer support team through the app, or give us a call.'
+    - text: >-
+        Chat to our customer support team through the app. We typically reply in
+        minutes.
       title: Instant support
-  title: 'Why do professionals fly with Flock? '
-
+  title: 'Why do commercial pilots fly with Flock? '
 flightSchool:
-  show: false
-  title: 'Flock is proud to work with the leading flight schools in the UK'
   list:
     - image: ''
       to: ''
-
+  show: false
+  title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
-  isShowing: true
+  bodyText: >-
+    You no longer need to commit to an annual insurance policy in order to get
+    your proof-of-insurance for your PfCO renewal.
   image: ../../images/uploads/cover-note.svg
-  title: 'Applying for your PfCO?'
-  bodyText: 'You no longer need to commit to an annual insurance policy in order to get your proof of insurance for your PfCO renewal.'
-  smallText: 'Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant insurance, and you can get yours instantly without having to pay a penny.'
+  isShowing: true
   link:
+    text: Learn how to get your Cover Note within the app →
     to: /download
-    text: Learn how to get your cover note within our app →
-
+  smallText: >-
+    Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
+    insurance, and you can get yours instantly emailed to you without having to
+    pay a penny.
+  title: Renewing your PfCO?
 doINeedInsurance:
   title: ''
-
 how:
   description: >-
     Insuring your drone flight has never been easier. All it takes is a matter
-    of taps.
+    of taps on your mobile phone.
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
-        Choose your flight area, and the date and time you want to fly.
-        Instantly receive a real-time quote at the bottom of your screen.
+        Choose your Flight Area, and the date and time you want to fly. Receive
+        an real-time quote instantly.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-home-screen.png
       text: >-
-        Select your cover duration and liability limit. You can even set the
-        amount you want your hull and equipment to be insured for.
+        Select how long you want to be covered for, and your Public Liability
+        limit. You can even set the amount you want your equipment (drone +
+        accessories) to be insured for.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay for the policy and you're good to go! All the important
-        documentation is sent straight to your email inbox.
+        Pay for the policy and you're ready for take-off! All the important
+        documentation is sent straight to your email.
       title: 3. Get flying
   title: How Flock Cover works
-
 risk:
   description: >-
-    Know your risks before you fly. Simply enter your flight's details and
-    receive a real-time risk report.
+    With Flock Cover you get much more than just an insurance policy. The app
+    analyses real-time data in your Flight Area to instantly identify the
+    important risks.
   list:
     - icon: ../../images/uploads/icons-house.svg
       list:
@@ -108,8 +111,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: 'Insurance and then some…'
-
+  title: 'Know your risks before you fly. '
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/4@2x.png
@@ -122,26 +124,24 @@ testimonial:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
-
 otherProducts:
   description: >-
     Chances are we can provide coverage tailored specifically to you. Select
     below to learn more.
   products:
     - icon: /images/uploads/trainee-pilot.svg
-      link: '/products/trainee'
+      link: /products/trainee
       text: >-
         From flight assessment insurance, to providing proof-of-insurance in
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
     - icon: /images/uploads/recreational-pilot.svg
-      link: '/products/hobbyist'
+      link: /products/hobbyist
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
-        from just £3 with the touch of a button.
+        from just £2.95 with the touch of a button.
       title: 'Hobbyist pilot '
   title: What kind of drone pilot are you?
-
 siteMetadataOverride:
   description: drone insurance
   keywords:
@@ -150,7 +150,6 @@ siteMetadataOverride:
     - on-demand
     - Flock
     - commercial drone insurance
-
-  title: 'Commercial'
-
+  title: Commercial
 ---
+
