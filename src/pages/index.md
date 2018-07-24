@@ -101,7 +101,7 @@ risk:
       title: Hyperlocal weather
   title: Know your risks before you fly.
 calculator:
-  description: Give us an idea of your flying habits for an estimated quote.
+  description: 'Give us an idea of your flying habits for an estimated quote per-flight. '
   title: How much could you save?
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
