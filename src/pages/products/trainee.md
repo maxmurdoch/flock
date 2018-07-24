@@ -13,7 +13,9 @@ hero:
     * £1M Public Liability cover
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
 why:
-  description: Flock has helped over 500 trainee pilots get their PfCO.
+  description: >-
+    Flock has helped over 500 trainee drone pilots get their Permission for
+    Commercial Operations (PfCO).
   list:
     - text: >-
         Policies can be purchased on the spot, or pre-booked up to 10 days in
@@ -31,7 +33,9 @@ why:
       title: 'Easy to Upgrade '
     - text: Flight assessment rescheduled? Cancel beforehand and get a full refund.
       title: 'Cancel with a tap '
-    - text: 'Chat to our customer support team through the app, or give us a call.'
+    - text: >-
+        Chat to our customer support team through the app. We usually reply in
+        minutes.
       title: Instant support
   title: Why do trainee pilots fly with Flock?
 flightSchool:
@@ -56,16 +60,16 @@ flightSchool:
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
   bodyText: >-
-    You no longer need to commit to an annual insurance policy in order to get
-    your proof of insurance for your PfCO renewal.
+    Flock is here to help. You can get your proof-of-insurance for your PfCO
+    application emailed to you in seconds using the app. 
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Learn how to get your cover note within our app →
+    text: Learn how to get your Cover Note within the app →
     to: /download
   smallText: >-
-    Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance, and you can get yours instantly without having to pay a penny.
+    Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
+    insurance, and it doesn't cost a penny. 
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
@@ -92,8 +96,9 @@ how:
   title: How Flock Cover works
 risk:
   description: >-
-    Know your risks before you fly. Simply enter your flight's details and
-    receive a real-time risk report.
+    With Flock Cover you get much more than just an insurance policy. The app
+    analyses real-time data in your Flight Area to instantly identify the
+    important risks before take-off.
   list:
     - icon: ../../images/uploads/icons-house.svg
       list:
@@ -119,7 +124,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: Insurance and then some..
+  title: Know your risks before you fly.
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/1@2x.png
@@ -146,13 +151,13 @@ otherProducts:
       link: /products/commercial
       text: >-
         Flock’s EC785/2004 compliant policies offer flexible hull and liability
-        insurance from just £5 a day.
+        insurance from just £4.95 a day.
       title: Commercial pilot
     - icon: /images/uploads/recreational-pilot.svg
       link: /products/hobbyist
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
-        from just £3 with the touch of a button.
+        from just £2.95 with the touch of a button.
       title: Hobbyist pilot
   title: What kind of pilot are you?
 siteMetadataOverride:
