@@ -8,13 +8,13 @@ hero:
     to: /download
   description: |-
     * Flight assessment and training insurance from £5.95
-    * Drone and accessory cover (up to £3K) 
+    * Drone and accessory cover, up to £3,000
     * £1M Public Liability cover
-    * Instant proof-of-insurance for PfCO applications.
+    * Instant proof-of-insurance for PfCO applications
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
 why:
   description: >-
-    So far, Flock has helped over 500 pilots get their Permission for Commercial
+    Flock has helped over 500 drone pilots get their Permission for Commercial
     Operations.
   list:
     - text: >-
@@ -60,8 +60,8 @@ flightSchool:
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
   bodyText: >-
-    Flock is here to help. You can get your proof-of-insurance for your PfCO
-    application emailed to you in seconds using the app. 
+    We're here to help. You can get your proof-of-insurance for your PfCO
+    application emailed to you in seconds with the Flock Cover app.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
@@ -69,7 +69,7 @@ coverNote:
     to: /download
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance, and doesn't cost a penny. 
+    insurance, and doesn't cost a penny.
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
@@ -80,8 +80,8 @@ how:
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
-        Choose your flight area, and the date and time you want to fly.
-        Instantly receive a real-time quote at the bottom of your screen.
+        Choose your flight area, and the date and time you want to fly. Receive
+        a real-time quote instantly.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-trainee-screen.png
       text: >-
@@ -90,8 +90,8 @@ how:
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay for the policy and you’re good to go! All the important
-        documentation is instantly emailed to you.
+        Pay and you're ready to fly! Your policy documents are instantly emailed
+        to you.
       title: 3. Get flying
   title: How Flock Cover works
 risk:
@@ -124,7 +124,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: Know your risks before you fly.
+  title: Know your risks before you fly
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/1@2x.png
