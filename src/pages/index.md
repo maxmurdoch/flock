@@ -32,7 +32,7 @@ howFlockWorks:
         documentation is sent straight to your email.
       title: 3. Get flying
   title: |-
-    How Flock Cover 
+    How Flock Cover
     works
 stopWorrying:
   description: >-
@@ -44,14 +44,17 @@ stopWorrying:
         [risk-dependent](http://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price);
         so the safer your flight, the less you pay. Simple!
       title: Fairer pricing
+      icon: images/uploads/shield.svg
     - text: >-
         Get covered in 30 seconds for as little as one hour, or up to a day. You
         decide.
       title: Short-term insurance
+      icon: images/uploads/money.svg
     - text: >-
         Build your insurance from the ground up, so you only pay for the cover
         you need.
       title: Total transparency
+      icon: images/uploads/magnifying-glass.svg
   title: 'The smarter new way to insure your drone. '
 kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
@@ -118,12 +121,6 @@ secondTestimonial:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
-download:
-  button:
-    text: /download
-    to: Download
-  text: blasdfasdf
-  title: Blah
 featured:
   image: images/uploads/featured-list.png
   title: We’ve been featured
@@ -133,4 +130,3 @@ siteMetadataOverride:
     - ''
   title: ''
 ---
-

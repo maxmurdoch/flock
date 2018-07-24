@@ -34,7 +34,6 @@ const HomeTemplate = ({
   howFlockWorks,
   siteMetadataOverride,
   stopWorrying,
-  download,
   featured,
   calculator,
   kindOfPilot,
@@ -105,11 +104,7 @@ const HomeTemplate = ({
           <Testimonial testimonials={secondTestimonial} />
         </Box>
         <Box pt={[3, 5]}>
-          <DownloadFlock
-            title={download.title}
-            text={download.text}
-            button={download.button}
-          />
+          <DownloadFlock />
         </Box>
         <BigSectionLine />
         <Featured title={featured.title} image={featured.image} />
@@ -257,14 +252,6 @@ export const query = graphql`
           quote
           author
           image
-        }
-        download {
-          title
-          text
-          button {
-            to
-            text
-          }
         }
         featured {
           title
