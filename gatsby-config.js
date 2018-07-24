@@ -41,21 +41,18 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
-      }
-    },
     'gatsby-plugin-emotion',
     'gatsby-plugin-netlify-cms',
     {
-      resolve: `gatsby-plugin-segment-js`,
+      resolve: 'gatsby-plugin-segment-js',
       options: {
-        prodKey: `J5p8puLW0RzI5J7x74TQioRNwBkoRei3`,
-        devKey: `hjQsqleIuNWqPzITXoC5ptb00148l3nN`,
+        prodKey: 'J5p8puLW0RzI5J7x74TQioRNwBkoRei3',
+        devKey: 'hjQsqleIuNWqPzITXoC5ptb00148l3nN',
         trackPage: true
       }
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms'
     }
   ]
 }
