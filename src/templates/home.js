@@ -74,13 +74,15 @@ const HomeTemplate = ({
             products={kindOfPilot.products}
           />
         </Box>
-        <Box pb={[2, 3]}>
-          <ModalVideo
-            text={video.text}
-            videoId={video.id}
-            coverImage={video.coverImage}
-          />
-        </Box>
+        {video.isShowing ? (
+          <Box pb={[2, 3]}>
+            <ModalVideo
+              text={video.text}
+              videoId={video.id}
+              coverImage={video.coverImage}
+            />
+          </Box>
+        ) : null}
         <MapBackground>
           <ToggleiPhone
             title={howFlockWorks.title}
@@ -203,6 +205,7 @@ export const query = graphql`
           }
         }
         video {
+          isShowing
           text
           id
           coverImage

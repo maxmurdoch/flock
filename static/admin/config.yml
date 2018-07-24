@@ -32,6 +32,7 @@ collections:
             name: video
             widget: object
             fields:
+              - {name: isShowing, label: 'Show video?', widget: boolean}
               - {label: 'Text', name: 'text', widget: 'string'}
               - {label: 'YouTube ID', name: 'id', widget: 'string'}
               - {label: 'Cover image', name: 'coverImage', widget: 'image'}
@@ -45,9 +46,9 @@ collections:
                 name: 'listOfHow'
                 widget: 'list'
                 fields:
-                  - {label: 'Title', name: 'title', widget: 'string'} 
-                  - {label: 'Text', name: 'text', widget: 'markdown'} 
-                  - {label: 'Image', name: 'image', widget: 'image'} 
+                  - {label: 'Title', name: 'title', widget: 'string'}
+                  - {label: 'Text', name: 'text', widget: 'markdown'}
+                  - {label: 'Image', name: 'image', widget: 'image'}
           - label: 'Stop worrying'
             name: 'stopWorrying'
             widget: 'object'
@@ -58,9 +59,9 @@ collections:
                 name: 'reasons'
                 widget: 'list'
                 fields:
-                  - {label: 'Title', name: 'title', widget: 'string'} 
-                  - {label: 'Text', name: 'text', widget: 'markdown'} 
-                  - {label: 'Icon', name: 'image', widget: 'image'} 
+                  - {label: 'Title', name: 'title', widget: 'string'}
+                  - {label: 'Text', name: 'text', widget: 'markdown'}
+                  - {label: 'Icon', name: 'image', widget: 'image'}
           - label: 'What kind of pilot?'
             name: 'kindOfPilot'
             widget: 'object'
@@ -71,10 +72,10 @@ collections:
                 name: 'products'
                 widget: 'list'
                 fields:
-                  - {label: 'Title', name: 'title', widget: 'string'} 
-                  - {label: 'Text', name: 'text', widget: 'markdown'} 
-                  - {label: 'Icon', name: 'icon', widget: 'image'} 
-                  - {label: 'Link', name: 'link', widget: 'string'} 
+                  - {label: 'Title', name: 'title', widget: 'string'}
+                  - {label: 'Text', name: 'text', widget: 'markdown'}
+                  - {label: 'Icon', name: 'icon', widget: 'image'}
+                  - {label: 'Link', name: 'link', widget: 'string'}
           - label: 'Risk'
             name: 'risk'
             widget: 'object'
@@ -85,9 +86,9 @@ collections:
                 name: 'list'
                 widget: 'list'
                 fields:
-                  - {label: 'Title', name: 'title', widget: 'string'} 
-                  - {label: 'List', name: 'list', widget: 'list'} 
-                  - {label: 'Icon', name: 'icon', widget: 'image'} 
+                  - {label: 'Title', name: 'title', widget: 'string'}
+                  - {label: 'List', name: 'list', widget: 'list'}
+                  - {label: 'Icon', name: 'icon', widget: 'image'}
           - label: 'Calculator'
             name: 'calculator'
             widget: 'object'
@@ -191,8 +192,8 @@ collections:
                 name: 'list'
                 widget: 'list'
                 fields:
-                  - {label: 'Text', name: 'text', widget: 'markdown'} 
-                  - {label: 'Title', name: 'title', widget: 'markdown'} 
+                  - {label: 'Text', name: 'text', widget: 'markdown'}
+                  - {label: 'Title', name: 'title', widget: 'markdown'}
           - name: meetTheTeam
             label: Meet the team
             widget: object
@@ -203,9 +204,9 @@ collections:
                 name: 'team'
                 widget: 'list'
                 fields:
-                  - {label: 'Member', name: 'member', widget: 'string'} 
-                  - {label: 'Role', name: 'role', widget: 'markdown'} 
-                  - {label: 'Image', name: 'image', widget: 'image'} 
+                  - {label: 'Member', name: 'member', widget: 'string'}
+                  - {label: 'Role', name: 'role', widget: 'markdown'}
+                  - {label: 'Image', name: 'image', widget: 'image'}
           - name: "siteMetadataOverride"
             label: "Site metadata override"
             required: false
@@ -245,14 +246,14 @@ collections:
             name: 'list'
             widget: 'list'
             fields:
-              - {label: 'Title', name: 'title', widget: 'string'} 
-              - {label: 'Text', name: 'text', widget: 'markdown'} 
+              - {label: 'Title', name: 'title', widget: 'string'}
+              - {label: 'Text', name: 'text', widget: 'markdown'}
       - label: 'Flight school'
         name: 'flightSchool'
         widget: 'object'
         fields:
-          - {label: 'Show flight school list?', name: 'show', widget: 'boolean'} 
-          - {label: 'Title', name: 'title', widget: 'string'} 
+          - {label: 'Show flight school list?', name: 'show', widget: 'boolean'}
+          - {label: 'Title', name: 'title', widget: 'string'}
           - name: 'list'
             label: 'Flight schools'
             widget: list
@@ -291,9 +292,9 @@ collections:
             name: 'list'
             widget: 'list'
             fields:
-              - {label: 'Title', name: 'title', widget: 'string'} 
-              - {label: 'Text', name: 'text', widget: 'markdown'} 
-              - {label: 'Image', name: 'image', widget: 'image'} 
+              - {label: 'Title', name: 'title', widget: 'string'}
+              - {label: 'Text', name: 'text', widget: 'markdown'}
+              - {label: 'Image', name: 'image', widget: 'image'}
       - label: 'Risk'
         name: 'risk'
         widget: 'object'
@@ -304,9 +305,9 @@ collections:
             name: 'list'
             widget: 'list'
             fields:
-              - {label: 'Title', name: 'title', widget: 'string'} 
-              - {label: 'List', name: 'list', widget: 'list'} 
-              - {label: 'Icon', name: 'icon', widget: 'image'} 
+              - {label: 'Title', name: 'title', widget: 'string'}
+              - {label: 'List', name: 'list', widget: 'list'}
+              - {label: 'Icon', name: 'icon', widget: 'image'}
       - label: 'Testimonials'
         name: 'testimonial'
         widget: 'list'
@@ -336,5 +337,3 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
           - {label: "Keywords", name: "keywords", widget: "list"}
-
-
