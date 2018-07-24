@@ -10,7 +10,6 @@ const HomePagePreview = ({entry}) => {
     .getIn(['data', 'siteMetadataOverride'])
     .toJS()
   const stopWorrying = entry.getIn(['data', 'stopWorrying']).toJS()
-  const download = entry.getIn(['data', 'download']).toJS()
   const featured = entry.getIn(['data', 'featured']).toJS()
   const calculator = entry.getIn(['data', 'calculator']).toJS()
   const kindOfPilot = entry.getIn(['data', 'kindOfPilot']).toJS()
@@ -23,7 +22,6 @@ const HomePagePreview = ({entry}) => {
       howFlockWorks={howFlockWorks}
       siteMetadataOverride={siteMetadataOverride}
       stopWorrying={stopWorrying}
-      download={download}
       featured={featured}
       calculator={calculator}
       kindOfPilot={kindOfPilot}
