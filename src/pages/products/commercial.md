@@ -13,7 +13,7 @@ hero:
     * Drone and accessory cover, up to £25,000
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: Over 2000 UK drone pilots now use Flock Cover.
+  description: Over 2000 UK drone pilots now use the Flock Cover app.
   list:
     - text: >-
         We know two jobs are never the same. Customise your insurance
@@ -77,8 +77,8 @@ how:
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay for the policy and you're ready to fly! Your policy documents are
-        instantly emailed to you.
+        Pay and you're ready to fly! Your policy documents are instantly emailed
+        to you.
       title: 3. Get flying
   title: How Flock Cover works
 risk:
@@ -111,7 +111,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: 'Know your risks before you fly. '
+  title: Know your risks before you fly
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/4@2x.png
