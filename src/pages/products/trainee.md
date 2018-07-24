@@ -158,7 +158,7 @@ otherProducts:
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
         from just £2.95 with the touch of a button.
-      title: Hobbyist pilot
+      title: Recreational pilot
   title: What kind of pilot are you?
 siteMetadataOverride:
   description: ''
