@@ -5,7 +5,7 @@ hero:
   button:
     text: 'Download '
     to: /download
-  description: 'Drone insurance by the hour, only when you need it.'
+  description: 'Flock Cover lets you insure your drone by the hour, only when you need it.'
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -13,8 +13,8 @@ video:
   text: See for yourself
 howFlockWorks:
   description: >-
-    Insuring your drone flight has never been easier. A few taps on your mobile
-    phone and you're protected.
+    Insuring your drone flight has never been easier. All it takes is a matter
+    of taps on your mobile phone.
   listOfHow:
     - image: images/uploads/phones/flight-details-home.png
       text: >-
@@ -42,8 +42,8 @@ stopWorrying:
         pay. It’s as simple as that.
       title: Fairer pricing
     - text: >-
-        Pay for insurance only when you fly. Get covered for as little as one
-        hour, or up to a day. You decide.
+        Pay for drone insurance only when you fly. Get covered for as little as
+        one hour, or up to a day. You decide.
       title: Short-term insurance
     - text: >-
         Get a real-time quote in 30 seconds. You can use the app to see where
@@ -76,7 +76,7 @@ risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
     analyses real-time data in your Flight Area to instantly identify the
-    important risks.
+    important risks before you take-off.
   list:
     - icon: images/uploads/icons-house.svg
       list:
@@ -101,7 +101,7 @@ risk:
       title: Hyperlocal weather
   title: Know your risks before you fly.
 calculator:
-  description: 'Give us an idea of your flying habits for an estimated quote per-flight. '
+  description: 'Give us an idea of your flying habits for an estimated quote. '
   title: How much could you save?
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
