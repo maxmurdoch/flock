@@ -1,67 +1,68 @@
 ---
-title: Hobbyist
-
+title: Recreational
 templateKey: product
-
 hero:
   backgroundImage: ../../images/uploads/hobbyist-header.jpg
   button:
     text: Download
     to: /download
   description: |-
-    * On-demand insurance from £3
-    * Policies from 1-8 hours 
+    * On-demand insurance from £2.95
+    * Short-term cover from 1-8 hours
     * Public Liability insurance up to £250 K
-  header: 'Pay-as-you-fly drone insurance for hobbyists '
-
+    * Real-time risk assessment
+  header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
-  description: ''
+  description: >-
+    Enjoy your favourite hobby without worrying about insurance. Get covered on
+    the spot for the price of a coffee.
   list:
-    - text: >-
-        Get covered on the spot or plan a flight up to 10 days in advance. It
-        only takes 30 seconds.
-      title: 'Simple Insurance '
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
         pay. Simple!
       title: Fairer pricing
     - text: >-
-        Pay for insurance only when you fly. Get covered for as little as one
-        hour, or up to a day.
+        Insure your drone flight for as little as an hour, or up to a day. You
+        decide.
       title: 'Short-term cover  '
-  title: Why do hobbyists use Flock?
-
+    - text: >-
+        Get covered on the spot or plan a flight up to 10 days in advance. It
+        only takes 60 seconds.
+      title: SIMPLE INSURANCE
+  title: Why do recreational pilots fly with Flock?
 flightSchool:
-  show: true
-  title: 'Flock is proud to work with the leading flight schools in the UK'
   list:
     - image: ../../images/uploads/uav-trade-craft.png
-      to: https://uavtradecraft.com/
+      to: 'https://uavtradecraft.com/'
     - image: ../../images/uploads/uav-hummingbird.png
-      to: https://www.hummingbird-uav.co.uk/
+      to: 'https://www.hummingbird-uav.co.uk/'
     - image: ../../images/uploads/flyby-technology-logo.png
-      to: https://www.flybydronetraining.co.uk/  
+      to: 'https://www.flybydronetraining.co.uk/'
     - image: ../../images/uploads/the-aerial-academy.png
-      to: https://dronetraining.co.uk/
+      to: 'https://dronetraining.co.uk/'
     - image: ../../images/uploads/uav-academy.png
-      to: http://uavacademy.co.uk/
+      to: 'http://uavacademy.co.uk/'
     - image: ../../images/uploads/aerial-motion-pictures.png
-      to: https://www.aerialmotionpictures.co.uk/
+      to: 'https://www.aerialmotionpictures.co.uk/'
     - image: ../../images/uploads/3iC.png
-      to: https://3ic.co.uk/
+      to: 'https://3ic.co.uk/'
     - image: ../../images/uploads/drone-partners.png
-      to: https://dronepartners.co.uk/
-
+      to: 'https://dronepartners.co.uk/'
+  show: false
+  title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
-  isShowing: false
+  bodyText: >-
+    You no longer need to commit to an annual insurance policy in order to get
+    your proof of insurance for your PfCO renewal.
   image: ../../images/uploads/cover-note.svg
-  title: 'Applying for your PfCO?'
-  bodyText: 'You no longer need to commit to an annual insurance policy in order to get your proof of insurance for your PfCO renewal.'
-  smallText: 'Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant insurance, and you can get yours instantly without having to pay a penny.'
+  isShowing: false
   link:
-    to: /download
     text: Learn how to get your cover note within our app →
-
+    to: /download
+  smallText: >-
+    Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant
+    insurance, and you can get yours instantly without having to pay a penny.
+  title: Applying for your PfCO?
 doINeedInsurance:
   bigText: >-
     Whilst it's not against the law in the UK to fly without insurance, a flying
@@ -69,22 +70,21 @@ doINeedInsurance:
     damage. 
 
 
-    Flock's Public Liability insurance starts from just £3, and gives you peace
-    of mind the second you take off.
+    Flock's Public Liability insurance starts from just £2.95, and gives you
+    peace of mind the second you take off.
   smallText: ''
   title: |-
     I fly my drone for fun,
     do I need insurance?
-
 how:
   description: >-
     Insuring your drone flight has never been simpler. All it takes is a matter
-    of taps.
+    of taps on your mobile phone.
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
-        Choose your flight area, and the date and time you want to fly.
-        Instantly receive a real-time quote at the bottom of your screen.
+        Choose your flight area, and the date and time you want to fly. Receive
+        an real-time quote instantly.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-home-screen.png
       text: >-
@@ -97,11 +97,11 @@ how:
         sent straight to your email inbox.
       title: 3. Get flying
   title: How hobbyists use Flock
-
 risk:
   description: >-
-    Know your risks before you fly. Simply enter your flight's details and
-    receive a real-time risk report.
+    With Flock Cover you get much more than just an insurance policy. The app
+    analyses real-time data in your Flight Area to instantly identify the
+    important risks before take-off.
   list:
     - icon: ../../images/uploads/icons-house.svg
       list:
@@ -127,8 +127,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: Insurance and then some..
-
+  title: Know your risks before you fly.
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/3@2x.png
@@ -141,7 +140,6 @@ testimonial:
     quote: >-
       I hate drones. But I have one. And I insure my property because I'm a
       responsible adult. Flock are the best drone insurers. I use Flock.
-
 otherProducts:
   description: >-
     Chances are we can provide coverage tailored specifically to you. Select
@@ -151,7 +149,7 @@ otherProducts:
       link: /products/commercial
       text: >-
         Flock’s EC785/2004 compliant policies offer flexible hull and liability
-        insurance from just £5 a day.
+        insurance from just £4.95 a day.
       title: Commercial pilot
     - icon: /images/uploads/trainee-pilot.svg
       link: /products/trainee
@@ -160,7 +158,6 @@ otherProducts:
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
   title: What kind of pilot are you?
-
 siteMetadataOverride:
   description: drone insurance
   keywords:
@@ -169,7 +166,6 @@ siteMetadataOverride:
     - on-demand
     - Flock
     - commercial drone insurance
-  title: 'Hobbyist'
-
+  title: Hobbyist
 ---
 
