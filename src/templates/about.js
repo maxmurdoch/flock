@@ -52,12 +52,19 @@ const PricingTemplate = ({
           imageHeader={flockStory.imageHeader}
         />
         <BigSectionLine />
+        {coreValues.isShowing ? (
+          <TextGrid
+            title={coreValues.title}
+            description={coreValues.description}
+            list={coreValues.list}
+          />
+          <BigSectionLine />
+        ) : null}
         <TextGrid
           title={coreValues.title}
           description={coreValues.description}
           list={coreValues.list}
         />
-        <BigSectionLine />
         <MeetTheTeam
           title={meetTheTeam.title}
           description={meetTheTeam.description}
@@ -130,6 +137,7 @@ export const query = graphql`
         coreValues {
           title
           description
+          isShowing
           list {
             title
             text

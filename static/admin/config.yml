@@ -186,6 +186,7 @@ collections:
             label: Core values
             widget: object
             fields:
+              - {name: isShowing, label: 'Show Core Values?', widget: boolean}
               - {name: 'title', label: 'Title', widget: 'string'}
               - {name: 'description', label: 'Description', widget: 'markdown'}
               - label: 'List'
