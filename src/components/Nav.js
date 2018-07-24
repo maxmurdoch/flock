@@ -121,16 +121,6 @@ class Nav extends Component {
                           </SmallText>
                         </Link>
                       </Flex>
-                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
-                        <Link
-                          activeStyle={activeLinkStyle}
-                          className={linkClass}
-                          exact={true}
-                          to="/pricing"
-                        >
-                          <SmallText>Pricing</SmallText>
-                        </Link>
-                      </Flex>
 
                       <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
