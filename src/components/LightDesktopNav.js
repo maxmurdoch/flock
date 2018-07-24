@@ -10,6 +10,7 @@ import whiteDownArrow from '../images/icons/small-down-arrow-white.svg'
 import whiteLogo from '../images/logo-white.svg'
 import Nav from './Nav'
 import {colors} from '../constants/theme'
+import trackDownload from '../utils/trackDownload'
 
 const LightDesktopNav = () => {
   return (
@@ -25,13 +26,13 @@ const LightDesktopNav = () => {
       DownloadButton={({isSticky}) =>
         isSticky ? (
           <SecondaryButton
-            onClick={() => console.log('clicked')}
+             onClick={trackDownload}
             Text={SmallText}
           >
             Download
           </SecondaryButton>
         ) : (
-          <WhiteButton Text={SmallText} onClick={() => console.log('clicked')}>
+          <WhiteButton Text={SmallText} onClick={trackDownload}>
             Download
           </WhiteButton>
         )
