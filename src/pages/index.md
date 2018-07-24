@@ -10,6 +10,7 @@ hero:
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
+  isShowing: true
   text: See for yourself
 howFlockWorks:
   description: >-
