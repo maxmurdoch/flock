@@ -23,6 +23,7 @@ const AboutTemplate = ({
   coreValues,
   meetTheTeam
 }) => {
+  console.log(coreValues)
   return (
     <StickyContainer>
       <div>
@@ -60,13 +61,13 @@ const AboutTemplate = ({
               list={coreValues.list}
             />
             <BigSectionLine />
+            <TextGrid
+              title={coreValues.title}
+              description={coreValues.description}
+              list={coreValues.list}
+            />
           </Fragment>
         ) : null}
-        <TextGrid
-          title={coreValues.title}
-          description={coreValues.description}
-          list={coreValues.list}
-        />
         <MeetTheTeam
           title={meetTheTeam.title}
           description={meetTheTeam.description}
