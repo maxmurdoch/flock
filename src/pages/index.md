@@ -3,56 +3,59 @@ title: Home
 templateKey: home
 hero:
   button:
-    text: Download
+    text: 'Download '
     to: /download
-  description: 'Smarter drone insurance by the hour, only when you need it.'
+  description: 'Drone insurance by the hour, only when you need it.'
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
   text: See for yourself
 howFlockWorks:
-  description: |-
-    Insuring your drone flight has never been easier.
-    All it takes is a matter of taps.
+  description: >-
+    Insuring your drone flight has never been easier. A few taps on your mobile
+    phone and you're ready to fly, knowing you're protected.
   listOfHow:
     - image: images/uploads/phones/flight-details-home.png
       text: >-
-        Choose your flight area, and the date and time you want to fly.
-        Instantly receive a real-time quote at the bottom of your screen.
+        Choose your Flight Area, and the date and time you want to fly. Receive
+        a  real-time, risk-dependent quote on the spot.
       title: 1. Enter your flight details
     - image: images/uploads/phones/customise-policy-home.png
       text: >-
-        From 1-8 hours, select how long you want to be covered for. We’ll update
-        your quote so you can see the difference.
+        From 1-8 hours, select how long you want to be covered for. We’ll
+        instantly update your quote so you can see the difference.
       title: 2. Customise your policy
     - image: images/uploads/phones/get-flying-home.png
       text: >-
-        Pay for the policy and you're good to go! All the important
-        documentation is sent straight to your email inbox.
+        Pay for your policy and you're ready for take-off! All the important
+        documentation is sent straight to your email.
       title: 3. Get flying
   title: |-
-    How Flock Cover 
+    How Flock Cover
     works
 stopWorrying:
-  description: Control your insurance from the palm of your hand with the Flock Cover app.
+  description: >-
+    Flock Cover gives you the cover you need, down to the exact hour you need it
+    for.
   reasons:
     - text: >-
-        Flock’s pricing is risk-dependent: the safer you fly, the less you pay.
-        Simple!
+        Flock’s pricing is
+        [risk-dependent](http://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price);
+        so the safer your flight, the less you pay. Simple!
       title: Fairer pricing
       icon: images/uploads/shield.svg
     - text: >-
-        Pay for insurance only when you fly. Get covered for as little as one
-        hour, or up to a day.
+        Get covered in 30 seconds for as little as one hour, or up to a day. You
+        decide.
       title: Short-term insurance
       icon: images/uploads/money.svg
     - text: >-
-        Get a real-time quote in 30 seconds. You can even see when and where
-        it's cheapest to fly.
+        Build your insurance from the ground up, so you only pay for the cover
+        you need.
       title: Total transparency
       icon: images/uploads/magnifying-glass.svg
-  title: It's time for a new kind of insurance.
+  title: 'The smarter new way to insure your drone. '
 kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
   products:
@@ -78,8 +81,8 @@ kindOfPilot:
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data in your chosen Flight Area to identify the important
-    risks before you fly; helping you to fly as safely as possible.
+    analyses real-time data in your selected Flight Area to identify the
+    important risks before you fly; helping you to fly as safely as possible.
   list:
     - icon: images/uploads/icons-house.svg
       list:
@@ -104,7 +107,7 @@ risk:
       title: Hyperlocal weather
   title: A safety tool you can trust.
 calculator:
-  description: Lorem lorem lorem
+  description: Give us an idea of you as a pilot for an estimated quote.
   title: How much could pay-as-you-fly save you?
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
@@ -127,4 +130,3 @@ siteMetadataOverride:
     - ''
   title: ''
 ---
-
