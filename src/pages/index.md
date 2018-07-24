@@ -75,8 +75,8 @@ kindOfPilot:
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data in your selected Flight Area to instantly identify
-    the important risks.
+    analyses real-time data in your Flight Area to instantly identify the
+    important risks.
   list:
     - icon: images/uploads/icons-house.svg
       list:
