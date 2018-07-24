@@ -29,8 +29,8 @@ howFlockWorks:
       title: 2. Customise your policy
     - image: images/uploads/phones/get-flying-home.png
       text: >-
-        Pay for your policy and you're ready for take-off! All the important
-        documentation is sent straight to your email.
+        Pay for the policy and you're ready to fly! Your policy documents are
+        instantly emailed to you.
       title: 3. Get flying
   title: How Flock Cover works
 stopWorrying:
