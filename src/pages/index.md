@@ -8,7 +8,7 @@ hero:
   description: 'Drone insurance by the hour, only when you need it.'
   header: Pay-as-you-fly drone insurance
 video:
-  isShowing: true
+  isShowing: false
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
   text: See for yourself
