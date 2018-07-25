@@ -40,13 +40,16 @@ stopWorrying:
     Flock Cover gives you tailored coverage, down to the exact hour you need it
     for.
   reasons:
-    - text: >-
+    - image: /images/uploads/money.svg
+      text: >-
         Flock’s pricing is risk-dependent. So the safer you fly, the less you
         pay. It’s as simple as that.
       title: Fairer pricing
-    - text: 'Insure your drone for as little as one hour, or up to a day. You decide.'
+    - image: /images/uploads/shield.svg
+      text: 'Insure your drone for as little as one hour, or up to a day. You decide.'
       title: Short-term insurance
-    - text: >-
+    - image: /images/uploads/magnifying-glass.svg
+      text: >-
         Build your insurance from the ground up, and only ever pay for the cover
         you need.
       title: Total transparency
