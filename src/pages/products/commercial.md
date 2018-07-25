@@ -9,11 +9,11 @@ hero:
   description: |-
     * On-demand insurance from £4.95
     * EC785/2004 compliant policies
-    * Customisable Public Liability limits (from £1-10M)
-    * Drone and accessory cover (up to £25K)
+    * Customisable Public Liability limits, from £1-10M
+    * Drone and accessory cover, up to £25,000
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: Over 2000 UK drone pilots now use Flock Cover.
+  description: Over 2000 UK drone pilots now use the Flock Cover app.
   list:
     - text: >-
         We know two jobs are never the same. Customise your insurance
@@ -68,18 +68,17 @@ how:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        an real-time quote instantly.
+        a real-time quote instantly.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-commercial-screen.png
       text: >-
-        Select how long you want to be covered for, and your Public Liability
-        limit. You can even set the amount you want your equipment to be insured
-        for.
+        Select your Cover Duration and Public Liability limit. You can even set
+        the amount you want your equipment to be insured for.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay for the policy and you're ready for take-off! All the important
-        documentation is sent straight to your email.
+        Pay and you're ready to fly! Your policy documents are instantly emailed
+        to you.
       title: 3. Get flying
   title: How Flock Cover works
 risk:
@@ -112,7 +111,7 @@ risk:
         - Probability of rainfall
         - Temperature
       title: Hyperlocal weather
-  title: 'Know your risks before you fly. '
+  title: Know your risks before you fly
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/4@2x.png
@@ -141,7 +140,7 @@ otherProducts:
       text: >-
         Enjoy your favourite hobby without worrying about insurance. Get covered
         from just £2.95 with the touch of a button.
-      title: 'Hobbyist pilot '
+      title: 'Recreational pilot '
   title: What kind of drone pilot are you?
 siteMetadataOverride:
   description: drone insurance
