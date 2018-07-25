@@ -10,12 +10,10 @@ hero:
     * On-demand insurance from £2.95
     * Short-term cover from 1-8 hours
     * Public Liability insurance (£250,000)
-    * Real-time risk assessment
+    * Plan flights up to 10 days in advance
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
-  description: >-
-    Enjoy your favourite hobby without worrying about insurance. Get covered
-    on-demand for the price of a coffee.
+  description: Get covered on-demand in under 60 seconds with the Flock Cover app.
   list:
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
@@ -26,9 +24,9 @@ why:
         decide.
       title: 'Short-term cover  '
     - text: >-
-        Get covered on the spot or plan a flight up to 10 days in advance. It
-        only takes 60 seconds.
-      title: SIMPLE INSURANCE
+        Flock Cover leverages real-time data to provide you with an instant risk
+        assessment.
+      title: 'Safety Tool '
   title: Why do recreational pilots fly with Flock?
 flightSchool:
   list:
@@ -65,13 +63,14 @@ coverNote:
   title: Applying for your PfCO?
 doINeedInsurance:
   bigText: >-
-    Whilst it's not against the law in the UK to fly without insurance, a flying
-    robot with spinning propellers has the potential to cause some serious
-    damage. 
+    Whilst it's not a legal requirement for recreational drone pilots to have
+    insurance, it's important to recognise the risks. A flying robot with
+    spinning propellers has the potential to cause some serious damage if
+    something were to go wrong. 
 
 
-    Flock's Public Liability insurance starts from just £2.95, and gives you
-    peace of mind from the second you take off.
+    Flock's Public Liability insurance gives you peace of mind from the second
+    you take off, and starts from just £2.95: the price of your morning coffee!
   smallText: ''
   title: |-
     I fly my drone for fun,
