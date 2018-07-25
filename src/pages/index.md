@@ -35,24 +35,21 @@ howFlockWorks:
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    Flock Cover gives you tailored coverage, down to the exact hour you need it
-    for.
+    Flock Cover provides tailored coverage that's as individual as your flight.
+    At the best price.
   reasons:
     - text: >-
         Flock’s pricing is risk-dependent. So the safer you fly, the less you
         pay. It’s as simple as that.
       title: Fairer pricing
-      icon: images/uploads/shield.svg
     - text: >-
         Pay for drone insurance only when you fly. Get covered for as little as
         one hour, or up to a day. You decide.
       title: Short-term insurance
-      icon: images/uploads/money.svg
     - text: >-
         Build your insurance from the ground up so you only pay for the cover
         you need.
       title: Total transparency
-      icon: images/uploads/magnifying-glass.svg
   title: 'The smarter new way to insure your drone. '
 kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
@@ -128,3 +125,4 @@ siteMetadataOverride:
     - ''
   title: ''
 ---
+
