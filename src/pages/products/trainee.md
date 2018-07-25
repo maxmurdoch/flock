@@ -8,7 +8,7 @@ hero:
     to: /download
   description: |-
     * Flight assessment and training insurance from £5.95
-    * Drone and accessory cover, up to £3,000
+    * Drone and accessory cover (up to £3,000)
     * £1M Public Liability cover
     * Instant proof-of-insurance for PfCO applications
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
@@ -98,7 +98,7 @@ risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
     analyses real-time data in your Flight Area to instantly identify the
-    important risks before take-off.
+    important risks before you take-off.
   list:
     - icon: ../../images/uploads/icons-house.svg
       list:
