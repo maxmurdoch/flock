@@ -60,8 +60,8 @@ flightSchool:
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
   bodyText: >-
-    We're here to help. You can get your proof-of-insurance for your PfCO
-    application emailed to you in seconds with the Flock Cover app.
+    We're here to help. You can get your required proof-of-insurance document
+    emailed to you in seconds using the Flock Cover app. 
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
@@ -69,7 +69,7 @@ coverNote:
     to: /download
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance, and doesn't cost a penny.
+    insurance, and doesn't cost a penny to get.
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
