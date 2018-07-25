@@ -17,17 +17,17 @@ howFlockWorks:
     Insuring your drone flight has never been easier. All it takes is a matter
     of taps on your mobile phone.
   listOfHow:
-    - image: images/uploads/phones/flight-details-home.png
+    - image: images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
         a  real-time, risk-dependent quote on the spot.
       title: 1. Enter your flight details
-    - image: images/uploads/phones/customise-policy-home.png
+    - image: images/uploads/screens/customise-policy-recreational-screen.png
       text: >-
         Select how long you want to be insured for. With options from 1-8 hours,
         get covered only for the hours you fly.
       title: 2. Customise your policy
-    - image: images/uploads/phones/get-flying-home.png
+    - image: images/uploads/screens/get-flying-screen.png
       text: >-
         Pay for your policy and you're ready for take-off! All the important
         documentation is sent straight to your email.

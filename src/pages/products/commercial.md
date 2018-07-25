@@ -70,7 +70,7 @@ how:
         Choose your Flight Area, and the date and time you want to fly. Receive
         an real-time quote instantly.
       title: 1. Enter your flight details
-    - image: ../../images/uploads/screens/customise-policy-home-screen.png
+    - image: ../../images/uploads/screens/customise-policy-commercial-screen.png
       text: >-
         Select how long you want to be covered for, and your Public Liability
         limit. You can even set the amount you want your equipment to be insured

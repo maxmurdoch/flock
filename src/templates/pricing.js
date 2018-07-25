@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import {StickyContainer} from 'react-sticky'
 import R from 'ramda'
@@ -88,6 +89,10 @@ const PricingTemplate = ({data}) => {
 }
 
 export default PricingTemplate
+
+PricingTemplate.propTypes = {
+  data: PropTypes.object.isRequired
+}
 
 export const query = graphql`
   query PricingPageQuery($id: String!) {
