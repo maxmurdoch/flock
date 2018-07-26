@@ -5,7 +5,9 @@ hero:
   button:
     text: 'Download '
     to: /download
-  description: 'Flock Cover lets you insure your drone by the hour, only when you need it.'
+  description: >-
+    Flock Cover lets you insure your drone by the hour, for a price that doesn't
+    break the bank.
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -38,18 +40,15 @@ stopWorrying:
     Flock Cover gives you tailored coverage, down to the exact hour you need it
     for.
   reasons:
-    - image: /images/uploads/shield.svg
-      text: >-
+    - text: >-
         Flock’s pricing is risk-dependent. So the safer you fly, the less you
         pay. It’s as simple as that.
       title: Fairer pricing
-    - image: /images/uploads/money.svg
-      text: >-
+    - text: >-
         Pay for drone insurance only when you fly. Get covered for as little as
         one hour, or up to a day. You decide.
       title: Short-term insurance
-    - image: /images/uploads/magnifying-glass.svg
-      text: >-
+    - text: >-
         Build your insurance from the ground up so you only pay for the cover
         you need.
       title: Total transparency
@@ -83,25 +82,12 @@ risk:
     important risks before you take-off.
   list:
     - icon: images/uploads/icons-house.svg
-      list:
-        - Flock Cover analyses building data to inform you of nearby schools
-        - hospitals and prisons.
       title: Inhabited spaces
     - icon: images/uploads/icons-circle.svg
-      list:
-        - The app identifies high-risk areas such as power plants
-        - military bases and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
-      list:
-        - Be alerted to surrounding airports and heliports
-        - and keep up to date with the latest NOTAMS.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
-      list:
-        - Receive hyper-local weather information
-        - such as wind speed
-        - temperature and probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly.
 calculator:
