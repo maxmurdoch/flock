@@ -15,6 +15,7 @@ import TextGrid from '../components/TextGrid'
 import AboutHero from '../components/AboutHero'
 import {colors, breakpoints, space} from '../constants/theme'
 import MeetTheTeam from '../components/MeetTheTeam'
+import investors from '../images/investors.png'
 
 const AboutTemplate = ({
   hero,
@@ -23,7 +24,6 @@ const AboutTemplate = ({
   coreValues,
   meetTheTeam
 }) => {
-  console.log(coreValues)
   return (
     <StickyContainer>
       <div>
@@ -49,7 +49,7 @@ const AboutTemplate = ({
           header={flockStory.header}
           bigText={flockStory.bigText}
           smallText={flockStory.smallText}
-          image={flockStory.image}
+          image={investors}
           imageHeader={flockStory.imageHeader}
         />
         <BigSectionLine />
