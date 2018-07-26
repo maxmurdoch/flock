@@ -101,28 +101,16 @@ risk:
     important risks before you take-off.
   list:
     - icon: ../../images/uploads/icons-house.svg
-      list:
-        - Schools
-        - Hospitals
-        - Prisons
+      text: Flock Cover analyses building data to inform you of nearby schools hospitals and prisons.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      list:
-        - Building density
-        - Parks
-        - Power plants
+      text: The app identifies high-risk areas such as power plants military bases and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
-      list:
-        - Airports
-        - Heliports
-        - Controlled airspace
+      text: Be alerted to surrounding airports and heliports and keep up to date with the latest NOTAMS.
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
-      list:
-        - Windspeed
-        - Probability of rainfall
-        - Temperature
+      text: Receive hyper-local weather information such as wind speed temperature and probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:

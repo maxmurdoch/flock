@@ -37,35 +37,32 @@ const CalculateRiskFlat = ({title, description, list}) => (
             {mapIndex(({title, text, icon}, index) => {
               return (
                 <LI
+                  className={css({
+                    display: 'flex',
+                    flexDirection: 'column'
+                  })}
                   width={['100%', '50%', '25%']}
                   mb={0}
                   pt={3}
                   pb={3}
                   key={index}
                 >
-                  <Flex justifyContent="space-between">
-                    <Box display="flex" position="relative">
-                      <img
-                        className={css({
-                          position: 'absolute',
-                          left: 0,
-                          marginBottom: 0
-                        })}
-                        src={withPrefix(icon)}
-                      />
-                      <SmallText pl={3} color={colors.yellow}>
-                        {title}
-                      </SmallText>
+                  <Flex
+                    justifyContent="flex-start"
+                    alignItems="baseline"
+                    wrap={true}
+                  >
+                    <Box alignSelf="flex-end" width={24} height={24} mb={12}>
+                      <img src={withPrefix(icon)} />
+                    </Box>
+                    <Box width="100%">
+                      <SmallText color={colors.yellow}>{title}</SmallText>
                     </Box>
                   </Flex>
-                  <Flex
-                    className={css({
-                      marginTop: R.nth(2, space)
-                    })}
-                  >
-                    <BodyText color="white">
+                  <Flex mt={1} mr={3}>
+                    <SmallText color="white">
                       <Markdown>{text}</Markdown>
-                    </BodyText>
+                    </SmallText>
                   </Flex>
                 </LI>
               )

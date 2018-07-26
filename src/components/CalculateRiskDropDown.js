@@ -61,7 +61,6 @@ class CalculateRiskDropDown extends Component {
                   return (
                     <LI
                       width={['100%', '100%', '66.66%']}
-                      mb={0}
                       className={css({
                         borderBottom: isLast ? 'none' : '1px solid white',
                         cursor: isHovered ? 'pointer' : 'default'
@@ -135,22 +134,11 @@ class CalculateRiskDropDown extends Component {
                       </Flex>
                       <Collapse
                         isOpened={isActive}
-                        springConfig={{stiffness: 1000, damping: 50}}
+                        springConfig={{stiffness: 1000, damping: 30}}
                       >
-                        <Flex
-                          className={css({
-                            marginTop: R.nth(2, space),
-                            transition: `opacity ${R.add(
-                              200,
-                              R.multiply(R.inc(index), 100)
-                            )}ms ease-in-out`,
-                            opacity: isActive ? 1 : 0
-                          })}
-                        >
-                          <BodyText color="white">
-                            <Markdown source={text} />
-                          </BodyText>
-                        </Flex>
+                        <SmallText color="white" pt={2}>
+                          <Markdown container="span" source={text} />
+                        </SmallText>
                       </Collapse>
                     </LI>
                   )

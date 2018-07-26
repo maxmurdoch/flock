@@ -202,7 +202,7 @@ export const query = graphql`
           list {
             title
             icon
-            list
+            text
           }
         }
         testimonial {
