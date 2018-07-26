@@ -9,7 +9,7 @@ hero:
   description: |-
     * On-demand insurance from £2.95
     * Short-term cover from 1-8 hours
-    * Public Liability insurance up to £250,000 
+    * Public Liability insurance (£250,000)
     * Real-time risk assessment
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
@@ -101,7 +101,7 @@ risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
     analyses real-time data in your Flight Area to instantly identify the
-    important risks before take-off.
+    important risks before you take-off.
   list:
     - icon: ../../images/uploads/icons-house.svg
       list:
