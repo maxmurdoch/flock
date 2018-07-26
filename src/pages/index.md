@@ -6,7 +6,7 @@ hero:
     text: 'Download '
     to: /download
   description: 'Flock Cover lets you insure your drone by the hour, only when you need it.'
-  header: Pay-as-you-fly drone insurance
+  header: Pay-as-you-fly drone insurancedd
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
@@ -38,21 +38,21 @@ stopWorrying:
     Flock Cover gives you tailored coverage, down to the exact hour you need it
     for.
   reasons:
-    - text: >-
+    - icon: images/uploads/shield.svg
+      text: >-
         Flock’s pricing is risk-dependent. So the safer you fly, the less you
         pay. It’s as simple as that.
       title: Fairer pricing
-      icon: images/uploads/shield.svg
-    - text: >-
+    - icon: images/uploads/money.svg
+      text: >-
         Pay for drone insurance only when you fly. Get covered for as little as
         one hour, or up to a day. You decide.
       title: Short-term insurance
-      icon: images/uploads/money.svg
-    - text: >-
+    - icon: images/uploads/magnifying-glass.svg
+      text: >-
         Build your insurance from the ground up so you only pay for the cover
         you need.
       title: Total transparency
-      icon: images/uploads/magnifying-glass.svg
   title: 'The smarter new way to insure your drone. '
 kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
@@ -83,16 +83,12 @@ risk:
     important risks before you take-off.
   list:
     - icon: images/uploads/icons-house.svg
-      text: Flock Cover analyses building data to inform you of nearby schools hospitals and prisons.
       title: Inhabited spaces
     - icon: images/uploads/icons-circle.svg
-      text: The app identifies high-risk areas such as power plants military bases and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
-      text: Be alerted to surrounding airports and heliports and keep up to date with the latest NOTAMS.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
-      text: Receive hyper-local weather information such as wind speed temperature and probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly.
 calculator:
@@ -119,3 +115,4 @@ siteMetadataOverride:
     - ''
   title: ''
 ---
+
