@@ -61,7 +61,7 @@ collections:
                 fields:
                   - {label: 'Title', name: 'title', widget: 'string'}
                   - {label: 'Text', name: 'text', widget: 'markdown'}
-                  - {label: 'Icon', name: 'image', widget: 'image'}
+                  - {label: 'Icon', name: 'icon', widget: 'image'}
           - label: 'What kind of pilot?'
             name: 'kindOfPilot'
             widget: 'object'
@@ -87,7 +87,7 @@ collections:
                 widget: 'list'
                 fields:
                   - {label: 'Title', name: 'title', widget: 'string'}
-                  - {label: 'List', name: 'list', widget: 'list'}
+                  - {label: 'Text', name: 'text', widget: 'markdown'}
                   - {label: 'Icon', name: 'icon', widget: 'image'}
           - label: 'Calculator'
             name: 'calculator'
