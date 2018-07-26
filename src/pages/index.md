@@ -6,7 +6,7 @@ hero:
     text: 'Download '
     to: /download
   description: 'Flock Cover lets you insure your drone by the hour, only when you need it.'
-  header: Pay-as-you-fly drone insurancedd
+  header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
