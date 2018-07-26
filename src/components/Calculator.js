@@ -71,7 +71,7 @@ const flightFrequencyOptions = [
   },
   {
     label: 'A couple of times a month',
-    value: 30
+    value: 24
   },
   {
     label: 'On a weekly basis',
