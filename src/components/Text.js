@@ -1,6 +1,4 @@
 import React from 'react'
-import {css, cx} from 'react-emotion'
-import Markdown from 'react-remarkable'
 import R from 'ramda'
 import styled from 'react-emotion'
 import NewLineToBr from './NewLineToBr'

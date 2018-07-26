@@ -8,11 +8,23 @@ const MapBackground = ({children}) => {
   return (
     <div
       className={css({
-        background: `${colors.backgrounds.dark} url(${map})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'bottom',
-        backgroundAttachment: 'fixed'
+        overflow: 'hidden',
+        position: 'relative',
+
+        '&:before': {
+          content: '\' \'',
+          position: 'fixed',
+          width: '100%',
+          height: '100%',
+          top: 0,
+          left: 0,
+          background: `${colors.backgrounds.dark} url(${map})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'bottom',
+          backgroundAttachment: 'fixed',
+          willChange: 'transform',
+          zIndex: -1
+        }
       })}
     >
       {children}

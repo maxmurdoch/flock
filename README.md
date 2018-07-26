@@ -1,8 +1,3 @@
-# gatsby-starter-default
-The default Gatsby starter.
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
-
 ## Install
 
 Make sure that you have the Gatsby CLI program installed:
@@ -11,8 +6,8 @@ npm install --global gatsby-cli
 ```
 
 To start a development server:
-```
-yarn develop
+```sh
+gatsby develop
 ```
 
 ## Deploy
@@ -28,7 +23,7 @@ Import order
 - local js imports (constants, images)
 
 File order
-- Imports
+- imports
 - helpers functions and local vars
 - Component
 - style object

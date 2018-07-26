@@ -1,5 +1,6 @@
 import React from 'react'
 import {withPrefix} from 'gatsby-link'
+import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import {css} from 'emotion'
 import R from 'ramda'
@@ -33,7 +34,7 @@ const CalculateRiskFlat = ({title, description, list}) => (
               listStyleType: 'none'
             })}
           >
-            {mapIndex(({title, list, icon}, index) => {
+            {mapIndex(({title, text, icon}, index) => {
               return (
                 <LI
                   width={['100%', '50%', '25%']}
@@ -57,27 +58,14 @@ const CalculateRiskFlat = ({title, description, list}) => (
                       </SmallText>
                     </Box>
                   </Flex>
-                  <Flex>
-                    <ul
-                      className={css({
-                        listStyleType: 'none',
-                        marginLeft: R.nth(3, space)
-                      })}
-                    >
-                      {mapIndex(
-                        (item, index) => (
-                          <li
-                            key={index}
-                            className={css({
-                              marginTop: R.nth(2, space)
-                            })}
-                          >
-                            <SmallText color={colors.white}>{item}</SmallText>
-                          </li>
-                        ),
-                        list
-                      )}
-                    </ul>
+                  <Flex
+                    className={css({
+                      marginTop: R.nth(2, space)
+                    })}
+                  >
+                    <BodyText color="white">
+                      <Markdown>{text}</Markdown>
+                    </BodyText>
                   </Flex>
                 </LI>
               )

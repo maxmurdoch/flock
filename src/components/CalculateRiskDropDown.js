@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {withPrefix} from 'gatsby-link'
+import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import {Collapse} from 'react-collapse'
 import {css} from 'emotion'
@@ -49,7 +50,7 @@ class CalculateRiskDropDown extends Component {
               <H2 color="yellow">{title}</H2>
               <BodyText color="white">{description}</BodyText>
               <ul className={css({marginLeft: 0, listStyleType: 'none'})}>
-                {mapIndex(({title, list, icon}, index) => {
+                {mapIndex(({title, text, icon}, index) => {
                   const isActive = R.equals(this.state.activeIndex, index)
                   const isHovered = R.path(['isHovered', index], this.state)
                   const isLast = R.equals(
@@ -136,34 +137,19 @@ class CalculateRiskDropDown extends Component {
                         isOpened={isActive}
                         springConfig={{stiffness: 1000, damping: 50}}
                       >
-                        <Flex>
-                          <ul
-                            className={css({
-                              listStyleType: 'none',
-                              marginLeft: R.nth(3, space)
-                            })}
-                          >
-                            {mapIndex(
-                              (item, index) => (
-                                <li
-                                  key={index}
-                                  className={css({
-                                    marginTop: R.nth(2, space),
-                                    transition: `opacity ${R.add(
-                                      200,
-                                      R.multiply(R.inc(index), 100)
-                                    )}ms ease-in-out`,
-                                    opacity: isActive ? 1 : 0
-                                  })}
-                                >
-                                  <SmallText color={colors.white}>
-                                    {item}
-                                  </SmallText>
-                                </li>
-                              ),
-                              list
-                            )}
-                          </ul>
+                        <Flex
+                          className={css({
+                            marginTop: R.nth(2, space),
+                            transition: `opacity ${R.add(
+                              200,
+                              R.multiply(R.inc(index), 100)
+                            )}ms ease-in-out`,
+                            opacity: isActive ? 1 : 0
+                          })}
+                        >
+                          <BodyText color="white">
+                            <Markdown source={text} />
+                          </BodyText>
                         </Flex>
                       </Collapse>
                     </LI>

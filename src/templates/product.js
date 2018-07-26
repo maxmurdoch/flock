@@ -49,45 +49,47 @@ const SegmentPageTemplate = ({data}) => {
           keywords={siteMetadataOverride.keywords}
         />
         <LightNav />
-        <Hero
-          headerClassName={css({
-            backgroundImage: `url(${hero.backgroundImage})`,
-            backgroundPosition: 'top left',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
-          })}
-          textColor={colors.white}
-          header={hero.header}
-          description={hero.description}
-          button={hero.button}
-        />
-        <Box mt={[3, 5]}>
-          <TextGrid
-            title={why.title}
-            description={why.description}
-            list={why.list}
+        <Box className={css({backgroundColor: 'white'})}>
+          <Hero
+            headerClassName={css({
+              backgroundImage: `url(${hero.backgroundImage})`,
+              backgroundPosition: 'top left',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            })}
+            textColor={colors.white}
+            header={hero.header}
+            description={hero.description}
+            button={hero.button}
           />
+          <Box mt={[3, 5]}>
+            <TextGrid
+              title={why.title}
+              description={why.description}
+              list={why.list}
+            />
+          </Box>
+          <ShowIf predicate={flightSchool.show}>
+            <BigSectionLine />
+            <FlightSchool title={flightSchool.title} list={flightSchool.list} />
+          </ShowIf>
+          <BigSectionLine pb={0} />
+          {coverNote.isShowing ? (
+            <CoverNote
+              image={coverNote.image}
+              title={coverNote.title}
+              bodyText={coverNote.bodyText}
+              smallText={coverNote.smallText}
+              link={coverNote.link}
+            />
+          ) : (
+            <TextSection
+              title={doINeedInsurance.title}
+              bigText={doINeedInsurance.bigText}
+              smallText={doINeedInsurance.smallText}
+            />
+          )}
         </Box>
-        <ShowIf predicate={flightSchool.show}>
-          <BigSectionLine />
-          <FlightSchool title={flightSchool.title} list={flightSchool.list} />
-        </ShowIf>
-        <BigSectionLine pb={0} />
-        {coverNote.isShowing ? (
-          <CoverNote
-            image={coverNote.image}
-            title={coverNote.title}
-            bodyText={coverNote.bodyText}
-            smallText={coverNote.smallText}
-            link={coverNote.link}
-          />
-        ) : (
-          <TextSection
-            title={doINeedInsurance.title}
-            bigText={doINeedInsurance.bigText}
-            smallText={doINeedInsurance.smallText}
-          />
-        )}
         <MapBackground>
           <ToggleiPhone
             title={how.title}
@@ -112,20 +114,23 @@ const SegmentPageTemplate = ({data}) => {
             }
           </Media>
         </MapBackground>
-        <Box pt={[3, 5]}>
-          <Testimonial testimonials={testimonial} />
-        </Box>
-        <Box pt={[3, 5]}>
-          <DownloadFlock />
-        </Box>
-        <BigSectionLine />
-        <OtherProducts
-          title={otherProducts.title}
-          description={otherProducts.description}
-          products={otherProducts.products}
-        />
-        <Box pt={[3, 5]}>
-          <Featured />
+
+        <Box className={css({backgroundColor: 'white'})}>
+          <Box pt={[3, 5]}>
+            <Testimonial testimonials={testimonial} />
+          </Box>
+          <Box pt={[3, 5]}>
+            <DownloadFlock />
+          </Box>
+          <BigSectionLine />
+          <OtherProducts
+            title={otherProducts.title}
+            description={otherProducts.description}
+            products={otherProducts.products}
+          />
+          <Box pt={[3, 5]}>
+            <Featured />
+          </Box>
         </Box>
         <Footer />
       </div>

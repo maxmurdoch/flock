@@ -48,41 +48,43 @@ const HomeTemplate = ({
           keywords={siteMetadataOverride.keywords}
         />
         <DarkNav />
-        <Hero
-          RightSideComponent={() => (
-            <img src={iPhone} className={style.iphone} />
-          )}
-          headerClassName={style.header}
-          headerContainerClassName={style.headerContainer}
-          header={hero.header}
-          textShadow={false}
-          description={hero.description}
-          button={hero.button}
-        />
-        <Box mt={[3, 5]}>
-          <TextGrid
-            title={stopWorrying.title}
-            description={stopWorrying.description}
-            list={stopWorrying.reasons}
+        <Box className={css({backgroundColor: 'white'})}>
+          <Hero
+            RightSideComponent={() => (
+              <img src={iPhone} className={style.iphone} />
+            )}
+            headerClassName={style.header}
+            headerContainerClassName={style.headerContainer}
+            header={hero.header}
+            textShadow={false}
+            description={hero.description}
+            button={hero.button}
           />
-        </Box>
-        <BigSectionLine />
-        <Box mb={[2, 3]}>
-          <OtherProducts
-            title={kindOfPilot.title}
-            description={kindOfPilot.description}
-            products={kindOfPilot.products}
-          />
-        </Box>
-        {video.isShowing ? (
-          <Box pb={[2, 3]}>
-            <ModalVideo
-              text={video.text}
-              videoId={video.id}
-              coverImage={video.coverImage}
+          <Box pt={[3, 5]} background="white">
+            <TextGrid
+              title={stopWorrying.title}
+              description={stopWorrying.description}
+              list={stopWorrying.reasons}
             />
           </Box>
-        ) : null}
+          <BigSectionLine />
+          <Box pb={[2, 3]}>
+            <OtherProducts
+              title={kindOfPilot.title}
+              description={kindOfPilot.description}
+              products={kindOfPilot.products}
+            />
+          </Box>
+          {video.isShowing ? (
+            <Box pb={[2, 3]}>
+              <ModalVideo
+                text={video.text}
+                videoId={video.id}
+                coverImage={video.coverImage}
+              />
+            </Box>
+          ) : null}
+        </Box>
         <MapBackground>
           <ToggleiPhone
             title={howFlockWorks.title}
@@ -95,21 +97,23 @@ const HomeTemplate = ({
             description={risk.description}
           />
         </MapBackground>
-        <Box pt={[3, 5]}>
-          <TitleAndDescription
-            title={calculator.title}
-            description={calculator.description}
-          />
-          <Calculator />
-        </Box>
-        <Box pt={[3, 5]}>
-          <Testimonial testimonials={secondTestimonial} />
-        </Box>
-        <Box pt={[3, 5]}>
-          <DownloadFlock />
-        </Box>
-        <BigSectionLine />
-        <Featured title={featured.title} image={featured.image} />
+        <div className={css({backgroundColor: 'white'})}>
+          <Box pt={[3, 5]}>
+            <TitleAndDescription
+              title={calculator.title}
+              description={calculator.description}
+            />
+            <Calculator />
+          </Box>
+          <Box pt={[3, 5]}>
+            <Testimonial testimonials={secondTestimonial} />
+          </Box>
+          <Box pt={[3, 5]}>
+            <DownloadFlock />
+          </Box>
+          <BigSectionLine />
+          <Featured title={featured.title} image={featured.image} />
+        </div>
         <Footer />
       </div>
     </StickyContainer>
@@ -244,7 +248,7 @@ export const query = graphql`
           list {
             title
             icon
-            list
+            text
           }
         }
         calculator {
