@@ -88,28 +88,12 @@ risk:
     important risks before you take-off.
   list:
     - icon: ../../images/uploads/icons-house.svg
-      list:
-        - Schools
-        - Hospitals
-        - Prisons
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      list:
-        - Building density
-        - Parks
-        - Power plants
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
-      list:
-        - Airports
-        - Heliports
-        - Controlled airspace
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
-      list:
-        - Windspeed
-        - Probability of rainfall
-        - Temperature
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
