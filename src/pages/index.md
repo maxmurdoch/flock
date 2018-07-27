@@ -6,8 +6,8 @@ hero:
     text: 'Download '
     to: /download
   description: >-
-    Flock Cover lets you insure your drone by the hour, with a customised policy
-    that's as individual as your flight.
+    Flock Cover lets you insure your drone by the hour, with a policy that's as
+    individual as your flight.
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -38,22 +38,24 @@ howFlockWorks:
 stopWorrying:
   description: >-
     The Flock Cover app leverages real-time data to provide drone insurance
-    that's tailored to your flight, at the most competitive price possible.
+    that's tailored to your flight. At the most competitive price possible.
   reasons:
     - icon: images/uploads/shield.svg
       text: >-
         Flock’s pricing is risk-dependent. So the safer you fly, the less you
-        pay. Simple!
+        pay. It's as simple as that.
       title: Fairer pricing
     - icon: images/uploads/money.svg
-      text: 'Insure your drone for as little as one hour, or up to a day. You decide.'
+      text: >-
+        Pay for insurance only when you fly. Get covered for as little as one
+        hour, or up to a day.
       title: Short-term insurance
     - icon: images/uploads/magnifying-glass.svg
       text: >-
-        Customise your drone insurance on a per-flight basis so you only pay for
-        the cover you need.
+        Customise your insurance on a per-flight basis so you only pay for the
+        cover you need.
       title: Total transparency
-  title: 'The smarter new way to insure your drone. '
+  title: The smarter new way to insure your drone
 kindOfPilot:
   description: Chances are we can provide insurance tailored specifically to you.
   products:
@@ -90,24 +92,24 @@ risk:
     - icon: images/uploads/icons-circle.svg
       text: >-
         The app identifies high-risk areas in your Flight Area, such as power
-        plants, military bases, and busy roads.
+        plants, military bases and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
-        Be alerted to surrounding airports and heliports, and keep up to date
-        with real-time NOTAMS.
+        Be alerted to surrounding airports, heliports and temporary restrictions
+        of airspace.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
         Receive hyperlocal weather information such as wind speed, temperature,
         and probability of rainfall.
       title: Hyperlocal weather
-  title: Know your risks before you fly.
+  title: Know your risks before you fly
 calculator:
   description: >-
     Give us an idea of your flying habits so we can give you an estimated
     quote. 
-  title: Get a quick quote
+  title: Is pay-as-you-fly for you?
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/3.jpg
