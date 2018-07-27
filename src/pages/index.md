@@ -6,8 +6,8 @@ hero:
     text: 'Download '
     to: /download
   description: >-
-    Flock Cover lets you insure your drone by the hour, for a price that doesn't
-    break the bank. 
+    Flock Cover lets you insure your drone by the hour, with a customised policy
+    that's as individual as your flight.
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -22,7 +22,7 @@ howFlockWorks:
     - image: images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        a  real-time, risk-dependent quote on the spot.
+        a risk-dependent quote on the spot.
       title: 1. Enter your flight details
     - image: images/uploads/screens/customise-policy-recreational-screen.png
       text: >-
@@ -31,29 +31,27 @@ howFlockWorks:
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay for your policy and you're ready for take-off! All the important
-        documentation is sent straight to your email.
+        Pay and you're ready to fly! Your policy documents are instantly emailed
+        to you.
       title: 3. Get flying
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    Flock Cover gives you tailored coverage, down to the exact hour you need it
-    for.
+    The Flock Cover app leverages real-time data to provide drone insurance
+    that's tailored to your flight, at the most competitive price possible.
   reasons:
     - icon: images/uploads/shield.svg
       text: >-
         Flock’s pricing is risk-dependent. So the safer you fly, the less you
-        pay. It’s as simple as that.
+        pay. Simple!
       title: Fairer pricing
     - icon: images/uploads/money.svg
-      text: >-
-        Pay for drone insurance only when you fly. Get covered for as little as
-        one hour, or up to a day. You decide.
+      text: 'Insure your drone for as little as one hour, or up to a day. You decide.'
       title: Short-term insurance
     - icon: images/uploads/magnifying-glass.svg
       text: >-
-        Build your insurance from the ground up so you only pay for the cover
-        you need.
+        Customise your drone insurance on a per-flight basis so you only pay for
+        the cover you need.
       title: Total transparency
   title: 'The smarter new way to insure your drone. '
 kindOfPilot:
@@ -85,17 +83,31 @@ risk:
     important risks before you take-off.
   list:
     - icon: images/uploads/icons-house.svg
+      text: >-
+        Flock Cover analyses population density data to inform you of nearby
+        schools, hospitals and prisons.
       title: Inhabited spaces
     - icon: images/uploads/icons-circle.svg
+      text: >-
+        The app identifies high-risk areas in your Flight Area, such as power
+        plants, military bases, and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
+      text: >-
+        Be alerted to surrounding airports and heliports, and keep up to date
+        with real-time NOTAMS.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
+      text: >-
+        Receive hyperlocal weather information such as wind speed, temperature,
+        and probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly.
 calculator:
-  description: Give us an idea of your flying habits for an estimated quote.
-  title: How much could you save?
+  description: >-
+    Give us an idea of your flying habits so we can give you an estimated
+    quote. 
+  title: Get a quick quote
 secondTestimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/3.jpg
@@ -112,9 +124,12 @@ featured:
   image: images/uploads/featured-list.png
   title: As featured in
 siteMetadataOverride:
-  description: ''
+  description: Pay-as-you-fly drone insurance
   keywords:
-    - ''
-  title: ''
+    - drone insurance
+    - drones
+    - Flock
+    - Flock Cover
+  title: 'Flock '
 ---
 
