@@ -56,7 +56,7 @@ coverNote:
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
     insurance, and you can get yours instantly emailed to you without having to
-    pay a penny.
+    commit to anything, or pay a penny! 
   title: Renewing your PfCO?
 doINeedInsurance:
   title: ''
@@ -68,7 +68,7 @@ how:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        a real-time quote instantly.
+        a risk-dependent quote on the spot.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-commercial-screen.png
       text: >-
