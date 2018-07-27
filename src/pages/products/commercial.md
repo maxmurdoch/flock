@@ -13,7 +13,7 @@ hero:
     * Drone and accessory cover (up to £25,000)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: Over 2000 UK drone pilots now use Flock Cover.
+  description: 'Over 2,000 drone pilots in the UK now use the Flock Cover app.'
   list:
     - text: >-
         We know two jobs are never the same. Customise your insurance
@@ -26,8 +26,8 @@ why:
     - text: Flock’s policies are EC785/2004 compliant and CAA approved.
       title: Fully compliant
     - text: >-
-        Pinpoint the cost of insurance for each job, and easily pass the costs
-        onto your clients.
+        Pinpoint the cost of insurance for each job, and expense it to your
+        clients.
       title: Bill as an expense
     - text: >-
         Schedule flights up to 10 days in advance. Change of plan? Cancel with
@@ -46,8 +46,8 @@ flightSchool:
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
   bodyText: >-
-    You no longer need to commit to an annual insurance policy in order to get
-    your proof-of-insurance for your PfCO renewal.
+    You no longer need to commit to an annual insurance policy to get your
+    proof-of-insurance for your PfCO renewal.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
@@ -56,19 +56,19 @@ coverNote:
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
     insurance, and you can get yours instantly emailed to you without having to
-    pay a penny.
+    commit to anything, or pay a penny! 
   title: Renewing your PfCO?
 doINeedInsurance:
   title: ''
 how:
   description: >-
-    Insuring your drone flight has never been easier. All it takes is a matter
-    of taps on your mobile phone.
+    Insuring your drone has never been easier. All it takes is a matter of taps
+    on your mobile phone.
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        a real-time quote instantly.
+        a risk-dependent quote on the spot.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-commercial-screen.png
       text: >-
@@ -88,16 +88,24 @@ risk:
     important risks before you take-off.
   list:
     - icon: ../../images/uploads/icons-house.svg
-      text: Flock Cover analyses building data to inform you of nearby schools hospitals and prisons.
+      text: >
+        Flock Cover analyses building data to inform you of nearby schools,
+        hospitals, and prisons.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      text: The app identifies high-risk areas such as power plants military bases and busy roads.
+      text: >
+        The app identifies high-risk areas such as power plants, military
+        airbases, and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
-      text: Be alerted to surrounding airports and heliports and keep up to date with the latest NOTAMS.
+      text: >-
+        Be alerted to surrounding airports, heliports and temporary restricted
+        airspace. 
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
-      text: Receive hyper-local weather information such as wind speed temperature and probability of rainfall.
+      text: >-
+        Receive hyperlocal weather information such as wind speed and
+        temperature.
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
