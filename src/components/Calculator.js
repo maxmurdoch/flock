@@ -9,6 +9,7 @@ import Box from './Box'
 import Label from './Label'
 import SmallText from './SmallText'
 import BodyText from './BodyText'
+import Text from './Text'
 import SiteContainer from './SiteContainer'
 import {colors, boxShadows} from '../constants/theme'
 
@@ -30,60 +31,65 @@ injectGlobal`
   }
 `
 
+const averageFlightPrice = 8
 const pilotTypeOptions = [
   {
-    label: 'Professional',
-    value: 1
+    label: 'Commercial',
+    value: 1.015
   },
   {
     label: 'Trainee',
-    value: 1.2
+    value: 1.04625
   },
   {
     label: 'Hobbyist',
-    value: 1.4
+    value: 0.58375
   }
 ]
 const droneTypeOptions = [
   {
-    label: 'Less than 250g',
-    value: 1
+    label: 'Less than 1000g',
+    value: 0.80625
   },
   {
-    label: 'Less than 500g',
-    value: 1.2
+    label: 'Less than 3000g',
+    value: 0.965
   },
   {
-    label: 'More than 500g',
-    value: 1.4
+    label: 'Less than 5000g',
+    value: 1.42
+  },
+  {
+    label: 'More than 5000g',
+    value: 2.57
   }
 ]
 const flightFrequencyOptions = [
   {
-    label: 'Most days',
-    value: 100
-  },
-  {
-    label: 'Most months',
-    value: 20
-  },
-  {
     label: 'A few times a year',
-    value: 5
+    value: 8
+  },
+  {
+    label: 'A couple of times a month',
+    value: 24
+  },
+  {
+    label: 'On a weekly basis',
+    value: 52
   }
 ]
 const locationOptions = [
   {
-    label: 'Urban environments',
-    value: 1
-  },
-  {
     label: 'Countryside',
-    value: 1.2
+    value: 0.86375
   },
   {
-    label: 'Near water',
-    value: 1.4
+    label: 'Villages, Towns',
+    value: 0.98
+  },
+  {
+    label: 'Cities',
+    value: 1.20625
   }
 ]
 
@@ -110,11 +116,13 @@ class Calculator extends Component {
     } = this.state
 
     const priceValues = [pilotTypeValue, droneTypeValue, locationValue]
-    const pricePerFlight = R.reduce(
+    const pricePerFlightPreCheck = R.reduce(
       R.multiply,
-      3,
+      averageFlightPrice,
       R.map(R.prop('value'), priceValues)
     ).toFixed(2)
+    const pricePerFlight = pricePerFlightPreCheck < 25 ? pricePerFlightPreCheck : 25
+
     const pricePerYear = R.multiply(
       flightFrequencyValue.value,
       pricePerFlight
@@ -147,20 +155,7 @@ class Calculator extends Component {
                   id="pilotType"
                   value={this.state.pilotTypeValue}
                   onChange={value => this.handleChange({pilotTypeValue: value})}
-                  options={[
-                    {
-                      label: 'Professional',
-                      value: 1
-                    },
-                    {
-                      label: 'Trainee',
-                      value: 1.2
-                    },
-                    {
-                      label: 'Hobbyist',
-                      value: 1.4
-                    }
-                  ]}
+                  options={pilotTypeOptions}
                 />
               </Box>
               <Box width={['100%', '50%']} mt={[2, 3]} pr={[0, 2]}>
@@ -172,20 +167,7 @@ class Calculator extends Component {
                   id="droneType"
                   value={this.state.droneTypeValue}
                   onChange={value => this.handleChange({droneTypeValue: value})}
-                  options={[
-                    {
-                      label: 'Less than 250g',
-                      value: 1
-                    },
-                    {
-                      label: 'Less than 500g',
-                      value: 1.2
-                    },
-                    {
-                      label: 'More than 500g',
-                      value: 1.4
-                    }
-                  ]}
+                  options={droneTypeOptions}
                 />
               </Box>
               <Box width={['100%', '50%']} mt={[2, 3]} pr={[0, 2]}>
@@ -197,24 +179,11 @@ class Calculator extends Component {
                   onChange={value =>
                     this.handleChange({flightFrequencyValue: value})
                   }
-                  options={[
-                    {
-                      label: 'Most days',
-                      value: 100
-                    },
-                    {
-                      label: 'Most months',
-                      value: 20
-                    },
-                    {
-                      label: 'A few times a year',
-                      value: 5
-                    }
-                  ]}
+                  options={flightFrequencyOptions}
                 />
               </Box>
               <Box width={['100%', '50%']} mt={[2, 3]} pr={[0, 2]}>
-                <Label htmlFor="location">How often do you fly?</Label>
+                <Label htmlFor="location">Where do you normally fly?</Label>
                 <Select
                   clearable={false}
                   id="location"
@@ -235,9 +204,9 @@ class Calculator extends Component {
                 flexDirection="column"
               >
                 <SmallText textAlign="center" mb={1}>
-                  Prices from
+                  Your estimate*
                 </SmallText>
-                <BodyText fontWeight={700} className={css({marginBottom: 0})}>
+                <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
                   £{Math.round(this.state.pricePerYear)} per year
                 </BodyText>
                 <SmallText textAlign="center" mt={1}>
@@ -246,6 +215,9 @@ class Calculator extends Component {
               </Flex>
             </Flex>
           </Flex>
+          <Text textAlign="left" mb={1} className={css({marginBottom: 0, paddingTop: 20, paddingLeft: 3, fontSize: 12, color: 'grey'})}>
+            * Your estimate is based on average usage. Prices are dependent on the real-time risks of each flight.
+          </Text>
         </SiteContainer>
       </Flex>
     )
