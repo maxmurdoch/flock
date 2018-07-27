@@ -6,20 +6,20 @@ hero:
   header: About Flock
 flockStory:
   bigText: >-
-    For too long, insurance has been antiquated and inflexible. More often that
+    For too long, insurance has been antiquated and inflexible. More often than
     not, you were tied into an annual policy that you had little control over.
     We wanted to change that, and believed that technology was the key.
-
-
-    Through analysing real-time data we are able to form a precise understanding
-    of the risk of an individual drone flight: How windy is it? Is the flight
-    taking place during rush hour over a busy school? These insights (and more)
-    enable us to intelligently price premiums on the spot; making insurance
-    fairer and more transparent for both our customers and partners.
   header: 'Our Story '
   image: /images/uploads/backers.png
   imageHeader: We’re backed by some of the best in the business
-  smallText: ''
+  smallText: >-
+    Through analysing real-time data we are able to form a precise understanding
+    of the risk of an individual drone flight: How windy is it? Is the flight
+    taking place during rush hour? Is it over a busy school? 
+
+
+    These insights (and more) enable us to price insurance premiums on the spot;
+    making drone insurance both smarter and fairer for all.
 coreValues:
   description: Everything we do at Flock is guided by our values
   isShowing: false
