@@ -93,13 +93,12 @@ risk:
         hospitals, and prisons.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      text: >
-        The app identifies high-risk areas such as power plants, military
-        airbases, and busy roads.
+      text: |
+        The app identifies high-risk areas such as power plants and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       text: >-
-        Be alerted to surrounding airports, heliports and temporary restricted
+        Be alerted to surrounding airports and temporary restrictions of
         airspace. 
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
