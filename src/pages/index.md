@@ -47,8 +47,8 @@ stopWorrying:
       title: Fairer pricing
     - icon: images/uploads/money.svg
       text: >-
-        Pay for insurance only when you fly. Get covered for as little as one
-        hour, or up to a day.
+        Pay for insurance only when you fly. Get covered for one hour, or up to
+        a day.
       title: Short-term insurance
     - icon: images/uploads/magnifying-glass.svg
       text: >-
@@ -96,8 +96,8 @@ risk:
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
-        Be alerted to surrounding airports, heliports and temporary restrictions
-        of airspace.
+        Be alerted to airports and temporary restrictions of airspace so that
+        you can ensure your drone flight is legal and safe.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
