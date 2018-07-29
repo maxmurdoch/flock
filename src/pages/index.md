@@ -92,7 +92,7 @@ risk:
     - icon: images/uploads/icons-circle.svg
       text: >-
         The app identifies high-risk areas in your Flight Area, such as power
-        plants, military bases and busy roads.
+        plants, military airbases and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
