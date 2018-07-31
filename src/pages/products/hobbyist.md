@@ -13,9 +13,7 @@ hero:
     * Real-time risk assessment
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
-  description: >-
-    Enjoy your favourite hobby without worrying about insurance. Get covered
-    on-demand for the price of a coffee.
+  description: Enjoy your favourite hobby without worrying about insurance.
   list:
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
@@ -105,7 +103,7 @@ risk:
   list:
     - icon: ../../images/uploads/icons-house.svg
       text: >-
-        Flock Cover analyses building data to inform you of nearby schools
+        Flock Cover analyses building data to inform you of nearby schools,
         hospitals and prisons.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
