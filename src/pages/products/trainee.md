@@ -80,7 +80,7 @@ how:
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
-        Choose your flight area, and the date and time you want to fly. Receive
+        Choose your Flight Area, and the date and time you want to fly. Receive
         a real-time quote instantly.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-trainee-screen.png
@@ -101,16 +101,22 @@ risk:
     important risks before you take-off.
   list:
     - icon: ../../images/uploads/icons-house.svg
-      text: Flock Cover analyses building data to inform you of nearby schools hospitals and prisons.
+      text: >-
+        Flock Cover analyses building data to inform you of nearby schools
+        hospitals and prisons.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      text: The app identifies high-risk areas such as power plants military bases and busy roads.
+      text: >-
+        The app identifies high-risk areas such as power plants military bases
+        and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
-      text: Be alerted to surrounding airports and heliports and keep up to date with the latest NOTAMS.
+      text: Be alerted to surrounding airports and heliports.
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
-      text: Receive hyper-local weather information such as wind speed temperature and probability of rainfall.
+      text: >-
+        Receive hyper-local weather information such as wind speed temperature
+        and probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
