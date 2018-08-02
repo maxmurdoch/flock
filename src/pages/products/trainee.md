@@ -123,12 +123,12 @@ risk:
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
-  - author: 'Gareth, media business owner'
+  - author: 'Gareth, Media Business Owner'
     image: /images/uploads/testimonial/1@2x.png
     quote: >-
       The help and support during setting up the policy and acquiring the
       correct documents for my PfCO application was very good.
-  - author: 'Paul, real estate photographer'
+  - author: 'Paul, Real Estate Photographer'
     image: /images/uploads/testimonial/4@2x.png
     quote: The Flock team have been a great help with getting cover for my PfCO test.
 otherProducts:
