@@ -15,7 +15,7 @@ hero:
 why:
   description: >-
     Drone insurance has never been simpler. Get covered in 30 seconds, and enjoy
-    your favourite hobby with peace of mind.
+    your favourite hobby without any worry.
   list:
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
