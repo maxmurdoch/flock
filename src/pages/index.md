@@ -112,12 +112,12 @@ calculator:
     quote. 
   title: Is pay-as-you-fly for you?
 secondTestimonial:
-  - author: 'Keith, uses Flock Cover for surveying jobs.'
+  - author: 'Keith, land surveyor.'
     image: /images/uploads/testimonial/3.jpg
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
       that’s easy to access, what more could you want?
-  - author: 'David, uses Flock Cover for aerial photography missions.'
+  - author: 'David, aerial photographer.'
     image: /images/uploads/testimonial/4.jpg
     quote: >-
       Ease of use is a key factor, and Flock represents a good way for new UAV
