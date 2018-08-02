@@ -108,12 +108,12 @@ risk:
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
-  - author: 'Keith, land surveyor'
+  - author: 'Keith, Land Surveyor'
     image: /images/uploads/testimonial/4@2x.png
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
       that’s easy to access, what more could you want?
-  - author: 'David, aerial photographer '
+  - author: 'David, Aerial Photographer '
     image: /images/uploads/testimonial/2@2x.png
     quote: >-
       Ease of use is a key factor, and Flock represents a good way for new UAV
