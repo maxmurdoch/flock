@@ -13,7 +13,9 @@ hero:
     * Real-time risk assessment
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
-  description: Enjoy your favourite hobby without worrying about insurance.
+  description: >-
+    Drone insurance has never been simpler. Get covered in 30 seconds, and enjoy
+    your favourite hobby with peace of mind.
   list:
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
@@ -24,9 +26,9 @@ why:
         decide.
       title: 'Short-term cover  '
     - text: >-
-        Get covered on the spot or plan a flight up to 10 days in advance. It
-        only takes 60 seconds.
-      title: SIMPLE INSURANCE
+        Flock Cover leverages real-time data to provide you with an instant risk
+        assessment.
+      title: Safety Tool
   title: Why do recreational pilots fly with Flock?
 flightSchool:
   list:
@@ -62,14 +64,7 @@ coverNote:
     insurance, and you can get yours instantly without having to pay a penny.
   title: Applying for your PfCO?
 doINeedInsurance:
-  bigText: >-
-    Whilst it's not against the law in the UK to fly without insurance, a flying
-    robot with spinning propellers has the potential to cause some serious
-    damage. 
-
-
-    Flock's Public Liability insurance starts from just £2.95, and gives you
-    peace of mind from the second you take off.
+  bigText: "Whilst it's not a legal requirement for recreational drone pilots to have insurance, it's important to recognise the risks. A flying robot with spinning propellers has the potential to cause some serious damage if something were to go wrong.\_\n\nFlock's Public Liability insurance gives you peace of mind from the second you take off, and starts from just £2.95: the price of your morning coffee!"
   smallText: ''
   title: |-
     I fly my drone for fun,
@@ -81,8 +76,8 @@ how:
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
-        Choose your flight area, and the date and time you want to fly. Receive
-        a real-time quote instantly.
+        Choose your Flight Area, and the date and time you want to fly. Receive
+        a risk-dependent quote in seconds.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-home-screen.png
       text: >-
@@ -91,8 +86,8 @@ how:
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay and you're good to go! Your policy documents are instantly emailed
-        to you.
+        Pay and instantly receive your policy documents via email. Then you're
+        all set to fly!
       title: 3. Get flying
   title: 'How Flock Cover works '
 risk:
@@ -112,16 +107,14 @@ risk:
         and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
-      text: >-
-        Be alerted to surrounding airports and heliports and keep up to date
-        with the latest NOTAMS.
+      text: 'Be alerted to surrounding airports to avoid flying illegally. '
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >-
         Receive hyper-local weather information such as wind speed temperature
         and probability of rainfall.
       title: Hyperlocal weather
-  title: Know your risks before you fly
+  title: Know your risks before you fly.
 testimonial:
   - author: 'David Dennison, Parrot Mambo FPV pilot'
     image: /images/uploads/testimonial/3@2x.png
