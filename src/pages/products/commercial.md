@@ -56,7 +56,7 @@ coverNote:
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
     insurance, and you can get yours instantly emailed to you without having to
-    commit to anything, or pay a penny! 
+    commit to anything in the long-term, or pay a penny! 
   title: Renewing your PfCO?
 doINeedInsurance:
   title: ''
@@ -68,7 +68,7 @@ how:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        a risk-dependent quote on the spot.
+        a risk-dependent quote in seconds.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-commercial-screen.png
       text: >-
@@ -77,8 +77,8 @@ how:
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay and you're ready to fly! Your policy documents are instantly emailed
-        to you.
+        Pay and instantly receive your policy documents via email. Then you're
+        all set to fly!
       title: 3. Get flying
   title: How Flock Cover works
 risk:
