@@ -16,23 +16,23 @@ why:
   description: 'Over 2,000 drone pilots in the UK now use the Flock Cover app.'
   list:
     - text: >-
-        We know two jobs are never the same. Customise your insurance
-        flight-by-flight.
-      title: Bespoke cover
-    - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
         from £4.95.
       title: Fairer pricing
+    - text: >-
+        We know two jobs are never the same. Customise your insurance
+        flight-by-flight.
+      title: 'Bespoke cover '
+    - text: >-
+        Schedule flights up to 10 days in advance. Change of plan? Cancel with
+        one tap.
+      title: 'Book in advance '
     - text: Flock’s policies are EC785/2004 compliant and CAA approved.
       title: Fully compliant
     - text: >-
         Pinpoint the cost of insurance for each job, and expense it to your
         clients.
-      title: Bill as an expense
-    - text: >-
-        Schedule flights up to 10 days in advance. Change of plan? Cancel with
-        one tap.
-      title: 'Book in advance '
+      title: 'Bill as an expense '
     - text: >-
         Chat to our customer support team through the app. We typically reply in
         minutes.
@@ -56,7 +56,7 @@ coverNote:
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
     insurance, and you can get yours instantly emailed to you without having to
-    commit to anything, or pay a penny! 
+    commit to anything in the long-term, or pay a penny! 
   title: Renewing your PfCO?
 doINeedInsurance:
   title: ''
@@ -68,7 +68,7 @@ how:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        a risk-dependent quote on the spot.
+        a risk-dependent quote in seconds.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-commercial-screen.png
       text: >-
@@ -77,8 +77,8 @@ how:
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay and you're ready to fly! Your policy documents are instantly emailed
-        to you.
+        Pay and instantly receive your policy documents via email. Then you're
+        all set to fly!
       title: 3. Get flying
   title: How Flock Cover works
 risk:
@@ -108,17 +108,17 @@ risk:
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
-  - author: 'David Dennison, Parrot Mambo FPV pilot'
+  - author: 'Keith, land surveyor'
     image: /images/uploads/testimonial/4@2x.png
     quote: >-
-      “With all the current drone laws in the UK, having Flock is an added peace
-      of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!”
-  - author: Ron Swanson
+      Fantastic app, speedy human response to any question, very cheap insurance
+      that’s easy to access, what more could you want?
+  - author: 'David, aerial photographer '
     image: /images/uploads/testimonial/2@2x.png
     quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
+      Ease of use is a key factor, and Flock represents a good way for new UAV
+      service operators to establish their businesses without paying for
+      'unused' insurance cover.
 otherProducts:
   description: >-
     Chances are we can provide coverage tailored specifically to you. Select
