@@ -107,7 +107,9 @@ risk:
         and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
-      text: 'Be alerted to surrounding airports to avoid flying illegally. '
+      text: >-
+        Be alerted to surrounding airports and heliports to avoid flying your
+        drone illegally.
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >-
