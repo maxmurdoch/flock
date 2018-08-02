@@ -102,9 +102,7 @@ risk:
         hospitals and prisons.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      text: >-
-        The app identifies high-risk areas such as power plants military bases
-        and busy roads.
+      text: The app identifies high-risk areas such as power plants and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       text: >-
@@ -113,8 +111,8 @@ risk:
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >-
-        Receive hyper-local weather information such as wind speed temperature
-        and probability of rainfall.
+        Receive hyper-local weather information such as wind speed and
+        temperature.
       title: Hyperlocal weather
   title: Know your risks before you fly.
 testimonial:
