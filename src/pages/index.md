@@ -22,7 +22,7 @@ howFlockWorks:
     - image: images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        a risk-dependent quote on the spot.
+        a risk-dependent quote in seconds.
       title: 1. Enter your flight details
     - image: images/uploads/screens/customise-policy-recreational-screen.png
       text: >-
@@ -31,8 +31,8 @@ howFlockWorks:
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay and you're ready to fly! Your policy documents are instantly emailed
-        to you.
+        Pay and instantly receive your policy documents via email. Then you're
+        all set to fly!
       title: 3. Get flying
   title: How Flock Cover works
 stopWorrying:
@@ -52,7 +52,7 @@ stopWorrying:
       title: Short-term insurance
     - icon: images/uploads/magnifying-glass.svg
       text: >-
-        Customise your insurance on a per-flight basis so you only pay for the
+        Customise your insurance on a per-flight basis, so you only pay for the
         cover you need.
       title: Total transparency
   title: The smarter new way to insure your drone
@@ -92,12 +92,13 @@ risk:
     - icon: images/uploads/icons-circle.svg
       text: >-
         The app identifies high-risk areas in your Flight Area, such as power
-        plants, military airbases and busy roads.
+        plants, and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
-        Be alerted to airports and temporary restrictions of airspace so that
-        you can ensure your drone flight is legal and safe.
+        Be alerted to surrounding airports and heliports to avoid flying
+        illegally. We'll let you know of any temporary restrictions of airspace
+        too.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
@@ -111,17 +112,17 @@ calculator:
     quote. 
   title: Is pay-as-you-fly for you?
 secondTestimonial:
-  - author: 'David Dennison, Parrot Mambo FPV pilot'
+  - author: 'Keith, uses Flock Cover for surveying jobs.'
     image: /images/uploads/testimonial/3.jpg
     quote: >-
-      With all the current drone laws in the UK, having Flock is an added peace
-      of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!
-  - author: Ron Swanson
+      Fantastic app, speedy human response to any question, very cheap insurance
+      that’s easy to access, what more could you want?
+  - author: 'David, uses Flock Cover for aerial photography missions.'
     image: /images/uploads/testimonial/4.jpg
     quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
+      Ease of use is a key factor, and Flock represents a good way for new UAV
+      service operators to establish their businesses without paying for
+      'unused' insurance cover.
 featured:
   image: images/uploads/featured-list.png
   title: As featured in
