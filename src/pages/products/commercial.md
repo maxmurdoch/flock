@@ -16,23 +16,23 @@ why:
   description: 'Over 2,000 drone pilots in the UK now use the Flock Cover app.'
   list:
     - text: >-
-        We know two jobs are never the same. Customise your insurance
-        flight-by-flight.
-      title: Bespoke cover
-    - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
         from £4.95.
       title: Fairer pricing
+    - text: >-
+        We know two jobs are never the same. Customise your insurance
+        flight-by-flight.
+      title: 'Bespoke cover '
+    - text: >-
+        Schedule flights up to 10 days in advance. Change of plan? Cancel with
+        one tap.
+      title: 'Book in advance '
     - text: Flock’s policies are EC785/2004 compliant and CAA approved.
       title: Fully compliant
     - text: >-
         Pinpoint the cost of insurance for each job, and expense it to your
         clients.
-      title: Bill as an expense
-    - text: >-
-        Schedule flights up to 10 days in advance. Change of plan? Cancel with
-        one tap.
-      title: 'Book in advance '
+      title: 'Bill as an expense '
     - text: >-
         Chat to our customer support team through the app. We typically reply in
         minutes.
