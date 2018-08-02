@@ -60,16 +60,18 @@ flightSchool:
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
   bodyText: >-
-    We're here to help. You can get your proof-of-insurance for your PfCO
-    application emailed to you in seconds with the Flock Cover app.
+    We're here to help. You can get your required proof-of-insurance document
+    for your PfCO application emailed to you in seconds with the Flock Cover
+    app. 
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Learn how to get your Cover Note within the app →
+    text: Learn how to get your Cover Note in the app →
     to: /download
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance, and doesn't cost a penny.
+    insurance, and you can get yours without committing to anything in the
+    long-term, or paying a penny.
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
@@ -81,7 +83,7 @@ how:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
         Choose your Flight Area, and the date and time you want to fly. Receive
-        a real-time quote instantly.
+        a risk-dependent quote in seconds.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-trainee-screen.png
       text: >-
@@ -90,8 +92,8 @@ how:
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay and you're ready to fly! Your policy documents are instantly emailed
-        to you.
+        Pay and instantly receive your policy documents via email. Then you're
+        all set to fly!
       title: 3. Get flying
   title: How Flock Cover works
 risk:
@@ -102,40 +104,33 @@ risk:
   list:
     - icon: ../../images/uploads/icons-house.svg
       text: >-
-        Flock Cover analyses building data to inform you of nearby schools
-        hospitals and prisons.
+        Flock Cover analyses building data to inform you of nearby schools,
+        hospitals, and prisons.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      text: >-
-        The app identifies high-risk areas such as power plants military bases
-        and busy roads.
+      text: |
+        The app identifies high-risk areas such as power plants and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
-      text: Be alerted to surrounding airports and heliports.
+      text: >-
+        Be alerted to surrounding airports and temporary restrictions of
+        airspace. 
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >-
-        Receive hyper-local weather information such as wind speed temperature
-        and probability of rainfall.
+        Receive hyperlocal weather information such as wind speed and
+        temperature.
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
-  - author: 'David Dennison, Parrot Mambo FPV pilot'
+  - author: 'Gareth, media business owner.'
     image: /images/uploads/testimonial/1@2x.png
     quote: >-
-      With all the current drone laws in the UK, having Flock is an added peace
-      of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!
-  - author: Ron Swanson
+      The help and support during setting up the policy and acquiring the
+      correct documents for my PfCO application was very good.
+  - author: 'Paul, real estate photographer.'
     image: /images/uploads/testimonial/4@2x.png
-    quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
-  - author: Ron Swanson
-    image: /images/uploads/testimonial-air-shot.png
-    quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
+    quote: The Flock team have been a great help with getting cover for my PfCO test.
 otherProducts:
   description: >-
     Chances are we can provide coverage tailored specifically to you. Select
