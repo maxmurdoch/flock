@@ -72,7 +72,7 @@ coverNote:
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
     insurance, and you can get yours without committing to an annual policy, or
     paying a penny! Once you've received your licence you can upgrade to a
-    commercial operator account in the app, and start your new career firmly in
+    Commercial Operator account in the app, and start your new career firmly in
     control of your insurance. 
   title: Applying for your PfCO?
 doINeedInsurance:
