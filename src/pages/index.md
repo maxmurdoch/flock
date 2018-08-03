@@ -37,8 +37,8 @@ howFlockWorks:
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    The Flock Cover app leverages real-time data to provide drone insurance
-    that's tailored to your flight. At the most competitive price possible.
+    The Flock Cover app uses real-time data to fairly price insurance that's
+    fully tailored to your flight.
   reasons:
     - icon: images/uploads/shield.svg
       text: >-
