@@ -93,16 +93,16 @@ risk:
     - icon: images/uploads/icons-circle.svg
       text: >-
         Including dangerous areas such as nuclear power plants, military
-        airbases and busy roads.
+        airbases, and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
-        Be alerted to surrounding airports, heliports and temporary restrictions
-        of airspace to avoid flying illegally.
+        Be alerted to surrounding airports, heliports, and temporary
+        restrictions of airspace to avoid flying illegally.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
-        Receive real-time weather updates such as wind speed , temperature and
+        Receive real-time weather updates such as wind speed , temperature, and
         probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly
