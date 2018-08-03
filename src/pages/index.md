@@ -81,9 +81,11 @@ kindOfPilot:
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data from your Flight Area to identify nearby risks,
-    generating a unique Risk Report for each flight in seconds. Here's what we
-    look out for:
+    analyses real-time data from your Flight Area to identify nearby risks;
+    generating a unique Risk Report for each flight in seconds.\
+
+    \
+     Here's what we look out for:
   list:
     - icon: images/uploads/icons-house.svg
       text: >-
@@ -108,14 +110,14 @@ risk:
 calculator:
   description: >-
     Tell us about your flying habits and we will estimate the yearly cost of
-    insuring with Flock
+    insuring with Flock.
   title: Is pay-as-you-fly for you?
 secondTestimonial:
   - author: 'Keith, Land Surveyor'
     image: /images/uploads/testimonial/3.jpg
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
-      that’s easy to access, what more could you want?
+      that’s easy to access. What more could you want?
   - author: 'David, Aerial Photographer'
     image: /images/uploads/testimonial/4.jpg
     quote: >-
