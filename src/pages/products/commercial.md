@@ -147,7 +147,7 @@ siteMetadataOverride:
     - insurance
     - on-demand
     - Flock
-    - commercial drone insurance
-  title: Commercial
+    - commercial drone insurance UK
+  title: 'Commercial pay-as-you-fly drone insurance '
 ---
 
