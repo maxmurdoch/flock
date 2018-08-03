@@ -82,10 +82,8 @@ risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
     analyses real-time data from your Flight Area to identify nearby risks;
-    generating a unique Risk Report for each flight in seconds.\
-
-    \
-     Here's what we look out for:
+    generating a unique Risk Report for each flight in seconds. Here's what we
+    look out for:
   list:
     - icon: images/uploads/icons-house.svg
       text: >-
@@ -99,13 +97,12 @@ risk:
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
-        Be alerted to surrounding airports and heliports to avoid flying
-        illegally. We'll let you know of any temporary restrictions of airspace
-        too.
+        Be alerted to surrounding airports, heliports, and temporary
+        restrictions of airspace to avoid flying illegally.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
-        Receive real-time weather updates such as wind speed , temperature and
+        Receive real-time weather updates such as wind speed , temperature, and
         probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly
