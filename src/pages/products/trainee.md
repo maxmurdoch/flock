@@ -70,8 +70,10 @@ coverNote:
     to: /download
   smallText: >-
     Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance, and you can get yours without committing to anything in the
-    long-term, or paying a penny.
+    insurance, and you can get yours without committing to an annual policy, or
+    paying a penny! Once you've received your licence you can upgrade to a
+    commercial operator account in the app, and start your new career firmly in
+    control of your insurance. 
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
@@ -82,44 +84,44 @@ how:
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
-        Choose your Flight Area, and the date and time you want to fly. Receive
-        a risk-dependent quote in seconds.
+        Choose where and when you want to fly. See your quote change in
+        real-time.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-trainee-screen.png
-      text: >-
-        From 1-8 hours, select how long you want to be covered for. You can even
-        set the price you want your equipment to be insured for.
+      text: Customise your policy length and equipment cover to suit your needs.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay and instantly receive your policy documents via email. Then you're
-        all set to fly!
+        Pay to instantly receive your policy documents by email. Enjoy the
+        flight!
       title: 3. Get flying
   title: How Flock Cover works
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data in your Flight Area to instantly identify the
-    important risks before you take-off.
+    analyses real-time data from your Flight Area to identify nearby risks;
+    generating a unique Risk Report for each flight in seconds. Here's what we
+    look out for:
   list:
     - icon: ../../images/uploads/icons-house.svg
       text: >-
-        Flock Cover analyses building data to inform you of nearby schools,
-        hospitals, and prisons.
+        High-risk buildings such as schools, hospitals, prisons, and densely
+        populated areas.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      text: |
-        The app identifies high-risk areas such as power plants and busy roads.
+      text: >-
+        Including dangerous areas such as nuclear power plants, military
+        airbases, and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       text: >-
-        Be alerted to surrounding airports and temporary restrictions of
-        airspace. 
+        Be alerted to airports, heliports, and temporary restrictions of
+        airspaces. 
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
-      text: >-
-        Receive hyperlocal weather information such as wind speed and
-        temperature.
+      text: >
+        Receive real-time weather updates such as wind speed and probability of
+        rainfall.  
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
@@ -132,9 +134,7 @@ testimonial:
     image: /images/uploads/testimonial/4@2x.png
     quote: The Flock team have been a great help with getting cover for my PfCO test.
 otherProducts:
-  description: >-
-    Chances are we can provide coverage tailored specifically to you. Select
-    below to learn more.
+  description: We offer instant insurance tailored to your specific needs.
   products:
     - icon: /images/uploads/commercial-pilot.svg
       link: /products/commercial
@@ -145,14 +145,18 @@ otherProducts:
     - icon: /images/uploads/recreational-pilot.svg
       link: /products/hobbyist
       text: >-
-        Enjoy your favourite hobby without worrying about insurance. Get covered
-        from just £2.95 with the touch of a button.
+        Enjoy your favourite hobby with peace of mind. Get covered from just
+        £2.95 for up to a day of flying.
       title: Recreational pilot
   title: What kind of pilot are you?
 siteMetadataOverride:
-  description: ''
+  description: drone insurance for trainee pilots
   keywords:
-    - ''
-  title: ''
+    - drone insurance
+    - drone
+    - drone cover
+    - trainee drone insurance
+    - pay-as-you-fly drone insurance
+  title: Trainee pay-as-you-fly drone insurance
 ---
 
