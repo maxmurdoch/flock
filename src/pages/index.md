@@ -93,7 +93,9 @@ risk:
         populated areas.
       title: Inhabited spaces
     - icon: images/uploads/icons-circle.svg
-      text: 'Including power plants, military airbases, and busy roads.'
+      text: >-
+        Including dangerous areas such as nuclear power plants, military
+        airbases, and busy roads.
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
@@ -103,8 +105,8 @@ risk:
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
-        See real-time weather updates such as wind speed, temperature, and
-        probability of rainfall during your flight.
+        Receive real-time weather updates such as wind speed , temperature and
+        probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly
 calculator:
