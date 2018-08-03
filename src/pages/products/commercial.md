@@ -102,7 +102,7 @@ risk:
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       text: >-
-        Be alerted to airports, heliports and temporary restrictions of
+        Be alerted to airports, heliports, and temporary restrictions of
         airspaces. 
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
@@ -147,7 +147,7 @@ siteMetadataOverride:
     - insurance
     - on-demand
     - Flock
-    - commercial drone insurance
-  title: Commercial
+    - commercial drone insurance UK
+  title: 'Commercial pay-as-you-fly drone insurance '
 ---
 
