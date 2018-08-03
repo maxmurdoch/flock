@@ -1,24 +1,16 @@
 ---
-title: About
+title: About Us
 templateKey: about
 hero:
   backgroundImage: ../../images/uploads/team-shot.jpg
   header: About Flock
 flockStory:
   bigText: >-
-    For too long, insurance has been antiquated and inflexible. More often than
-    not, you were tied into an annual policy that you had little control over.
-    We wanted to change that, and believed that technology was the key.
-
-
-    Through analysing real-time data we are able to form a precise understanding
-    of the risk of an individual drone flight: How windy is it? Is the flight
-    taking place during rush hour? Is it over a busy school? 
-
-
-    Insights such as these enable us to intelligently price insurance premiums
-    on the spot; enabling pilots to purchase short-term, customised policies
-    only when they need it, with just a few taps on their mobile phone.
+    We believe that insurance doesn't have to be antiquated and inflexible. It
+    can be smart, and powered by real-time data. It can be on-demand and
+    accessed in the palm of your hand. And it can even keep you safe from flying
+    robots. Our technology is now transforming both the drone industry and the
+    insurance industry - and we’re just getting started!
   header: 'Our Story '
   image: /images/uploads/backers.png
   imageHeader: We’re backed by some of the best in the business
