@@ -25,9 +25,7 @@ howFlockWorks:
         real-time.
       title: 1. Enter your flight details
     - image: images/uploads/screens/customise-policy-recreational-screen.png
-      text: >-
-        Select how long you want to be insured for. With options from 1-8 hours,
-        get covered only for the hours you fly.
+      text: ''
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: >-
@@ -97,8 +95,8 @@ risk:
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
-        Be alerted to surrounding airports, heliports, and temporary
-        restrictions of airspace to avoid flying illegally.
+        Be alerted to surrounding airports, and temporary restrictions of
+        airspace to avoid flying illegally.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
