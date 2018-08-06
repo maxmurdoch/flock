@@ -114,12 +114,9 @@ testimonial:
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
       that’s easy to access, what more could you want?
-  - author: 'David, Aerial Photographer '
+  - author: 'Peter, Promotional Filming '
     image: /images/uploads/testimonial/2@2x.png
-    quote: >-
-      Ease of use is a key factor, and Flock represents a good way for new UAV
-      service operators to establish their businesses without paying for
-      'unused' insurance cover.
+    quote: Superb in every way.
 otherProducts:
   description: We offer instant insurance tailored to your specific needs.
   products:
