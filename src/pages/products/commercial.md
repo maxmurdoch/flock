@@ -47,13 +47,13 @@ coverNote:
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Learn how to get your Cover Note in the app →
-    to: /download
+    text: Get your Cover Note in the app →
+    to: /landing.flockcover.com/flock-cover-note-pfco-renewal
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
     insurance. You can get yours instantly emailed to you, without having to
     commit to anything in the long-term. Oh, and it's free!
-  title: Renewing your PfCO?
+  title: Getting or renewing your PfCO?
 doINeedInsurance:
   title: ''
 how:
