@@ -66,11 +66,11 @@ coverNote:
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Learn how to get your Cover Note in the app →
-    to: /download
+    text: Get your Cover Note in the app →
+    to: landing.flockcover.com/flock-cover-note-pfco-renewal
   smallText: >-
-    Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance, and you can get yours without committing to an annual policy, or
+    Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
+    insurance. You can get yours without committing to an annual policy, or
     paying a penny! Once you've received your licence you can upgrade to a
     Commercial Operator account in the app, and start your new career firmly in
     control of your insurance. 
