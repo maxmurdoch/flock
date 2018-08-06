@@ -8,9 +8,9 @@ hero:
     to: /download
   description: |-
     * On-demand insurance from £2.95
-    * Short-term cover from 1-8 hours
+    * Short-term cover, from 1-8 hours
     * Public Liability insurance (£250,000)
-    * Real-time risk assessment
+    * Real-time flight risk assessment
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
   description: >-
@@ -66,15 +66,15 @@ coverNote:
 doINeedInsurance:
   bigText: >-
     Whilst it's not a legal requirement for hobbyist drone pilots to have
-    insurance, it's important to recognise the risks: a flying robot with
-    spinning propellers has the potential to cause some serious damage if
-    something were to go wrong 40m up in the air. 
+    insurance in the UK, it's important to recognise the risks: a flying robot
+    with spinning propellers has the potential to cause some serious damage if
+    something were to go wrong.
 
 
-    And that's where we can help. Flock's Public Liability insurance covers you
-    against 3rd party claims, giving you peace of mind from the second you take
-    off. What's more, our policies are Underwritten by Allianz, the world's
-    leading aviation insurer.
+    That's where the Flock Cover app comes in. Our Public Liability policies
+    cover you against 3rd party claims, giving you peace of mind from the second
+    you take off. What's more, our policies are Underwritten by Allianz, the
+    world's leading aviation insurer.
   smallText: ''
   title: |-
     I fly my drone for fun,
