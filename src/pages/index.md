@@ -6,8 +6,8 @@ hero:
     text: 'Download '
     to: /download
   description: >-
-    Flock Cover lets you insure your drone by the hour, with a policy that's as
-    individual as your flight.
+    Fully customised drone insurance, only when you need it. Download the Flock
+    Cover app to get a real-time quote in seconds.
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -25,9 +25,7 @@ howFlockWorks:
         real-time.
       title: 1. Enter your flight details
     - image: images/uploads/screens/customise-policy-recreational-screen.png
-      text: >-
-        Select how long you want to be insured for. With options from 1-8 hours,
-        get covered only for the hours you fly.
+      text: Customise your policy length to suit your exact needs.
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: >-
@@ -97,8 +95,8 @@ risk:
       title: Ground hazards
     - icon: images/uploads/icons-plane.svg
       text: >-
-        Be alerted to surrounding airports, heliports, and temporary
-        restrictions of airspace to avoid flying illegally.
+        Be alerted to surrounding airports, and temporary restrictions of
+        airspace to avoid flying illegally.
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
@@ -117,12 +115,9 @@ secondTestimonial:
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
       that’s easy to access. What more could you want?
-  - author: 'David, Aerial Photographer'
+  - author: 'Calum, Aerial Photographer '
     image: /images/uploads/testimonial/4.jpg
-    quote: >-
-      Ease of use is a key factor, and Flock represents a good way for new UAV
-      service operators to establish their businesses without paying for
-      'unused' insurance cover.
+    quote: Easy to use and comprehensive insurance. Would highly recommend!
 featured:
   image: images/uploads/featured-list.png
   title: As featured in
