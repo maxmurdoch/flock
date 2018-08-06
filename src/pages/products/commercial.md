@@ -13,29 +13,25 @@ hero:
     * Drone and accessory cover (up to £25,000)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: 'Over 2,000 drone pilots in the UK now use the Flock Cover app.'
+  description: Thousands of drone pilots in the UK now use the Flock Cover app.
   list:
     - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
         from £4.95.
       title: Fairer pricing
-    - text: >-
-        We know two jobs are never the same. Customise your insurance
-        flight-by-flight.
+    - text: 'No two jobs are the same. Customise your insurance, flight-by-flight.'
       title: 'Bespoke cover '
     - text: >-
         Schedule flights up to 10 days in advance. Change of plan? Cancel with
         one tap.
       title: 'Book in advance '
-    - text: Flock’s policies are EC785/2004 compliant and CAA approved.
+    - text: Flock’s policies are EC785/2004 compliant and CAA-approved.
       title: Fully compliant
-    - text: >-
-        Pinpoint the cost of insurance for each job, and expense it to your
-        clients.
+    - text: 'Purchase insurance for each job, and expense it to your clients.'
       title: 'Bill as an expense '
     - text: >-
-        Chat to our customer support team through the app. We typically reply in
-        minutes.
+        Chat to our customer support team in the app. We respond in 2 minutes or
+        less!
       title: Instant support
   title: 'Why do commercial pilots fly with Flock? '
 flightSchool:
@@ -46,17 +42,17 @@ flightSchool:
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
   bodyText: >-
-    You no longer need to commit to an annual drone insurance policy in order to
-    get your proof-of-insurance for your PfCO renewal.
+    Good news - you longer need to commit to an annual policy in order to get
+    your proof-of-insurance for your PfCO renewal.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
     text: Learn how to get your Cover Note in the app →
     to: /download
   smallText: >-
-    Our Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance, and you can get yours instantly emailed to you without having to
-    commit to anything in the long-term, or pay a penny! 
+    Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
+    insurance. You can get yours instantly emailed to you, without having to
+    commit to anything in the long-term. Oh, and it's free!
   title: Renewing your PfCO?
 doINeedInsurance:
   title: ''
@@ -102,7 +98,7 @@ risk:
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
       text: >-
-        Be alerted to airports, heliports, and temporary restrictions of
+        Be alerted to nearby airports, heliports, and temporary restrictions of
         airspaces. 
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
@@ -118,12 +114,9 @@ testimonial:
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
       that’s easy to access, what more could you want?
-  - author: 'David, Aerial Photographer '
+  - author: 'Peter, Promotional Filming '
     image: /images/uploads/testimonial/2@2x.png
-    quote: >-
-      Ease of use is a key factor, and Flock represents a good way for new UAV
-      service operators to establish their businesses without paying for
-      'unused' insurance cover.
+    quote: Superb in every way.
 otherProducts:
   description: We offer instant insurance tailored to your specific needs.
   products:
