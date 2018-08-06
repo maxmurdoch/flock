@@ -8,9 +8,9 @@ hero:
     to: /download
   description: |-
     * On-demand insurance from £2.95
-    * Short-term cover from 1-8 hours
+    * Short-term cover, from 1-8 hours
     * Public Liability insurance (£250,000)
-    * Real-time risk assessment
+    * Real-time flight risk assessment
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
   description: >-
@@ -66,15 +66,15 @@ coverNote:
 doINeedInsurance:
   bigText: >-
     Whilst it's not a legal requirement for hobbyist drone pilots to have
-    insurance, it's important to recognise the risks: a flying robot with
-    spinning propellers has the potential to cause some serious damage if
-    something were to go wrong 40m up in the air. 
+    insurance in the UK, it's important to recognise the risks: a flying robot
+    with spinning propellers has the potential to cause some serious damage if
+    something were to go wrong.
 
 
-    And that's where we can help. Flock's Public Liability insurance covers you
-    against 3rd party claims, giving you peace of mind from the second you take
-    off. What's more, our policies are Underwritten by Allianz, the world's
-    leading aviation insurer.
+    That's where the Flock Cover app comes in. Our Public Liability policies
+    cover you against 3rd party claims, giving you peace of mind from the second
+    you take off. What's more, our policies are Underwritten by Allianz, the
+    world's leading aviation insurer.
   smallText: ''
   title: |-
     I fly my drone for fun,
@@ -127,17 +127,15 @@ risk:
       title: Hyperlocal weather
   title: Know your risks before you fly.
 testimonial:
-  - author: 'David Dennison, Parrot Mambo FPV pilot'
+  - author: 'Kim '
     image: /images/uploads/testimonial/3@2x.png
     quote: >-
-      “With all the current drone laws in the UK, having Flock is an added peace
-      of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!”
-  - author: Ron Swanson
+      With all the current drone laws in the UK, having Flock is an added peace
+      of mind. Providing you follow the regulations and fly safely this is a
+      brilliant app.
+  - author: 'Peter '
     image: /images/uploads/testimonial/4@2x.png
-    quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
+    quote: Superb in every way.
 otherProducts:
   description: We offer instant insurance tailored to your specific needs.
   products:
@@ -157,12 +155,12 @@ otherProducts:
 siteMetadataOverride:
   description: drone insurance
   keywords:
-    - drones
-    - insurance
-    - on-demand
-    - Flock
-    - recreational drone insurance
-    - hobbyist drone insurance
+    - drone insurance
+    - recreational
+    - hobbyist
+    - drone
+    - drone insurance uk
+    - leisure drone insurance
   title: Hobbyist
 ---
 
