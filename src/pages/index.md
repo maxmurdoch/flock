@@ -25,7 +25,7 @@ howFlockWorks:
         real-time.
       title: 1. Enter your flight details
     - image: images/uploads/screens/customise-policy-recreational-screen.png
-      text: ''
+      text: Customise your policy length to suit your exact needs.
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: >-
