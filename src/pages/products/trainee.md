@@ -130,9 +130,12 @@ testimonial:
     quote: >-
       The help and support during setting up the policy and acquiring the
       correct documents for my PfCO application was very good.
-  - author: 'Paul, Real Estate Photographer'
+  - author: 'David, Aerial Photographer '
     image: /images/uploads/testimonial/4@2x.png
-    quote: The Flock team have been a great help with getting cover for my PfCO test.
+    quote: >-
+      Ease of use is a key factor, and Flock represents a good way for new UAV
+      service operators to establish their businesses without paying for
+      'unused' insurance cover.’
 otherProducts:
   description: We offer instant insurance tailored to your specific needs.
   products:
