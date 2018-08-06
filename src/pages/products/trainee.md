@@ -14,8 +14,8 @@ hero:
   header: 'Pay-as-you-fly drone insurance for trainee pilots '
 why:
   description: >-
-    Flock has helped over 500 drone pilots get their Permission for Commercial
-    Operations.
+    Flock has helped over 500 drone pilots obtain their Permission for
+    Commercial Operations (PfCO).
   list:
     - text: >-
         Get flight assessment insurance from £5.95. Any training flights can
@@ -25,18 +25,18 @@ why:
         Insurance can be purchased on the spot, or pre-booked up to 10 days in
         advance.
       title: 'Cover when you need it '
-    - text: Flight assessment rescheduled? Cancel beforehand and get a full refund.
+    - text: 'Flight assessment rescheduled? Cancel with a tap, and get a full refund.'
       title: 'Cancel with a tap '
     - text: >-
         Our customer support team will guide you through applying for your 
         licence.
-      title: PfCO support
+      title: Instant PfCO support
     - text: Flock’s policies are EC785/2004 compliant and approved by the CAA.
       title: 'Fully Compliant '
     - text: >-
-        Once you've got your PfCO, you can easily upgrade to a commercial
+        Once you've got your PfCO, you can simply upgrade to a commercial
         operator account.
-      title: 'Easy to Upgrade '
+      title: 'Free to Upgrade '
   title: Why do trainee pilots fly with Flock?
 flightSchool:
   list:
@@ -130,9 +130,12 @@ testimonial:
     quote: >-
       The help and support during setting up the policy and acquiring the
       correct documents for my PfCO application was very good.
-  - author: 'Paul, Real Estate Photographer'
+  - author: 'David, Aerial Photographer '
     image: /images/uploads/testimonial/4@2x.png
-    quote: The Flock team have been a great help with getting cover for my PfCO test.
+    quote: >-
+      Ease of use is a key factor, and Flock represents a good way for new UAV
+      service operators to establish their businesses without paying for
+      'unused' insurance cover.’
 otherProducts:
   description: We offer instant insurance tailored to your specific needs.
   products:
