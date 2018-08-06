@@ -6,8 +6,8 @@ hero:
     text: 'Download '
     to: /download
   description: >-
-    Fully customised drone insurance, only when you need it. Download the Flock
-    Cover app to get a real-time quote in seconds.
+    With Flock Cover, receive fully customised drone insurance, precisely when
+    you need it. Download the app and get a real-time quote in seconds. 
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -25,7 +25,9 @@ howFlockWorks:
         real-time.
       title: 1. Enter your flight details
     - image: images/uploads/screens/customise-policy-recreational-screen.png
-      text: Customise your policy length to suit your exact needs.
+      text: >-
+        Customise your policy length, Public Liability limit, and equipment
+        cover to suit your needs.
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: >-
@@ -35,8 +37,8 @@ howFlockWorks:
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    The Flock Cover app uses real-time data to fairly price insurance that's
-    fully tailored to your flight.
+    The Flock Cover app uses real-time data to provide instant drone insurance
+    that's tailored to your flight. At the most competitive price possible.
   reasons:
     - icon: images/uploads/shield.svg
       text: >-
