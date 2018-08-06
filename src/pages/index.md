@@ -100,7 +100,7 @@ risk:
       title: Restricted airspace
     - icon: images/uploads/icons-cloud.svg
       text: >-
-        Receive real-time weather updates such as wind speed , temperature, and
+        Receive real-time weather updates such as wind speed, temperature, and
         probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly
