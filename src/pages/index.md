@@ -6,9 +6,9 @@ hero:
     text: 'Download '
     to: /download
   description: >-
-    Flock Cover lets you insure your drone by the hour, with a policy that's as
-    individual as your flight.
-  header: Pay-as-you-fly drone insurance
+    Fully customised drone insurance, only when you need it. Download the Flock
+    Cover app to get a real-time quote in seconds.
+  header: 'Flock Cover: Pay-as-you-fly drone insurance'
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
