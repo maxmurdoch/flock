@@ -127,17 +127,15 @@ risk:
       title: Hyperlocal weather
   title: Know your risks before you fly.
 testimonial:
-  - author: 'David Dennison, Parrot Mambo FPV pilot'
+  - author: 'Kim '
     image: /images/uploads/testimonial/3@2x.png
     quote: >-
-      “With all the current drone laws in the UK, having Flock is an added peace
-      of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!”
-  - author: Ron Swanson
+      With all the current drone laws in the UK, having Flock is an added peace
+      of mind. Providing you follow the regulations and fly safely this is a
+      brilliant app.
+  - author: 'Peter '
     image: /images/uploads/testimonial/4@2x.png
-    quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
+    quote: Superb in every way.
 otherProducts:
   description: We offer instant insurance tailored to your specific needs.
   products:
@@ -157,12 +155,12 @@ otherProducts:
 siteMetadataOverride:
   description: drone insurance
   keywords:
-    - drones
-    - insurance
-    - on-demand
-    - Flock
-    - recreational drone insurance
-    - hobbyist drone insurance
+    - drone insurance
+    - recreational
+    - hobbyist
+    - drone
+    - drone insurance uk
+    - leisure drone insurance
   title: Hobbyist
 ---
 
