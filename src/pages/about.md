@@ -1,24 +1,30 @@
 ---
-title: About
+title: About Us
 templateKey: about
 hero:
   backgroundImage: ../../images/uploads/team-shot.jpg
   header: About Flock
 flockStory:
   bigText: >-
-    For too long, insurance has been antiquated and inflexible. More often than
-    not, you were tied into an annual policy that you had little control over.
-    We wanted to change that, and believed that technology was the key.
+    We're Flock, an energetic, London-based startup building the future of drone
+    insurance…
 
 
-    Through analysing real-time data we are able to form a precise understanding
-    of the risk of an individual drone flight: How windy is it? Is the flight
-    taking place during rush hour? Is it over a busy school? 
+    We believe that insurance doesn't have to be boring. It can be smart, and
+    powered by real-time data. It can fit in the palm of your hand. And it can
+    even help to reduce your own risks.
 
 
-    Insights such as these enable us to intelligently price insurance premiums
-    on the spot; enabling pilots to purchase short-term, customised policies
-    only when they need it, with just a few taps on their mobile phone.
+    Since launching Flock Cover in January 2018 we’ve helped thousands of
+    commercial drone pilots fly safely, with insurance that’s as customised as
+    their flights. We’ve also launched offerings for recreational pilots and
+    trainee pilots. And by constantly listening and learning from our customers,
+    we’ve released a bunch of cool features too - like predictive analytics, and
+    additional equipment insurance.
+
+
+    Our technology and service is now transforming both the drone industry and
+    the insurance industry - and we’re just getting started!
   header: 'Our Story '
   image: /images/uploads/backers.png
   imageHeader: We’re backed by some of the best in the business
@@ -54,8 +60,8 @@ coreValues:
   title: Our core values
 meetTheTeam:
   description: >-
-    Our little team is based in our new office in London. Got something to offer
-    us? Get in touch!
+    We're a friendly, passionate team of engineers, designers, writers and more.
+    We're building the insurance company of the future. Join us!
   team:
     - image: /images/uploads/ron.png
       member: Ed Leon Kinger
