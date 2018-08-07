@@ -54,7 +54,7 @@ const navList = [
   {
     to: '/about',
     className: styles.product,
-    text: 'About'
+    text: 'About us'
   },
   {
     to: '/support',
