@@ -58,7 +58,7 @@ otherProducts:
     - title: 'Recreational pilot'
       icon:  'images/uploads/recreational-pilot.svg'
       text: 'Enjoy your favourite hobby without worrying about insurance. Get covered from just £3 with the touch of a button.'
-      link: '/products/hobbyist'
+      link: '/products/recreational'
 
 siteMetadataOverride:
   title: ''

@@ -28,7 +28,7 @@ why:
     - text: 'Flight assessment rescheduled? Cancel with a tap, and get a full refund.'
       title: 'Cancel with a tap '
     - text: >-
-        Our customer support team will guide you through applying for your 
+        Our customer support team will guide you through applying for your
         licence.
       title: Instant PfCO support
     - text: Flock’s policies are EC785/2004 compliant and approved by the CAA.
@@ -62,7 +62,7 @@ coverNote:
   bodyText: >-
     We're here to help. You can get your required proof-of-insurance document
     for your PfCO application emailed to you in seconds with the Flock Cover
-    app. 
+    app.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
@@ -73,7 +73,7 @@ coverNote:
     insurance. You can get yours without committing to an annual policy, or
     paying a penny! Once you've received your licence you can upgrade to a
     Commercial Operator account in the app, and start your new career firmly in
-    control of your insurance. 
+    control of your insurance.
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
@@ -116,7 +116,7 @@ risk:
     - icon: ../../images/uploads/icons-plane.svg
       text: >-
         Be alerted to airports, heliports, and temporary restrictions of
-        airspaces. 
+        airspaces.
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >
@@ -146,7 +146,7 @@ otherProducts:
         insurance from just £4.95 a day.
       title: Commercial pilot
     - icon: /images/uploads/recreational-pilot.svg
-      link: /products/hobbyist
+      link: /products/recreational
       text: >-
         Enjoy your favourite hobby with peace of mind. Get covered from just
         £2.95 for up to a day of flying.
@@ -162,4 +162,3 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
-
