@@ -62,10 +62,6 @@ const Footer = ({containerClassName}) => {
     },
     {
       to: 'https://help.flockcover.com',
-      text: 'Support'
-    },
-    {
-      to: 'https://help.flockcover.com',
       text: 'FAQ'
     },
     {

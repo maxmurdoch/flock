@@ -138,7 +138,7 @@ class Nav extends Component {
                           className={linkClass}
                           href="https://help.flockcover.com"
                         >
-                          <SmallText>Support</SmallText>
+                          <SmallText>FAQ</SmallText>
                         </a>
                       </Flex>
                       <div className={downloadButtonClass}>

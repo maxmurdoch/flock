@@ -49,19 +49,19 @@ const pilotTypeOptions = [
 ]
 const droneTypeOptions = [
   {
-    label: 'Less than 1000g',
+    label: 'Less than 1kg',
     value: 0.80625
   },
   {
-    label: 'Less than 3000g',
+    label: 'Less than 3kg',
     value: 0.965
   },
   {
-    label: 'Less than 5000g',
+    label: 'Less than 5kg',
     value: 1.42
   },
   {
-    label: 'More than 5000g',
+    label: 'More than 5kg',
     value: 2.57
   }
 ]

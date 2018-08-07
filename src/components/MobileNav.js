@@ -59,7 +59,7 @@ const navList = [
   {
     to: '/support',
     className: styles.product,
-    text: 'Support'
+    text: 'FAQ'
   }
 ]
 
