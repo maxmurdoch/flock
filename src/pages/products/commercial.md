@@ -99,7 +99,7 @@ risk:
     - icon: ../../images/uploads/icons-plane.svg
       text: >-
         Be alerted to nearby airports, heliports, and temporary restrictions of
-        airspaces. 
+        airspaces.
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >+
@@ -127,7 +127,7 @@ otherProducts:
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
     - icon: /images/uploads/recreational-pilot.svg
-      link: /products/hobbyist
+      link: /products/recreational
       text: >-
         Enjoy your favourite hobby with peace of mind. Get covered from just
         £2.95 for up to a day of flying.
@@ -143,4 +143,3 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
-

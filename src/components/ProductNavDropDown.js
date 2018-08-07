@@ -43,9 +43,9 @@ const ProductNavDropDown = ({productsIsOpen}) => {
                   text: 'Trainee pilot'
                 },
                 {
-                  to: '/products/hobbyist',
+                  to: '/products/recreational',
                   image: '/images/uploads/recreational-pilot.svg',
-                  text: 'Hobbyist pilot'
+                  text: 'Recreational pilot'
                 }
               ]
             )}

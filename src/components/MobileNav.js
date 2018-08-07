@@ -39,9 +39,9 @@ const productList = [
     text: 'Trainee pilot'
   },
   {
-    to: '/products/hobbyist',
+    to: '/products/recreational',
     className: styles.product,
-    text: 'Hobbyist pilot'
+    text: 'Recreational pilot'
   }
 ]
 

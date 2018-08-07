@@ -161,6 +161,5 @@ siteMetadataOverride:
     - drone
     - drone insurance uk
     - leisure drone insurance
-  title: Hobbyist
+  title: Recreational
 ---
-
