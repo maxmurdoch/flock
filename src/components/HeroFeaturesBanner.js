@@ -67,7 +67,7 @@ const HeroFeaturesBanner = () => (
               ) : null
             }
           </Media>
-          <SmallText>24/7 customer support</SmallText>
+          <SmallText>Instant customer support</SmallText>
         </Flex>
       </Flex>
     </SiteContainer>
