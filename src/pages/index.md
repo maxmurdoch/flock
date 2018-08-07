@@ -110,6 +110,7 @@ calculator:
   description: >-
     Tell us about your flying habits and we will estimate the yearly cost of
     insuring with Flock.
+  disclaimer: crapbaskets
   title: Is pay-as-you-fly for you?
 secondTestimonial:
   - author: 'Keith, Land Surveyor'
