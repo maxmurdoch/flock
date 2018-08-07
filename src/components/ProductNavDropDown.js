@@ -45,7 +45,7 @@ const ProductNavDropDown = ({productsIsOpen}) => {
                 {
                   to: '/products/hobbyist',
                   image: '/images/uploads/recreational-pilot.svg',
-                  text: 'Hobbyist pilot'
+                  text: 'Recreational pilot'
                 }
               ]
             )}

@@ -51,7 +51,7 @@ const Footer = ({containerClassName}) => {
     },
     {
       to: '/products/hobbyist',
-      text: 'Hobbyist pilots'
+      text: 'Recreational pilots'
     }
   ]
 

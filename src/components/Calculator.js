@@ -42,7 +42,7 @@ const pilotTypeOptions = [
     value: 1.04625
   },
   {
-    label: 'Hobbyist',
+    label: 'Recreational',
     value: 0.58375
   }
 ]

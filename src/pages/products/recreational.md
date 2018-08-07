@@ -65,7 +65,7 @@ coverNote:
   title: Applying for your PfCO?
 doINeedInsurance:
   bigText: >-
-    Whilst it's not a legal requirement for recreational drone pilots to have
+    Whilst it's not a legal requirement for hobbyist drone pilots to have
     insurance in the UK, it's important to recognise the risks: a flying robot
     with spinning propellers has the potential to cause some serious damage if
     something were to go wrong.
@@ -157,9 +157,10 @@ siteMetadataOverride:
   keywords:
     - drone insurance
     - recreational
-    - recreational
+    - hobbyist
     - drone
     - drone insurance uk
     - leisure drone insurance
-  title: Recreational
+  title: Hobbyist
 ---
+
