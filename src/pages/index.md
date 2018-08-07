@@ -7,7 +7,7 @@ hero:
     to: /download
   description: >-
     With Flock Cover, receive fully customised drone insurance, precisely when
-    you need it. Download the app and get a real-time quote in seconds.
+    you need it. Download the app and get a real-time quote in seconds. 
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -110,8 +110,10 @@ calculator:
   description: >-
     Tell us about your flying habits and we will estimate the yearly cost of
     insuring with Flock.
+  disclaimer: >-
+    Your estimate is based on average usage. Actual prices will depend on the
+    real-time risks of each flight.
   title: Is pay-as-you-fly for you?
-  disclaimer:  Your estimate is based on average usage. Actual prices will depend on the real-time risks of each flight.
 secondTestimonial:
   - author: 'Keith, Land Surveyor'
     image: /images/uploads/testimonial/3.jpg
@@ -133,3 +135,4 @@ siteMetadataOverride:
     - Flock Cover
   title: 'Flock '
 ---
+
