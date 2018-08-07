@@ -50,8 +50,8 @@ const Footer = ({containerClassName}) => {
       text: 'Trainee pilots'
     },
     {
-      to: '/products/hobbyist',
-      text: 'Hobbyist pilots'
+      to: '/products/recreational',
+      text: 'Recreational pilots'
     }
   ]
 
@@ -75,7 +75,10 @@ const Footer = ({containerClassName}) => {
     {
       to: '/media-pack',
       text: 'Media pack'
-    },
+    }
+  ]
+
+  const bottomFooterLinks = [
     {
       to: 'http://help.flockcover.com/legal/terms-of-use',
       text: 'Terms of Use'
@@ -151,31 +154,27 @@ const Footer = ({containerClassName}) => {
                 )
               }, socialMediaLinks)}
             </Flex>
+            <Box width={['100%', '33.33%']} mb={[2, 0]}>
+              <img src={logo} className={css({marginBottom: 0})} />
+            </Box>
           </Flex>
         </Flex>
         <Flex borderTop="1px solid white" pt={3} mt={3} pb={3} flexWrap={true}>
-          <Box width={['100%', '33.33%']} mb={[2, 0]}>
-            <img src={logo} className={css({marginBottom: 0})} />
-          </Box>
-          <Box width={['100%', '33.33%']} mb={[2, 0]}>
-            <SmallText fontWeight={700} color="white">
-              Flock Cover is regulated by the FCA.
-            </SmallText>
-            <SmallText color="white">
-              <Link
-                to="https://help.flockcover.com/legal/how-is-flock-regulated"
-                className={styles.link}
-              >
-                Click here
-              </Link>
-              &nbsp;to learn what that means
-            </SmallText>
-          </Box>
-          <Box width={['100%', '33.33%']}>
-            <SmallText color="white">
-              © 2017 Flock Ltd. All Rights Reserved. <br /> Company number
-              9503380
-            </SmallText>
+          <Box width={['100%', '100%']} mb={[2, 0]}>
+            <Flex flexDirection="row" justifyContent="center">
+              {mapIndex(({to, text}, index) => {
+                return (
+                  <Link className={styles.horizontalLink} to={to} key={index}>
+                    <SmallText>{text}</SmallText>
+                  </Link>
+                )
+              }, bottomFooterLinks)}
+            </Flex>
+            <Box pb={2} className={styles.centeredFooterText}>
+              <SmallText tag="h3" color="white" mb={0} fontWeight={100}>
+                Flock Ltd. (company number 9503380) are an Appointed Representative of Worry+Peace (a trading name of Innovative Risk Ltd.) who have arranged for the insurance provided by the Flock Cover app to be underwritten by Allianz Global Corporate & Speciality.
+              </SmallText>
+            </Box>
           </Box>
         </Flex>
       </SiteContainer>
@@ -195,5 +194,15 @@ const styles = {
     color: R.prop('white', colors),
     textDecoration: 'none',
     paddingBottom: R.nth(1, space)
+  }),
+  horizontalLink: css({
+    color: R.prop('yellow', colors),
+    textDecoration: 'none',
+    paddingRight: R.nth(2, space),
+    marginBottom: '40px'
+  }),
+  centeredFooterText: css({
+    margin: '0 auto',
+    width: '60%'
   })
 }

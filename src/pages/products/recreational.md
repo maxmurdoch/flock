@@ -8,14 +8,14 @@ hero:
     to: /download
   description: |-
     * On-demand insurance from £2.95
-    * Short-term cover from 1-8 hours
+    * Short-term cover, from 1-8 hours
     * Public Liability insurance (£250,000)
-    * Real-time risk assessment
+    * Real-time flight risk assessment
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
   description: >-
-    Enjoy your favourite hobby without worrying about insurance. Get covered
-    on-demand for the price of a coffee.
+    Enjoy your favourite hobby with peace of mind. Insure your flight in seconds
+    for the price of your morning coffee.
   list:
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
@@ -26,9 +26,9 @@ why:
         decide.
       title: 'Short-term cover  '
     - text: >-
-        Get covered on the spot or plan a flight up to 10 days in advance. It
-        only takes 60 seconds.
-      title: SIMPLE INSURANCE
+        Flock Cover leverages real-time data to provide you with an instant risk
+        assessment.
+      title: Safety Tool
   title: Why do recreational pilots fly with Flock?
 flightSchool:
   list:
@@ -65,13 +65,16 @@ coverNote:
   title: Applying for your PfCO?
 doINeedInsurance:
   bigText: >-
-    Whilst it's not against the law in the UK to fly without insurance, a flying
-    robot with spinning propellers has the potential to cause some serious
-    damage. 
+    Whilst it's not a legal requirement for hobbyist drone pilots to have
+    insurance in the UK, it's important to recognise the risks: a flying robot
+    with spinning propellers has the potential to cause some serious damage if
+    something were to go wrong.
 
 
-    Flock's Public Liability insurance starts from just £2.95, and gives you
-    peace of mind from the second you take off.
+    That's where the Flock Cover app comes in. Our Public Liability policies
+    cover you against 3rd party claims, giving you peace of mind from the second
+    you take off. What's more, our policies are Underwritten by Allianz, the
+    world's leading aviation insurer.
   smallText: ''
   title: |-
     I fly my drone for fun,
@@ -83,55 +86,58 @@ how:
   list:
     - image: ../../images/uploads/screens/flight-details-screen.png
       text: >-
-        Choose your flight area, and the date and time you want to fly. Receive
-        a real-time quote instantly.
+        Choose where and when you want to fly. See your quote change in
+        real-time.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-home-screen.png
-      text: >-
-        Select how long you want to be insured for. With options from 1-8 hours,
-        get covered only for the hours you fly.
+      text: Customise your policy length (from 1-8 hours) to suit your needs.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay and you're good to go! Your policy documents are instantly emailed
-        to you.
+        Pay to instantly receive your policy documents by email. Enjoy the
+        flight!
       title: 3. Get flying
   title: 'How Flock Cover works '
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data in your Flight Area to instantly identify the
-    important risks before you take-off.
+    analyses real-time data from your Flight Area to identify nearby risks;
+    generating a unique Risk Report for each flight in seconds. Here's what we
+    look out for:
   list:
     - icon: ../../images/uploads/icons-house.svg
-      text: Flock Cover analyses building data to inform you of nearby schools hospitals and prisons.
+      text: >-
+        High-risk buildings such as schools, hospitals, prisons, and densely
+        populated areas.
       title: Inhabited spaces
     - icon: ../../images/uploads/icons-circle.svg
-      text: The app identifies high-risk areas such as power plants military bases and busy roads.
+      text: >-
+        Including dangerous areas such as nuclear power plants, military
+        airbases, and busy roads.
       title: Ground hazards
     - icon: ../../images/uploads/icons-plane.svg
-      text: Be alerted to surrounding airports and heliports and keep up to date with the latest NOTAMS.
+      text: >-
+        Be alerted to surrounding airports and heliports to avoid flying your
+        drone illegally.
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
-      text: Receive hyper-local weather information such as wind speed temperature and probability of rainfall.
+      text: >
+        Receive real-time weather updates such as wind speed and probability of
+        rainfall.  
       title: Hyperlocal weather
-  title: Know your risks before you fly
+  title: Know your risks before you fly.
 testimonial:
-  - author: 'David Dennison, Parrot Mambo FPV pilot'
+  - author: 'Kim '
     image: /images/uploads/testimonial/3@2x.png
     quote: >-
-      “With all the current drone laws in the UK, having Flock is an added peace
-      of mind. Another bonus is that Flock will insure non professional drone
-      pilots. This is a brilliant app!”
-  - author: Ron Swanson
+      With all the current drone laws in the UK, having Flock is an added peace
+      of mind. Providing you follow the regulations and fly safely this is a
+      brilliant app.
+  - author: 'Peter '
     image: /images/uploads/testimonial/4@2x.png
-    quote: >-
-      I hate drones. But I have one. And I insure my property because I'm a
-      responsible adult. Flock are the best drone insurers. I use Flock.
+    quote: Superb in every way.
 otherProducts:
-  description: >-
-    Chances are we can provide coverage tailored specifically to you. Select
-    below to learn more.
+  description: We offer instant insurance tailored to your specific needs.
   products:
     - icon: /images/uploads/commercial-pilot.svg
       link: /products/commercial
@@ -149,11 +155,11 @@ otherProducts:
 siteMetadataOverride:
   description: drone insurance
   keywords:
-    - drones
-    - insurance
-    - on-demand
-    - Flock
-    - commercial drone insurance
-  title: Hobbyist
+    - drone insurance
+    - recreational
+    - hobbyist
+    - drone
+    - drone insurance uk
+    - leisure drone insurance
+  title: Recreational
 ---
-

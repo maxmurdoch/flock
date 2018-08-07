@@ -55,10 +55,10 @@ otherProducts:
       icon:  'images/uploads/trainee-pilot.svg'
       text: 'From flight assessment insurance, to providing proof-of-insurance in your PfCO application, Flock’s got you covered.'
       link: '/products/trainee'
-    - title: 'Hobbyist pilot'
+    - title: 'Recreational pilot'
       icon:  'images/uploads/recreational-pilot.svg'
       text: 'Enjoy your favourite hobby without worrying about insurance. Get covered from just £3 with the touch of a button.'
-      link: '/products/hobbyist'
+      link: '/products/recreational'
 
 siteMetadataOverride:
   title: ''
