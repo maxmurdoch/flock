@@ -95,6 +95,7 @@ collections:
             fields:
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'string'}
+              - {label: 'Disclaimer', name: 'disclaimer', widget: 'string'}
           - label: 'Second testimonials'
             name: 'secondTestimonial'
             widget: 'list'
