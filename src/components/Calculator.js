@@ -3,6 +3,7 @@ import R from 'ramda'
 import {css, injectGlobal} from 'react-emotion'
 import Select from 'react-select'
 import 'react-select/dist/react-select.css'
+import PropTypes from 'prop-types'
 
 import Flex from './Flex'
 import Box from './Box'
@@ -135,6 +136,7 @@ class Calculator extends Component {
   }
 
   render() {
+    const { disclaimer } = this.props
     return (
       <Flex justifyContent="center" className={styles.outerContainer}>
         <SiteContainer>
@@ -216,12 +218,16 @@ class Calculator extends Component {
             </Flex>
           </Flex>
           <Text textAlign="left" mb={1} className={css({marginBottom: 0, paddingTop: 20, paddingLeft: 3, fontSize: 12, color: 'grey'})}>
-            * Your estimate is based on average usage. Prices are dependent on the real-time risks of each flight.
+            * {disclaimer}
           </Text>
         </SiteContainer>
       </Flex>
     )
   }
+}
+
+Calculator.propTypes = {
+  disclaimer: PropTypes.string
 }
 
 export default Calculator

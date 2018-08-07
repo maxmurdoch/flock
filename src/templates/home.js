@@ -103,7 +103,7 @@ const HomeTemplate = ({
               title={calculator.title}
               description={calculator.description}
             />
-            <Calculator />
+            <Calculator disclaimer={calculator.disclaimer}/>
           </Box>
           <Box pt={[3, 5]}>
             <Testimonial testimonials={secondTestimonial} />
@@ -254,6 +254,7 @@ export const query = graphql`
         calculator {
           title
           description
+          disclaimer
         }
         secondTestimonial {
           quote
