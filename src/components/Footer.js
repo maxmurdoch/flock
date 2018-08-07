@@ -66,11 +66,15 @@ const Footer = ({containerClassName}) => {
     },
     {
       to: 'https://flockcover.workable.com',
-      text: 'Careers'
+      text: 'Jobs'
     },
     {
-      to: '/media-pack',
+      to: 'https://landing.flockcover.com/flock-media-pack/',
       text: 'Media pack'
+    },
+    {
+      to: 'https://blog.flockcover.com/',
+      text: 'Blog'
     }
   ]
 

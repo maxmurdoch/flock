@@ -60,6 +60,16 @@ const navList = [
     to: '/support',
     className: styles.product,
     text: 'FAQ'
+  },
+  {
+    to: 'https://blog.flockcover.com/',
+    className: styles.product,
+    text: 'Blog'
+  },
+  {
+    to: 'https://flockcover.workable.com',
+    className: styles.product,
+    text: 'Jobs'
   }
 ]
 
