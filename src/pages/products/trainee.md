@@ -71,9 +71,9 @@ coverNote:
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
     insurance. You can get yours without committing to an annual policy, or
-    paying a penny! Once you've received your licence you can upgrade to a
-    Commercial Operator account in the app, and start your new career firmly in
-    control of your insurance.
+    paying a penny! And after that? Once you've received your licence you can
+    upgrade to a Commercial Operator account in the app, and start your new
+    career in control of your insurance.
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
@@ -120,7 +120,7 @@ risk:
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >
-        Receive real-time weather updates such as wind speed and probability of
+        Receive real-time weather updates, such as wind speed and probability of
         rainfall.  
       title: Hyperlocal weather
   title: Know your risks before you fly
@@ -162,3 +162,4 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
+
