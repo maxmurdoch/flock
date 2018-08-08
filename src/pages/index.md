@@ -7,7 +7,7 @@ hero:
     to: /download
   description: >-
     With Flock Cover, receive fully customised drone insurance, precisely when
-    you need it. Download the app and get a real-time quote in seconds.
+    you need it. Download the app and get a real-time quote in seconds. 
   header: Pay-as-you-fly drone insurance
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -42,7 +42,7 @@ stopWorrying:
   reasons:
     - icon: images/uploads/shield.svg
       text: >-
-        Flock’s pricing is [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price). So the safer you fly, the less you
+        Flock’s pricing is risk-dependent. So the safer you fly, the less you
         pay. It's as simple as that.
       title: Fairer pricing
     - icon: images/uploads/money.svg
@@ -134,3 +134,4 @@ siteMetadataOverride:
     - Flock Cover
   title: 'Flock '
 ---
+

@@ -15,7 +15,8 @@ import Box from './Box'
 
 const mapIndex = R.addIndex(R.map)
 
-const TextGrid = ({title, description, list, image}) => (<Flex justifyContent="center">
+const TextGrid = ({title, description, list, image}) => (
+  <Flex justifyContent="center">
     <SiteContainer>
       <Flex flexWrap={true}>
         <Box width={['100%', '50%']}>
