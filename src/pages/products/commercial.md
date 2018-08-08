@@ -42,7 +42,7 @@ flightSchool:
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
   bodyText: >-
-    Good news - you longer need to commit to an annual policy in order to get
+    Good news! You longer need to commit to an annual policy in order to get
     your proof-of-insurance for your PfCO renewal.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
