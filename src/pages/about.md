@@ -6,9 +6,10 @@ hero:
   header: About Flock
 flockStory:
   bigText: >-
-    We're Flock, an energetic, London-based startup building the future of drone
-    insurance.
+    We're Flock, an energetic, London-based startup working to make the world a
+    smarter and safer place. \
 
+    \
 
     We believe that insurance doesn't have to be boring. It can be smart, and
     powered by real-time data. It can fit in the palm of your hand. And it can
@@ -64,41 +65,35 @@ meetTheTeam:
     We're building the insurance company of the future. Come join us!
   team:
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: Antton Peña
+      role: 'Founder, Product Lead'
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: Ed Leon Klinger
+      role: 'Founder, CEO'
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: 'Courtenay Mansel '
+      role: Data Scientist
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: Abe Polishchuk
+      role: Tech Lead
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: 'Dara Cormican '
+      role: Marketing Executive
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: 'Tim Ollier '
+      role: Drone Partnerships Lead
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: 'Matt Cleary '
+      role: Engineer
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: 'John Rowlands '
+      role: Insurance Partnerships Lead
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: 'Heidi Megele '
+      role: Office Manager
     - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+      member: 'Carl Andersson '
+      role: Customer Success Executive
   title: Meet the team
 siteMetadataOverride:
   description: drone insurance
