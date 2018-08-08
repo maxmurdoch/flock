@@ -13,7 +13,7 @@ hero:
     * Drone and accessory cover (up to £25,000)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: Thousands of drone pilots in the UK now use the Flock Cover app.
+  description: Thousands of drone pilots across the UK now use the Flock Cover app.
   list:
     - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
@@ -48,7 +48,7 @@ coverNote:
   isShowing: true
   link:
     text: Get your Cover Note in the app →
-    to: /landing.flockcover.com/flock-cover-note-pfco-renewal
+    to: 'https://landing.flockcover.com/flock-cover-note-pfco-renewal/'
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
     insurance. You can get yours instantly emailed to you, without having to
@@ -118,7 +118,7 @@ testimonial:
     image: /images/uploads/testimonial/2@2x.png
     quote: Superb in every way.
 otherProducts:
-  description: We offer instant insurance tailored to your specific needs.
+  description: We offer instant drone insurance tailored to your specific needs.
   products:
     - icon: /images/uploads/trainee-pilot.svg
       link: /products/trainee
