@@ -57,7 +57,7 @@ stopWorrying:
       title: Total transparency
   title: The smarter new way to insure your drone
 kindOfPilot:
-  description: We offer instant insurance tailored to your specific needs.
+  description: We offer instant drone insurance tailored to your specific needs.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /products/commercial
