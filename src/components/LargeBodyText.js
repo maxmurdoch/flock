@@ -5,7 +5,7 @@ import Text from './Text'
 import {breakpoints} from '../constants/theme'
 import {css, cx} from 'emotion'
 
-const BodyText = ({children, mb = 0, className, ...props}) => {
+const LargeBodyText = ({children, mb = 0, className, ...props}) => {
   return (
     <Text mb={mb} className={cx(style.text, className)} {...props}>
       {' '}
@@ -31,9 +31,9 @@ const style = {
   })
 }
 
-BodyText.propTypes = {
+LargeBodyText.propTypes = {
   children: PropTypes.node,
   mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array])
 }
 
-export default BodyText
+export default LargeBodyText
