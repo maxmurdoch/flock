@@ -14,8 +14,8 @@ hero:
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
   description: >-
-    Enjoy your favourite hobby with peace of mind. Insure your flight in seconds
-    for the price of your morning coffee.
+    Enjoy your favourite hobby with peace of mind. Insure your flight in
+    seconds, for the price of your morning coffee.
   list:
     - text: >-
         Flock's pricing is risk-dependent, so the safer you fly, the less you
@@ -26,7 +26,7 @@ why:
         decide.
       title: 'Short-term cover  '
     - text: >-
-        Flock Cover leverages real-time data to provide you with an instant risk
+        Flock Cover analyses real-time data to provide you with an instant risk
         assessment.
       title: Safety Tool
   title: Why do recreational pilots fly with Flock?
@@ -90,7 +90,9 @@ how:
         real-time.
       title: 1. Enter your flight details
     - image: ../../images/uploads/screens/customise-policy-home-screen.png
-      text: Customise your policy length (from 1-8 hours) to suit your needs.
+      text: >-
+        With options from 1-8 hours, customise your policy length to suit your
+        needs.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
@@ -122,7 +124,7 @@ risk:
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >
-        Receive real-time weather updates such as wind speed and probability of
+        Receive real-time weather updates, such as wind speed and probability of
         rainfall.  
       title: Hyperlocal weather
   title: Know your risks before you fly.
@@ -133,9 +135,11 @@ testimonial:
       With all the current drone laws in the UK, having Flock is an added peace
       of mind. Providing you follow the regulations and fly safely this is a
       brilliant app.
-  - author: 'Peter '
+  - author: Keith
     image: /images/uploads/testimonial/4@2x.png
-    quote: Superb in every way.
+    quote: >-
+      Fantastic app, speedy human response to any question, very cheap insurance
+      that’s easy to access, what more could you want?
 otherProducts:
   description: We offer instant insurance tailored to your specific needs.
   products:
@@ -163,3 +167,4 @@ siteMetadataOverride:
     - leisure drone insurance
   title: Recreational
 ---
+
