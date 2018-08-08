@@ -12,7 +12,7 @@ import mediumIcon from '../images/medium-icon.svg'
 import linkedInIcon from '../images/linked-in.svg'
 import twitterIcon from '../images/twitter-icon.svg'
 import facebookIcon from '../images/facebook-icon.svg'
-import {colors, space} from '../constants/theme'
+import {colors, space, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -103,7 +103,7 @@ const Footer = ({containerClassName}) => {
     >
       <SiteContainer>
         <Flex flexWrap={true}>
-          <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Products
@@ -117,7 +117,7 @@ const Footer = ({containerClassName}) => {
               )
             }, firstFooterLinks)}
           </Flex>
-          <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Company
@@ -131,7 +131,7 @@ const Footer = ({containerClassName}) => {
               )
             }, secondFooterLinks)}
           </Flex>
-          <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.lastFlexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Got a question? Get in touch:
@@ -204,5 +204,16 @@ const styles = {
   centeredFooterText: css({
     margin: '0 auto',
     width: '60%'
+  }),
+  flexiFooter: css({
+    [`@media (max-width: ${R.nth(1, breakpoints)})`]: {
+      width: '50%',
+      justifyContent: 'space-between'
+    }
+  }),
+  lastFlexiFooter: css({
+    [`@media (max-width: ${R.nth(1, breakpoints)})`]: {
+      width: '100%'
+    }
   })
 }
