@@ -7,7 +7,7 @@ hero:
 flockStory:
   bigText: >-
     We're Flock, an energetic, London-based startup building the future of drone
-    insurance…
+    insurance.
 
 
     We believe that insurance doesn't have to be boring. It can be smart, and
@@ -16,7 +16,7 @@ flockStory:
 
 
     Since launching Flock Cover in January 2018 we’ve helped thousands of
-    commercial drone pilots fly safely, with insurance that’s as customised as
+    commercial drone pilots fly safely, with insurance that’s as individual as
     their flights. We’ve also launched offerings for recreational pilots and
     trainee pilots. And by constantly listening and learning from our customers,
     we’ve released a bunch of cool features too - like predictive analytics, and
@@ -61,7 +61,7 @@ coreValues:
 meetTheTeam:
   description: >-
     We're a friendly, passionate team of engineers, designers, writers and more.
-    We're building the insurance company of the future. Join us!
+    We're building the insurance company of the future. Come join us!
   team:
     - image: /images/uploads/ron.png
       member: Ed Leon Kinger
