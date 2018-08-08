@@ -84,7 +84,7 @@ class Nav extends Component {
                   </Box>
                   <Box width="100%">
                     <nav className={navClass}>
-                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                      <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
                           className={linkClass}
@@ -122,14 +122,14 @@ class Nav extends Component {
                         </Link>
                       </Flex>
 
-                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                      <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
                           className={linkClass}
                           exact={true}
                           to="/about"
                         >
-                          <SmallText>About</SmallText>
+                          <SmallText>About us</SmallText>
                         </Link>
                       </Flex>
 
@@ -142,7 +142,7 @@ class Nav extends Component {
                         </a>
                       </Flex>
 
-                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                      <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
                           className={linkClass}
@@ -153,7 +153,7 @@ class Nav extends Component {
                         </Link>
                       </Flex>
 
-                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                      <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
                           className={linkClass}
