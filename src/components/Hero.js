@@ -12,7 +12,7 @@ import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import SecondaryButton from './SecondaryButton'
 import ShowIf from './ShowIf'
-import BodyText from './BodyText'
+import LargeBodyText from './LargeBodyText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import {colors, breakpoints} from '../constants/theme'
 import trackDownload from '../utils/trackDownload'
@@ -59,9 +59,9 @@ const Hero = ({
               >
                 {header}
               </H1>
-              <BodyText tag="div" color={textColor} mb={[2, 3]}>
+              <LargeBodyText tag="div" color={textColor} mb={[2, 3]}>
                 <Markdown>{description}</Markdown>
-              </BodyText>
+              </LargeBodyText>
               <ShowIf predicate={R.not(R.isNil(button))}>
                 <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
                   {matches =>
