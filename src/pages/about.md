@@ -6,9 +6,10 @@ hero:
   header: About Flock
 flockStory:
   bigText: >-
-    We're Flock, an energetic, London-based startup building the future of drone
-    insurance.
+    We're Flock, an energetic, London-based startup working to make the world a
+    smarter and safer place. \
 
+    \
 
     We believe that insurance doesn't have to be boring. It can be smart, and
     powered by real-time data. It can fit in the palm of your hand. And it can
