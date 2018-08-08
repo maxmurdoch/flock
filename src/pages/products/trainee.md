@@ -71,7 +71,7 @@ coverNote:
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
     insurance. You can get yours instantly emailed to you without committing to
     an annual policy, or paying a penny! And after that? Once you've received
-    your licence you can upgrade to a Commercial Operator account in the app,
+    your licence you can upgrade to a commercial operator account in the app,
     and start your new career in control of your drone insurance.
   title: Applying for your PfCO?
 doINeedInsurance:
