@@ -61,8 +61,7 @@ flightSchool:
 coverNote:
   bodyText: >-
     We're here to help. You can get your required proof-of-insurance document
-    for your PfCO application emailed to you in seconds with the Flock Cover
-    app.
+    for your PfCO application in seconds with the Flock Cover app.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
@@ -70,10 +69,10 @@ coverNote:
     to: landing.flockcover.com/flock-cover-note-pfco-renewal
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
-    insurance. You can get yours without committing to an annual policy, or
-    paying a penny! And after that? Once you've received your licence you can
-    upgrade to a Commercial Operator account in the app, and start your new
-    career in control of your insurance.
+    insurance. You can get yours instantly emailed to you without committing to
+    an annual policy, or paying a penny! And after that? Once you've received
+    your licence you can upgrade to a Commercial Operator account in the app,
+    and start your new career in control of your drone insurance.
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
