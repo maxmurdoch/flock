@@ -42,7 +42,7 @@ flightSchool:
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
   bodyText: >-
-    Good news - you longer need to commit to an annual policy in order to get
+    Good news! You longer need to commit to an annual policy in order to get
     your proof-of-insurance for your PfCO renewal.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
@@ -51,7 +51,7 @@ coverNote:
     to: 'https://landing.flockcover.com/flock-cover-note-pfco-renewal/'
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
-    insurance. You can get yours instantly emailed to you, without having to
+    insurance. And you can get yours instantly emailed to you, without having to
     commit to anything in the long-term. Oh, and it's free!
   title: Getting or renewing your PfCO?
 doINeedInsurance:
