@@ -1,6 +1,7 @@
 import React from 'react'
 import {css, cx} from 'react-emotion'
 import PropTypes from 'prop-types'
+import showdown from 'showdown'
 import R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
@@ -12,16 +13,30 @@ const SmallText = ({
   mb = 0,
   ...props
 }) => {
-  return (
-    <Text
-      fontWeight={fontWeight}
-      mb={mb}
-      className={cx(style.smallTextStyle, className)}
-      {...props}
-    >
-      {children}
-    </Text>
-  )
+  const c = new showdown.Converter()
+  if (typeof(children) === 'string') {
+    return (
+      <Text
+        fontWeight={fontWeight}
+        mb={mb}
+        className={cx(style.smallTextStyle, className)}
+        {...props}
+        dangerouslySetInnerHTML={{__html: c.makeHtml(children)}}
+      >
+      </Text>
+    )
+  } else {
+    return (
+      <Text
+        fontWeight={fontWeight}
+        mb={mb}
+        className={cx(style.smallTextStyle, className)}
+        {...props}
+      >
+        {children}
+      </Text>
+    )
+  }
 }
 
 SmallText.propTypes = {
