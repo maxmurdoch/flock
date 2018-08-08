@@ -183,7 +183,7 @@ const Footer = ({containerClassName}) => {
 }
 
 export default Footer
-
+console.log(breakpoints)
 const styles = {
   link: css({
     color: R.prop('yellow', colors),
@@ -206,7 +206,7 @@ const styles = {
     width: '60%'
   }),
   flexiFooter: css({
-    [`@media (max-width: ${R.nth(1, breakpoints)})`]: {
+    [`@media (min-width: 24em) and (max-width: ${R.nth(1, breakpoints)})`]: {
       width: '50%',
       justifyContent: 'space-between'
     }
