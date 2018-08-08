@@ -13,7 +13,7 @@ hero:
     * Drone and accessory cover (up to £25,000)
   header: 'Pay-as-you-fly drone insurance for commercial pilots '
 why:
-  description: Thousands of drone pilots in the UK now use the Flock Cover app.
+  description: Thousands of drone pilots across the UK now use the Flock Cover app.
   list:
     - text: >-
         Flock’s pricing is risk-dependent, with commercial policies starting
