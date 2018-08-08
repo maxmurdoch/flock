@@ -80,7 +80,7 @@ how:
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data from your Flight Area to identify nearby risks;
+    analyses real-time data from your Flight Area to identify nearby risks,
     generating a unique Risk Report for each flight in seconds.
 
 
