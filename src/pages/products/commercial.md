@@ -103,7 +103,7 @@ risk:
       title: Restricted airspace
     - icon: ../../images/uploads/icons-cloud.svg
       text: >+
-        Receive real-time weather updates such as wind speed and probability of
+        Receive real-time weather updates, such as wind speed and probability of
         rainfall.  
 
       title: Hyperlocal weather
@@ -143,3 +143,4 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
+
