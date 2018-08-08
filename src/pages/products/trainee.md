@@ -61,19 +61,18 @@ flightSchool:
 coverNote:
   bodyText: >-
     We're here to help. You can get your required proof-of-insurance document
-    for your PfCO application emailed to you in seconds with the Flock Cover
-    app.
+    for your PfCO application in seconds with the Flock Cover app.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
     text: Get your Cover Note in the app →
-    to: landing.flockcover.com/flock-cover-note-pfco-renewal
+    to: 'https://landing.flockcover.com/flock-cover-note-pfco-renewal/'
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
-    insurance. You can get yours without committing to an annual policy, or
-    paying a penny! And after that? Once you've received your licence you can
-    upgrade to a Commercial Operator account in the app, and start your new
-    career in control of your insurance.
+    insurance. You can get yours instantly emailed to you without committing to
+    an annual policy, or paying a penny! And after that? Once you've received
+    your licence you can upgrade to a Commercial Operator account in the app,
+    and start your new career in control of your drone insurance.
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
@@ -135,15 +134,15 @@ testimonial:
     quote: >-
       Ease of use is a key factor, and Flock represents a good way for new UAV
       service operators to establish their businesses without paying for
-      'unused' insurance cover.’
+      'unused' insurance cover.
 otherProducts:
-  description: We offer instant insurance tailored to your specific needs.
+  description: We offer instant drone insurance tailored to your specific needs.
   products:
     - icon: /images/uploads/commercial-pilot.svg
       link: /products/commercial
       text: >-
-        Flock’s EC785/2004 compliant policies offer flexible hull and liability
-        insurance from just £4.95 a day.
+        Flock’s EC785/2004 compliant policies offer equipment and Public
+        Liability insurance from just £4.95 a day.
       title: Commercial pilot
     - icon: /images/uploads/recreational-pilot.svg
       link: /products/recreational
