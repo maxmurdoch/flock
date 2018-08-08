@@ -6,12 +6,33 @@ import {breakpoints} from '../constants/theme'
 import {css, cx} from 'emotion'
 
 const BodyText = ({children, mb = 0, className, ...props}) => {
-  return (
-    <Text mb={mb} className={cx(style.text, className)} {...props}>
-      {' '}
-      {children}{' '}
-    </Text>
-  )
+  if (typeof(children) === 'string') {
+    const matches = children.match(/\[([^\[\]]+)\]\(([^)]+)/)
+    if(!matches) {
+      return(<Text mb={mb} className={cx(style.text, className)} {...props}>
+        {' '}
+        {children}{' '}
+      </Text>)
+    } else {
+      const splitText = children.split(`[${matches[1]}](${matches[2]})`)
+      const internalHtml = splitText.join(`<a href='${matches[2]}'>${matches[1]}</a>`)
+      return(
+        <Text
+          mb={mb}
+          className={cx(style.text, className)}
+          {...props}
+          dangerouslySetInnerHTML={{ __html: internalHtml }}
+        ></Text>
+      )
+    }
+  } else {
+    return (
+      <Text mb={mb} className={cx(style.text, className)} {...props}>
+        {' '}
+        {children}{' '}
+      </Text>
+    )
+  }
 }
 
 const style = {

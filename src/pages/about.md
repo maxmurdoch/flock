@@ -61,7 +61,7 @@ coreValues:
 meetTheTeam:
   description: >-
     We're a friendly, passionate team of engineers, designers, writers and more.
-    We're building the insurance company of the future. Come join us!
+    We're building the insurance company of the future. [Come join us!](https://flockcover.workable.com/)
   team:
     - image: /images/uploads/ron.png
       member: Antton Peña
@@ -104,4 +104,3 @@ siteMetadataOverride:
     - commercial drone insurance
   title: "Flock –\_About"
 ---
-

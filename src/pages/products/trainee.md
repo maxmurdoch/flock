@@ -34,8 +34,7 @@ why:
     - text: Flock’s policies are EC785/2004 compliant and approved by the CAA.
       title: 'Fully Compliant '
     - text: >-
-        Once you've got your PfCO, you can simply upgrade to a commercial
-        operator account.
+        Once you've got your PfCO, you can simply upgrade to a [commercial operator](https://priceless-ramanujan-c92666.netlify.com/products/commercial/) account.
       title: 'Free to Upgrade '
   title: Why do trainee pilots fly with Flock?
 flightSchool:
@@ -160,4 +159,3 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
-

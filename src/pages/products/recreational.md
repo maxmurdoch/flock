@@ -18,7 +18,7 @@ why:
     seconds, for the price of your morning coffee.
   list:
     - text: >-
-        Flock's pricing is risk-dependent, so the safer you fly, the less you
+        Flock's pricing is [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price), so the safer you fly, the less you
         pay. Simple!
       title: Fairer pricing
     - text: >-
@@ -166,4 +166,3 @@ siteMetadataOverride:
     - leisure drone insurance
   title: Recreational
 ---
-
