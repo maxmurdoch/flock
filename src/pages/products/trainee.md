@@ -141,8 +141,8 @@ otherProducts:
     - icon: /images/uploads/commercial-pilot.svg
       link: /products/commercial
       text: >-
-        Flock’s EC785/2004 compliant policies offer flexible hull and liability
-        insurance from just £4.95 a day.
+        Flock’s EC785/2004 compliant policies offer equipment and Public
+        Liability insurance from just £4.95 a day.
       title: Commercial pilot
     - icon: /images/uploads/recreational-pilot.svg
       link: /products/recreational
