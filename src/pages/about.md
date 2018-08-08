@@ -7,7 +7,7 @@ hero:
 flockStory:
   bigText: >-
     We're Flock, an energetic, London-based startup working to make the world a
-    smarter and safer place. \
+    smarter and safer place.\
 
     \
 
