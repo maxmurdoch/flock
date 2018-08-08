@@ -20,6 +20,12 @@ class Testimonial extends Component {
     const {testimonials} = this.props
     const activeTestimonial = R.nth(this.state.active, testimonials)
 
+    const preloadedArrayOfImages = testimonials.map(img => {
+      const i = new Image()
+      i.src = img.image
+      return i
+    })
+
     return (
       <Flex justifyContent="center" position="relative" zIndex="0">
         <SiteContainer>
