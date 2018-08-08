@@ -51,7 +51,7 @@ coverNote:
     to: 'https://landing.flockcover.com/flock-cover-note-pfco-renewal/'
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
-    insurance. You can get yours instantly emailed to you, without having to
+    insurance. And you can get yours instantly emailed to you, without having to
     commit to anything in the long-term. Oh, and it's free!
   title: Getting or renewing your PfCO?
 doINeedInsurance:
