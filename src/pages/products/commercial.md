@@ -118,7 +118,7 @@ testimonial:
     image: /images/uploads/testimonial/2@2x.png
     quote: Superb in every way.
 otherProducts:
-  description: We offer instant insurance tailored to your specific needs.
+  description: We offer instant drone insurance tailored to your specific needs.
   products:
     - icon: /images/uploads/trainee-pilot.svg
       link: /products/trainee
