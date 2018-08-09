@@ -10,6 +10,10 @@ import SiteContainer from './SiteContainer'
 import trackDownload from '../utils/trackDownload'
 
 const DownloadFlock = () => {
+  const download = () => {
+    trackDownload()
+    window.open('https://flockcover.app.link/6IW6kTmgfP', '_blank')
+  }
   return (
     <Flex justifyContent="center">
       <SiteContainer>
@@ -32,7 +36,7 @@ const DownloadFlock = () => {
             display="flex"
             justifyContent="center"
           >
-            <PrimaryButton onClick={trackDownload}>
+            <PrimaryButton onClick={download}>
               <ArrowText moveOnHover={false}>Download</ArrowText>
             </PrimaryButton>
           </Box>

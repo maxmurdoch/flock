@@ -26,6 +26,10 @@ const Hero = ({
   description,
   button
 }) => {
+  const download = () => {
+    trackDownload()
+    window.open('https://flockcover.app.link/6IW6kTmgfP', '_blank')
+  }
   return (
     <Flex
       flexDirection="column"
@@ -66,11 +70,11 @@ const Hero = ({
                 <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
                   {matches =>{
                     return matches ? (
-                      <PrimaryButton to={button.to} onClick={trackDownload}>
+                      <PrimaryButton to={button.to} onClick={download}>
                         <ArrowText moveOnHover={false}>{button.text}</ArrowText>
                       </PrimaryButton>
                     ) : (
-                      <SecondaryButton to={button.to} onClick={trackDownload}>
+                      <SecondaryButton to={button.to} onClick={download}>
                         <ArrowText moveOnHover={false}>{button.text}</ArrowText>
                       </SecondaryButton>
                     )
