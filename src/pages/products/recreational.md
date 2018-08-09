@@ -155,7 +155,7 @@ otherProducts:
         From flight assessment insurance, to providing proof-of-insurance in
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
-  title: What kind of pilot are you?
+  title: What kind of drone pilot are you?
 siteMetadataOverride:
   description: drone insurance
   keywords:
