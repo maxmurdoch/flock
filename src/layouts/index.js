@@ -5,6 +5,7 @@ import R from 'ramda'
 import {injectGlobal} from 'emotion'
 import Helmet from 'react-helmet'
 import {ThemeProvider} from 'emotion-theming'
+import CookieConsent from "react-cookie-consent";
 
 import theme, {fontFamilies, colors} from '../constants/theme'
 import './index.css'
@@ -46,6 +47,16 @@ a.inline-link:visited {
   font-weight: 400;
   src: url(${chivo}) format('woff2');
 }
+.cookieConsent button:hover {
+  background: #FFFF33 !important;
+  text-decoration: underline;
+}
+.cookiesLink {
+  opacity: .8em;
+  display: inline-block;
+  padding: .2em;
+  color: '#FFFF33';
+}
 `
 class Layout extends Component {
   render() {
@@ -72,6 +83,25 @@ class Layout extends Component {
               }
             ]}
           />
+          <CookieConsent
+            buttonText="Got it!"
+            style={{
+              background: '#707070',
+              fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
+              padding: '1em 1.8em',
+              width: '100%',
+              maxHeight: '72px',
+              overflow: 'hidden',
+              transition: 'max-height 1s',
+              boxSizing: 'border-box',
+              fontSize: '16px',
+              alignItems: 'center'
+            }}
+            buttonStyle={{ color: "#4e503b", fontSize: "13px", background: '#FFCC00', lineHeight: '1.5em', fontFamily: 'Helvetica,Calibri,Arial,sans-serif'}}
+            location='bottom'
+          >
+            <span>This website uses cookies to enhance the user experience. &nbsp; <a className='cookiesLink' href='https://help.flockcover.com/legal/cookies-policy' target='_blank'> Learn more</a></span>
+          </CookieConsent>
           <div>{children()}</div>
         </div>
       </ThemeProvider>
