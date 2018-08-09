@@ -64,36 +64,36 @@ meetTheTeam:
     We're building the insurance company of the future. [Come join
     us!](https://flockcover.workable.com/)
   team:
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0412-edit.jpg
       member: Antton Peña
       role: 'Founder, Product Lead'
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0482-edit.jpg
       member: Ed Leon Klinger
       role: 'Founder, CEO'
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0526-edit.jpg
       member: 'Courtenay Mansel '
       role: Data Scientist
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0436-edit.jpg
       member: Abe Polishchuk
       role: Tech Lead
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0442-edit.jpg
       member: 'Dara Cormican '
       role: Marketing Executive
-    - image: /images/uploads/ron.png
-      member: 'Tim Ollier '
-      role: Drone Partnerships Lead
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0586-edit.jpg
       member: 'Matt Cleary '
       role: Engineer
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0617-edit.jpg
       member: 'John Rowlands '
       role: Insurance Partnerships Lead
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0464-edit.jpg
       member: 'Heidi Megele '
       role: Office Manager
-    - image: /images/uploads/ron.png
+    - image: /images/uploads/img_0453-edit.jpg
       member: 'Carl Andersson '
       role: Customer Success Executive
+    - image: /images/uploads/img_0605-edit.jpg
+      member: 'Marco Soworka '
+      role: Business Development Intern
   title: Meet the team
 siteMetadataOverride:
   description: drone insurance
