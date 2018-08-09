@@ -42,8 +42,9 @@ stopWorrying:
   reasons:
     - icon: images/uploads/shield.svg
       text: >-
-        Flock’s pricing is [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price). So the safer you fly, the less you
-        pay. It's as simple as that.
+        Flock’s pricing is
+        [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price).
+        So the safer you fly, the less you pay. It's as simple as that.
       title: Fairer pricing
     - icon: images/uploads/money.svg
       text: >-
@@ -72,11 +73,11 @@ kindOfPilot:
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
     - icon: images/uploads/recreational-pilot.svg
-      link: /products/hobbyist
+      link: '/products/recreational '
       text: >-
         Enjoy your favourite hobby with peace of mind. Get covered from just
         £2.95 for up to a day of flying.
-      title: Hobbyist pilot
+      title: Recreational pilot
   title: What kind of drone pilot are you?
 risk:
   description: >-
@@ -134,3 +135,4 @@ siteMetadataOverride:
     - Flock Cover
   title: 'Flock '
 ---
+
