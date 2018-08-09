@@ -16,8 +16,9 @@ why:
   description: Thousands of drone pilots across the UK now use the Flock Cover app.
   list:
     - text: >-
-        Flock’s pricing is [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price), with commercial policies starting
-        from £4.95.
+        Flock’s pricing is
+        [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price),
+        with commercial policies starting from £4.95.
       title: Fairer pricing
     - text: 'No two jobs are the same. Customise your insurance, flight-by-flight.'
       title: 'Bespoke cover '
@@ -111,9 +112,9 @@ testimonial:
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
       that’s easy to access, what more could you want?
-  - author: 'Peter, Promotional Filming '
+  - author: 'Calum, Aerial Photographer '
     image: /images/uploads/testimonial/2@2x.png
-    quote: Superb in every way.
+    quote: Easy to use and comprehensive insurance. Would highly recommend!
 otherProducts:
   description: We offer instant drone insurance tailored to your specific needs.
   products:
@@ -140,3 +141,4 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
+
