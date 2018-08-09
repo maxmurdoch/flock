@@ -8,7 +8,7 @@ hero:
     to: /download
   description: |-
     * On-demand insurance from £2.95
-    * Short-term cover, from 1-8 hours
+    * Short-term cover (from 1-8 hours)
     * Public Liability insurance (£250,000)
     * Real-time flight risk assessment
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
@@ -18,8 +18,9 @@ why:
     seconds, for the price of your morning coffee.
   list:
     - text: >-
-        Flock's pricing is [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price), so the safer you fly, the less you
-        pay. Simple!
+        Flock's pricing is
+        [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price),
+        so the safer you fly, the less you pay. Simple!
       title: Fairer pricing
     - text: >-
         Insure your drone flight for as little as an hour, or up to a day. You
@@ -166,3 +167,4 @@ siteMetadataOverride:
     - leisure drone insurance
   title: Recreational
 ---
+
