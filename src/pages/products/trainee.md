@@ -34,7 +34,9 @@ why:
     - text: Flock’s policies are EC785/2004 compliant and approved by the CAA.
       title: 'Fully Compliant '
     - text: >-
-        Once you've got your PfCO, you can simply upgrade to a [commercial operator](https://priceless-ramanujan-c92666.netlify.com/products/commercial/) account.
+        Once you've got your PfCO, you can simply upgrade to a [commercial
+        operator](https://priceless-ramanujan-c92666.netlify.com/products/commercial/)
+        account.
       title: 'Free to Upgrade '
   title: Why do trainee pilots fly with Flock?
 flightSchool:
@@ -148,7 +150,7 @@ otherProducts:
         Enjoy your favourite hobby with peace of mind. Get covered from just
         £2.95 for up to a day of flying.
       title: Recreational pilot
-  title: What kind of pilot are you?
+  title: What kind of drone pilot are you?
 siteMetadataOverride:
   description: drone insurance for trainee pilots
   keywords:
@@ -159,3 +161,4 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
+
