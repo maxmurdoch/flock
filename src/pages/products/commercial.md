@@ -84,26 +84,25 @@ risk:
     analyses real-time data from your Flight Area to generate a unique Risk
     Report for each flight in seconds. Here's what we look out for:
   list:
-    - icon: ../../images/uploads/icons-house.svg
+    - icon: images/uploads/icons-house.svg
       text: >-
         High-risk buildings such as schools, hospitals, prisons, and densely
         populated areas.
       title: Inhabited spaces
-    - icon: ../../images/uploads/icons-circle.svg
+    - icon: images/uploads/icons-circle.svg
       text: >-
         Including dangerous areas such as nuclear power plants, military
         airbases, and busy roads.
       title: Ground hazards
-    - icon: ../../images/uploads/icons-plane.svg
+    - icon: images/uploads/icons-plane.svg
       text: >-
-        Be alerted to nearby airports, heliports, and temporary restrictions of
-        airspaces.
+        Be alerted to surrounding airports, and temporary restrictions of
+        airspace to avoid flying illegally.
       title: Restricted airspace
-    - icon: ../../images/uploads/icons-cloud.svg
-      text: >+
-        Receive real-time weather updates, such as wind speed and probability of
-        rainfall.  
-
+    - icon: images/uploads/icons-cloud.svg
+      text: >-
+        Receive real-time weather updates such as wind speed, temperature, and
+        probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly
 testimonial:
@@ -141,4 +140,3 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
-
