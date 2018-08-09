@@ -26,6 +26,14 @@ injectGlobal`
 h1, h2, h3, h4, h5, h6 {
   font-family: ${fontFamilies.itc};
 }
+a {
+  font-family: 'Chivo';
+  text-decoration: none;
+  color: #00C0FF;
+}
+a:visited {
+  color: #00C0FF;
+}
 @font-face {
   font-family: 'ITC';
   font-style: normal;
