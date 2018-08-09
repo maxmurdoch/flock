@@ -19,8 +19,8 @@ flockStory:
     commercial drone pilots fly safely, with insurance that’s as individual as
     their flights. We’ve also launched offerings for recreational pilots and
     trainee pilots. And by constantly listening and learning from our customers,
-    we’ve released a bunch of cool features too - like predictive analytics, and
-    additional equipment insurance.
+    we’ve released a bunch of cool features too - like predictive risk
+    analytics, and additional equipment insurance.
 
 
     Our technology and service is now transforming both the drone industry and
@@ -61,7 +61,8 @@ coreValues:
 meetTheTeam:
   description: >-
     We're a friendly, passionate team of engineers, designers, writers and more.
-    We're building the insurance company of the future. [Come join us!](https://flockcover.workable.com/)
+    We're building the insurance company of the future. [Come join
+    us!](https://flockcover.workable.com/)
   team:
     - image: /images/uploads/ron.png
       member: Antton Peña
@@ -77,7 +78,7 @@ meetTheTeam:
       role: Tech Lead
     - image: /images/uploads/ron.png
       member: 'Dara Cormican '
-      role: Marketing Executive
+      role: Marketing and Communications Executive
     - image: /images/uploads/ron.png
       member: 'Tim Ollier '
       role: Drone Partnerships Lead
@@ -104,3 +105,4 @@ siteMetadataOverride:
     - commercial drone insurance
   title: "Flock –\_About"
 ---
+
