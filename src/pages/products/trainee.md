@@ -41,22 +41,30 @@ why:
   title: Why do trainee pilots fly with Flock?
 flightSchool:
   list:
-    - image: ../../images/uploads/uav-trade-craft.png
-      to: 'https://uavtradecraft.com/'
-    - image: ../../images/uploads/uav-hummingbird.png
-      to: 'https://www.hummingbird-uav.co.uk/'
-    - image: ../../images/uploads/flyby-technology-logo.png
-      to: 'https://www.flybydronetraining.co.uk/'
-    - image: ../../images/uploads/the-aerial-academy.png
-      to: 'https://dronetraining.co.uk/'
-    - image: ../../images/uploads/uav-academy.png
-      to: 'http://uavacademy.co.uk/'
-    - image: ../../images/uploads/aerial-motion-pictures.png
-      to: 'https://www.aerialmotionpictures.co.uk/'
     - image: ../../images/uploads/3iC.png
       to: 'https://3ic.co.uk/'
+    - image: ../../images/uploads/the-aerial-academy.png
+      to: 'https://dronetraining.co.uk/'
+    - image: ../../images/uploads/aerial-motion-pictures.png
+      to: 'https://www.aerialmotionpictures.co.uk/'
+    - image: /images/uploads/copters.png
+      to: 'https://www.coptrz.com/'
     - image: ../../images/uploads/drone-partners.png
       to: 'https://dronepartners.co.uk/'
+    - image: /images/uploads/drone-pilot.png
+      to: 'https://www.dronepilotacademy.co.uk/'
+    - image: ../../images/uploads/flyby-technology-logo.png
+      to: 'https://www.flybydronetraining.co.uk/'
+    - image: ../../images/uploads/uav-hummingbird.png
+      to: 'https://www.hummingbird-uav.co.uk/'
+    - image: /images/uploads/rusta.png
+      to: 'https://www.rustauas.com/'
+    - image: /images/uploads/uav8.png
+      to: 'http://www.uav8.co/'
+    - image: ../../images/uploads/uav-academy.png
+      to: 'http://uavacademy.co.uk/'
+    - image: ../../images/uploads/uav-trade-craft.png
+      to: 'https://uavtradecraft.com/'
   show: true
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
