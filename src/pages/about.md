@@ -78,7 +78,7 @@ meetTheTeam:
       role: Tech Lead
     - image: /images/uploads/ron.png
       member: 'Dara Cormican '
-      role: Marketing and Communications Executive
+      role: Marketing Executive
     - image: /images/uploads/ron.png
       member: 'Tim Ollier '
       role: Drone Partnerships Lead
