@@ -26,7 +26,6 @@ class CalculateRiskDropDown extends Component {
   }
 
   componentDidMount() {
-    console.log('fuckbaskets')
     const {list} = this.props
 
     this.setState({
