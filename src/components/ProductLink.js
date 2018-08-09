@@ -19,11 +19,9 @@ class ProductLink extends Component {
     return (
       <Link
         onMouseOver={() => {
-          console.log('over')
           this.setState({isHovered: true})
         }}
         onMouseOut={() => {
-          console.log('out')
           this.setState({isHovered: false})
         }}
         to={to}

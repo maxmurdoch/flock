@@ -183,7 +183,7 @@ const Footer = ({containerClassName}) => {
 }
 
 export default Footer
-console.log(breakpoints)
+
 const styles = {
   link: css({
     color: R.prop('yellow', colors),
