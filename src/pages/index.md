@@ -4,7 +4,7 @@ templateKey: home
 hero:
   button:
     text: 'Download '
-    to: 'www.google.com '
+    to: www.google.com
   description: >-
     With Flock Cover, receive fully customised drone insurance, precisely when
     you need it. Download the app and get a real-time quote in seconds.
