@@ -23,7 +23,7 @@ const SmallText = ({
       >{children}</Text>)
     } else {
       const splitText = children.split(`[${matches[1]}](${matches[2]})`)
-      const internalHtml = splitText.join(`<a href='${matches[2]}'>${matches[1]}</a>`)
+      const internalHtml = splitText.join(`<a class='inline-link' href='${matches[2]}'>${matches[1]}</a>`)
       return(
         <Text
           fontWeight={fontWeight}
