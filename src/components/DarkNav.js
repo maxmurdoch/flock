@@ -8,7 +8,7 @@ import DarkDesktopNav from '../components/DarkDesktopNav'
 import {breakpoints} from '../constants/theme'
 
 const DarkNav = () => (
-  <Media query={`(min-width: ${nth(1, breakpoints)}`}>
+  <Media query={`(min-width: ${nth(1, breakpoints)})`}>
     {matches => (matches ? <DarkDesktopNav /> : <DarkMobileNav />)}
   </Media>
 )

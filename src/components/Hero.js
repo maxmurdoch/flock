@@ -63,9 +63,9 @@ const Hero = ({
                 <Markdown>{description}</Markdown>
               </LargeBodyText>
               <ShowIf predicate={R.not(R.isNil(button))}>
-                <Media query={`(min-width: ${R.nth(1, breakpoints)}`}>
-                  {matches =>
-                    matches ? (
+                <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
+                  {matches =>{
+                    return matches ? (
                       <PrimaryButton to={button.to} onClick={trackDownload}>
                         <ArrowText moveOnHover={false}>{button.text}</ArrowText>
                       </PrimaryButton>
@@ -74,12 +74,12 @@ const Hero = ({
                         <ArrowText moveOnHover={false}>{button.text}</ArrowText>
                       </SecondaryButton>
                     )
-                  }
+                  }}
                 </Media>
               </ShowIf>
             </Flex>
             {R.not(R.isNil(RightSideComponent)) ? (
-              <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+              <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
                 {matches =>
                   matches ? (
                     <Flex
