@@ -127,7 +127,7 @@ risk:
         Receive real-time weather updates, such as wind speed and probability of
         rainfall.  
       title: Hyperlocal weather
-  title: Know your risks before you fly.
+  title: Know your risks before you fly
 testimonial:
   - author: 'Kim '
     image: /images/uploads/testimonial/3@2x.png
