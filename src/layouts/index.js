@@ -117,7 +117,7 @@ class Layout extends Component {
                   }}
                   buttonStyle={{
                     color: "#4e503b",
-                    fontSize: "1.2vw",
+                    fontSize: "1.4vw",
                     background: '#FFCC00',
                     lineHeight: '1.5em',
                     fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
@@ -125,7 +125,7 @@ class Layout extends Component {
                     marginRight: '4vw',
                     alignContent: 'center',
                     border: 'none',
-                    padding: '0.1vw'
+                    padding: '0.4vw'
                   }}
                   location='top'
                 >
