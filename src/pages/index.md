@@ -24,7 +24,7 @@ howFlockWorks:
         Choose where and when you want to fly. See your quote change in
         real-time.
       title: 1. Enter your flight details
-    - image: /images/uploads/commercial-2-.png
+    - image: /images/uploads/commercial-2.png
       text: >-
         Customise your policy length, Public Liability limit, and equipment
         cover to suit your needs.
