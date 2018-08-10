@@ -97,6 +97,7 @@ class Layout extends Component {
             {matches => {
               if (matches) {
                 return(<CookieConsent
+                  disableStyles={true}
                   buttonText="Got it!"
                   style={{
                     background: '#707070',
@@ -107,9 +108,12 @@ class Layout extends Component {
                     overflow: 'hidden',
                     transition: 'max-height 1s',
                     boxSizing: 'border-box',
-                    fontSize: '1vw',
+                    fontSize: '2vw',
                     alignItems: 'center',
-                    zIndex: '9999'
+                    zIndex: '9999',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    flexDirection: 'row'
                   }}
                   buttonStyle={{
                     color: "#4e503b",
@@ -118,8 +122,7 @@ class Layout extends Component {
                     lineHeight: '1.5em',
                     fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
                     float: 'right',
-                    marginRight: '4vw',
-                    marginTop: '3vw'
+                    marginRight: '4vw'
                   }}
                   location='top'
                 >
