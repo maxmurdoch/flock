@@ -5,7 +5,7 @@ hero:
   backgroundImage: ../../images/uploads/hobbyist-header.jpg
   button:
     text: Download
-    to: https://flockcover.app.link/6IW6kTmgfP
+    to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: |-
     * On-demand insurance from £2.95
     * Short-term cover (from 1-8 hours)
@@ -85,12 +85,12 @@ how:
     Insuring your drone flight has never been simpler. All it takes is a matter
     of taps on your mobile phone.
   list:
-    - image: ../../images/uploads/screens/flight-details-screen.png
+    - image: /images/uploads/recreational-1.png
       text: >-
         Choose where and when you want to fly. See your quote change in
         real-time.
       title: 1. Enter your flight details
-    - image: /images/uploads/recreational-customise.png
+    - image: /images/uploads/recreational-2.png
       text: >-
         With options from 1-8 hours, customise your policy length to suit your
         needs.
@@ -167,3 +167,4 @@ siteMetadataOverride:
     - leisure drone insurance
   title: Recreational
 ---
+
