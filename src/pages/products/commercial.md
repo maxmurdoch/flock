@@ -5,7 +5,7 @@ hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
   button:
     text: Download
-    to: https://flockcover.app.link/6IW6kTmgfP
+    to: /download
   description: |-
     * On-demand insurance from £4.95
     * EC785/2004 compliant policies
@@ -62,12 +62,12 @@ how:
     Insuring your drone has never been easier. All it takes is a matter of taps
     on your mobile phone.
   list:
-    - image: ../../images/uploads/screens/flight-details-screen.png
+    - image: /images/uploads/commercial-1-.png
       text: >-
         Choose where and when you want to fly. See your quote change in
         real-time.
       title: 1. Enter your flight details
-    - image: ../../images/uploads/screens/customise-policy-commercial-screen.png
+    - image: /images/uploads/commercial-2-.png
       text: >-
         Customise your policy length, Public Liability limit, and equipment
         cover to suit your needs.
@@ -140,3 +140,4 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
+
