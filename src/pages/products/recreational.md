@@ -90,7 +90,7 @@ how:
         Choose where and when you want to fly. See your quote change in
         real-time.
       title: 1. Enter your flight details
-    - image: ../../images/uploads/screens/customise-policy-home-screen.png
+    - image: /images/uploads/recreational-customise.png
       text: >-
         With options from 1-8 hours, customise your policy length to suit your
         needs.
