@@ -5,7 +5,7 @@ hero:
   backgroundImage: ../../images/uploads/trainee-header.jpg
   button:
     text: Download
-    to: /download
+    to: https://flockcover.app.link/6IW6kTmgfP
   description: |-
     * Flight assessment and training insurance from £5.95
     * Drone and accessory cover (up to £3,000)
@@ -169,4 +169,3 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
-

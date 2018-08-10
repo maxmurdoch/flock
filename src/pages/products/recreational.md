@@ -5,7 +5,7 @@ hero:
   backgroundImage: ../../images/uploads/hobbyist-header.jpg
   button:
     text: Download
-    to: /download
+    to: https://flockcover.app.link/6IW6kTmgfP
   description: |-
     * On-demand insurance from £2.95
     * Short-term cover (from 1-8 hours)
@@ -167,4 +167,3 @@ siteMetadataOverride:
     - leisure drone insurance
   title: Recreational
 ---
-
