@@ -9,10 +9,10 @@ import H2 from './H2'
 import SiteContainer from './SiteContainer'
 import trackDownload from '../utils/trackDownload'
 
-const DownloadFlock = (to) => {
+const DownloadFlock = () => {
   const download = () => {
     trackDownload()
-    window.open(to.to, '_blank')
+    window.open('https://flockcover.app.link/6IW6kTmgfP', '_blank')
   }
   return (
     <Flex justifyContent="center">

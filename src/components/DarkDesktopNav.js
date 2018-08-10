@@ -9,10 +9,10 @@ import Nav from './Nav'
 import {colors} from '../constants/theme'
 import trackDownload from '../utils/trackDownload'
 
-const DarkDesktopNav = (to) => {
+const DarkDesktopNav = () => {
   const download = () => {
     trackDownload()
-    window.open(to.to, '_blank')
+    window.open('https://flockcover.app.link/6IW6kTmgfP', '_blank')
   }
   return (
     <Nav

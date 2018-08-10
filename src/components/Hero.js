@@ -28,7 +28,7 @@ const Hero = ({
 }) => {
   const download = () => {
     trackDownload()
-    window.open(button.to, '_blank')
+    window.open('https://flockcover.app.link/6IW6kTmgfP', '_blank')
   }
   return (
     <Flex

@@ -47,7 +47,7 @@ const HomeTemplate = ({
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <DarkNav to={hero.button.to}/>
+        <DarkNav />
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
@@ -109,7 +109,7 @@ const HomeTemplate = ({
             <Testimonial testimonials={secondTestimonial} />
           </Box>
           <Box pt={[3, 5]}>
-            <DownloadFlock to={hero.button.to}/>
+            <DownloadFlock />
           </Box>
           <BigSectionLine />
           <Featured title={featured.title} image={featured.image} />
