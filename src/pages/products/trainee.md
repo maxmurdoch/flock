@@ -5,7 +5,7 @@ hero:
   backgroundImage: ../../images/uploads/trainee-header.jpg
   button:
     text: Download
-    to: https://flockcover.app.link/6IW6kTmgfP
+    to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: |-
     * Flight assessment and training insurance from £5.95
     * Drone and accessory cover (up to £3,000)
@@ -90,12 +90,12 @@ how:
     Insuring your drone flight has never been simpler. All it takes is a matter
     of taps on your mobile phone.
   list:
-    - image: ../../images/uploads/screens/flight-details-screen.png
+    - image: /images/uploads/training-1.png
       text: >-
         Choose where and when you want to fly. See your quote change in
         real-time.
       title: 1. Enter your flight details
-    - image: ../../images/uploads/screens/customise-policy-trainee-screen.png
+    - image: /images/uploads/training-2.png
       text: Customise your policy length and equipment cover to suit your needs.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
@@ -169,3 +169,4 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
+
