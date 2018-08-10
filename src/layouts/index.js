@@ -90,14 +90,15 @@ class Layout extends Component {
               fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
               padding: '1em 1.8em',
               width: '100%',
-              maxHeight: '72px',
+              maxHeight: '16vw',
               overflow: 'hidden',
               transition: 'max-height 1s',
               boxSizing: 'border-box',
-              fontSize: '16px',
-              alignItems: 'center'
+              fontSize: '1vw',
+              alignItems: 'center',
+              zIndex: '9999'
             }}
-            buttonStyle={{ color: "#4e503b", fontSize: "13px", background: '#FFCC00', lineHeight: '1.5em', fontFamily: 'Helvetica,Calibri,Arial,sans-serif'}}
+            buttonStyle={{ color: "#4e503b", fontSize: "1vw", background: '#FFCC00', lineHeight: '1.5em', fontFamily: 'Helvetica,Calibri,Arial,sans-serif'}}
             location='bottom'
           >
             <span>This website uses cookies to enhance the user experience. &nbsp; <a className='cookiesLink' href='https://help.flockcover.com/legal/cookies-policy' target='_blank'> Learn more</a></span>
