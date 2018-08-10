@@ -69,7 +69,7 @@ meetTheTeam:
       role: 'Founder, Product Lead'
     - image: /images/uploads/img_0482-edit.jpg
       member: Ed Leon Klinger
-      role: 'Founder, CEO'
+      role: CEO
     - image: /images/uploads/img_0526-edit.jpg
       member: 'Courtenay Mansel '
       role: Data Scientist
@@ -81,7 +81,7 @@ meetTheTeam:
       role: Marketing Executive
     - image: /images/uploads/img_0586-edit.jpg
       member: 'Matt Cleary '
-      role: Engineer
+      role: Software Engineer
     - image: /images/uploads/img_0617-edit.jpg
       member: 'John Rowlands '
       role: Insurance Partnerships Lead
