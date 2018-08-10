@@ -12,7 +12,7 @@ import Nav from './Nav'
 import {colors} from '../constants/theme'
 import trackDownload from '../utils/trackDownload'
 
-const LightDesktopNav = () => {
+const LightDesktopNav = (to) => {
   const download = () => {
     trackDownload()
     window.open('https://flockcover.app.link/6IW6kTmgfP', '_blank')
