@@ -122,7 +122,9 @@ class Layout extends Component {
                     lineHeight: '1.5em',
                     fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
                     float: 'right',
-                    marginRight: '4vw'
+                    marginRight: '4vw',
+                    alignContent: 'center',
+                    border: 'none'
                   }}
                   location='top'
                 >
