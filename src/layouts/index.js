@@ -66,6 +66,8 @@ a.inline-link:visited {
   color: '#FFFF33';
 }
 `
+
+
 class Layout extends Component {
   render() {
     const {
@@ -109,7 +111,16 @@ class Layout extends Component {
                     alignItems: 'center',
                     zIndex: '9999'
                   }}
-                  buttonStyle={{ color: "#4e503b", fontSize: "1vw", background: '#FFCC00', lineHeight: '1.5em', fontFamily: 'Helvetica,Calibri,Arial,sans-serif', float: 'right'}}
+                  buttonStyle={{
+                    color: "#4e503b",
+                    fontSize: "1vw",
+                    background: '#FFCC00',
+                    lineHeight: '1.5em',
+                    fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
+                    float: 'right',
+                    marginRight: '4vw',
+                    marginTop: '3vw'
+                  }}
                   location='top'
                 >
                   <span>This website uses cookies to enhance the user experience. &nbsp; <a className='cookiesLinkSmall' href='https://help.flockcover.com/legal/cookies-policy' target='_blank'> Learn more</a></span>
