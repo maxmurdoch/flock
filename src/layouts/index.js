@@ -5,7 +5,9 @@ import R from 'ramda'
 import {injectGlobal} from 'emotion'
 import Helmet from 'react-helmet'
 import {ThemeProvider} from 'emotion-theming'
-import CookieConsent from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent"
+import Media from 'react-media'
+import {breakpoints} from '../constants/theme'
 
 import theme, {fontFamilies, colors} from '../constants/theme'
 import './index.css'
@@ -57,6 +59,12 @@ a.inline-link:visited {
   padding: .2em;
   color: '#FFFF33';
 }
+.cookiesLinkSmall {
+  opacity: .8em;
+  display: inline-block;
+  padding: .1em;
+  color: '#FFFF33';
+}
 `
 class Layout extends Component {
   render() {
@@ -83,26 +91,54 @@ class Layout extends Component {
               }
             ]}
           />
-          <CookieConsent
-            buttonText="Got it!"
-            style={{
-              background: '#707070',
-              fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
-              padding: '1em 1.8em',
-              width: '100%',
-              maxHeight: '16vw',
-              overflow: 'hidden',
-              transition: 'max-height 1s',
-              boxSizing: 'border-box',
-              fontSize: '1vw',
-              alignItems: 'center',
-              zIndex: '9999'
+          <Media query={`(max-width: ${R.nth(0, breakpoints)})`}>
+            {matches => {
+              if (matches) {
+                return(<CookieConsent
+                  buttonText="Got it!"
+                  style={{
+                    background: '#707070',
+                    fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
+                    padding: '1em 1.8em',
+                    width: '100%',
+                    maxHeight: '16vw',
+                    overflow: 'hidden',
+                    transition: 'max-height 1s',
+                    boxSizing: 'border-box',
+                    fontSize: '1vw',
+                    alignItems: 'center',
+                    zIndex: '9999'
+                  }}
+                  buttonStyle={{ color: "#4e503b", fontSize: "1vw", background: '#FFCC00', lineHeight: '1.5em', fontFamily: 'Helvetica,Calibri,Arial,sans-serif', float: 'right'}}
+                  location='top'
+                >
+                  <span>This website uses cookies to enhance the user experience. &nbsp; <a className='cookiesLinkSmall' href='https://help.flockcover.com/legal/cookies-policy' target='_blank'> Learn more</a></span>
+                </CookieConsent>)
+              } else {
+                return(<CookieConsent
+                  buttonText="Got it!"
+                  style={{
+                    background: '#707070',
+                    fontFamily: 'Helvetica,Calibri,Arial,sans-serif',
+                    padding: '1em 1.8em',
+                    width: '100%',
+                    maxHeight: '16vw',
+                    overflow: 'hidden',
+                    transition: 'max-height 1s',
+                    boxSizing: 'border-box',
+                    fontSize: '1vw',
+                    alignItems: 'center',
+                    zIndex: '9999'
+                  }}
+                  buttonStyle={{ color: "#4e503b", fontSize: "1vw", background: '#FFCC00', lineHeight: '1.5em', fontFamily: 'Helvetica,Calibri,Arial,sans-serif', marginRight: '10vw'}}
+                  location='bottom'
+                >
+                  <span>This website uses cookies to enhance the user experience. &nbsp; <a className='cookiesLink' href='https://help.flockcover.com/legal/cookies-policy' target='_blank'> Learn more</a></span>
+                </CookieConsent>)
+              }
             }}
-            buttonStyle={{ color: "#4e503b", fontSize: "1vw", background: '#FFCC00', lineHeight: '1.5em', fontFamily: 'Helvetica,Calibri,Arial,sans-serif'}}
-            location='bottom'
-          >
-            <span>This website uses cookies to enhance the user experience. &nbsp; <a className='cookiesLink' href='https://help.flockcover.com/legal/cookies-policy' target='_blank'> Learn more</a></span>
-          </CookieConsent>
+          </Media>
+
           <div>{children()}</div>
         </div>
       </ThemeProvider>
