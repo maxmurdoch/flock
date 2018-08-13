@@ -5,7 +5,7 @@ hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
   button:
     text: Download
-    to: https://flockcover.app.link/6IW6kTmgfP
+    to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: |-
     * On-demand insurance from £4.95
     * EC785/2004 compliant policies
@@ -20,8 +20,10 @@ why:
         [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price),
         with commercial policies starting from £4.95.
       title: Fairer pricing
-    - text: 'No two jobs are the same. Customise your insurance, flight-by-flight.'
-      title: 'Bespoke cover '
+    - text: >-
+        Pay for insurance only when you fly. Get covered for one hour, or up to
+        a day.
+      title: 'Short-term insurance '
     - text: >-
         Schedule flights up to 10 days in advance. Change of plan? Cancel with
         one tap.
@@ -141,3 +143,4 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
+
