@@ -57,7 +57,7 @@ const navList = [
     text: 'About us'
   },
   {
-    to: '/support',
+    to: 'https://help.flockcover.com',
     className: styles.product,
     text: 'FAQ'
   },
