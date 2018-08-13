@@ -79,6 +79,9 @@ meetTheTeam:
     - image: /images/uploads/img_0442-edit.jpg
       member: 'Dara Cormican '
       role: Marketing Executive
+    - image: /images/uploads/img_0996.jpg
+      member: 'Tim Ollier '
+      role: Drone Partnerships Lead
     - image: /images/uploads/img_0586-edit.jpg
       member: 'Matt Cleary '
       role: Software Engineer
