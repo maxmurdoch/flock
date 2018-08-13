@@ -5,7 +5,7 @@ hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
   button:
     text: Download
-    to: /download
+    to: https://flockcover.app.link/6IW6kTmgfP
   description: |-
     * On-demand insurance from £4.95
     * EC785/2004 compliant policies
@@ -140,4 +140,3 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
-

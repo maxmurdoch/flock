@@ -108,7 +108,7 @@ const SegmentPageTemplate = ({data}) => {
             <Testimonial testimonials={testimonial} />
           </Box>
           <Box pt={[3, 5]}>
-            <DownloadFlock />
+            <DownloadFlock to={'https://flockcover.app.link/6IW6kTmgfP'}/>
           </Box>
           <BigSectionLine />
           <OtherProducts

@@ -11,8 +11,9 @@ import trackDownload from '../utils/trackDownload'
 
 const DarkDesktopNav = (to) => {
   const download = () => {
+    console.log(to)
     trackDownload()
-    window.open(to.to, '_blank')
+    window.open(to.to.to, '_blank')
   }
   return (
     <Nav

@@ -59,7 +59,7 @@ coverNote:
   isShowing: false
   link:
     text: Learn how to get your cover note within our app →
-    to: /download
+    to: https://flockcover.app.link/6IW6kTmgfP
   smallText: >-
     Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant
     insurance, and you can get yours instantly without having to pay a penny.
@@ -167,4 +167,3 @@ siteMetadataOverride:
     - leisure drone insurance
   title: Recreational
 ---
-
