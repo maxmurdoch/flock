@@ -96,7 +96,7 @@ how:
         Choose where and when you want to fly. See your quote change in
         real-time.
       title: 1. Enter your flight details
-    - image: /images/uploads/training-2.png
+    - image: /images/uploads/training-personalise.png
       text: Customise your policy length and equipment cover to suit your needs.
       title: 2. Customise your policy
     - image: ../../images/uploads/screens/get-flying-screen.png
