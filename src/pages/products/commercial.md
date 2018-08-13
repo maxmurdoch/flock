@@ -49,7 +49,8 @@ coverNote:
   isShowing: true
   link:
     text: Get your Cover Note in the app →
-    to: 'https://landing.flockcover.com/flock-cover-note-pfco-renewal/'
+    to: >-
+      https://landing.flockcover.com/flock-cover-note-pfco-application-commercial-website-page/
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
     insurance. And you can get yours instantly emailed to you, without having to
