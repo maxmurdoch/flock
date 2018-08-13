@@ -117,7 +117,7 @@ class Nav extends Component {
                               }
                             })}
                           >
-                            Products
+                            Insurance
                           </SmallText>
                         </Link>
                       </Flex>
