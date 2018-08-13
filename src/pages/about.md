@@ -27,7 +27,7 @@ flockStory:
     the insurance industry - and we’re just getting started!
   header: 'Our Story '
   image: /images/uploads/backers.png
-  imageHeader: We’re backed by some of the best in the business
+  imageHeader: 'We’re backed by some of the best in the business:'
   smallText: ''
 coreValues:
   description: Everything we do at Flock is guided by our values
