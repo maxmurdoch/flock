@@ -50,7 +50,7 @@ const HeroFeaturesBanner = () => (
               ) : null
             }
           </Media>
-          <SmallText>FCA & CAA regulated</SmallText>
+          <SmallText>FCA & CAA compliant</SmallText>
         </Flex>
         <Flex alignItems="center" mb={0}>
           <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>

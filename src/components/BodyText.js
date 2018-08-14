@@ -5,17 +5,25 @@ import Text from './Text'
 import {breakpoints} from '../constants/theme'
 import {css, cx} from 'emotion'
 
+//[equipment insurance](https://blog.flockcover.com/just-landed-accessory-insurance-627b04c985bd).
+
 const BodyText = ({children, mb = 0, className, ...props}) => {
   if (typeof(children) === 'string') {
-    const matches = children.match(/\[([^\[\]]+)\]\(([^)]+)/)
+    const matches = children.match(/\[([^\[\]]+)\]\(([^)]+)/g)
     if(!matches) {
       return(<Text mb={mb} className={cx(style.text, className)} {...props}>
         {' '}
         {children}{' '}
       </Text>)
     } else {
-      const splitText = children.split(`[${matches[1]}](${matches[2]})`)
-      const internalHtml = splitText.join(`<a class='inline-link' href='${matches[2]}'>${matches[1]}</a>`)
+      console.log(children)
+      const internalHtml = matches.reduce((memo, match) => {
+        const matchGroup = match.split('](')
+        const matchText = matchGroup[0].substr(1)
+        const matchUrl = matchGroup[1].substr(0, matchGroup[1].length)
+        console.log('potato', match)
+        return memo.split(match).join(`<a class='inline-link' href='${matchUrl}'>${matchText}</a>`)
+      }, children)
       return(
         <Text
           mb={mb}

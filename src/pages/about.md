@@ -19,8 +19,8 @@ flockStory:
     commercial drone pilots fly safely, with insurance that’s as individual as
     their flights. We’ve also launched offerings for recreational pilots and
     trainee pilots. And by constantly listening and learning from our customers,
-    we’ve released a bunch of cool features too - like predictive risk
-    analytics, and additional equipment insurance.
+    we’ve released a bunch of cool features too - like [predictive risk
+    analytics](https://blog.flockcover.com/see-the-future-with-flocks-flight-planning-tool-1507e2de5c81), and additional [equipment insurance](https://blog.flockcover.com/just-landed-accessory-insurance-627b04c985bd)
 
 
     Our technology and service is now transforming both the drone industry and
@@ -108,4 +108,3 @@ siteMetadataOverride:
     - commercial drone insurance
   title: "Flock –\_About"
 ---
-
