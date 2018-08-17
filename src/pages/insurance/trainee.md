@@ -35,7 +35,7 @@ why:
       title: 'Fully Compliant '
     - text: >-
         Once you've got your PfCO, you can simply upgrade to a [commercial
-        operator](https://priceless-ramanujan-c92666.netlify.com/products/commercial/)
+        operator](https://www.flyflock.io/insurance/commercial/)
         account.
       title: 'Free to Upgrade '
   title: Why do trainee pilots fly with Flock?
@@ -148,13 +148,13 @@ otherProducts:
   description: We offer instant drone insurance tailored to your specific needs.
   products:
     - icon: /images/uploads/commercial-pilot.svg
-      link: /products/commercial
+      link: /insurance/commercial
       text: >-
         Flock’s EC785/2004 compliant policies offer equipment and Public
         Liability insurance from just £4.95 a day.
       title: Commercial pilot
     - icon: /images/uploads/recreational-pilot.svg
-      link: /products/recreational
+      link: /insurance/recreational
       text: >-
         Enjoy your favourite hobby with peace of mind. Get covered from just
         £2.95 for up to a day of flying.
@@ -170,4 +170,3 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
-

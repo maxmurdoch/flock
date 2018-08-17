@@ -8,7 +8,7 @@ import {ThemeProvider} from 'emotion-theming'
 import CookieConsent from "react-cookie-consent"
 import Media from 'react-media'
 import {breakpoints} from '../constants/theme'
-
+import favicon from '../images/icons/favicon.ico'
 import theme, {fontFamilies, colors} from '../constants/theme'
 import './index.css'
 
@@ -91,6 +91,9 @@ class Layout extends Component {
                 name: 'keywords',
                 content: R.join(',', frontmatter.siteMetadata.keywords)
               }
+            ]}
+            link={[
+              { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
             ]}
           />
           <Media query={`(max-width: ${R.nth(0, breakpoints)})`}>

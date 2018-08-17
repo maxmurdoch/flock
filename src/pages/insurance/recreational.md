@@ -144,13 +144,13 @@ otherProducts:
   description: We offer instant drone insurance tailored to your specific needs.
   products:
     - icon: /images/uploads/commercial-pilot.svg
-      link: /products/commercial
+      link: /insurance/commercial
       text: >-
         Flock’s EC785/2004 compliant policies offer equipment and Public
         Liability insurance from just £4.95 a day.
       title: Commercial pilot
     - icon: /images/uploads/trainee-pilot.svg
-      link: /products/trainee
+      link: /insurance/trainee
       text: >-
         From flight assessment insurance, to providing proof-of-insurance in
         your PfCO application, Flock’s got you covered.

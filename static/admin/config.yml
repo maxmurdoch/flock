@@ -220,7 +220,7 @@ collections:
 
   - name: products
     label: Products
-    folder: src/pages/products
+    folder: src/pages/insurance
     create: true
     fields:
       - { name: title, label: Title }

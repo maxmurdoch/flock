@@ -88,7 +88,7 @@ class Nav extends Component {
                         <Link
                           activeStyle={activeLinkStyle}
                           className={linkClass}
-                          to="/products"
+                          to="/insurance"
                           onClick={event => {
                             event.preventDefault()
 

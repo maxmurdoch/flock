@@ -33,17 +33,17 @@ const ProductNavDropDown = ({productsIsOpen}) => {
               ),
               [
                 {
-                  to: '/products/commercial',
+                  to: '/insurance/commercial',
                   image: '/images/uploads/commercial-pilot.svg',
                   text: 'Commercial pilot'
                 },
                 {
-                  to: '/products/trainee',
+                  to: '/insurance/trainee',
                   image: '/images/uploads/trainee-pilot.svg',
                   text: 'Trainee pilot'
                 },
                 {
-                  to: '/products/recreational',
+                  to: '/insurance/recreational',
                   image: '/images/uploads/recreational-pilot.svg',
                   text: 'Recreational pilot'
                 }

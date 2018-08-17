@@ -38,15 +38,15 @@ const socialMediaLinks = [
 const Footer = ({containerClassName}) => {
   const firstFooterLinks = [
     {
-      to: '/products/commercial',
+      to: '/insurance/commercial',
       text: 'Commercial pilots'
     },
     {
-      to: '/products/trainee',
+      to: '/insurance/trainee',
       text: 'Trainee pilots'
     },
     {
-      to: '/products/recreational',
+      to: '/insurance/recreational',
       text: 'Recreational pilots'
     }
   ]
@@ -100,9 +100,6 @@ const Footer = ({containerClassName}) => {
       <SiteContainer>
         <Flex flexWrap={true}>
           <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
-            <Link className={styles.link} to={'/'}>
-              <SmallText>Home</SmallText>
-            </Link>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Insurance
@@ -154,7 +151,9 @@ const Footer = ({containerClassName}) => {
               }, socialMediaLinks)}
             </Flex>
             <Box width={['100%', '33.33%']} mb={[2, 0]}>
-              <img src={logo} className={css({marginBottom: 0})} />
+              <Link to={'/'}>
+                <img src={logo} className={css({marginBottom: 0})} />
+              </Link>
             </Box>
           </Flex>
         </Flex>

@@ -29,17 +29,17 @@ const styles = {
 }
 const productList = [
   {
-    to: '/products/commercial',
+    to: '/insurance/commercial',
     className: styles.product,
     text: 'Commercial pilot'
   },
   {
-    to: '/products/trainee',
+    to: '/insurance/trainee',
     className: styles.product,
     text: 'Trainee pilot'
   },
   {
-    to: '/products/recreational',
+    to: '/insurance/recreational',
     className: styles.product,
     text: 'Recreational pilot'
   }

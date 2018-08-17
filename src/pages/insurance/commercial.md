@@ -121,13 +121,13 @@ otherProducts:
   description: We offer instant drone insurance tailored to your specific needs.
   products:
     - icon: /images/uploads/trainee-pilot.svg
-      link: /products/trainee
+      link: /insurance/trainee
       text: >-
         From flight assessment insurance, to providing proof-of-insurance in
         your PfCO application, Flock’s got you covered.
       title: Trainee pilot
     - icon: /images/uploads/recreational-pilot.svg
-      link: /products/recreational
+      link: /insurance/recreational
       text: >-
         Enjoy your favourite hobby with peace of mind. Get covered from just
         £2.95 for up to a day of flying.
@@ -143,4 +143,3 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
-
