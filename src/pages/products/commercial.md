@@ -50,7 +50,7 @@ coverNote:
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Get your Cover Note in the app →
+    text: Get your Cover Note →
     to: >-
       https://landing.flockcover.com/flock-cover-note-pfco-application-commercial-website-page/
   smallText: >-
