@@ -17,7 +17,7 @@ const BodyText = ({children, mb = 0, className, ...props}) => {
       const internalHtml = matches.reduce((memo, match) => {
         const matchGroup = match.split('](')
         const matchText = matchGroup[0].substr(1)
-        const matchUrl = matchGroup[1].substr(0, matchGroup[1].length)
+        const matchUrl = matchGroup[1].substr(0, matchGroup[1].length - 1)
         return memo.split(match).join(`<a class='inline-link' href='${matchUrl}'>${matchText}</a>`)
       }, children)
 
