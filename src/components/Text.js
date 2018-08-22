@@ -41,7 +41,6 @@ const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
   ${textAlign}
   ${textShadow}
 `
-console.log(props)
   return (
     <NewLineToBr Component={Component} fontWeight={fontWeight} {...props}>
       {children}
