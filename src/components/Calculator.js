@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import R from 'ramda'
 import {css, injectGlobal} from 'react-emotion'
 import Select from 'react-select'
@@ -208,12 +208,21 @@ class Calculator extends Component {
                 <SmallText textAlign="center" mb={1}>
                   Your estimate*
                 </SmallText>
-                <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
-                  £{Math.round(this.state.pricePerYear)} per year
-                </BodyText>
-                <SmallText textAlign="center" mt={1}>
-                  That’s £{this.state.pricePerFlight} per flight
-                </SmallText>
+
+                {(this.state.pilotTypeValue.label === 'Trainee') ? (
+                  <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
+                    £{Math.round(this.state.pricePerFlight)} per flight
+                  </BodyText>
+                ) : (
+                  <Fragment>
+                    <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
+                      £{Math.round(this.state.pricePerYear)} per year
+                    </BodyText>
+                    <SmallText textAlign="center" mt={1}>
+                      That’s £{this.state.pricePerFlight} per flight
+                    </SmallText>
+                  </Fragment>
+                )}
               </Flex>
             </Flex>
           </Flex>
