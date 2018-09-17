@@ -50,9 +50,8 @@ coverNote:
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Learn how to get your Cover Note →
-    to: >-
-      https://landing.flockcover.com/flock-cover-note-pfco-application-commercial-website-page/
+    text: Get your Cover Note →
+    to: 'https://landing.flockcover.com/cover-note/'
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
     insurance. And you can get yours instantly emailed to you, without having to
