@@ -50,7 +50,7 @@ coverNote:
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Get your Cover Note →
+    text: Learn how to get your Cover Note →
     to: >-
       https://landing.flockcover.com/flock-cover-note-pfco-application-commercial-website-page/
   smallText: >-
@@ -143,3 +143,4 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: 'Commercial pay-as-you-fly drone insurance '
 ---
+
