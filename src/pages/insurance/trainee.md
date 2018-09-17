@@ -35,8 +35,7 @@ why:
       title: 'Fully Compliant '
     - text: >-
         Once you've got your PfCO, you can simply upgrade to a [commercial
-        operator](https://www.flyflock.io/insurance/commercial/)
-        account.
+        operator](https://www.flyflock.io/insurance/commercial/) account.
       title: 'Free to Upgrade '
   title: Why do trainee pilots fly with Flock?
 flightSchool:
@@ -74,9 +73,8 @@ coverNote:
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Get your Cover Note →
-    to: >-
-      https://landing.flockcover.com/flock-cover-note-pfco-application-trainee-website-page/
+    text: Learn how to get your Cover Note →
+    to: 'https://landing.flockcover.com/cover-note/'
   smallText: >-
     Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
     insurance. And you can get yours instantly emailed to you without committing
@@ -170,3 +168,4 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
+
