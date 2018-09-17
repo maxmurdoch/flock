@@ -97,9 +97,6 @@ meetTheTeam:
     - image: /images/uploads/img_0605-edit.jpg
       member: 'Marco Soworka '
       role: Business Development Intern
-    - image: /images/uploads/dave.jpg
-      member: 'Dave Paryente '
-      role: Software Engineer
     - image: /images/uploads/chris.jpg
       member: 'Chris Fothergill '
       role: Software Engineer
