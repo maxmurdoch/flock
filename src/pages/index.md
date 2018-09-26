@@ -4,7 +4,7 @@ templateKey: home
 hero:
   button:
     text: 'Download '
-    to: /download
+    to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: >-
     Flock Cover lets you insure your drone by the hour, with a policy that's as
     individual as your flight.
