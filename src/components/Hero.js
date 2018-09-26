@@ -28,7 +28,8 @@ const Hero = ({
 }) => {
   const download = () => {
     trackDownload()
-    window.open(button.to, '_blank')
+    const linkAnonymousId = button.to + '?anonymous_id=' + analytics.user().anonymousId()
+    window.open(linkAnonymousId, '_blank')
   }
   return (
     <Flex
@@ -70,11 +71,11 @@ const Hero = ({
                 <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
                   {matches =>{
                     return matches ? (
-                      <PrimaryButton to={button.to} onClick={download}>
+                      <PrimaryButton onClick={download}>
                         <ArrowText moveOnHover={false}>{button.text}</ArrowText>
                       </PrimaryButton>
                     ) : (
-                      <SecondaryButton to={button.to} onClick={download}>
+                      <SecondaryButton onClick={download}>
                         <ArrowText moveOnHover={false}>{button.text}</ArrowText>
                       </SecondaryButton>
                     )

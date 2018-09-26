@@ -12,7 +12,8 @@ import trackDownload from '../utils/trackDownload'
 const DownloadFlock = (to) => {
   const download = () => {
     trackDownload()
-    window.open(to.to, '_blank')
+    const linkAnonymousId = to.to + '?anonymous_id=' + analytics.user().anonymousId()
+    window.open(linkAnonymousId, '_blank')
   }
   return (
     <Flex justifyContent="center">

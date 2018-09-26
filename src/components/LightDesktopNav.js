@@ -15,7 +15,8 @@ import trackDownload from '../utils/trackDownload'
 const LightDesktopNav = (to) => {
   const download = () => {
     trackDownload()
-    window.open('https://flockcover.app.link/6IW6kTmgfP', '_blank')
+    const linkAnonymousId = 'https://flockcover.app.link/6IW6kTmgfP' + '?anonymous_id=' + analytics.user().anonymousId()
+    window.open(linkAnonymousId, '_blank')
   }
   return (
     <Nav
