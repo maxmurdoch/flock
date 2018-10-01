@@ -5,6 +5,7 @@ module.exports = {
     keywords: 'insurance, drones, pay-as-you-go'
   },
   plugins: [
+    'gatsby-plugin-branch-web-sdk',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
