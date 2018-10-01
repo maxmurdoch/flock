@@ -54,7 +54,7 @@ const AboutHero = ({
               {description}
             </BodyText>
             <ShowIf predicate={button}>
-              <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+              <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
                 {matches =>
                   matches ? (
                     <PrimaryButton to={button.to}>{button.text}</PrimaryButton>

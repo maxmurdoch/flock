@@ -96,23 +96,11 @@ const SegmentPageTemplate = ({data}) => {
             description={how.description}
             list={how.list}
           />
-          <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
-            {matches =>
-              matches ? (
-                <CalculateRiskFlat
-                  title={risk.title}
-                  description={risk.description}
-                  list={risk.list}
-                />
-              ) : (
-                <CalculateRiskDropDown
-                  title={risk.title}
-                  description={risk.description}
-                  list={risk.list}
-                />
-              )
-            }
-          </Media>
+          <CalculateRiskDropDown
+            title={risk.title}
+            list={risk.list}
+            description={risk.description}
+          />
         </MapBackground>
 
         <Box className={css({backgroundColor: 'white'})}>
@@ -120,7 +108,7 @@ const SegmentPageTemplate = ({data}) => {
             <Testimonial testimonials={testimonial} />
           </Box>
           <Box pt={[3, 5]}>
-            <DownloadFlock />
+            <DownloadFlock to={'https://flockcover.app.link/6IW6kTmgfP'}/>
           </Box>
           <BigSectionLine />
           <OtherProducts

@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: maxmurdoch/flock
+  repo: flockcover/flock
 
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
@@ -95,6 +95,7 @@ collections:
             fields:
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'string'}
+              - {label: 'Disclaimer', name: 'disclaimer', widget: 'string'}
           - label: 'Second testimonials'
             name: 'secondTestimonial'
             widget: 'list'
@@ -219,7 +220,7 @@ collections:
 
   - name: products
     label: Products
-    folder: src/pages/products
+    folder: src/pages/insurance
     create: true
     fields:
       - { name: title, label: Title }

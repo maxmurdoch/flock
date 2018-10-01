@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-plugin-branch-web-sdk",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "branch",
+    "branch-io",
+    "branch-web-sdk",
+    "deep-links"
+  ],
+  "version": "0.0.1",
+  "main": "src/gatsby-ssr.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/flockcover/gatsby-plugin-branch-web-sdk.git"
+  },
+  "author": "Abraham Polishchuk <apolishc@gmail.com>",
+  "scripts": {
+    "lint": "eslint",
+    "build": "babel src --out-dir ."
+  }
+}

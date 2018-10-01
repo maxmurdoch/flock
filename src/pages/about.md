@@ -1,27 +1,33 @@
 ---
-title: About
+title: About Us
 templateKey: about
 hero:
   backgroundImage: ../../images/uploads/team-shot.jpg
   header: About Flock
 flockStory:
   bigText: >-
-    For too long, insurance has been antiquated and inflexible. More often than
-    not, you were tied into an annual policy that you had little control over.
-    We wanted to change that, and believed that technology was the key.
+    We're Flock, an energetic, London-based startup working to make the world a
+    smarter and safer place.
 
 
-    Through analysing real-time data we are able to form a precise understanding
-    of the risk of an individual drone flight: How windy is it? Is the flight
-    taking place during rush hour? Is it over a busy school? 
+    We believe that insurance doesn't have to be boring. It can be smart, and
+    powered by real-time data. It can fit in the palm of your hand. And it can
+    even help to reduce your own risks. Since launching Flock Cover in January
+    2018 we’ve helped thousands of commercial drone pilots fly safely, with
+    insurance that’s as individual as their flights. We’ve also launched
+    offerings for recreational pilots and trainee pilots. And by constantly
+    listening and learning from our customers, we’ve released a bunch of cool
+    features too - like [predictive risk
+    analytics](https://blog.flockcover.com/see-the-future-with-flocks-flight-planning-tool-1507e2de5c81),
+    and additional [equipment
+    insurance](https://blog.flockcover.com/just-landed-accessory-insurance-627b04c985bd).
 
 
-    Insights such as these enable us to intelligently price insurance premiums
-    on the spot; enabling pilots to purchase short-term, customised policies
-    only when they need it, with just a few taps on their mobile phone.
+    Our technology and service is now transforming both the drone industry and
+    the insurance industry - and we’re just getting started!
   header: 'Our Story '
   image: /images/uploads/backers.png
-  imageHeader: We’re backed by some of the best in the business
+  imageHeader: 'We’re backed by some of the best in the business:'
   smallText: ''
 coreValues:
   description: Everything we do at Flock is guided by our values
@@ -54,45 +60,46 @@ coreValues:
   title: Our core values
 meetTheTeam:
   description: >-
-    Our little team is based in our new office in London. Got something to offer
-    us? Get in touch!
+    We're a friendly, passionate team of engineers, designers, writers and more.
+    We're building the insurance company of the future. [Come and join
+    us!](https://flockcover.workable.com/)
   team:
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
-    - image: /images/uploads/ron.png
-      member: Ed Leon Kinger
-      role: 'CEO, Founder'
+    - image: /images/uploads/img_0412-edit.jpg
+      member: Antton Peña
+      role: 'Founder, Product Lead'
+    - image: /images/uploads/img_0482-edit.jpg
+      member: Ed Leon Klinger
+      role: CEO
+    - image: /images/uploads/img_0526-edit.jpg
+      member: 'Courtenay Mansel '
+      role: Data Scientist
+    - image: /images/uploads/img_0436-edit.jpg
+      member: Abe Polishchuk
+      role: Tech Lead
+    - image: /images/uploads/img_0442-edit.jpg
+      member: 'Dara Cormican '
+      role: Marketing Executive
+    - image: /images/uploads/img_0996.jpg
+      member: 'Tim Ollier '
+      role: Drone Partnerships Lead
+    - image: /images/uploads/img_0586-edit.jpg
+      member: 'Matt Cleary '
+      role: Software Engineer
+    - image: /images/uploads/img_0617-edit.jpg
+      member: 'John Rowlands '
+      role: Insurance Partnerships Lead
+    - image: /images/uploads/img_0464-edit.jpg
+      member: 'Heidi Megele '
+      role: Office Manager
+    - image: /images/uploads/img_0453-edit.jpg
+      member: 'Carl Andersson '
+      role: Customer Success Executive
+    - image: /images/uploads/img_0605-edit.jpg
+      member: 'Marco Soworka '
+      role: Business Development Intern
+    - image: /images/uploads/chris.jpg
+      member: 'Chris Fothergill '
+      role: Software Engineer
   title: Meet the team
 siteMetadataOverride:
   description: drone insurance

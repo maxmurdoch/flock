@@ -84,11 +84,11 @@ class Nav extends Component {
                   </Box>
                   <Box width="100%">
                     <nav className={navClass}>
-                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                      <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
                           className={linkClass}
-                          to="/products"
+                          to="/insurance"
                           onClick={event => {
                             event.preventDefault()
 
@@ -117,19 +117,19 @@ class Nav extends Component {
                               }
                             })}
                           >
-                            Products
+                            Insurance
                           </SmallText>
                         </Link>
                       </Flex>
 
-                      <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                      <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
                           className={linkClass}
                           exact={true}
                           to="/about"
                         >
-                          <SmallText>About</SmallText>
+                          <SmallText>About us</SmallText>
                         </Link>
                       </Flex>
 
@@ -138,8 +138,30 @@ class Nav extends Component {
                           className={linkClass}
                           href="https://help.flockcover.com"
                         >
-                          <SmallText>Support</SmallText>
+                          <SmallText>FAQ</SmallText>
                         </a>
+                      </Flex>
+
+                      <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                        <Link
+                          activeStyle={activeLinkStyle}
+                          className={linkClass}
+                          exact={true}
+                          to="https://blog.flockcover.com/"
+                        >
+                          <SmallText>Blog</SmallText>
+                        </Link>
+                      </Flex>
+
+                      <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
+                        <Link
+                          activeStyle={activeLinkStyle}
+                          className={linkClass}
+                          exact={true}
+                          to="https://flockcover.workable.com"
+                        >
+                          <SmallText>Jobs</SmallText>
+                        </Link>
                       </Flex>
                       <div className={downloadButtonClass}>
                         <DownloadButton isSticky={activateStickyStyle} />

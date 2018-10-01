@@ -47,7 +47,7 @@ const HomeTemplate = ({
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <DarkNav />
+        <DarkNav to={hero.button.to}/>
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
@@ -103,13 +103,13 @@ const HomeTemplate = ({
               title={calculator.title}
               description={calculator.description}
             />
-            <Calculator />
+            <Calculator disclaimer={calculator.disclaimer}/>
           </Box>
           <Box pt={[3, 5]}>
             <Testimonial testimonials={secondTestimonial} />
           </Box>
           <Box pt={[3, 5]}>
-            <DownloadFlock />
+            <DownloadFlock to={hero.button.to}/>
           </Box>
           <BigSectionLine />
           <Featured title={featured.title} image={featured.image} />
@@ -254,6 +254,7 @@ export const query = graphql`
         calculator {
           title
           description
+          disclaimer
         }
         secondTestimonial {
           quote
