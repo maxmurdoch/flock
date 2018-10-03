@@ -90,7 +90,7 @@ meetTheTeam:
       role: Insurance Partnerships Lead
     - image: /images/uploads/img_0464-edit.jpg
       member: 'Heidi Megele '
-      role: Office Manager
+      role: Operations Manager
     - image: /images/uploads/img_0453-edit.jpg
       member: 'Carl Andersson '
       role: Customer Success Executive
