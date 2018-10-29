@@ -127,7 +127,7 @@ featured:
   image: images/uploads/featured-list.png
   title: As featured in
 siteMetadataOverride:
-  description: Pay-as-you-fly drone insurance
+  description: We provide short-term, flexible drone insurance for commercial and recreational pilots. Policies are underwritten by Allianz, the world’s leading aviation insurer.
   keywords:
     - drone insurance
     - drones

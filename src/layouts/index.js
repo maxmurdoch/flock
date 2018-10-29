@@ -95,7 +95,28 @@ class Layout extends Component {
             link={[
               { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
             ]}
-          />
+          >
+            <script type="application/ld+json">
+              {JSON.stringify({
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "http://www.flockcover.com",
+                "logo": "http://www.flockcover.com/images/uploads/flock-logo-yellow.png",
+                "contactPoint": [
+                  { "@type": "ContactPoint",
+                    "telephone": "+44 (0) 1234 480260",
+                    "contactType": "customer service"
+                  }
+                ],
+                "sameAs": [
+                  "http://www.facebook.com/flockcover",
+                  "https://www.instagram.com/flockcover",
+                  "http://www.linkedin.com/company/flockcover",
+                  "http://www.twitter.com/flockcover"
+                ]
+              })}
+            </script>
+          </Helmet>
           <Media query={`(max-width: ${R.nth(0, breakpoints)})`}>
             {matches => {
               if (matches) {
