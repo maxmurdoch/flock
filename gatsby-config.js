@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Flock',
+    title: 'Flock | Pay-as-you-fly drone insurance',
     description: 'Cover',
     keywords: 'insurance, drones, pay-as-you-go'
   },
