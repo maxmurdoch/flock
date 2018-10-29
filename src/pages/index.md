@@ -133,5 +133,5 @@ siteMetadataOverride:
     - drones
     - Flock
     - Flock Cover
-  title: 'Flock '
+  title: 'Flock | Pay-as-you-fly drone insurance'
 ---
