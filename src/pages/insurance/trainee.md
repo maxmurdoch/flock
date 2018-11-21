@@ -46,6 +46,8 @@ flightSchool:
       to: 'https://dronetraining.co.uk/'
     - image: ../../images/uploads/aerial-motion-pictures.png
       to: 'https://www.aerialmotionpictures.co.uk/'
+    - image: /images/uploads/export.png
+      to: 'https://www.airbornetraining.org/'
     - image: /images/uploads/copters.png
       to: 'https://www.coptrz.com/'
     - image: ../../images/uploads/drone-partners.png
@@ -58,6 +60,8 @@ flightSchool:
       to: 'https://www.hummingbird-uav.co.uk/'
     - image: /images/uploads/rusta.png
       to: 'https://www.rustauas.com/'
+    - image: /images/uploads/skeye-logo.png
+      to: 'https://skeyetrain.co.uk/'
     - image: /images/uploads/uav8.png
       to: 'http://www.uav8.co/'
     - image: ../../images/uploads/uav-academy.png
