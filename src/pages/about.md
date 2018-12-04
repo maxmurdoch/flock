@@ -94,8 +94,9 @@ meetTheTeam:
     - image: /images/uploads/chris.jpg
       member: 'Chris Fothergill '
       role: Software Engineer
-    - member: 'Tuulia Lampi '
-      role: Growth Marketer
+    - image: /images/uploads/img_3821.jpg
+      member: 'Andrew Norman '
+      role: Customer Success Executive
   title: Meet the team
 siteMetadataOverride:
   description: drone insurance
