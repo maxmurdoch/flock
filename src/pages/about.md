@@ -91,15 +91,12 @@ meetTheTeam:
     - image: /images/uploads/img_0464-edit.jpg
       member: 'Heidi Megele '
       role: Operations Manager
-    - image: /images/uploads/img_0453-edit.jpg
-      member: 'Carl Andersson '
-      role: Customer Success Executive
-    - image: /images/uploads/img_0605-edit.jpg
-      member: 'Marco Soworka '
-      role: Business Development Intern
     - image: /images/uploads/chris.jpg
       member: 'Chris Fothergill '
       role: Software Engineer
+    - image: /images/uploads/img_3821.jpg
+      member: 'Andrew Norman '
+      role: Customer Success Executive
   title: Meet the team
 siteMetadataOverride:
   description: drone insurance
