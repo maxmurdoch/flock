@@ -3,7 +3,7 @@ title: Home
 templateKey: home
 hero:
   button:
-    text: 'Download '
+    text: Get a quote
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: >-
     With Flock Cover, receive fully customised drone insurance, precisely when
