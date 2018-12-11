@@ -3,12 +3,12 @@ title: Home
 templateKey: home
 hero:
   button:
-    text: 'Download '
+    text: Get a quote
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: >-
     With Flock Cover, receive fully customised drone insurance, precisely when
     you need it. Download the app and get a real-time quote in seconds.
-  header: Pay-as-you-fly drone insurance
+  header: 'Pay-as-you-fly drone insurance '
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
@@ -127,11 +127,15 @@ featured:
   image: images/uploads/featured-list.png
   title: As featured in
 siteMetadataOverride:
-  description: We provide short-term, flexible drone insurance for commercial and recreational pilots. Policies are underwritten by Allianz, the world’s leading aviation insurer.
+  description: >-
+    We provide short-term, flexible drone insurance for commercial and
+    recreational pilots. Policies are underwritten by Allianz, the world’s
+    leading aviation insurer.
   keywords:
     - drone insurance
     - drones
     - Flock
     - Flock Cover
-  title: 'Flock | Pay-as-you-fly drone insurance'
+  title: Flock | Pay-as-you-fly drone insurance
 ---
+
