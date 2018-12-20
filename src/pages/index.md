@@ -61,8 +61,8 @@ stopWorrying:
   title: 'Built for drone pilots, with drone pilots'
 kindOfPilot:
   description: >-
-    We offer two types of EC785/2004 compliant policies for commercial pilots,
-    and tailored Pay-as-you-fly options for trainee and recreational pilots.
+    We offer two types of EC785/2004 compliant policies for commercial pilots.
+    Plus we have tailored options for trainee and recreational pilots.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /insurance/commercial
