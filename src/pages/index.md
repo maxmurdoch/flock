@@ -37,9 +37,8 @@ howFlockWorks:
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    We think there’s a good reason why thousands of pilots are using Flock. We
-    create products, features and tools based on what our customers tell us they
-    need. Simple.
+    We create products, features and tools based on what our customers tell us
+    they need. That might be why thousands of pilots are using Flock.
   reasons:
     - icon: /images/uploads/money.svg
       text: >-
