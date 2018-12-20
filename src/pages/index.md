@@ -41,19 +41,19 @@ stopWorrying:
     create products, features and tools based on what our customers tell us they
     need. Simple.
   reasons:
-    - icon: images/uploads/shield.svg
+    - icon: /images/uploads/money.svg
       text: >-
         Forget inflexible annual contracts. Get on-demand insurance only when
         you fly, or unlimited flights on a monthly subscription. Cancel anytime
         without the hidden admin fees.
       title: Fully flexible cover
-    - icon: images/uploads/money.svg
+    - icon: /images/uploads/magnifying-glass.svg
       text: >-
         We're doing things differently. Our community shapes the products and
         features that we deliver. Join Flock and help us make drone insurance
         simpler and smarter for everyone.
       title: Built by our community
-    - icon: images/uploads/magnifying-glass.svg
+    - icon: /images/uploads/shield.svg
       text: >-
         We may be the new kid on the block, but our partners are not. Flock
         policies are underwritten by Allianz, the world’s leading aviation
