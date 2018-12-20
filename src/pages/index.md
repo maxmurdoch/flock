@@ -107,7 +107,7 @@ risk:
         Receive real-time weather updates such as wind speed, temperature, and
         probability of rainfall.
       title: Hyperlocal weather
-  title: Know your risks before you fly
+  title: Know your risks before you fly with the Flock Cover app
 calculator:
   description: >-
     Tell us about your flying habits and we will estimate the yearly cost of
