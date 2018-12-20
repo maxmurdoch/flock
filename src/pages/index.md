@@ -7,8 +7,7 @@ hero:
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: >-
     Welcome to fully flexible insurance you control. In a couple of taps, get
-    covered for an hour, day or month - whatever suits you. Join thousands of
-    pilots using Flock Cover today.
+    covered for an hour, day or month - whatever suits you.
   header: 'Simpler, smarter drone insurance'
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -38,8 +37,9 @@ howFlockWorks:
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    The Flock Cover app uses real-time data to provide instant drone insurance
-    that's tailored to your flight. At the most competitive price possible.
+    We think there’s a good reason why thousands of pilots are using Flock. We
+    create products, features and tools based on what our customers tell us they
+    need. Simple.
   reasons:
     - icon: images/uploads/shield.svg
       text: >-
@@ -57,7 +57,7 @@ stopWorrying:
         Customise your insurance on a per-flight basis, so you only pay for the
         cover you need.
       title: Total transparency
-  title: The smarter new way to insure your drone
+  title: 'Built for drone pilots, with drone pilots'
 kindOfPilot:
   description: We offer instant drone insurance tailored to your specific needs.
   products:
