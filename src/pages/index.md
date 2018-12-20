@@ -70,7 +70,7 @@ kindOfPilot:
         Pay for insurance only when you fly. Get covered for one hour, or up to
         a day from just £4.95. Available for
         [commercial](https://flockcover.com/insurance/commercial/),
-        [trainee](https://flockcover.com/insurance/trainee/) and
+        [trainee](/insurance/trainee) and
         [recreational](https://flockcover.com/insurance/recreational/) pilots.
       title: Pay-as-you-fly
     - icon: images/uploads/trainee-pilot.svg
