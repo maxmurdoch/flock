@@ -33,9 +33,9 @@ howFlockWorks:
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: >-
-        Customise your policy length, Public Liability limit, and equipment
-        cover to suit your needs.
-      title: 3. Customise your policy
+        Pay to instantly receive your policy documents by email. Enjoy the
+        flight!
+      title: 3. Get flying
   title: How Pay-as-you-fly cover works
 stopWorrying:
   description: >-
