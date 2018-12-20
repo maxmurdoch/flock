@@ -80,15 +80,21 @@ kindOfPilot:
         subscription. Adjust, pause, or cancel your cover anytime*. Available
         for commercial pilots only.
       title: Fly Unlimted
-    - text: >-
+    - icon: /images/uploads/img_0436-edit.jpg
+      link: /insurance/commercial
+      text: >-
         kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
         kjbxjasvcjka
       title: test 1
-    - text: >-
+    - icon: /images/uploads/img_0436-edit.jpg
+      link: /insurance/commercial
+      text: >-
         kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
         kjbxjasvcjka
       title: test2
-    - text: >-
+    - icon: /images/uploads/img_0436-edit.jpg
+      link: /insurance/commercial
+      text: >-
         kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
         kjbxjasvcjka
       title: Test 3
