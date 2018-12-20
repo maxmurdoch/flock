@@ -6,9 +6,10 @@ hero:
     text: Get a quote
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: >-
-    With Flock Cover, receive fully customised drone insurance, precisely when
-    you need it. Download the app and get a real-time quote in seconds.
-  header: 'Pay-as-you-fly drone insurance '
+    Welcome to fully flexible insurance you control. In a couple of taps, get
+    covered for an hour, day or month - whatever suits you. Join thousands of
+    pilots using Flock Cover today.
+  header: 'Simpler, smarter drone insurance'
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
