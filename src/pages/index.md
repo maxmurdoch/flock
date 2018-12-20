@@ -48,9 +48,9 @@ stopWorrying:
       title: Fully flexible cover
     - icon: /images/uploads/magnifying-glass.svg
       text: >-
-        We're doing things differently. Our community shapes the products and
-        features that we deliver. Join Flock and help us make drone insurance
-        simpler and smarter for everyone.
+        We're doing things differently. Our community drives the products and
+        features we deliver. Join Flock and help us make drone insurance simpler
+        and smarter for everyone.
       title: Built by our community
     - icon: /images/uploads/shield.svg
       text: >-
