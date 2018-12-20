@@ -130,14 +130,14 @@ featured:
   title: As featured in
 siteMetadataOverride:
   description: >-
-    We provide short-term, flexible drone insurance for commercial and
-    recreational pilots. Policies are underwritten by Allianz, the world’s
-    leading aviation insurer.
+    We provide fully flexible drone insurance for commercial and recreational
+    pilots. Policies are underwritten by Allianz, the world’s leading aviation
+    insurer.
   keywords:
     - drone insurance
     - drones
     - Flock
     - Flock Cover
-  title: Flock | Pay-as-you-fly drone insurance
+  title: 'Flock | Simpler, smarter drone insurance'
 ---
 
