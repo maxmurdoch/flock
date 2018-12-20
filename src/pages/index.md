@@ -21,20 +21,20 @@ howFlockWorks:
   listOfHow:
     - image: /images/uploads/commercial-1-.png
       text: >-
-        Choose where and when you want to fly. See your quote change in
-        real-time.
-      title: 1. Enter your flight details
+        [Download](https://flockcover.app.link/6IW6kTmgfP) the Flock Cover app
+        and get a drone insurance quote in less than a minute.
+      title: 1. Download the Flock Cover app
     - image: /images/uploads/commercial-personalise.png
+      text: >-
+        Choose where and when you want to fly - instantly or up to 10 days in
+        advance. See your quote change in real-time.
+      title: 2. Enter your flight details
+    - image: images/uploads/screens/get-flying-screen.png
       text: >-
         Customise your policy length, Public Liability limit, and equipment
         cover to suit your needs.
-      title: 2. Customise your policy
-    - image: images/uploads/screens/get-flying-screen.png
-      text: >-
-        Pay to instantly receive your policy documents by email. Enjoy the
-        flight!
-      title: 3. Get flying
-  title: How our Pay-as-you-fly cover works
+      title: 3. Customise your policy
+  title: How Pay-as-you-fly cover works
 stopWorrying:
   description: >-
     We create products, features and tools based on what our customers tell us
