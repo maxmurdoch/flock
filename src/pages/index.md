@@ -43,20 +43,22 @@ stopWorrying:
   reasons:
     - icon: images/uploads/shield.svg
       text: >-
-        Flock’s pricing is
-        [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price).
-        So the safer you fly, the less you pay. It's as simple as that.
-      title: Fairer pricing
+        Forget inflexible annual contracts. Get on-demand insurance only when
+        you fly, or unlimited flights on a monthly subscription. Cancel anytime
+        without the hidden admin fees.
+      title: Fully flexible cover
     - icon: images/uploads/money.svg
       text: >-
-        Pay for insurance only when you fly. Get covered for one hour, or up to
-        a day.
-      title: Short-term insurance
+        We're doing things differently. Our community shapes the products and
+        features that we deliver. Join Flock and help us make drone insurance
+        simpler and smarter for everyone.
+      title: Built by our community
     - icon: images/uploads/magnifying-glass.svg
       text: >-
-        Customise your insurance on a per-flight basis, so you only pay for the
-        cover you need.
-      title: Total transparency
+        We may be the new kid on the block, but our partners are not. Flock
+        policies are underwritten by Allianz, the world’s leading aviation
+        insurer. So you’re in safe hands.
+      title: Backed by Allianz
   title: 'Built for drone pilots, with drone pilots'
 kindOfPilot:
   description: We offer instant drone insurance tailored to your specific needs.
