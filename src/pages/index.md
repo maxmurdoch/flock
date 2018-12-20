@@ -18,17 +18,19 @@ howFlockWorks:
   description: >-
     Insuring your drone flight has never been easier. All it takes is a matter
     of taps on your mobile phone.
+    [Download](https://flockcover.app.link/6IW6kTmgfP) the Flock Cover app and
+    get a drone insurance quote in less than a minute.
   listOfHow:
     - image: /images/uploads/commercial-1-.png
       text: >-
-        [Download](https://flockcover.app.link/6IW6kTmgfP) the Flock Cover app
-        and get a drone insurance quote in less than a minute.
-      title: 1. Download the Flock Cover app
+        Choose where and when you want to fly. See your quote change in
+        real-time.
+      title: 1. Enter your flight details
     - image: /images/uploads/commercial-personalise.png
       text: >-
         Choose where and when you want to fly - instantly or up to 10 days in
         advance. See your quote change in real-time.
-      title: 2. Enter your flight details
+      title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: >-
         Customise your policy length, Public Liability limit, and equipment
@@ -80,6 +82,18 @@ kindOfPilot:
         subscription. Adjust, pause, or cancel your cover anytime*. Available
         for commercial pilots only.
       title: Fly Unlimted
+    - text: >-
+        kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
+        kjbxjasvcjka
+      title: test 1
+    - text: >-
+        kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
+        kjbxjasvcjka
+      title: test2
+    - text: >-
+        kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
+        kjbxjasvcjka
+      title: Test 3
   title: Find the cover that’s right for you
 risk:
   description: >-
