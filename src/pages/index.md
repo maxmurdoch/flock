@@ -44,7 +44,7 @@ stopWorrying:
       text: >-
         Forget inflexible annual contracts. Get on-demand insurance only when
         you fly, or unlimited flights on a monthly subscription. Cancel anytime
-        without the hidden admin fees.
+        without hidden admin fees.
       title: Fully flexible cover
     - icon: /images/uploads/magnifying-glass.svg
       text: >-
