@@ -78,8 +78,7 @@ kindOfPilot:
       text: >-
         An unlimited number of flights in the UK or abroad on a monthly
         subscription. Adjust, pause, or cancel your cover anytime*. Available
-        for [commercial](https://flockcover.com/insurance/commercial/) pilots
-        only.
+        for commercial pilots only.
       title: Fly Unlimted
   title: Find the cover that’s right for you
 risk:
