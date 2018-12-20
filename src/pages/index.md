@@ -61,27 +61,28 @@ stopWorrying:
       title: Backed by Allianz
   title: 'Built for drone pilots, with drone pilots'
 kindOfPilot:
-  description: We offer instant drone insurance tailored to your specific needs.
+  description: >-
+    We offer two types of EC785/2004 compliant policies for commercial pilots,
+    and tailored Pay-as-you-fly options for trainee and recreational pilots.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /insurance/commercial
       text: >-
-        Flock’s EC785/2004 compliant policies offer equipment and Public
-        Liability insurance from just £4.95 a day.
-      title: Commercial pilot
+        Pay for insurance only when you fly. Get covered for one hour, or up to
+        a day from just £4.95. Available for
+        [commercial](https://flockcover.com/insurance/commercial/),
+        [trainee](https://flockcover.com/insurance/trainee/) and
+        [recreational](https://flockcover.com/insurance/recreational/) pilots.
+      title: Pay-as-you-fly
     - icon: images/uploads/trainee-pilot.svg
-      link: /insurance/trainee
+      link: 'https://landing.flockcover.com/flyunlimited/'
       text: >-
-        From flight assessment insurance, to providing proof-of-insurance for
-        your PfCO application, Flock’s got you covered.
-      title: Trainee pilot
-    - icon: images/uploads/recreational-pilot.svg
-      link: '/insurance/recreational '
-      text: >-
-        Enjoy your favourite hobby with peace of mind. Get covered from just
-        £2.95 for up to a day of flying.
-      title: Recreational pilot
-  title: What kind of drone pilot are you?
+        An unlimited number of flights in the UK or abroad on a monthly
+        subscription. Adjust, pause, or cancel your cover anytime*. Available
+        for [commercial](https://flockcover.com/insurance/commercial/) pilots
+        only.
+      title: Fly Unlimted
+  title: Find the cover that’s right for you
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
