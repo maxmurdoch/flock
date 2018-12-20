@@ -34,7 +34,7 @@ howFlockWorks:
         Pay to instantly receive your policy documents by email. Enjoy the
         flight!
       title: 3. Get flying
-  title: How Flock Cover works
+  title: How our Pay-as-you-fly cover works
 stopWorrying:
   description: >-
     We create products, features and tools based on what our customers tell us
