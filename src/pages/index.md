@@ -21,7 +21,7 @@ howFlockWorks:
     [Download](https://flockcover.app.link/6IW6kTmgfP) the Flock Cover app and
     get a drone insurance quote in less than a minute.
   listOfHow:
-    - image: /images/uploads/app-product-screen.png
+    - image: /images/uploads/commercial-1-.png
       text: >-
         Choose on-demand insurance by the hour, or get covered for an unlimited
         number of flights on a monthly subscription.
@@ -39,20 +39,20 @@ howFlockWorks:
 stopWorrying:
   description: >-
     Our community of pilots drive the products and features we create. The
-    result: flexible options that our pilot's love, and clever tools that make
+    result: flexible policies that our pilot's love, and clever tools that make
     Flock Cover much more than just an insurance policy.
   reasons:
     - icon: /images/uploads/money.svg
       text: >-
-        Forget inflexible annual contracts. Get on-demand insurance only when
-        you fly, or unlimited flights anywhere, anytime on a monthly
-        subscription. Cancel anytime without hidden admin fees.
+        Forget annual contracts. Get on-demand insurance only when you fly, or
+        unlimited flights anywhere, anytime on a monthly subscription. Cancel
+        anytime - without any hidden admin fees.
       title: Fully flexible cover
     - icon: /images/uploads/magnifying-glass.svg
       text: >-
-        We’re always adding new products, features and tools based on what our
-        customers tell us they need. Join Flock and help us make drone insurance
-        simpler and smarter for everyone.
+        We’re always adding new features and tools based on what our customers
+        tell us they need. Join Flock and help us make drone insurance simpler
+        and smarter for everyone.
       title: Built by our community
     - icon: /images/uploads/shield.svg
       text: >-
@@ -63,23 +63,23 @@ stopWorrying:
   title: 'Built for drone pilots, with drone pilots'
 kindOfPilot:
   description: >-
-    Choose from our two EC785/2004 compliant policies for commercial pilots. We
-    also offer tailored Pay-as-you-fly policies for trainee and recreational
-    pilots.
+    We’re doing things a little differently. Our two options let you completely
+    customise your insurance based on your needs. Stick with one policy, or mix
+    and match throughout the year.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /insurance/commercial
       text: >-
-        Pay for insurance only when you fly. Get covered for one hour, or up to
-        a day from just £4.95. Available for commercial, trainee and
-        recreational pilots.
+        Pay for insurance only when you fly. Get fully customised cover for one
+        hour, or up to a day from just £4.95. Available for commercial, trainee
+        and recreational pilots.
       title: Pay-as-you-fly
     - icon: images/uploads/trainee-pilot.svg
       link: 'https://landing.flockcover.com/flyunlimited/'
       text: >-
-        An unlimited number of flights in the UK or abroad on a monthly
-        subscription. Adjust, pause, or cancel your cover anytime*. Available
-        for commercial pilots only.
+        Fly anywhere, anytime. Get unlimited number of flights in the UK or
+        abroad on a monthly subscription. Adjust, pause, or cancel your cover
+        anytime*. Available for commercial pilots only.
       title: Fly Unlimted
   title: Find the cover that’s right for you
 risk:
