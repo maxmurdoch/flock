@@ -21,22 +21,21 @@ howFlockWorks:
     [Download](https://flockcover.app.link/6IW6kTmgfP) the Flock Cover app and
     get a drone insurance quote in less than a minute.
   listOfHow:
-    - image: /images/uploads/commercial-1-.png
+    - image: /images/uploads/app-product-screen.png
       text: >-
-        Choose where and when you want to fly. See your quote change in
-        real-time.
-      title: 1. Enter your flight details
+        Choose on-demand insurance by the hour, or get covered for an unlimited
+        number of flights on a monthly subscription.
+      title: 1. Choose your policy type
     - image: /images/uploads/commercial-personalise.png
       text: >-
-        Choose where and when you want to fly - instantly or up to 10 days in
-        advance. See your quote change in real-time.
+        Customise your public liability limit and equipment cover instantly with
+        Pay-as-you-fly, or quickly and easily adjust your cover as needed with
+        Fly Unlimited.
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
-      text: >-
-        Pay to instantly receive your policy documents by email. Enjoy the
-        flight!
+      text: Receive your policy documents instantly by email. Enjoy the flight!
       title: 3. Get flying
-  title: How Pay-as-you-fly cover works
+  title: How Flock Cover works
 stopWorrying:
   description: >-
     We create products, features and tools based on what our customers tell us
@@ -63,8 +62,9 @@ stopWorrying:
   title: 'Built for drone pilots, with drone pilots'
 kindOfPilot:
   description: >-
-    We offer two types of EC785/2004 compliant policies for commercial pilots.
-    Plus we have tailored options for trainee and recreational pilots.
+    Choose from our two EC785/2004 compliant policies for commercial pilots. We
+    also offer tailored Pay-as-you-fly policies for trainee and recreational
+    pilots.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /insurance/commercial
@@ -80,24 +80,6 @@ kindOfPilot:
         subscription. Adjust, pause, or cancel your cover anytime*. Available
         for commercial pilots only.
       title: Fly Unlimted
-    - icon: /images/uploads/recreational-pilot.svg
-      link: /insurance/commercial
-      text: >-
-        kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
-        kjbxjasvcjka
-      title: test 1
-    - icon: /images/uploads/trainee-pilot.svg
-      link: /insurance/commercial
-      text: >-
-        kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
-        kjbxjasvcjka
-      title: test2
-    - icon: /images/uploads/trainee-pilot.svg
-      link: /insurance/commercial
-      text: >-
-        kbcskjb ckja sbjkdcb kascjkasbkjcajkbckj abcjkabskjc bakjsbcj
-        kjbxjasvcjka
-      title: Test 3
   title: Find the cover that’s right for you
 risk:
   description: >-
@@ -148,9 +130,9 @@ featured:
   title: As featured in
 siteMetadataOverride:
   description: >-
-    We provide fully flexible drone insurance for commercial and recreational
-    pilots. Policies are underwritten by Allianz, the world’s leading aviation
-    insurer.
+    We provide fully flexible drone insurance for commercial, trainee and
+    recreational pilots. Policies are underwritten by Allianz, the world’s
+    leading aviation insurer.
   keywords:
     - drone insurance
     - drones
