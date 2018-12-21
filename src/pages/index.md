@@ -19,7 +19,7 @@ howFlockWorks:
     Insuring your drone flight has never been easier. All it takes is a matter
     of taps on your mobile phone.
     [Download](https://flockcover.app.link/6IW6kTmgfP) the Flock Cover app and
-    get a drone insurance quote in less than a minute.
+    get a drone insurance quote in under a minute.
   listOfHow:
     - image: /images/uploads/commercial-1-.png
       text: >-
@@ -28,9 +28,8 @@ howFlockWorks:
       title: 1. Choose your policy type
     - image: /images/uploads/commercial-personalise.png
       text: >-
-        Customise your public liability limit and equipment cover instantly with
-        Pay-as-you-fly, or quickly and easily adjust your cover as needed with
-        Fly Unlimited.
+        Tailor your drone and accessories cover, and customise your public
+        liability limit to suit your needs.
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: Receive your policy documents instantly by email. Enjoy the flight!
@@ -63,9 +62,9 @@ stopWorrying:
   title: 'Built for drone pilots, with drone pilots'
 kindOfPilot:
   description: >-
-    We’re doing things a little differently. Our two options let you completely
-    customise your insurance based on your needs. Stick with one policy, or mix
-    and match throughout the year.
+    We’re doing things differently. Our two flexible options let you completely
+    customise your insurance. Stick with one policy, or mix and match throughout
+    the year.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /insurance/commercial
@@ -77,7 +76,7 @@ kindOfPilot:
     - icon: images/uploads/trainee-pilot.svg
       link: 'https://landing.flockcover.com/flyunlimited/'
       text: >-
-        Fly anywhere, anytime. Get unlimited number of flights in the UK or
+        Fly anywhere, anytime. Get an unlimited number of flights in the UK or
         abroad on a monthly subscription. Adjust, pause, or cancel your cover
         anytime*. Available for commercial pilots only.
       title: Fly Unlimted
