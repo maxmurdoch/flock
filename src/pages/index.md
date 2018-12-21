@@ -38,8 +38,8 @@ howFlockWorks:
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    We create products, features and tools based on what our customers tell us
-    they need. That might be why thousands of pilots are using Flock.
+    Our community drives the products and features we deliver. That's just one
+    reason why thousands of pilots are now using Flock.
   reasons:
     - icon: /images/uploads/money.svg
       text: >-
@@ -49,9 +49,9 @@ stopWorrying:
       title: Fully flexible cover
     - icon: /images/uploads/magnifying-glass.svg
       text: >-
-        We're doing things differently. Our community drives the products and
-        features we deliver. Join Flock and help us make drone insurance simpler
-        and smarter for everyone.
+        Our products, features and tools evolve based directly on what our
+        customers tell us they need. Join Flock and help us make drone insurance
+        simpler and smarter for everyone.
       title: Built by our community
     - icon: /images/uploads/shield.svg
       text: >-
