@@ -37,7 +37,7 @@ howFlockWorks:
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    Our community of pilots drive the products and features we create. The
+    Our community of pilots help shape the products and features we create. The
     result: flexible policies that our pilot's love, and clever tools that make
     Flock Cover much more than just an insurance policy.
   reasons:
