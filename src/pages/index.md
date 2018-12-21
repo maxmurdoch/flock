@@ -8,7 +8,7 @@ hero:
   description: >-
     Welcome to fully flexible insurance you control. In a couple of taps, get
     covered for an hour, day or month - whatever suits you.
-  header: 'Simpler, smarter drone insurance'
+  header: 'Simpler, smarter drone insuranc'
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
