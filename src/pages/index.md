@@ -52,7 +52,7 @@ stopWorrying:
         We’re always adding new features and tools based on what our customers
         tell us they need. Join Flock and help us make drone insurance simpler
         and smarter for everyone.
-      title: Built by our community
+      title: DESIGNED FOR YOU
     - icon: /images/uploads/shield.svg
       text: >-
         We may be the new kid on the block, but our partners are not. Flock
