@@ -38,18 +38,19 @@ howFlockWorks:
   title: How Flock Cover works
 stopWorrying:
   description: >-
-    Our community drives the products and features we deliver. That's just one
-    reason why thousands of pilots are now using Flock.
+    Our community of pilots drive the products and features we create. This has
+    resulted in clever tools that make Flock Cover much more than just an
+    insurance policy.
   reasons:
     - icon: /images/uploads/money.svg
       text: >-
-        Forget inflexible annual contracts. Get insurance on-demand only when
-        you fly, or unlimited flights on a monthly subscription. Cancel anytime
-        without hidden admin fees.
+        Forget inflexible annual contracts. Get on-demand insurance only when
+        you fly, or unlimited flights anywhere, anytime on a monthly
+        subscription. Cancel anytime without hidden admin fees.
       title: Fully flexible cover
     - icon: /images/uploads/magnifying-glass.svg
       text: >-
-        Our products, features and tools evolve based directly on what our
+        We’re always adding new products, features and tools based on what our
         customers tell us they need. Join Flock and help us make drone insurance
         simpler and smarter for everyone.
       title: Built by our community
