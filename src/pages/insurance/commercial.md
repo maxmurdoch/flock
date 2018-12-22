@@ -26,13 +26,13 @@ why:
     - text: Flock’s policies are EC785/2004 compliant and CAA-approved.
       title: Fully compliant
     - text: >-
+        With Pay-as-you-fly cover, you can purchase insurance for each job and
+        expense it to your clients.
+      title: Bill as an expense
+    - text: >-
         If something goes wrong, make claim via the app in a couple of taps. Or
         give us a call, we’re here to help.
       title: Claim simply
-    - text: >-
-        With Pay-as-you-fly cover, you can purchase insurance for each job and
-        expense it to your clients.
-      title: 'Bill as an expense '
     - text: >-
         Chat to our customer support team in the app. We respond in 2 minutes or
         less!
