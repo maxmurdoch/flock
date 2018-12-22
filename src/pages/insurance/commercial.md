@@ -7,30 +7,31 @@ hero:
     text: Download
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: |-
-    * On-demand insurance from £4.95
-    * EC785/2004 compliant policies
-    * Customisable Public Liability limits (from £1-10M)
-    * Drone and accessory cover (up to £25,000)
-  header: 'Pay-as-you-fly drone insurance for commercial pilots '
+    * Choose from two flexible insurance options
+    * EC785/2004 compliant 
+    * Customisable Public Liability limits from £1-10M
+    * Drone and accessory cover up to £25,000
+  header: Fully flexible drone insurance for commercial pilots
 why:
   description: Thousands of drone pilots across the UK now use the Flock Cover app.
   list:
     - text: >-
-        Flock’s pricing is
-        [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price),
-        with commercial policies starting from £4.95.
-      title: Fairer pricing
+        Pay for insurance only when you fly. Get covered for 1 to 8 hours, with
+        commercial policies starting from £4.95.
+      title: Pay-as-you-fly
     - text: >-
-        Pay for insurance only when you fly. Get covered for one hour, or up to
-        a day.
-      title: 'Short-term insurance '
-    - text: >-
-        Schedule flights up to 10 days in advance. Change of plan? Cancel with
-        one tap.
-      title: 'Book in advance '
+        Unlimited flights in the UK (or abroad) on a monthly subscription.
+        Adjust, pause or cancel your cover without any admin fees.
+      title: Fly Unlimited
     - text: Flock’s policies are EC785/2004 compliant and CAA-approved.
       title: Fully compliant
-    - text: 'Purchase insurance for each job, and expense it to your clients.'
+    - text: >-
+        If something goes wrong, make claim via the app in a couple of taps. Or
+        give us a call, we’re here to help.
+      title: Claim simply
+    - text: >-
+        With Pay-as-you-fly cover, you can purchase insurance for each job and
+        expense it to your clients.
       title: 'Bill as an expense '
     - text: >-
         Chat to our customer support team in the app. We respond in 2 minutes or
@@ -79,7 +80,7 @@ how:
         Pay to instantly receive your policy documents by email. Enjoy the
         flight!
       title: 3. Get flying
-  title: How Flock Cover works
+  title: How our Pay-as-you-fly cover works
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
@@ -140,6 +141,6 @@ siteMetadataOverride:
     - on-demand
     - Flock
     - commercial drone insurance UK
-  title: 'Commercial pay-as-you-fly drone insurance '
+  title: Fully flexible drone insurance for commercial pilots
 ---
 
