@@ -18,23 +18,21 @@ howFlockWorks:
   description: >-
     Insuring your drone flight has never been easier. All it takes is a matter
     of taps on your mobile phone.
-    [Download](https://flockcover.app.link/6IW6kTmgfP) the Flock Cover app and
-    get a drone insurance quote in under a minute.
   listOfHow:
     - image: /images/uploads/commercial-1-.png
       text: >-
-        Choose on-demand insurance by the hour, or get covered for an unlimited
-        number of flights on a monthly subscription.
-      title: 1. Choose your policy type
+        Choose where and when you want to fly. See your quote change in
+        real-time.
+      title: 1. Enter your flight details
     - image: /images/uploads/commercial-personalise.png
       text: >-
-        Tailor your drone and accessories cover, and customise your public
-        liability limit to suit your needs.
+        Customise your policy length, Public Liability limit, and equipment
+        cover to suit your needs.
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
       text: Receive your policy documents instantly by email. Enjoy the flight!
       title: 3. Get flying
-  title: How Flock Cover works
+  title: How our Pay-as-you-fly cover works
 stopWorrying:
   description: >-
     Our community of pilots help shape the products and features we create. The
