@@ -16,12 +16,13 @@ why:
   description: Thousands of drone pilots across the UK now use the Flock Cover app.
   list:
     - text: >-
-        Pay for insurance only when you fly. Get covered for 1 to 8 hours, with
-        commercial policies starting from £4.95.
+        Pay for insurance only when you fly. Get on-demand cover for 1 to 8
+        hours, with commercial policies starting from £4.95.
       title: Pay-as-you-fly
     - text: >-
-        Unlimited flights in the UK (or abroad) on a monthly subscription.
-        Adjust, pause or cancel your cover without any admin fees.
+        [Unlimited flights](https://landing.flockcover.com/flyunlimited/) in the
+        UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
+        cover without any admin fees.
       title: Fly Unlimited
     - text: Flock’s policies are EC785/2004 compliant and CAA-approved.
       title: Fully compliant
