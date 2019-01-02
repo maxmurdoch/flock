@@ -58,6 +58,8 @@ flightSchool:
       to: 'https://www.flybydronetraining.co.uk/'
     - image: ../../images/uploads/uav-hummingbird.png
       to: 'https://www.hummingbird-uav.co.uk/'
+    - image: /images/uploads/canva-photo-editor.png
+      to: 'https://pigscanfly.photography/'
     - image: /images/uploads/rusta.png
       to: 'https://www.rustauas.com/'
     - image: /images/uploads/skeye-logo.png
