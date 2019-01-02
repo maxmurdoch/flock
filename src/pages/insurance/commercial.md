@@ -7,7 +7,7 @@ hero:
     text: Download
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: |-
-    * Choose from two flexible insurance options
+    * Pay-as-you-fly and monthly subscription options
     * EC785/2004 compliant 
     * Customisable Public Liability limits from £1-10M
     * Drone and accessory cover up to £25,000
@@ -37,8 +37,8 @@ why:
         give us a call, we’re here to help.
       title: Claim simply
     - text: >-
-        Chat to our friendly customer support team in the app. We respond in 2
-        minutes or less!
+        Chat to our friendly customer support team in the app. We typically
+        respond in 2 minutes or less!
       title: Instant support
   title: 'Why do commercial pilots fly with Flock? '
 flightSchool:
@@ -50,7 +50,7 @@ flightSchool:
 coverNote:
   bodyText: >-
     Good news! You no longer need to commit to an annual policy in order to get
-    your proof-of-insurance for your PfCO renewal.
+    your proof-of-insurance for your PfCO application.
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
