@@ -24,7 +24,9 @@ why:
         UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
         cover without any admin fees.
       title: Fly Unlimited
-    - text: Flock’s policies are EC785/2004 compliant and CAA-approved.
+    - text: >-
+        Fly with peace of mind knowing Flock’s policies are EC785/2004 compliant
+        and CAA-approved.
       title: Fully compliant
     - text: >-
         With Pay-as-you-fly cover, you can purchase insurance for each job and
@@ -35,8 +37,8 @@ why:
         give us a call, we’re here to help.
       title: Claim simply
     - text: >-
-        Chat to our customer support team in the app. We respond in 2 minutes or
-        less!
+        Chat to our friendly customer support team in the app. We respond in 2
+        minutes or less!
       title: Instant support
   title: 'Why do commercial pilots fly with Flock? '
 flightSchool:
@@ -52,12 +54,12 @@ coverNote:
   image: ../../images/uploads/cover-note.svg
   isShowing: true
   link:
-    text: Get your Cover Note →
+    text: Get your proof of insurance document →
     to: 'https://landing.flockcover.com/cover-note/'
   smallText: >-
-    Flock's 'Cover Note' is accepted by the CAA as proof of EC785/2004 compliant
-    insurance. And you can get yours instantly emailed to you, without having to
-    commit to anything in the long-term. Oh, and it's free!
+    Flock's Cover Note is accepted by the CAA as proof of EC785/2004 compliant
+    insurance. And you can get your document instantly emailed to you, without
+    even having to purchase a policy first. Oh, and it's free!
   title: Getting or renewing your PfCO?
 doINeedInsurance:
   title: ''
