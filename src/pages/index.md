@@ -37,19 +37,19 @@ stopWorrying:
   description: >-
     Our community of pilots help shape the products and features we create. The
     result: flexible policies that our pilot's love, and clever tools that make
-    Flock Cover much more than just an insurance policy.
+    Flock Cover much more than just an insurance app.
   reasons:
     - icon: /images/uploads/money.svg
       text: >-
-        Forget annual contracts. Get on-demand insurance only when you fly, or
-        unlimited flights on a monthly subscription. Cancel anytime - without
-        any hidden admin fees.
+        Forget annual contracts. Get covered on a Pay-as-you-fly basis, or
+        insured for an unlimited number of flights in a month. Cancel anytime -
+        without any hidden fees.
       title: Fully flexible cover
     - icon: /images/uploads/magnifying-glass.svg
       text: >-
-        We’re always adding new features and tools. Join our community and tell
-        us what you think, so that together we can make drone insurance simpler
-        and smarter for everyone.
+        We’re always adding new features and tools. Join our community and share
+        your thoughts, so that together we can make drone insurance simpler and
+        smarter for everyone.
       title: Designed for you
     - icon: /images/uploads/shield.svg
       text: >-
@@ -61,8 +61,8 @@ stopWorrying:
 kindOfPilot:
   description: >-
     We’re doing things differently. Our two flexible options let you completely
-    customise your insurance. Stick with one policy, or mix and match throughout
-    the year.
+    customise your drone insurance. Stick with one policy, or mix and match
+    throughout the year.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /insurance/commercial
@@ -74,9 +74,9 @@ kindOfPilot:
     - icon: images/uploads/trainee-pilot.svg
       link: 'https://landing.flockcover.com/flyunlimited/'
       text: >-
-        Fly anywhere, anytime. Get an unlimited number of flights in the UK or
-        abroad on a monthly subscription. Adjust, pause, or cancel your cover
-        anytime. Available for commercial pilots only.
+        Fly anywhere, anytime. Get covered for an unlimited number of flights in
+        the UK or abroad on a monthly subscription. Adjust, pause, or cancel
+        your policy anytime. Available for commercial pilots only.
       title: Fly Unlimited
   title: Find the cover that’s right for you
 risk:
