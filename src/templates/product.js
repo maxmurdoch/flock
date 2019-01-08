@@ -60,7 +60,7 @@ const SegmentPageTemplate = ({data}) => {
             textColor={colors.white}
             header={hero.header}
             description={hero.description}
-            button={hero.button}
+            buttonOne={hero.button}
           />
           <Box mt={[3, 5]}>
             <TextGrid

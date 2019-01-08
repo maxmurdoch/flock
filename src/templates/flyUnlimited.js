@@ -9,9 +9,9 @@ import LightNav from '../components/LightNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
-import ToggleiPhone from '../components/ToggleiPhone'
-import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
-import MapBackground from '../components/MapBackground'
+import RenewalBanner from '../components/RenewalBanner'
+import NonToggleiPhone from '../components/NonToggleiPhone'
+import BlackBackground from '../components/BlackBackground'
 
 import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
@@ -21,9 +21,10 @@ const SegmentPageTemplate = ({data}) => {
     hero,
     why,
     siteMetadataOverride,
-    how
+    how,
+    control,
+    renewalBanner
   } = data.markdownRemark.frontmatter
-  console.log(data)
 
   return (
     <StickyContainer>
@@ -45,7 +46,8 @@ const SegmentPageTemplate = ({data}) => {
             textColor={colors.white}
             header={hero.header}
             description={hero.description}
-            button={hero.button}
+            buttonOne={hero.buttonOne}
+            buttonTwo={hero.buttonTwo}
           />
           <Box mt={[3, 5]}>
             <TextGrid
@@ -55,31 +57,36 @@ const SegmentPageTemplate = ({data}) => {
             />
           </Box>
         </Box>
-        <MapBackground>
-          <ToggleiPhone
+        <BlackBackground className={css({paddingBottom: 40})}>
+          <NonToggleiPhone
             title={how.title}
             description={how.description}
             list={how.list}
+            image={how.image}
           />
-        </MapBackground>
-        <Box className={css({backgroundColor: 'white', paddingBottom: 75})}>
+        </BlackBackground>
+        <Box className={css({backgroundColor: 'white', paddingTop: 40})}>
           <Box mt={[3, 5]}>
-           <TextGrid
-             title={why.title}
-             description={why.description}
-             list={why.list}
-           />
+            <TextGrid
+              title={control.title}
+              description={control.description}
+              list={control.list}
+            />
           </Box>
           <BigSectionLine />
         </Box>
+
+        <RenewalBanner
+          image={renewalBanner.image}
+          mainText={renewalBanner.mainText}
+          buttonText={renewalBanner.buttonText}
+        />
 
         <Footer />
       </div>
     </StickyContainer>
   )
 }
-
-
 
 export default SegmentPageTemplate
 
@@ -90,7 +97,11 @@ export const query = graphql`
       frontmatter {
         title
         hero {
-          button {
+          buttonOne {
+            text
+            to
+          }
+          buttonTwo {
             text
             to
           }
@@ -102,6 +113,7 @@ export const query = graphql`
           title
           description
           list {
+            icon
             title
             text
           }
@@ -109,11 +121,24 @@ export const query = graphql`
         how {
           title
           description
+          image
           list {
             title
-            image
             text
           }
+        }
+        control {
+          title
+          description
+          list {
+            title
+            text
+          }
+        }
+        renewalBanner {
+          image
+          mainText
+          buttonText
         }
         siteMetadataOverride {
           title

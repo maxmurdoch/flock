@@ -3,29 +3,31 @@ title: FlyUnlimited
 templateKey: flyUnlimited
 hero:
   backgroundImage: ../../images/uploads/fly-unlimited-header.jpg
-  button:
-    text: Get A Quote
+  buttonOne:
+    text: Get a quote
     to: 'https://flockcover.app.link/6IW6kTmgfP'
-  description: |-
-    * Pay-as-you-fly and monthly subscription options
-    * EC785/2004 compliant
-    * Customisable Public Liability limits from £1-10M
-    * Drone and accessory cover up to £25,000
+  buttonTwo:
+    text: What's covered?
+    to: 'https://flockcover.app.link/6IW6kTmgfP'
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor imperdiet finibus. Suspendisse in dapibus mi, non congue leo. Aliquam ac arcu quis dui laoreet feugiat.
   header: Start. Stop. Pause. Adapt. Drone Insurance has never been this flexible.
 why:
   description: We designed Fly Unlimited with frequent flyers in mind. You'll receive the benefits you'd expect from an annual policy - without the commitment.
   list:
-    - text: >-
+    - icon: /images/uploads/shield.svg
+      text: >-
         [Unlimited flights](https://landing.flockcover.com/flyunlimited/) in the
         UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
         cover without any admin fees.
-      title: Unlimited Flights in the UK
-    - text: >-
+      title: Unlimited Flights in the UK      
+    - icon: /images/uploads/shield.svg
+      text: >-
         [Unlimited flights](https://landing.flockcover.com/flyunlimited/) in the
         UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
         cover without any admin fees.
       title: Extend Your Cover Worldwide
-    - text: >-
+    - icon: /images/uploads/shield.svg
+      text: >-
         [Unlimited flights](https://landing.flockcover.com/flyunlimited/) in the
         UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
         cover without any admin fees.
@@ -33,25 +35,33 @@ why:
   title: 'Designed For Frequent Flyers'
 how:
   description: >-
-    Insuring your drone has never been easier. All it takes is a matter of taps
-    on your mobile phone.
+    We're bringing flexi back.
   list:
-    - image: /images/uploads/commercial-1-.png
-      text: >-
-        Choose where and when you want to fly. See your quote change in
-        real-time.
-      title: 1. Enter your flight details
-    - image: /images/uploads/commercial-personalise.png
-      text: >-
-        Customise your policy length, Public Liability limit, and equipment
-        cover to suit your needs.
-      title: 2. Customise your policy
-    - image: ../../images/uploads/screens/get-flying-screen.png
-      text: >-
-        Pay to instantly receive your policy documents by email. Enjoy the
-        flight!
-      title: 3. Get flying
-  title: How our Pay-as-you-fly cover works
+    - text: >-
+        Your monthly subscription renews automatically, until you say when.
+      title: Start your monthly subscription
+    - text: >-
+        Add and subtract drones, or increase accessories and liability limits when needed.
+      title: Adjust your cover as needed
+    - text: >-
+        You're free to pause or cancel anytime. There are no hidden cancellation fees.
+      title: Pause or cancel anytime
+  image: /images/uploads/phones/fly-unlimited.png
+  title: The first flexible cover of its kind
+control:
+  description: We designed Fly Unlimited with frequent flyers in mind. You'll receive the benefits you'd expect from an annual policy - without the commitment.
+  list:
+    - text: >-
+        There's no need to pay for insurance for the whole year. Find out how much you could save over the course of the year by using our calculator below.
+      title: Don't fly all year round?
+    - text: >-
+        What happens if you pause your cover and the odd job comes along? No problem. Switch to a Pay-As-You-Fly policy if and when you need to.
+      title: Extend Your Cover Worldwide
+  title: 'Need the odd job covered?'
+renewalBanner:
+  image: /images/uploads/renewal-drone.jpg
+  mainText: Don't wait for your current policy to expire. Switch to Flock today.
+  buttonText: GET A QUOTE IN 60 SECONDS 
 siteMetadataOverride:
   description: drone insurance
   keywords:
