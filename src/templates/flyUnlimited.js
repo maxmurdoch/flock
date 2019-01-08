@@ -5,6 +5,8 @@ import {css} from 'emotion'
 import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
 import TextSection from '../components/TextSection'
+import WhatIsCoveredSection from '../components/WhatIsCoveredSection'
+import Flex from '../components/Flex'
 import LightNav from '../components/LightNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
@@ -23,7 +25,8 @@ const SegmentPageTemplate = ({data}) => {
     siteMetadataOverride,
     how,
     control,
-    renewalBanner
+    renewalBanner,
+    whatIsCovered
   } = data.markdownRemark.frontmatter
 
   return (
@@ -74,6 +77,9 @@ const SegmentPageTemplate = ({data}) => {
             />
           </Box>
           <BigSectionLine />
+          <Box mt={[3, 5]}>
+          <WhatIsCoveredSection />
+          </Box>
         </Box>
 
         <RenewalBanner
@@ -139,6 +145,13 @@ export const query = graphql`
           image
           mainText
           buttonText
+        }
+        whatIsCovered {
+          title
+          list {
+            icon
+            title
+          }
         }
         siteMetadataOverride {
           title

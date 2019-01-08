@@ -61,7 +61,26 @@ control:
 renewalBanner:
   image: /images/uploads/renewal-drone.jpg
   mainText: Don't wait for your current policy to expire. Switch to Flock today.
-  buttonText: GET A QUOTE IN 60 SECONDS 
+  buttonText: GET A QUOTE IN 60 SECONDS
+whatIsCovered:
+  list:
+    - icon: /images/uploads/shield.svg
+      title: Unlimited Flights in the UK      
+    - icon: /images/uploads/shield.svg
+      title: Extend Your Cover Worldwide
+    - icon: /images/uploads/shield.svg
+      title: Cover Multiple Pilots
+    - icon: /images/uploads/shield.svg
+      title: Cover Multiple Pilots
+    - icon: /images/uploads/shield.svg
+      title: Cover Multiple Pilots
+    - icon: /images/uploads/shield.svg
+      title: Cover Multiple Pilots
+    - icon: /images/uploads/shield.svg
+      title: Cover Multiple Pilots
+    - icon: /images/uploads/shield.svg
+      title: Cover Multiple Pilots
+  title: What's covered
 siteMetadataOverride:
   description: drone insurance
   keywords:
