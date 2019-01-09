@@ -25,7 +25,8 @@ const Hero = ({
   RightSideComponent,
   description,
   buttonOne,
-  buttonTwo
+  buttonTwo,
+  buttonTwoAction
 }) => {
   const download = () => {
     trackDownload()
@@ -97,14 +98,14 @@ const Hero = ({
                     {matches => {
                       return matches ? (
                         <SecondaryButton
-                          onClick={download}
+                          onClick={buttonTwoAction}
                         >
                           <ArrowText moveOnHover={false}>
                             {buttonTwo.text}
                           </ArrowText>
                         </SecondaryButton>
                       ) : (
-                        <SecondaryButton onClick={download}>
+                        <SecondaryButton onClick={buttonTwoAction}>
                           <ArrowText moveOnHover={false}>
                             {buttonTwo.text}
                           </ArrowText>

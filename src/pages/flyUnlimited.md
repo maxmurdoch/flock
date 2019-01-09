@@ -65,21 +65,21 @@ renewalBanner:
 whatIsCovered:
   list:
     - icon: /images/uploads/shield.svg
-      title: Unlimited Flights in the UK      
+      title: POLICY FEATURE NUMBER 1      
     - icon: /images/uploads/shield.svg
-      title: Extend Your Cover Worldwide
+      title: POLICY FEATURE NUMBER 2
     - icon: /images/uploads/shield.svg
-      title: Cover Multiple Pilots
+      title: POLICY FEATURE NUMBER 3
     - icon: /images/uploads/shield.svg
-      title: Cover Multiple Pilots
+      title: POLICY FEATURE NUMBER 4
     - icon: /images/uploads/shield.svg
-      title: Cover Multiple Pilots
+      title: POLICY FEATURE NUMBER 5
     - icon: /images/uploads/shield.svg
-      title: Cover Multiple Pilots
+      title: POLICY FEATURE NUMBER 6
     - icon: /images/uploads/shield.svg
-      title: Cover Multiple Pilots
+      title: POLICY FEATURE NUMBER 7
     - icon: /images/uploads/shield.svg
-      title: Cover Multiple Pilots
+      title: POLICY FEATURE NUMBER 8
   title: What's covered
 siteMetadataOverride:
   description: drone insurance
