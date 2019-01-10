@@ -97,7 +97,7 @@ meetTheTeam:
     - image: /images/uploads/img_3821.jpg
       member: 'Andrew Norman '
       role: Customer Success Executive
-    - image: /images/uploads/screen-shot-2019-01-10-at-09.29.44.png
+    - image: /images/uploads/screen-shot-2019-01-10-at-11.02.34.png
       member: 'Kieran Mulholland '
       role: Business Intelligence Analyst
   title: Meet the team
