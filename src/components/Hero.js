@@ -63,7 +63,7 @@ const Hero = ({
               <H1
                 textShadow={textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'}
                 color={textColor}
-                mb={[2, 3]}
+                mb={[2, 2, 3]}
               >
                 {header}
               </H1>

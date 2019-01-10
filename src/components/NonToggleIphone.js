@@ -35,7 +35,7 @@ class NonToggleiPhone extends Component {
               </Box>
             </Box>
 
-            <Box width={['100%', '50%']} order={2} pb={[3, 5]}>
+            <Box width={['100%', '50%']} order={2}>
               <Box width={['100%', '100%', '66.66%']}>
                 <ol
                   className={css({
@@ -75,6 +75,7 @@ class NonToggleiPhone extends Component {
                   }, list)}
                 </ol>
               </Box>
+              <SmallText className={css({color: 'white', marginTop: '75px'})}>* Changes that increase your policy price will take effect immediately. If you downgrade, pause or cancel your cover, this will take effect on your next monthly renewal date.</SmallText>
             </Box>
             <Box
               order={[1, 3]}

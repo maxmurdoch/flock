@@ -93,14 +93,13 @@ class SegmentPageTemplate extends Component {
               />
             </Box>
             <BigSectionLine />
-            <Box mt={[3, 5]}>
-              <div ref={this.whatIsCoveredRef}>
-                <WhatIsCoveredSection
-                  title={whatIsCovered.title}
-                  list={whatIsCovered.list}
-                />
-              </div>
-            </Box>
+
+            <div ref={this.whatIsCoveredRef}>
+              <WhatIsCoveredSection
+                title={whatIsCovered.title}
+                list={whatIsCovered.list}
+              />
+            </div>
           </Box>
 
           <RenewalBanner

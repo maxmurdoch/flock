@@ -9,77 +9,71 @@ hero:
   buttonTwo:
     text: What's covered?
     to: 'https://flockcover.app.link/6IW6kTmgfP'
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor imperdiet finibus. Suspendisse in dapibus mi, non congue leo. Aliquam ac arcu quis dui laoreet feugiat.
-  header: Start. Stop. Pause. Adapt. Drone Insurance has never been this flexible.
+  description: Introducing Fly Unlimited, our new monthly subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
+  header: Start. Stop. Pause. Adjust. Drone Insurance has never been this flexible.
 why:
-  description: We designed Fly Unlimited with frequent flyers in mind. You'll receive the benefits you'd expect from an annual policy - without the commitment.
+  description: With Fly Unlimited, you’ll receive all the benefits you’d expect from an annual policy - without the long-term commitment.
   list:
     - icon: /images/uploads/shield.svg
       text: >-
-        [Unlimited flights](https://landing.flockcover.com/flyunlimited/) in the
-        UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
-        cover without any admin fees.
+        Get equipment and Public Liability cover for an unlimited number of commercial flights throughout the UK.
       title: Unlimited Flights in the UK      
     - icon: /images/uploads/shield.svg
       text: >-
-        [Unlimited flights](https://landing.flockcover.com/flyunlimited/) in the
-        UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
-        cover without any admin fees.
+        Travelling abroad? Extend your cover for the month, and scale it down again when you return.  
       title: Extend Your Cover Worldwide
     - icon: /images/uploads/shield.svg
       text: >-
-        [Unlimited flights](https://landing.flockcover.com/flyunlimited/) in the
-        UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
-        cover without any admin fees.
-      title: Cover Multiple Pilots
+        Have peace of mind that your equipment is also protected with storage, transit, and theft insurance.
+      title: Out-of-flight protection
   title: 'Designed For Frequent Flyers'
 how:
   description: >-
-    We're bringing flexi back.
+    We’re redefining insurance. With Fly Unlimited, you control your policy. At all times.
   list:
     - text: >-
-        Your monthly subscription renews automatically, until you say when.
-      title: Start your monthly subscription
+        Say goodbye to year-long insurance. Your policy lasts a month, and renews automatically until you say when.
+      title: Rolling monthly contract
     - text: >-
-        Add and subtract drones, or increase accessories and liability limits when needed.
-      title: Adjust your cover as needed
+        Add or remove pilots from your policy, and tailor your equipment cover and liability limits in seconds.
+      title: Easily adjust your cover?*
     - text: >-
-        You're free to pause or cancel anytime. There are no hidden cancellation fees.
-      title: Pause or cancel anytime
+        You’re free to pause or cancel at any point. Don’t worry, there are no hidden fees or ambiguous exit clauses.
+      title: Pause or cancel any time
   image: /images/uploads/phones/fly-unlimited.png
   title: The first flexible cover of its kind
 control:
-  description: We designed Fly Unlimited with frequent flyers in mind. You'll receive the benefits you'd expect from an annual policy - without the commitment.
+  description: We know that plans can change. That’s why we’ve made it easy for you to only pay for the cover you need.
   list:
     - text: >-
-        There's no need to pay for insurance for the whole year. Find out how much you could save over the course of the year by using our calculator below.
+        Our flexible cover fits around your schedule. Simply pause your policy when things wind down, and restart it again when it suits you.
       title: Don't fly all year round?
     - text: >-
-        What happens if you pause your cover and the odd job comes along? No problem. Switch to a Pay-As-You-Fly policy if and when you need to.
-      title: Extend Your Cover Worldwide
-  title: 'Need the odd job covered?'
+        No problem. You can switch to our Pay-as-you-fly product in the app when you need to, and insure your flights from as little as £4.95.
+      title: Need the odd job covered?
+  title: Control your costs throughout the year
 renewalBanner:
   image: /images/uploads/renewal-drone.jpg
-  mainText: Don't wait for your current policy to expire. Switch to Flock today.
+  mainText: Switching policies is easy - even before they’ve expired. Join Flock today!
   buttonText: GET A QUOTE IN 60 SECONDS
 whatIsCovered:
   list:
     - icon: /images/uploads/shield.svg
-      title: POLICY FEATURE NUMBER 1      
+      title: Drones and accessories      
     - icon: /images/uploads/shield.svg
-      title: POLICY FEATURE NUMBER 2
+      title: 3rd party liability
     - icon: /images/uploads/shield.svg
-      title: POLICY FEATURE NUMBER 3
+      title: Accidental Flyaways
     - icon: /images/uploads/shield.svg
-      title: POLICY FEATURE NUMBER 4
+      title: Multiple pilots
     - icon: /images/uploads/shield.svg
-      title: POLICY FEATURE NUMBER 5
+      title: Loss in transit
     - icon: /images/uploads/shield.svg
-      title: POLICY FEATURE NUMBER 6
+      title: Theft and storage
     - icon: /images/uploads/shield.svg
-      title: POLICY FEATURE NUMBER 7
+      title: Legal expenses
     - icon: /images/uploads/shield.svg
-      title: POLICY FEATURE NUMBER 8
+      title: Noise complaints
   title: What's covered
 siteMetadataOverride:
   description: drone insurance

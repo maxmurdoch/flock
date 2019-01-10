@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
-import {css} from 'emotion'
+import {css, injectGlobal, cx} from 'react-emotion'
 import Flex from './Flex'
 import Box from './Box'
 import SiteContainer from './SiteContainer'
@@ -9,8 +9,8 @@ import BodyText from './BodyText'
 import SmallText from './SmallText'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
-import {colors, boxShadows} from '../constants/theme'
-import H2 from './H2'
+import {colors, boxShadows, breakpoints, fontFamilies} from '../constants/theme'
+import Text from './Text'
 
 const RenewalBanner = ({image, mainText, buttonText}) => {
   const download = () => {
@@ -37,7 +37,16 @@ const RenewalBanner = ({image, mainText, buttonText}) => {
           pl={2}
           pr={2}
         >
-          <H2 mb={[2, 3]}>{mainText}</H2>
+          <Text
+            mb={1}
+            className={cx(
+              css`
+                ${styles.text};
+              `
+            )}
+          >
+            {mainText}
+          </Text>
           <PrimaryButton onClick={download}>
             <ArrowText moveOnHover={false}>{buttonText}</ArrowText>
           </PrimaryButton>
@@ -58,5 +67,33 @@ const styles = {
     position: 'relative',
     zIndex: 1,
     backgroundSize: 'cover'
-  })
+  }),
+
+  text: `
+    font-family: ${fontFamilies.itc};
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    @media (min-width: ${R.nth(0, breakpoints)}) {
+      text-transform: none;
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    @media (min-width: ${R.nth(1, breakpoints)}) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    `
 }
+
+const style = {}
+
+injectGlobal`
+  h2 {
+    ${style.text}
+  }
+`
