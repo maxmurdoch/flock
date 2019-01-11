@@ -6,9 +6,18 @@ import R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
 
-const H3 = ({children, tag = 'h3', className, ...props}) => {
+const H3 = ({children, tag = 'h3', className, yellowUnderline, ...props}) => {
   return (
-    <Text tag={tag} mb={1} className={cx(style.text, className)} {...props}>
+    <Text
+      tag={tag}
+      mb={1}
+      className={cx(
+        style.text,
+        yellowUnderline ? style.underline : '',
+        className
+      )}
+      {...props}
+    >
       {children}
     </Text>
   )
@@ -16,6 +25,7 @@ const H3 = ({children, tag = 'h3', className, ...props}) => {
 
 const style = {
   text: css({
+    position: 'relative',
     fontFamily: '"ITC", sans-serif',
     fontWeight: 700,
     fontSize: 16,
@@ -30,6 +40,19 @@ const style = {
       fontSize: 17,
       textTransform: 'uppercase',
       lineHeight: '34px'
+    }
+  }),
+
+  underline: css({
+    paddingBottom: 25,
+    '&::after': {
+      content: '\'\'',
+      position: 'absolute',
+      bottom: 10,
+      left: 0,
+      width: '25%',
+      height: 5,
+      backgroundColor: '#FFE001'
     }
   })
 }

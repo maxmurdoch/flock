@@ -58,7 +58,7 @@ renewalBanner:
   buttonText: GET A QUOTE IN 60 SECONDS
 whatIsCovered:
   list:
-    - icon: /images/uploads/hamburger.svg
+    - icon: /images/uploads/drone.svg
       title: Drones & accessories      
     - icon: /images/uploads/shield.svg
       title: 3rd party liability

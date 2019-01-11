@@ -87,6 +87,7 @@ class SegmentPageTemplate extends Component {
           <Box className={css({backgroundColor: 'white', paddingTop: 40})}>
             <Box mt={[3, 5]}>
               <TextGrid
+                yellowUnderline
                 title={control.title}
                 description={control.description}
                 list={control.list}
