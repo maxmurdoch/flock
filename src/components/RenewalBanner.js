@@ -24,7 +24,6 @@ const RenewalBanner = ({image, mainText, buttonText}) => {
     <Flex
       justifyContent="center"
       position="relative"
-      zIndex="0"
       background={`url(${image})`}
       className={styles.background}
     >
@@ -48,7 +47,15 @@ const RenewalBanner = ({image, mainText, buttonText}) => {
             {mainText}
           </Text>
           <PrimaryButton onClick={download}>
-            <ArrowText moveOnHover={false}>{buttonText}</ArrowText>
+            <ArrowText moveOnHover={false}>
+              <p
+                className={css({
+                  fontSize: 17
+                })}
+              >
+                {buttonText}
+              </p>
+            </ArrowText>
           </PrimaryButton>
         </Flex>
       </SiteContainer>
@@ -65,7 +72,6 @@ RenewalBanner.propTypes = {
 const styles = {
   background: css({
     position: 'relative',
-    zIndex: 1,
     backgroundSize: 'cover'
   }),
 
@@ -76,6 +82,7 @@ const styles = {
     line-height: 34px;
     margin-bottom: 40px;
     text-transform: uppercase;
+    max-width: 75%;
 
     @media (min-width: ${R.nth(0, breakpoints)}) {
       text-transform: none;

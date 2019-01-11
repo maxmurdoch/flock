@@ -19,7 +19,7 @@ import {colors, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
-const whatIsCovered = ({title, list}) => {
+const whatIsCovered = ({title, list, priceSmallPrint}) => {
   return (
     <Flex justifyContent="center">
       <SiteContainer>
@@ -43,42 +43,88 @@ const whatIsCovered = ({title, list}) => {
             <Flex
               style={{
                 backgroundColor: '#F7F7F4',
-                padding: 15
+                padding: 15,
+                alignItems: 'center'
               }}
             >
-              <H2 markdown={true}>FLY UNLIMITED</H2>
+              <H2 markdown={true} mb={0}>
+                FLY UNLIMITED
+              </H2>
             </Flex>
 
             <Flex
               flex={2}
               pl={2}
               style={{backgroundColor: '#FFE001', flexDirection: 'column'}}
+              justifyContent="center"
             >
               <SmallText>from</SmallText>
 
               <Flex alignItems="flex-end">
                 <H1 markdown={true}>£30</H1>
-                <SmallText>per month**</SmallText>
+                <SmallText
+                  className={css({
+                    marginBottom: 10,
+                    marginLeft: 10
+                  })}
+                >
+                  per month**
+                </SmallText>
               </Flex>
             </Flex>
 
             <Flex
               flex={4}
-              style={{backgroundColor: '#F7F7F4', flexDirection: 'column'}}
+              style={{
+                backgroundColor: '#F7F7F4',
+                flexDirection: 'column',
+                paddingLeft: 15,
+                justifyContent: 'space-between'
+              }}
             >
-              <Flex flexDirection="column" pl={2}>
+              <Flex flexDirection="column" pt={30}>
                 <SmallText
                   className={css({
-                    fontSize: 15
+                    fontSize: 15,
+                    marginBottom: 10
                   })}
                 >
                   Unlimited commercial flight
                 </SmallText>
-                <SmallText> Up to £10M for drones</SmallText>
-                <SmallText> Public liability up to £10M</SmallText>
+                <SmallText
+                  className={css({
+                    fontSize: 15,
+                    marginBottom: 10
+                  })}
+                >
+                  {' '}
+                  Up to £10M for drones
+                </SmallText>
+                <SmallText
+                  className={css({
+                    fontSize: 15,
+                    marginBottom: 10
+                  })}
+                >
+                  {' '}
+                  Public liability up to £10M
+                </SmallText>
               </Flex>
-              <PrimaryButton>
-                <ArrowText moveOnHover={false}>Get a quote</ArrowText>
+              <PrimaryButton
+                className={css({
+                  width: '51%',
+                  marginBottom: 30
+                })}
+              >
+                <ArrowText moveOnHover={false}>
+                  <p
+                    className={css({
+                      fontSize: 17
+                    })}
+                  >
+                    GET A QUOTE
+                  </p>
+                </ArrowText>
               </PrimaryButton>
             </Flex>
           </Flex>
@@ -139,8 +185,7 @@ const whatIsCovered = ({title, list}) => {
             marginBottom: '50px'
           }}
         >
-          ** Prices depend on factors such as experience, equipment and claims
-          history
+          ** {priceSmallPrint}
         </SmallText>
       </SiteContainer>
     </Flex>

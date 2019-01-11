@@ -58,23 +58,24 @@ renewalBanner:
   buttonText: GET A QUOTE IN 60 SECONDS
 whatIsCovered:
   list:
-    - icon: /images/uploads/shield.svg
-      title: Drones and accessories      
+    - icon: /images/uploads/hamburger.svg
+      title: Drones & accessories      
     - icon: /images/uploads/shield.svg
       title: 3rd party liability
-    - icon: /images/uploads/shield.svg
+    - icon: /images/uploads/binoculars.svg
       title: Accidental Flyaways
-    - icon: /images/uploads/shield.svg
+    - icon: /images/uploads/human.svg
       title: Multiple pilots
-    - icon: /images/uploads/shield.svg
+    - icon: /images/uploads/van.svg
       title: Loss in transit
-    - icon: /images/uploads/shield.svg
-      title: Theft and storage
-    - icon: /images/uploads/shield.svg
+    - icon: /images/uploads/lockpad.svg
+      title: Theft & storage
+    - icon: /images/uploads/document.svg
       title: Legal expenses
-    - icon: /images/uploads/shield.svg
+    - icon: /images/uploads/megaphone.svg
       title: Noise complaints
   title: What's covered
+  priceSmallPrint: Prices depend on factors such as experience, equipment and claims history
 siteMetadataOverride:
   description: drone insurance
   keywords:

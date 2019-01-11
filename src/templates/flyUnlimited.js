@@ -27,7 +27,7 @@ class SegmentPageTemplate extends Component {
 
   scrollToWhatIsCoveredRef = () => {
     window.scrollTo({
-      top: this.whatIsCoveredRef.current.offsetTop - 100,
+      top: this.whatIsCoveredRef.current.offsetTop,
       behavior: 'smooth'
     })
   }
@@ -92,14 +92,16 @@ class SegmentPageTemplate extends Component {
                 list={control.list}
               />
             </Box>
-            <BigSectionLine />
 
             <div ref={this.whatIsCoveredRef}>
-              <WhatIsCoveredSection
-                title={whatIsCovered.title}
-                list={whatIsCovered.list}
-              />
+              <BigSectionLine />
             </div>
+
+            <WhatIsCoveredSection
+              title={whatIsCovered.title}
+              list={whatIsCovered.list}
+              priceSmallPrint={whatIsCovered.priceSmallPrint}
+            />
           </Box>
 
           <RenewalBanner
@@ -173,6 +175,7 @@ export const query = graphql`
             icon
             title
           }
+          priceSmallPrint
         }
         siteMetadataOverride {
           title
