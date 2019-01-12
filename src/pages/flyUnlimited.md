@@ -10,7 +10,7 @@ hero:
     text: What's covered?
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: Introducing Fly Unlimited, our new monthly subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
-  header: Start. Stop. Pause. Adjust. Drone Insurance has never been this flexible.
+  header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
 why:
   description: With Fly Unlimited, you’ll receive all the benefits you’d expect from an annual policy - without the long-term commitment.
   list:

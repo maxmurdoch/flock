@@ -56,7 +56,7 @@ const Hero = ({
               justifyContent="center"
               flexDirection="column"
               alignItems="flex-start"
-              width={['100%', '75%', '70%']}
+              width={['100%', '75%', '60%']}
               mt={[4, 5]}
               mb={[3, 6]}
             >
