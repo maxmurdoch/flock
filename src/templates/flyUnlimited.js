@@ -13,7 +13,7 @@ import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import RenewalBanner from '../components/RenewalBanner'
-import NonToggleiPhone from '../components/NonToggleiPhone'
+import NonToggleiPhone from '../components/NonToggleIphone'
 import BlackBackground from '../components/BlackBackground'
 
 import Hero from '../components/Hero'
