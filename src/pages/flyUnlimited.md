@@ -14,11 +14,11 @@ hero:
 why:
   description: With Fly Unlimited, you’ll receive all the benefits you’d expect from an annual policy - without the long-term commitment.
   list:
-    - icon: /images/uploads/shield.svg
+    - icon: /images/uploads/infinity.svg
       text: >-
         Get equipment and Public Liability cover for an unlimited number of commercial flights throughout the UK.
       title: Unlimited Flights in the UK      
-    - icon: /images/uploads/shield.svg
+    - icon: /images/uploads/globe.svg
       text: >-
         Travelling abroad? Extend your cover for the month, and scale it down again when you return.  
       title: Extend Your Cover Worldwide
@@ -57,7 +57,7 @@ renewalBanner:
   mainText: Switching policies is easy - even before they’ve expired. Join Flock today!
   buttonText: GET A QUOTE IN 60 SECONDS
 whatIsCovered:
-  list:
+  mainList:
     - icon: /images/uploads/drone.svg
       title: Drones & accessories      
     - icon: /images/uploads/shield.svg
@@ -74,8 +74,15 @@ whatIsCovered:
       title: Legal expenses
     - icon: /images/uploads/megaphone.svg
       title: Noise complaints
-  title: What's covered
+  mainTitle: What's covered
   priceSmallPrint: Prices depend on factors such as experience, equipment and claims history
+  buttonText: GET A QUOTE
+  fromPrice: £30
+  policyFeatureList:
+    - text: Unlimited commercial flight
+    - text: Up to £10m for drones
+    - text: Public liability up to £10
+    - text: Option to extend cover worldwide
 siteMetadataOverride:
   description: drone insurance
   keywords:

@@ -100,8 +100,11 @@ class SegmentPageTemplate extends Component {
 
             <WhatIsCoveredSection
               title={whatIsCovered.title}
-              list={whatIsCovered.list}
+              mainList={whatIsCovered.mainList}
               priceSmallPrint={whatIsCovered.priceSmallPrint}
+              buttonText={whatIsCovered.buttonText}
+              fromPrice={whatIsCovered.fromPrice}
+              policyFeatureList={whatIsCovered.policyFeatureList}
             />
           </Box>
 
@@ -171,12 +174,17 @@ export const query = graphql`
           buttonText
         }
         whatIsCovered {
-          title
-          list {
+          mainTitle
+          mainList {
             icon
             title
           }
           priceSmallPrint
+          buttonText
+          fromPrice
+          policyFeatureList {
+            text
+          }
         }
         siteMetadataOverride {
           title

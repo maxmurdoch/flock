@@ -19,7 +19,14 @@ import {colors, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
-const whatIsCovered = ({title, list, priceSmallPrint}) => {
+const whatIsCovered = ({
+  mainTitle,
+  mainList,
+  priceSmallPrint,
+  buttonText,
+  fromPrice,
+  policyFeatureList
+}) => {
   return (
     <Flex justifyContent="center">
       <SiteContainer>
@@ -61,7 +68,7 @@ const whatIsCovered = ({title, list, priceSmallPrint}) => {
               <SmallText>from</SmallText>
 
               <Flex alignItems="flex-end">
-                <H1 markdown={true}>£30</H1>
+                <H1 markdown={true}>{fromPrice}</H1>
                 <SmallText
                   className={css({
                     marginBottom: 10,
@@ -82,33 +89,20 @@ const whatIsCovered = ({title, list, priceSmallPrint}) => {
                 justifyContent: 'space-between'
               }}
             >
-              <Flex flexDirection="column" pt={30}>
-                <SmallText
-                  className={css({
-                    fontSize: 15,
-                    marginBottom: 10
-                  })}
-                >
-                  Unlimited commercial flight
-                </SmallText>
-                <SmallText
-                  className={css({
-                    fontSize: 15,
-                    marginBottom: 10
-                  })}
-                >
-                  {' '}
-                  Up to £10M for drones
-                </SmallText>
-                <SmallText
-                  className={css({
-                    fontSize: 15,
-                    marginBottom: 10
-                  })}
-                >
-                  {' '}
-                  Public liability up to £10M
-                </SmallText>
+              <Flex flexDirection="column" pt={20}>
+                {mapIndex(
+                  ({text}) => (
+                    <SmallText
+                      className={css({
+                        fontSize: 15,
+                        marginBottom: 10
+                      })}
+                    >
+                      {text}
+                    </SmallText>
+                  ),
+                  policyFeatureList
+                )}
               </Flex>
               <PrimaryButton
                 className={css({
@@ -122,7 +116,7 @@ const whatIsCovered = ({title, list, priceSmallPrint}) => {
                       fontSize: 17
                     })}
                   >
-                    GET A QUOTE
+                    {buttonText}
                   </p>
                 </ArrowText>
               </PrimaryButton>
@@ -142,7 +136,7 @@ const whatIsCovered = ({title, list, priceSmallPrint}) => {
                 marginBottom: '60px'
               })}
             >
-              {title}
+              {mainTitle}
             </H2>
             <Flex
               flexWrap={true}
@@ -151,7 +145,7 @@ const whatIsCovered = ({title, list, priceSmallPrint}) => {
               })}
             >
               {mapIndex(
-                ({title, text, icon}, index) => (
+                ({title, text, icon}) => (
                   <Box
                     width={['100%', '50%', '25%']}
                     className={css({
@@ -174,7 +168,7 @@ const whatIsCovered = ({title, list, priceSmallPrint}) => {
                     <SmallText>{text}</SmallText>
                   </Box>
                 ),
-                list
+                mainList
               )}
             </Flex>
           </Flex>
