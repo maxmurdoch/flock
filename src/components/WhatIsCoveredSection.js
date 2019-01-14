@@ -9,6 +9,7 @@ import SiteContainer from './SiteContainer'
 import H1 from './H1'
 import H2 from './H2'
 import H3 from './H3'
+import Text from './Text'
 import SmallText from './SmallText'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
@@ -31,7 +32,7 @@ const whatIsCovered = ({
     <Flex justifyContent="center">
       <SiteContainer>
         <Flex
-          flexWrap="wrap"
+          flexWrap
           height={500}
           flexDirection="row"
           justifyContent="space-between"
@@ -124,6 +125,7 @@ const whatIsCovered = ({
           </Flex>
 
           <Flex
+            flexWrap
             style={{
               flex: 5,
               marginLeft: '50px'
@@ -146,7 +148,10 @@ const whatIsCovered = ({
             >
               {mapIndex(
                 ({title, text, icon}) => (
-                  <Box
+                  <Flex
+                    flexDirection="column"
+                    mt={[3, 3, 4]}
+                    alignItems="flex-start"
                     width={['100%', '50%', '25%']}
                     className={css({
                       paddingRight: '40px'
@@ -155,7 +160,7 @@ const whatIsCovered = ({
                     <ShowIf predicate={!!icon}>
                       <img
                         src={withPrefix(icon)}
-                        className={css({marginBottom: 0})}
+                        className={css({marginBottom: 0, flex: 1})}
                       />
                     </ShowIf>
                     <H3
@@ -166,21 +171,26 @@ const whatIsCovered = ({
                       {title}
                     </H3>
                     <SmallText>{text}</SmallText>
-                  </Box>
+                  </Flex>
                 ),
                 mainList
               )}
             </Flex>
           </Flex>
         </Flex>
-        <SmallText
-          style={{
-            marginLeft: '20px',
-            marginBottom: '50px'
-          }}
+
+        <Text
+          textAlign="left"
+          mb={1}
+          className={css({
+            marginBottom: 20,
+            marginLeft: 20,
+            fontSize: 12,
+            color: 'grey'
+          })}
         >
           ** {priceSmallPrint}
-        </SmallText>
+        </Text>
       </SiteContainer>
     </Flex>
   )

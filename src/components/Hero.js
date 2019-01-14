@@ -70,7 +70,7 @@ const Hero = ({
               <LargeBodyText tag="div" color={textColor} mb={[2, 3]}>
                 <Markdown>{description}</Markdown>
               </LargeBodyText>
-              <Flex>
+              <Flex flexDirection={['column', 'column', 'row']}>
                 <ShowIf predicate={R.not(R.isNil(buttonOne))}>
                   <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
                     {matches => {
@@ -84,7 +84,7 @@ const Hero = ({
                           </ArrowText>
                         </PrimaryButton>
                       ) : (
-                        <SecondaryButton onClick={download}>
+                        <SecondaryButton onClick={download} mb={15}>
                           <ArrowText moveOnHover={false}>
                             {buttonOne.text}
                           </ArrowText>
@@ -97,9 +97,7 @@ const Hero = ({
                   <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
                     {matches => {
                       return matches ? (
-                        <SecondaryButton
-                          onClick={buttonTwoAction}
-                        >
+                        <SecondaryButton onClick={buttonTwoAction}>
                           <ArrowText moveOnHover={false}>
                             {buttonTwo.text}
                           </ArrowText>

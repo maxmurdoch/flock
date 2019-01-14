@@ -33,9 +33,11 @@ const TextGrid = ({title, description, list, image, yellowUnderline}) => (
         <Flex flexWrap={true}>
           {mapIndex(
             ({title, text, icon}, index) => (
-              <Box
+              <Flex
                 flex="1 1 auto"
                 width={['100%', '50%', '33.33%']}
+                flexDirection="column"
+                alignItems="flex-start"
                 pr={[0, 3]}
                 mt={[3, 3, 4]}
                 key={index}
@@ -43,12 +45,12 @@ const TextGrid = ({title, description, list, image, yellowUnderline}) => (
                 <ShowIf predicate={!!icon}>
                   <img
                     src={withPrefix(icon)}
-                    className={css({marginBottom: 0})}
+                    className={css({marginBottom: 10, flex: 1})}
                   />
                 </ShowIf>
                 <H3 yellowUnderline={yellowUnderline}>{title}</H3>
                 <SmallText>{text}</SmallText>
-              </Box>
+              </Flex>
             ),
             list
           )}
