@@ -33,9 +33,9 @@ const whatIsCovered = ({
       <SiteContainer>
         <Flex
           flexWrap
-          height={500}
-          flexDirection="row"
+          flexDirection={['column', 'column', 'row']}
           justifyContent="space-between"
+          alignItems="flex-start"
           pb={[2, 3]}
           pl={2}
           pr={2}
@@ -45,7 +45,8 @@ const whatIsCovered = ({
             flexDirection="column"
             className={css({
               boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
-              transition: '0.3s'
+              transition: '0.3s',
+              alignSelf: 'flex-start'
             })}
           >
             <Flex
@@ -62,17 +63,16 @@ const whatIsCovered = ({
 
             <Flex
               flex={2}
-              pl={2}
+              p={2}
               style={{backgroundColor: '#FFE001', flexDirection: 'column'}}
               justifyContent="center"
             >
               <SmallText>from</SmallText>
 
               <Flex alignItems="flex-end">
-                <H1 markdown={true}>{fromPrice}</H1>
+                <H1 mb={0} markdown={true}>{fromPrice}</H1>
                 <SmallText
                   className={css({
-                    marginBottom: 10,
                     marginLeft: 10
                   })}
                 >
@@ -87,6 +87,7 @@ const whatIsCovered = ({
                 backgroundColor: '#F7F7F4',
                 flexDirection: 'column',
                 paddingLeft: 15,
+                paddingRight: 15,
                 justifyContent: 'space-between'
               }}
             >
@@ -107,8 +108,8 @@ const whatIsCovered = ({
               </Flex>
               <PrimaryButton
                 className={css({
-                  width: '51%',
-                  marginBottom: 30
+                  alignSelf: 'flex-start',
+                  marginBottom: 30,
                 })}
               >
                 <ArrowText moveOnHover={false}>
@@ -127,16 +128,16 @@ const whatIsCovered = ({
           <Flex
             flexWrap
             pt={25}
+            ml={[0, 2, 3]}
             style={{
-              flex: 5,
-              marginLeft: '50px'
+              flex: '5'
             }}
             flexDirection="column"
           >
             <H2
               markdown={true}
               className={css({
-                marginBottom: '0px'
+                marginBottom: 50
               })}
             >
               {mainTitle}
@@ -151,13 +152,10 @@ const whatIsCovered = ({
                 ({title, text, icon}) => (
                   <Flex
                     flex="1 1 auto"
-                    mt={[3, 3, 5]}
                     flexDirection="column"
                     alignItems="flex-start"
-                    width={['100%', '50%', '25%']}
-                    className={css({
-                      paddingRight: '40px'
-                    })}
+                    width={['100%', '50%', '50%', '25%']}
+                    p={20}
                   >
                     <ShowIf predicate={!!icon}>
                       <img

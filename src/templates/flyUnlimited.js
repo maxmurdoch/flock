@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
-import {ScrollTo} from 'react-scroll-to'
 
 import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
