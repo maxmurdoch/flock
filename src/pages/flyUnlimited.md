@@ -75,7 +75,7 @@ whatIsCovered:
     - icon: /images/uploads/megaphone.svg
       title: Noise complaints
   mainTitle: What's covered
-  priceSmallPrint: Prices depend on factors such as experience, equipment and claims history
+  priceSmallPrint: Prices depend on factors such as experience, equipment and claims history.
   buttonText: GET A QUOTE
   fromPrice: £30
   policyFeatureList:

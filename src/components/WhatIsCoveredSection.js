@@ -126,6 +126,7 @@ const whatIsCovered = ({
 
           <Flex
             flexWrap
+            pt={25}
             style={{
               flex: 5,
               marginLeft: '50px'
@@ -135,7 +136,7 @@ const whatIsCovered = ({
             <H2
               markdown={true}
               className={css({
-                marginBottom: '60px'
+                marginBottom: '0px'
               })}
             >
               {mainTitle}
@@ -149,8 +150,9 @@ const whatIsCovered = ({
               {mapIndex(
                 ({title, text, icon}) => (
                   <Flex
+                    flex="1 1 auto"
+                    mt={[3, 3, 5]}
                     flexDirection="column"
-                    mt={[3, 3, 4]}
                     alignItems="flex-start"
                     width={['100%', '50%', '25%']}
                     className={css({
@@ -160,16 +162,10 @@ const whatIsCovered = ({
                     <ShowIf predicate={!!icon}>
                       <img
                         src={withPrefix(icon)}
-                        className={css({marginBottom: 0, flex: 1})}
+                        className={css({marginBottom: 10, flex: 1})}
                       />
                     </ShowIf>
-                    <H3
-                      className={css({
-                        fontSize: 17
-                      })}
-                    >
-                      {title}
-                    </H3>
+                    <H3>{title}</H3>
                     <SmallText>{text}</SmallText>
                   </Flex>
                 ),

@@ -99,7 +99,7 @@ class SegmentPageTemplate extends Component {
             </div>
 
             <WhatIsCoveredSection
-              title={whatIsCovered.title}
+              mainTitle={whatIsCovered.mainTitle}
               mainList={whatIsCovered.mainList}
               priceSmallPrint={whatIsCovered.priceSmallPrint}
               buttonText={whatIsCovered.buttonText}

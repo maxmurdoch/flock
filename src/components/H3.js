@@ -39,7 +39,7 @@ const style = {
     [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
       fontSize: 17,
       textTransform: 'uppercase',
-      lineHeight: '34px'
+      lineHeight: '28px'
     }
   }),
 
