@@ -70,7 +70,9 @@ const whatIsCovered = ({
               <SmallText>from</SmallText>
 
               <Flex alignItems="flex-end">
-                <H1 mb={0} markdown={true}>{fromPrice}</H1>
+                <H1 mb={0} markdown={true}>
+                  {fromPrice}
+                </H1>
                 <SmallText
                   className={css({
                     marginLeft: 10
@@ -91,7 +93,7 @@ const whatIsCovered = ({
                 justifyContent: 'space-between'
               }}
             >
-              <Flex flexDirection="column" pt={20}>
+              <Flex flexDirection="column" pt={30} pb={30}>
                 {mapIndex(
                   ({text}) => (
                     <SmallText
@@ -109,7 +111,7 @@ const whatIsCovered = ({
               <PrimaryButton
                 className={css({
                   alignSelf: 'flex-start',
-                  marginBottom: 30,
+                  marginBottom: 30
                 })}
               >
                 <ArrowText moveOnHover={false}>
@@ -128,18 +130,13 @@ const whatIsCovered = ({
           <Flex
             flexWrap
             pt={25}
-            ml={[0, 2, 3]}
+            ml={[0, 0, 3]}
             style={{
               flex: '5'
             }}
             flexDirection="column"
           >
-            <H2
-              markdown={true}
-              className={css({
-                marginBottom: 50
-              })}
-            >
+            <H2 pl={10} mb={[10, 10, 40]} markdown={true} className={css({})}>
               {mainTitle}
             </H2>
             <Flex
