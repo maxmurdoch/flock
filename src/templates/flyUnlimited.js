@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
-import TextSection from '../components/TextSection'
 import WhatIsCoveredSection from '../components/WhatIsCoveredSection'
-import Flex from '../components/Flex'
 import LightNav from '../components/LightNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
@@ -18,7 +17,7 @@ import BlackBackground from '../components/BlackBackground'
 import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
 
-class SegmentPageTemplate extends Component {
+class FlyUnlimitedPageTemplate extends Component {
   constructor(props) {
     super(props)
     this.whatIsCoveredRef = React.createRef() // Create a ref object
@@ -120,7 +119,15 @@ class SegmentPageTemplate extends Component {
   }
 }
 
-export default SegmentPageTemplate
+FlyUnlimitedPageTemplate.propTypes = {
+  hero: PropTypes.object,
+  flockStory: PropTypes.object,
+  siteMetadataOverride: PropTypes.object,
+  coreValues: PropTypes.object,
+  meetTheTeam: PropTypes.object
+}
+
+export default FlyUnlimitedPageTemplate
 
 export const query = graphql`
   query FlyUnlimitedPageQuery($id: String!) {

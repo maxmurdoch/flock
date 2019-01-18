@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {withPrefix} from 'gatsby-link'
 import PropTypes from 'prop-types'
 import {addIndex, map, nth} from 'ramda'
-import {css, keyframes} from 'emotion'
+import {css} from 'emotion'
 
 import Flex from './Flex'
 import Box from './Box'
@@ -75,7 +75,11 @@ class NonToggleiPhone extends Component {
                   }, list)}
                 </ol>
               </Box>
-              <SmallText className={css({color: 'white', marginTop: '75px'})}>* Changes that increase your policy price will take effect immediately. If you downgrade, pause or cancel your cover, this will take effect on your next monthly renewal date.</SmallText>
+              <SmallText className={css({color: 'white', marginTop: '75px'})}>
+                * Changes that increase your policy price will take effect
+                immediately. If you downgrade, pause or cancel your cover, this
+                will take effect on your next monthly renewal date.
+              </SmallText>
             </Box>
             <Box
               order={[1, 3]}
@@ -98,8 +102,6 @@ class NonToggleiPhone extends Component {
     )
   }
 }
-
-
 
 const style = {
   container: css({

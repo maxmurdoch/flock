@@ -2,7 +2,6 @@ import React from 'react'
 import {css} from 'react-emotion'
 import {withPrefix} from 'gatsby-link'
 import R from 'ramda'
-import Media from 'react-media'
 
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
@@ -14,9 +13,6 @@ import SmallText from './SmallText'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import ShowIf from './ShowIf'
-import Box from './Box'
-
-import {colors, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 

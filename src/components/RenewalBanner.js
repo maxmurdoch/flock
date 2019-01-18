@@ -3,13 +3,10 @@ import PropTypes from 'prop-types'
 import R from 'ramda'
 import {css, injectGlobal, cx} from 'react-emotion'
 import Flex from './Flex'
-import Box from './Box'
 import SiteContainer from './SiteContainer'
-import BodyText from './BodyText'
-import SmallText from './SmallText'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
-import {colors, boxShadows, breakpoints, fontFamilies} from '../constants/theme'
+import {breakpoints, fontFamilies} from '../constants/theme'
 import Text from './Text'
 
 const RenewalBanner = ({image, mainText, buttonText}) => {
@@ -104,4 +101,3 @@ injectGlobal`
     ${style.text}
   }
 `
- 
