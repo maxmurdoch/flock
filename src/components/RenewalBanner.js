@@ -77,14 +77,14 @@ const styles = {
   text: `
     font-family: ${fontFamilies.itc};
     font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 29px;
     margin-bottom: 40px;
     max-width: 75%;
 
     @media (min-width: ${R.nth(0, breakpoints)}) {
       text-transform: none;
-      font-size: 24px;
+      font-size: 29px;
       line-height: 34px;
     }
 
