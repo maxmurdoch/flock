@@ -77,7 +77,8 @@ const Hero = ({
                       return matches ? (
                         <PrimaryButton
                           onClick={download}
-                          style={{marginRight: 15}}
+                          mb={15}
+                          mr={15}
                         >
                           <ArrowText moveOnHover={false}>
                             {buttonOne.text}
