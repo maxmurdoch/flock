@@ -80,7 +80,7 @@ whatIsCovered:
   pilotSmallPrint: Available if multiple pilots are operating under a single PfCO.
   buttonText: GET A QUOTE
   fromPrice: £30
-  samplePolicyWordingUrl: http://
+  samplePolicyWordingUrl: https://
   policyFeatureList:
     - text: Unlimited commercial flights in the UK
     - text: Up to £25M drone and accessory cover
