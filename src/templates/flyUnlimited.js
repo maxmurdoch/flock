@@ -82,6 +82,7 @@ class FlyUnlimitedPageTemplate extends Component {
               description={how.description}
               list={how.list}
               image={how.image}
+              policyPauseSmallPrint={how.policyPauseSmallPrint}
             />
           </BlackBackground>
           <Box className={css({backgroundColor: 'white', paddingTop: 40})}>
@@ -105,6 +106,7 @@ class FlyUnlimitedPageTemplate extends Component {
               buttonText={whatIsCovered.buttonText}
               fromPrice={whatIsCovered.fromPrice}
               policyFeatureList={whatIsCovered.policyFeatureList}
+              samplePolicyWordingUrl={whatIsCovered.samplePolicyWordingUrl}
             />
           </Box>
 
@@ -175,6 +177,7 @@ export const query = graphql`
           title
           description
           image
+          policyPauseSmallPrint
           list {
             title
             text
@@ -205,6 +208,7 @@ export const query = graphql`
           policyFeatureList {
             text
           }
+          samplePolicyWordingUrl
         }
         faqSection {
           header

@@ -29,7 +29,7 @@ const RenewalBanner = ({image, mainText, buttonText}) => {
           flexWrap="wrap"
           justifyContent="flex-start"
           pt={[3, 5]}
-          pb={[2, 3]}
+          pb={[3, 5]}
           pl={2}
           pr={2}
         >

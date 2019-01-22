@@ -7,6 +7,7 @@ import {css} from 'emotion'
 import Flex from './Flex'
 import Box from './Box'
 import H2 from './H2'
+import Text from './Text'
 import H3 from './H3'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
@@ -18,7 +19,7 @@ const mapIndex = addIndex(map)
 
 class NonToggleiPhone extends Component {
   render() {
-    const {title, description, list, image} = this.props
+    const {title, description, list, image, policyPauseSmallPrint} = this.props
     return (
       <Flex
         background="transparent"
@@ -75,11 +76,18 @@ class NonToggleiPhone extends Component {
                   }, list)}
                 </ol>
               </Box>
-              <SmallText className={css({color: 'white', marginTop: '75px'})}>
-                * Changes that increase your policy price will take effect
-                immediately. If you downgrade, pause or cancel your cover, this
-                will take effect on your next monthly renewal date.
-              </SmallText>
+
+              <Text
+                textAlign="left"
+                className={css({
+                  marginTop: 75,
+                  marginBottom: 20,
+                  fontSize: 12,
+                  color: 'white'
+                })}
+              >
+                * {policyPauseSmallPrint}
+              </Text>
             </Box>
             <Box
               order={[1, 3]}

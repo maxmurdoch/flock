@@ -5,6 +5,7 @@ import R from 'ramda'
 
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
+import Link from './Link'
 import H1 from './H1'
 import H2 from './H2'
 import H3 from './H3'
@@ -22,10 +23,11 @@ const whatIsCovered = ({
   priceSmallPrint,
   buttonText,
   fromPrice,
-  policyFeatureList
+  policyFeatureList,
+  samplePolicyWordingUrl
 }) => {
   return (
-    <Flex justifyContent="center" pb={3}>
+    <Flex justifyContent="center" pb={2}>
       <SiteContainer>
         <Flex
           flexWrap
@@ -74,7 +76,7 @@ const whatIsCovered = ({
                     marginLeft: 10
                   })}
                 >
-                  per month**
+                  a month**
                 </SmallText>
               </Flex>
             </Flex>
@@ -163,12 +165,34 @@ const whatIsCovered = ({
                 mainList
               )}
             </Flex>
+            <Link
+              to={samplePolicyWordingUrl}
+              className={css({
+                textDecoration: 'none',
+                color: 'inherit'
+              })}
+            >
+              <Flex mt={20} mb={20} ml={[0, 0, 20]}>
+                <SmallText>
+                  See <b>sample policy wording</b> for full coverage details.
+                </SmallText>
+              </Flex>
+            </Link>
           </Flex>
         </Flex>
 
         <Text
           textAlign="left"
-          mb={1}
+          className={css({
+            marginLeft: 20,
+            fontSize: 12,
+            color: 'grey'
+          })}
+        >
+          ** {priceSmallPrint}
+        </Text>
+        <Text
+          textAlign="left"
           className={css({
             marginBottom: 20,
             marginLeft: 20,
@@ -176,7 +200,7 @@ const whatIsCovered = ({
             color: 'grey'
           })}
         >
-          ** {priceSmallPrint}
+          † {priceSmallPrint}
         </Text>
       </SiteContainer>
     </Flex>

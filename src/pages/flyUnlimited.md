@@ -9,7 +9,7 @@ hero:
   buttonTwo:
     text: What's covered?
     to: 'https://flockcover.app.link/6IW6kTmgfP'
-  description: Introducing Fly Unlimited, our new monthly subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
+  description: Introducing Fly Unlimited, our new subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
 why:
   description: With Fly Unlimited, you’ll receive all the benefits you’d expect from an annual policy - without the long-term commitment.
@@ -26,7 +26,7 @@ why:
       text: >-
         Have peace of mind that your equipment is also protected with storage, transit, and theft insurance.
       title: Out-of-flight protection
-  title: 'Designed For Frequent Flyers'
+  title: 'Designed for frequent flyers'
 how:
   description: >-
     We’re redefining insurance. With Fly Unlimited, you control your policy. At all times.
@@ -36,12 +36,13 @@ how:
       title: Rolling monthly contract
     - text: >-
         Add or remove pilots from your policy, and tailor your equipment cover and liability limits in seconds.
-      title: Easily adjust your cover?*
+      title: Easily adjust your cover
     - text: >-
         You’re free to pause or cancel at any point. Don’t worry, there are no hidden fees or ambiguous exit clauses.
-      title: Pause or cancel any time
+      title: Pause or cancel anytime*
   image: /images/uploads/phones/fly-unlimited.png
   title: The first flexible cover of its kind
+  policyPauseSmallPrint: Changes that increase your policy price will take effect immediately. If you downgrade, pause or cancel your cover, this will take effect on your next monthly renewal date.
 control:
   description: We know that plans can change. That’s why we’ve made it easy for you to only pay for the cover you need.
   list:
@@ -49,12 +50,12 @@ control:
         Our flexible cover fits around your schedule. Simply pause your policy when things wind down, and restart it again when it suits you.
       title: Don't fly all year round?
     - text: >-
-        No problem. You can switch to our Pay-as-you-fly product in the app when you need to, and insure your flights from as little as £4.95.
+        No problem. Even if you've paused your monthly policy, you can get covered for as little as one hour with our Pay-as-you-fly product.
       title: Need the odd job covered?
   title: Control your costs throughout the year
 renewalBanner:
   image: /images/uploads/renewal-drone.jpg
-  mainText: Switching policies is easy - even before they’ve expired. Join Flock today!
+  mainText: Switching to Flock is easy - even before your policy has expired. Join Flock today!
   buttonText: GET A QUOTE IN 60 SECONDS
 whatIsCovered:
   mainList:
@@ -63,9 +64,9 @@ whatIsCovered:
     - icon: /images/uploads/shield.svg
       title: 3rd party liability
     - icon: /images/uploads/binoculars.svg
-      title: Accidental Flyaways
+      title: Accidental flyaways
     - icon: /images/uploads/human.svg
-      title: Multiple pilots
+      title: Multiple pilots †
     - icon: /images/uploads/van.svg
       title: Loss in transit
     - icon: /images/uploads/lockpad.svg
@@ -74,14 +75,15 @@ whatIsCovered:
       title: Legal expenses
     - icon: /images/uploads/megaphone.svg
       title: Noise complaints
-  mainTitle: What's covered
+  mainTitle: What's covered?
   priceSmallPrint: Prices depend on factors such as experience, equipment and claims history.
   buttonText: GET A QUOTE
   fromPrice: £30
+  samplePolicyWordingUrl: http://
   policyFeatureList:
-    - text: Unlimited commercial flight
-    - text: Up to £10m for drones
-    - text: Public liability up to £10
+    - text: Unlimited commercial flights in the UK
+    - text: Up to £25M drone and accessory cover
+    - text: Public Liability insurance up to £10M
     - text: Option to extend cover worldwide
 faqSection:
   header: Frequently asked questions
