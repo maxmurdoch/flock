@@ -43,7 +43,9 @@ const RenewalBanner = ({image, mainText, buttonText}) => {
           >
             {mainText}
           </Text>
-          <PrimaryButton onClick={download}>
+          <PrimaryButton   className={css({
+              alignSelf: 'flex-start'
+            })} onClick={download}>
             <ArrowText moveOnHover={false}>
               <p
                 className={css({

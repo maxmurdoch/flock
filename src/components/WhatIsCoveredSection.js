@@ -127,6 +127,7 @@ const whatIsCovered = ({
 
           <Flex
             flexWrap
+            mt={[30, 30, 0]}
             pt={25}
             ml={[0, 0, 3]}
             style={{
