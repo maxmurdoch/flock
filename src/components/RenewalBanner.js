@@ -80,17 +80,19 @@ const styles = {
     font-size: 25px;
     line-height: 29px;
     margin-bottom: 40px;
-    max-width: 75%;
+    max-width: 100%;
 
     @media (min-width: ${R.nth(0, breakpoints)}) {
       text-transform: none;
       font-size: 29px;
       line-height: 34px;
+      max-width: 87%;
     }
 
     @media (min-width: ${R.nth(1, breakpoints)}) {
       font-size: 36px;
       line-height: 44px;
+      max-width: 75%;
     }
     `
 }
