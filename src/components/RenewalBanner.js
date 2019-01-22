@@ -78,9 +78,8 @@ const styles = {
     font-family: ${fontFamilies.itc};
     font-weight: 700;
     font-size: 17px;
-    line-height: 34px;
+    line-height: 24px;
     margin-bottom: 40px;
-    text-transform: uppercase;
     max-width: 75%;
 
     @media (min-width: ${R.nth(0, breakpoints)}) {

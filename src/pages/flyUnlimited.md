@@ -17,11 +17,11 @@ why:
     - icon: /images/uploads/infinity.svg
       text: >-
         Get equipment and Public Liability cover for an unlimited number of commercial flights throughout the UK.
-      title: Unlimited Flights in the UK      
+      title: Unlimited flights in the UK      
     - icon: /images/uploads/globe.svg
       text: >-
         Travelling abroad? Extend your cover for the month, and scale it down again when you return.  
-      title: Extend Your Cover Worldwide
+      title: Extend your cover worldwide
     - icon: /images/uploads/shield.svg
       text: >-
         Have peace of mind that your equipment is also protected with storage, transit, and theft insurance.
@@ -66,7 +66,7 @@ whatIsCovered:
     - icon: /images/uploads/binoculars.svg
       title: Accidental flyaways
     - icon: /images/uploads/human.svg
-      title: Multiple pilots †
+      title: Multiple pilots ⁺
     - icon: /images/uploads/van.svg
       title: Loss in transit
     - icon: /images/uploads/lockpad.svg
@@ -77,6 +77,7 @@ whatIsCovered:
       title: Noise complaints
   mainTitle: What's covered?
   priceSmallPrint: Prices depend on factors such as experience, equipment and claims history.
+  pilotSmallPrint: Available if multiple pilots are operating under a single PfCO.
   buttonText: GET A QUOTE
   fromPrice: £30
   samplePolicyWordingUrl: http://
@@ -91,16 +92,16 @@ faqSection:
   buttonText: VIEW ALL FAQs
   buttonUrl: https://help.flockcover.com/
   faqList:
-    - text: Can I apply for a PfCO with Flock?
-      url: https://help.flockcover.com/
-    - text: Is Flock insurance fully compliant with regulation?
-      url: https://help.flockcover.com/
-    - text: Can I get insurance outside of the UK?
-      url: https://help.flockcover.com/
-    - text: How do I pause my Fly Unlimited policy?
-      url: https://help.flockcover.com/
-    - text: How do I add new drones to my Fly Unlimited policy?
-      url: https://help.flockcover.com/
+    - text: Are there any long-term commitments with Fly Unlimited?
+      url: http://help.flockcover.com/policies-and-coverage/are-there-any-long-term-commitments-with-fly-unlimited
+    - text: Can I adjust, or cancel, my policy?
+      url: https://help.flockcover.com/policies-and-coverage/can-i-adjust-or-cancel-my-fly-unlimited-policy
+    - text: Can I get covered abroad?
+      url: https://help.flockcover.com/policies-and-coverage/can-i-get-covered-abroad
+    - text: Is Fly Unlimited CAA compliant?
+      url: http://help.flockcover.com/drone-regulation/is-fly-unlimited-caa-compliant
+    - text: How do I make a claim?
+      url: https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim
 siteMetadataOverride:
   description: drone insurance
   keywords:

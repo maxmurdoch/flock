@@ -107,6 +107,7 @@ class FlyUnlimitedPageTemplate extends Component {
               fromPrice={whatIsCovered.fromPrice}
               policyFeatureList={whatIsCovered.policyFeatureList}
               samplePolicyWordingUrl={whatIsCovered.samplePolicyWordingUrl}
+              pilotSmallPrint={whatIsCovered.pilotSmallPrint}
             />
           </Box>
 
@@ -203,6 +204,7 @@ export const query = graphql`
             title
           }
           priceSmallPrint
+          pilotSmallPrint
           buttonText
           fromPrice
           policyFeatureList {

@@ -21,6 +21,7 @@ const whatIsCovered = ({
   mainTitle,
   mainList,
   priceSmallPrint,
+  pilotSmallPrint,
   buttonText,
   fromPrice,
   policyFeatureList,
@@ -187,7 +188,8 @@ const whatIsCovered = ({
           className={css({
             marginLeft: 20,
             fontSize: 12,
-            color: 'grey'
+            color: 'grey',
+            marginBottom: 0
           })}
         >
           ** {priceSmallPrint}
@@ -201,7 +203,7 @@ const whatIsCovered = ({
             color: 'grey'
           })}
         >
-          † {priceSmallPrint}
+          &#8314; {pilotSmallPrint}
         </Text>
       </SiteContainer>
     </Flex>
