@@ -13,6 +13,7 @@ import Footer from '../components/Footer'
 import RenewalBanner from '../components/RenewalBanner'
 import NonToggleiPhone from '../components/NonToggleIphone'
 import BlackBackground from '../components/BlackBackground'
+import FUfaqSection from '../components/FUfaqSection'
 
 import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
@@ -38,7 +39,8 @@ class FlyUnlimitedPageTemplate extends Component {
       how,
       control,
       renewalBanner,
-      whatIsCovered
+      whatIsCovered,
+      faqSection
     } = this.props.data.markdownRemark.frontmatter
 
     return (
@@ -111,6 +113,18 @@ class FlyUnlimitedPageTemplate extends Component {
             mainText={renewalBanner.mainText}
             buttonText={renewalBanner.buttonText}
           />
+
+          <Box className={css({backgroundColor: 'white'})}>
+            <FUfaqSection
+              header={faqSection.header}
+              body={
+                faqSection.body
+              }
+              buttonText={faqSection.buttonText}
+              buttonUrl={faqSection.buttonUrl}
+              faqList={faqSection.faqList}
+            />
+          </Box>
 
           <Footer />
         </div>
@@ -190,6 +204,16 @@ export const query = graphql`
           fromPrice
           policyFeatureList {
             text
+          }
+        }
+        faqSection {
+          header
+          body
+          buttonText
+          buttonUrl
+          faqList {
+            text
+            url
           }
         }
         siteMetadataOverride {

@@ -25,7 +25,7 @@ const whatIsCovered = ({
   policyFeatureList
 }) => {
   return (
-    <Flex justifyContent="center">
+    <Flex justifyContent="center" pb={3}>
       <SiteContainer>
         <Flex
           flexWrap
@@ -132,7 +132,7 @@ const whatIsCovered = ({
             }}
             flexDirection="column"
           >
-            <H2 pl={10} mb={[10, 10, 40]} markdown={true} className={css({})}>
+            <H2 pl={10} mb={[10, 10, 40]} markdown={true}>
               {mainTitle}
             </H2>
             <Flex

@@ -83,6 +83,22 @@ whatIsCovered:
     - text: Up to £10m for drones
     - text: Public liability up to £10
     - text: Option to extend cover worldwide
+faqSection:
+  header: Frequently asked questions
+  body: Got other questions? Visit our help center or chat live with us now.
+  buttonText: VIEW ALL FAQs
+  buttonUrl: https://help.flockcover.com/
+  faqList:
+    - text: Can I apply for a PfCO with Flock?
+      url: https://help.flockcover.com/
+    - text: Is Flock insurance fully compliant with regulation?
+      url: https://help.flockcover.com/
+    - text: Can I get insurance outside of the UK?
+      url: https://help.flockcover.com/
+    - text: How do I pause my Fly Unlimited policy?
+      url: https://help.flockcover.com/
+    - text: How do I add new drones to my Fly Unlimited policy?
+      url: https://help.flockcover.com/
 siteMetadataOverride:
   description: drone insurance
   keywords:
