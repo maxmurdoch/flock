@@ -98,13 +98,13 @@ const Hero = ({
                   <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
                     {matches => {
                       return matches ? (
-                        <SecondaryButton onClick={buttonTwoAction}>
+                        <SecondaryButton onClick={buttonTwoAction} mb={15}>
                           <ArrowText moveOnHover={false}>
                             {buttonTwo.text}
                           </ArrowText>
                         </SecondaryButton>
                       ) : (
-                        <SecondaryButton onClick={buttonTwoAction}>
+                        <SecondaryButton onClick={buttonTwoAction} mb={15}>
                           <ArrowText moveOnHover={false}>
                             {buttonTwo.text}
                           </ArrowText>
