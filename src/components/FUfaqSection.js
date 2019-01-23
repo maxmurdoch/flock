@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
+import Media from 'react-media'
 import {css, injectGlobal, cx} from 'react-emotion'
 import Flex from './Flex'
 import H2 from './H2'
@@ -24,7 +25,7 @@ const FUfaqSection = ({faqList, header, buttonText, buttonUrl, body}) => {
   return (
     <Flex justifyContent="center">
       <SiteContainer>
-        <Flex flexDirection={['column', 'column', 'row']}>
+        <Flex flexDirection={['column', 'column', 'row']} pb={[2, 0, 0]}>
           <Flex
             flex={1}
             flexWrap="wrap"
@@ -35,6 +36,16 @@ const FUfaqSection = ({faqList, header, buttonText, buttonUrl, body}) => {
             pl={2}
             pr={2}
           >
+            <Media query={`(min-width: ${breakpoints[0]})`}>
+              {matches => {
+                return matches ? null : (
+                  <H2 mb={20} markdown={true}>
+                    {header}
+                  </H2>
+                )
+              }}
+            </Media>
+
             <Box borderTop={'1px solid gray'} width="100%" />
             {mapIndex(
               ({text, url}) => (
@@ -85,9 +96,15 @@ const FUfaqSection = ({faqList, header, buttonText, buttonUrl, body}) => {
             pr={2}
           >
             <Flex flexDirection="column" mb={[3, 3, 3]}>
-              <H2 mb={20} markdown={true}>
-                {header}
-              </H2>
+              <Media query={`(min-width: ${breakpoints[2]})`}>
+                {matches => {
+                  return matches ? (
+                    <H2 mb={20} markdown={true}>
+                      {header}
+                    </H2>
+                  ) : null
+                }}
+              </Media>
               <BodyText>{body}</BodyText>
             </Flex>
 
