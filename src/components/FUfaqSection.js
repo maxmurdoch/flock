@@ -36,7 +36,7 @@ const FUfaqSection = ({faqList, header, buttonText, buttonUrl, body}) => {
             pl={2}
             pr={2}
           >
-            <Media query={`(min-width: ${breakpoints[0]})`}>
+            <Media query={`(min-width: ${breakpoints[1]})`}>
               {matches => {
                 return matches ? null : (
                   <H2 mb={20} markdown={true}>
@@ -96,7 +96,7 @@ const FUfaqSection = ({faqList, header, buttonText, buttonUrl, body}) => {
             pr={2}
           >
             <Flex flexDirection="column" mb={[3, 3, 3]}>
-              <Media query={`(min-width: ${breakpoints[2]})`}>
+              <Media query={`(min-width: ${breakpoints[1]})`}>
                 {matches => {
                   return matches ? (
                     <H2 mb={20} markdown={true}>
