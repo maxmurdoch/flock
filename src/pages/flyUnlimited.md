@@ -79,7 +79,7 @@ whatIsCovered:
   priceSmallPrint: Prices depend on factors such as experience, equipment and claims history.
   pilotSmallPrint: Available if multiple pilots are operating under a single PfCO.
   buttonText: GET A QUOTE
-  fromPrice: £30
+  fromPrice: £29.95
   samplePolicyWordingUrl: https://
   policyFeatureList:
     - text: Unlimited commercial flights in the UK
