@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import {css, cx} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
@@ -12,16 +12,40 @@ const SmallText = ({
   mb = 0,
   ...props
 }) => {
-  return (
-    <Text
-      fontWeight={fontWeight}
-      mb={mb}
-      className={cx(style.smallTextStyle, className)}
-      {...props}
-    >
-      {children}
-    </Text>
-  )
+  if (typeof(children) === 'string') {
+    const matches = children.match(/\[([^\[\]]+)\]\(([^)]+)/)
+    if(!matches) {
+      return(<Text
+        fontWeight={fontWeight}
+        mb={mb}
+        className={cx(style.smallTextStyle, className)}
+        {...props}
+      >{children}</Text>)
+    } else {
+      const splitText = children.split(`[${matches[1]}](${matches[2]})`)
+      const internalHtml = splitText.join(`<a class='inline-link' href='${matches[2]}'>${matches[1]}</a>`)
+      return(
+        <Text
+          fontWeight={fontWeight}
+          mb={mb}
+          className={cx(style.smallTextStyle, className)}
+          {...props}
+          dangerouslySetInnerHTML={{ __html: internalHtml }}
+        ></Text>
+      )
+    }
+  } else {
+    return(
+      <Text
+        fontWeight={fontWeight}
+        mb={mb}
+        className={cx(style.smallTextStyle, className)}
+        {...props}
+      >
+        {children}
+      </Text>
+    )
+  }
 }
 
 SmallText.propTypes = {

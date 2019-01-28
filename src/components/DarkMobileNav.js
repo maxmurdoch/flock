@@ -29,19 +29,19 @@ const styles = {
 }
 const productList = [
   {
-    to: '/products/commercial',
+    to: '/insurance/commercial',
     className: styles.product,
     text: 'Commercial pilot'
   },
   {
-    to: '/products/trainee',
+    to: '/insurance/trainee',
     className: styles.product,
     text: 'Trainee pilot'
   },
   {
-    to: '/products/hobbyist',
+    to: '/insurance/recreational',
     className: styles.product,
-    text: 'Hobbyist pilot'
+    text: 'Recreational pilot'
   }
 ]
 
@@ -54,12 +54,22 @@ const navList = [
   {
     to: '/about',
     className: styles.product,
-    text: 'About'
+    text: 'About us'
   },
   {
-    to: '/support',
+    to: 'https://help.flockcover.com',
     className: styles.product,
-    text: 'Support'
+    text: 'FAQ'
+  },
+  {
+    to: 'https://blog.flockcover.com/',
+    className: styles.product,
+    text: 'Blog'
+  },
+  {
+    to: 'https://flockcover.workable.com',
+    className: styles.product,
+    text: 'Jobs'
   }
 ]
 
@@ -68,7 +78,8 @@ const MobileNav = ({
   toggleMenu,
   logo = () => blackLogo,
   icon = () => hamburger,
-  iconColor = () => colors.dark
+  iconColor = () => colors.dark,
+  to
 }) => {
   return (
     <Sticky disableCompensation={true}>
@@ -166,7 +177,7 @@ const MobileNav = ({
                       borderBottom={`1px solid ${colors.white}`}
                       width="100%"
                     />
-                    <Link to="/download" className={styles.product}>
+                    <Link to={to.to} className={styles.product}>
                       <ArrowText>
                         <SmallText fontWeight={700}>Download</SmallText>
                       </ArrowText>

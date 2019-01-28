@@ -74,7 +74,7 @@ const AboutTemplate = ({
           team={meetTheTeam.team}
         />
         <BigSectionLine />
-        <Download />
+        <Download to={'https://flockcover.app.link/6IW6kTmgfP'}/>
         <Footer
           containerClassName={css({
             marginTop: R.nth(3, space),

@@ -5,6 +5,12 @@ import BodyText from './BodyText'
 import {colors} from '../constants/theme'
 
 const PrimaryButton = ({children, ...props}) => {
+
+  const clickHandler = () => {
+    props.onClick()
+    window.open(props.to, '_blank')
+  }
+
   return (
     <Button
       className={css({
@@ -13,7 +19,7 @@ const PrimaryButton = ({children, ...props}) => {
       background={colors.yellow}
       {...props}
     >
-      <BodyText fontWeight={700}>{children}</BodyText>
+      <BodyText fontWeight={700} onClick={clickHandler}>{children}</BodyText>
     </Button>
   )
 }

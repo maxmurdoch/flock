@@ -9,7 +9,12 @@ import Nav from './Nav'
 import {colors} from '../constants/theme'
 import trackDownload from '../utils/trackDownload'
 
-const DarkDesktopNav = () => {
+const DarkDesktopNav = (to) => {
+  const download = () => {
+    trackDownload()
+    const linkAnonymousId = to.to.to + '?anonymous_id=' + analytics.user().anonymousId()
+    window.open('https://flockcover.test-app.link/Z85w5tgUeS')
+  }
   return (
     <Nav
       textColor={() => colors.dark}
@@ -18,7 +23,7 @@ const DarkDesktopNav = () => {
         <img className={css({width: '6rem', margin: 0})} src={blackLogo} />
       )}
       DownloadButton={() => (
-        <SecondaryButton Text={SmallText} onClick={trackDownload}>Download</SecondaryButton>
+        <SecondaryButton Text={SmallText} onClick={download}>Download</SecondaryButton>
       )}
     />
   )

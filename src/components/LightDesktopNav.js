@@ -12,7 +12,12 @@ import Nav from './Nav'
 import {colors} from '../constants/theme'
 import trackDownload from '../utils/trackDownload'
 
-const LightDesktopNav = () => {
+const LightDesktopNav = (to) => {
+  const download = () => {
+    trackDownload()
+    const linkAnonymousId = 'https://flockcover.app.link/6IW6kTmgfP' + '?anonymous_id=' + analytics.user().anonymousId()
+    window.open(linkAnonymousId, '_blank')
+  }
   return (
     <Nav
       textColor={({isSticky}) => (isSticky ? colors.dark : colors.white)}
@@ -26,13 +31,13 @@ const LightDesktopNav = () => {
       DownloadButton={({isSticky}) =>
         isSticky ? (
           <SecondaryButton
-             onClick={trackDownload}
+             onClick={download}
             Text={SmallText}
           >
             Download
           </SecondaryButton>
         ) : (
-          <WhiteButton Text={SmallText} onClick={trackDownload}>
+          <WhiteButton Text={SmallText} onClick={download}>
             Download
           </WhiteButton>
         )

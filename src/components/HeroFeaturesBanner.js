@@ -36,7 +36,7 @@ const HeroFeaturesBanner = () => (
           />
         </Flex>
         <Flex alignItems="center" mb={['6px', 0]}>
-          <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+          <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
             {matches =>
               matches ? (
                 <img
@@ -50,10 +50,10 @@ const HeroFeaturesBanner = () => (
               ) : null
             }
           </Media>
-          <SmallText>FCA & CAA regulated</SmallText>
+          <SmallText>FCA & CAA compliant</SmallText>
         </Flex>
         <Flex alignItems="center" mb={0}>
-          <Media query={`(min-width: ${R.nth(0, breakpoints)}`}>
+          <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
             {matches =>
               matches ? (
                 <img
@@ -67,7 +67,7 @@ const HeroFeaturesBanner = () => (
               ) : null
             }
           </Media>
-          <SmallText>24/7 customer support</SmallText>
+          <SmallText>Instant customer support</SmallText>
         </Flex>
       </Flex>
     </SiteContainer>

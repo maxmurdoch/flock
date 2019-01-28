@@ -25,8 +25,8 @@ const FlockStory = ({header, bigText, smallText, image, imageHeader}) => {
           alignItems="baseline"
           justifyContent="space-between"
         >
-          <Box width={['100%', `${(100 / 12) * 7}%`]} order={[1, 0]}>
-            <BodyText mb={2}>{bigText}</BodyText>
+          <Box width={['100%', `${(100 / 12) * 7}%`]}>
+            <BodyText mb={3}>{bigText}</BodyText>
             <div className={css({p: {marginBottom: R.nth(1, space)}})}>
               <SmallText mb={2}>
                 <Markdown container="span">{smallText}</Markdown>

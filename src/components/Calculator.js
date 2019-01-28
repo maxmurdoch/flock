@@ -1,8 +1,9 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import R from 'ramda'
 import {css, injectGlobal} from 'react-emotion'
 import Select from 'react-select'
 import 'react-select/dist/react-select.css'
+import PropTypes from 'prop-types'
 
 import Flex from './Flex'
 import Box from './Box'
@@ -42,25 +43,25 @@ const pilotTypeOptions = [
     value: 1.04625
   },
   {
-    label: 'Hobbyist',
+    label: 'Recreational',
     value: 0.58375
   }
 ]
 const droneTypeOptions = [
   {
-    label: 'Less than 1000g',
+    label: 'Less than 1kg',
     value: 0.80625
   },
   {
-    label: 'Less than 3000g',
+    label: 'Less than 3kg',
     value: 0.965
   },
   {
-    label: 'Less than 5000g',
+    label: 'Less than 5kg',
     value: 1.42
   },
   {
-    label: 'More than 5000g',
+    label: 'More than 5kg',
     value: 2.57
   }
 ]
@@ -135,6 +136,7 @@ class Calculator extends Component {
   }
 
   render() {
+    const { disclaimer } = this.props
     return (
       <Flex justifyContent="center" className={styles.outerContainer}>
         <SiteContainer>
@@ -206,22 +208,35 @@ class Calculator extends Component {
                 <SmallText textAlign="center" mb={1}>
                   Your estimate*
                 </SmallText>
-                <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
-                  £{Math.round(this.state.pricePerYear)} per year
-                </BodyText>
-                <SmallText textAlign="center" mt={1}>
-                  That’s £{this.state.pricePerFlight} per flight
-                </SmallText>
+
+                {(this.state.pilotTypeValue.label === 'Trainee') ? (
+                  <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
+                    £{Math.round(this.state.pricePerFlight)} per flight
+                  </BodyText>
+                ) : (
+                  <Fragment>
+                    <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
+                      £{Math.round(this.state.pricePerYear)} per year
+                    </BodyText>
+                    <SmallText textAlign="center" mt={1}>
+                      That’s £{this.state.pricePerFlight} per flight
+                    </SmallText>
+                  </Fragment>
+                )}
               </Flex>
             </Flex>
           </Flex>
           <Text textAlign="left" mb={1} className={css({marginBottom: 0, paddingTop: 20, paddingLeft: 3, fontSize: 12, color: 'grey'})}>
-            * Your estimate is based on average usage. Prices are dependent on the real-time risks of each flight.
+            * {disclaimer}
           </Text>
         </SiteContainer>
       </Flex>
     )
   }
+}
+
+Calculator.propTypes = {
+  disclaimer: PropTypes.string
 }
 
 export default Calculator

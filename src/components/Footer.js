@@ -12,7 +12,7 @@ import mediumIcon from '../images/medium-icon.svg'
 import linkedInIcon from '../images/linked-in.svg'
 import twitterIcon from '../images/twitter-icon.svg'
 import facebookIcon from '../images/facebook-icon.svg'
-import {colors, space} from '../constants/theme'
+import {colors, space, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -38,20 +38,16 @@ const socialMediaLinks = [
 const Footer = ({containerClassName}) => {
   const firstFooterLinks = [
     {
-      to: '/',
-      text: 'Home'
-    },
-    {
-      to: '/products/commercial',
+      to: '/insurance/commercial',
       text: 'Commercial pilots'
     },
     {
-      to: '/products/trainee',
+      to: '/insurance/trainee',
       text: 'Trainee pilots'
     },
     {
-      to: '/products/hobbyist',
-      text: 'Hobbyist pilots'
+      to: '/insurance/recreational',
+      text: 'Recreational pilots'
     }
   ]
 
@@ -62,20 +58,23 @@ const Footer = ({containerClassName}) => {
     },
     {
       to: 'https://help.flockcover.com',
-      text: 'Support'
-    },
-    {
-      to: 'https://help.flockcover.com',
       text: 'FAQ'
     },
     {
       to: 'https://flockcover.workable.com',
-      text: 'Careers'
+      text: 'Jobs'
     },
     {
-      to: '/media-pack',
+      to: 'https://landing.flockcover.com/flock-media-pack/',
       text: 'Media pack'
     },
+    {
+      to: 'https://blog.flockcover.com/',
+      text: 'Blog'
+    }
+  ]
+
+  const bottomFooterLinks = [
     {
       to: 'http://help.flockcover.com/legal/terms-of-use',
       text: 'Terms of Use'
@@ -100,10 +99,10 @@ const Footer = ({containerClassName}) => {
     >
       <SiteContainer>
         <Flex flexWrap={true}>
-          <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
-                Products
+                Insurance
               </SmallText>
             </Box>
             {mapIndex(({to, text}, index) => {
@@ -114,7 +113,7 @@ const Footer = ({containerClassName}) => {
               )
             }, firstFooterLinks)}
           </Flex>
-          <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Company
@@ -128,7 +127,7 @@ const Footer = ({containerClassName}) => {
               )
             }, secondFooterLinks)}
           </Flex>
-          <Flex width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.lastFlexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Got a question? Get in touch:
@@ -151,31 +150,29 @@ const Footer = ({containerClassName}) => {
                 )
               }, socialMediaLinks)}
             </Flex>
+            <Box width={['100%', '33.33%']} mb={[2, 0]}>
+              <Link to={'/'}>
+                <img src={logo} className={css({marginBottom: 0})} />
+              </Link>
+            </Box>
           </Flex>
         </Flex>
         <Flex borderTop="1px solid white" pt={3} mt={3} pb={3} flexWrap={true}>
-          <Box width={['100%', '33.33%']} mb={[2, 0]}>
-            <img src={logo} className={css({marginBottom: 0})} />
-          </Box>
-          <Box width={['100%', '33.33%']} mb={[2, 0]}>
-            <SmallText fontWeight={700} color="white">
-              Flock Cover is regulated by the FCA.
-            </SmallText>
-            <SmallText color="white">
-              <Link
-                to="https://help.flockcover.com/legal/how-is-flock-regulated"
-                className={styles.link}
-              >
-                Click here
-              </Link>
-              &nbsp;to learn what that means
-            </SmallText>
-          </Box>
-          <Box width={['100%', '33.33%']}>
-            <SmallText color="white">
-              © 2017 Flock Ltd. All Rights Reserved. <br /> Company number
-              9503380
-            </SmallText>
+          <Box width={['100%', '100%']} mb={[2, 0]}>
+            <Flex flexDirection="row" justifyContent="center">
+              {mapIndex(({to, text}, index) => {
+                return (
+                  <Link className={styles.horizontalLink} to={to} key={index}>
+                    <SmallText>{text}</SmallText>
+                  </Link>
+                )
+              }, bottomFooterLinks)}
+            </Flex>
+            <Box pb={2} className={styles.centeredFooterText}>
+              <SmallText tag="h3" color="white" mb={0} fontWeight={100}>
+                Flock Ltd. (company number 9503380) are an Appointed Representative of Worry+Peace (a trading name of Innovative Risk Ltd.) who have arranged for the insurance provided by the Flock Cover app to be underwritten by Allianz Global Corporate & Speciality.
+              </SmallText>
+            </Box>
           </Box>
         </Flex>
       </SiteContainer>
@@ -195,5 +192,26 @@ const styles = {
     color: R.prop('white', colors),
     textDecoration: 'none',
     paddingBottom: R.nth(1, space)
+  }),
+  horizontalLink: css({
+    color: R.prop('yellow', colors),
+    textDecoration: 'none',
+    paddingRight: R.nth(2, space),
+    marginBottom: '40px'
+  }),
+  centeredFooterText: css({
+    margin: '0 auto',
+    width: '60%'
+  }),
+  flexiFooter: css({
+    [`@media (min-width: 24em) and (max-width: ${R.nth(1, breakpoints)})`]: {
+      width: '50%',
+      justifyContent: 'space-between'
+    }
+  }),
+  lastFlexiFooter: css({
+    [`@media (max-width: ${R.nth(1, breakpoints)})`]: {
+      width: '100%'
+    }
   })
 }

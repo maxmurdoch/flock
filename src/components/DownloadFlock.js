@@ -9,7 +9,13 @@ import H2 from './H2'
 import SiteContainer from './SiteContainer'
 import trackDownload from '../utils/trackDownload'
 
-const DownloadFlock = () => {
+const DownloadFlock = (to) => {
+  const download = () => {
+    trackDownload()
+    const linkAnonymousId = to.to + '?anonymous_id=' + analytics.user().anonymousId()
+    // window.open(linkAnonymousId, '_blank')
+    window.open('https://flockcover.test-app.link/Z85w5tgUeS')
+  }
   return (
     <Flex justifyContent="center">
       <SiteContainer>
@@ -32,7 +38,7 @@ const DownloadFlock = () => {
             display="flex"
             justifyContent="center"
           >
-            <PrimaryButton onClick={trackDownload}>
+            <PrimaryButton onClick={download}>
               <ArrowText moveOnHover={false}>Download</ArrowText>
             </PrimaryButton>
           </Box>

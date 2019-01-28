@@ -5,10 +5,16 @@ import BodyText from './BodyText'
 
 const mapIndex = R.addIndex(R.map)
 
+const hasNewLine = str => R.contains('\n', str) || R.contains('\r', str)
+
 const NewLineToBr = ({Component = BodyText, children, ...props}) => {
+  const text = R.is(Array, children) ? children.reduce((memo, child) => {
+    return R.is(String, child) && !!child.trim() ? memo + child : memo
+  }, '') : ''
+
   return (
     <Component {...props}>
-      {R.is(String, children) && R.contains(/[\n\r]/, children)
+      {!!text && R.is(String, text) && hasNewLine(text)
         ? mapIndex((child, key) => {
             return (
               <Fragment key={key}>
@@ -16,7 +22,7 @@ const NewLineToBr = ({Component = BodyText, children, ...props}) => {
                 <br />
               </Fragment>
             )
-          }, R.split(/[\n\r]/, children))
+          }, R.split(/\r\n|\n|\r/, text))
         : children}
     </Component>
   )
