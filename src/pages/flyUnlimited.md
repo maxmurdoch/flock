@@ -5,7 +5,7 @@ hero:
   backgroundImage: ../../images/uploads/fly-unlimited-header.jpg
   buttonOne:
     text: Get a quote
-    to: 'https://flockcover.app.link/6IW6kTmgfP'
+    to: 'https://my.flockcover.com'
   buttonTwo:
     text: What's covered?
     to: 'https://flockcover.app.link/6IW6kTmgfP'
@@ -80,7 +80,7 @@ whatIsCovered:
   pilotSmallPrint: Available if multiple pilots are operating under a single PfCO.
   buttonText: GET A QUOTE
   fromPrice: £24.95
-  samplePolicyWordingUrl: https://
+  samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
   policyFeatureList:
     - text: Unlimited commercial flights in the UK
     - text: Up to £25M drone and accessory cover

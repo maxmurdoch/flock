@@ -112,6 +112,7 @@ const whatIsCovered = ({
                   alignSelf: 'flex-start',
                   marginBottom: 30
                 })}
+                onClick={() => window.open('https://my.flockcover.com')}
               >
                 <ArrowText moveOnHover={false}>
                   <p
