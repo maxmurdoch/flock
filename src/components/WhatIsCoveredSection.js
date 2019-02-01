@@ -177,7 +177,7 @@ const whatIsCovered = ({
             >
               <Flex mt={20} mb={20} ml={[0, 0, 20]}>
                 <SmallText>
-                  See <b>sample policy wording</b> for full coverage details.
+                  View the <b>Key Facts</b> for details of what's covered.
                 </SmallText>
               </Flex>
             </Link>

@@ -42,7 +42,7 @@ how:
       title: Pause or cancel anytime*
   image: /images/uploads/phones/fly-unlimited.png
   title: The first flexible cover of its kind
-  policyPauseSmallPrint: Changes that increase your policy price will take effect immediately. If you downgrade, pause or cancel your cover, this will take effect on your next monthly renewal date.
+  policyPauseSmallPrint: Changes that increase your coverage will take effect immediately. If you downgrade, pause or cancel your cover, this will take effect on your next monthly renewal date.
 control:
   description: We know that plans can change. That’s why we’ve made it easy for you to only pay for the cover you need.
   list:
@@ -68,7 +68,7 @@ whatIsCovered:
     - icon: /images/uploads/human.svg
       title: Multiple pilots ⁺
     - icon: /images/uploads/van.svg
-      title: Loss in transit
+      title: Transit cover
     - icon: /images/uploads/lockpad.svg
       title: Theft & storage
     - icon: /images/uploads/document.svg
@@ -83,12 +83,12 @@ whatIsCovered:
   samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
   policyFeatureList:
     - text: Unlimited commercial flights in the UK
-    - text: Up to £25M drone and accessory cover
+    - text: Up to £25K drone and accessory cover
     - text: Public Liability insurance up to £10M
     - text: Option to extend cover worldwide
 faqSection:
   header: Frequently asked questions
-  body: Got other questions? Visit our help center or chat live with us now.
+  body: Got other questions? Visit our help centre, or chat live with us now.
   buttonText: VIEW ALL FAQs
   buttonUrl: https://help.flockcover.com/
   faqList:
