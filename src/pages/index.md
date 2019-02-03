@@ -3,12 +3,12 @@ title: Home
 templateKey: home
 hero:
   button:
-    text: 'Download '
+    text: Get a quote
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: >-
-    With Flock Cover, receive fully customised drone insurance, precisely when
-    you need it. Download the app and get a real-time quote in seconds.
-  header: Pay-as-you-fly drone insurance
+    Welcome to fully flexible insurance you control. In a couple of taps, get
+    covered for an hour, day or month - whatever suits you.
+  header: 'Simpler, smarter drone insurance'
 video:
   coverImage: /images/uploads/testimonial/1.jpg
   id: 3m_VorqXuNQ
@@ -30,55 +30,55 @@ howFlockWorks:
         cover to suit your needs.
       title: 2. Customise your policy
     - image: images/uploads/screens/get-flying-screen.png
-      text: >-
-        Pay to instantly receive your policy documents by email. Enjoy the
-        flight!
+      text: Receive your policy documents instantly by email. Enjoy the flight!
       title: 3. Get flying
-  title: How Flock Cover works
+  title: How our Pay-as-you-fly cover works
 stopWorrying:
   description: >-
-    The Flock Cover app uses real-time data to provide instant drone insurance
-    that's tailored to your flight. At the most competitive price possible.
+    Our community of pilots help shape the products and features we create. The
+    result: flexible policies that our pilot's love, and clever tools that make
+    Flock Cover much more than just an insurance app.
   reasons:
-    - icon: images/uploads/shield.svg
+    - icon: /images/uploads/money.svg
       text: >-
-        Flock’s pricing is
-        [risk-dependent](https://help.flockcover.com/about-the-flock-cover-app/how-does-flock-determine-my-policy-price).
-        So the safer you fly, the less you pay. It's as simple as that.
-      title: Fairer pricing
-    - icon: images/uploads/money.svg
+        Forget annual contracts. Get covered on a Pay-as-you-fly basis, or
+        insured for an unlimited number of flights in a month. Cancel anytime -
+        without any hidden fees.
+      title: Fully flexible cover
+    - icon: /images/uploads/magnifying-glass.svg
       text: >-
-        Pay for insurance only when you fly. Get covered for one hour, or up to
-        a day.
-      title: Short-term insurance
-    - icon: images/uploads/magnifying-glass.svg
+        We’re always adding new features and tools. Join our community and share
+        your thoughts, so that together we can make drone insurance simpler and
+        smarter for everyone.
+      title: Designed for you
+    - icon: /images/uploads/shield.svg
       text: >-
-        Customise your insurance on a per-flight basis, so you only pay for the
-        cover you need.
-      title: Total transparency
-  title: The smarter new way to insure your drone
+        We may be the new kid on the block, but our partners are not. Flock
+        policies are underwritten by Allianz, the world’s leading aviation
+        insurer. So you’re in safe hands.
+      title: Backed by Allianz
+  title: 'Built for drone pilots, with drone pilots'
 kindOfPilot:
-  description: We offer instant drone insurance tailored to your specific needs.
+  description: >-
+    We’re doing things differently. Our two flexible options let you completely
+    customise your drone insurance. Stick with one policy, or mix and match
+    throughout the year.
   products:
     - icon: images/uploads/commercial-pilot.svg
       link: /insurance/commercial
       text: >-
-        Flock’s EC785/2004 compliant policies offer equipment and Public
-        Liability insurance from just £4.95 a day.
-      title: Commercial pilot
+        Pay for insurance only when you fly. Get fully customised cover for one
+        hour, or up to a day from just £4.95. Available for commercial, trainee
+        and recreational pilots.
+      title: Pay-as-you-fly
     - icon: images/uploads/trainee-pilot.svg
-      link: /insurance/trainee
+      link: 'https://landing.flockcover.com/flyunlimited/'
       text: >-
-        From flight assessment insurance, to providing proof-of-insurance for
-        your PfCO application, Flock’s got you covered.
-      title: Trainee pilot
-    - icon: images/uploads/recreational-pilot.svg
-      link: '/insurance/recreational '
-      text: >-
-        Enjoy your favourite hobby with peace of mind. Get covered from just
-        £2.95 for up to a day of flying.
-      title: Recreational pilot
-  title: What kind of drone pilot are you?
+        Fly anywhere, anytime. Get covered for an unlimited number of flights in
+        the UK or abroad on a monthly subscription. Adjust, pause, or cancel
+        your policy anytime. Available for commercial pilots only.
+      title: Fly Unlimited
+  title: Find the cover that’s right for you
 risk:
   description: >-
     With Flock Cover you get much more than just an insurance policy. The app
@@ -105,7 +105,7 @@ risk:
         Receive real-time weather updates such as wind speed, temperature, and
         probability of rainfall.
       title: Hyperlocal weather
-  title: Know your risks before you fly
+  title: Know your risks before you fly with the Flock Cover app
 calculator:
   description: >-
     Tell us about your flying habits and we will estimate the yearly cost of
@@ -127,11 +127,15 @@ featured:
   image: images/uploads/featured-list.png
   title: As featured in
 siteMetadataOverride:
-  description: We provide short-term, flexible drone insurance for commercial and recreational pilots. Policies are underwritten by Allianz, the world’s leading aviation insurer.
+  description: >-
+    We provide fully flexible drone insurance for commercial, trainee and
+    recreational pilots. Policies are underwritten by Allianz, the world’s
+    leading aviation insurer.
   keywords:
     - drone insurance
     - drones
     - Flock
     - Flock Cover
-  title: 'Flock | Pay-as-you-fly drone insurance'
+  title: 'Flock | Simpler, smarter drone insurance'
 ---
+
