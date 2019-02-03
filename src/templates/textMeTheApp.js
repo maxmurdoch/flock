@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
-import branch from 'branch-sdk'
+if (typeof window !== 'undefined') {
+  import branch from 'branch-sdk'
+}
 import Card from '@material-ui/core/Card'
 
 import blackLogo from '../images/logo-black.svg'
