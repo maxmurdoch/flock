@@ -58,7 +58,7 @@ const HomeTemplate = ({
             header={hero.header}
             textShadow={false}
             description={hero.description}
-            button={hero.button}
+            buttonOne={hero.button}
           />
           <Box pt={[3, 5]} background="white">
             <TextGrid
