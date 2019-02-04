@@ -40,6 +40,12 @@ const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
   ${space}
   ${textAlign}
   ${textShadow}
+
+  a {
+    font-family: 'Chivo';
+    text-decoration: none;
+    color: #00C0FF;
+  }
 `
   return (
     <NewLineToBr Component={Component} fontWeight={fontWeight} {...props}>
