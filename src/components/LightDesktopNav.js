@@ -10,11 +10,11 @@ import whiteDownArrow from '../images/icons/small-down-arrow-white.svg'
 import whiteLogo from '../images/logo-white.svg'
 import Nav from './Nav'
 import {colors} from '../constants/theme'
-import trackDownload from '../utils/trackDownload'
+import { downloadClickHandler } from '../utils/trackDownload'
 
 const LightDesktopNav = (to) => {
   const download = () => {
-    trackDownload()
+    downloadClickHandler()
     const linkAnonymousId = 'https://flockcover.app.link/6IW6kTmgfP' + '?anonymous_id=' + analytics.user().anonymousId()
     window.open(linkAnonymousId, '_blank')
   }

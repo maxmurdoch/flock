@@ -4,4 +4,8 @@ const downloadClickHandler = () => {
   analytics.track('Application Download Viewed')
 }
 
-export default downloadClickHandler
+const webAppClickhandler = () => {
+  analytics.track('WebApp Navigation Clicked')
+}
+
+export { downloadClickHandler, webAppClickhandler }

@@ -83,7 +83,7 @@ whatIsCovered:
   samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
   policyFeatureList:
     - text: Unlimited commercial flights in the UK
-    - text: Up to £25K drone and accessory cover
+    - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
     - text: Public Liability insurance up to £10M
     - text: Option to extend cover worldwide
 faqSection:

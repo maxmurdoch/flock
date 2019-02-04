@@ -8,11 +8,11 @@ import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import {breakpoints, fontFamilies} from '../constants/theme'
 import Text from './Text'
+import { webAppClickhandler } from '../utils/trackDownload'
+
 const RenewalBanner = ({image, mainText, buttonText}) => {
   const download = () => {
-    trackDownload()
-    const linkAnonymousId =
-      buttonOne.to + '?anonymous_id=' + analytics.user().anonymousId()
+    webAppClickhandler()
     window.open('https://my.flockcover.com')
   }
 

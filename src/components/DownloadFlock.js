@@ -7,11 +7,11 @@ import Box from './Box'
 import PrimaryButton from './PrimaryButton'
 import H2 from './H2'
 import SiteContainer from './SiteContainer'
-import trackDownload from '../utils/trackDownload'
+import { downloadClickHandler } from '../utils/trackDownload'
 
 const DownloadFlock = (to) => {
   const download = () => {
-    trackDownload()
+    downloadClickHandler()
     const linkAnonymousId = to.to + '?anonymous_id=' + analytics.user().anonymousId()
     window.open(linkAnonymousId, '_blank')
   }
