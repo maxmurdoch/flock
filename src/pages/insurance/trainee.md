@@ -70,6 +70,8 @@ flightSchool:
       to: 'http://uavacademy.co.uk/'
     - image: ../../images/uploads/uav-trade-craft.png
       to: 'https://uavtradecraft.com/'
+    - image: /images/uploads/upliftlighter.png
+      to: 'https://www.upliftdronetraining.com/'
   show: true
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
