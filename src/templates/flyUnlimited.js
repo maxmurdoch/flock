@@ -108,6 +108,9 @@ class FlyUnlimitedPageTemplate extends Component {
               policyFeatureList={whatIsCovered.policyFeatureList}
               samplePolicyWordingUrl={whatIsCovered.samplePolicyWordingUrl}
               pilotSmallPrint={whatIsCovered.pilotSmallPrint}
+              productType={whatIsCovered.productType}
+              fromText={whatIsCovered.fromText}
+              perText={whatIsCovered.perText}
             />
           </Box>
 
@@ -211,6 +214,9 @@ export const query = graphql`
             text
           }
           samplePolicyWordingUrl
+          productType
+          fromText
+          perText
         }
         faqSection {
           header

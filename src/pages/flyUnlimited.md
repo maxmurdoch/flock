@@ -86,6 +86,9 @@ whatIsCovered:
     - text: Up to £25M drone and accessory cover
     - text: Public Liability insurance up to £10M
     - text: Option to extend cover worldwide
+  productType: FLY UNLIMITED
+  fromText: from
+  perText: per month**
 faqSection:
   header: Frequently asked questions
   body: Got other questions? Visit our help center or chat live with us now.
