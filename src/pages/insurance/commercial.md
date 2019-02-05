@@ -9,7 +9,7 @@ hero:
       color: yellow
       external: true
       branch: true
-      track: ''
+      track: 'Application Download Viewed'
   features:
     - title: Underwritten by
       rightIcon: /images/uploads/allianz.png
