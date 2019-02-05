@@ -7,7 +7,9 @@ import H1 from './H1'
 import H2 from './H2'
 import SmallText from './SmallText'
 import PrimaryButton from './PrimaryButton'
+import SecondaryButton from './SecondaryButton'
 import ArrowText from './ArrowText'
+import ShowIf from './ShowIf'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -15,10 +17,12 @@ const PriceCard = ({
   fromText,
   perText,
   productType,
-  buttonText,
+  buttonOneText,
+  buttonTwoText,
   fromPrice,
   policyFeatureList,
-  buttonOneOnClick
+  buttonOneOnClick,
+  buttonTwoOnClick
 }) => (
   <Flex
     flex={3}
@@ -70,7 +74,8 @@ const PriceCard = ({
         flexDirection: 'column',
         paddingLeft: 15,
         paddingRight: 15,
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        paddingBottom: 15
       }}
     >
       <Flex flexDirection="column" pt={30} pb={30}>
@@ -91,7 +96,7 @@ const PriceCard = ({
       <PrimaryButton
         className={css({
           alignSelf: 'flex-start',
-          marginBottom: 30
+          marginBottom: 15
         })}
         onClick={buttonOneOnClick}
       >
@@ -101,10 +106,29 @@ const PriceCard = ({
               fontSize: 17
             })}
           >
-            {buttonText}
+            {buttonOneText}
           </p>
         </ArrowText>
       </PrimaryButton>
+
+      <ShowIf predicate={R.not(R.isNil(buttonTwoText))}>
+        <SecondaryButton
+          className={css({
+            alignSelf: 'flex-start',
+          })}
+          onClick={buttonTwoOnClick}
+        >
+          <ArrowText moveOnHover={false}>
+            <p
+              className={css({
+                fontSize: 17
+              })}
+            >
+              {buttonTwoText}
+            </p>
+          </ArrowText>
+        </SecondaryButton>
+      </ShowIf>
     </Flex>
   </Flex>
 )

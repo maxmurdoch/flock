@@ -44,7 +44,7 @@ const whatIsCovered = ({
             productType={productType}
             fromText={fromText}
             perText={perText}
-            buttonText={buttonText}
+            buttonOneText={buttonText}
             fromPrice={fromPrice}
             policyFeatureList={policyFeatureList}
             buttonOneOnClick={() => window.open('https://my.flockcover.com')}

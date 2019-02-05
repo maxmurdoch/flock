@@ -33,6 +33,75 @@ stopWorrying:
 productTabs:
   title: Find the cover that's right for you
   description: We offer different policies for each type of pilot - whether you're operating commercially, completing your training, or just flying for fun.
+  customerTypeList:
+    - commercial:
+      title: Commercial operator
+      customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent)
+      productCards:
+        - productType: PAY-AS-YOU-FLY
+          buttonOneText: GET A QUOTE
+          buttonTwoText: LEARN MORE
+          fromPrice: £4.95
+          policyFeatureList:
+            - text: On-demand cover for 1-8 hours
+            - text: Customise your cover per flight
+            - text: Up to £25M drone and accessory cover
+            - text: Public Liability insurance up to £10M
+          fromText: from
+          perText: per flight
+        - productType: FLY UNLIMITED
+          buttonOneText: GET A QUOTE
+          buttonTwoText: LEARN MORE
+          fromPrice: £24.95
+          policyFeatureList:
+            - text: Unlimited commercial flights in the UK
+            - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
+            - text: Public Liability insurance up to £10M
+            - text: Option to extend cover worldwide  
+          fromText: from
+          perText: per month
+    - training:
+      title: Pilot in training
+      productCards:
+        - productType: PAY-AS-YOU-FLY
+          buttonOneText: GET A QUOTE
+          buttonTwoText: LEARN MORE
+          fromPrice: £4.95
+          policyFeatureList:
+            - text: On-demand cover for 1-8 hours
+            - text: Customise your cover per flight
+            - text: Up to £25M drone and accessory cover
+            - text: Public Liability insurance up to £10M
+          fromText: from
+          perText: per flight
+    - recreational:
+      title: Recreational pilot
+      productCards:
+        - productType: PAY-AS-YOU-FLY
+          buttonOneText: GET A QUOTE
+          buttonTwoText: LEARN MORE
+          fromPrice: £4.95
+          policyFeatureList:
+            - text: On-demand cover for 1-8 hours
+            - text: Customise your cover per flight
+            - text: Up to £25M drone and accessory cover
+            - text: Public Liability insurance up to £10M
+          fromText: from
+          perText: per flight
+    - enterprise:
+      title: Enterprise
+      productCards:
+        - productType: FLY UNLIMITED
+          buttonOneText: GET A QUOTE
+          buttonTwoText: LEARN MORE
+          fromPrice: £24.95
+          policyFeatureList:
+            - text: Unlimited commercial flights in the UK
+            - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
+            - text: Public Liability insurance up to £10M
+            - text: Option to extend cover worldwide  
+          fromText: from
+          perText: per month
 secondTestimonial:
   - author: 'Keith, Land Surveyor'
     image: /images/uploads/testimonial/3.jpg

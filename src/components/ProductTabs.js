@@ -2,6 +2,9 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import {css} from 'react-emotion'
+import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
+
+import 'react-tabs/style/react-tabs.css'
 
 import H2 from './H2'
 import BodyText from './BodyText'
@@ -10,26 +13,57 @@ import SiteContainer from './SiteContainer'
 import ShowIf from './ShowIf'
 import Flex from './Flex'
 import Box from './Box'
-import ProductTabItem from './ProductTabItem'
+import ProductCard from './PriceCard'
 
-const mapIndex = R.addIndex(R.map)
+
 
 class ProductTabs extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeTab: props.children[0].props.label
-    }
+  renderTabs = customerTypeList =>
+    customerTypeList.map(({title}) => <Tab key={title}>{title}</Tab>)
+
+  renderTabPanel = customerTypeList => {
+    return customerTypeList.map(({title, customerTypeDesc, productCards}) => (
+      <TabPanel key={title}>
+        <SmallText>{customerTypeDesc}</SmallText>
+        <Flex flexDirection={['column', 'column', 'row']} >
+          {productCards && productCards.length > 0
+            ? this.renderProductCards(productCards)
+            : null}
+        </Flex>
+      </TabPanel>
+    ))
   }
 
-  onClickTabItem = tab => {
-    this.setState({activeTab: tab})
-  }
+  renderProductCards = productCards =>
+    productCards.map(
+      ({
+        productType,
+        fromText,
+        perText,
+        buttonOneText,
+        buttonTwoText,
+        fromPrice,
+        policyFeatureList
+      }) => (
+        <ProductCard
+          key={productType}
+          productType={productType}
+          fromText={fromText}
+          perText={perText}
+          buttonOneText={buttonOneText}
+          buttonTwoText={buttonTwoText}
+          fromPrice={fromPrice}
+          policyFeatureList={policyFeatureList}
+          buttonOneOnClick={() => window.open('https://my.flockcover.com')}
+        />
+      )
+    )
+
   render() {
     const {
-      onClickTabItem,
-      state: {activeTab},
-      props: {title, description, children}
+      renderTabs,
+      renderTabPanel,
+      props: {title, description, customerTypeList}
     } = this
     return (
       <Flex justifyContent="center">
@@ -45,33 +79,11 @@ class ProductTabs extends Component {
               </ShowIf>
             </Box>
 
-            <Flex flexDirection="column" >
-              <ol
-                className={css({
-                  borderBottom: '1px solid #ccc',
-                  marginLeft: 0
-                })}
-              >
-                {children.map(child => {
-                  const {label} = child.props
+            <Tabs>
+              <TabList>{renderTabs(customerTypeList)}</TabList>
 
-                  return (
-                    <ProductTabItem
-                      activeTab={activeTab}
-                      key={label}
-                      label={label}
-                      onClick={onClickTabItem}
-                    />
-                  )
-                })}
-              </ol>
-              <div>
-                {children.map(child => {
-                  if (child.props.label === activeTab)
-                    return child.props.children
-                })}
-              </div>
-            </Flex>
+              {renderTabPanel(customerTypeList)}
+            </Tabs>
           </Flex>
         </SiteContainer>
       </Flex>
