@@ -269,6 +269,28 @@ collections:
                   - name: rightIcon
                     label: Right Icon
                     widget: image
+          - name: renewalBanner
+            label: Renewal Banner
+            widget: object
+            fields:
+              - name: image
+                label: Image
+                widget: image
+              - name: mainText
+                label: Main Text
+                widget: string
+              - name: buttonText
+                label: Button Text
+                widget: string
+              - name: buttonUrl
+                label: Button URL
+                widget: string
+              - name: buttonTrack
+                label: Button Track
+                widget: select
+                options:
+                  - { label: Download, value: 'Application Download Viewed' }
+                  - { label: Web App, value: 'WebApp Navigation Clicked' }
       - name: about
         label: About
         file: "src/pages/about.md"
