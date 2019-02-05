@@ -15,7 +15,7 @@ import ShowIf from './ShowIf'
 import LargeBodyText from './LargeBodyText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import {colors, breakpoints} from '../constants/theme'
-import trackDownload from '../utils/trackDownload'
+import { downloadClickHandler } from '../utils/trackDownload'
 
 const Hero = ({
   textColor = colors.dark,
@@ -24,11 +24,13 @@ const Hero = ({
   header,
   RightSideComponent,
   description,
-  button
+  buttonOne,
+  buttonTwo,
+  buttonTwoAction
 }) => {
   const download = () => {
     trackDownload()
-    const linkAnonymousId = button.to + '?anonymous_id=' + analytics.user().anonymousId()
+    const linkAnonymousId = buttonOne.to + '?anonymous_id=' + analytics.user().anonymousId()
     // window.open(linkAnonymousId, '_blank')
     window.open('https://flockcover.test-app.link/Z85w5tgUeS')
   }
@@ -54,35 +56,64 @@ const Hero = ({
               justifyContent="center"
               flexDirection="column"
               alignItems="flex-start"
-              width={['100%', '75%', '60%']}
+              width={['100%', '75%', '64%']}
               mt={[4, 5]}
               mb={[3, 6]}
             >
               <H1
                 textShadow={textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'}
                 color={textColor}
-                mb={[2, 3]}
+                mb={[2, 2, 3]}
               >
                 {header}
               </H1>
               <LargeBodyText tag="div" color={textColor} mb={[2, 3]}>
                 <Markdown>{description}</Markdown>
               </LargeBodyText>
-              <ShowIf predicate={R.not(R.isNil(button))}>
-                <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
-                  {matches =>{
-                    return matches ? (
-                      <PrimaryButton onClick={download}>
-                        <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                      </PrimaryButton>
-                    ) : (
-                      <SecondaryButton onClick={download}>
-                        <ArrowText moveOnHover={false}>{button.text}</ArrowText>
-                      </SecondaryButton>
-                    )
-                  }}
-                </Media>
-              </ShowIf>
+              <Flex flexDirection={['column', 'column', 'row']}>
+                <ShowIf predicate={R.not(R.isNil(buttonOne))}>
+                  <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
+                    {matches => {
+                      return matches ? (
+                        <PrimaryButton
+                          onClick={download}
+                          mb={15}
+                          mr={15}
+                        >
+                          <ArrowText moveOnHover={false}>
+                            {buttonOne.text}
+                          </ArrowText>
+                        </PrimaryButton>
+                      ) : (
+                        <SecondaryButton onClick={download} mb={15}>
+                          <ArrowText moveOnHover={false}>
+                            {buttonOne.text}
+                          </ArrowText>
+                        </SecondaryButton>
+                      )
+                    }}
+                  </Media>
+                </ShowIf>
+                <ShowIf predicate={R.not(R.isNil(buttonTwo))}>
+                  <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
+                    {matches => {
+                      return matches ? (
+                        <SecondaryButton onClick={buttonTwoAction} mb={15}>
+                          <ArrowText moveOnHover={false}>
+                            {buttonTwo.text}
+                          </ArrowText>
+                        </SecondaryButton>
+                      ) : (
+                        <SecondaryButton onClick={buttonTwoAction} mb={15}>
+                          <ArrowText moveOnHover={false}>
+                            {buttonTwo.text}
+                          </ArrowText>
+                        </SecondaryButton>
+                      )
+                    }}
+                  </Media>
+                </ShowIf>
+              </Flex>
             </Flex>
             {R.not(R.isNil(RightSideComponent)) ? (
               <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
@@ -116,5 +147,6 @@ Hero.propTypes = {
   headerClassName: PropTypes.string,
   header: PropTypes.string,
   description: PropTypes.string,
-  button: PropTypes.object
+  buttonOne: PropTypes.object,
+  buttonTwo: PropTypes.object
 }

@@ -1,6 +1,4 @@
 import React from 'react'
-import R from 'ramda'
-import Media from 'react-media'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
@@ -15,7 +13,6 @@ import DownloadFlock from '../components/DownloadFlock'
 import Featured from '../components/Featured'
 import OtherProducts from '../components/OtherProducts'
 import ToggleiPhone from '../components/ToggleiPhone'
-import CalculateRiskFlat from '../components/CalculateRiskFlat'
 import ShowIf from '../components/ShowIf'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import FlightSchool from '../components/FlightSchool'
@@ -24,7 +21,7 @@ import MapBackground from '../components/MapBackground'
 
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
-import {colors, breakpoints} from '../constants/theme'
+import {colors} from '../constants/theme'
 
 const SegmentPageTemplate = ({data}) => {
   const {
@@ -60,7 +57,7 @@ const SegmentPageTemplate = ({data}) => {
             textColor={colors.white}
             header={hero.header}
             description={hero.description}
-            button={hero.button}
+            buttonOne={hero.button}
           />
           <Box mt={[3, 5]}>
             <TextGrid
