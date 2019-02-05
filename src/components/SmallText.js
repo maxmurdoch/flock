@@ -1,9 +1,11 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import {css, cx} from 'react-emotion'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
+import remark from 'remark'
+import remark2react from 'remark-react'
 
 const SmallText = ({
   children,
@@ -13,27 +15,17 @@ const SmallText = ({
   ...props
 }) => {
   if (typeof(children) === 'string') {
-    const matches = children.match(/\[([^\[\]]+)\]\(([^)]+)/)
-    if(!matches) {
-      return(<Text
+    return (
+      <Text
+        tag="div"
         fontWeight={fontWeight}
         mb={mb}
         className={cx(style.smallTextStyle, className)}
         {...props}
-      >{children}</Text>)
-    } else {
-      const splitText = children.split(`[${matches[1]}](${matches[2]})`)
-      const internalHtml = splitText.join(`<a class='inline-link' href='${matches[2]}'>${matches[1]}</a>`)
-      return(
-        <Text
-          fontWeight={fontWeight}
-          mb={mb}
-          className={cx(style.smallTextStyle, className)}
-          {...props}
-          dangerouslySetInnerHTML={{ __html: internalHtml }}
-        ></Text>
-      )
-    }
+      >
+        {remark().use(remark2react).processSync(children).contents}
+      </Text>
+    )
   } else {
     return(
       <Text

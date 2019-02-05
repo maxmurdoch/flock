@@ -15,7 +15,7 @@ import ShowIf from './ShowIf'
 import LargeBodyText from './LargeBodyText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import {colors, breakpoints} from '../constants/theme'
-import trackDownload from '../utils/trackDownload'
+import { downloadClickHandler } from '../utils/trackDownload'
 
 const Hero = ({
   textColor = colors.dark,
@@ -29,7 +29,7 @@ const Hero = ({
   buttonTwoAction
 }) => {
   const download = () => {
-    trackDownload()
+    downloadClickHandler()
     const linkAnonymousId =
       buttonOne.to + '?anonymous_id=' + analytics.user().anonymousId()
     window.open(linkAnonymousId, '_blank')

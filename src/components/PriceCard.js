@@ -17,7 +17,8 @@ const PriceCard = ({
   productType,
   buttonText,
   fromPrice,
-  policyFeatureList
+  policyFeatureList,
+  buttonOneOnClick
 }) => (
   <Flex
     flex={3}
@@ -92,6 +93,7 @@ const PriceCard = ({
           alignSelf: 'flex-start',
           marginBottom: 30
         })}
+        onClick={buttonOneOnClick}
       >
         <ArrowText moveOnHover={false}>
           <p

@@ -8,13 +8,12 @@ import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import {breakpoints, fontFamilies} from '../constants/theme'
 import Text from './Text'
+import { webAppClickhandler } from '../utils/trackDownload'
 
 const RenewalBanner = ({image, mainText, buttonText}) => {
   const download = () => {
-    trackDownload()
-    const linkAnonymousId =
-      buttonOne.to + '?anonymous_id=' + analytics.user().anonymousId()
-    window.open(linkAnonymousId, '_blank')
+    webAppClickhandler()
+    window.open('https://my.flockcover.com')
   }
 
   return (
@@ -43,15 +42,13 @@ const RenewalBanner = ({image, mainText, buttonText}) => {
           >
             {mainText}
           </Text>
-          <PrimaryButton   className={css({
-              alignSelf: 'flex-start'
-            })} onClick={download}>
+          <PrimaryButton className={cx(
+            css`
+              ${styles.renewalButton};
+            `
+          )} onClick={download}>
             <ArrowText moveOnHover={false}>
-              <p
-                className={css({
-                  fontSize: 17
-                })}
-              >
+              <p>
                 {buttonText}
               </p>
             </ArrowText>
@@ -73,6 +70,15 @@ const styles = {
     position: 'relative',
     backgroundSize: 'cover'
   }),
+
+  renewalButton: `
+    font-size: 17;
+    align-self: 'flex-start';
+    @media (max-width: ${R.nth(0, breakpoints)}) {
+      text-align: left;
+      font-size: 15px;
+    }
+  `,
 
   text: `
     font-family: ${fontFamilies.itc};
