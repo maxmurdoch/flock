@@ -6,8 +6,9 @@ hero:
     text: Get a quote
     to: 'https://flockcover.app.link/6IW6kTmgfP'
   description: >-
-    Welcome to fully flexible insurance you control. In a couple of taps, get
-    covered for an hour, day or month - whatever suits you.
+    Welcome to fully flexible insurance you control. In a couple of taps, get covered for an hour, day or month - whatever suits you.
+
+    Join thousands of pilots using Flock Cover today
   header: 'Simpler, smarter drone insurance'
 stopWorrying:
   description: >-

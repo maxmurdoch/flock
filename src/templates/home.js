@@ -66,7 +66,24 @@ const HomeTemplate = ({
             <ProductTabs
               title={productTabs.title}
               description={productTabs.description}
-            />
+            >
+              <Tab title="Commerical Ooperator">
+
+              </Tab>
+
+              <div label="Commercial pilot">
+                LOL
+              </div>
+              <div label="Pilot in training">
+                LOLATRON
+              </div>
+              <div label="Recreational pilot">
+                LOLDOG MILLIONAIRE
+              </div>
+              <div label="Enterprise">
+                LOLOCAPLOPS
+              </div>
+            </ProductTabs>
           </Box>
         </div>
 
@@ -89,6 +106,28 @@ const HomeTemplate = ({
     </StickyContainer>
   )
 }
+
+const Tabs = ({ children }) => {
+  const items = React.Children.toArray(children)
+
+  return (
+    <div>
+      <div>
+        {items.map(item => {
+          return (
+            <button>{item.props.title}</button>
+          )
+        })}
+      </div>
+
+      <div>
+        {items[selectedInded].props.children}
+      </div>
+    </div>
+  )
+}
+
+const Tab  = ({ title, children }) => {}
 
 const style = {
   iphone: css({

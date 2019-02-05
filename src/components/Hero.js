@@ -15,7 +15,7 @@ import ShowIf from './ShowIf'
 import LargeBodyText from './LargeBodyText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import {colors, breakpoints} from '../constants/theme'
-import { downloadClickHandler } from '../utils/trackDownload'
+import {downloadClickHandler} from '../utils/trackDownload'
 
 const Hero = ({
   textColor = colors.dark,
@@ -68,18 +68,14 @@ const Hero = ({
                 {header}
               </H1>
               <LargeBodyText tag="div" color={textColor} mb={[2, 3]}>
-                <Markdown>{description}</Markdown>
+                {description}
               </LargeBodyText>
               <Flex flexDirection={['column', 'column', 'row']}>
                 <ShowIf predicate={R.not(R.isNil(buttonOne))}>
                   <Media query={`(min-width: ${R.nth(1, breakpoints)})`}>
                     {matches => {
                       return matches ? (
-                        <PrimaryButton
-                          onClick={download}
-                          mb={15}
-                          mr={15}
-                        >
+                        <PrimaryButton onClick={download} mb={15} mr={15}>
                           <ArrowText moveOnHover={false}>
                             {buttonOne.text}
                           </ArrowText>
