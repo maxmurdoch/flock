@@ -46,8 +46,6 @@ flightSchool:
       to: 'https://dronetraining.co.uk/'
     - image: ../../images/uploads/aerial-motion-pictures.png
       to: 'https://www.aerialmotionpictures.co.uk/'
-    - image: /images/uploads/airborne.png
-      to: 'https://www.airbornetraining.org/'
     - image: /images/uploads/copters.png
       to: 'https://www.coptrz.com/'
     - image: ../../images/uploads/drone-partners.png
