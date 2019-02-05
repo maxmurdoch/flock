@@ -178,6 +178,7 @@ export const query = graphql`
           title
           description
           list {
+            icon
             title
             text
           }
