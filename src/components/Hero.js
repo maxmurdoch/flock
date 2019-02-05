@@ -22,25 +22,9 @@ const Hero = ({
   header,
   RightSideComponent,
   description,
-  // --- New Props --- //
   buttons = [],
-  features = [],
-  // --- Deprecated --- //
-  buttonOne,
-  buttonTwo,
-  buttonTwoAction
+  features = []
 }) => {
-  if (buttonOne || buttonTwo || buttonTwoAction) {
-    console.warn('DEPRECATED PROPS')
-  }
-
-  // TODO: Generalize this...
-  const download = () => {
-    downloadClickHandler()
-    const linkAnonymousId =
-      buttonOne.to + '?anonymous_id=' + analytics.user().anonymousId()
-    window.open(linkAnonymousId, '_blank')
-  }
   return (
     <Flex
       flexDirection="column"
@@ -85,6 +69,8 @@ const Hero = ({
                       to={button.to}
                       color={button.color}
                       external={button.external}
+                      branch={button.branch}
+                      track={button.track}
                       mb={15}
                       mr={15}
                     >

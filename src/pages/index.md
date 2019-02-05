@@ -8,6 +8,8 @@ hero:
       to: 'https://flockcover.app.link/6IW6kTmgfP'
       color: yellow
       external: true
+      branch: true
+      track: ''
   features:
     - title: Underwritten by
       rightIcon: /images/uploads/allianz.png

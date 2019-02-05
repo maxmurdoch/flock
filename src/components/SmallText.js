@@ -14,6 +14,8 @@ const SmallText = ({
   mb = 0,
   ...props
 }) => {
+  console.log(typeof children)
+
   if (typeof(children) === 'string') {
     return (
       <Text

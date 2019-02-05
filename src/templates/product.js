@@ -57,7 +57,8 @@ const SegmentPageTemplate = ({data}) => {
             textColor={colors.white}
             header={hero.header}
             description={hero.description}
-            buttonOne={hero.button}
+            buttons={hero.buttons}
+            features={hero.features}
           />
           <Box mt={[3, 5]}>
             <TextGrid
@@ -132,9 +133,18 @@ export const query = graphql`
       frontmatter {
         title
         hero {
-          button {
-            text
+          buttons {
+            title
             to
+            color
+            external
+            branch
+            track
+          }
+          features {
+            leftIcon
+            title
+            rightIcon
           }
           description
           header

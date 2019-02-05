@@ -48,9 +48,19 @@ collections:
                     options:
                       - { label: Yellow, value: yellow }
                       - { label: Black, value: black }
+                    default: yellow
                   - name: external
                     label: External
                     widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
               - name: features
                 label: Features
                 widget: list
@@ -233,9 +243,19 @@ collections:
                     options:
                       - { label: Yellow, value: yellow }
                       - { label: Black, value: black }
+                    default: yellow
                   - name: external
                     label: External
                     widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
               - name: features
                 label: Features
                 widget: list
@@ -249,7 +269,6 @@ collections:
                   - name: rightIcon
                     label: Right Icon
                     widget: image
-
       - name: about
         label: About
         file: "src/pages/about.md"
@@ -260,8 +279,57 @@ collections:
             label: Hero
             widget: object
             fields:
-              - {name: 'backgroundImage', label: Background image, widget: 'image'}
-              - {name: 'header', label: 'Header', widget: 'string'}
+              - name: backgroundImage
+                label: Background Image
+                widget: image
+              - name: header
+                label: Header
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: buttons
+                label: Buttons
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: to
+                    label: To
+                    widget: string
+                  - name: color
+                    label: Color
+                    widget: select
+                    options:
+                      - { label: Yellow, value: yellow }
+                      - { label: Black, value: black }
+                    default: yellow
+                  - name: external
+                    label: External
+                    widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: leftIcon
+                    label: Left Icon
+                    widget: image
+                  - name: rightIcon
+                    label: Right Icon
+                    widget: image
           - name: flockStory
             label: Flock story
             widget: object
@@ -317,15 +385,57 @@ collections:
         label: Hero
         widget: object
         fields:
-          - name: 'button'
-            label: 'Button'
-            widget: 'object'
+          - name: backgroundImage
+            label: Background Image
+            widget: image
+          - name: header
+            label: Header
+            widget: string
+          - name: description
+            label: Description
+            widget: markdown
+          - name: buttons
+            label: Buttons
+            widget: list
             fields:
-              - {name: 'text', label: 'Text', widget: 'string'}
-              - {name: 'to', label: 'To', widget: 'string'}
-          - {name: 'description', label: 'Description', widget: 'markdown'}
-          - {name: 'header', label: 'Header', widget: 'string'}
-          - {name: 'backgroundImage', label: 'Background image', widget: 'image'}
+              - name: title
+                label: Title
+                widget: string
+              - name: to
+                label: To
+                widget: string
+              - name: color
+                label: Color
+                widget: select
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                default: yellow
+              - name: external
+                label: External
+                widget: boolean
+              - name: branch
+                label: Branch
+                widget: boolean
+              - name: track
+                label: Track
+                widget: select
+                options:
+                  - { label: Download, value: 'Application Download Viewed' }
+                  - { label: Web App, value: 'WebApp Navigation Clicked' }
+          - name: features
+            label: Features
+            widget: list
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: leftIcon
+                label: Left Icon
+                widget: image
+              - name: rightIcon
+                label: Right Icon
+                widget: image
       - label: 'Why'
         name: 'why'
         widget: 'object'

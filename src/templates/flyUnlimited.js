@@ -19,18 +19,6 @@ import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
 
 class FlyUnlimitedPageTemplate extends Component {
-  constructor(props) {
-    super(props)
-    this.whatIsCoveredRef = React.createRef() // Create a ref object
-  }
-
-  scrollToWhatIsCoveredRef = () => {
-    window.scrollTo({
-      top: this.whatIsCoveredRef.current.offsetTop,
-      behavior: 'smooth'
-    })
-  }
-
   render() {
     const {
       hero,
@@ -94,9 +82,7 @@ class FlyUnlimitedPageTemplate extends Component {
               />
             </Box>
 
-            <div ref={this.whatIsCoveredRef}>
-              <BigSectionLine />
-            </div>
+            <BigSectionLine id="what-is-covered" />
 
             <WhatIsCoveredSection
               mainTitle={whatIsCovered.mainTitle}
@@ -157,6 +143,8 @@ export const query = graphql`
             to
             color
             external
+            branch
+            track
           }
           features {
             leftIcon

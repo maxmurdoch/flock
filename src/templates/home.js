@@ -213,6 +213,8 @@ export const query = graphql`
             to
             color
             external
+            branch
+            track
           }
           features {
             leftIcon

@@ -3,9 +3,20 @@ title: Trainee
 templateKey: product
 hero:
   backgroundImage: ../../images/uploads/trainee-header.jpg
-  button:
-    text: Download
-    to: 'https://flockcover.app.link/6IW6kTmgfP'
+  buttons:
+    - title: Download
+      to: 'https://flockcover.app.link/6IW6kTmgfP'
+      color: yellow
+      external: true
+      branch: true
+      track: ''
+  features:
+    - title: Underwritten by
+      rightIcon: /images/uploads/allianz.png
+    - leftIcon: /images/uploads/black-tick-icon.png
+      title: FCA & CAA compliant
+    - leftIcon: /images/uploads/support-icon.png
+      title: Instant customer support
   description: |-
     * Flight assessment and training insurance from £5.95
     * Drone and accessory cover (up to £3,000)

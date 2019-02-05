@@ -8,10 +8,14 @@ hero:
       to: 'https://my.flockcover.com'
       color: yellow
       external: true
+      branch: false
+      track: ''
     - title: What's covered?
       to: '#what-is-covered'
       color: black
       external: true
+      branch: false
+      track: ''
   features:
     - title: Underwritten by
       rightIcon: /images/uploads/allianz.png
