@@ -105,17 +105,38 @@ faqSection:
   body: Got other questions? Visit our help centre, or chat live with us now.
   buttonText: VIEW ALL FAQs
   buttonUrl: https://help.flockcover.com/
-  faqList:
-    - text: Are there any long-term commitments with Fly Unlimited?
-      url: http://help.flockcover.com/policies-and-coverage/are-there-any-long-term-commitments-with-fly-unlimited
-    - text: Can I adjust, or cancel, my policy?
-      url: https://help.flockcover.com/policies-and-coverage/can-i-adjust-or-cancel-my-fly-unlimited-policy
-    - text: Can I get covered abroad?
-      url: https://help.flockcover.com/policies-and-coverage/can-i-get-covered-abroad
-    - text: Is Fly Unlimited CAA compliant?
-      url: http://help.flockcover.com/drone-regulation/is-fly-unlimited-caa-compliant
-    - text: How do I make a claim?
-      url: https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim
+  disclosureIndicator: /images/uploads/small-arrow-yellow.svg
+  faqs:
+    - title: Are there any long-term commitments with Fly Unlimited?
+      body: >-
+        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
+
+
+        [Click here](http://help.flockcover.com/policies-and-coverage/are-there-any-long-term-commitments-with-fly-unlimited) to find out more
+    - title: Can I adjust, or cancel, my policy?
+      body: >-
+        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
+
+
+        [Click here](https://help.flockcover.com/policies-and-coverage/can-i-adjust-or-cancel-my-fly-unlimited-policy) to find out more
+    - title: Can I get covered abroad?
+      body: >-
+        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
+
+
+        [Click here](https://help.flockcover.com/policies-and-coverage/can-i-get-covered-abroad) to find out more
+    - title: Is Fly Unlimited CAA compliant?
+      body: >-
+        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
+
+
+        [Click here](http://help.flockcover.com/drone-regulation/is-fly-unlimited-caa-compliant) to find out more
+    - title: Is Fly Unlimited CAA compliant?
+      body: >-
+        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
+
+
+        [Click here](https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim) to find out more
 siteMetadataOverride:
   description: drone insurance
   keywords:

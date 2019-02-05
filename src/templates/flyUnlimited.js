@@ -105,12 +105,11 @@ class FlyUnlimitedPageTemplate extends Component {
           <Box className={css({backgroundColor: 'white'})}>
             <FUfaqSection
               header={faqSection.header}
-              body={
-                faqSection.body
-              }
+              body={faqSection.body}
               buttonText={faqSection.buttonText}
               buttonUrl={faqSection.buttonUrl}
-              faqList={faqSection.faqList}
+              disclosureIndicator={faqSection.disclosureIndicator}
+              faqs={faqSection.faqs}
             />
           </Box>
 
@@ -207,9 +206,10 @@ export const query = graphql`
           body
           buttonText
           buttonUrl
-          faqList {
-            text
-            url
+          disclosureIndicator
+          faqs {
+            title
+            body
           }
         }
         siteMetadataOverride {
