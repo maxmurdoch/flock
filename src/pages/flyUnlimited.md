@@ -3,12 +3,26 @@ title: FlyUnlimited
 templateKey: flyUnlimited
 hero:
   backgroundImage: ../../images/uploads/fly-unlimited-header.jpg
-  buttonOne:
-    text: Get a quote
-    to: 'https://my.flockcover.com'
-  buttonTwo:
-    text: What's covered?
-    to: 'https://flockcover.app.link/6IW6kTmgfP'
+  buttons:
+    - title: Get a quote
+      to: 'https://my.flockcover.com'
+      color: yellow
+      external: true
+      branch: false
+      track: ''
+    - title: What's covered?
+      to: '#what-is-covered'
+      color: black
+      external: true
+      branch: false
+      track: ''
+  features:
+    - title: Underwritten by
+      rightIcon: /images/uploads/allianz.png
+    - leftIcon: /images/uploads/black-tick-icon.png
+      title: FCA & CAA compliant
+    - leftIcon: /images/uploads/support-icon.png
+      title: Instant customer support
   description: Introducing Fly Unlimited, our new subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
 why:

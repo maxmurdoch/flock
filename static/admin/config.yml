@@ -16,18 +16,64 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Template key", name: "templateKey", widget: "string"}
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
+          - label: Download Link
+            name: downloadLink
+            widget: string
+          - name: hero
+            label: Hero
+            widget: object
             fields:
-              - {label: "Header", name: "header", widget: "string"}
-              - {label: "Description", name: "description", widget: "string"}
-              - name: "button"
-                label: "Button"
-                widget: "object"
+              - name: backgroundImage
+                label: Background Image
+                widget: image
+              - name: header
+                label: Header
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: buttons
+                label: Buttons
+                widget: list
                 fields:
-                  - {label: "Text", name: "text", widget: "string"}
-                  - {label: "To", name: "to", widget: "string"}
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: to
+                    label: To
+                    widget: string
+                  - name: color
+                    label: Color
+                    widget: select
+                    options:
+                      - { label: Yellow, value: yellow }
+                      - { label: Black, value: black }
+                    default: yellow
+                  - name: external
+                    label: External
+                    widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: leftIcon
+                    label: Left Icon
+                    widget: image
+                  - name: rightIcon
+                    label: Right Icon
+                    widget: image
           - label: 'Video'
             name: video
             widget: object
@@ -162,6 +208,67 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Keywords", name: "keywords", widget: "list"}
+      - name: flyUnlimited
+        label: Fly Unlimited
+        file: "src/pages/flyunlimited.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Template Key, name: templateKey, widget: hidden, default: flyUnlimited }
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - name: backgroundImage
+                label: Background Image
+                widget: image
+              - name: header
+                label: Header
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: buttons
+                label: Buttons
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: to
+                    label: To
+                    widget: string
+                  - name: color
+                    label: Color
+                    widget: select
+                    options:
+                      - { label: Yellow, value: yellow }
+                      - { label: Black, value: black }
+                    default: yellow
+                  - name: external
+                    label: External
+                    widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: leftIcon
+                    label: Left Icon
+                    widget: image
+                  - name: rightIcon
+                    label: Right Icon
+                    widget: image
       - name: about
         label: About
         file: "src/pages/about.md"
@@ -172,8 +279,57 @@ collections:
             label: Hero
             widget: object
             fields:
-              - {name: 'backgroundImage', label: Background image, widget: 'image'}
-              - {name: 'header', label: 'Header', widget: 'string'}
+              - name: backgroundImage
+                label: Background Image
+                widget: image
+              - name: header
+                label: Header
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: buttons
+                label: Buttons
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: to
+                    label: To
+                    widget: string
+                  - name: color
+                    label: Color
+                    widget: select
+                    options:
+                      - { label: Yellow, value: yellow }
+                      - { label: Black, value: black }
+                    default: yellow
+                  - name: external
+                    label: External
+                    widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: leftIcon
+                    label: Left Icon
+                    widget: image
+                  - name: rightIcon
+                    label: Right Icon
+                    widget: image
           - name: flockStory
             label: Flock story
             widget: object
@@ -229,15 +385,57 @@ collections:
         label: Hero
         widget: object
         fields:
-          - name: 'button'
-            label: 'Button'
-            widget: 'object'
+          - name: backgroundImage
+            label: Background Image
+            widget: image
+          - name: header
+            label: Header
+            widget: string
+          - name: description
+            label: Description
+            widget: markdown
+          - name: buttons
+            label: Buttons
+            widget: list
             fields:
-              - {name: 'text', label: 'Text', widget: 'string'}
-              - {name: 'to', label: 'To', widget: 'string'}
-          - {name: 'description', label: 'Description', widget: 'markdown'}
-          - {name: 'header', label: 'Header', widget: 'string'}
-          - {name: 'backgroundImage', label: 'Background image', widget: 'image'}
+              - name: title
+                label: Title
+                widget: string
+              - name: to
+                label: To
+                widget: string
+              - name: color
+                label: Color
+                widget: select
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                default: yellow
+              - name: external
+                label: External
+                widget: boolean
+              - name: branch
+                label: Branch
+                widget: boolean
+              - name: track
+                label: Track
+                widget: select
+                options:
+                  - { label: Download, value: 'Application Download Viewed' }
+                  - { label: Web App, value: 'WebApp Navigation Clicked' }
+          - name: features
+            label: Features
+            widget: list
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: leftIcon
+                label: Left Icon
+                widget: image
+              - name: rightIcon
+                label: Right Icon
+                widget: image
       - label: 'Why'
         name: 'why'
         widget: 'object'
