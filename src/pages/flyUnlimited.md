@@ -71,6 +71,8 @@ renewalBanner:
   image: /images/uploads/renewal-drone.jpg
   mainText: Switching to Flock is easy - even before your policy has expired. Join Flock today!
   buttonText: GET A QUOTE IN 60 SECONDS
+  buttonUrl: 'https://my.flockcover.com'
+  buttonTrack: WebApp Navigation Clicked
 whatIsCovered:
   mainList:
     - icon: /images/uploads/drone.svg
