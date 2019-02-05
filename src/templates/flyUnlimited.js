@@ -63,9 +63,8 @@ class FlyUnlimitedPageTemplate extends Component {
               textColor={colors.white}
               header={hero.header}
               description={hero.description}
-              buttonOne={hero.buttonOne}
-              buttonTwo={hero.buttonTwo}
-              buttonTwoAction={this.scrollToWhatIsCoveredRef}
+              buttons={hero.buttons}
+              features={hero.features}
             />
 
             <Box mt={[3, 5]}>
@@ -153,13 +152,16 @@ export const query = graphql`
       frontmatter {
         title
         hero {
-          buttonOne {
-            text
+          buttons {
+            title
             to
+            color
+            external
           }
-          buttonTwo {
-            text
-            to
+          features {
+            leftIcon
+            title
+            rightIcon
           }
           description
           header

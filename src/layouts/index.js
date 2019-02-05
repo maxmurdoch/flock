@@ -70,6 +70,8 @@ a.inline-link:visited {
 
 class Layout extends Component {
   render() {
+    console.log(this.props)
+
     const {
       children,
       data: {
