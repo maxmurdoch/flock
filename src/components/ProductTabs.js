@@ -4,9 +4,8 @@ import R from 'ramda'
 import {css} from 'react-emotion'
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
 
-import 'react-tabs/style/react-tabs.css'
-
 import H2 from './H2'
+import H3 from './H3'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
@@ -15,24 +14,39 @@ import Flex from './Flex'
 import Box from './Box'
 import ProductCard from './PriceCard'
 
-
-
 class ProductTabs extends Component {
   renderTabs = customerTypeList =>
-    customerTypeList.map(({title}) => <Tab key={title}>{title}</Tab>)
+    customerTypeList.map(({title}) => (
+      <Tab
+        className={css({
+          display: 'inline-block',
+          cursor: 'pointer',
+          listStyle: 'none',
+          fontWeight: 'bold',
+          fontFamily: 'Chivo',
+          position: 'relative',
+          padding: '6px 25px',
+          marginBottom: 0
+        })}
+        key={title}
+      >
+        {title}
+      </Tab>
+    ))
 
-  renderTabPanel = customerTypeList => {
-    return customerTypeList.map(({title, customerTypeDesc, productCards}) => (
+  renderTabPanel = customerTypeList =>
+    customerTypeList.map(({title, customerTypeDesc, productCards}) => (
       <TabPanel key={title}>
-        <SmallText>{customerTypeDesc}</SmallText>
-        <Flex flexDirection={['column', 'column', 'row']} >
+        <SmallText className={css({color: 'white'})}>
+          {customerTypeDesc}
+        </SmallText>
+        <Flex flexDirection={['column', 'column', 'row']}>
           {productCards && productCards.length > 0
             ? this.renderProductCards(productCards)
             : null}
         </Flex>
       </TabPanel>
     ))
-  }
 
   renderProductCards = productCards =>
     productCards.map(
@@ -66,29 +80,56 @@ class ProductTabs extends Component {
       renderTabPanel,
       props: {title, description, customerTypeList}
     } = this
-    console.log(customerTypeList)
     return (
-      <Flex justifyContent="center">
-        <SiteContainer>
-          <Flex flexWrap={true} flexDirection="column">
-            <Box width={['100%', '50%']} mb={40}>
-              <ShowIf predicate={R.not(R.isEmpty(title))}>
-                <H2 markdown={true}>{title}</H2>
-              </ShowIf>
+      <React.Fragment>
+        <Flex justifyContent="center">
+          <SiteContainer>
+            <Flex flexWrap={true} flexDirection="column">
+              <Box width={['100%', '50%']} mb={50}>
+                <ShowIf predicate={R.not(R.isEmpty(title))}>
+                  <H2 markdown={true}>{title}</H2>
+                </ShowIf>
 
-              <ShowIf predicate={R.not(R.isEmpty(description))}>
-                <BodyText>{description}</BodyText>
-              </ShowIf>
-            </Box>
+                <ShowIf predicate={R.not(R.isEmpty(description))}>
+                  <BodyText>{description}</BodyText>
+                </ShowIf>
+              </Box>
+            </Flex>
+          </SiteContainer>
+        </Flex>
 
-            <Tabs>
-              <TabList>{renderTabs(customerTypeList)}</TabList>
+        <Flex justifyContent="center" className={css({background: '#363636'})}>
+          <SiteContainer>
+            <Flex flexWrap={true} flexDirection="column">
+              <Tabs
+              className={css({ background: 'white'})}
+                selectedTabClassName={css({
+                  background: '#363636',
+                  color: 'white',
+                  borderTop: '5px solid #FFE001'
+                })}
+                selectedTabPanelClassName={css({
+                  display: 'block',
+                  background: '#363636',
+                  paddingTop: 20,
+                  paddingBottom: 70
+                })}
+              >
+                <TabList
+                  className={css({
+                    marginBottom: 0,
+                    marginLeft: 0
+                  })}
+                >
+                  {renderTabs(customerTypeList)}
+                </TabList>
 
-              {renderTabPanel(customerTypeList)}
-            </Tabs>
-          </Flex>
-        </SiteContainer>
-      </Flex>
+                {renderTabPanel(customerTypeList)}
+              </Tabs>
+            </Flex>
+          </SiteContainer>
+        </Flex>
+      </React.Fragment>
     )
   }
 }

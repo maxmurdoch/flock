@@ -25,7 +25,7 @@ const PriceCard = ({
   buttonTwoOnClick
 }) => (
   <Flex
-    flex={3}
+    // flex={3}
     flexDirection="column"
     className={css({
       boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
