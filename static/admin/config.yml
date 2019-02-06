@@ -16,18 +16,64 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Template key", name: "templateKey", widget: "string"}
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
+          - label: Download Link
+            name: downloadLink
+            widget: string
+          - name: hero
+            label: Hero
+            widget: object
             fields:
-              - {label: "Header", name: "header", widget: "string"}
-              - {label: "Description", name: "description", widget: "string"}
-              - name: "button"
-                label: "Button"
-                widget: "object"
+              - name: backgroundImage
+                label: Background Image
+                widget: image
+              - name: header
+                label: Header
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: buttons
+                label: Buttons
+                widget: list
                 fields:
-                  - {label: "Text", name: "text", widget: "string"}
-                  - {label: "To", name: "to", widget: "string"}
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: to
+                    label: To
+                    widget: string
+                  - name: color
+                    label: Color
+                    widget: select
+                    options:
+                      - { label: Yellow, value: yellow }
+                      - { label: Black, value: black }
+                    default: yellow
+                  - name: external
+                    label: External
+                    widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: leftIcon
+                    label: Left Icon
+                    widget: image
+                  - name: rightIcon
+                    label: Right Icon
+                    widget: image
           - label: 'Video'
             name: video
             widget: object
@@ -162,6 +208,233 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "string"}
               - {label: "Keywords", name: "keywords", widget: "list"}
+      - name: flyUnlimited
+        label: Fly Unlimited
+        file: "src/pages/flyUnlimited.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Template Key, name: templateKey, widget: hidden, default: flyUnlimited }
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - name: backgroundImage
+                label: Background Image
+                widget: image
+              - name: header
+                label: Header
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: buttons
+                label: Buttons
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: to
+                    label: To
+                    widget: string
+                  - name: color
+                    label: Color
+                    widget: select
+                    options:
+                      - { label: Yellow, value: yellow }
+                      - { label: Black, value: black }
+                    default: yellow
+                  - name: external
+                    label: External
+                    widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: leftIcon
+                    label: Left Icon
+                    widget: image
+                  - name: rightIcon
+                    label: Right Icon
+                    widget: image
+          - name: why
+            label: Why
+            widget: object
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - name: title
+                label: Title
+                widget: string
+              - name: description
+                label: Description
+                widget: string
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - name: icon
+                    label: Icon
+                    widget: image
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: body
+                    label: Body
+                    widget: markdown
+          - name: how
+            label: How
+            widget: object
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - name: title
+                label: Title
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: image
+                label: Image
+                widget: image
+              - name: policyPauseSmallPrint
+                label: Policy Pause Small Print
+                widget: string
+              - name: list
+                label: List
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: text
+                    label: Text
+                    widget: markdown
+          - name: control
+            label: Control
+            widget: object
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - name: title
+                label: Title
+                widget: string
+              - name: description
+                label: Description
+                widget: string
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - name: icon
+                    label: Icon
+                    widget: image
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: body
+                    label: Body
+                    widget: markdown
+          - name: whatIsCovered
+            label: What is covered
+            widget: object
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - name: cardTitle
+                label: Card Title
+                widget: string
+              - name: mainList
+                label: Main List
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: icon
+                    label: Icon
+                    widget: image
+              - name: mainTitle
+                label: Main Title
+                widget: string
+              - name: mainDescription
+                label: Main Description
+                widget: markdown
+              - name: smallPrints
+                label: SmallPrints
+                widget: list
+                fields:
+                  - name: text
+                    label: Text
+                    widget: string
+              - name: buttonOneText
+                label: Button One Text
+                widget: string
+              - name: buttonOneUrl
+                label: Button One URL
+                widget: string
+              - name: buttonTwoText
+                label: Button Two Text
+                widget: string
+              - name: buttonTwoUrl
+                label: Button Two URL
+                widget: string
+              - name: fromPrice
+                label: From Price
+                widget: string
+              - name: policyFeatureList
+                label: Policy Features
+                widget: list
+                fields:
+                  - name: text
+                    label: Text
+                    widget: string
+          - name: renewalBanner
+            label: Renewal Banner
+            widget: object
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - name: image
+                label: Image
+                widget: image
+              - name: mainText
+                label: Main Text
+                widget: string
+              - name: buttonText
+                label: Button Text
+                widget: string
+              - name: buttonUrl
+                label: Button URL
+                widget: string
+              - name: buttonTrack
+                label: Button Track
+                widget: select
+                options:
+                  - { label: Download, value: 'Application Download Viewed' }
+                  - { label: Web App, value: 'WebApp Navigation Clicked' }
       - name: about
         label: About
         file: "src/pages/about.md"
@@ -172,8 +445,57 @@ collections:
             label: Hero
             widget: object
             fields:
-              - {name: 'backgroundImage', label: Background image, widget: 'image'}
-              - {name: 'header', label: 'Header', widget: 'string'}
+              - name: backgroundImage
+                label: Background Image
+                widget: image
+              - name: header
+                label: Header
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: buttons
+                label: Buttons
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: to
+                    label: To
+                    widget: string
+                  - name: color
+                    label: Color
+                    widget: select
+                    options:
+                      - { label: Yellow, value: yellow }
+                      - { label: Black, value: black }
+                    default: yellow
+                  - name: external
+                    label: External
+                    widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: leftIcon
+                    label: Left Icon
+                    widget: image
+                  - name: rightIcon
+                    label: Right Icon
+                    widget: image
           - name: flockStory
             label: Flock story
             widget: object
@@ -229,15 +551,57 @@ collections:
         label: Hero
         widget: object
         fields:
-          - name: 'button'
-            label: 'Button'
-            widget: 'object'
+          - name: backgroundImage
+            label: Background Image
+            widget: image
+          - name: header
+            label: Header
+            widget: string
+          - name: description
+            label: Description
+            widget: markdown
+          - name: buttons
+            label: Buttons
+            widget: list
             fields:
-              - {name: 'text', label: 'Text', widget: 'string'}
-              - {name: 'to', label: 'To', widget: 'string'}
-          - {name: 'description', label: 'Description', widget: 'markdown'}
-          - {name: 'header', label: 'Header', widget: 'string'}
-          - {name: 'backgroundImage', label: 'Background image', widget: 'image'}
+              - name: title
+                label: Title
+                widget: string
+              - name: to
+                label: To
+                widget: string
+              - name: color
+                label: Color
+                widget: select
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                default: yellow
+              - name: external
+                label: External
+                widget: boolean
+              - name: branch
+                label: Branch
+                widget: boolean
+              - name: track
+                label: Track
+                widget: select
+                options:
+                  - { label: Download, value: 'Application Download Viewed' }
+                  - { label: Web App, value: 'WebApp Navigation Clicked' }
+          - name: features
+            label: Features
+            widget: list
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: leftIcon
+                label: Left Icon
+                widget: image
+              - name: rightIcon
+                label: Right Icon
+                widget: image
       - label: 'Why'
         name: 'why'
         widget: 'object'
