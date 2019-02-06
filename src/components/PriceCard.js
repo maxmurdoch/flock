@@ -33,39 +33,43 @@ const PriceCard = ({
       alignSelf: 'flex-start'
     })}
   >
-    <Flex
-      style={{
-        backgroundColor: '#F7F7F4',
-        padding: 15,
-        alignItems: 'center'
-      }}
-    >
-      <H2 markdown={true} mb={0}>
-        {productType}
-      </H2>
-    </Flex>
-
-    <Flex
-      flex={2}
-      p={2}
-      style={{backgroundColor: '#FFE001', flexDirection: 'column'}}
-      justifyContent="center"
-    >
-      <SmallText>{fromText}</SmallText>
-
-      <Flex alignItems="flex-end">
-        <H1 mb={0} markdown={true}>
-          {fromPrice}
-        </H1>
-        <SmallText
-          className={css({
-            marginLeft: 10
-          })}
-        >
-          {perText}
-        </SmallText>
+    {productType && (
+      <Flex
+        style={{
+          backgroundColor: '#F7F7F4',
+          padding: 15,
+          alignItems: 'center'
+        }}
+      >
+        <H2 markdown={true} mb={0}>
+          {productType}
+        </H2>
       </Flex>
-    </Flex>
+    )}
+
+    {fromPrice && (
+      <Flex
+        flex={2}
+        p={2}
+        style={{backgroundColor: '#FFE001', flexDirection: 'column'}}
+        justifyContent="center"
+      >
+        <SmallText>{fromText}</SmallText>
+
+        <Flex alignItems="flex-end">
+          <H1 mb={0} markdown={true}>
+            {fromPrice}
+          </H1>
+          <SmallText
+            className={css({
+              marginLeft: 10
+            })}
+          >
+            {perText}
+          </SmallText>
+        </Flex>
+      </Flex>
+    )}
 
     <Flex
       flex={4}
@@ -78,57 +82,67 @@ const PriceCard = ({
         paddingBottom: 15
       }}
     >
-      <Flex flexDirection="column" pt={30} pb={30}>
-        {mapIndex(
-          ({text}) => (
-            <SmallText
-              className={css({
-                fontSize: 15,
-                marginBottom: 10
-              })}
-            >
-              {text}
-            </SmallText>
-          ),
-          policyFeatureList
+      {policyFeatureList &&
+        policyFeatureList.length > 0 && (
+          <Flex flexDirection="column" pt={30} pb={30}>
+            {mapIndex(
+              ({text}) => (
+                <SmallText
+                  className={css({
+                    fontSize: 15,
+                    marginBottom: 10
+                  })}
+                >
+                  {text}
+                </SmallText>
+              ),
+              policyFeatureList
+            )}
+          </Flex>
         )}
-      </Flex>
-      <PrimaryButton
-        className={css({
-          alignSelf: 'flex-start',
-          marginBottom: 15
-        })}
-        onClick={buttonOneOnClick}
-      >
-        <ArrowText moveOnHover={false}>
-          <p
-            className={css({
-              fontSize: 17
-            })}
-          >
-            {buttonOneText}
-          </p>
-        </ArrowText>
-      </PrimaryButton>
 
-      <ShowIf predicate={R.not(R.isNil(buttonTwoText))}>
-        <SecondaryButton
-          className={css({
-            alignSelf: 'flex-start'
-          })}
-          onClick={buttonTwoOnClick}
-        >
-          <ArrowText moveOnHover={false}>
-            <p
-              className={css({
-                fontSize: 17
-              })}
-            >
-              {buttonTwoText}
-            </p>
-          </ArrowText>
-        </SecondaryButton>
-      </ShowIf>
+      {buttonOneText &&
+        buttonOneOnClick && (
+          <PrimaryButton
+            className={css({
+              alignSelf: 'flex-start',
+              marginBottom: 15,
+              cursor: 'pointer'
+            })}
+            onClick={buttonOneOnClick}
+          >
+            <ArrowText moveOnHover={false}>
+              <p
+                className={css({
+                  fontSize: 17
+                })}
+              >
+                {buttonOneText}
+              </p>
+            </ArrowText>
+          </PrimaryButton>
+        )}
+
+      {buttonTwoText &&
+        buttonTwoOnClick && (
+          <SecondaryButton
+            className={css({
+              alignSelf: 'flex-start',
+              cursor: 'pointer'
+            })}
+            onClick={buttonTwoOnClick}
+          >
+            <ArrowText moveOnHover={false}>
+              <p
+                className={css({
+                  fontSize: 17
+                })}
+              >
+                {buttonTwoText}
+              </p>
+            </ArrowText>
+          </SecondaryButton>
+        )}
     </Flex>
   </Flex>
 )

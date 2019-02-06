@@ -12,6 +12,7 @@ hero:
   description: Introducing Fly Unlimited, our new subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
 why:
+  hidden: false
   description: With Fly Unlimited, you’ll receive all the benefits you’d expect from an annual policy - without the long-term commitment.
   list:
     - icon: /images/uploads/infinity.svg
@@ -28,6 +29,7 @@ why:
       title: Out-of-flight protection
   title: 'Designed for frequent flyers'
 how:
+  hidden: false
   description: >-
     We’re redefining insurance. With Fly Unlimited, you control your policy. At all times.
   list:
@@ -44,6 +46,7 @@ how:
   title: The first flexible cover of its kind
   policyPauseSmallPrint: Changes that increase your coverage will take effect immediately. If you downgrade, pause or cancel your cover, this will take effect on your next monthly renewal date.
 control:
+  hidden: false
   description: We know that plans can change. That’s why we’ve made it easy for you to only pay for the cover you need.
   list:
     - text: >-
@@ -54,13 +57,17 @@ control:
       title: Need the odd job covered?
   title: Control your costs throughout the year
 renewalBanner:
+  hidden: false
   image: /images/uploads/renewal-drone.jpg
   mainText: Switching to Flock is easy - even before your policy has expired. Join Flock today!
   buttonText: GET A QUOTE IN 60 SECONDS
+  buttonUrl: 'https://my.flockcover.com'
+  buttonTrack: WebApp Navigation Clicked
 whatIsCovered:
+  hidden: false
   mainList:
     - icon: /images/uploads/drone.svg
-      title: Drones & accessories      
+      title: Drones & accessories
     - icon: /images/uploads/shield.svg
       title: 3rd party liability
     - icon: /images/uploads/binoculars.svg
@@ -76,9 +83,12 @@ whatIsCovered:
     - icon: /images/uploads/megaphone.svg
       title: Noise complaints
   mainTitle: What's covered?
-  priceSmallPrint: Prices depend on factors such as experience, equipment and claims history.
-  pilotSmallPrint: Available if multiple pilots are operating under a single PfCO.
+  mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
+  smallPrints:
+    - text: \** Prices depend on factors such as experience, equipment and claims history.
+    - text: \+ Available if multiple pilots are operating under a single PfCO.
   buttonText: GET A QUOTE
+  buttonUrl: 'https://my.flockcover.com'
   fromPrice: £24.95
   samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
   policyFeatureList:

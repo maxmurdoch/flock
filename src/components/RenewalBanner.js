@@ -8,7 +8,7 @@ import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import {breakpoints, fontFamilies} from '../constants/theme'
 import Text from './Text'
-import { webAppClickhandler } from '../utils/trackDownload'
+import {webAppClickhandler} from '../utils/trackDownload'
 
 const RenewalBanner = ({image, mainText, buttonText}) => {
   const download = () => {
@@ -42,15 +42,20 @@ const RenewalBanner = ({image, mainText, buttonText}) => {
           >
             {mainText}
           </Text>
-          <PrimaryButton className={cx(
-            css`
-              ${styles.renewalButton};
-            `
-          )} onClick={download}>
-            <ArrowText moveOnHover={false}>
-              <p>
-                {buttonText}
-              </p>
+          <PrimaryButton
+            className={css({
+              ...styles.renewalButton,
+              cursor: 'pointer'
+            })}
+            onClick={download}
+          >
+            <ArrowText
+              className={css({
+                fontSize: 17
+              })}
+              moveOnHover={false}
+            >
+              <p>{buttonText}</p>
             </ArrowText>
           </PrimaryButton>
         </Flex>
@@ -72,11 +77,9 @@ const styles = {
   }),
 
   renewalButton: `
-    font-size: 17;
     align-self: 'flex-start';
     @media (max-width: ${R.nth(0, breakpoints)}) {
       text-align: left;
-      font-size: 15px;
     }
   `,
 

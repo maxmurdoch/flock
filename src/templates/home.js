@@ -90,28 +90,6 @@ const HomeTemplate = ({
     </StickyContainer>
   )
 }
-//
-// const Tabs = ({ children }) => {
-//   const items = React.Children.toArray(children)
-//
-//   return (
-//     <div>
-//       <div>
-//         {items.map(item => {
-//           return (
-//             <button>{item.props.title}</button>
-//           )
-//         })}
-//       </div>
-//
-//       <div>
-//         {items[selectedInded].props.children}
-//       </div>
-//     </div>
-//   )
-// }
-//
-// const Tab  = ({ title, children }) => {}
 
 const style = {
   iphone: css({

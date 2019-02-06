@@ -16,10 +16,11 @@ import ShowIf from './ShowIf'
 const mapIndex = R.addIndex(R.map)
 
 const whatIsCovered = ({
+  id,
   mainTitle,
+  mainDescription,
   mainList,
-  priceSmallPrint,
-  pilotSmallPrint,
+  smallPrints,
   buttonText,
   fromPrice,
   policyFeatureList,
@@ -70,12 +71,12 @@ const whatIsCovered = ({
               })}
             >
               {mapIndex(
-                ({title, text, icon}) => (
+                ({title, icon}) => (
                   <Flex
                     flex="1 1 auto"
                     flexDirection="column"
                     alignItems="flex-start"
-                    width={['100%', '50%', '50%', '25%']}
+                    width={['50%', '50%', '50%', '25%']}
                     p={20}
                   >
                     <ShowIf predicate={!!icon}>
@@ -85,50 +86,38 @@ const whatIsCovered = ({
                       />
                     </ShowIf>
                     <H3>{title}</H3>
-                    <SmallText>{text}</SmallText>
                   </Flex>
                 ),
                 mainList
               )}
             </Flex>
-            <Link
-              to={samplePolicyWordingUrl}
-              className={css({
-                textDecoration: 'none',
-                color: 'inherit'
-              })}
-            >
-              <Flex mt={20} mb={20} ml={[0, 0, 20]}>
-                <SmallText>
-                  View the <b>Key Facts</b> for details of what's covered.
-                </SmallText>
-              </Flex>
-            </Link>
+
+            <Flex mt={20} mb={20} ml={[0, 0, 20]}>
+              <SmallText>{mainDescription}</SmallText>
+            </Flex>
           </Flex>
         </Flex>
 
-        <Text
-          textAlign="left"
-          className={css({
-            marginLeft: 20,
-            fontSize: 12,
-            color: 'grey',
-            marginBottom: 0
-          })}
-        >
-          ** {priceSmallPrint}
-        </Text>
-        <Text
-          textAlign="left"
-          className={css({
-            marginBottom: 20,
-            marginLeft: 20,
-            fontSize: 12,
-            color: 'grey'
-          })}
-        >
-          &#8314; {pilotSmallPrint}
-        </Text>
+        {smallPrints &&
+          smallPrints.length > 0 && (
+            <Flex flexDirection="column" pt={10} pb={10}>
+              {mapIndex(
+                ({text}) => (
+                  <SmallText
+                    textAlign="left"
+                    style={{fontSize: 14}}
+                    className={css({
+                      paddingLeft: 20,
+                      color: 'grey'
+                    })}
+                  >
+                    {text}
+                  </SmallText>
+                ),
+                smallPrints
+              )}
+            </Flex>
+          )}
       </SiteContainer>
     </Flex>
   )

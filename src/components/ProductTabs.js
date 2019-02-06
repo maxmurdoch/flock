@@ -55,6 +55,7 @@ class ProductTabs extends Component {
           fromPrice={fromPrice}
           policyFeatureList={policyFeatureList}
           buttonOneOnClick={() => window.open('https://my.flockcover.com')}
+          buttonTwoOnClick={() => window.open('https://my.flockcover.com')}
         />
       )
     )
@@ -65,6 +66,7 @@ class ProductTabs extends Component {
       renderTabPanel,
       props: {title, description, customerTypeList}
     } = this
+    console.log(customerTypeList)
     return (
       <Flex justifyContent="center">
         <SiteContainer>
