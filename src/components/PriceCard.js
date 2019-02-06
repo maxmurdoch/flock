@@ -114,11 +114,7 @@ const PriceCard = ({
       <ShowIf predicate={R.not(R.isNil(buttonTwoText))}>
         <SecondaryButton
           className={css({
-<<<<<<< Updated upstream
-            alignSelf: 'flex-start',
-=======
             alignSelf: 'flex-start'
->>>>>>> Stashed changes
           })}
           onClick={buttonTwoOnClick}
         >
