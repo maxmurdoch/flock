@@ -73,7 +73,7 @@ const PriceCard = ({
         <SmallText>{fromText}</SmallText>
 
         <Flex alignItems="flex-end">
-          <H1 mb={0} markdown={true}>
+          <H1 mb={0} markdown={true} fontSize={12}>
             {fromPrice}
           </H1>
           <SmallText

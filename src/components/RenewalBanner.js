@@ -25,7 +25,8 @@ const RenewalBanner = ({image, mainText, buttonText, buttonUrl, buttonTrack}) =>
       <SiteContainer>
         <Flex
           flexWrap="wrap"
-          justifyContent="flex-start"
+          alignItems="flex-start"
+          flexDirection='column'
           pt={[3, 5]}
           pb={[3, 5]}
           pl={2}

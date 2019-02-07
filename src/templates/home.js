@@ -64,7 +64,7 @@ const HomeTemplate = ({
         </Box>
 
         <div className={css({backgroundColor: 'white'})}>
-          <Box pt={[3, 1]} background="white">
+          <Box background="white">
             <ProductTabs
               title={productTabs.title}
               description={productTabs.description}
@@ -219,6 +219,8 @@ export const query = graphql`
             productCards {
               buttonOneText
               buttonTwoText
+              buttonOneUrl
+              buttonTwoUrl
               fromPrice
               policyFeatureList {
                 text

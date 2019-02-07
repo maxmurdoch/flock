@@ -55,6 +55,8 @@ class ProductTabs extends Component {
         perText,
         buttonOneText,
         buttonTwoText,
+        buttonOneUrl,
+        buttonTwoUrl,
         fromPrice,
         policyFeatureList,
         icon
@@ -69,8 +71,8 @@ class ProductTabs extends Component {
           buttonTwoText={buttonTwoText}
           fromPrice={fromPrice}
           policyFeatureList={policyFeatureList}
-          buttonOneOnClick={() => window.open('https://my.flockcover.com')}
-          buttonTwoOnClick={() => window.open('https://my.flockcover.com')}
+          buttonOneOnClick={() => window.open(buttonOneUrl)}
+          buttonTwoOnClick={() => window.open(buttonTwoUrl)}
           className={css({marginRight: 16, marginBottom: 16})}
         />
       )

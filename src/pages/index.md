@@ -7,7 +7,7 @@ hero:
     - branch: true
       color: yellow
       external: true
-      title: Get a price
+      title: GET A PRICE
       to: 'https://flockcover.app.link/6IW6kTmgfP'
       track: ''
   description: >-
@@ -23,101 +23,105 @@ hero:
   header: 'Simpler, smarter drone insurance'
 stopWorrying:
   description: >-
-    Our community of pilots help shape the products we create. The
-    result: flexible policies that our pilot's love, and clever tools that offer more than just insurance.
+    Our community helps to shape the products and features we build. The result: flexible policies that our pilots love, and smart tools that provide much more than just insurance.
   reasons:
     - icon: /images/uploads/infinity.svg
       text: >-
-        Forget annual contracts. Get on-demand insurance only when you fly. Or fly unlimited anywhere, anytime on a flexible month-by-month subscription.
+        Forget annual contracts. Get on-demand insurance only when you need it. Or fly with a flexible monthly policy and get covered anywhere, anytime.
       title: Fully flexible cover
     - icon: /images/uploads/globe.svg
       text: >-
-        We’ve made long paper forms a thing of the past. If something goes wrong, make claim vis a the app in a couple of taps. Or give us a call,s we're here to help.
+        We’ve made endless forms a thing of the past. If something goes wrong, make a claim via the app in a couple of taps. Or give us a call, we’re always here to help.
       title: Easy claims
     - icon: /images/uploads/shield.svg
       text: >-
-        We may be the new kid on the block, but our partners are not. Flock
-        policies are underwritten by Allianz, the world’s leading aviation
-        insurer. So you’re in safe hands.
+        We may be the new kid on the block, but our partners are not. Flock policies are underwritten by Allianz, the world’s leading aviation insurer. So you’re in safe hands.
       title: Backed by Allianz
   title: 'Built for drone pilots, with drone pilots'
 productTabs:
   title: Find the cover that's right for you
-  description: We offer different policies for each type of pilot - whether you're operating commercially, completing your training, or just flying for fun.
+  description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
   customerTypeList:
     - commercial:
       title: Commercial operator
-      customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent)
+      customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent).
       productCards:
         - productType: PAY-AS-YOU-FLY
-          buttonOneText: GET A QUOTE
-          buttonTwoText: LEARN MORE
+          buttonOneText: GET A PRICE
+          buttonTwoText: VIEW ALL FEATURES
+          buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
+          buttonTwoUrl: https://flockcover.com/insurance/commercial/
           fromPrice: £4.95
           policyFeatureList:
-            - text: On-demand cover for 1-8 hours
-            - text: Customise your cover per flight
-            - text: Up to £25M drone and accessory cover
+            - text: On-demand cover from 1-8 hours
+            - text: Customise your insurance per flight
+            - text: Up to £25K drone and accessory cover
             - text: Public Liability insurance up to £10M
           fromText: from
           perText: per flight
           icon: /images/uploads/drone.svg
         - productType: FLY UNLIMITED
-          buttonOneText: GET A QUOTE
-          buttonTwoText: LEARN MORE
+          buttonOneText: GET A PRICE
+          buttonTwoText: VIEW ALL FEATURES
+          buttonOneUrl: https://flockcover.app.link/tmXGLhZf7T
+          buttonTwoUrl: https://flockcover.com/flyunlimited/
           fromPrice: £24.95
           policyFeatureList:
-            - text: Unlimited commercial flights in the UK
-            - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
+            - text: Unlimited UK flights, plus worldwide options
+            - text: Drone and accessory cover (£25K in-flight limit)
             - text: Public Liability insurance up to £10M
-            - text: Option to extend cover worldwide  
+            - text: Theft, storage, and transit insurance  
           fromText: from
-          perText: per month
+          perText: a month
           icon: /images/uploads/drone.svg
     - training:
-      title: Pilot in training
+      title: Trainee pilot
+      customerTypeDesc: You’re a trainee pilot if you are enrolled with a licenced [NQE](https://help.flockcover.com/drone-regulation/what-is-a-national-qualified-entity-nqe), and have passed your Ground School theory test.
       productCards:
         - productType: PAY-AS-YOU-FLY
-          buttonOneText: GET A QUOTE
-          buttonTwoText: LEARN MORE
-          fromPrice: £4.95
+          buttonOneText: GET A PRICE
+          buttonTwoText: VIEW ALL FEATURES
+          buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
+          buttonTwoUrl: https://flockcover.com/insurance/trainee/
+          fromPrice: £5.95
           policyFeatureList:
-            - text: On-demand cover for 1-8 hours
-            - text: Customise your cover per flight
-            - text: Up to £25M drone and accessory cover
-            - text: Public Liability insurance up to £10M
+            - text: Flight assessment and training cover from 1-8 hours
+            - text: Drone and accessories up to £3K
+            - text: £1M Public Liability insurance
+            - text: Free proof-of-insurance for PfCO applications
           fromText: from
           perText: per flight
           icon: /images/uploads/drone.svg
     - recreational:
       title: Recreational pilot
+      customerTypeDesc: You’re a recreational pilot if you fly your drone as a hobby.
       productCards:
         - productType: PAY-AS-YOU-FLY
           buttonOneText: GET A QUOTE
           buttonTwoText: LEARN MORE
-          fromPrice: £4.95
+          buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
+          buttonTwoUrl: https://flockcover.com/insurance/recreational/
+          fromPrice: £2.95
           policyFeatureList:
-            - text: On-demand cover for 1-8 hours
-            - text: Customise your cover per flight
-            - text: Up to £25M drone and accessory cover
-            - text: Public Liability insurance up to £10M
+            - text: Short-term cover from 1-8 hours
+            - text: Public Liability insurance (£250K)
+            - text: Fly safer with a real-time flight risk assessment
           fromText: from
           perText: per flight
           icon: /images/uploads/drone.svg
     - enterprise:
-      title: Enterprise
+      title: Flock Enterprise
       productCards:
-        - productType: FLY UNLIMITED
-          buttonOneText: GET A QUOTE
-          buttonTwoText: LEARN MORE
-          fromPrice: £24.95
+        - productType: FLOCK ENTERPRISE
+          buttonOneText: FIND OUT MORE
+          fromPrice: Custom pricing
           policyFeatureList:
-            - text: Unlimited commercial flights in the UK
-            - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
-            - text: Public Liability insurance up to £10M
-            - text: Option to extend cover worldwide  
-          fromText: from
-          perText: per month
-          icon: /images/uploads/drone.svg
+            - text: Comprehensive annual risk-based cover (in-and-out of flight)
+            - text: Fully flexible equipment and Public Liability insurance
+            - text: Per-flight and portfolio risk mitigation insights
+            - text: Dedicated 24/7 customer support  
+          <!-- fromText: from -->
+          <!-- perText: per month -->
 secondTestimonial:
   - author: 'Keith, Land Surveyor'
     image: /images/uploads/testimonial/3.jpg
@@ -129,9 +133,9 @@ secondTestimonial:
     quote: Easy to use and comprehensive insurance. Would highly recommend!
 renewalBanner:
   image: /images/uploads/renewal-drone.jpg
-  mainText: Switching to Flock is easy - even before your policy has expired. Join Flock today!
-  buttonText: GET A QUOTE IN 60 SECONDS
-  buttonUrl: 'https://my.flockcover.com'
+  mainText: Take to the skies with Flock today.
+  buttonText: GET A PRICE IN 60 SECONDS
+  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
   buttonTrack: WebApp Navigation Clicked
 featured:
   image: images/uploads/featured-list.png
