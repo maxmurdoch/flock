@@ -35,7 +35,7 @@ const style = {
 
     @media (min-width: ${R.nth(1, breakpoints)}) {
       font-size: 60px;
-      line-height: 66px;
+      line-height: 60px;
     }
   `
 }

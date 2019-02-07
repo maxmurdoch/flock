@@ -60,6 +60,7 @@ productTabs:
             - text: Public Liability insurance up to £10M
           fromText: from
           perText: per flight
+          icon: /images/uploads/drone.svg
         - productType: FLY UNLIMITED
           buttonOneText: GET A QUOTE
           buttonTwoText: LEARN MORE
@@ -71,6 +72,7 @@ productTabs:
             - text: Option to extend cover worldwide  
           fromText: from
           perText: per month
+          icon: /images/uploads/drone.svg
     - training:
       title: Pilot in training
       productCards:
@@ -85,6 +87,7 @@ productTabs:
             - text: Public Liability insurance up to £10M
           fromText: from
           perText: per flight
+          icon: /images/uploads/drone.svg
     - recreational:
       title: Recreational pilot
       productCards:
@@ -99,6 +102,7 @@ productTabs:
             - text: Public Liability insurance up to £10M
           fromText: from
           perText: per flight
+          icon: /images/uploads/drone.svg
     - enterprise:
       title: Enterprise
       productCards:

@@ -226,6 +226,7 @@ export const query = graphql`
               productType
               fromText
               perText
+              icon
             }
           }
         }

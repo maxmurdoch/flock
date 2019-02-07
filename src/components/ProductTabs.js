@@ -56,10 +56,12 @@ class ProductTabs extends Component {
         buttonOneText,
         buttonTwoText,
         fromPrice,
-        policyFeatureList
+        policyFeatureList,
+        icon
       }) => (
         <ProductCard
           key={productType}
+          icon={icon}
           productType={productType}
           fromText={fromText}
           perText={perText}

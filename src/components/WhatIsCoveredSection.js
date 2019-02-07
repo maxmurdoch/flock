@@ -5,11 +5,9 @@ import R from 'ramda'
 
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
-import Link from './Link'
 import PriceCard from './PriceCard'
 import H2 from './H2'
 import H3 from './H3'
-import Text from './Text'
 import SmallText from './SmallText'
 import ShowIf from './ShowIf'
 

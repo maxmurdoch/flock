@@ -1,6 +1,7 @@
 import React from 'react'
 import {css, cx} from 'react-emotion'
 import R from 'ramda'
+import {withPrefix} from 'gatsby-link'
 
 import Flex from './Flex'
 import H1 from './H1'
@@ -9,7 +10,6 @@ import SmallText from './SmallText'
 import PrimaryButton from './PrimaryButton'
 import SecondaryButton from './SecondaryButton'
 import ArrowText from './ArrowText'
-import ShowIf from './ShowIf'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -20,6 +20,7 @@ const PriceCard = ({
   buttonOneText,
   buttonTwoText,
   fromPrice,
+  icon,
   policyFeatureList,
   buttonOneOnClick,
   buttonTwoOnClick,
@@ -44,12 +45,17 @@ const PriceCard = ({
           backgroundColor: '#F7F7F4',
           padding: 20,
           paddingBottom: 25,
-          alignItems: 'center'
+          alignItems: 'center',
+          justifyContent:'flex-end'
         }}
       >
         <H2 markdown={true} mb={0}>
           {productType}
         </H2>
+        <img
+          src={withPrefix(icon)}
+          className={css({marginBottom: 10, flex: 1})}
+        />
       </Flex>
     )}
 
