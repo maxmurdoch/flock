@@ -37,7 +37,7 @@ class ProductTabs extends Component {
   renderTabPanel = customerTypeList =>
     customerTypeList.map(({title, customerTypeDesc, productCards}) => (
       <TabPanel key={title}>
-        <SmallText className={css({color: 'white'})}>
+        <SmallText className={css({color: 'white'})} mb={4}>
           {customerTypeDesc}
         </SmallText>
         <Flex flexDirection={['column', 'column', 'row']}>
@@ -70,6 +70,7 @@ class ProductTabs extends Component {
           policyFeatureList={policyFeatureList}
           buttonOneOnClick={() => window.open('https://my.flockcover.com')}
           buttonTwoOnClick={() => window.open('https://my.flockcover.com')}
+          className={css({marginRight: 16, marginBottom: 16})}
         />
       )
     )
@@ -98,37 +99,42 @@ class ProductTabs extends Component {
           </SiteContainer>
         </Flex>
 
-        <Flex justifyContent="center" className={css({background: '#363636'})}>
-          <SiteContainer>
-            <Flex flexWrap={true} flexDirection="column">
-              <Tabs
-              className={css({ background: 'white'})}
-                selectedTabClassName={css({
-                  background: '#363636',
-                  color: 'white',
-                  borderTop: '5px solid #FFE001'
-                })}
-                selectedTabPanelClassName={css({
-                  display: 'block',
-                  background: '#363636',
-                  paddingTop: 20,
-                  paddingBottom: 70
-                })}
-              >
+        <div className={css({background: '#363636'})}>
+          <Tabs
+            selectedTabClassName={css({
+              background: '#363636',
+              color: 'white',
+              borderTop: '5px solid #FFE001'
+            })}
+            selectedTabPanelClassName={css({
+              display: 'block',
+              background: '#363636',
+              paddingTop: 30,
+              paddingBottom: 70
+            })}
+          >
+            <Flex justifyContent="center" className={css({backgroundColor: 'white'})}>
+              <SiteContainer edgeToEdge className={css({overflowX: 'scroll'})}>
                 <TabList
                   className={css({
                     marginBottom: 0,
-                    marginLeft: 0
+                    marginLeft: 0,
+                    width: '100%',
+                    display: 'flex'
                   })}
                 >
                   {renderTabs(customerTypeList)}
                 </TabList>
-
-                {renderTabPanel(customerTypeList)}
-              </Tabs>
+              </SiteContainer>
             </Flex>
-          </SiteContainer>
-        </Flex>
+
+            <Flex justifyContent="center">
+              <SiteContainer>
+                {renderTabPanel(customerTypeList)}
+              </SiteContainer>
+            </Flex>
+          </Tabs>
+        </div>
       </React.Fragment>
     )
   }

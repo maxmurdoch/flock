@@ -42,6 +42,7 @@ const whatIsCovered = ({
           pr={2}
         >
           <PriceCard
+            flex={3}
             productType={productType}
             fromText={fromText}
             perText={perText}

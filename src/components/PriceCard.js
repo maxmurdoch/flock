@@ -1,5 +1,5 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css, cx} from 'react-emotion'
 import R from 'ramda'
 
 import Flex from './Flex'
@@ -22,22 +22,28 @@ const PriceCard = ({
   fromPrice,
   policyFeatureList,
   buttonOneOnClick,
-  buttonTwoOnClick
+  buttonTwoOnClick,
+  flex = null,
+  className
 }) => (
   <Flex
-    // flex={3}
+    flex={flex}
     flexDirection="column"
-    className={css({
-      boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
-      transition: '0.3s',
-      alignSelf: 'flex-start'
-    })}
+    width={[300, 400, 400]}
+    className={cx(
+      css({
+        boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+        transition: '0.3s'
+      }),
+      className
+    )}
   >
     {productType && (
       <Flex
         style={{
           backgroundColor: '#F7F7F4',
-          padding: 15,
+          padding: 20,
+          paddingBottom: 25,
           alignItems: 'center'
         }}
       >
@@ -49,9 +55,14 @@ const PriceCard = ({
 
     {fromPrice && (
       <Flex
-        flex={2}
         p={2}
-        style={{backgroundColor: '#FFE001', flexDirection: 'column'}}
+        style={{
+          backgroundColor: '#FFE001',
+          flexDirection: 'column',
+          paddingLeft: 20,
+          paddingTop: 25,
+          paddingBottom: 25
+        }}
         justifyContent="center"
       >
         <SmallText>{fromText}</SmallText>
@@ -72,14 +83,14 @@ const PriceCard = ({
     )}
 
     <Flex
-      flex={4}
+      flex={1}
       style={{
         backgroundColor: '#F7F7F4',
         flexDirection: 'column',
-        paddingLeft: 15,
+        paddingLeft: 20,
         paddingRight: 15,
         justifyContent: 'space-between',
-        paddingBottom: 15
+        paddingBottom: 5
       }}
     >
       {policyFeatureList &&
@@ -100,7 +111,18 @@ const PriceCard = ({
             )}
           </Flex>
         )}
+    </Flex>
 
+    <Flex
+      flexDirection="column"
+      className={css({
+        backgroundColor: '#F7F7F4',
+        paddingTop: 5,
+        paddingBottom: 15,
+        paddingRight: 15,
+        paddingLeft: 20
+      })}
+    >
       {buttonOneText &&
         buttonOneOnClick && (
           <PrimaryButton
@@ -114,7 +136,8 @@ const PriceCard = ({
             <ArrowText moveOnHover={false}>
               <p
                 className={css({
-                  fontSize: 17
+                  fontSize: 17,
+                  marginRight: 10
                 })}
               >
                 {buttonOneText}
@@ -135,7 +158,8 @@ const PriceCard = ({
             <ArrowText moveOnHover={false}>
               <p
                 className={css({
-                  fontSize: 17
+                  fontSize: 17,
+                  marginRight: 10
                 })}
               >
                 {buttonTwoText}
