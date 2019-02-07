@@ -117,7 +117,7 @@ class ProductTabs extends Component {
             })}
           >
             <Flex justifyContent="center" className={css({backgroundColor: 'white'})}>
-              <SiteContainer edgeToEdge className={css({overflowX: 'scroll'})}>
+              <SiteContainer edgeToEdge className={css({overflowX: 'scroll', '-msOverflowStyle': 'none', 'webkitOverflowScrolling': 'touch' })}>
                 <TabList
                   className={css({
                     marginBottom: 0,
