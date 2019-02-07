@@ -37,7 +37,7 @@ why:
       text: >-
         Travelling abroad? Extend your cover for the month, and scale it down again when you return.  
       title: Extend your cover worldwide
-    - icon: /images/uploads/shield-icon.svg
+    - icon: /images/uploads/shield.svg
       text: >-
         Have peace of mind that your equipment is also protected with storage, transit, and theft insurance.
       title: Out-of-flight protection

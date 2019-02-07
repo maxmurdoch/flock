@@ -7,12 +7,12 @@ hero:
     - branch: true
       color: yellow
       external: true
-      title: Get a quote
+      title: Get a price
       to: 'https://flockcover.app.link/6IW6kTmgfP'
       track: ''
   description: >-
     Welcome to fully flexible insurance you control. In a couple of taps, get
-    covered for an hour, day or month - whatever suits you.
+    covered for an hour, day or month.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -117,6 +117,7 @@ productTabs:
             - text: Option to extend cover worldwide  
           fromText: from
           perText: per month
+          icon: /images/uploads/drone.svg
 secondTestimonial:
   - author: 'Keith, Land Surveyor'
     image: /images/uploads/testimonial/3.jpg

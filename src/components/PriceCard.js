@@ -46,16 +46,15 @@ const PriceCard = ({
           padding: 20,
           paddingBottom: 25,
           alignItems: 'center',
-          justifyContent:'flex-end'
+          justifyContent: 'space-between'
         }}
       >
-        <H2 markdown={true} mb={0}>
+        <H2 markdown={true} mb={0} flex={1}>
           {productType}
         </H2>
-        <img
-          src={withPrefix(icon)}
-          className={css({marginBottom: 10, flex: 1})}
-        />
+        {icon && (
+          <img src={withPrefix(icon)} className={css({marginBottom: 0})} />
+        )}
       </Flex>
     )}
 
