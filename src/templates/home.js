@@ -62,7 +62,7 @@ const HomeTemplate = ({
         </Box>
 
         <div className={css({backgroundColor: 'white'})}>
-          <Box pt={[3, 3]} background="white">
+          <Box pt={[3, 1]} background="white">
             <ProductTabs
               title={productTabs.title}
               description={productTabs.description}
