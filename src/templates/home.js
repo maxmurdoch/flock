@@ -23,6 +23,7 @@ import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
 
 const HomeTemplate = ({
   secondTestimonial,
+  downloadLink,
   hero,
   siteMetadataOverride,
   stopWorrying,
@@ -38,7 +39,7 @@ const HomeTemplate = ({
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <DarkNav to={hero.button.to} />
+        <DarkNav to={downloadLink} />
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
@@ -49,7 +50,8 @@ const HomeTemplate = ({
             header={hero.header}
             textShadow={false}
             description={hero.description}
-            buttonOne={hero.button}
+            buttons={hero.buttons}
+            features={hero.features}
           />
           <Box pt={[3, 3]} background="white">
             <TextGrid
@@ -81,7 +83,10 @@ const HomeTemplate = ({
               image={renewalBanner.image}
               mainText={renewalBanner.mainText}
               buttonText={renewalBanner.buttonText}
+              buttonUrl={renewalBanner.buttonUrl}
+              buttonTrack={renewalBanner.buttonTrack}
             />
+
           </Box>
           <Featured title={featured.title} image={featured.image} />
         </div>
@@ -125,21 +130,21 @@ export {HomeTemplate}
 
 const HomePage = ({data}) => {
   const {
-    video,
+    productTabs,
     secondTestimonial,
+    downloadLink,
     hero,
     siteMetadataOverride,
     stopWorrying,
     featured,
-    renewalBanner,
-    productTabs
+    renewalBanner
   } = data.markdownRemark.frontmatter
 
   return (
     <HomeTemplate
-      video={video}
       secondTestimonial={secondTestimonial}
       hero={hero}
+      downloadLink={downloadLink}
       siteMetadataOverride={siteMetadataOverride}
       stopWorrying={stopWorrying}
       featured={featured}
@@ -162,12 +167,22 @@ export const query = graphql`
       frontmatter {
         title
         templateKey
+        downloadLink
         hero {
           header
           description
-          button {
-            text
+          buttons {
+            title
             to
+            color
+            external
+            branch
+            track
+          }
+          features {
+            leftIcon
+            title
+            rightIcon
           }
         }
         stopWorrying {
@@ -192,6 +207,8 @@ export const query = graphql`
           image
           mainText
           buttonText
+          buttonUrl
+          buttonTrack
         }
         productTabs {
           title

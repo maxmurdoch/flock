@@ -5,7 +5,6 @@ import {css} from 'react-emotion'
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
 
 import H2 from './H2'
-import H3 from './H3'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'

@@ -30,7 +30,7 @@ const whatIsCovered = ({
   perText
 }) => {
   return (
-    <Flex justifyContent="center" pb={2}>
+    <Flex id={id} justifyContent="center" pb={2}>
       <SiteContainer>
         <Flex
           flexWrap
