@@ -68,9 +68,9 @@ productTabs:
           fromPrice: £24.95
           policyFeatureList:
             - text: Unlimited UK flights, plus worldwide options
-            - text: Drone and accessory cover (£25K in-flight limit)
-            - text: Public Liability insurance up to £10M
-            - text: Theft, storage, and transit insurance  
+            - text: Equipment and Public Liability protection
+            - text: Theft, storage and transit insurance
+            - text: Cover for multiple pilots (up to 10)
           fromText: from
           perText: a month
           icon: /images/uploads/double-drone.svg
