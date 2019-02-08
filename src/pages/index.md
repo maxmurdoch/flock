@@ -114,6 +114,7 @@ productTabs:
       productCards:
         - productType: ENTERPRISE
           buttonOneText: CONTACT US
+          buttonOneUrl: mailto:support@flockcover.com
           fromPrice: £POA
           policyFeatureList:
             - text: Comprehensive annual risk-based cover (in-and-out of flight)

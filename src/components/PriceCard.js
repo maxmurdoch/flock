@@ -53,7 +53,10 @@ const PriceCard = ({
           {productType}
         </H2>
         {icon && (
-          <img src={withPrefix(icon)} className={css({marginBottom: 0})} />
+          <img
+            src={withPrefix(icon)}
+            className={css({marginBottom: 0, height: 40})}
+          />
         )}
       </Flex>
     )}
@@ -158,7 +161,7 @@ const PriceCard = ({
               alignSelf: 'flex-start',
               cursor: 'pointer'
             })}
-            onClick={buttonTwoOnClick}
+            onClick={() => buttonTwoOnClick}
           >
             <ArrowText moveOnHover={false}>
               <p

@@ -123,9 +123,7 @@ class ProductTabs extends Component {
               <SiteContainer
                 edgeToEdge
                 className={css({
-                  overflowX: 'scroll',
-                  '-msOverflowStyle': 'none',
-                  '-webkitOverflowScrolling': 'touch'
+                  overflowX: 'scroll'
                 })}
               >
                 <TabList
