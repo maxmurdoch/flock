@@ -111,6 +111,7 @@ productTabs:
           icon: /images/uploads/drone.svg
     - enterprise:
       title: Flock Enterprise
+      customerTypeDesc: Our enterprise solution is the world’s first exposure-based drone insurance product for fleets. Call us on [+44 (0) 1234 480260](tel:4401234480260) to request a quote.
       productCards:
         - productType: ENTERPRISE
           buttonOneText: CONTACT US

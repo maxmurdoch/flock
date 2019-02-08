@@ -35,8 +35,6 @@ collections:
               - name: buttons
                 label: Buttons
                 widget: list
-<<<<<<< HEAD
-=======
                 fields:
                   - name: title
                     label: Title
@@ -66,12 +64,10 @@ collections:
               - name: features
                 label: Features
                 widget: list
->>>>>>> master
                 fields:
                   - name: title
                     label: Title
                     widget: string
-<<<<<<< HEAD
                   - name: to
                     label: To
                     widget: string
@@ -101,8 +97,6 @@ collections:
                   - name: title
                     label: Title
                     widget: string
-=======
->>>>>>> master
                   - name: leftIcon
                     label: Left Icon
                     widget: image
@@ -245,11 +239,7 @@ collections:
               - {label: "Keywords", name: "keywords", widget: "list"}
       - name: flyUnlimited
         label: Fly Unlimited
-<<<<<<< HEAD
         file: "src/pages/flyUnlimited.md"
-=======
-        file: "src/pages/flyunlimited.md"
->>>>>>> master
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Template Key, name: templateKey, widget: hidden, default: flyUnlimited }
@@ -308,7 +298,6 @@ collections:
                   - name: rightIcon
                     label: Right Icon
                     widget: image
-<<<<<<< HEAD
           - name: why
             label: Why
             widget: object
@@ -336,19 +325,14 @@ collections:
                   - name: body
                     label: Body
                     widget: markdown
-=======
->>>>>>> master
           - name: how
             label: How
             widget: object
             fields:
-<<<<<<< HEAD
               - name: hidden
                 label: Hidden
                 widget: boolean
                 default: false
-=======
->>>>>>> master
               - name: title
                 label: Title
                 widget: string
@@ -371,7 +355,6 @@ collections:
                   - name: text
                     label: Text
                     widget: markdown
-<<<<<<< HEAD
           - name: control
             label: Control
             widget: object
@@ -380,12 +363,10 @@ collections:
                 label: Hidden
                 widget: boolean
                 default: false
-=======
           - name: why
             label: Why
             widget: object
             fields:
->>>>>>> master
               - name: title
                 label: Title
                 widget: string
@@ -405,7 +386,6 @@ collections:
                   - name: body
                     label: Body
                     widget: markdown
-<<<<<<< HEAD
           - name: whatIsCovered
             label: What is covered
             widget: object
@@ -488,7 +468,6 @@ collections:
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
-=======
           - name: control
             label: Control
             widget: object
@@ -512,7 +491,6 @@ collections:
                   - name: body
                     label: Body
                     widget: markdown
->>>>>>> master
       - name: about
         label: About
         file: "src/pages/about.md"
