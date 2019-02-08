@@ -73,7 +73,7 @@ productTabs:
             - text: Theft, storage, and transit insurance  
           fromText: from
           perText: a month
-          icon: /images/uploads/drone.svg
+          icon: /images/uploads/double-drone.svg
     - training:
       title: Trainee pilot
       customerTypeDesc: You’re a trainee pilot if you are enrolled with a licenced [NQE](https://help.flockcover.com/drone-regulation/what-is-a-national-qualified-entity-nqe), and have passed your Ground School theory test.
@@ -97,8 +97,8 @@ productTabs:
       customerTypeDesc: You’re a recreational pilot if you fly your drone as a hobby.
       productCards:
         - productType: PAY-AS-YOU-FLY
-          buttonOneText: GET A QUOTE
-          buttonTwoText: LEARN MORE
+          buttonOneText: GET A PRICE
+          buttonTwoText: VIEW ALL FEATURES
           buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
           buttonTwoUrl: https://flockcover.com/insurance/recreational/
           fromPrice: £2.95
@@ -112,16 +112,15 @@ productTabs:
     - enterprise:
       title: Flock Enterprise
       productCards:
-        - productType: FLOCK ENTERPRISE
-          buttonOneText: FIND OUT MORE
-          fromPrice: Custom pricing
+        - productType: ENTERPRISE
+          buttonOneText: CONTACT US
+          fromPrice: £POA
           policyFeatureList:
             - text: Comprehensive annual risk-based cover (in-and-out of flight)
             - text: Fully flexible equipment and Public Liability insurance
             - text: Per-flight and portfolio risk mitigation insights
             - text: Dedicated 24/7 customer support  
-          <!-- fromText: from -->
-          <!-- perText: per month -->
+          icon: /images/uploads/double-drone.svg
 secondTestimonial:
   - author: 'Keith, Land Surveyor'
     image: /images/uploads/testimonial/3.jpg

@@ -116,8 +116,18 @@ class ProductTabs extends Component {
               paddingBottom: 70
             })}
           >
-            <Flex justifyContent="center" className={css({backgroundColor: 'white'})}>
-              <SiteContainer edgeToEdge className={css({overflowX: 'scroll', '-msOverflowStyle': 'none', 'webkitOverflowScrolling': 'touch' })}>
+            <Flex
+              justifyContent="center"
+              className={css({backgroundColor: 'white'})}
+            >
+              <SiteContainer
+                edgeToEdge
+                className={css({
+                  overflowX: 'scroll',
+                  '-msOverflowStyle': 'none',
+                  '-webkitOverflowScrolling': 'touch'
+                })}
+              >
                 <TabList
                   className={css({
                     marginBottom: 0,
@@ -132,9 +142,7 @@ class ProductTabs extends Component {
             </Flex>
 
             <Flex justifyContent="center">
-              <SiteContainer>
-                {renderTabPanel(customerTypeList)}
-              </SiteContainer>
+              <SiteContainer>{renderTabPanel(customerTypeList)}</SiteContainer>
             </Flex>
           </Tabs>
         </div>
