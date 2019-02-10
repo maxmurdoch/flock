@@ -161,7 +161,7 @@ const PriceCard = ({
               alignSelf: 'flex-start',
               cursor: 'pointer'
             })}
-            onClick={() => buttonTwoOnClick}
+            onClick={buttonTwoOnClick}
           >
             <ArrowText moveOnHover={false}>
               <p

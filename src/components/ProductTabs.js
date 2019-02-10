@@ -72,7 +72,10 @@ class ProductTabs extends Component {
           fromPrice={fromPrice}
           policyFeatureList={policyFeatureList}
           buttonOneOnClick={() => window.open(buttonOneUrl)}
-          buttonTwoOnClick={() => window.open(buttonTwoUrl)}
+          buttonTwoOnClick={() => {
+            console.log(buttonTwoUrl)
+            window.open(buttonTwoUrl)
+          }}
           className={css({marginRight: 16, marginBottom: 16})}
         />
       )
