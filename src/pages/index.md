@@ -129,9 +129,7 @@ productTabs:
 secondTestimonial:
   - author: 'James, Front Row Films'
     image: /images/uploads/testimonial/3.jpg
-    quote:
-      |-
-      Fly Unlimited has proved invaluable in providing me with full cover in months where I’m doing a lot of aerial filming but still retaining that level of flexibility to pause the cover if I’m flying less or doing other types of filming.
+    quote: Fly Unlimited has proved invaluable in providing me with full cover in months where I’m doing a lot of aerial filming but still retaining that level of flexibility to pause the cover if I’m flying less or doing other types of filming.
   - author: 'Calum, Aerial Photographer'
     image: /images/uploads/testimonial/4.jpg
     quote: Easy to use and comprehensive insurance. Would highly recommend!
