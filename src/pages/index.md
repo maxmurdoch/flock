@@ -7,12 +7,15 @@ hero:
     - branch: true
       color: yellow
       external: true
-      title: GET A PRICE
-      to: 'https://flockcover.app.link/6IW6kTmgfP'
+      title: GET A QUOTE
+      to: '#product-tabs'
       track: ''
   description: >-
     Welcome to fully flexible insurance you control. In a couple of taps, get
     covered for an hour, day or month.
+
+
+    Join thousands of pilots using Flock Cover today.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -33,7 +36,7 @@ stopWorrying:
       text: >-
         We’ve made endless forms a thing of the past. If something goes wrong, make a claim via the app in a couple of taps. Or give us a call, we’re always here to help.
       title: Easy claims
-    - icon: /images/uploads/shield.svg
+    - icon: /images/uploads/shield-icon.svg
       text: >-
         We may be the new kid on the block, but our partners are not. Flock policies are underwritten by Allianz, the world’s leading aviation insurer. So you’re in safe hands.
       title: Backed by Allianz
@@ -115,7 +118,7 @@ productTabs:
       productCards:
         - productType: ENTERPRISE
           buttonOneText: CONTACT US
-          buttonOneUrl: mailto:support@flockcover.com
+          buttonOneUrl: mailto:hello@flockcover.com
           fromPrice: £POA
           policyFeatureList:
             - text: Comprehensive annual risk-based cover (in-and-out of flight)
@@ -124,12 +127,12 @@ productTabs:
             - text: Dedicated 24/7 customer support  
           icon: /images/uploads/double-drone.svg
 secondTestimonial:
-  - author: 'Keith, Land Surveyor'
+  - author: 'James, Front Row Films'
     image: /images/uploads/testimonial/3.jpg
-    quote: >-
-      Fantastic app, speedy human response to any question, very cheap insurance
-      that’s easy to access. What more could you want?
-  - author: 'Calum, Aerial Photographer '
+    quote:
+      |-
+      Fly Unlimited has proved invaluable in providing me with full cover in months where I’m doing a lot of aerial filming but still retaining that level of flexibility to pause the cover if I’m flying less or doing other types of filming.
+  - author: 'Calum, Aerial Photographer'
     image: /images/uploads/testimonial/4.jpg
     quote: Easy to use and comprehensive insurance. Would highly recommend!
 renewalBanner:

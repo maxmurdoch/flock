@@ -66,6 +66,7 @@ const HomeTemplate = ({
         <div className={css({backgroundColor: 'white'})}>
           <Box background="white">
             <ProductTabs
+              id="product-tabs"
               title={productTabs.title}
               description={productTabs.description}
               customerTypeList={productTabs.customerTypeList}
@@ -86,7 +87,6 @@ const HomeTemplate = ({
               buttonUrl={renewalBanner.buttonUrl}
               buttonTrack={renewalBanner.buttonTrack}
             />
-
           </Box>
           <Featured title={featured.title} image={featured.image} />
         </div>

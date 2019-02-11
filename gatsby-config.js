@@ -7,7 +7,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: '@flockcover/gatsby-plugin-branch-web-sdk',	
+      resolve: '@flockcover/gatsby-plugin-branch-web-sdk',
       options: {
         prodBranchKey: 'key_live_jdrWlL9UY3OQcMssCT3ClbhkwvgXIaHJ',
         devBranchKey: 'key_test_olq2fIWPX0NUeGxsyG1xFhohFFj2OhL0'
@@ -43,6 +43,12 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1200
+            }
+          },
+          {
+            resolve: 'remark-external-links',
+            options: {
+              protocols: ['http', 'https', 'tel', 'mailto']
             }
           }
         ]

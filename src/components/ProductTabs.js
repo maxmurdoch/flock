@@ -73,7 +73,6 @@ class ProductTabs extends Component {
           policyFeatureList={policyFeatureList}
           buttonOneOnClick={() => window.open(buttonOneUrl)}
           buttonTwoOnClick={() => {
-            console.log(buttonTwoUrl)
             window.open(buttonTwoUrl)
           }}
           className={css({marginRight: 16, marginBottom: 16})}
@@ -85,10 +84,11 @@ class ProductTabs extends Component {
     const {
       renderTabs,
       renderTabPanel,
-      props: {title, description, customerTypeList}
+      props: {title, description, customerTypeList, id}
     } = this
     return (
       <React.Fragment>
+        <div id={id} />
         <Flex justifyContent="center">
           <SiteContainer>
             <Flex flexWrap={true} flexDirection="column">
