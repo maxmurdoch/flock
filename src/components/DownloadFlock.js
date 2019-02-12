@@ -13,7 +13,8 @@ const DownloadFlock = (to) => {
   const download = () => {
     downloadClickHandler()
     const linkAnonymousId = to.to + '?anonymous_id=' + analytics.user().anonymousId()
-    window.open(linkAnonymousId, '_blank')
+    // window.open(linkAnonymousId, '_blank')
+    window.open('https://flockcover.test-app.link/Z85w5tgUeS')
   }
   return (
     <Flex justifyContent="center">
