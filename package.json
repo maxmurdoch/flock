@@ -49,6 +49,7 @@
     "remark-external-links": "^4.0.0",
     "remark-parse": "^6.0.3",
     "remark-react": "^5.0.1",
+    "smoothscroll-polyfill": "^0.4.3",
     "styled-system": "^2.2.5",
     "validator": "^10.4.0",
     "voca": "^1.4.0"

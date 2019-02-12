@@ -7,6 +7,7 @@ import Helmet from 'react-helmet'
 import {ThemeProvider} from 'emotion-theming'
 import CookieConsent from "react-cookie-consent"
 import Media from 'react-media'
+import smoothscroll from 'smoothscroll-polyfill'
 import {breakpoints} from '../constants/theme'
 import favicon from '../images/icons/favicon.ico'
 import theme, {fontFamilies, colors} from '../constants/theme'
@@ -14,6 +15,8 @@ import './index.css'
 
 import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
 import chivo from '../fonts/chivo/Chivo-Regular.woff2'
+
+smoothscroll.polyfill()
 
 injectGlobal`
 ::selection {
