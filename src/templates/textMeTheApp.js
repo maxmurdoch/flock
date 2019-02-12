@@ -16,6 +16,11 @@ class TextMeTheAppTemplate extends Component {
     this.state = {value: '', sent: false}
     this.handleChange = this.handleChange.bind(this)
     this.sendSMS = this.sendSMS.bind(this)
+    this.setInitialValue = this.setInitialValue.bind(this)
+  }
+
+  setInitialValue() {
+    this.setState({value: '+44'})
   }
 
   handleChange(event) {
@@ -81,6 +86,7 @@ class TextMeTheAppTemplate extends Component {
         value={this.state.value}
         onChange={this.handleChange}
         style={styles.inputStyle}
+        onFocus={this.setInitialValue}
       />
     )
   }
