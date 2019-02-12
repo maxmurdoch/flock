@@ -81,7 +81,8 @@ const PriceCard = ({
           </H1>
           <SmallText
             className={css({
-              marginLeft: 10
+              marginLeft: 10,
+              lineHeight: '28px'
             })}
           >
             {perText}
