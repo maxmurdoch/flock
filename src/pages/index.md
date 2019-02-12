@@ -1,13 +1,25 @@
 ---
 title: Home
 templateKey: home
+downloadLink: 'https://flockcover.app.link/6IW6kTmgfP'
 hero:
-  button:
-    text: Get a quote
-    to: 'https://flockcover.app.link/6IW6kTmgfP'
+  buttons:
+    - branch: true
+      color: yellow
+      external: true
+      title: Get a quote
+      to: 'https://flockcover.app.link/6IW6kTmgfP'
+      track: ''
   description: >-
     Welcome to fully flexible insurance you control. In a couple of taps, get
     covered for an hour, day or month - whatever suits you.
+  features:
+    - rightIcon: /images/uploads/allianz.png
+      title: Underwritten by
+    - leftIcon: /images/uploads/black-tick-icon.png
+      title: FCA & CAA compliant
+    - leftIcon: /images/uploads/support-icon.png
+      title: Instant customer support
   header: 'Simpler, smarter drone insurance'
 video:
   coverImage: /images/uploads/testimonial/1.jpg
@@ -72,7 +84,7 @@ kindOfPilot:
         and recreational pilots.
       title: Pay-as-you-fly
     - icon: images/uploads/trainee-pilot.svg
-      link: 'https://landing.flockcover.com/flyunlimited/'
+      link: 'https://flockcover.com/flyunlimited/'
       text: >-
         Fly anywhere, anytime. Get covered for an unlimited number of flights in
         the UK or abroad on a monthly subscription. Adjust, pause, or cancel

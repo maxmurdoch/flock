@@ -18,6 +18,7 @@ import ShowIf from './ShowIf'
 const mapIndex = R.addIndex(R.map)
 
 const whatIsCovered = ({
+  id,
   mainTitle,
   mainList,
   priceSmallPrint,
@@ -28,7 +29,7 @@ const whatIsCovered = ({
   samplePolicyWordingUrl
 }) => {
   return (
-    <Flex justifyContent="center" pb={2}>
+    <Flex id={id} justifyContent="center" pb={2}>
       <SiteContainer>
         <Flex
           flexWrap

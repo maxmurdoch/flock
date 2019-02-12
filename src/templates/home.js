@@ -28,6 +28,7 @@ import mobileFlock from '../images/mobile-arrow-hero.svg'
 import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
 
 const HomeTemplate = ({
+  downloadLink,
   video,
   secondTestimonial,
   hero,
@@ -47,7 +48,7 @@ const HomeTemplate = ({
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <DarkNav to={hero.button.to}/>
+        <DarkNav to={downloadLink}/>
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
@@ -58,7 +59,8 @@ const HomeTemplate = ({
             header={hero.header}
             textShadow={false}
             description={hero.description}
-            buttonOne={hero.button}
+            buttons={hero.buttons}
+            features={hero.features}
           />
           <Box pt={[3, 5]} background="white">
             <TextGrid
@@ -109,7 +111,7 @@ const HomeTemplate = ({
             <Testimonial testimonials={secondTestimonial} />
           </Box>
           <Box pt={[3, 5]}>
-            <DownloadFlock to={hero.button.to}/>
+            <DownloadFlock to={downloadLink}/>
           </Box>
           <BigSectionLine />
           <Featured title={featured.title} image={featured.image} />
@@ -167,11 +169,13 @@ const HomePage = ({data}) => {
     featured,
     calculator,
     kindOfPilot,
-    risk
+    risk,
+    downloadLink
   } = data.markdownRemark.frontmatter
 
   return (
     <HomeTemplate
+      downloadLink={downloadLink}
       video={video}
       secondTestimonial={secondTestimonial}
       hero={hero}
@@ -200,12 +204,22 @@ export const query = graphql`
       frontmatter {
         title
         templateKey
+        downloadLink
         hero {
           header
           description
-          button {
-            text
+          buttons {
+            title
             to
+            color
+            external
+            branch
+            track
+          }
+          features {
+            leftIcon
+            title
+            rightIcon
           }
         }
         video {

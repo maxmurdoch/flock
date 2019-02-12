@@ -19,18 +19,6 @@ import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
 
 class FlyUnlimitedPageTemplate extends Component {
-  constructor(props) {
-    super(props)
-    this.whatIsCoveredRef = React.createRef() // Create a ref object
-  }
-
-  scrollToWhatIsCoveredRef = () => {
-    window.scrollTo({
-      top: this.whatIsCoveredRef.current.offsetTop,
-      behavior: 'smooth'
-    })
-  }
-
   render() {
     const {
       hero,
@@ -63,9 +51,8 @@ class FlyUnlimitedPageTemplate extends Component {
               textColor={colors.white}
               header={hero.header}
               description={hero.description}
-              buttonOne={hero.buttonOne}
-              buttonTwo={hero.buttonTwo}
-              buttonTwoAction={this.scrollToWhatIsCoveredRef}
+              buttons={hero.buttons}
+              features={hero.features}
             />
 
             <Box mt={[3, 5]}>
@@ -95,9 +82,7 @@ class FlyUnlimitedPageTemplate extends Component {
               />
             </Box>
 
-            <div ref={this.whatIsCoveredRef}>
-              <BigSectionLine />
-            </div>
+            <BigSectionLine id="what-is-covered" />
 
             <WhatIsCoveredSection
               mainTitle={whatIsCovered.mainTitle}
@@ -115,6 +100,8 @@ class FlyUnlimitedPageTemplate extends Component {
             image={renewalBanner.image}
             mainText={renewalBanner.mainText}
             buttonText={renewalBanner.buttonText}
+            buttonUrl={renewalBanner.buttonUrl}
+            buttonTrack={renewalBanner.buttonTrack}
           />
 
           <Box className={css({backgroundColor: 'white'})}>
@@ -153,13 +140,18 @@ export const query = graphql`
       frontmatter {
         title
         hero {
-          buttonOne {
-            text
+          buttons {
+            title
             to
+            color
+            external
+            branch
+            track
           }
-          buttonTwo {
-            text
-            to
+          features {
+            leftIcon
+            title
+            rightIcon
           }
           description
           header
@@ -196,6 +188,8 @@ export const query = graphql`
           image
           mainText
           buttonText
+          buttonUrl
+          buttonTrack
         }
         whatIsCovered {
           mainTitle

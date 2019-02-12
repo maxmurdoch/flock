@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import {css} from 'emotion'
 import Media from 'react-media'
@@ -8,11 +9,8 @@ import SmallText from './SmallText'
 import Flex from './Flex'
 
 import {colors, breakpoints} from '../constants/theme'
-import allianz from '../images/logo/allianz/black.png'
-import tick from '../images/icons/black-tick.png'
-import support from '../images/icons/support.png'
 
-const HeroFeaturesBanner = () => (
+const HeroFeaturesBanner = ({features}) => (
   <Flex position="relative" zIndex="1" justifyContent="center">
     <SiteContainer>
       <Flex
@@ -24,54 +22,54 @@ const HeroFeaturesBanner = () => (
         justifyContent="space-between"
         flexDirection={['column', 'row', 'row']}
       >
-        <Flex alignItems="center" mb={['6px', 0]}>
-          <SmallText>Underwritten by</SmallText>
-          <img
-            className={css({
-              marginLeft: '0.3rem',
-              width: '5rem',
-              marginBottom: 0
-            })}
-            src={allianz}
-          />
-        </Flex>
-        <Flex alignItems="center" mb={['6px', 0]}>
-          <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
-            {matches =>
-              matches ? (
+        {features.map((feature, idx) => {
+          return (
+            <Flex key={idx} alignItems="center" mb={['6px', 0]}>
+              <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
+                {matches =>
+                  matches ? (
+                    <img
+                      className={css({
+                        marginBottom: 0,
+                        marginRight: '0.5rem',
+                        width: '1rem'
+                      })}
+                      src={feature.leftIcon}
+                    />
+                  ) : null
+                }
+              </Media>
+              
+              <SmallText>
+                {feature.title}
+              </SmallText>
+              
+              {feature.rightIcon &&
                 <img
                   className={css({
-                    marginBottom: 0,
-                    marginRight: '0.5rem',
-                    width: '1rem'
+                    marginLeft: '0.3rem',
+                    width: '5rem',
+                    marginBottom: 0
                   })}
-                  src={tick}
+                  src={feature.rightIcon}
                 />
-              ) : null
-            }
-          </Media>
-          <SmallText>FCA & CAA compliant</SmallText>
-        </Flex>
-        <Flex alignItems="center" mb={0}>
-          <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
-            {matches =>
-              matches ? (
-                <img
-                  className={css({
-                    marginBottom: 0,
-                    marginRight: '0.5rem',
-                    width: '1rem'
-                  })}
-                  src={support}
-                />
-              ) : null
-            }
-          </Media>
-          <SmallText>Instant customer support</SmallText>
-        </Flex>
+              }
+            </Flex>
+          )
+        })}
       </Flex>
     </SiteContainer>
   </Flex>
 )
+
+HeroFeaturesBanner.propTypes = {
+  features: PropTypes.arrayOf(
+    PropTypes.shape({
+      leftIcon: PropTypes.string,
+      title: PropTypes.string.isRequired,
+      rightIcon: PropTypes.string
+    })
+  )
+}
 
 export default HeroFeaturesBanner
