@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import Card from '@material-ui/core/Card'
 import {StickyContainer} from 'react-sticky'
 import SiteMetadata from '../components/SiteMetadata'
@@ -9,66 +9,6 @@ import {css} from 'react-emotion'
 import Media from 'react-media'
 import arrowWhite from '../images/icons/arrow-white.svg'
 import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
-
-const styles = {
-  helperParagraph: {
-    maxWidth: '450px',
-    fontSize: '14px',
-    fontFamily: 'Chivo',
-    color: '#979797'
-  },
-  inputWrapper: {
-    display: 'flex',
-    alignItems: 'center',
-    maxHeight: '5vh',
-    flexDirection: 'row',
-    flex: 1,
-    margin: '-13px auto 40px auto',
-    paddingLeft: '16px'
-  },
-  buttonStyle: {
-    apperance: 'none',
-    display: 'inline-block',
-    minHeight: '54px',
-    padding: '0 16px',
-    background: 'black',
-    color: 'white',
-    border: 'none',
-    borderRadius: '2px',
-    boxShadow: '0 4px 12px -5px rgba(0,0,0,0.5)',
-    outline: 'none',
-    cursor: 'pointer',
-    textDecoration: 'none',
-    lineHeight: '54px',
-    textAlign: 'left',
-    marginLeft: '32px'
-  },
-  inputStyle: {
-    appearance: 'none',
-    minHeight: '54px',
-    padding: '0 16px',
-    background: 'none',
-    border: 'none',
-    outline: 'none',
-    flex: 1,
-    fontFamily: 'Chivo, sans-serif',
-    fontSize: '20px',
-    maxHeight: '5vh',
-    maxWidth: '450px',
-    backgroundColor: '#fff',
-    border: '1px solid #979797',
-    borderRadius: '2px',
-    boxShadow: '0 4px 12px -5px rgba(0,0,0,0.5)'
-  },
-  helperParagraphWrapper: {
-    display: 'flex',
-    alignItems: 'center',
-    maxHeight: '5vh',
-    flexDirection: 'row',
-    margin: '0 auto auto auto',
-    paddingLeft: '16px'
-  }
-}
 
 class TextMeTheAppTemplate extends Component {
   constructor(props) {
@@ -100,23 +40,29 @@ class TextMeTheAppTemplate extends Component {
   renderButton (textField) {
     return (
       <button style={styles.buttonStyle} onClick={this.sendSMS}>
-        <span style={{
-          display: 'flex',
-          alignItems: 'center',
-          width: '100%',
-          height: '100%;'
-        }}>
-          <span style={{
-            fontFamily: 'ITC, sans-serif',
-            fontSize: '14px',
-            fontWeight: 700,
-            flex: '1 1 auto',
-            textAlign: 'left'
-          }}>{textField.buttonText}</span>
-          <Media query="(min-width: 500px)">
+        <span style={
+          styles.buttonContainer
+        }>
+          <Media query="(min-width: 400px)">
             {(matches) => matches
-              ? <img style={{marginLeft: '24px', marginTop: '24px'}} src={arrowWhite}></img>
-              : null
+            ? <Fragment><span style={styles.buttonText}>{textField.buttonText}</span>
+              <Media query="(min-width: 610px)">
+                {(matches) => matches
+                  ? <img style={styles.buttonIcon} src={arrowWhite}></img>
+                  : null
+                }
+              </Media></Fragment>
+            : <Fragment><span style={{
+                fontSize: '14px',
+                lineHeight: '20px',
+                ...styles.buttonText
+              }}>{textField.buttonText}</span>
+              <Media query="(min-width: 610px)">
+                {(matches) => matches
+                  ? <img style={styles.buttonIcon} src={arrowWhite}></img>
+                  : null
+                }
+              </Media></Fragment>
             }
           </Media>
         </span>
@@ -157,12 +103,7 @@ class TextMeTheAppTemplate extends Component {
     const { siteMetadataOverride, header, topHalf, textField } = this.props.data.markdownRemark.frontmatter
     return (
       <StickyContainer>
-        <div className={css({
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'stretch',
-          minHeight: '100vh'
-        })}>
+        <div className={css(styles.container)}>
           <SiteMetadata
             title={siteMetadataOverride.title}
             description={siteMetadataOverride.description}
@@ -170,14 +111,7 @@ class TextMeTheAppTemplate extends Component {
           />
           <NavBarExternal backIcon={header.backIcon} backText={header.backText} backUrl={header.backUrl}/>
           <TopHalfWhite title={topHalf.title} subTitle={topHalf.subTitle}/>
-          <div className={css({
-            width: '100%',
-            display: 'flex',
-            flex: '1 1',
-            justifyContent: 'center',
-            backgroundColor: '#FFDA00',
-            flexDirection: 'column'
-          })}>
+          <div className={css(styles.bottomWrapper)}>
             <Media query="(min-width: 1024px)">
               {(matches) => matches
                 ? <div style={{
@@ -251,3 +185,95 @@ export const query = graphql`
     }
   }
 `
+
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'stretch',
+    minHeight: '100vh'
+  },
+  helperParagraph: {
+    maxWidth: '450px',
+    fontSize: '14px',
+    fontFamily: 'Chivo',
+    color: '#979797'
+  },
+  inputWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    maxHeight: '5vh',
+    flexDirection: 'row',
+    flex: 1,
+    margin: '-13px auto 40px auto',
+    paddingLeft: '16px'
+  },
+  bottomWrapper: {
+    width: '100%',
+    display: 'flex',
+    flex: '1 1',
+    justifyContent: 'center',
+    backgroundColor: '#FFDA00',
+    flexDirection: 'column'
+  },
+  buttonStyle: {
+    apperance: 'none',
+    display: 'inline-block',
+    minHeight: '54px',
+    padding: '0 16px',
+    background: 'black',
+    color: 'white',
+    border: 'none',
+    borderRadius: '2px',
+    boxShadow: '0 4px 12px -5px rgba(0,0,0,0.5)',
+    outline: 'none',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    lineHeight: '54px',
+    textAlign: 'left',
+    marginLeft: '32px',
+    marginRight: '16px'
+  },
+  buttonContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    width: '100%',
+    height: '100%;'
+  },
+  buttonText: {
+    fontFamily: 'ITC, sans-serif',
+    fontSize: '16px',
+    fontWeight: 700,
+    flex: '1 1 auto',
+    textAlign: 'left'
+  },
+  buttonIcon: {
+    marginLeft: '24px',
+    marginTop: '24px'
+  },
+  inputStyle: {
+    appearance: 'none',
+    minHeight: '54px',
+    padding: '0 16px',
+    background: 'none',
+    border: 'none',
+    outline: 'none',
+    flex: 1,
+    fontFamily: 'Chivo, sans-serif',
+    fontSize: '20px',
+    maxHeight: '5vh',
+    maxWidth: '450px',
+    backgroundColor: '#fff',
+    border: '1px solid #979797',
+    borderRadius: '2px',
+    boxShadow: '0 4px 12px -5px rgba(0,0,0,0.5)'
+  },
+  helperParagraphWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    maxHeight: '5vh',
+    flexDirection: 'row',
+    margin: '0 auto auto auto',
+    paddingLeft: '16px'
+  }
+}
