@@ -6,7 +6,7 @@ import BodyText from './BodyText'
 import {colors} from '../constants/theme'
 
 const HeroButton = ({children, color, to, external, branch, track, ...props}) => {
-  const clickHandler = () => {
+  function clickHandler (){
     if (track !== '') {
       analytics.track(track)
     }
@@ -23,7 +23,6 @@ const HeroButton = ({children, color, to, external, branch, track, ...props}) =>
     const link = branch ? `${to}?anonymous_id=${analytics.user().anonymousId()}` : to
     window.open(link, external ? '_blank' : '_self')
   }
-
   return (
     <Button
       className={css({
@@ -32,8 +31,9 @@ const HeroButton = ({children, color, to, external, branch, track, ...props}) =>
       background={color === 'yellow' ? colors.yellow : colors.dark}
       color={color === 'yellow' ? 'black' : 'white'}
       {...props}
+       onClick={clickHandler}
     >
-      <BodyText fontWeight={700} onClick={clickHandler}>{children}</BodyText>
+      <BodyText fontWeight={700}>{children}</BodyText>
     </Button>
   )
 }
