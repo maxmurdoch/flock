@@ -67,7 +67,6 @@ a.inline-link:visited {
 }
 `
 
-
 class Layout extends Component {
   render() {
     const {
