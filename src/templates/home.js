@@ -60,13 +60,12 @@ const HomeTemplate = ({
               list={stopWorrying.reasons}
             />
           </Box>
-          <BigSectionLine />
+          <BigSectionLine id="product-tabs" />
         </Box>
 
         <div className={css({backgroundColor: 'white'})}>
           <Box background="white">
             <ProductTabs
-              id="product-tabs"
               title={productTabs.title}
               description={productTabs.description}
               customerTypeList={productTabs.customerTypeList}

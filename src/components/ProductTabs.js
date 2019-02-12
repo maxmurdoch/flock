@@ -84,11 +84,10 @@ class ProductTabs extends Component {
     const {
       renderTabs,
       renderTabPanel,
-      props: {title, description, customerTypeList, id}
+      props: {title, description, customerTypeList}
     } = this
     return (
       <React.Fragment>
-        <div id={id} />
         <Flex justifyContent="center">
           <SiteContainer>
             <Flex flexWrap={true} flexDirection="column">
