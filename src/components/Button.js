@@ -5,6 +5,7 @@ import {background, space, color} from 'styled-system'
 const StyledButton = styled.button`
   border: 0;
   font-weight: 700;
+  outline: none;
   ${background}
   ${space}
   ${color}

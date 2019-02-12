@@ -16,7 +16,7 @@ import Box from './Box'
 const mapIndex = R.addIndex(R.map)
 
 const TextGrid = ({title, description, list, image, yellowUnderline}) => (
-  <Flex justifyContent="center">
+  <Flex justifyContent="center" alignItems="flex-start">
     <SiteContainer>
       <Flex flexWrap={true}>
         <Box width={['100%', '50%']}>
@@ -45,7 +45,7 @@ const TextGrid = ({title, description, list, image, yellowUnderline}) => (
                 <ShowIf predicate={!!icon}>
                   <img
                     src={withPrefix(icon)}
-                    className={css({marginBottom: 10, flex: 1})}
+                    className={css({marginBottom: 10, width: 40, height: 40})}
                   />
                 </ShowIf>
                 <H3 yellowUnderline={yellowUnderline}>{title}</H3>

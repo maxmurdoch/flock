@@ -25,7 +25,8 @@ const RenewalBanner = ({image, mainText, buttonText, buttonUrl, buttonTrack}) =>
       <SiteContainer>
         <Flex
           flexWrap="wrap"
-          justifyContent="flex-start"
+          alignItems="flex-start"
+          flexDirection='column'
           pt={[3, 5]}
           pb={[3, 5]}
           pl={2}
@@ -73,12 +74,10 @@ const styles = {
   }),
 
   renewalButton: `
-    font-size: 17;
     align-self: 'flex-start';
     cursor: pointer;
     @media (max-width: ${R.nth(0, breakpoints)}) {
       text-align: left;
-      font-size: 15px;
     }
   `,
 

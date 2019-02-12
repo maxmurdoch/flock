@@ -59,7 +59,7 @@ const Hero = ({
                 {header}
               </H1>
               <LargeBodyText tag="div" color={textColor} mb={[2, 3]}>
-                <Markdown>{description}</Markdown>
+                {description}
               </LargeBodyText>
               <Flex flexDirection={['column', 'column', 'row']}>
                 {buttons.map((button, idx) => {

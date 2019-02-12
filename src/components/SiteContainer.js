@@ -1,20 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import R from 'ramda'
-import {css} from 'emotion'
+import {css, cx} from 'emotion'
 
 import Box from './Box'
 import {space} from '../constants/theme'
 
-const SiteContainer = ({children}) => {
+const SiteContainer = ({children, edgeToEdge = false, className}) => {
   return (
     <Box
-      className={css({
-        width: '100%',
-        maxWidth: 1200,
-        paddingLeft: R.nth(2, space),
-        paddingRight: R.nth(2, space)
-      })}
+      className={cx(
+        css({
+          width: '100%',
+          maxWidth: 1200,
+          paddingLeft: edgeToEdge ? 0 : R.nth(2, space),
+          paddingRight: edgeToEdge ? 0 : R.nth(2, space)
+        }),
+        className
+      )}
     >
       {children}
     </Box>
@@ -22,7 +25,9 @@ const SiteContainer = ({children}) => {
 }
 
 SiteContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  edgeToEdge: PropTypes.bool,
+  className: PropTypes.string
 }
 
 export default SiteContainer

@@ -5,14 +5,10 @@ import R from 'ramda'
 
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
-import Link from './Link'
-import H1 from './H1'
+import PriceCard from './PriceCard'
 import H2 from './H2'
 import H3 from './H3'
-import Text from './Text'
 import SmallText from './SmallText'
-import ArrowText from './ArrowText'
-import PrimaryButton from './PrimaryButton'
 import ShowIf from './ShowIf'
 
 const mapIndex = R.addIndex(R.map)
@@ -20,13 +16,16 @@ const mapIndex = R.addIndex(R.map)
 const whatIsCovered = ({
   id,
   mainTitle,
+  mainDescription,
   mainList,
-  priceSmallPrint,
-  pilotSmallPrint,
+  smallPrints,
   buttonText,
   fromPrice,
   policyFeatureList,
-  samplePolicyWordingUrl
+  samplePolicyWordingUrl,
+  productType,
+  fromText,
+  perText
 }) => {
   return (
     <Flex id={id} justifyContent="center" pb={2}>
@@ -40,93 +39,16 @@ const whatIsCovered = ({
           pl={2}
           pr={2}
         >
-          <Flex
+          <PriceCard
             flex={3}
-            flexDirection="column"
-            className={css({
-              boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
-              transition: '0.3s',
-              alignSelf: 'flex-start'
-            })}
-          >
-            <Flex
-              style={{
-                backgroundColor: '#F7F7F4',
-                padding: 15,
-                alignItems: 'center'
-              }}
-            >
-              <H2 markdown={true} mb={0}>
-                FLY UNLIMITED
-              </H2>
-            </Flex>
-
-            <Flex
-              flex={2}
-              p={2}
-              style={{backgroundColor: '#FFE001', flexDirection: 'column'}}
-              justifyContent="center"
-            >
-              <SmallText>from</SmallText>
-
-              <Flex alignItems="flex-end">
-                <H1 mb={0} markdown={true}>
-                  {fromPrice}
-                </H1>
-                <SmallText
-                  className={css({
-                    marginLeft: 10
-                  })}
-                >
-                  a month**
-                </SmallText>
-              </Flex>
-            </Flex>
-
-            <Flex
-              flex={4}
-              style={{
-                backgroundColor: '#F7F7F4',
-                flexDirection: 'column',
-                paddingLeft: 15,
-                paddingRight: 15,
-                justifyContent: 'space-between'
-              }}
-            >
-              <Flex flexDirection="column" pt={30} pb={30}>
-                {mapIndex(
-                  ({text}) => (
-                    <SmallText
-                      className={css({
-                        fontSize: 15,
-                        marginBottom: 10
-                      })}
-                    >
-                      {text}
-                    </SmallText>
-                  ),
-                  policyFeatureList
-                )}
-              </Flex>
-              <PrimaryButton
-                className={css({
-                  alignSelf: 'flex-start',
-                  marginBottom: 30
-                })}
-                onClick={() => window.open('https://my.flockcover.com')}
-              >
-                <ArrowText moveOnHover={false}>
-                  <p
-                    className={css({
-                      fontSize: 17
-                    })}
-                  >
-                    {buttonText}
-                  </p>
-                </ArrowText>
-              </PrimaryButton>
-            </Flex>
-          </Flex>
+            productType={productType}
+            fromText={fromText}
+            perText={perText}
+            buttonOneText={buttonText}
+            fromPrice={fromPrice}
+            policyFeatureList={policyFeatureList}
+            buttonOneOnClick={() => window.open('https://my.flockcover.com')}
+          />
 
           <Flex
             flexWrap
@@ -148,12 +70,12 @@ const whatIsCovered = ({
               })}
             >
               {mapIndex(
-                ({title, text, icon}) => (
+                ({title, icon}) => (
                   <Flex
                     flex="1 1 auto"
                     flexDirection="column"
                     alignItems="flex-start"
-                    width={['100%', '50%', '50%', '25%']}
+                    width={['50%', '50%', '50%', '25%']}
                     p={20}
                   >
                     <ShowIf predicate={!!icon}>
@@ -163,50 +85,38 @@ const whatIsCovered = ({
                       />
                     </ShowIf>
                     <H3>{title}</H3>
-                    <SmallText>{text}</SmallText>
                   </Flex>
                 ),
                 mainList
               )}
             </Flex>
-            <Link
-              to={samplePolicyWordingUrl}
-              className={css({
-                textDecoration: 'none',
-                color: 'inherit'
-              })}
-            >
-              <Flex mt={20} mb={20} ml={[0, 0, 20]}>
-                <SmallText>
-                  View the <b>Key Facts</b> for details of what's covered.
-                </SmallText>
-              </Flex>
-            </Link>
+
+            <Flex mt={20} mb={20} ml={[0, 0, 20]}>
+              <SmallText>{mainDescription}</SmallText>
+            </Flex>
           </Flex>
         </Flex>
 
-        <Text
-          textAlign="left"
-          className={css({
-            marginLeft: 20,
-            fontSize: 12,
-            color: 'grey',
-            marginBottom: 0
-          })}
-        >
-          ** {priceSmallPrint}
-        </Text>
-        <Text
-          textAlign="left"
-          className={css({
-            marginBottom: 20,
-            marginLeft: 20,
-            fontSize: 12,
-            color: 'grey'
-          })}
-        >
-          &#8314; {pilotSmallPrint}
-        </Text>
+        {smallPrints &&
+          smallPrints.length > 0 && (
+            <Flex flexDirection="column" pt={10} pb={10}>
+              {mapIndex(
+                ({text}) => (
+                  <SmallText
+                    textAlign="left"
+                    style={{fontSize: 14}}
+                    className={css({
+                      paddingLeft: 20,
+                      color: 'grey'
+                    })}
+                  >
+                    {text}
+                  </SmallText>
+                ),
+                smallPrints
+              )}
+            </Flex>
+          )}
       </SiteContainer>
     </Flex>
   )

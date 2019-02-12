@@ -29,8 +29,13 @@ const overflow = style({
   prop: 'overflow'
 })
 
+const overflowX = style({
+  prop: 'overflowX'
+})
+
 const Flex = styled('div')`
   display: flex;
+  ${overflowX}
   ${overflow}
   ${order}
   ${background}

@@ -55,61 +55,78 @@ class FlyUnlimitedPageTemplate extends Component {
               features={hero.features}
             />
 
-            <Box mt={[3, 5]}>
-              <TextGrid
-                title={why.title}
-                description={why.description}
-                list={why.list}
-              />
-            </Box>
+            {!why.hidden && (
+              <Box mt={[3, 5]}>
+                <TextGrid
+                  title={why.title}
+                  description={why.description}
+                  list={why.list}
+                />
+              </Box>
+            )}
           </Box>
-          <BlackBackground className={css({paddingBottom: 40})}>
-            <NonToggleiPhone
-              title={how.title}
-              description={how.description}
-              list={how.list}
-              image={how.image}
-              policyPauseSmallPrint={how.policyPauseSmallPrint}
-            />
-          </BlackBackground>
+
+          {!how.hidden && (
+            <BlackBackground className={css({paddingBottom: 40})}>
+              <NonToggleiPhone
+                title={how.title}
+                description={how.description}
+                list={how.list}
+                image={how.image}
+                policyPauseSmallPrint={how.policyPauseSmallPrint}
+              />
+            </BlackBackground>
+          )}
+
           <Box className={css({backgroundColor: 'white', paddingTop: 40})}>
-            <Box mt={[3, 5]}>
-              <TextGrid
-                yellowUnderline
-                title={control.title}
-                description={control.description}
-                list={control.list}
+            {!control.hidden && (
+              <React.Fragment>
+                <Box mt={[3, 5]}>
+                  <TextGrid
+                    yellowUnderline
+                    title={control.title}
+                    description={control.description}
+                    list={control.list}
+                  />
+                </Box>
+
+                <div id="what-is-covered">
+                  <BigSectionLine />
+                </div>
+              </React.Fragment>
+            )}
+
+            {!whatIsCovered.hidden && (
+              <WhatIsCoveredSection
+                mainTitle={whatIsCovered.mainTitle}
+                mainList={whatIsCovered.mainList}
+                mainDescription={whatIsCovered.mainDescription}
+                buttonText={whatIsCovered.buttonText}
+                buttonUrl={whatIsCovered.buttonUrl}
+                fromPrice={whatIsCovered.fromPrice}
+                policyFeatureList={whatIsCovered.policyFeatureList}
+                smallPrints={whatIsCovered.smallPrints}
+                productType={whatIsCovered.productType}
+                fromText={whatIsCovered.fromText}
+                perText={whatIsCovered.perText}
               />
-            </Box>
-
-            <BigSectionLine id="what-is-covered" />
-
-            <WhatIsCoveredSection
-              mainTitle={whatIsCovered.mainTitle}
-              mainList={whatIsCovered.mainList}
-              priceSmallPrint={whatIsCovered.priceSmallPrint}
-              buttonText={whatIsCovered.buttonText}
-              fromPrice={whatIsCovered.fromPrice}
-              policyFeatureList={whatIsCovered.policyFeatureList}
-              samplePolicyWordingUrl={whatIsCovered.samplePolicyWordingUrl}
-              pilotSmallPrint={whatIsCovered.pilotSmallPrint}
-            />
+            )}
           </Box>
 
-          <RenewalBanner
-            image={renewalBanner.image}
-            mainText={renewalBanner.mainText}
-            buttonText={renewalBanner.buttonText}
-            buttonUrl={renewalBanner.buttonUrl}
-            buttonTrack={renewalBanner.buttonTrack}
-          />
+          {!renewalBanner.hidden && (
+            <RenewalBanner
+              image={renewalBanner.image}
+              mainText={renewalBanner.mainText}
+              buttonText={renewalBanner.buttonText}
+              buttonUrl={renewalBanner.buttonUrl}
+              buttonTrack={renewalBanner.buttonTrack}
+            />
+          )}
 
           <Box className={css({backgroundColor: 'white'})}>
             <FUfaqSection
               header={faqSection.header}
-              body={
-                faqSection.body
-              }
+              body={faqSection.body}
               buttonText={faqSection.buttonText}
               buttonUrl={faqSection.buttonUrl}
               faqList={faqSection.faqList}
@@ -158,6 +175,7 @@ export const query = graphql`
           backgroundImage
         }
         why {
+          hidden
           title
           description
           list {
@@ -167,6 +185,7 @@ export const query = graphql`
           }
         }
         how {
+          hidden
           title
           description
           image
@@ -177,6 +196,7 @@ export const query = graphql`
           }
         }
         control {
+          hidden
           title
           description
           list {
@@ -185,6 +205,7 @@ export const query = graphql`
           }
         }
         renewalBanner {
+          hidden
           image
           mainText
           buttonText
@@ -192,19 +213,25 @@ export const query = graphql`
           buttonTrack
         }
         whatIsCovered {
+          hidden
           mainTitle
+          mainDescription
           mainList {
             icon
             title
           }
-          priceSmallPrint
-          pilotSmallPrint
+          buttonUrl
           buttonText
           fromPrice
           policyFeatureList {
             text
           }
-          samplePolicyWordingUrl
+          productType
+          fromText
+          perText
+          smallPrints {
+            text
+          }
         }
         faqSection {
           header

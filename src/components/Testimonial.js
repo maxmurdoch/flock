@@ -4,6 +4,7 @@ import R from 'ramda'
 import {css} from 'emotion'
 import Flex from './Flex'
 import Box from './Box'
+import H2 from './H2'
 import SiteContainer from './SiteContainer'
 import BodyText from './BodyText'
 import SmallText from './SmallText'
@@ -19,7 +20,7 @@ class Testimonial extends Component {
   render() {
     const {testimonials} = this.props
     const activeTestimonial = R.nth(this.state.active, testimonials)
-    if(typeof window !== 'undefined') {
+    if (typeof window !== 'undefined') {
       const preloadedArrayOfImages = testimonials.map(img => {
         const i = new Image()
         i.src = img.image
