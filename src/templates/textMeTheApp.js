@@ -13,7 +13,7 @@ import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
 class TextMeTheAppTemplate extends Component {
   constructor(props) {
     super(props)
-    this.state = {value: ''}
+    this.state = {value: '', sent: false}
     this.handleChange = this.handleChange.bind(this)
     this.sendSMS = this.sendSMS.bind(this)
   }
@@ -34,10 +34,11 @@ class TextMeTheAppTemplate extends Component {
     }
     var options = {}
     branch.sendSMS(this.state.value, linkData, options, () => {})
-    this.setState({value: ''})
+    this.setState({value: '', sent: true})
   }
 
   renderButton (textField) {
+    const text = this.state.sent ? textField.buttonTextAfter : textField.buttonText
     return (
       <button style={styles.buttonStyle} onClick={this.sendSMS}>
         <span style={
@@ -45,7 +46,7 @@ class TextMeTheAppTemplate extends Component {
         }>
           <Media query="(min-width: 400px)">
             {(matches) => matches
-            ? <Fragment><span style={styles.buttonText}>{textField.buttonText}</span>
+            ? <Fragment><span style={styles.buttonText}>{text}</span>
               <Media query="(min-width: 610px)">
                 {(matches) => matches
                   ? <img style={styles.buttonIcon} src={arrowWhite}></img>
@@ -56,7 +57,7 @@ class TextMeTheAppTemplate extends Component {
                 fontSize: '14px',
                 lineHeight: '20px',
                 ...styles.buttonText
-              }}>{textField.buttonText}</span>
+              }}>{text}</span>
               <Media query="(min-width: 610px)">
                 {(matches) => matches
                   ? <img style={styles.buttonIcon} src={arrowWhite}></img>
@@ -175,6 +176,7 @@ export const query = graphql`
         textField {
           subText
           buttonText
+          buttonTextAfter
           placeholder
         }
         topHalf {
@@ -238,7 +240,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     width: '100%',
-    height: '100%;'
+    height: '100%'
   },
   buttonText: {
     fontFamily: 'ITC, sans-serif',

@@ -16,6 +16,7 @@ header:
  backUrl: http://www.flockcover.com
 textField:
  buttonText: text me
+ buttonTextAfter: text me again
  subText: We will only send you one text, promise!
  placeholder: '+44 (0)1234 123 123'
 topHalf:
