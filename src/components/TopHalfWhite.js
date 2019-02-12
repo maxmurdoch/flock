@@ -19,7 +19,8 @@ const TopHalfWhite = ({ title, subTitle }) =>
             display: 'flex',
             flexDirection: 'column',
             width: '1024px',
-            minHeight: '40vh'
+            minHeight: '40vh',
+            marginTop: '40px'
           })}>
             <div className={css({
               display: 'flex',
@@ -48,7 +49,8 @@ const TopHalfWhite = ({ title, subTitle }) =>
             display: 'flex',
             flexDirection: 'column',
             width: '100%',
-            minHeight: '40vh'
+            minHeight: '40vh',
+            marginTop: '40px'
           })}>
             <div className={css({
               display: 'flex',

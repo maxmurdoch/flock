@@ -108,12 +108,17 @@ class TextMeTheAppTemplate extends Component {
         }}>
           <span style={{
             fontFamily: 'ITC, sans-serif',
-            fontSize: '16px',
+            fontSize: '14px',
             fontWeight: 700,
             flex: '1 1 auto',
             textAlign: 'left'
           }}>{textField.buttonText}</span>
-          <img style={{marginLeft: '24px', marginTop: '24px'}} src={arrowWhite}></img>
+          <Media query="(min-width: 500px)">
+            {(matches) => matches
+              ? <img style={{marginLeft: '24px', marginTop: '24px'}} src={arrowWhite}></img>
+              : null
+            }
+          </Media>
         </span>
       </button>
     )
@@ -140,7 +145,7 @@ class TextMeTheAppTemplate extends Component {
   }
 
   renderIphone () {
-    return(<Media query="(min-width: 768px)">
+    return(<Media query="(min-width: 850px)">
       {(matches) => matches
         ? <img style={{maxHeight: '80vh'}} src={iPhone}></img>
         : null
