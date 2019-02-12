@@ -13,7 +13,7 @@ const DarkDesktopNav = (to) => {
   const download = () => {
     downloadClickHandler()
     const linkAnonymousId = to.to.to + '?anonymous_id=' + analytics.user().anonymousId()
-    window.open(linkAnonymousId, '_blank')
+    window.open('https://flockcover.test-app.link/Z85w5tgUeS')
   }
   return (
     <Nav
