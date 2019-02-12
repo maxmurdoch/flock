@@ -36,14 +36,19 @@ class ProductTabs extends Component {
   renderTabPanel = customerTypeList =>
     customerTypeList.map(({title, customerTypeDesc, productCards}) => (
       <TabPanel key={title}>
-        <SmallText className={css({color: 'white'})} mb={4}>
+        <SmallText className={css({color: 'white'})} mb={4} ml={2} mr={2}>
           {customerTypeDesc}
         </SmallText>
-        <Flex flexDirection={['column', 'column', 'row']}>
+        <div className={css({
+          overflowX: 'scroll',
+          WebkitOverflowScrolling: 'touch'
+        })}>
+        <div className={css({display: 'inline-flex', padding: '0 20px'})}>
           {productCards && productCards.length > 0
             ? this.renderProductCards(productCards)
             : null}
-        </Flex>
+        </div>
+        </div>
       </TabPanel>
     ))
 
@@ -142,7 +147,9 @@ class ProductTabs extends Component {
             </Flex>
 
             <Flex justifyContent="center">
-              <SiteContainer>{renderTabPanel(customerTypeList)}</SiteContainer>
+              <SiteContainer edgeToEdge>
+                  {renderTabPanel(customerTypeList)}
+              </SiteContainer>
             </Flex>
           </Tabs>
         </div>

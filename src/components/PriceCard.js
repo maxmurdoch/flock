@@ -28,7 +28,7 @@ const PriceCard = ({
   className
 }) => (
   <Flex
-    flex={flex}
+    flex={flex || '0 0 auto'}
     flexDirection="column"
     width={[300, 400, 400]}
     className={cx(
