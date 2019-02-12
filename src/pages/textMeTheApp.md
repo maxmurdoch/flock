@@ -17,7 +17,7 @@ header:
 textField:
  buttonText: text me
  subText: We will only send you one text, promise!
- placeholder: '+44'
+ placeholder: '+44 (0)1234 123 123'
 topHalf:
   title: Download the Flock Cover app in seconds
   subTitle: Enter your mobile phone number below, and we will send you a text message to download the app on your device.
