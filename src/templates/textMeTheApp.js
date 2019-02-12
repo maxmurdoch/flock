@@ -6,6 +6,69 @@ import NavBarExternal from '../components/NavBarExternal'
 import TopHalfWhite from '../components/TopHalfWhite'
 import blackLogo from '../images/logo-black.svg'
 import {css} from 'react-emotion'
+import Media from 'react-media'
+import arrowWhite from '../images/icons/arrow-white.svg'
+import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
+
+const styles = {
+  helperParagraph: {
+    maxWidth: '450px',
+    fontSize: '14px',
+    fontFamily: 'Chivo',
+    color: '#979797'
+  },
+  inputWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    maxHeight: '5vh',
+    flexDirection: 'row',
+    flex: 1,
+    margin: '-13px auto 40px auto',
+    paddingLeft: '16px'
+  },
+  buttonStyle: {
+    apperance: 'none',
+    display: 'inline-block',
+    minHeight: '54px',
+    padding: '0 16px',
+    background: 'black',
+    color: 'white',
+    border: 'none',
+    borderRadius: '2px',
+    boxShadow: '0 4px 12px -5px rgba(0,0,0,0.5)',
+    outline: 'none',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    lineHeight: '54px',
+    textAlign: 'left',
+    marginLeft: '32px'
+  },
+  inputStyle: {
+    appearance: 'none',
+    minHeight: '54px',
+    padding: '0 16px',
+    background: 'none',
+    border: 'none',
+    outline: 'none',
+    flex: 1,
+    fontFamily: 'Chivo, sans-serif',
+    fontSize: '20px',
+    maxHeight: '5vh',
+    maxWidth: '450px',
+    backgroundColor: '#fff',
+    border: '1px solid #979797',
+    borderRadius: '2px',
+    boxShadow: '0 4px 12px -5px rgba(0,0,0,0.5)'
+  },
+  helperParagraphWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    maxHeight: '5vh',
+    flexDirection: 'row',
+    margin: '0 auto auto auto',
+    paddingLeft: '16px'
+  }
+}
 
 class TextMeTheAppTemplate extends Component {
   constructor(props) {
@@ -30,15 +93,59 @@ class TextMeTheAppTemplate extends Component {
       }
     }
     var options = {}
-    var callback = function(err, result) {
-      if (err) {
-        alert('Sorry, something went wrong.')
-      } else {
-        alert('SMS sent!')
-      }
-    }
-    branch.sendSMS(this.state.value, linkData, options, callback)
+    branch.sendSMS(this.state.value, linkData, options, () => {})
     this.setState({value: ''})
+  }
+
+  renderButton (textField) {
+    return (
+      <button style={styles.buttonStyle} onClick={this.sendSMS}>
+        <span style={{
+          display: 'flex',
+          alignItems: 'center',
+          width: '100%',
+          height: '100%;'
+        }}>
+          <span style={{
+            fontFamily: 'ITC, sans-serif',
+            fontSize: '16px',
+            fontWeight: 700,
+            flex: '1 1 auto',
+            textAlign: 'left'
+          }}>{textField.buttonText}</span>
+          <img style={{marginLeft: '24px', marginTop: '24px'}} src={arrowWhite}></img>
+        </span>
+      </button>
+    )
+  }
+
+  renderInput (textField) {
+    return(
+      <input
+        id="phone"
+        name="phone"
+        type="tel"
+        placeholder={textField.placeholder}
+        value={this.state.value}
+        onChange={this.handleChange}
+        style={styles.inputStyle}
+      />
+    )
+  }
+
+  renderHelperText (textField) {
+    return(
+      <p style={styles.helperParagraph}>{textField.subText}</p>
+    )
+  }
+
+  renderIphone () {
+    return(<Media query="(min-width: 768px)">
+      {(matches) => matches
+        ? <img style={{maxHeight: '80vh'}} src={iPhone}></img>
+        : null
+      }
+    </Media>)
   }
 
   render() {
@@ -66,131 +173,47 @@ class TextMeTheAppTemplate extends Component {
             backgroundColor: '#FFDA00',
             flexDirection: 'column'
           })}>
-            <div style={{
-              width: '100%',
-              maxWidth: '450px',
-              display: 'flex',
-              alignItems: 'center',
-              maxHeight: '5vh',
-              flexDirection: 'row'
-            }}>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder={textField.placeholder}
-                value={this.state.value}
-                onChange={this.handleChange}
-                style={{
-                  appearance: 'none',
-                  minHeight: '54px',
-                  padding: '0 16px',
-                  background: 'none',
-                  border: 'none',
-                  outline: 'none',
-                  flex: 1,
-                  fontFamily: 'Chivo, sans-serif',
-                  fontSize: '20px',
-                  maxHeight: '5vh',
-                  backgroundColor: '#fff',
-                  border: '1px solid #979797',
-                  borderRadius: '2px',
-                  boxShadow: '0 4px 12px -5px rgba(0,0,0,0.5)'
-                }}
-              />
-              <button> {textField.buttonText} </button>
-            </div>
-            <div style={{
-              flex: 1
-            }}>
-              <p>{textField.subText}</p>
-            </div>
+            <Media query="(min-width: 1024px)">
+              {(matches) => matches
+                ? <div style={{
+                    width: '1024px',
+                    ...styles.inputWrapper
+                  }}>
+                    {this.renderInput(textField)}
+                    {this.renderButton(textField)}
+                    {this.renderIphone()}
+                  </div>
+                : <div style={{
+                    width: '100%',
+                    ...styles.inputWrapper
+                  }}>
+                    {this.renderInput(textField)}
+                    {this.renderButton(textField)}
+                    {this.renderIphone()}
+                  </div>
+              }
+            </Media>
+            <Media query="(min-width: 1024px)">
+              {(matches) => matches
+                ? <div style={{
+                    width: '1024px',
+                    ...styles.helperParagraphWrapper
+                  }}>
+                    {this.renderHelperText(textField)}
+                  </div>
+                : <div style={{
+                    width: '100%',
+                    ...styles.helperParagraphWrapper
+                  }}>
+                    {this.renderHelperText(textField)}
+                  </div>
+              }
+            </Media>
           </div>
         </div>
       </StickyContainer>
     )
   }
-
-  // render() {
-  //   return (
-  //     <div
-  //       style={{
-  //         display: 'flex',
-  //         alignItems: 'center',
-  //         justifyContent: 'center',
-  //         width: '100%',
-  //         height: '100%',
-  //         position: 'absolute',
-  //         top: 0,
-  //         left: 0
-  //       }}
-  //     >
-  //       <Card
-  //         style={{
-  //           display: 'flex',
-  //           flexDirection: 'column',
-  //           justifyContent: 'space-between',
-  //           width: 600,
-  //           marginBottom: 200,
-  //           paddingRight: 40,
-  //           paddingLeft: 40,
-  //           paddingTop: 20
-  //         }}
-  //       >
-  //         <div>
-  //           <img style={{width: '6rem', marginBottom: 20}} src={blackLogo} />
-  //           <h2 style={{fontFamily: 'Chivo'}}>Let's get started!</h2>
-  //           <p style={{fontFamily: 'Chivo'}}>
-  //             Download the Flock Cover app (it's free!) on your mobile device to
-  //             get a real-time quote for your drone flight in seconds.
-  //           </p>
-  //         </div>
-  //
-  //         <div>
-  //           <p style={{fontFamily: 'Chivo', marginTop: 20, marginBottom: 10}}>
-  //             Enter your phone number to download the app:
-  //           </p>
-  //           <form onSubmit={this.sendSMS}>
-  //             <div style={{display: 'flex'}}>
-  //               <input
-  //                 id="phone"
-  //                 name="phone"
-  //                 type="tel"
-  //                 placeholder="+44"
-  //                 value={this.state.value}
-  //                 onChange={this.handleChange}
-  //                 style={{
-  //                   fontFamily: 'Chivo',
-  //                   flex: 3,
-  //                   fontSize: 25,
-  //                   marginRight: 100,
-  //                   paddingLeft: 15,
-  //                   paddingTop: 15,
-  //                   paddingBottom: 15
-  //                 }}
-  //               />
-  //
-  //               <input
-  //                 type="submit"
-  //                 value="Send"
-  //                 style={{
-  //                   backgroundColor: 'rgb(255,224,1)',
-  //                   fontFamily: 'Chivo-Bold',
-  //                   fontSize: 25,
-  //                   flex: 1,
-  //                   paddingVertical: 15,
-  //                   paddingRight: 30,
-  //                   paddingLeft: 30,
-  //                   borderWidth: 0
-  //                 }}
-  //               />
-  //             </div>
-  //           </form>
-  //         </div>
-  //       </Card>
-  //     </div>
-  //   )
-  // }
 }
 
 export default TextMeTheAppTemplate

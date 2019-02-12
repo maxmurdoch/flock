@@ -36,9 +36,10 @@ const TopHalfWhite = ({ title, subTitle }) =>
               })}>{title}</h2>
               <p className={css({
                 marginBottom: '16px',
+                maxWidth: '450px',
                 fontFamily: 'Chivo, sans-serif',
                 fontSize: '14px',
-                fontWeight: 700
+                fontWeight: 550
               })}>{subTitle}</p>
             </div>
           </div>
@@ -66,7 +67,8 @@ const TopHalfWhite = ({ title, subTitle }) =>
                 marginBottom: '16px',
                 fontFamily: 'Chivo, sans-serif',
                 fontSize: '14px',
-                fontWeight: 700
+                maxWidth: '450px',
+                fontWeight: 550
               })}>{subTitle}</p>
             </div>
           </div>
