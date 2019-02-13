@@ -109,7 +109,8 @@ const PayAsYouFlyTemplate = ({
             body={faqSection.body}
             buttonText={faqSection.buttonText}
             buttonUrl={faqSection.buttonUrl}
-            faqList={faqSection.faqList}
+            disclosureIndicator={faqSection.disclosureIndicator}
+            faqs={faqSection.faqs}
           />
         </Box>
         <Footer />
@@ -279,9 +280,10 @@ export const query = graphql`
           body
           buttonText
           buttonUrl
-          faqList {
-            text
-            url
+          disclosureIndicator
+          faqs {
+            title
+            body
           }
         }
         siteMetadataOverride {

@@ -52,6 +52,9 @@ const smallTextStyle = css({
   fontSize: 14,
   lineHeight: '20px',
 
+  '& p': {marginBottom: 10},
+  '& p:last-of-type': {marginBottom: 0},
+
   [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
     fontSize: 15,
     lineHeight: '20px'
