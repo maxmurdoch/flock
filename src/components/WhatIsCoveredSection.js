@@ -70,18 +70,23 @@ const whatIsCovered = ({
               })}
             >
               {mapIndex(
-                ({title, icon}) => (
+                ({title, icon}, index) => (
                   <Flex
                     flex="1 1 auto"
                     flexDirection="column"
                     alignItems="flex-start"
                     width={['50%', '50%', '50%', '25%']}
                     p={20}
+                    key={index}
                   >
                     <ShowIf predicate={!!icon}>
                       <img
                         src={withPrefix(icon)}
-                        className={css({marginBottom: 10, flex: 1})}
+                        className={css({
+                          marginBottom: 10,
+                          width: 40,
+                          height: 40
+                        })}
                       />
                     </ShowIf>
                     <H3>{title}</H3>

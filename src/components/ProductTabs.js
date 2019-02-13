@@ -41,7 +41,8 @@ class ProductTabs extends Component {
         </SmallText>
         <div className={css({
           overflowX: 'scroll',
-          WebkitOverflowScrolling: 'touch'
+          WebkitOverflowScrolling: 'touch',
+          '-ms-overflow-style': '-ms-autohiding-scrollbar'
         })}>
         <div className={css({display: 'inline-flex', padding: '0 20px'})}>
           {productCards && productCards.length > 0
@@ -130,7 +131,8 @@ class ProductTabs extends Component {
               <SiteContainer
                 edgeToEdge
                 className={css({
-                  overflowX: 'scroll'
+                  overflowX: 'scroll',
+                  '-ms-overflow-style': '-ms-autohiding-scrollbar'
                 })}
               >
                 <TabList
