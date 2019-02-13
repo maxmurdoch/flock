@@ -73,11 +73,13 @@ const HomeTemplate = ({
               {productTabs.customerTypeList.map(
                 ({customerTypeDesc, productCards, title}) => (
                   <TabSection.Tab title={title} key={title}>
-                    <ProductCardTabs
-                      title={title}
-                      customerTypeDesc={customerTypeDesc}
-                      productCards={productCards}
-                    />
+                    <Box pb={5}>
+                      <ProductCardTabs
+                        title={title}
+                        customerTypeDesc={customerTypeDesc}
+                        productCards={productCards}
+                      />
+                    </Box>
                   </TabSection.Tab>
                 )
               )}

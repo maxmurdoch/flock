@@ -7,8 +7,10 @@ import {css} from 'emotion'
 import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
 import Box from '../components/Box'
+import SmallText from '../components/SmallText'
 import TextGrid from '../components/TextGrid'
 import TabSection from '../components/ProductTabs'
+import WhatIsCoveredSection from '../components/WhatIsCoveredSection'
 import RenewalBanner from '../components/RenewalBanner'
 import Footer from '../components/Footer'
 import MapBackground from '../components/MapBackground'
@@ -92,10 +94,51 @@ const PayAsYouFlyTemplate = ({
               title={productTabs.title}
               description={productTabs.description}
             >
-              <TabSection.Tab title="Commercial Operator">
-                <div>Card</div>
-                <div>Grid</div>
-              </TabSection.Tab>
+              {productTabs.customerTypeList.map(
+                ({
+                  title,
+                  customerTypeDesc,
+                  whatIsCovered: {
+                    mainTitle,
+                    mainList,
+                    mainDescription,
+                    buttonText,
+                    buttonUrl,
+                    fromPrice,
+                    policyFeatureList,
+                    smallPrints,
+                    productType,
+                    fromText,
+                    perText
+                  }
+                }) => (
+                  <TabSection.Tab title={title} key={title}>
+                    <Box>
+                      <SmallText
+                        className={css({color: 'white'})}
+                        mb={4}
+                        ml={2}
+                        mr={2}
+                      >
+                        {customerTypeDesc}
+                      </SmallText>
+                      <WhatIsCoveredSection
+                        headerTextColor="white"
+                        itemTextColor="white"
+                        mainTitle={mainTitle}
+                        mainList={mainList}
+                        buttonText={buttonText}
+                        buttonUrl={buttonUrl}
+                        fromPrice={fromPrice}
+                        policyFeatureList={policyFeatureList}
+                        productType={productType}
+                        fromText={fromText}
+                        perText={perText}
+                      />
+                    </Box>
+                  </TabSection.Tab>
+                )
+              )}
             </TabSection>
           </Box>
 
@@ -263,11 +306,15 @@ export const query = graphql`
           customerTypeList {
             title
             customerTypeDesc
-            productCards {
-              buttonOneText
-              buttonTwoText
-              buttonOneUrl
-              buttonTwoUrl
+            whatIsCovered {
+              mainTitle
+              mainDescription
+              mainList {
+                icon
+                title
+              }
+              buttonUrl
+              buttonText
               fromPrice
               policyFeatureList {
                 text
@@ -275,7 +322,9 @@ export const query = graphql`
               productType
               fromText
               perText
-              icon
+              smallPrints {
+                text
+              }
             }
           }
         }

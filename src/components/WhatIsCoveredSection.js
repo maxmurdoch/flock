@@ -38,8 +38,6 @@ const whatIsCovered = ({
           justifyContent="space-between"
           alignItems="flex-start"
           pb={[2, 3]}
-          pl={2}
-          pr={2}
         >
           <PriceCard
             flex={3}
@@ -118,7 +116,6 @@ const whatIsCovered = ({
                     textAlign="left"
                     style={{fontSize: 14}}
                     className={css({
-                      paddingLeft: 20,
                       color: 'grey'
                     })}
                   >

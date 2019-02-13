@@ -103,70 +103,118 @@ productTabs:
     - commercial:
       title: Commercial operator
       customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent).
-      productCards:
-        - productType: PAY-AS-YOU-FLY
-          buttonOneText: GET A PRICE
-          buttonTwoText: VIEW ALL FEATURES
-          buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
-          buttonTwoUrl: https://flockcover.com/insurance/commercial/
-          fromPrice: £4.95
-          policyFeatureList:
-            - text: On-demand cover from 1-8 hours
-            - text: Customise your insurance per flight
-            - text: Up to £25K drone and accessory cover
-            - text: Public Liability insurance up to £10M
-          fromText: from
-          perText: per flight
-          icon: /images/uploads/drone.svg
-        - productType: FLY UNLIMITED
-          buttonOneText: GET A PRICE
-          buttonTwoText: VIEW ALL FEATURES
-          buttonOneUrl: https://flockcover.app.link/tmXGLhZf7T
-          buttonTwoUrl: https://flockcover.com/flyunlimited/
-          fromPrice: £24.95
-          policyFeatureList:
-            - text: Unlimited UK flights, plus worldwide options
-            - text: Equipment and Public Liability protection
-            - text: Theft, storage and transit insurance
-            - text: Cover for multiple pilots (up to 10)
-          fromText: from
-          perText: a month
-          icon: /images/uploads/double-drone.svg
+      whatIsCovered:
+        mainList:
+          - icon: /images/uploads/drone.svg
+            title: Drones & accessories
+          - icon: /images/uploads/shield-icon.svg
+            title: 3rd party liability
+          - icon: /images/uploads/binoculars.svg
+            title: Accidental flyaways
+          - icon: /images/uploads/human.svg
+            title: Multiple pilots ⁺
+          - icon: /images/uploads/van.svg
+            title: Transit cover
+          - icon: /images/uploads/lockpad.svg
+            title: Theft & storage
+          - icon: /images/uploads/document.svg
+            title: Legal expenses
+          - icon: /images/uploads/megaphone.svg
+            title: Noise complaints
+        mainTitle: What's covered?
+        mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
+        smallPrints:
+          - text: \** Prices depend on factors such as experience, equipment and claims history.
+          - text: \+ Available if multiple pilots are operating under a single PfCO.
+        buttonText: GET A QUOTE
+        buttonUrl: 'https://my.flockcover.com'
+        fromPrice: £4.95
+        samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
+        policyFeatureList:
+          - text: Unlimited commercial flights in the UK
+          - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
+          - text: Public Liability insurance up to £10M
+          - text: Option to extend cover worldwide
+        productType: PAY-AS-YOU-FLY
+        fromText: from
+        perText: per flight
     - training:
-      title: Trainee pilot
-      customerTypeDesc: You’re a trainee pilot if you are enrolled with a licenced [NQE](https://help.flockcover.com/drone-regulation/what-is-a-national-qualified-entity-nqe), and have passed your Ground School theory test.
-      productCards:
-        - productType: PAY-AS-YOU-FLY
-          buttonOneText: GET A PRICE
-          buttonTwoText: VIEW ALL FEATURES
-          buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
-          buttonTwoUrl: https://flockcover.com/insurance/trainee/
-          fromPrice: £5.95
-          policyFeatureList:
-            - text: Flight assessment and training cover from 1-8 hours
-            - text: Drone and accessories up to £3K
-            - text: £1M Public Liability insurance
-            - text: Free proof-of-insurance for PfCO applications
-          fromText: from
-          perText: per flight
-          icon: /images/uploads/drone.svg
+      title: Trainee Pilot
+      customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent).
+      whatIsCovered:
+        hidden: false
+        mainList:
+          - icon: /images/uploads/drone.svg
+            title: Drones & accessories
+          - icon: /images/uploads/shield-icon.svg
+            title: 3rd party liability
+          - icon: /images/uploads/binoculars.svg
+            title: Accidental flyaways
+          - icon: /images/uploads/human.svg
+            title: Multiple pilots ⁺
+          - icon: /images/uploads/van.svg
+            title: Transit cover
+          - icon: /images/uploads/lockpad.svg
+            title: Theft & storage
+          - icon: /images/uploads/document.svg
+            title: Legal expenses
+          - icon: /images/uploads/megaphone.svg
+            title: Noise complaints
+        mainTitle: What's covered?
+        mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
+        smallPrints:
+          - text: \** Prices depend on factors such as experience, equipment and claims history.
+          - text: \+ Available if multiple pilots are operating under a single PfCO.
+        buttonText: GET A QUOTE
+        buttonUrl: 'https://my.flockcover.com'
+        fromPrice: £5.95
+        samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
+        policyFeatureList:
+          - text: Unlimited commercial flights in the UK
+          - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
+          - text: Public Liability insurance up to £10M
+          - text: Option to extend cover worldwide
+        productType: PAY-AS-YOU-FLY
+        fromText: from
+        perText: per flight
     - recreational:
       title: Recreational pilot
-      customerTypeDesc: You’re a recreational pilot if you fly your drone as a hobby.
-      productCards:
-        - productType: PAY-AS-YOU-FLY
-          buttonOneText: GET A PRICE
-          buttonTwoText: VIEW ALL FEATURES
-          buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
-          buttonTwoUrl: https://flockcover.com/insurance/recreational/
-          fromPrice: £2.95
-          policyFeatureList:
-            - text: Short-term cover from 1-8 hours
-            - text: Public Liability insurance (£250K)
-            - text: Fly safer with a real-time flight risk assessment
-          fromText: from
-          perText: per flight
-          icon: /images/uploads/drone.svg
+      customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent).
+      whatIsCovered:
+        mainList:
+          - icon: /images/uploads/drone.svg
+            title: Drones & accessories
+          - icon: /images/uploads/shield-icon.svg
+            title: 3rd party liability
+          - icon: /images/uploads/binoculars.svg
+            title: Accidental flyaways
+          - icon: /images/uploads/human.svg
+            title: Multiple pilots ⁺
+          - icon: /images/uploads/van.svg
+            title: Transit cover
+          - icon: /images/uploads/lockpad.svg
+            title: Theft & storage
+          - icon: /images/uploads/document.svg
+            title: Legal expenses
+          - icon: /images/uploads/megaphone.svg
+            title: Noise complaints
+        mainTitle: What's covered?
+        mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
+        smallPrints:
+          - text: \** Prices depend on factors such as experience, equipment and claims history.
+          - text: \+ Available if multiple pilots are operating under a single PfCO.
+        buttonText: GET A QUOTE
+        buttonUrl: 'https://my.flockcover.com'
+        fromPrice: £2.95
+        samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
+        policyFeatureList:
+          - text: Unlimited commercial flights in the UK
+          - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
+          - text: Public Liability insurance up to £10M
+          - text: Option to extend cover worldwide
+        productType: PAY-AS-YOU-FLY
+        fromText: from
+        perText: per flight        
 renewalBanner:
   image: /images/uploads/renewal-drone.jpg
   mainText: Take to the skies with Flock today.

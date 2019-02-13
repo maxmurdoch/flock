@@ -123,7 +123,6 @@ const styles = {
   selectedTabPanelStyle: {
     display: 'block',
     background: '#363636',
-    paddingTop: 30,
-    paddingBottom: 70
+    paddingTop: 30
   }
 }
