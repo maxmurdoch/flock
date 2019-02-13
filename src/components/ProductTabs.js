@@ -6,92 +6,33 @@ import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
 
 import H2 from './H2'
 import BodyText from './BodyText'
-import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
 import ShowIf from './ShowIf'
 import Flex from './Flex'
 import Box from './Box'
-import ProductCard from './PriceCard'
 
-class ProductTabs extends Component {
-  renderTabs = customerTypeList =>
-    customerTypeList.map(({title}) => (
-      <Tab
-        className={css({
-          display: 'inline-block',
-          cursor: 'pointer',
-          listStyle: 'none',
-          fontWeight: 'bold',
-          fontFamily: 'Chivo',
-          position: 'relative',
-          padding: '6px 25px',
-          marginBottom: 0
-        })}
-        key={title}
-      >
+class TabSection extends Component {
+  static Tab = () => {}
+
+  renderTabs = tabs =>
+    tabs.map(({title}) => (
+      <Tab className={css(styles.tabStyle)} key={title}>
         {title}
       </Tab>
     ))
 
-  renderTabPanel = customerTypeList =>
-    customerTypeList.map(({title, customerTypeDesc, productCards}) => (
-      <TabPanel key={title}>
-        <SmallText className={css({color: 'white'})} mb={4} ml={2} mr={2}>
-          {customerTypeDesc}
-        </SmallText>
-        <div className={css({
-          overflowX: 'scroll',
-          WebkitOverflowScrolling: 'touch',
-          '-ms-overflow-style': '-ms-autohiding-scrollbar'
-        })}>
-        <div className={css({display: 'inline-flex', padding: '0 20px'})}>
-          {productCards && productCards.length > 0
-            ? this.renderProductCards(productCards)
-            : null}
-        </div>
-        </div>
-      </TabPanel>
-    ))
-
-  renderProductCards = productCards =>
-    productCards.map(
-      ({
-        productType,
-        fromText,
-        perText,
-        buttonOneText,
-        buttonTwoText,
-        buttonOneUrl,
-        buttonTwoUrl,
-        fromPrice,
-        policyFeatureList,
-        icon
-      }) => (
-        <ProductCard
-          key={productType}
-          icon={icon}
-          productType={productType}
-          fromText={fromText}
-          perText={perText}
-          buttonOneText={buttonOneText}
-          buttonTwoText={buttonTwoText}
-          fromPrice={fromPrice}
-          policyFeatureList={policyFeatureList}
-          buttonOneOnClick={() => window.open(buttonOneUrl)}
-          buttonTwoOnClick={() => {
-            window.open(buttonTwoUrl)
-          }}
-          className={css({marginRight: 16, marginBottom: 16})}
-        />
-      )
-    )
+  renderTabPanel = tabs =>
+    tabs.map(({title, children}) => <TabPanel key={title}>{children}</TabPanel>)
 
   render() {
     const {
       renderTabs,
       renderTabPanel,
-      props: {title, description, customerTypeList}
+      props: {title, description, children}
     } = this
+    const {tabListStyle, selectedTabStyle, selectedTabPanelStyle} = styles
+    const tabs = React.Children.toArray(children).map(tab => tab.props)
+
     return (
       <React.Fragment>
         <Flex justifyContent="center">
@@ -112,17 +53,8 @@ class ProductTabs extends Component {
 
         <div className={css({background: '#363636'})}>
           <Tabs
-            selectedTabClassName={css({
-              background: '#363636',
-              color: 'white',
-              borderTop: '5px solid #FFE001'
-            })}
-            selectedTabPanelClassName={css({
-              display: 'block',
-              background: '#363636',
-              paddingTop: 30,
-              paddingBottom: 70
-            })}
+            selectedTabClassName={css(selectedTabStyle)}
+            selectedTabPanelClassName={css(selectedTabPanelStyle)}
           >
             <Flex
               justifyContent="center"
@@ -135,23 +67,14 @@ class ProductTabs extends Component {
                   '-ms-overflow-style': '-ms-autohiding-scrollbar'
                 })}
               >
-                <TabList
-                  className={css({
-                    marginBottom: 0,
-                    marginLeft: 0,
-                    width: '100%',
-                    display: 'flex'
-                  })}
-                >
-                  {renderTabs(customerTypeList)}
+                <TabList className={css(tabListStyle)}>
+                  {renderTabs(tabs)}
                 </TabList>
               </SiteContainer>
             </Flex>
 
             <Flex justifyContent="center">
-              <SiteContainer edgeToEdge>
-                  {renderTabPanel(customerTypeList)}
-              </SiteContainer>
+              <SiteContainer edgeToEdge>{renderTabPanel(tabs)}</SiteContainer>
             </Flex>
           </Tabs>
         </div>
@@ -160,9 +83,9 @@ class ProductTabs extends Component {
   }
 }
 
-export default ProductTabs
+export default TabSection
 
-ProductTabs.propTypes = {
+TabSection.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
@@ -173,4 +96,34 @@ ProductTabs.propTypes = {
       icon: PropTypes.string
     })
   )
+}
+
+const styles = {
+  tabListStyle: {
+    marginBottom: 0,
+    marginLeft: 0,
+    width: '100%',
+    display: 'flex'
+  },
+  tabStyle: {
+    display: 'inline-block',
+    cursor: 'pointer',
+    listStyle: 'none',
+    fontWeight: 'bold',
+    fontFamily: 'Chivo',
+    position: 'relative',
+    padding: '6px 25px',
+    marginBottom: 0
+  },
+  selectedTabStyle: {
+    background: '#363636',
+    color: 'white',
+    borderTop: '5px solid #FFE001'
+  },
+  selectedTabPanelStyle: {
+    display: 'block',
+    background: '#363636',
+    paddingTop: 30,
+    paddingBottom: 70
+  }
 }

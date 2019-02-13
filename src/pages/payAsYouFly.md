@@ -167,20 +167,6 @@ productTabs:
           fromText: from
           perText: per flight
           icon: /images/uploads/drone.svg
-    - enterprise:
-      title: Enterprise
-      customerTypeDesc: Our enterprise solution is the world’s first exposure-based drone insurance product for fleets. Call us on [+44 (0) 1234 480260](tel:+4401234480260) to request a quote.
-      productCards:
-        - productType: ENTERPRISE
-          buttonOneText: CONTACT US
-          buttonOneUrl: mailto:hello@flockcover.com
-          fromPrice: £POA
-          policyFeatureList:
-            - text: Comprehensive annual risk-based cover (in-and-out of flight)
-            - text: Fully flexible equipment and Public Liability insurance
-            - text: Per-flight and portfolio risk mitigation insights
-            - text: Dedicated 24/7 customer support  
-          icon: /images/uploads/double-drone.svg
 renewalBanner:
   image: /images/uploads/renewal-drone.jpg
   mainText: Take to the skies with Flock today.

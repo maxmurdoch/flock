@@ -25,6 +25,8 @@ const whatIsCovered = ({
   samplePolicyWordingUrl,
   productType,
   fromText,
+  itemTextColor = 'black',
+  headerTextColor = 'black',
   perText
 }) => {
   return (
@@ -60,7 +62,12 @@ const whatIsCovered = ({
             }}
             flexDirection="column"
           >
-            <H2 pl={10} mb={[10, 10, 40]} markdown={true}>
+            <H2
+              pl={10}
+              mb={[10, 10, 40]}
+              markdown={true}
+              color={headerTextColor}
+            >
               {mainTitle}
             </H2>
             <Flex
@@ -89,7 +96,7 @@ const whatIsCovered = ({
                         })}
                       />
                     </ShowIf>
-                    <H3>{title}</H3>
+                    <H3 color={itemTextColor}>{title}</H3>
                   </Flex>
                 ),
                 mainList

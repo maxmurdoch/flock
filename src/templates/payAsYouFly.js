@@ -8,11 +8,11 @@ import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
-import ProductTabs from '../components/ProductTabs'
+import TabSection from '../components/ProductTabs'
 import RenewalBanner from '../components/RenewalBanner'
 import Footer from '../components/Footer'
 import MapBackground from '../components/MapBackground'
-import FUfaqSection from '../components/FUfaqSection'
+import FaqSection from '../components/FaqSection'
 import TitleAndDescription from '../components/TitleAndDescription'
 import Calculator from '../components/Calculator'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
@@ -88,11 +88,15 @@ const PayAsYouFlyTemplate = ({
 
           <div id="what-is-covered" />
           <Box pt={[3, 6]} background="white">
-            <ProductTabs
+            <TabSection
               title={productTabs.title}
               description={productTabs.description}
-              customerTypeList={productTabs.customerTypeList}
-            />
+            >
+              <TabSection.Tab title="Commercial Operator">
+                <div>Card</div>
+                <div>Grid</div>
+              </TabSection.Tab>
+            </TabSection>
           </Box>
 
           <RenewalBanner
@@ -104,7 +108,7 @@ const PayAsYouFlyTemplate = ({
           />
         </div>
         <Box className={css({backgroundColor: 'white'})}>
-          <FUfaqSection
+          <FaqSection
             header={faqSection.header}
             body={faqSection.body}
             buttonText={faqSection.buttonText}

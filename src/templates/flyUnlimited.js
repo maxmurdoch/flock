@@ -13,7 +13,7 @@ import Footer from '../components/Footer'
 import RenewalBanner from '../components/RenewalBanner'
 import NonToggleiPhone from '../components/NonToggleIphone'
 import BlackBackground from '../components/BlackBackground'
-import FUfaqSection from '../components/FUfaqSection'
+import FaqSection from '../components/FaqSection'
 
 import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
@@ -124,7 +124,7 @@ class FlyUnlimitedPageTemplate extends Component {
           )}
 
           <Box className={css({backgroundColor: 'white'})}>
-            <FUfaqSection
+            <FaqSection
               header={faqSection.header}
               body={faqSection.body}
               buttonText={faqSection.buttonText}
