@@ -4,7 +4,6 @@ import R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
-import BigSectionLine from '../components/BigSectionLine'
 import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
 import Box from '../components/Box'
@@ -13,6 +12,9 @@ import ProductTabs from '../components/ProductTabs'
 import RenewalBanner from '../components/RenewalBanner'
 import Footer from '../components/Footer'
 import MapBackground from '../components/MapBackground'
+import FUfaqSection from '../components/FUfaqSection'
+import TitleAndDescription from '../components/TitleAndDescription'
+import Calculator from '../components/Calculator'
 import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import ToggleiPhone from '../components/ToggleiPhone'
 import SiteMetadata from '../components/SiteMetadata'
@@ -20,17 +22,17 @@ import {colors, breakpoints} from '../constants/theme'
 
 import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
-import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
 
 const PayAsYouFlyTemplate = ({
-  secondTestimonial,
   downloadLink,
   hero,
   how,
   risk,
+  calculator,
   siteMetadataOverride,
   stopWorrying,
   featured,
+  faqSection,
   renewalBanner,
   productTabs
 }) => {
@@ -53,15 +55,13 @@ const PayAsYouFlyTemplate = ({
             buttons={hero.buttons}
             features={hero.features}
           />
-          <Box pt={[3, 3]} background="white">
+          <Box pt={[3, 3]} pb={[2, 6]} background="white">
             <TextGrid
               title={stopWorrying.title}
               description={stopWorrying.description}
               list={stopWorrying.reasons}
             />
           </Box>
-
-
         </Box>
 
         <MapBackground>
@@ -77,21 +77,41 @@ const PayAsYouFlyTemplate = ({
           />
         </MapBackground>
 
-        <Box background="white">
-          <ProductTabs
-            title={productTabs.title}
-            description={productTabs.description}
-            customerTypeList={productTabs.customerTypeList}
+        <div className={css({backgroundColor: 'white'})}>
+          <Box pt={[3, 6]}>
+            <TitleAndDescription
+              title={calculator.title}
+              description={calculator.description}
+            />
+            <Calculator disclaimer={calculator.disclaimer} />
+          </Box>
+
+          <div id="what-is-covered" />
+          <Box pt={[3, 6]} background="white">
+            <ProductTabs
+              title={productTabs.title}
+              description={productTabs.description}
+              customerTypeList={productTabs.customerTypeList}
+            />
+          </Box>
+
+          <RenewalBanner
+            image={renewalBanner.image}
+            mainText={renewalBanner.mainText}
+            buttonText={renewalBanner.buttonText}
+            buttonUrl={renewalBanner.buttonUrl}
+            buttonTrack={renewalBanner.buttonTrack}
+          />
+        </div>
+        <Box className={css({backgroundColor: 'white'})}>
+          <FUfaqSection
+            header={faqSection.header}
+            body={faqSection.body}
+            buttonText={faqSection.buttonText}
+            buttonUrl={faqSection.buttonUrl}
+            faqList={faqSection.faqList}
           />
         </Box>
-
-        <RenewalBanner
-          image={renewalBanner.image}
-          mainText={renewalBanner.mainText}
-          buttonText={renewalBanner.buttonText}
-          buttonUrl={renewalBanner.buttonUrl}
-          buttonTrack={renewalBanner.buttonTrack}
-        />
         <Footer />
       </div>
     </StickyContainer>
@@ -136,9 +156,11 @@ const PayAsYouFly = ({data}) => {
     secondTestimonial,
     downloadLink,
     hero,
+    calculator,
     siteMetadataOverride,
     stopWorrying,
     featured,
+    faqSection,
     renewalBanner,
     how,
     risk
@@ -146,14 +168,14 @@ const PayAsYouFly = ({data}) => {
 
   return (
     <PayAsYouFlyTemplate
-      secondTestimonial={secondTestimonial}
       hero={hero}
       downloadLink={downloadLink}
+      calculator={calculator}
       siteMetadataOverride={siteMetadataOverride}
       stopWorrying={stopWorrying}
-      featured={featured}
       renewalBanner={renewalBanner}
       productTabs={productTabs}
+      faqSection={faqSection}
       how={how}
       risk={risk}
     />
@@ -218,14 +240,10 @@ export const query = graphql`
             text
           }
         }
-        secondTestimonial {
-          quote
-          author
-          image
-        }
-        featured {
+        calculator {
           title
-          image
+          description
+          disclaimer
         }
         renewalBanner {
           image
@@ -254,6 +272,16 @@ export const query = graphql`
               perText
               icon
             }
+          }
+        }
+        faqSection {
+          header
+          body
+          buttonText
+          buttonUrl
+          faqList {
+            text
+            url
           }
         }
         siteMetadataOverride {

@@ -4,13 +4,11 @@ templateKey: payAsYouFly
 downloadLink: 'https://flockcover.app.link/6IW6kTmgfP'
 hero:
   buttons:
-    - branch: true
-      color: yellow
-      external: true
+    - color: yellow
       title: GET A QUOTE
-      to: '#product-tabs'
-      track: ''
     - title: WHAT'S COVERED
+      to: '#what-is-covered'
+      color: black
   description: >-
     Welcome to fully flexible insurance you control. In a couple of taps, get
     covered for an hour, day or month.
@@ -90,6 +88,14 @@ risk:
         probability of rainfall.
       title: Hyperlocal weather
   title: Know your risks before you fly
+calculator:
+  description: >-
+    Tell us about your flying habits and we will estimate the yearly cost of
+    insuring with Flock.
+  disclaimer: >-
+    Your estimate is based on average usage. Actual prices will depend on the
+    real-time risks of each flight.
+  title: Is pay-as-you-fly for you?
 productTabs:
   title: Find the cover that's right for you
   description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
@@ -175,22 +181,28 @@ productTabs:
             - text: Per-flight and portfolio risk mitigation insights
             - text: Dedicated 24/7 customer support  
           icon: /images/uploads/double-drone.svg
-secondTestimonial:
-  - author: 'James, Front Row Films'
-    image: /images/uploads/testimonial/3.jpg
-    quote: Fly Unlimited has proved invaluable in providing me with full cover in months where I’m doing a lot of aerial filming but still retaining that level of flexibility to pause the cover if I’m flying less or doing other types of filming.
-  - author: 'Calum, Aerial Photographer'
-    image: /images/uploads/testimonial/4.jpg
-    quote: Easy to use and comprehensive insurance. Would highly recommend!
 renewalBanner:
   image: /images/uploads/renewal-drone.jpg
   mainText: Take to the skies with Flock today.
   buttonText: GET A PRICE IN 60 SECONDS
   buttonUrl: https://flockcover.app.link/6IW6kTmgfP
   buttonTrack: WebApp Navigation Clicked
-featured:
-  image: images/uploads/featured-list.png
-  title: As featured in
+faqSection:
+  header: Frequently asked questions
+  body: Got other questions? Visit our help centre, or chat live with us now.
+  buttonText: VIEW ALL FAQs
+  buttonUrl: https://help.flockcover.com/
+  faqList:
+    - text: Are there any long-term commitments with Fly Unlimited?
+      url: http://help.flockcover.com/policies-and-coverage/are-there-any-long-term-commitments-with-fly-unlimited
+    - text: Can I adjust, or cancel, my policy?
+      url: https://help.flockcover.com/policies-and-coverage/can-i-adjust-or-cancel-my-fly-unlimited-policy
+    - text: Can I get covered abroad?
+      url: https://help.flockcover.com/policies-and-coverage/can-i-get-covered-abroad
+    - text: Is Fly Unlimited CAA compliant?
+      url: http://help.flockcover.com/drone-regulation/is-fly-unlimited-caa-compliant
+    - text: How do I make a claim?
+      url: https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim
 siteMetadataOverride:
   description: >-
     We provide fully flexible drone insurance for commercial, trainee and
