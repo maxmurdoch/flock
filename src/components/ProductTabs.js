@@ -39,19 +39,23 @@ class ProductTabs extends Component {
         <SmallText className={css({color: 'white'})} mb={4} ml={2} mr={2}>
           {customerTypeDesc}
         </SmallText>
-        <div className={css({
-          overflowX: 'scroll',
-          WebkitOverflowScrolling: 'touch',
-          '-ms-overflow-style': '-ms-autohiding-scrollbar'
-        })}>
-        <div className={css({display: 'inline-flex', padding: '0 20px'})}>
-          {productCards && productCards.length > 0
-            ? this.renderProductCards(productCards)
-            : null}
-        </div>
+        <div
+          className={css({
+            overflowX: 'scroll',
+            WebkitOverflowScrolling: 'touch',
+            '-ms-overflow-style': '-ms-autohiding-scrollbar'
+          })}
+        >
+          <div className={css({display: 'inline-flex', padding: '0 20px'})}>
+            {productCards && productCards.length > 0
+              ? this.renderProductCards(productCards)
+              : null}
+          </div>
         </div>
       </TabPanel>
     ))
+
+  goToUrl = (url, external) => window.open(url, external ? '_blank' : '_self')
 
   renderProductCards = productCards =>
     productCards.map(
@@ -63,6 +67,8 @@ class ProductTabs extends Component {
         buttonTwoText,
         buttonOneUrl,
         buttonTwoUrl,
+        buttonOneExternal,
+        buttonTwoExternal,
         fromPrice,
         policyFeatureList,
         icon
@@ -77,10 +83,8 @@ class ProductTabs extends Component {
           buttonTwoText={buttonTwoText}
           fromPrice={fromPrice}
           policyFeatureList={policyFeatureList}
-          buttonOneOnClick={() => window.open(buttonOneUrl)}
-          buttonTwoOnClick={() => {
-            window.open(buttonTwoUrl)
-          }}
+          buttonOneOnClick={() => this.goToUrl(buttonOneUrl, buttonOneExternal)}
+          buttonTwoOnClick={() => this.goToUrl(buttonTwoUrl, buttonTwoExternal)}
           className={css({marginRight: 16, marginBottom: 16})}
         />
       )
@@ -150,7 +154,7 @@ class ProductTabs extends Component {
 
             <Flex justifyContent="center">
               <SiteContainer edgeToEdge>
-                  {renderTabPanel(customerTypeList)}
+                {renderTabPanel(customerTypeList)}
               </SiteContainer>
             </Flex>
           </Tabs>

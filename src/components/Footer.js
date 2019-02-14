@@ -170,7 +170,7 @@ const Footer = ({containerClassName}) => {
             </Flex>
             <Box pb={2} className={styles.centeredFooterText}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={100}>
-                Flock Ltd. (company number 9503380) are an Appointed Representative of Worry+Peace (a trading name of Innovative Risk Ltd.) who have arranged for the insurance provided by the Flock Cover app to be underwritten by Allianz Global Corporate & Specialty.
+                Flock Limited (FCA #785551) is an Appointed Representative of Worry+Peace (a trading name of Innovative Risk Limited, authorised and regulated by the Financial Conduct Authority, FCA #609155) who have arranged for the insurance provided by Flock to be underwritten by Allianz Global Corporate & Specialty.
               </SmallText>
             </Box>
           </Box>
