@@ -11,12 +11,6 @@ import Media from 'react-media'
 import arrowWhite from '../images/icons/arrow-white.svg'
 import iPhone from '../images/phones/text-me-the-app.png'
 
-injectGlobal`
-  html, body {
-    background-color: #FFDA00;
-  }
-`
-
 class TextMeTheAppTemplate extends Component {
   constructor(props) {
     super(props)
@@ -180,7 +174,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'stretch',
-    minHeight: '100vh'
+    minHeight: '100vh',
+    backgroundColor: '#FFDA00'
   },
   container: {
     position: 'absolute',
