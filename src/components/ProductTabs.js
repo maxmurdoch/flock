@@ -114,7 +114,7 @@ const styles = {
     justifyContent: 'center',
     cursor: 'pointer',
     listStyle: 'none',
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     fontFamily: 'Chivo',
     position: 'relative',
     padding: '10px 30px',
