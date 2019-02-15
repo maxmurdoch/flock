@@ -105,8 +105,8 @@ const styles = {
     marginLeft: 20,
     width: '100%',
     display: 'flex',
-    overflowX: 'scroll',
-    '-ms-overflow-style': '-ms-autohiding-scrollbar'
+    // overflowX: 'scroll',
+    // '-ms-overflow-style': '-ms-autohiding-scrollbar'
   },
   tabStyle: {
     display: '-webkit-box',  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
