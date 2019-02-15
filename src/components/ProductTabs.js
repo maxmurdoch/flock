@@ -16,7 +16,11 @@ class TabSection extends Component {
 
   renderTabs = tabs =>
     tabs.map(({title}) => (
-      <Tab className={css(styles.tabStyle)} key={title}>
+      <Tab
+        className={css(styles.tabStyle)}
+        selectedClassName={css(styles.selectedTabStyle)}
+        key={title}
+      >
         {title}
       </Tab>
     ))
@@ -52,10 +56,7 @@ class TabSection extends Component {
         </Flex>
 
         <div className={css({background: '#363636'})}>
-          <Tabs
-            selectedTabClassName={css(selectedTabStyle)}
-            selectedTabPanelClassName={css(selectedTabPanelStyle)}
-          >
+          <Tabs selectedTabPanelClassName={css(selectedTabPanelStyle)}>
             <Flex
               justifyContent="center"
               className={css({backgroundColor: 'white'})}
@@ -112,18 +113,22 @@ const styles = {
     fontWeight: 'bold',
     fontFamily: 'Chivo',
     position: 'relative',
-    padding: '6px 25px',
+    padding: '10px 25px',
     marginBottom: 0,
     textAlign: 'center',
     width: 250,
-    marginRight: 10,
-    marginLeft: 10,
-    // backgroundColor: '#F7F7F4'
+    marginRight: 7,
+    marginLeft: 7,
+    borderTop: '7px solid #F7F7F4',
+    backgroundColor: '#F7F7F4'
   },
   selectedTabStyle: {
+    boxSizing: 'border-box',
+    '-moz-box-sizing': 'border-box',
+    '-webkit-box-sizing': 'border-box',
     backgroundColor: '#363636',
     color: 'white',
-    borderTop: '5px solid #FFE001'
+    borderTop: '7px solid #FFE001'
   },
   selectedTabPanelStyle: {
     display: 'block',
