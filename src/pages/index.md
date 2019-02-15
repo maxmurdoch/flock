@@ -54,6 +54,8 @@ productTabs:
           buttonTwoText: VIEW ALL FEATURES
           buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
           buttonTwoUrl: https://flockcover.com/insurance/commercial/
+          buttonOneExternal: true
+          buttonTwoExternal: false
           fromPrice: £4.95
           policyFeatureList:
             - text: On-demand cover from 1-8 hours
@@ -66,8 +68,10 @@ productTabs:
         - productType: FLY UNLIMITED
           buttonOneText: GET A PRICE
           buttonTwoText: VIEW ALL FEATURES
-          buttonOneUrl: https://flockcover.app.link/tmXGLhZf7T
+          buttonOneUrl: https://my.flockcover.com/
           buttonTwoUrl: https://flockcover.com/flyunlimited/
+          buttonOneExternal: true
+          buttonTwoExternal: false
           fromPrice: £24.95
           policyFeatureList:
             - text: Unlimited UK flights, plus worldwide options
@@ -86,6 +90,8 @@ productTabs:
           buttonTwoText: VIEW ALL FEATURES
           buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
           buttonTwoUrl: https://flockcover.com/insurance/trainee/
+          buttonOneExternal: true
+          buttonTwoExternal: false
           fromPrice: £5.95
           policyFeatureList:
             - text: Flight assessment and training cover from 1-8 hours
@@ -104,6 +110,8 @@ productTabs:
           buttonTwoText: VIEW ALL FEATURES
           buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
           buttonTwoUrl: https://flockcover.com/insurance/recreational/
+          buttonOneExternal: true
+          buttonTwoExternal: false
           fromPrice: £2.95
           policyFeatureList:
             - text: Short-term cover from 1-8 hours
@@ -119,6 +127,7 @@ productTabs:
         - productType: ENTERPRISE
           buttonOneText: CONTACT US
           buttonOneUrl: mailto:hello@flockcover.com
+          buttonOneExternal: false
           fromPrice: £POA
           policyFeatureList:
             - text: Comprehensive annual risk-based cover (in-and-out of flight)

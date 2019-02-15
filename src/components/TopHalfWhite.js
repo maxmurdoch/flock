@@ -9,7 +9,8 @@ const TopHalfWhite = ({ title, subTitle }) =>
     className={css({
       display: 'flex',
       justifyContent: 'center',
-      minHeight: '50vh'
+      minHeight: '50vh',
+      backgroundColor: '#fff'
     })}
   >
     <Media query="(min-width: 1024px)">
@@ -31,16 +32,19 @@ const TopHalfWhite = ({ title, subTitle }) =>
             })}>
               <h2 className={css({
                 marginBottom: '16px',
+                maxWidth: '400px',
                 fontFamily: 'ITC, sans-serif',
                 fontSize: '24px',
-                fontWeight: 700
+                fontWeight: 700,
+                lineHeight: 1.3
               })}>{title}</h2>
               <p className={css({
                 marginBottom: '16px',
-                maxWidth: '600px',
+                maxWidth: '400px',
                 fontFamily: 'Chivo, sans-serif',
                 fontSize: '14px',
-                fontWeight: 550
+                fontWeight: 400,
+                lineHeight: 1.3
               })}>{subTitle}</p>
             </div>
           </div>
@@ -63,15 +67,17 @@ const TopHalfWhite = ({ title, subTitle }) =>
                 marginBottom: '16px',
                 fontFamily: 'ITC, sans-serif',
                 fontSize: '24px',
-                maxWidth: '450px',
-                fontWeight: 700
+                maxWidth: '400px',
+                fontWeight: 700,
+                lineHeight: 1.3
               })}>{title}</h2>
               <p className={css({
                 marginBottom: '16px',
                 fontFamily: 'Chivo, sans-serif',
                 fontSize: '14px',
-                maxWidth: '550px',
-                fontWeight: 550
+                maxWidth: '400px',
+                fontWeight: 400,
+                lineHeight: 1.3
               })}>{subTitle}</p>
             </div>
           </div>

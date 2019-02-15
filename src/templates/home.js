@@ -234,6 +234,8 @@ export const query = graphql`
               buttonTwoText
               buttonOneUrl
               buttonTwoUrl
+              buttonOneExternal
+              buttonTwoExternal
               fromPrice
               policyFeatureList {
                 text
