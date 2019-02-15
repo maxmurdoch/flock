@@ -106,10 +106,15 @@ const styles = {
     width: '100%',
     display: 'flex',
     overflowX: 'scroll',
-    '-ms-overflow-style': '-ms-autohiding-scrollbar'  
+    '-ms-overflow-style': '-ms-autohiding-scrollbar'
   },
   tabStyle: {
-    display: 'inline-block',
+    display: '-webkit-box',  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: '-ms-flexbox',  /* TWEENER - IE 10 */
+    display: '-webkit-flex', /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     cursor: 'pointer',
     listStyle: 'none',
     fontWeight: 'bold',
@@ -117,7 +122,7 @@ const styles = {
     position: 'relative',
     padding: '10px 30px',
     marginBottom: 0,
-    textAlign: 'center',
+    textAlign: 'left',
     width: 250,
     marginRight: 15,
     borderTop: '7px solid #F7F7F4',
