@@ -105,21 +105,21 @@ productTabs:
       customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent).
       whatIsCovered:
         mainList:
-          - icon: /images/uploads/drone.svg
+          - icon: /images/uploads/drone-white.svg
             title: Drones & accessories
-          - icon: /images/uploads/shield-icon.svg
+          - icon: /images/uploads/shield-white.svg
             title: 3rd party liability
-          - icon: /images/uploads/binoculars.svg
+          - icon: /images/uploads/binoculars-white.svg
             title: Accidental flyaways
-          - icon: /images/uploads/human.svg
-            title: Multiple pilots ⁺
-          - icon: /images/uploads/van.svg
+          - icon: /images/uploads/human-white.svg
+            title: Multiple pilots
+          - icon: /images/uploads/van-white.svg
             title: Transit cover
-          - icon: /images/uploads/lockpad.svg
+          - icon: /images/uploads/lockpad-white.svg
             title: Theft & storage
-          - icon: /images/uploads/document.svg
+          - icon: /images/uploads/document-white.svg
             title: Legal expenses
-          - icon: /images/uploads/megaphone.svg
+          - icon: /images/uploads/megaphone-white.svg
             title: Noise complaints
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
@@ -144,21 +144,21 @@ productTabs:
       whatIsCovered:
         hidden: false
         mainList:
-          - icon: /images/uploads/drone.svg
+          - icon: /images/uploads/drone-white.svg
             title: Drones & accessories
-          - icon: /images/uploads/shield-icon.svg
+          - icon: /images/uploads/shield-white.svg
             title: 3rd party liability
-          - icon: /images/uploads/binoculars.svg
+          - icon: /images/uploads/binoculars-white.svg
             title: Accidental flyaways
-          - icon: /images/uploads/human.svg
-            title: Multiple pilots ⁺
-          - icon: /images/uploads/van.svg
+          - icon: /images/uploads/human-white.svg
+            title: Multiple pilots
+          - icon: /images/uploads/van-white.svg
             title: Transit cover
-          - icon: /images/uploads/lockpad.svg
+          - icon: /images/uploads/lockpad-white.svg
             title: Theft & storage
-          - icon: /images/uploads/document.svg
+          - icon: /images/uploads/document-white.svg
             title: Legal expenses
-          - icon: /images/uploads/megaphone.svg
+          - icon: /images/uploads/megaphone-white.svg
             title: Noise complaints
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
@@ -182,21 +182,21 @@ productTabs:
       customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent).
       whatIsCovered:
         mainList:
-          - icon: /images/uploads/drone.svg
+          - icon: /images/uploads/drone-white.svg
             title: Drones & accessories
-          - icon: /images/uploads/shield-icon.svg
+          - icon: /images/uploads/shield-white.svg
             title: 3rd party liability
-          - icon: /images/uploads/binoculars.svg
+          - icon: /images/uploads/binoculars-white.svg
             title: Accidental flyaways
-          - icon: /images/uploads/human.svg
+          - icon: /images/uploads/human-white.svg
             title: Multiple pilots ⁺
-          - icon: /images/uploads/van.svg
+          - icon: /images/uploads/van-white.svg
             title: Transit cover
-          - icon: /images/uploads/lockpad.svg
+          - icon: /images/uploads/lockpad-white.svg
             title: Theft & storage
-          - icon: /images/uploads/document.svg
+          - icon: /images/uploads/document-white.svg
             title: Legal expenses
-          - icon: /images/uploads/megaphone.svg
+          - icon: /images/uploads/megaphone-white.svg
             title: Noise complaints
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.

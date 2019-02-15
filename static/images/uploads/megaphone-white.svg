@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="33px" viewBox="0 0 37 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/megaphone</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PAYF" transform="translate(-1413.000000, -4778.000000)">
+            <g id="icons/megaphone/white" transform="translate(1409.000000, 4773.000000)">
+                <g id="Group-8" transform="translate(5.000000, 6.000000)">
+                    <polygon id="Stroke-1" stroke="#FFFFFF" stroke-width="2.835" stroke-linejoin="round" points="0.418 16.6386 7.981 16.6386 7.981 7.5826 0.418 7.5826"></polygon>
+                    <polyline id="Stroke-3" stroke="#FFFFFF" stroke-width="2.835" stroke-linejoin="round" points="7.9806 7.5824 23.6046 0.4174 23.6046 22.9084 7.9806 16.6384"></polyline>
+                    <polyline id="Stroke-4" stroke="#FFFFFF" stroke-width="2.835" stroke-linejoin="round" points="7.9806 17.8749 7.9806 30.5709 3.5846 30.5709 3.5846 16.6389"></polyline>
+                    <path d="M28.2306,11.8779 L34.4046,11.8779" id="Stroke-5" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                    <path d="M28.6701,7.7914 L32.9641,4.6164" id="Stroke-6" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                    <path d="M28.6701,15.9648 L32.9641,19.1398" id="Stroke-7" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
