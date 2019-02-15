@@ -103,10 +103,7 @@ const styles = {
   tabListStyle: {
     marginBottom: 0,
     marginLeft: 20,
-    width: '100%',
-    display: 'flex',
-    // overflowX: 'scroll',
-    // '-ms-overflow-style': '-ms-autohiding-scrollbar'
+    display: 'flex'
   },
   tabStyle: {
     display: '-webkit-box',  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
