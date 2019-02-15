@@ -55,7 +55,7 @@ const PriceCard = ({
         {icon && (
           <img
             src={withPrefix(icon)}
-            className={css({marginBottom: 0, height: 40})}
+            className={css({marginBottom: 0, height: 30})}
           />
         )}
       </Flex>
@@ -63,13 +63,12 @@ const PriceCard = ({
 
     {fromPrice && (
       <Flex
-        p={2}
+        pt={[15, 20, 25]}
+        pb={[15, 20, 25]}
+        pl={[20]}
         style={{
           backgroundColor: '#FFE001',
-          flexDirection: 'column',
-          paddingLeft: 20,
-          paddingTop: 25,
-          paddingBottom: 25
+          flexDirection: 'column'
         }}
         justifyContent="center"
       >
@@ -102,24 +101,23 @@ const PriceCard = ({
         paddingBottom: 5
       }}
     >
-      {policyFeatureList &&
-        policyFeatureList.length > 0 && (
-          <Flex flexDirection="column" pt={30} pb={30}>
-            {mapIndex(
-              ({text}) => (
-                <SmallText
-                  className={css({
-                    fontSize: 15,
-                    marginBottom: 10
-                  })}
-                >
-                  {text}
-                </SmallText>
-              ),
-              policyFeatureList
-            )}
-          </Flex>
-        )}
+      {policyFeatureList && policyFeatureList.length > 0 && (
+        <Flex flexDirection="column" pt={30} pb={30}>
+          {mapIndex(
+            ({text}) => (
+              <SmallText
+                className={css({
+                  fontSize: 15,
+                  marginBottom: 10
+                })}
+              >
+                {text}
+              </SmallText>
+            ),
+            policyFeatureList
+          )}
+        </Flex>
+      )}
     </Flex>
 
     <Flex
@@ -132,50 +130,48 @@ const PriceCard = ({
         paddingLeft: 20
       })}
     >
-      {buttonOneText &&
-        buttonOneOnClick && (
-          <PrimaryButton
-            className={css({
-              alignSelf: 'flex-start',
-              marginBottom: 15,
-              cursor: 'pointer'
-            })}
-            onClick={buttonOneOnClick}
-          >
-            <ArrowText moveOnHover={false}>
-              <p
-                className={css({
-                  fontSize: 17,
-                  marginRight: 10
-                })}
-              >
-                {buttonOneText}
-              </p>
-            </ArrowText>
-          </PrimaryButton>
-        )}
+      {buttonOneText && buttonOneOnClick && (
+        <PrimaryButton
+          className={css({
+            alignSelf: 'flex-start',
+            marginBottom: 15,
+            cursor: 'pointer'
+          })}
+          onClick={buttonOneOnClick}
+        >
+          <ArrowText moveOnHover={false}>
+            <p
+              className={css({
+                fontSize: 17,
+                marginRight: 10
+              })}
+            >
+              {buttonOneText}
+            </p>
+          </ArrowText>
+        </PrimaryButton>
+      )}
 
-      {buttonTwoText &&
-        buttonTwoOnClick && (
-          <SecondaryButton
-            className={css({
-              alignSelf: 'flex-start',
-              cursor: 'pointer'
-            })}
-            onClick={buttonTwoOnClick}
-          >
-            <ArrowText moveOnHover={false}>
-              <p
-                className={css({
-                  fontSize: 17,
-                  marginRight: 10
-                })}
-              >
-                {buttonTwoText}
-              </p>
-            </ArrowText>
-          </SecondaryButton>
-        )}
+      {buttonTwoText && buttonTwoOnClick && (
+        <SecondaryButton
+          className={css({
+            alignSelf: 'flex-start',
+            cursor: 'pointer'
+          })}
+          onClick={buttonTwoOnClick}
+        >
+          <ArrowText moveOnHover={false}>
+            <p
+              className={css({
+                fontSize: 17,
+                marginRight: 10
+              })}
+            >
+              {buttonTwoText}
+            </p>
+          </ArrowText>
+        </SecondaryButton>
+      )}
     </Flex>
   </Flex>
 )

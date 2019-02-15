@@ -113,10 +113,15 @@ const styles = {
     fontFamily: 'Chivo',
     position: 'relative',
     padding: '6px 25px',
-    marginBottom: 0
+    marginBottom: 0,
+    textAlign: 'center',
+    width: 250,
+    marginRight: 10,
+    marginLeft: 10,
+    // backgroundColor: '#F7F7F4'
   },
   selectedTabStyle: {
-    background: '#363636',
+    backgroundColor: '#363636',
     color: 'white',
     borderTop: '5px solid #FFE001'
   },
