@@ -104,7 +104,9 @@ const styles = {
     marginBottom: 0,
     marginLeft: 20,
     width: '100%',
-    display: 'flex'
+    display: 'flex',
+    overflowX: 'scroll',
+    '-ms-overflow-style': '-ms-autohiding-scrollbar'  
   },
   tabStyle: {
     display: 'inline-block',
@@ -117,7 +119,7 @@ const styles = {
     marginBottom: 0,
     textAlign: 'center',
     width: 250,
-    marginRight: 7,
+    marginRight: 15,
     borderTop: '7px solid #F7F7F4',
     backgroundColor: '#F7F7F4'
   },
