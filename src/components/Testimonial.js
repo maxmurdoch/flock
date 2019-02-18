@@ -52,9 +52,8 @@ class Testimonial extends Component {
                   textAlign={['left', 'center']}
                   mb={2}
                   color={colors.white}
-                  className={styles.quote}
                 >
-                  {R.prop('quote', activeTestimonial)}
+                  {`"${R.prop('quote', activeTestimonial)}"`}
                 </BodyText>
                 <SmallText
                   textShadow="0 1px 0 rgba(0, 0, 0, 0.2)"
@@ -154,16 +153,5 @@ const styles = {
     position: 'relative',
     zIndex: 1,
     backgroundSize: 'cover'
-  }),
-  quote: css({
-    '&::before': {
-      marginLeft: -5,
-      content: '\'“ \'',
-      display: 'inline-block'
-    },
-    '&::after': {
-      content: '\' ”\'',
-      display: 'inline-block'
-    }
   })
 }

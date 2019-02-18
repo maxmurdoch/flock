@@ -21,7 +21,7 @@ const TextGrid = ({title, description, list, image, yellowUnderline}) => (
       <Flex flexWrap={true}>
         <Box width={['100%', '50%']}>
           <ShowIf predicate={R.not(R.isEmpty(title))}>
-            <H2 markdown={true}>{title}</H2>
+            <H2 markdown={true} pb={15}>{title}</H2>
           </ShowIf>
           <ShowIf predicate={!!image}>
             <img src={withPrefix(image)} />

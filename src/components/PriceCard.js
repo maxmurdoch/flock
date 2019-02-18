@@ -41,10 +41,11 @@ const PriceCard = ({
   >
     {productType && (
       <Flex
+        p={[10, 15, 20]}
+        pl={20}
+        pb={[15, 20, 25]}
         style={{
           backgroundColor: '#F7F7F4',
-          padding: 20,
-          paddingBottom: 25,
           alignItems: 'center',
           justifyContent: 'space-between'
         }}
@@ -55,7 +56,7 @@ const PriceCard = ({
         {icon && (
           <img
             src={withPrefix(icon)}
-            className={css({marginBottom: 0, height: 30})}
+            className={css({marginBottom: 0, height: 30 })}
           />
         )}
       </Flex>

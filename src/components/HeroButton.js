@@ -5,8 +5,16 @@ import Button from './Button'
 import BodyText from './BodyText'
 import {colors} from '../constants/theme'
 
-const HeroButton = ({children, color, to, external, branch, track, ...props}) => {
-  function clickHandler (){
+const HeroButton = ({
+  children,
+  color,
+  to,
+  external,
+  branch,
+  track,
+  ...props
+}) => {
+  function clickHandler() {
     if (track !== '') {
       analytics.track(track)
     }
@@ -20,7 +28,9 @@ const HeroButton = ({children, color, to, external, branch, track, ...props}) =>
       return
     }
 
-    const link = branch ? `${to}?anonymous_id=${analytics.user().anonymousId()}` : to
+    const link = branch
+      ? `${to}?anonymous_id=${analytics.user().anonymousId()}`
+      : to
     window.open(link, external ? '_blank' : '_self')
   }
   return (
@@ -31,9 +41,11 @@ const HeroButton = ({children, color, to, external, branch, track, ...props}) =>
       background={color === 'yellow' ? colors.yellow : colors.dark}
       color={color === 'yellow' ? 'black' : 'white'}
       {...props}
-       onClick={clickHandler}
+      onClick={clickHandler}
     >
-      <BodyText fontWeight={700}>{children}</BodyText>
+      <BodyText fontWeight={700} className={css({fontSize: 16})}>
+        {children}
+      </BodyText>
     </Button>
   )
 }

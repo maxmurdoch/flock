@@ -5,7 +5,7 @@ downloadLink: 'https://flockcover.app.link/6IW6kTmgfP'
 hero:
   buttons:
     - branch: true
-      color: yellow
+      color: black
       external: true
       title: GET A QUOTE
       to: '#product-tabs'

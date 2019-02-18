@@ -7,8 +7,9 @@ import {css, cx} from 'emotion'
 import remark from 'remark'
 import remark2react from 'remark-react'
 
-const BodyText = ({children, mb = 0, className, ...props}) => {
-  if (typeof(children) === 'string') {
+const BodyText = ({children, mb = 0, className,...props}) => {
+  console.log(className)
+  if (typeof children === 'string') {
     return (
       <Text
         tag="div"
@@ -16,12 +17,20 @@ const BodyText = ({children, mb = 0, className, ...props}) => {
         className={cx(style.text, className)}
         {...props}
       >
-        {remark().use(remark2react).processSync(children).contents}
+        {
+          remark()
+            .use(remark2react)
+            .processSync(children).contents
+        }
       </Text>
     )
   } else {
     return (
-      <Text mb={mb} className={cx(style.text, className)} {...props}>
+      <Text
+        mb={mb}
+        className={cx(style.text, className)}
+        {...props}
+      >
         {' '}
         {children}{' '}
       </Text>
@@ -41,7 +50,7 @@ const style = {
 
     [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
       fontSize: 20,
-      lineHeight: '34px'
+      lineHeight: '28px'
     }
   })
 }

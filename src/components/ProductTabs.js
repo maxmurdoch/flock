@@ -4,6 +4,7 @@ import R from 'ramda'
 import {css} from 'react-emotion'
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
 
+import {breakpoints} from '../constants/theme'
 import H2 from './H2'
 import BodyText from './BodyText'
 import SiteContainer from './SiteContainer'
@@ -17,7 +18,7 @@ class TabSection extends Component {
   renderTabs = tabs =>
     tabs.map(({title}) => (
       <Tab
-        className={css(styles.tabStyle)}
+        className={styles.tabStyle}
         selectedClassName={css(styles.selectedTabStyle)}
         key={title}
       >
@@ -44,7 +45,9 @@ class TabSection extends Component {
             <Flex flexWrap={true} flexDirection="column">
               <Box width={['100%', '50%']} mb={50}>
                 <ShowIf predicate={R.not(R.isEmpty(title))}>
-                  <H2 markdown={true}>{title}</H2>
+                  <H2 markdown={true} pb={15}>
+                    {title}
+                  </H2>
                 </ShowIf>
 
                 <ShowIf predicate={R.not(R.isEmpty(description))}>
@@ -105,26 +108,32 @@ const styles = {
     marginLeft: 20,
     display: 'flex'
   },
-  tabStyle: {
-    display: '-webkit-box',  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: '-ms-flexbox',  /* TWEENER - IE 10 */
-    display: '-webkit-flex', /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  tabStyle: css({
+    display: '-webkit-box' /* OLD - iOS 6-, Safari 3.1-6, BB7 */,
+    display: '-ms-flexbox' /* TWEENER - IE 10 */,
+    display: '-webkit-flex' /* NEW - Safari 6.1+. iOS 7.1+, BB10 */,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     cursor: 'pointer',
     listStyle: 'none',
-    // fontWeight: 'bold',
     fontFamily: 'Chivo',
     position: 'relative',
     padding: '10px 30px',
     marginBottom: 0,
     textAlign: 'left',
     width: 250,
-    marginRight: 15,
+    marginRight: 10,
     borderTop: '7px solid #F7F7F4',
-    backgroundColor: '#F7F7F4'
-  },
+    backgroundColor: '#F7F7F4',
+    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+      marginRight: 10
+    },
+
+    [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
+      marginRight: 15
+    }
+  }),
   selectedTabStyle: {
     boxSizing: 'border-box',
     '-moz-box-sizing': 'border-box',
