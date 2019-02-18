@@ -43,6 +43,10 @@ const style = {
     fontSize: 18,
     lineHeight: '26px',
 
+    '& p': {
+      marginBottom: 15
+    },
+
     [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
       fontSize: 20,
       lineHeight: '28px'
