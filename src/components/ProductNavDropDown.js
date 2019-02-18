@@ -6,6 +6,7 @@ import {Collapse} from 'react-collapse'
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
 import Box from './Box'
+import NavButton from './NavButton'
 import ProductLink from './ProductLink'
 import {colors} from '../constants/theme'
 
@@ -22,30 +23,37 @@ const ProductNavDropDown = ({productsIsOpen}) => {
         justifyContent="center"
         width="100%"
         background={colors.backgrounds.dark}
+        pt={40}
+        pb={40}
       >
         <SiteContainer>
-          <Flex alignItems="stretch">
+          <Flex alignItems="space-between" justifyContent='space-between'>
             {mapIndex(
-              ({image, to, text}, index) => (
-                <Box width="33.33%" key={index}>
-                  <ProductLink to={to} image={image} text={text} />
-                </Box>
+              ({to, text}, index) => (
+                <Flex width="25%" key={index} m={'5px'}>
+                  <NavButton to={to}  title={text} flexGrow={1}/>
+                </Flex>
               ),
               [
                 {
                   to: '/insurance/commercial',
                   image: '/images/uploads/commercial-pilot.svg',
-                  text: 'Commercial pilot'
+                  text: 'COMMERCIAL OPERATORS'
                 },
                 {
                   to: '/insurance/trainee',
                   image: '/images/uploads/trainee-pilot.svg',
-                  text: 'Trainee pilot'
+                  text: 'PILOTS IN TRAINING'
                 },
                 {
                   to: '/insurance/recreational',
                   image: '/images/uploads/recreational-pilot.svg',
-                  text: 'Recreational pilot'
+                  text: 'RECREATIONAL PILOT'
+                },
+                {
+                  to: '/insurance/recreational',
+                  image: '/images/uploads/recreational-pilot.svg',
+                  text: 'DRONE ENTERPRISES'
                 }
               ]
             )}

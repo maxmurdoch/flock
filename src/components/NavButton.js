@@ -21,24 +21,7 @@ const NavButton = ({
   ...props
 }) => {
   function clickHandler() {
-    if (download) downloadClickHandler()
-    if (track !== '') {
-      analytics.track(track)
-    }
-
-    if (to.indexOf('#') === 0) {
-      window.scrollTo({
-        top: document.querySelector(to).offsetTop,
-        behavior: 'smooth'
-      })
-
-      return
-    }
-
-    const link = branch
-      ? `${to}?anonymous_id=${analytics.user().anonymousId()}`
-      : to
-    window.open(link, external ? '_blank' : '_self')
+    window.open(link, '_self')
   }
   return (
     <button
@@ -82,7 +65,7 @@ const NavButton = ({
           {title}
         </span>
         <img
-          className={css({marginLeft: 24, marginBottom: 0})}
+          className={css({ marginBottom: 0})}
           src={color === 'yellow' ? BlackArrow : WhiteArrow}
         />
       </span>
