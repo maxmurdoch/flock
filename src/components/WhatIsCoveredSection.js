@@ -47,7 +47,7 @@ const whatIsCovered = ({
             buttonOneText={buttonText}
             fromPrice={fromPrice}
             policyFeatureList={policyFeatureList}
-            buttonOneOnClick={() => window.open('https://my.flockcover.com')}
+            buttonOneUrl={'https://my.flockcover.com'}
           />
 
           <Flex

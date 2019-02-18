@@ -22,8 +22,10 @@ const PriceCard = ({
   fromPrice,
   icon,
   policyFeatureList,
-  buttonOneOnClick,
-  buttonTwoOnClick,
+  buttonOneUrl,
+  buttonTwoUrl,
+  buttonOneExternal,
+  buttonTwoExternal,
   flex = null,
   className
 }) => (
@@ -56,7 +58,7 @@ const PriceCard = ({
         {icon && (
           <img
             src={withPrefix(icon)}
-            className={css({marginBottom: 0, height: 30 })}
+            className={css({marginBottom: 0, height: 30})}
           />
         )}
       </Flex>
@@ -125,53 +127,29 @@ const PriceCard = ({
       flexDirection="column"
       className={css({
         backgroundColor: '#F7F7F4',
+        alignItems: 'flex-start',
         paddingTop: 5,
         paddingBottom: 15,
         paddingRight: 15,
         paddingLeft: 20
       })}
     >
-      {buttonOneText && buttonOneOnClick && (
+      {buttonOneText && buttonOneUrl && (
         <PrimaryButton
-          className={css({
-            alignSelf: 'flex-start',
-            marginBottom: 15,
-            cursor: 'pointer'
-          })}
-          onClick={buttonOneOnClick}
-        >
-          <ArrowText moveOnHover={false}>
-            <p
-              className={css({
-                fontSize: 17,
-                marginRight: 10
-              })}
-            >
-              {buttonOneText}
-            </p>
-          </ArrowText>
-        </PrimaryButton>
+          to={buttonOneUrl}
+          external={buttonOneExternal}
+          title={buttonOneText}
+          color="yellow"
+          mb={15}
+        />
       )}
 
-      {buttonTwoText && buttonTwoOnClick && (
-        <SecondaryButton
-          className={css({
-            alignSelf: 'flex-start',
-            cursor: 'pointer'
-          })}
-          onClick={buttonTwoOnClick}
-        >
-          <ArrowText moveOnHover={false}>
-            <p
-              className={css({
-                fontSize: 17,
-                marginRight: 10
-              })}
-            >
-              {buttonTwoText}
-            </p>
-          </ArrowText>
-        </SecondaryButton>
+      {buttonTwoText && buttonTwoUrl && (
+        <PrimaryButton
+          to={buttonTwoUrl}
+          external={buttonTwoExternal}
+          title={buttonTwoText}
+        />
       )}
     </Flex>
   </Flex>

@@ -7,7 +7,7 @@ import ProductCard from './PriceCard'
 import SmallText from './SmallText'
 
 const productCardTabPanel = ({customerTypeDesc, productCards}) => {
-  const goToUrl = (url, external) => window.open(url, external ? '_blank' : '_self')
+
   const renderProductCards = productCards =>
     productCards.map(
       ({
@@ -34,8 +34,10 @@ const productCardTabPanel = ({customerTypeDesc, productCards}) => {
           buttonTwoText={buttonTwoText}
           fromPrice={fromPrice}
           policyFeatureList={policyFeatureList}
-          buttonOneOnClick={() => goToUrl(buttonOneUrl, buttonOneExternal)}
-          buttonTwoOnClick={() => goToUrl(buttonTwoUrl, buttonTwoExternal)}
+          buttonOneUrl={buttonOneUrl}
+          buttonTwoUrl={buttonTwoUrl}
+          buttonOneExternal={buttonOneExternal}
+          buttonTwoExternal={buttonTwoExternal}
           className={css({marginRight: 16, marginBottom: 16})}
         />
       )

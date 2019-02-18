@@ -53,19 +53,6 @@ const AboutHero = ({
             <BodyText textAlign={'center'} color={textColor} mb={[2, 3]}>
               {description}
             </BodyText>
-            <ShowIf predicate={button}>
-              <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
-                {matches =>
-                  matches ? (
-                    <PrimaryButton to={button.to}>{button.text}</PrimaryButton>
-                  ) : (
-                    <SecondaryButton to={button.to}>
-                      {button.text}
-                    </SecondaryButton>
-                  )
-                }
-              </Media>
-            </ShowIf>
           </Box>
         </SiteContainer>
       </Flex>

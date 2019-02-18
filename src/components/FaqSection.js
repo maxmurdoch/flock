@@ -23,7 +23,14 @@ class FUfaqSection extends React.Component {
   }
 
   render() {
-    const {faqs, header, buttonText, buttonUrl, body, disclosureIndicator} = this.props
+    const {
+      faqs,
+      header,
+      buttonText,
+      buttonUrl,
+      body,
+      disclosureIndicator
+    } = this.props
     const {openIdx} = this.state
 
     return (
@@ -55,7 +62,9 @@ class FUfaqSection extends React.Component {
                 ({title, body}, idx) => (
                   <div key={idx}>
                     <Flex
-                      onClick={() => this.setState({openIdx: openIdx === idx ? null : idx})}
+                      onClick={() =>
+                        this.setState({openIdx: openIdx === idx ? null : idx})
+                      }
                       flexDirection="row"
                       alignItems="center"
                       justifyContent="space-between"
@@ -75,7 +84,9 @@ class FUfaqSection extends React.Component {
                       <img
                         src={disclosureIndicator}
                         className={css({
-                          transform: `rotate(${openIdx === idx ? '180' : '0'}deg)`,
+                          transform: `rotate(${
+                            openIdx === idx ? '180' : '0'
+                          }deg)`,
                           marginBottom: 0,
                           marginRight: 5
                         })}
@@ -103,6 +114,7 @@ class FUfaqSection extends React.Component {
             <Flex
               flex={1}
               flexWrap="wrap"
+              alignItems="flex-start"
               justifyContent="flex-start"
               flexDirection="column"
               pt={[2, 3, 5]}
@@ -124,23 +136,10 @@ class FUfaqSection extends React.Component {
               </Flex>
 
               <PrimaryButton
-                className={css({
-                  alignSelf: 'flex-start'
-                })}
-                onClick={() => {
-                  window.open(buttonUrl, '_blank')
-                }}
-              >
-                <ArrowText moveOnHover={false}>
-                  <p
-                    className={css({
-                      fontSize: 17
-                    })}
-                  >
-                    {buttonText}
-                  </p>
-                </ArrowText>
-              </PrimaryButton>
+                to={buttonUrl}
+                title={buttonText}
+                color="yellow"
+              />
             </Flex>
           </Flex>
         </SiteContainer>
