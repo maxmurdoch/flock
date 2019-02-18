@@ -45,6 +45,7 @@ const PriceCard = ({
       <Flex
         p={[10, 15, 20]}
         pl={20}
+        pt={[15, 20, 20]}
         pb={[15, 20, 25]}
         style={{
           backgroundColor: '#F7F7F4',
