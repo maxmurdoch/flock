@@ -34,7 +34,7 @@ const DownloadFlock = ({to}) => {
             <PrimaryButton
               to={to}
               download
-              title="Download"
+              title="DOWNLOAD"
               color="yellow"
             />
           </Box>

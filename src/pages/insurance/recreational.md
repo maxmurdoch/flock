@@ -4,7 +4,7 @@ templateKey: product
 hero:
   backgroundImage: ../../images/uploads/hobbyist-header.jpg
   buttons:
-    - title: Download
+    - title: DOWNLOAD
       to: 'https://flockcover.app.link/6IW6kTmgfP'
       color: yellow
       external: true

@@ -4,7 +4,7 @@ templateKey: product
 hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
   buttons:
-    - title: Download
+    - title: DOWNLOAD
       to: 'https://flockcover.app.link/6IW6kTmgfP'
       color: yellow
       external: true
@@ -19,7 +19,7 @@ hero:
       title: Instant customer support
   description: |-
     * Pay-as-you-fly and monthly subscription options
-    * EC785/2004 compliant 
+    * EC785/2004 compliant
     * Customisable Public Liability limits from £1-10M
     * Drone and accessory cover up to £25,000
   header: Fully flexible drone insurance for commercial pilots
@@ -157,4 +157,3 @@ siteMetadataOverride:
     - commercial drone insurance UK
   title: Fully flexible drone insurance for commercial pilots
 ---
-

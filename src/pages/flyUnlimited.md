@@ -4,13 +4,13 @@ templateKey: flyUnlimited
 hero:
   backgroundImage: ../../images/uploads/fly-unlimited-header.jpg
   buttons:
-    - title: Get a quote
+    - title: GET A QUOTE
       to: 'https://my.flockcover.com'
       color: yellow
       external: true
       branch: false
       track: ''
-    - title: What's covered?
+    - title: WHAT'S COVERED?
       to: '#what-is-covered'
       color: black
       external: true

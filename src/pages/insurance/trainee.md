@@ -4,7 +4,7 @@ templateKey: product
 hero:
   backgroundImage: ../../images/uploads/trainee-header.jpg
   buttons:
-    - title: Download
+    - title: DOWNLOAD
       to: 'https://flockcover.app.link/6IW6kTmgfP'
       color: yellow
       external: true
@@ -185,4 +185,3 @@ siteMetadataOverride:
     - pay-as-you-fly drone insurance
   title: Trainee pay-as-you-fly drone insurance
 ---
-
