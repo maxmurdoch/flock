@@ -45,8 +45,7 @@ const HeroButton = ({
         cursor: 'pointer',
         appearance: 'none',
         display: 'inline-block',
-        minHeight: '54px',
-        padding: '14px 16px',
+        padding: '18px 16px',
         backgroundColor: color === 'yellow' ? colors.yellow : colors.dark,
         border: 'none',
         outline: 'none',
@@ -74,7 +73,8 @@ const HeroButton = ({
             fontSize: '16px',
             fontWeight: '700',
             flex: '1 1 auto',
-            textAlign: 'left'
+            textAlign: 'left',
+            lineHeight: 1.1
           })}
         >
           {title}

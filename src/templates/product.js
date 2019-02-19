@@ -6,6 +6,7 @@ import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
 import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
+import DarkNav from '../components/DarkNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
@@ -25,6 +26,7 @@ import {colors} from '../constants/theme'
 
 const SegmentPageTemplate = ({data}) => {
   const {
+    navColor,
     hero,
     why,
     coverNote,
@@ -45,7 +47,7 @@ const SegmentPageTemplate = ({data}) => {
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <LightNav />
+        {navColor === 'light' ? <LightNav /> : <DarkNav />}
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             headerClassName={css({
@@ -54,7 +56,7 @@ const SegmentPageTemplate = ({data}) => {
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat'
             })}
-            textColor={colors.white}
+            textColor={colors[hero.textColor]}
             header={hero.header}
             description={hero.description}
             buttons={hero.buttons}
@@ -106,7 +108,7 @@ const SegmentPageTemplate = ({data}) => {
             <Testimonial testimonials={testimonial} />
           </Box>
           <Box pt={[3, 5]}>
-            <DownloadFlock to={'https://flockcover.app.link/6IW6kTmgfP'}/>
+            <DownloadFlock to={'https://flockcover.app.link/6IW6kTmgfP'} />
           </Box>
           <BigSectionLine />
           <OtherProducts
@@ -132,7 +134,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+        navColor
         hero {
+          textColor
           buttons {
             title
             to

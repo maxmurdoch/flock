@@ -3,18 +3,21 @@ title: Pay-As-You-Fly
 templateKey: payAsYouFly
 downloadLink: 'https://flockcover.app.link/6IW6kTmgfP'
 hero:
+  backgroundImage: ../../images/uploads/PAYF-header.jpg
+  textColor: white
   buttons:
     - color: yellow
       title: GET A QUOTE
+      external: false
+      to: https://flockcover.com/textmetheapp/
     - title: WHAT'S COVERED
       to: '#what-is-covered'
       color: black
   description: >-
-    Welcome to fully flexible insurance you control. In a couple of taps, get
-    covered for an hour, day or month.
+    A flexible alternative to traditional insurance. Get short-term, customised cover for your drone flight in a matter of taps with the Flock Cover app.
 
 
-    Join thousands of pilots using Flock Cover today.
+    It’s as simple as that.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -22,50 +25,44 @@ hero:
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
       title: Instant customer support
-  header: 'Pay-as-you-fly drone insurance, precisely when you need it'
+  header: 'Pay-as-you-fly drone insurance'
 stopWorrying:
   description: >-
-    Our community helps to shape the products and features we build. The result: flexible policies that our pilots love, and smart tools that provide much more than just insurance.
+    Whether you’re a new pilot, fly a few times a month, or only take your drone out for part of the year, Pay-as-you-fly drone insurance could cut your insurance bill.
   reasons:
     - icon: /images/uploads/infinity.svg
       text: >-
-        Forget annual contracts. Get on-demand insurance only when you need it. Or fly with a flexible monthly policy and get covered anywhere, anytime.
-      title: Fully flexible cover
+        Insurance from one to eight hours. Get covered instantly, or pre-book up to 10 days in advance.
+      title: Pay only when you fly
     - icon: /images/uploads/globe.svg
       text: >-
-        We’ve made endless forms a thing of the past. If something goes wrong, make a claim via the app in a couple of taps. Or give us a call, we’re always here to help.
-      title: Easy claims
+        Our pricing is risk-dependent. The safer you fly, the less you pay. There’s no commitments or upfront costs.
+      title: Fairer Pricing
     - icon: /images/uploads/shield-icon.svg
       text: >-
-        We may be the new kid on the block, but our partners are not. Flock policies are underwritten by Allianz, the world’s leading aviation insurer. So you’re in safe hands.
-      title: Backed by Allianz
-  title: 'Built for drone pilots, with drone pilots'
+        If something goes wrong, make claim via the app in a couple of taps. Or give us a call, we’re always here to help.
+      title: Claim Simply
+  title: On-demand drone insurance, precisely when you need it
 how:
   description: >-
-    Insuring your drone has never been easier. All it takes is a matter of taps
-    on your mobile phone.
+    Insuring your drone flight has never been easier. It’s as simple as tap, tap, take-off!
   list:
     - image: /images/uploads/commercial-1-.png
       text: >-
-        Choose where and when you want to fly. See your quote change in
-        real-time.
+        Select where and when you’re flying. See your quote change in real-time.
       title: 1. Enter your flight details
     - image: /images/uploads/commercial-personalise.png
       text: >-
-        Customise your policy length, Public Liability limit, and equipment
-        cover to suit your needs.
-      title: 2. Customise your policy
+        Tailor your drone, accessories and Public Liability limit each time you fly
+      title: 2. Customise your cover
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay to instantly receive your policy documents by email. Enjoy the
-        flight!
-      title: 3. Get flying
+        Instantly receive your policy documents by email. Enjoy the flight!
+      title: 3. Take off
   title: How our Pay-as-you-fly cover works
 risk:
   description: >-
-    With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data from your Flight Area to generate a unique Risk
-    Report for each flight in seconds. Here's what we look out for:
+    With Flock, you get much more than just an insurance policy. The app analyses real-time data from your Flight Area to generate a unique Risk Report for each flight in seconds. Here’s what we look out for:
   list:
     - icon: images/uploads/icons-house.svg
       text: >-
@@ -87,7 +84,7 @@ risk:
         Receive real-time weather updates such as wind speed, temperature, and
         probability of rainfall.
       title: Hyperlocal weather
-  title: Know your risks before you fly
+  title: Fly safer with the Flock Cover app
 calculator:
   description: >-
     Tell us about your flying habits and we will estimate the yearly cost of
@@ -95,10 +92,10 @@ calculator:
   disclaimer: >-
     Your estimate is based on average usage. Actual prices will depend on the
     real-time risks of each flight.
-  title: Is pay-as-you-fly for you?
+  title: Get a quick Pay-as-you-fly quote
 productTabs:
   title: Find the cover that's right for you
-  description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
+  description: Whether you’re operating commercially, completing your training, or flying for fun - we’ve got a Pay-as-you-fly policy that’s tailored to you
   customerTypeList:
     - commercial:
       title: Commercial operator
@@ -223,12 +220,12 @@ renewalBanner:
   buttonTrack: WebApp Navigation Clicked
 faqSection:
   header: Frequently asked questions
-  body: Got other questions? Visit our help centre, or chat live with us now.
+  body: Have other questions? Visit our help centre or chat live with us now.
   buttonText: VIEW ALL FAQs
   buttonUrl: https://help.flockcover.com/
   disclosureIndicator: /images/uploads/small-arrow-yellow.svg
   faqs:
-    - title: Are there any long-term commitments with Fly Unlimited?
+    - title: How is the risk-dependent pricing calculated?
       body: >-
         Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
 

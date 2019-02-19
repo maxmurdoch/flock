@@ -1,8 +1,10 @@
 ---
 title: Commercial
 templateKey: product
+navColor: dark
 hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
+  textColor: black
   buttons:
     - title: DOWNLOAD
       to: 'https://flockcover.app.link/6IW6kTmgfP'
