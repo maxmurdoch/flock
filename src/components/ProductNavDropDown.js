@@ -6,9 +6,10 @@ import {Collapse} from 'react-collapse'
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
 import Box from './Box'
-import NavButton from './NavButton'
+import PrimaryButton from './NavPrimaryButton'
+import SecondaryButton from './NavSecondaryButton'
 import ProductLink from './ProductLink'
-import {colors} from '../constants/theme'
+import {colors, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
 
@@ -23,39 +24,44 @@ const ProductNavDropDown = ({productsIsOpen}) => {
         justifyContent="center"
         width="100%"
         background={colors.backgrounds.dark}
-        pt={40}
-        pb={40}
+        pt={30}
+        pb={30}
       >
-        <SiteContainer>
-          <Flex alignItems="space-between" justifyContent='space-between'>
+        <SiteContainer edgeToEdge>
+          <Flex justifyContent="flex-start" alignItems="flex-start" flexWrap p={'15px'}>
             {mapIndex(
-              ({to, text}, index) => (
-                <Flex width="25%" key={index} m={'5px'}>
-                  <NavButton to={to}  title={text} flexGrow={1}/>
+              ({to, text, options, hasIcon}, index) => (
+                <Flex
+                  p='5px'
+                  key={index}
+                  flexDirection="column"
+                  className={css({
+                    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+                      width: '50%'
+                    },
+
+                    '@media (min-width: 1200px)': {
+                      width: '25%'
+                    }
+                  })}
+                >
+                  <Flex flexDirection="column">
+                    <PrimaryButton to={to} title={text} mb={12} hasIcon={hasIcon}/>
+                    {mapIndex(
+                      ({to, text, icon}) => (
+                        <SecondaryButton
+                          to={to}
+                          title={text}
+                          flexGrow={1}
+                          icon={icon}
+                        />
+                      ),
+                      options
+                    )}
+                  </Flex>
                 </Flex>
               ),
-              [
-                {
-                  to: '/insurance/commercial',
-                  image: '/images/uploads/commercial-pilot.svg',
-                  text: 'COMMERCIAL OPERATORS'
-                },
-                {
-                  to: '/insurance/trainee',
-                  image: '/images/uploads/trainee-pilot.svg',
-                  text: 'PILOTS IN TRAINING'
-                },
-                {
-                  to: '/insurance/recreational',
-                  image: '/images/uploads/recreational-pilot.svg',
-                  text: 'RECREATIONAL PILOT'
-                },
-                {
-                  to: '/insurance/recreational',
-                  image: '/images/uploads/recreational-pilot.svg',
-                  text: 'DRONE ENTERPRISES'
-                }
-              ]
+              buttonContent
             )}
           </Flex>
         </SiteContainer>
@@ -63,5 +69,60 @@ const ProductNavDropDown = ({productsIsOpen}) => {
     </Collapse>
   )
 }
+
+const buttonContent = [
+  {
+    to: '/insurance/commercial',
+    text: 'COMMERCIAL OPERATORS',
+    hasIcon: true,
+    options: [
+      {
+        to: '/payasyoufly',
+        text: 'Pay-as-you-fly',
+        icon: 'PAYF'
+      },
+      {
+        to: '/flyunlimited',
+        text: 'Fly Unlimited',
+        icon: 'PAYF'
+      }
+    ]
+  },
+  {
+    to: '/insurance/trainee',
+    text: 'PILOTS IN TRAINING',
+    hasIcon: true,
+    options: [
+      {
+        to: '/payasyoufly',
+        text: 'Pay-as-you-fly',
+        icon: 'PAYF'
+      }
+    ]
+  },
+  {
+    to: '/insurance/recreational',
+    text: 'RECREATIONAL PILOT',
+    hasIcon: true,
+    options: [
+      {
+        to: '/payasyoufly',
+        text: 'Pay-as-you-fly',
+        icon: 'PAYF'
+      }
+    ]
+  },
+  {
+    to: '',
+    text: 'DRONE ENTERPRISES',
+    hasIcon: false,
+    options: [
+      {
+        to: '',
+        text: 'Coming Soon'
+      }
+    ]
+  }
+]
 
 export default ProductNavDropDown

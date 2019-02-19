@@ -2,26 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {css} from 'react-emotion'
 
-import {downloadClickHandler} from '../utils/trackDownload'
 import {colors} from '../constants/theme'
-import BlackArrow from '../images/icons/arrow-black.svg'
-import WhiteArrow from '../images/icons/arrow-white.svg'
+import ArrowIcon from '../images/icons/arrow-head.svg'
 
-const NavButton = ({
-  title,
-  download,
-  color,
-  to,
-  external,
-  branch,
-  track,
-  mb,
-  mr,
-  flexGrow,
-  ...props
-}) => {
+const NavPrimaryButton = ({title, to, flexGrow, mb, hasIcon, ...props}) => {
   function clickHandler() {
-    window.open(link, '_self')
+    window.open(to, '_self')
   }
   return (
     <button
@@ -29,15 +15,13 @@ const NavButton = ({
         cursor: 'pointer',
         appearance: 'none',
         display: 'inline-block',
-        minHeight: '54px',
         padding: '14px 16px',
-        backgroundColor: color === 'yellow' ? colors.yellow : colors.dark,
+        backgroundColor: colors.dark,
         border: 'none',
         outline: 'none',
         textDecoration: 'none',
         textAlign: 'left',
-        color: color === 'yellow' ? 'black' : 'white',
-        marginRight: mr,
+        color: 'white',
         marginBottom: mb,
         flexGrow
       })}
@@ -65,15 +49,15 @@ const NavButton = ({
           {title}
         </span>
         <img
-          className={css({ marginBottom: 0})}
-          src={color === 'yellow' ? BlackArrow : WhiteArrow}
+          className={css({marginLeft: 5, marginBottom: 0})}
+          src={hasIcon && ArrowIcon}
         />
       </span>
     </button>
   )
 }
 
-NavButton.propTypes = {
+NavPrimaryButton.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.oneOf(['yellow', 'black']).isRequired,
   to: PropTypes.string,
@@ -82,4 +66,4 @@ NavButton.propTypes = {
   track: PropTypes.string
 }
 
-export default NavButton
+export default NavPrimaryButton
