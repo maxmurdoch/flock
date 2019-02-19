@@ -8,7 +8,6 @@ import remark from 'remark'
 import remark2react from 'remark-react'
 
 const BodyText = ({children, mb = 0, className,...props}) => {
-  console.log(className)
   if (typeof children === 'string') {
     return (
       <Text
