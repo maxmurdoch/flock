@@ -126,10 +126,16 @@ const styles = {
     marginRight: 10,
     borderTop: '7px solid #F7F7F4',
     backgroundColor: '#F7F7F4',
+
+    ':focus': {
+      boxShadow: 'none',
+      outline: 'none'
+    },
+
     [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
       marginRight: 10
     },
-
+    
     [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
       marginRight: 15
     }

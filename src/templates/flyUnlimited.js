@@ -101,8 +101,8 @@ class FlyUnlimitedPageTemplate extends Component {
                 mainTitle={whatIsCovered.mainTitle}
                 mainList={whatIsCovered.mainList}
                 mainDescription={whatIsCovered.mainDescription}
-                buttonText={whatIsCovered.buttonText}
-                buttonUrl={whatIsCovered.buttonUrl}
+                buttonOneText={whatIsCovered.buttonOneText}
+                buttonOneUrl={whatIsCovered.buttonOneUrl}
                 fromPrice={whatIsCovered.fromPrice}
                 policyFeatureList={whatIsCovered.policyFeatureList}
                 smallPrints={whatIsCovered.smallPrints}
@@ -221,8 +221,8 @@ export const query = graphql`
             icon
             title
           }
-          buttonUrl
-          buttonText
+          buttonOneUrl
+          buttonOneText
           fromPrice
           policyFeatureList {
             text

@@ -19,7 +19,10 @@ const whatIsCovered = ({
   mainDescription,
   mainList,
   smallPrints,
-  buttonText,
+  buttonOneText,
+  buttonTwoText,
+  buttonOneUrl,
+  buttonTwoUrl,
   fromPrice,
   policyFeatureList,
   samplePolicyWordingUrl,
@@ -27,6 +30,7 @@ const whatIsCovered = ({
   fromText,
   itemTextColor = 'black',
   headerTextColor = 'black',
+  smallPrintColor= 'grey',
   perText
 }) => {
   return (
@@ -44,10 +48,12 @@ const whatIsCovered = ({
             productType={productType}
             fromText={fromText}
             perText={perText}
-            buttonOneText={buttonText}
+            buttonOneText={buttonOneText}
+            buttonTwoText={buttonTwoText}
+            buttonOneUrl={buttonOneUrl}
+            buttonTwoUrl={buttonTwoUrl}
             fromPrice={fromPrice}
             policyFeatureList={policyFeatureList}
-            buttonOneUrl={'https://my.flockcover.com'}
           />
 
           <Flex
@@ -116,7 +122,7 @@ const whatIsCovered = ({
                     textAlign="left"
                     style={{fontSize: 14}}
                     className={css({
-                      color: 'grey'
+                      color: smallPrintColor
                     })}
                   >
                     {text}

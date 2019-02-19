@@ -108,8 +108,10 @@ const PayAsYouFlyTemplate = ({
                     mainTitle,
                     mainList,
                     mainDescription,
-                    buttonText,
-                    buttonUrl,
+                    buttonOneText,
+                    buttonOneUrl,
+                    buttonTwoText,
+                    buttonTwoUrl,
                     fromPrice,
                     policyFeatureList,
                     smallPrints,
@@ -131,11 +133,15 @@ const PayAsYouFlyTemplate = ({
                       <WhatIsCoveredSection
                         headerTextColor="white"
                         itemTextColor="white"
+                        smallPrintColor="white"
                         mainTitle={mainTitle}
                         mainList={mainList}
-                        buttonText={buttonText}
-                        buttonUrl={buttonUrl}
+                        buttonOneText={buttonOneText}
+                        buttonOneUrl={buttonOneUrl}
+                        buttonTwoText={buttonTwoText}
+                        buttonTwoUrl={buttonTwoUrl}
                         fromPrice={fromPrice}
+                        smallPrints={smallPrints}
                         policyFeatureList={policyFeatureList}
                         productType={productType}
                         fromText={fromText}
@@ -309,8 +315,10 @@ export const query = graphql`
                 icon
                 title
               }
-              buttonUrl
-              buttonText
+              buttonOneUrl
+              buttonOneText
+              buttonTwoUrl
+              buttonTwoText
               fromPrice
               policyFeatureList {
                 text

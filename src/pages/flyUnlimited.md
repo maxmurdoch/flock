@@ -101,8 +101,8 @@ whatIsCovered:
   smallPrints:
     - text: \** Prices depend on factors such as experience, equipment and claims history.
     - text: \+ Available if multiple pilots are operating under a single PfCO.
-  buttonText: GET A QUOTE
-  buttonUrl: 'https://my.flockcover.com'
+  buttonOneText: GET A QUOTE
+  buttonOneUrl: 'https://my.flockcover.com'
   fromPrice: £24.95
   samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
   policyFeatureList:
