@@ -52,7 +52,11 @@ const productCardTabPanel = ({customerTypeDesc, productCards}) => {
         className={css({
           overflowX: 'scroll',
           WebkitOverflowScrolling: 'touch',
-          '-ms-overflow-style': '-ms-autohiding-scrollbar'
+          '-ms-overflow-style': 'none',
+          scrollbarWidth: 'none',
+          '&::-webkit-scrollbar': {
+            display: 'none'
+          }
         })}
       >
         <div className={css({display: 'inline-flex', padding: '0 20px'})}>
