@@ -114,7 +114,7 @@ const buttonContent = [
   },
   {
     to: '',
-    text: 'DRONE ENTERPRISES',
+    text: 'ENTERPRISE',
     hasIcon: false,
     options: [
       {
