@@ -73,7 +73,7 @@ const ProductNavDropDown = ({productsIsOpen}) => {
 const buttonContent = [
   {
     to: '/insurance/commercial',
-    text: 'COMMERCIAL OPERATORS',
+    text: 'COMMERCIAL OPERATOR',
     hasIcon: true,
     options: [
       {
@@ -90,7 +90,7 @@ const buttonContent = [
   },
   {
     to: '/insurance/trainee',
-    text: 'PILOTS IN TRAINING',
+    text: 'TRAINEE PILOT',
     hasIcon: true,
     options: [
       {
@@ -119,7 +119,7 @@ const buttonContent = [
     options: [
       {
         to: '',
-        text: 'Coming Soon'
+        text: 'Coming soon!'
       }
     ]
   }
