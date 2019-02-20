@@ -87,7 +87,6 @@ const PayAsYouFlyTemplate = ({
 
         <div className={css({backgroundColor: 'white'})}>
           <Box pt={[3, 6]}>
-
             <TitleAndDescription
               title={calculator.title}
               description={calculator.description}
@@ -95,9 +94,8 @@ const PayAsYouFlyTemplate = ({
             <Calculator disclaimer={calculator.disclaimer} />
           </Box>
 
-
+          <div id="what-is-covered" />
           <Box pt={[3, 6]} background="white">
-
             <TabSection
               title={productTabs.title}
               description={productTabs.description}
