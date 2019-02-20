@@ -32,7 +32,7 @@ stopWorrying:
       text: >-
         Forget annual contracts. Get on-demand insurance only when you need it. Or fly with a flexible monthly policy and get covered anywhere, anytime.
       title: Fully flexible cover
-    - icon: /images/uploads/globe.svg
+    - icon: /images/uploads/finger-icon.svg
       text: >-
         We’ve made endless forms a thing of the past. If something goes wrong, make a claim via the app in a couple of taps. Or give us a call, we’re always here to help.
       title: Easy claims

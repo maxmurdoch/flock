@@ -99,7 +99,10 @@ class FUfaqSection extends React.Component {
                         className={css({
                           borderWidth: '0px 0px 1px 0px',
                           borderStyle: 'solid',
-                          borderColor: 'gray'
+                          borderColor: 'gray',
+                          '& p:last-of-type': {
+                            marginBottom: 15
+                          }
                         })}
                       >
                         {body}

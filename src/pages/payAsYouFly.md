@@ -3,18 +3,21 @@ title: Pay-As-You-Fly
 templateKey: payAsYouFly
 downloadLink: 'https://flockcover.app.link/6IW6kTmgfP'
 hero:
+  backgroundImage: ../../images/uploads/PAYF-header.jpg
+  textColor: white
   buttons:
     - color: yellow
       title: GET A QUOTE
+      external: false
+      to: https://flockcover.com/textmetheapp/
     - title: WHAT'S COVERED
       to: '#what-is-covered'
       color: black
   description: >-
-    Welcome to fully flexible insurance you control. In a couple of taps, get
-    covered for an hour, day or month.
+    A flexible alternative to traditional insurance. Get short-term, customised cover for your drone flight in a matter of taps with the Flock Cover app.
 
 
-    Join thousands of pilots using Flock Cover today.
+    It’s as simple as that.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -22,50 +25,44 @@ hero:
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
       title: Instant customer support
-  header: 'Pay-as-you-fly drone insurance, precisely when you need it'
+  header: 'Pay-as-you-fly drone insurance'
 stopWorrying:
   description: >-
-    Our community helps to shape the products and features we build. The result: flexible policies that our pilots love, and smart tools that provide much more than just insurance.
+    Whether you’re a new pilot, fly a few times a month, or only take your drone out for part of the year, Pay-as-you-fly drone insurance could cut your insurance bill.
   reasons:
-    - icon: /images/uploads/infinity.svg
+    - icon: /images/uploads/drone.svg
       text: >-
-        Forget annual contracts. Get on-demand insurance only when you need it. Or fly with a flexible monthly policy and get covered anywhere, anytime.
-      title: Fully flexible cover
-    - icon: /images/uploads/globe.svg
+        Insurance from one to eight hours. Get covered instantly, or pre-book up to 10 days in advance.
+      title: Pay only when you fly
+    - icon: /images/uploads/money.svg
       text: >-
-        We’ve made endless forms a thing of the past. If something goes wrong, make a claim via the app in a couple of taps. Or give us a call, we’re always here to help.
-      title: Easy claims
-    - icon: /images/uploads/shield-icon.svg
+        Our pricing is risk-dependent. The safer you fly, the less you pay. There’s no commitments or upfront costs.
+      title: Fairer Pricing
+    - icon: /images/uploads/finger-icon.svg
       text: >-
-        We may be the new kid on the block, but our partners are not. Flock policies are underwritten by Allianz, the world’s leading aviation insurer. So you’re in safe hands.
-      title: Backed by Allianz
-  title: 'Built for drone pilots, with drone pilots'
+        If something goes wrong, make a claim via the app in a couple of taps. Or give us a call, we’re always here to help.
+      title: Claim Simply
+  title: On-demand drone insurance, precisely when you need it
 how:
   description: >-
-    Insuring your drone has never been easier. All it takes is a matter of taps
-    on your mobile phone.
+    Insuring your drone flight has never been easier. It’s as simple as tap, tap, take-off!
   list:
     - image: /images/uploads/commercial-1-.png
       text: >-
-        Choose where and when you want to fly. See your quote change in
-        real-time.
+        Select where and when you’re flying. See your quote change in real-time.
       title: 1. Enter your flight details
     - image: /images/uploads/commercial-personalise.png
       text: >-
-        Customise your policy length, Public Liability limit, and equipment
-        cover to suit your needs.
-      title: 2. Customise your policy
+        Tailor your drone, accessories and Public Liability limit each time you fly.
+      title: 2. Customise your cover
     - image: ../../images/uploads/screens/get-flying-screen.png
       text: >-
-        Pay to instantly receive your policy documents by email. Enjoy the
-        flight!
-      title: 3. Get flying
+        Instantly receive your policy documents by email. Enjoy the flight!
+      title: 3. Take off
   title: How our Pay-as-you-fly cover works
 risk:
   description: >-
-    With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data from your Flight Area to generate a unique Risk
-    Report for each flight in seconds. Here's what we look out for:
+    With Flock, you get much more than just an insurance policy. The app analyses real-time data from your Flight Area to generate a unique Risk Report for each flight in seconds. Here’s what we look out for:
   list:
     - icon: images/uploads/icons-house.svg
       text: >-
@@ -87,18 +84,18 @@ risk:
         Receive real-time weather updates such as wind speed, temperature, and
         probability of rainfall.
       title: Hyperlocal weather
-  title: Know your risks before you fly
+  title: Fly safer with the Flock Cover app
 calculator:
   description: >-
-    Tell us about your flying habits and we will estimate the yearly cost of
+    Tell us about your flying habits and we'll estimate the yearly cost of
     insuring with Flock.
   disclaimer: >-
     Your estimate is based on average usage. Actual prices will depend on the
     real-time risks of each flight.
-  title: Is pay-as-you-fly for you?
+  title: Get a quick Pay-as-you-fly quote
 productTabs:
   title: Find the cover that's right for you
-  description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
+  description: Whether you’re operating commercially, completing your training, or flying for fun - we’ve got a Pay-as-you-fly policy that’s tailored to you.
   customerTypeList:
     - commercial:
       title: Commercial operator
@@ -106,112 +103,104 @@ productTabs:
       whatIsCovered:
         mainList:
           - icon: /images/uploads/drone-white.svg
-            title: Drones & accessories
-          - icon: /images/uploads/shield-white.svg
+            title: Drones
+          - icon: /images/uploads/camera-icon-white.svg
+            title: Accessories
+          - icon: /images/uploads/human-white.svg
             title: 3rd party liability
           - icon: /images/uploads/binoculars-white.svg
             title: Accidental flyaways
-          - icon: /images/uploads/human-white.svg
-            title: Multiple pilots
-          - icon: /images/uploads/van-white.svg
-            title: Transit cover
-          - icon: /images/uploads/lockpad-white.svg
-            title: Theft & storage
+          - icon: /images/uploads/controller-icon-white.svg
+            title: Hired equipment
           - icon: /images/uploads/document-white.svg
             title: Legal expenses
           - icon: /images/uploads/megaphone-white.svg
             title: Noise complaints
+          - icon: /images/uploads/hat-glasses-icon-white.svg
+            title: Invasion of privacy
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
         smallPrints:
-          - text: \** Prices depend on factors such as experience, equipment and claims history.
-          - text: \+ Available if multiple pilots are operating under a single PfCO.
-        buttonText: GET A QUOTE
-        buttonUrl: 'https://my.flockcover.com'
+          - text: \* Equipment cover only available for commercial and trainee pilots whilst in flight.
+        buttonOneText: GET A QUOTE
+        buttonOneUrl: https://flockcover.com/textmetheapp/
+        buttonTwoText: VIEW ALL FEATURES
+        buttonTwoUrl: https://flockcover.com/insurance/commercial/
         fromPrice: £4.95
         samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
         policyFeatureList:
-          - text: Unlimited commercial flights in the UK
-          - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
-          - text: Public Liability insurance up to £10M
-          - text: Option to extend cover worldwide
+          - text: On-demand cover from 1-8 hours
+          - text: EC785/2004 compliant
+          - text: In-flight drone and accessory cover up to £25K*
+          - text: Public Liability limits from £1-10M
         productType: PAY-AS-YOU-FLY
         fromText: from
         perText: per flight
     - training:
       title: Trainee Pilot
-      customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent).
+      customerTypeDesc: You’re a trainee pilot if you are enrolled with a licenced [NQE](https://help.flockcover.com/drone-regulation/what-is-a-national-qualified-entity-nqe), and have passed your Ground School theory test.
       whatIsCovered:
         hidden: false
         mainList:
           - icon: /images/uploads/drone-white.svg
-            title: Drones & accessories
-          - icon: /images/uploads/shield-white.svg
+            title: Drones
+          - icon: /images/uploads/camera-icon-white.svg
+            title: Accessories
+          - icon: /images/uploads/human-white.svg
             title: 3rd party liability
           - icon: /images/uploads/binoculars-white.svg
             title: Accidental flyaways
-          - icon: /images/uploads/human-white.svg
-            title: Multiple pilots
-          - icon: /images/uploads/van-white.svg
-            title: Transit cover
-          - icon: /images/uploads/lockpad-white.svg
-            title: Theft & storage
+          - icon: /images/uploads/controller-icon-white.svg
+            title: Hired equipment
           - icon: /images/uploads/document-white.svg
             title: Legal expenses
           - icon: /images/uploads/megaphone-white.svg
             title: Noise complaints
+          - icon: /images/uploads/hat-glasses-icon-white.svg
+            title: Invasion of privacy
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
         smallPrints:
-          - text: \** Prices depend on factors such as experience, equipment and claims history.
-          - text: \+ Available if multiple pilots are operating under a single PfCO.
-        buttonText: GET A QUOTE
-        buttonUrl: 'https://my.flockcover.com'
+          - text: \* Equipment cover only available for commercial and trainee pilots whilst in flight.
+        buttonOneText: GET A QUOTE
+        buttonOneUrl: https://flockcover.com/textmetheapp/
+        buttonTwoText: VIEW ALL FEATURES
+        buttonTwoUrl: https://flockcover.com/insurance/trainee/
         fromPrice: £5.95
         samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
         policyFeatureList:
-          - text: Unlimited commercial flights in the UK
-          - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
-          - text: Public Liability insurance up to £10M
-          - text: Option to extend cover worldwide
+          - text: Flight assessment and training cover from 1-8 hours
+          - text: In-flight drone and accessory cover up to £3K*
+          - text: £1M Public Liability cover
+          - text: Instant proof-of-insurance for PfCO applications
         productType: PAY-AS-YOU-FLY
         fromText: from
         perText: per flight
     - recreational:
       title: Recreational pilot
-      customerTypeDesc: You're a commercial operator if you hold a valid PfCO (or a CAA accepted equivalent).
+      customerTypeDesc: You’re a recreational pilot if you fly your drone as a hobby.
       whatIsCovered:
         mainList:
-          - icon: /images/uploads/drone-white.svg
-            title: Drones & accessories
-          - icon: /images/uploads/shield-white.svg
-            title: 3rd party liability
-          - icon: /images/uploads/binoculars-white.svg
-            title: Accidental flyaways
           - icon: /images/uploads/human-white.svg
-            title: Multiple pilots ⁺
-          - icon: /images/uploads/van-white.svg
-            title: Transit cover
-          - icon: /images/uploads/lockpad-white.svg
-            title: Theft & storage
+            title: 3rd party liability
           - icon: /images/uploads/document-white.svg
             title: Legal expenses
           - icon: /images/uploads/megaphone-white.svg
             title: Noise complaints
+          - icon: /images/uploads/hat-glasses-icon-white.svg
+            title: Invasion of privacy
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
-        smallPrints:
-          - text: \** Prices depend on factors such as experience, equipment and claims history.
-          - text: \+ Available if multiple pilots are operating under a single PfCO.
-        buttonText: GET A QUOTE
-        buttonUrl: 'https://my.flockcover.com'
+        buttonOneText: GET A QUOTE
+        buttonOneUrl: https://flockcover.com/textmetheapp/
+        buttonTwoText: VIEW ALL FEATURES
+        buttonTwoUrl: https://flockcover.com/insurance/recreational/
         fromPrice: £2.95
         samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
         policyFeatureList:
-          - text: Unlimited commercial flights in the UK
-          - text: In-and-out of flight equipment cover (up to £25K in-flight limit)
-          - text: Public Liability insurance up to £10M
-          - text: Option to extend cover worldwide
+          - text: Short-term cover from 1-8 hours
+          - text: Public Liability insurance (£250K)
+          - text: Fly safer with a real-time flight risk assessment
         productType: PAY-AS-YOU-FLY
         fromText: from
         perText: per flight        
@@ -223,41 +212,30 @@ renewalBanner:
   buttonTrack: WebApp Navigation Clicked
 faqSection:
   header: Frequently asked questions
-  body: Got other questions? Visit our help centre, or chat live with us now.
+  body: Have other questions? Visit our help centre or chat live with us now.
   buttonText: VIEW ALL FAQs
   buttonUrl: https://help.flockcover.com/
   disclosureIndicator: /images/uploads/small-arrow-yellow.svg
   faqs:
-    - title: Are there any long-term commitments with Fly Unlimited?
+    - title: How is the risk-dependent pricing calculated?
       body: >-
-        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
-
-
-        [Click here](http://help.flockcover.com/policies-and-coverage/are-there-any-long-term-commitments-with-fly-unlimited) to find out more
-    - title: Can I adjust, or cancel, my policy?
+        The prices of our Pay-as-you-fly policies are calculated on a per-flight basis, and are proportional to how risky your flight is. This is calculated by analysing data such as:
+          * **Pilot profile:** Number of hours you have flown, claims history.
+          * **Drone details:** Its weight, top speed, maximum flight height etc.
+          * **Environmental data:** Distance to ground hazards such as hospitals or schools.
+          * **Real-time weather conditions:** Includes the real-time wind speed, and probability of rainfall in the area you’re flying in.
+    - title: Is Pay-as-you-fly drone insurance EC785/2004 compliant?
       body: >-
-        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
-
-
-        [Click here](https://help.flockcover.com/policies-and-coverage/can-i-adjust-or-cancel-my-fly-unlimited-policy) to find out more
-    - title: Can I get covered abroad?
+        Yes, you can have peace of mind that our commercial and training Pay-as-you-fly policies are CAA approved and EC785/2004 compliant.
+    - title: How do I get proof-of-insurance for my PfCO application?
       body: >-
-        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
-
-
-        [Click here](https://help.flockcover.com/policies-and-coverage/can-i-get-covered-abroad) to find out more
-    - title: Is Fly Unlimited CAA compliant?
+        You can get your proof of EC785/2004 compliant insurance emailed instantly to you via the Flock Cover mobile app. Simply tap on the ‘Your details’ in the main menu, and you’ll see a button that says ‘Get an insurance Cover Note’.
+    - title: Where is Flock available?
       body: >-
-        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
-
-
-        [Click here](http://help.flockcover.com/drone-regulation/is-fly-unlimited-caa-compliant) to find out more
-    - title: Is Fly Unlimited CAA compliant?
+        Flock’s Pay-as-you-fly policies for commercial, training and recreational pilots are available throughout the UK and the Channel Islands. We also offer worldwide cover to commercial operators with a [Fly Unlimited](https://flockcover.com/flyunlimited) monthly subscription policy.
+    - title:  Do Flock’s recreational policies provide equipment cover?
       body: >-
-        Nunc pellentesque, erat ac maximus dapibus, neque elit congue nisl, at feugiat nulla tellus eget turpis. Vestibulum nulla nisl, aliquet malesuada justo ut, ultricies fermentum tortor. Suspendisse pharetra sem in nisi vestibulum ornare. Integer venenatis lacinia pretium. Etiam sagittis lectus nulla, id hendrerit ante faucibus vitae. Praesent sit amet laoreet nisi. Integer malesuada orci libero, nec suscipit justo ultrices quis.
-
-
-        [Click here](https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim) to find out more
+        Our recreational policies provide Public Liability insurance only. Equipment cover (which includes both drones and accessories) is only available to commercial and trainee pilots.
 siteMetadataOverride:
   description: >-
     We provide fully flexible drone insurance for commercial, trainee and

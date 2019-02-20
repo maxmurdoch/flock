@@ -35,7 +35,7 @@ class TabSection extends Component {
       renderTabPanel,
       props: {title, description, children}
     } = this
-    const {tabListStyle, selectedTabStyle, selectedTabPanelStyle} = styles
+    const {tabListStyle, selectedTabPanelStyle} = styles
     const tabs = React.Children.toArray(children).map(tab => tab.props)
 
     return (
@@ -67,8 +67,12 @@ class TabSection extends Component {
               <SiteContainer
                 edgeToEdge
                 className={css({
+                  scrollbarWidth: 'none',
                   overflowX: 'scroll',
-                  '-ms-overflow-style': '-ms-autohiding-scrollbar'
+                  '-ms-overflow-style': '-ms-autohiding-scrollbar',
+                  '&::-webkit-scrollbar': {
+                    display: 'none'
+                  }
                 })}
               >
                 <TabList className={css(tabListStyle)}>
@@ -109,9 +113,6 @@ const styles = {
     display: 'flex'
   },
   tabStyle: css({
-    display: '-webkit-box' /* OLD - iOS 6-, Safari 3.1-6, BB7 */,
-    display: '-ms-flexbox' /* TWEENER - IE 10 */,
-    display: '-webkit-flex' /* NEW - Safari 6.1+. iOS 7.1+, BB10 */,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -126,6 +127,12 @@ const styles = {
     marginRight: 10,
     borderTop: '7px solid #F7F7F4',
     backgroundColor: '#F7F7F4',
+
+    ':focus': {
+      boxShadow: 'none',
+      outline: 'none'
+    },
+
     [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
       marginRight: 10
     },
@@ -136,8 +143,6 @@ const styles = {
   }),
   selectedTabStyle: {
     boxSizing: 'border-box',
-    '-moz-box-sizing': 'border-box',
-    '-webkit-box-sizing': 'border-box',
     backgroundColor: '#363636',
     color: 'white',
     borderTop: '7px solid #FFE001'

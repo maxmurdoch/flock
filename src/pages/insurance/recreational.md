@@ -1,8 +1,10 @@
 ---
 title: Recreational
 templateKey: product
+navColor: light
 hero:
   backgroundImage: ../../images/uploads/hobbyist-header.jpg
+  textColor: white
   buttons:
     - title: DOWNLOAD
       to: 'https://flockcover.app.link/6IW6kTmgfP'

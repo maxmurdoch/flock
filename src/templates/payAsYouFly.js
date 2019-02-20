@@ -4,7 +4,7 @@ import R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
-import DarkNav from '../components/DarkNav'
+import LightNav from '../components/LightNav'
 import Hero from '../components/Hero'
 import Box from '../components/Box'
 import SmallText from '../components/SmallText'
@@ -46,10 +46,16 @@ const PayAsYouFlyTemplate = ({
           description={siteMetadataOverride.description}
           keywords={siteMetadataOverride.keywords}
         />
-        <DarkNav to={downloadLink} />
+        <LightNav to={downloadLink} />
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
-            headerClassName={style.header}
+            headerClassName={css({
+              backgroundImage: `url(${hero.backgroundImage})`,
+              backgroundPosition: 'top left',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            })}
+            textColor={colors[hero.textColor]}
             headerContainerClassName={style.headerContainer}
             header={hero.header}
             textShadow={false}
@@ -102,8 +108,10 @@ const PayAsYouFlyTemplate = ({
                     mainTitle,
                     mainList,
                     mainDescription,
-                    buttonText,
-                    buttonUrl,
+                    buttonOneText,
+                    buttonOneUrl,
+                    buttonTwoText,
+                    buttonTwoUrl,
                     fromPrice,
                     policyFeatureList,
                     smallPrints,
@@ -125,11 +133,15 @@ const PayAsYouFlyTemplate = ({
                       <WhatIsCoveredSection
                         headerTextColor="white"
                         itemTextColor="white"
+                        smallPrintColor="white"
                         mainTitle={mainTitle}
                         mainList={mainList}
-                        buttonText={buttonText}
-                        buttonUrl={buttonUrl}
+                        buttonOneText={buttonOneText}
+                        buttonOneUrl={buttonOneUrl}
+                        buttonTwoText={buttonTwoText}
+                        buttonTwoUrl={buttonTwoUrl}
                         fromPrice={fromPrice}
+                        smallPrints={smallPrints}
                         policyFeatureList={policyFeatureList}
                         productType={productType}
                         fromText={fromText}
@@ -170,18 +182,6 @@ const style = {
   iphone: css({
     marginBottom: 0,
     display: 'block'
-  }),
-  header: css({
-    background: colors.backgrounds.light,
-    backgroundImage: `url(${mobileFlock})`,
-    backgroundSize: '45rem',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'bottom left',
-    width: '100%',
-    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-      backgroundImage: `url(${bigFlock})`,
-      backgroundPosition: 'bottom right'
-    }
   })
 }
 
@@ -245,6 +245,8 @@ export const query = graphql`
         templateKey
         downloadLink
         hero {
+          textColor
+          backgroundImage
           header
           description
           buttons {
@@ -313,8 +315,10 @@ export const query = graphql`
                 icon
                 title
               }
-              buttonUrl
-              buttonText
+              buttonOneUrl
+              buttonOneText
+              buttonTwoUrl
+              buttonTwoText
               fromPrice
               policyFeatureList {
                 text
