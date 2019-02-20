@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="43px" viewBox="0 0 44 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/infinity copy 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0002 0.2325 29.535 0.2325 29.535 15 0.0002 15"></polygon>
+    </defs>
+    <g id="icons/infinity-copy-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10" transform="translate(7.000000, 4.000000)">
+            <g id="Group-3" transform="translate(0.000000, 19.654200)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M25.6282,0.2325 L3.9062,0.2325 C1.7582,0.2325 0.0002,1.9905 0.0002,4.1385 L0.0002,11.0935 C0.0002,13.2415 1.7582,15.0005 3.9062,15.0005 L25.6282,15.0005 C27.7772,15.0005 29.5352,13.2415 29.5352,11.0935 L29.5352,4.1385 C29.5352,1.9905 27.7772,0.2325 25.6282,0.2325 M25.6282,2.9325 C26.2822,2.9325 26.8352,3.4845 26.8352,4.1385 L26.8352,11.0935 C26.8352,11.7475 26.2822,12.2995 25.6282,12.2995 L3.9062,12.2995 C3.2522,12.2995 2.6992,11.7475 2.6992,11.0935 L2.6992,4.1385 C2.6992,3.4845 3.2522,2.9325 3.9062,2.9325 L25.6282,2.9325" id="Fill-1" fill="#ffffff" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M14.7678,20.9707 L14.7678,10.2897" id="Stroke-4" stroke="#ffffff" stroke-width="2.7" stroke-linecap="round"></path>
+            <path d="M22.8323,6.1934 C21.8693,3.6624 19.7833,1.5934 16.9833,0.7774 C12.2403,-0.6056 7.2743,2.1184 5.8923,6.8604" id="Stroke-6" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+            <path d="M18.969,8.21 C18.554,6.698 17.369,5.445 15.737,5.054 C13.348,4.481 10.948,5.952 10.374,8.341" id="Stroke-8" stroke="#FED900" stroke-width="2.7" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

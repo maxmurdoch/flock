@@ -38,7 +38,7 @@ stopWorrying:
       text: >-
         Our pricing is risk-dependent. The safer you fly, the less you pay. There’s no commitments or upfront costs.
       title: Fairer Pricing
-    - icon: /images/uploads/shield-icon.svg
+    - icon: /images/uploads/finger-icon.svg
       text: >-
         If something goes wrong, make a claim via the app in a couple of taps. Or give us a call, we’re always here to help.
       title: Claim Simply
@@ -104,19 +104,19 @@ productTabs:
         mainList:
           - icon: /images/uploads/drone-white.svg
             title: Drones
-          - icon: /images/uploads/camera*.svg
+          - icon: /images/uploads/camera-icon-white.svg
             title: Accessories
-          - icon: /images/uploads/binoculars-white.svg
-            title: 3rd party liability
           - icon: /images/uploads/human-white.svg
+            title: 3rd party liability
+          - icon: /images/uploads/binoculars-white.svg
             title: Accidental flyaways
-          - icon: /images/uploads/van-white.svg
+          - icon: /images/uploads/controller-icon-white.svg
             title: Hired equipment
-          - icon: /images/uploads/lockpad-white.svg
-            title: Legal expenses
           - icon: /images/uploads/document-white.svg
-            title: Noise complaints
+            title: Legal expenses
           - icon: /images/uploads/megaphone-white.svg
+            title: Noise complaints
+          - icon: /images/uploads/hat-glasses-icon-white.svg
             title: Invasion of privacy
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
@@ -144,19 +144,19 @@ productTabs:
         mainList:
           - icon: /images/uploads/drone-white.svg
             title: Drones
-          - icon: /images/uploads/shield-white.svg
+          - icon: /images/uploads/camera-icon-white.svg
             title: Accessories
-          - icon: /images/uploads/binoculars-white.svg
-            title: 3rd party liability
           - icon: /images/uploads/human-white.svg
+            title: 3rd party liability
+          - icon: /images/uploads/binoculars-white.svg
             title: Accidental flyaways
-          - icon: /images/uploads/van-white.svg
+          - icon: /images/uploads/controller-icon-white.svg
             title: Hired equipment
-          - icon: /images/uploads/lockpad-white.svg
-            title: Legal expenses
           - icon: /images/uploads/document-white.svg
-            title: Noise complaints
+            title: Legal expenses
           - icon: /images/uploads/megaphone-white.svg
+            title: Noise complaints
+          - icon: /images/uploads/hat-glasses-icon-white.svg
             title: Invasion of privacy
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
@@ -181,13 +181,13 @@ productTabs:
       customerTypeDesc: You’re a recreational pilot if you fly your drone as a hobby.
       whatIsCovered:
         mainList:
-          - icon: /images/uploads/drone-white.svg
-            title: 3rd party liability
           - icon: /images/uploads/human-white.svg
+            title: 3rd party liability
+          - icon: /images/uploads/document-white.svg
             title: Legal expenses
-          - icon: /images/uploads/shield-white.svg
+          - icon: /images/uploads/megaphone-white.svg
             title: Noise complaints
-          - icon: /images/uploads/binoculars-white.svg
+          - icon: /images/uploads/hat-glasses-icon-white.svg
             title: Invasion of privacy
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
