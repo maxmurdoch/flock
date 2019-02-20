@@ -9,7 +9,7 @@ hero:
     - color: yellow
       title: GET A QUOTE
       external: false
-      to: https://flockcover.com/textmetheapp/
+      to: https://flockcover.app.link/qdaEw2EMsU
     - title: WHAT'S COVERED
       to: '#what-is-covered'
       color: black
@@ -123,8 +123,8 @@ productTabs:
         smallPrints:
           - text: \* Equipment cover only available for commercial and trainee pilots whilst in flight.
         buttonOneText: GET A QUOTE
-        buttonOneUrl: https://flockcover.com/textmetheapp/
-        buttonTwoText: VIEW ALL FEATURES
+        buttonOneUrl: https://flockcover.app.link/qdaEw2EMsU
+        buttonTwoText: FIND OUT MORE
         buttonTwoUrl: https://flockcover.com/insurance/commercial/
         fromPrice: £4.95
         samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
@@ -163,8 +163,8 @@ productTabs:
         smallPrints:
           - text: \* Equipment cover only available for commercial and trainee pilots whilst in flight.
         buttonOneText: GET A QUOTE
-        buttonOneUrl: https://flockcover.com/textmetheapp/
-        buttonTwoText: VIEW ALL FEATURES
+        buttonOneUrl: https://flockcover.app.link/qdaEw2EMsU
+        buttonTwoText: FIND OUT MORE
         buttonTwoUrl: https://flockcover.com/insurance/trainee/
         fromPrice: £5.95
         samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
@@ -192,8 +192,8 @@ productTabs:
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
         buttonOneText: GET A QUOTE
-        buttonOneUrl: https://flockcover.com/textmetheapp/
-        buttonTwoText: VIEW ALL FEATURES
+        buttonOneUrl: https://flockcover.app.link/qdaEw2EMsU
+        buttonTwoText: FIND OUT MORE
         buttonTwoUrl: https://flockcover.com/insurance/recreational/
         fromPrice: £2.95
         samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
