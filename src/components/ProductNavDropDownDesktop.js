@@ -84,7 +84,7 @@ const buttonContent = [
       {
         to: '/flyunlimited',
         text: 'Fly Unlimited',
-        icon: 'PAYF'
+        icon: 'FU'
       }
     ]
   },

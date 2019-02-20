@@ -4,6 +4,7 @@ import {css} from 'react-emotion'
 
 import {colors} from '../constants/theme'
 import PAYFDroneIcon from '../images/icons/drone-white-icon.svg'
+import FUDroneIcon from '../images/icons/double-drone-icon-white.svg'
 
 const NavSecondaryButton = ({title, to, icon, flexGrow, ...props}) => {
   function clickHandler() {
@@ -51,7 +52,7 @@ const NavSecondaryButton = ({title, to, icon, flexGrow, ...props}) => {
         </span>
         <img
           className={css({marginBottom: 0, height: 28})}
-          src={icon === 'PAYF' ? PAYFDroneIcon : null}
+          src={icon && (icon === 'PAYF' ? PAYFDroneIcon : FUDroneIcon)}
         />
       </span>
     </button>
