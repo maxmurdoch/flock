@@ -11,7 +11,6 @@ import Flex from './Flex'
 import Box from './Box'
 import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
-import ProductNavDropDownMobile from './ProductNavDropDownMobile'
 
 import hamburger from '../images/icons/hamburger.svg'
 import blackLogo from '../images/logo-black.svg'
@@ -28,6 +27,23 @@ const styles = {
     marginTop: R.nth(2, space)
   })
 }
+const productList = [
+  {
+    to: '/insurance/commercial',
+    className: styles.product,
+    text: 'Commercial pilot'
+  },
+  {
+    to: '/insurance/trainee',
+    className: styles.product,
+    text: 'Trainee pilot'
+  },
+  {
+    to: '/insurance/recreational',
+    className: styles.product,
+    text: 'Recreational pilot'
+  }
+]
 
 const navList = [
   {
@@ -132,7 +148,16 @@ const MobileNav = ({
                       width: '100%'
                     })}
                   >
-                    <ProductNavDropDownMobile />
+                    {mapIndex(
+                      ({text, to, className}, index) => (
+                        <Link to={to} className={className} key={index}>
+                          <ArrowText>
+                            <SmallText fontWeight={700}>{text}</SmallText>
+                          </ArrowText>
+                        </Link>
+                      ),
+                      productList
+                    )}
                     <Flex
                       pt={2}
                       borderBottom={`1px solid ${colors.white}`}
