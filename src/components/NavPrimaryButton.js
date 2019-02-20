@@ -2,43 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {css} from 'react-emotion'
 
-import {downloadClickHandler} from '../utils/trackDownload'
 import {colors} from '../constants/theme'
-import BlackArrow from '../images/icons/arrow-black.svg'
-import WhiteArrow from '../images/icons/arrow-white.svg'
+import ArrowIcon from '../images/icons/arrow-head.svg'
 
-const NavButton = ({
-  title,
-  download,
-  color,
-  to,
-  external,
-  branch,
-  track,
-  mb,
-  mr,
-  flexGrow,
-  ...props
-}) => {
+const NavPrimaryButton = ({title, to, flexGrow, mb, hasIcon, ...props}) => {
   function clickHandler() {
-    if (download) downloadClickHandler()
-    if (track !== '') {
-      analytics.track(track)
-    }
-
-    if (to.indexOf('#') === 0) {
-      window.scrollTo({
-        top: document.querySelector(to).offsetTop,
-        behavior: 'smooth'
-      })
-
-      return
-    }
-
-    const link = branch
-      ? `${to}?anonymous_id=${analytics.user().anonymousId()}`
-      : to
-    window.open(link, external ? '_blank' : '_self')
+    window.open(to, '_self')
   }
   return (
     <button
@@ -46,14 +15,13 @@ const NavButton = ({
         cursor: 'pointer',
         appearance: 'none',
         display: 'inline-block',
-        padding: '18px 16px',
-        backgroundColor: color === 'yellow' ? colors.yellow : colors.dark,
+        padding: '14px 16px',
+        backgroundColor: colors.dark,
         border: 'none',
         outline: 'none',
         textDecoration: 'none',
         textAlign: 'left',
-        color: color === 'yellow' ? 'black' : 'white',
-        marginRight: mr,
+        color: 'white',
         marginBottom: mb,
         flexGrow
       })}
@@ -75,22 +43,21 @@ const NavButton = ({
             fontSize: '16px',
             fontWeight: '700',
             flex: '1 1 auto',
-            textAlign: 'left',
-            lineHeight: 1.1
+            textAlign: 'left'
           })}
         >
           {title}
         </span>
         <img
-          className={css({marginLeft: 24, marginBottom: 0})}
-          src={color === 'yellow' ? BlackArrow : WhiteArrow}
+          className={css({marginLeft: 5, marginBottom: 0})}
+          src={hasIcon && ArrowIcon}
         />
       </span>
     </button>
   )
 }
 
-NavButton.propTypes = {
+NavPrimaryButton.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.oneOf(['yellow', 'black']).isRequired,
   to: PropTypes.string,
@@ -99,4 +66,4 @@ NavButton.propTypes = {
   track: PropTypes.string
 }
 
-export default NavButton
+export default NavPrimaryButton

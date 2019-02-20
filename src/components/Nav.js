@@ -9,7 +9,7 @@ import SiteContainer from './SiteContainer'
 import SmallText from './SmallText'
 import Flex from './Flex'
 import Box from './Box'
-import ProductNavDropDown from './ProductNavDropDown'
+import ProductNavDropDownDesktop from './ProductNavDropDownDesktop'
 import downArrow from '../images/icons/small-arrow-black.svg'
 import {colors, space} from '../constants/theme'
 
@@ -170,7 +170,7 @@ class Nav extends Component {
                   </Box>
                 </Flex>
               </SiteContainer>
-              <ProductNavDropDown productsIsOpen={this.state.productsIsOpen} />
+              <ProductNavDropDownDesktop productsIsOpen={this.state.productsIsOpen} />
             </header>
           )
         }}
