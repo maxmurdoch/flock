@@ -19,12 +19,18 @@ const whatIsCovered = ({
   mainDescription,
   mainList,
   smallPrints,
-  buttonText,
+  buttonOneText,
+  buttonTwoText,
+  buttonOneUrl,
+  buttonTwoUrl,
   fromPrice,
   policyFeatureList,
   samplePolicyWordingUrl,
   productType,
   fromText,
+  itemTextColor = 'black',
+  headerTextColor = 'black',
+  smallPrintColor= 'grey',
   perText
 }) => {
   return (
@@ -36,18 +42,18 @@ const whatIsCovered = ({
           justifyContent="space-between"
           alignItems="flex-start"
           pb={[2, 3]}
-          pl={2}
-          pr={2}
         >
           <PriceCard
             flex={3}
             productType={productType}
             fromText={fromText}
             perText={perText}
-            buttonOneText={buttonText}
+            buttonOneText={buttonOneText}
+            buttonTwoText={buttonTwoText}
+            buttonOneUrl={buttonOneUrl}
+            buttonTwoUrl={buttonTwoUrl}
             fromPrice={fromPrice}
             policyFeatureList={policyFeatureList}
-            buttonOneOnClick={() => window.open('https://my.flockcover.com')}
           />
 
           <Flex
@@ -60,7 +66,12 @@ const whatIsCovered = ({
             }}
             flexDirection="column"
           >
-            <H2 pl={10} mb={[10, 10, 40]} markdown={true}>
+            <H2
+              pl={10}
+              mb={[10, 10, 40]}
+              markdown={true}
+              color={headerTextColor}
+            >
               {mainTitle}
             </H2>
             <Flex
@@ -89,7 +100,7 @@ const whatIsCovered = ({
                         })}
                       />
                     </ShowIf>
-                    <H3>{title}</H3>
+                    <H3 color={itemTextColor}>{title}</H3>
                   </Flex>
                 ),
                 mainList
@@ -111,8 +122,7 @@ const whatIsCovered = ({
                     textAlign="left"
                     style={{fontSize: 14}}
                     className={css({
-                      paddingLeft: 20,
-                      color: 'grey'
+                      color: smallPrintColor
                     })}
                   >
                     {text}

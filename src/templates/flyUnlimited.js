@@ -13,7 +13,7 @@ import Footer from '../components/Footer'
 import RenewalBanner from '../components/RenewalBanner'
 import NonToggleiPhone from '../components/NonToggleIphone'
 import BlackBackground from '../components/BlackBackground'
-import FUfaqSection from '../components/FUfaqSection'
+import FaqSection from '../components/FaqSection'
 
 import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
@@ -101,8 +101,8 @@ class FlyUnlimitedPageTemplate extends Component {
                 mainTitle={whatIsCovered.mainTitle}
                 mainList={whatIsCovered.mainList}
                 mainDescription={whatIsCovered.mainDescription}
-                buttonText={whatIsCovered.buttonText}
-                buttonUrl={whatIsCovered.buttonUrl}
+                buttonOneText={whatIsCovered.buttonOneText}
+                buttonOneUrl={whatIsCovered.buttonOneUrl}
                 fromPrice={whatIsCovered.fromPrice}
                 policyFeatureList={whatIsCovered.policyFeatureList}
                 smallPrints={whatIsCovered.smallPrints}
@@ -124,12 +124,13 @@ class FlyUnlimitedPageTemplate extends Component {
           )}
 
           <Box className={css({backgroundColor: 'white'})}>
-            <FUfaqSection
+            <FaqSection
               header={faqSection.header}
               body={faqSection.body}
               buttonText={faqSection.buttonText}
               buttonUrl={faqSection.buttonUrl}
-              faqList={faqSection.faqList}
+              disclosureIndicator={faqSection.disclosureIndicator}
+              faqs={faqSection.faqs}
             />
           </Box>
 
@@ -220,8 +221,8 @@ export const query = graphql`
             icon
             title
           }
-          buttonUrl
-          buttonText
+          buttonOneUrl
+          buttonOneText
           fromPrice
           policyFeatureList {
             text
@@ -238,9 +239,10 @@ export const query = graphql`
           body
           buttonText
           buttonUrl
-          faqList {
-            text
-            url
+          disclosureIndicator
+          faqs {
+            title
+            body
           }
         }
         siteMetadataOverride {

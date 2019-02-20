@@ -1,21 +1,13 @@
 import React from 'react'
 
-import ArrowText from './ArrowText'
 import BodyText from './BodyText'
 import Flex from './Flex'
 import Box from './Box'
 import PrimaryButton from './PrimaryButton'
 import H2 from './H2'
 import SiteContainer from './SiteContainer'
-import { downloadClickHandler } from '../utils/trackDownload'
 
-const DownloadFlock = (to) => {
-  const download = () => {
-    downloadClickHandler()
-    const linkAnonymousId = to.to + '?anonymous_id=' + analytics.user().anonymousId()
-    // window.open(linkAnonymousId, '_blank')
-    window.open('https://flockcover.test-app.link/Z85w5tgUeS')
-  }
+const DownloadFlock = ({to}) => {
   return (
     <Flex justifyContent="center">
       <SiteContainer>
@@ -29,7 +21,8 @@ const DownloadFlock = (to) => {
           </Box>
           <Box width={['100%', '50%']}>
             <BodyText textAlign="center">
-              Get the Flock Cover app on iOS and Android to receive a real-time quote for your flight in seconds.
+              Get the Flock Cover app on iOS and Android to receive a real-time
+              quote for your flight in seconds.
             </BodyText>
           </Box>
           <Box
@@ -38,9 +31,12 @@ const DownloadFlock = (to) => {
             display="flex"
             justifyContent="center"
           >
-            <PrimaryButton onClick={download}>
-              <ArrowText moveOnHover={false}>Download</ArrowText>
-            </PrimaryButton>
+            <PrimaryButton
+              to={to}
+              download
+              title="DOWNLOAD"
+              color="yellow"
+            />
           </Box>
         </Flex>
       </SiteContainer>

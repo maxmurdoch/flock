@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="42px" viewBox="0 0 35 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/shield</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PAYF" transform="translate(-1060.000000, -4599.000000)">
+            <g id="icons/shield/white" transform="translate(1055.000000, 4599.000000)">
+                <g id="Group-6" transform="translate(5.000000, 0.000000)">
+                    <path d="M9.9209,11.8762 L23.9149,11.8762" id="Stroke-1" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                    <path d="M9.9209,18.3142 L23.9149,18.3142" id="Stroke-2" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                    <path d="M9.9209,24.7517 L19.6109,24.7517" id="Stroke-3" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                    <path d="M17.1963,0.0002 L16.8463,0.0002 L16.4753,0.0892 L2.4193,3.6032 C0.9953,3.9592 0.0003,5.2332 0.0003,6.7012 L0.0003,21.1082 C0.0003,31.9302 11.9673,39.5322 15.6343,41.6042 C16.1123,41.8752 16.6513,42.0172 17.1943,42.0172 C17.7393,42.0172 18.2793,41.8742 18.7583,41.6032 C22.4253,39.5252 34.3913,31.9082 34.3913,21.1082 L34.3913,6.7012 C34.3913,5.2332 33.3973,3.9592 31.9733,3.6032 L17.9153,0.0882 L17.5773,0.0032 L17.1963,0.0002 Z M17.1963,2.8352 C17.2073,2.8352 17.2173,2.8362 17.2273,2.8392 L31.2853,6.3532 C31.4453,6.3932 31.5563,6.5372 31.5563,6.7012 L31.5563,21.1082 C31.5563,30.4282 20.5133,37.3512 17.3613,39.1362 C17.3063,39.1672 17.2513,39.1822 17.1943,39.1822 C17.1383,39.1822 17.0833,39.1672 17.0293,39.1362 C13.8753,37.3542 2.8353,30.4472 2.8353,21.1082 L2.8353,6.7012 C2.8353,6.5372 2.9473,6.3932 3.1063,6.3532 L17.1643,2.8392 C17.1753,2.8362 17.1853,2.8352 17.1963,2.8352 Z" id="Fill-4" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

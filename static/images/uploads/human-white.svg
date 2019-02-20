@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="43px" viewBox="0 0 20 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/human</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.3732 19.9148 0.3732 19.9148 30 0 30"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PAYF" transform="translate(-1415.000000, -4600.000000)">
+            <g id="icons/human/white" transform="translate(1403.000000, 4600.000000)">
+                <g id="Group-8" transform="translate(12.000000, 1.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 11.463000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M14.4908,0.3732 L5.4238,0.3732 C2.4328,0.3732 -0.0002,2.8062 -0.0002,5.7962 L-0.0002,15.5102 L-0.0002,18.3452 L2.5908,18.3452 L2.5908,27.1652 L2.5908,30.0002 L5.4258,30.0002 L14.4898,30.0002 L17.3248,30.0002 L17.3248,27.1652 L17.3248,18.3452 L19.9148,18.3452 L19.9148,15.5102 L19.9148,5.7962 C19.9148,2.8062 17.4818,0.3732 14.4908,0.3732 M14.4908,3.2082 C15.9218,3.2082 17.0798,4.3662 17.0798,5.7962 L17.0798,15.5102 L15.7848,15.5102 C15.0698,15.5102 14.4898,16.0902 14.4898,16.8052 L14.4898,27.1652 L5.4258,27.1652 L5.4258,16.8052 C5.4258,16.0902 4.8448,15.5102 4.1298,15.5102 L2.8348,15.5102 L2.8348,5.7962 C2.8348,4.3672 3.9938,3.2082 5.4238,3.2082 L14.4908,3.2082" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M9.9576,39.1824 L9.9576,30.6374" id="Stroke-4" stroke="#FFFFFF" stroke-width="2.835" stroke-linecap="round"></path>
+                    <path d="M13.7261,4.1858 C13.7261,6.2668 12.0391,7.9548 9.9571,7.9548 C7.8761,7.9548 6.1891,6.2668 6.1891,4.1858 C6.1891,2.1048 7.8761,0.4168 9.9571,0.4168 C12.0391,0.4168 13.7261,2.1048 13.7261,4.1858 Z" id="Stroke-6" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

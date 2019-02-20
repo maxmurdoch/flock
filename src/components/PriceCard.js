@@ -22,8 +22,10 @@ const PriceCard = ({
   fromPrice,
   icon,
   policyFeatureList,
-  buttonOneOnClick,
-  buttonTwoOnClick,
+  buttonOneUrl,
+  buttonTwoUrl,
+  buttonOneExternal,
+  buttonTwoExternal,
   flex = null,
   className
 }) => (
@@ -41,10 +43,12 @@ const PriceCard = ({
   >
     {productType && (
       <Flex
+        p={[10, 15, 20]}
+        pl={20}
+        pt={[15, 20, 20]}
+        pb={[15, 20, 25]}
         style={{
           backgroundColor: '#F7F7F4',
-          padding: 20,
-          paddingBottom: 25,
           alignItems: 'center',
           justifyContent: 'space-between'
         }}
@@ -55,7 +59,7 @@ const PriceCard = ({
         {icon && (
           <img
             src={withPrefix(icon)}
-            className={css({marginBottom: 0, height: 40})}
+            className={css({marginBottom: 0, height: 30})}
           />
         )}
       </Flex>
@@ -63,13 +67,12 @@ const PriceCard = ({
 
     {fromPrice && (
       <Flex
-        p={2}
+        pt={[15, 20, 25]}
+        pb={[15, 20, 25]}
+        pl={[20]}
         style={{
           backgroundColor: '#FFE001',
-          flexDirection: 'column',
-          paddingLeft: 20,
-          paddingTop: 25,
-          paddingBottom: 25
+          flexDirection: 'column'
         }}
         justifyContent="center"
       >
@@ -102,80 +105,53 @@ const PriceCard = ({
         paddingBottom: 5
       }}
     >
-      {policyFeatureList &&
-        policyFeatureList.length > 0 && (
-          <Flex flexDirection="column" pt={30} pb={30}>
-            {mapIndex(
-              ({text}) => (
-                <SmallText
-                  className={css({
-                    fontSize: 15,
-                    marginBottom: 10
-                  })}
-                >
-                  {text}
-                </SmallText>
-              ),
-              policyFeatureList
-            )}
-          </Flex>
-        )}
+      {policyFeatureList && policyFeatureList.length > 0 && (
+        <Flex flexDirection="column" pt={30} pb={30}>
+          {mapIndex(
+            ({text}) => (
+              <SmallText
+                className={css({
+                  fontSize: 15,
+                  marginBottom: 10
+                })}
+              >
+                {text}
+              </SmallText>
+            ),
+            policyFeatureList
+          )}
+        </Flex>
+      )}
     </Flex>
 
     <Flex
       flexDirection="column"
       className={css({
         backgroundColor: '#F7F7F4',
+        alignItems: 'flex-start',
         paddingTop: 5,
         paddingBottom: 15,
         paddingRight: 15,
         paddingLeft: 20
       })}
     >
-      {buttonOneText &&
-        buttonOneOnClick && (
-          <PrimaryButton
-            className={css({
-              alignSelf: 'flex-start',
-              marginBottom: 15,
-              cursor: 'pointer'
-            })}
-            onClick={buttonOneOnClick}
-          >
-            <ArrowText moveOnHover={false}>
-              <p
-                className={css({
-                  fontSize: 17,
-                  marginRight: 10
-                })}
-              >
-                {buttonOneText}
-              </p>
-            </ArrowText>
-          </PrimaryButton>
-        )}
+      {buttonOneText && buttonOneUrl && (
+        <PrimaryButton
+          to={buttonOneUrl}
+          external={buttonOneExternal}
+          title={buttonOneText}
+          color="yellow"
+          mb={15}
+        />
+      )}
 
-      {buttonTwoText &&
-        buttonTwoOnClick && (
-          <SecondaryButton
-            className={css({
-              alignSelf: 'flex-start',
-              cursor: 'pointer'
-            })}
-            onClick={buttonTwoOnClick}
-          >
-            <ArrowText moveOnHover={false}>
-              <p
-                className={css({
-                  fontSize: 17,
-                  marginRight: 10
-                })}
-              >
-                {buttonTwoText}
-              </p>
-            </ArrowText>
-          </SecondaryButton>
-        )}
+      {buttonTwoText && buttonTwoUrl && (
+        <PrimaryButton
+          to={buttonTwoUrl}
+          external={buttonTwoExternal}
+          title={buttonTwoText}
+        />
+      )}
     </Flex>
   </Flex>
 )

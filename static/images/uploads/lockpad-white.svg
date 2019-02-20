@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="32px" viewBox="0 0 21 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/lockpad</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 31.0143 20.707 31.0143 20.707 0.0003 0 0.0003"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PAYF" transform="translate(-1062.000000, -4778.000000)">
+            <g id="icons/lockpad/white" transform="translate(1050.000000, 4772.000000)">
+                <g id="Group-5" transform="translate(12.000000, 6.000000)">
+                    <path d="M3.4703,8.3009 C3.4703,4.4989 6.5523,1.4179 10.3533,1.4179 C14.1553,1.4179 17.2373,4.4989 17.2373,8.3009 L17.2373,15.2449" id="Stroke-1" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-4"></g>
+                    <polygon id="Stroke-3" stroke="#FFFFFF" stroke-width="2.835" stroke-linejoin="round" mask="url(#mask-2)" points="1.418 29.5973 19.29 29.5973 19.29 15.2453 1.418 15.2453"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -9,9 +9,15 @@ import PrimaryButton from './PrimaryButton'
 import {breakpoints, fontFamilies} from '../constants/theme'
 import Text from './Text'
 
-const RenewalBanner = ({image, mainText, buttonText, buttonUrl, buttonTrack}) => {
+const RenewalBanner = ({
+  image,
+  mainText,
+  buttonText,
+  buttonUrl,
+  buttonTrack
+}) => {
   const download = () => {
-    if (!!buttonTrack) analytics.track(buttonTrack)
+    if (buttonTrack) analytics.track(buttonTrack)
     window.open(buttonUrl)
   }
 
@@ -26,7 +32,7 @@ const RenewalBanner = ({image, mainText, buttonText, buttonUrl, buttonTrack}) =>
         <Flex
           flexWrap="wrap"
           alignItems="flex-start"
-          flexDirection='column'
+          flexDirection="column"
           pt={[3, 5]}
           pb={[3, 5]}
           pl={2}
@@ -43,17 +49,12 @@ const RenewalBanner = ({image, mainText, buttonText, buttonUrl, buttonTrack}) =>
             {mainText}
           </Text>
           {buttonText && buttonUrl && (
-            <PrimaryButton className={cx(
-              css`
-                ${styles.renewalButton};
-              `
-            )} onClick={download}>
-              <ArrowText moveOnHover={false}>
-                <p>
-                  {buttonText}
-                </p>
-              </ArrowText>
-            </PrimaryButton>
+            <PrimaryButton
+              to={buttonUrl}
+              track={buttonTrack}
+              title={buttonText}
+              color="yellow"
+            />
           )}
         </Flex>
       </SiteContainer>

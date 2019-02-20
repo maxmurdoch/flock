@@ -9,7 +9,8 @@ import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
-import ProductTabs from '../components/ProductTabs'
+import TabSection from '../components/ProductTabs'
+import ProductCardTabs from '../components/ProductCardTabs'
 import RenewalBanner from '../components/RenewalBanner'
 import Testimonial from '../components/Testimonial'
 import Featured from '../components/Featured'
@@ -65,11 +66,24 @@ const HomeTemplate = ({
 
         <div className={css({backgroundColor: 'white'})}>
           <Box background="white">
-            <ProductTabs
+            <TabSection
               title={productTabs.title}
               description={productTabs.description}
-              customerTypeList={productTabs.customerTypeList}
-            />
+            >
+              {productTabs.customerTypeList.map(
+                ({customerTypeDesc, productCards, title}) => (
+                  <TabSection.Tab title={title} key={title}>
+                    <Box pb={5}>
+                      <ProductCardTabs
+                        title={title}
+                        customerTypeDesc={customerTypeDesc}
+                        productCards={productCards}
+                      />
+                    </Box>
+                  </TabSection.Tab>
+                )
+              )}
+            </TabSection>
           </Box>
         </div>
 

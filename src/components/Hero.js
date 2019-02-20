@@ -8,10 +8,9 @@ import {css} from 'emotion'
 import H1 from './H1'
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
-import ArrowText from './ArrowText'
-import LargeBodyText from './LargeBodyText'
+import BodyText from './BodyText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
-import HeroButton from './HeroButton'
+import PrimaryButton from './PrimaryButton'
 import {colors, breakpoints} from '../constants/theme'
 import {downloadClickHandler} from '../utils/trackDownload'
 
@@ -58,13 +57,13 @@ const Hero = ({
               >
                 {header}
               </H1>
-              <LargeBodyText tag="div" color={textColor} mb={[2, 3]}>
+              <BodyText tag="div" color={textColor} mb={[2, 3]}>
                 {description}
-              </LargeBodyText>
+              </BodyText>
               <Flex flexDirection={['column', 'column', 'row']}>
                 {buttons.map((button, idx) => {
                   return (
-                    <HeroButton
+                    <PrimaryButton
                       key={idx}
                       to={button.to}
                       color={button.color}
@@ -73,11 +72,8 @@ const Hero = ({
                       track={button.track}
                       mb={15}
                       mr={15}
-                    >
-                      <ArrowText moveOnHover={false}>
-                        {button.title}
-                      </ArrowText>
-                    </HeroButton>
+                      title={button.title}
+                    />
                   )
                 })}
               </Flex>

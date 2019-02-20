@@ -4,13 +4,13 @@ templateKey: flyUnlimited
 hero:
   backgroundImage: ../../images/uploads/fly-unlimited-header.jpg
   buttons:
-    - title: Get a quote
+    - title: GET A QUOTE
       to: 'https://my.flockcover.com'
       color: yellow
       external: true
       branch: false
       track: ''
-    - title: What's covered?
+    - title: WHAT'S COVERED?
       to: '#what-is-covered'
       color: black
       external: true
@@ -101,8 +101,8 @@ whatIsCovered:
   smallPrints:
     - text: \** Prices depend on factors such as experience, equipment and claims history.
     - text: \+ Available if multiple pilots are operating under a single PfCO.
-  buttonText: GET A QUOTE
-  buttonUrl: 'https://my.flockcover.com'
+  buttonOneText: GET A QUOTE
+  buttonOneUrl: 'https://my.flockcover.com'
   fromPrice: £24.95
   samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
   policyFeatureList:
@@ -118,17 +118,39 @@ faqSection:
   body: Got other questions? Visit our help centre, or chat live with us now.
   buttonText: VIEW ALL FAQs
   buttonUrl: https://help.flockcover.com/
-  faqList:
-    - text: Are there any long-term commitments with Fly Unlimited?
-      url: http://help.flockcover.com/policies-and-coverage/are-there-any-long-term-commitments-with-fly-unlimited
-    - text: Can I adjust, or cancel, my policy?
-      url: https://help.flockcover.com/policies-and-coverage/can-i-adjust-or-cancel-my-fly-unlimited-policy
-    - text: Can I get covered abroad?
-      url: https://help.flockcover.com/policies-and-coverage/can-i-get-covered-abroad
-    - text: Is Fly Unlimited CAA compliant?
-      url: http://help.flockcover.com/drone-regulation/is-fly-unlimited-caa-compliant
-    - text: How do I make a claim?
-      url: https://help.flockcover.com/making-a-claim/how-do-i-make-a-claim
+  disclosureIndicator: /images/uploads/small-arrow-yellow.svg
+  faqs:
+    - title: Are there any long-term commitments with Fly Unlimited?
+      body: >-
+        No there aren't. Fly Unlimited is a monthly contract, so there are no long-term commitments.
+
+
+        You can pause, or cancel, your cover at anytime, and this will take effect on your next monthly renewal date. Don't worry, we'll never hit you with any cancellation fees.
+    - title: Can I adjust my policy?
+      body: >-
+        Yes, you can adjust your policy at anytime during the month - with no admin fees! This can involve:
+
+
+        * Adding (or removing) new drones and accessories
+
+        * Adding (or removing) pilots
+
+        * Changing your Public Liability limit
+
+
+         Any changes that *increase* your coverage will take effect immediately, and we'll take payment for the price difference. Any changes that *lower* your coverage will take effect on your next monthly renewal date.
+    - title: Can I get covered abroad?
+      body: >-
+        Yes, with Fly Unlimited you can easily extend your coverage worldwide as and when you need to. It's then easy to scale back your cover when you return.
+    - title: Is Fly Unlimited CAA compliant?
+      body: >-
+        You can have peace of mind that our Fly Unlimited policies are CAA compliant and EC785/2004 compliant.
+
+
+        Applying for your PfCO? We can provide you with a CAA approved proof of compliant insurance certificate . To get yours instantly emailed to you, download the Flock Cover app, and tap on ‘Your Details’ in the main menu.
+    - title: How do I make a claim?
+      body: >-
+        You can make a claim easily in the Flock Cover app. If you'd prefer to talk to a human, you can give us a call anytime on [+44 (0) 1234 480260](tel:+4401234480260). We’re here to help!
 siteMetadataOverride:
   description: drone insurance
   keywords:

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="29px" viewBox="0 0 42 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/van</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PAYF" transform="translate(-869.000000, -4783.000000)">
+            <g id="icons/van/white" transform="translate(868.000000, 4776.000000)">
+                <g id="Group-11" transform="translate(2.000000, 8.000000)">
+                    <path d="M35.6367,22.9623 L37.7877,22.9623 C38.7917,22.9623 39.5807,22.1023 39.4937,21.1023 L38.6997,11.9353 C38.6867,11.7783 38.6517,11.6253 38.5957,11.4783 L34.8397,1.5253 C34.5887,0.8583 33.9497,0.4173 33.2377,0.4173 L2.1287,0.4353 C1.1837,0.4363 0.4177,1.2023 0.4177,2.1483 L0.4177,21.2503 C0.4177,22.1953 1.1847,22.9623 2.1297,22.9623 L4.0217,22.9623" id="Stroke-1" stroke="#FFFFFF" stroke-width="2.835" stroke-linejoin="round"></path>
+                    <path d="M13.2432,22.9623 L26.6942,22.9623" id="Stroke-3" stroke="#FFFFFF" stroke-width="2.835" stroke-linejoin="round"></path>
+                    <path d="M12.4629,22.5628 C12.4629,24.7378 10.6989,26.5008 8.5239,26.5008 C6.3489,26.5008 4.5849,24.7378 4.5849,22.5628 C4.5849,20.3878 6.3489,18.6238 8.5239,18.6238 C10.6989,18.6238 12.4629,20.3878 12.4629,22.5628 Z" id="Stroke-5" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                    <path d="M35.2627,22.5628 C35.2627,24.7378 33.4997,26.5008 31.3247,26.5008 C29.1497,26.5008 27.3857,24.7378 27.3857,22.5628 C27.3857,20.3878 29.1497,18.6238 31.3247,18.6238 C33.4997,18.6238 35.2627,20.3878 35.2627,22.5628 Z" id="Stroke-7" stroke="#FED900" stroke-width="2.835" stroke-linecap="round"></path>
+                    <polyline id="Stroke-9" stroke="#FFFFFF" stroke-width="2.835" stroke-linejoin="round" points="35.2627 5.0819 27.3857 5.0819 29.0137 11.0289 37.6127 11.0289"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
