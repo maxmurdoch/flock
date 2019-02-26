@@ -77,7 +77,7 @@ const buttonContent = [
     hasIcon: true,
     options: [
       {
-        to: '/insurance/commercial',
+        to: '/payasyoufly',
         text: 'Pay-as-you-fly',
         icon: 'PAYF'
       },
