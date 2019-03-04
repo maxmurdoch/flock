@@ -1,16 +1,17 @@
 import React from 'react'
 import {Sticky} from 'react-sticky'
-import {Collapse} from 'react-collapse'
 import {withState} from 'recompose'
 import R from 'ramda'
 import {css} from 'react-emotion'
 
+import Collapse from './NavMenuCollapse'
 import Link from './Link'
 import ArrowText from './ArrowText'
 import Flex from './Flex'
 import Box from './Box'
 import SmallText from './SmallText'
 import SiteContainer from './SiteContainer'
+import ProductNavDropDownMobile from './ProductNavDropDownMobile'
 
 import hamburger from '../images/icons/hamburger.svg'
 import blackLogo from '../images/logo-black.svg'
@@ -27,23 +28,6 @@ const styles = {
     marginTop: R.nth(2, space)
   })
 }
-const productList = [
-  {
-    to: '/insurance/commercial',
-    className: styles.product,
-    text: 'Commercial pilot'
-  },
-  {
-    to: '/insurance/trainee',
-    className: styles.product,
-    text: 'Trainee pilot'
-  },
-  {
-    to: '/insurance/recreational',
-    className: styles.product,
-    text: 'Recreational pilot'
-  }
-]
 
 const navList = [
   {
@@ -124,7 +108,9 @@ const MobileNav = ({
                     display: 'flex',
                     alignItems: 'center'
                   })}
-                  onClick={() => toggleMenu(isOpen => R.not(isOpen))}
+                  onClick={() => {
+                    toggleMenu(isOpen => R.not(isOpen))
+                  }}
                 >
                   <img
                     className={css({
@@ -137,28 +123,15 @@ const MobileNav = ({
                 </button>
               </Box>
             </Flex>
-            <Collapse
-              isOpened={isOpen}
-              className={css({width: '100%'})}
-              springConfig={{stiffness: 1000, damping: 50}}
-            >
-              <Flex background={colors.backgrounds.dark} width="100%" pb={2}>
+            <Collapse isOpen={isOpen}>
+              <Flex background={colors.backgrounds.dark} width="100%" pb={150}>
                 <SiteContainer>
                   <nav
                     className={css({
                       width: '100%'
                     })}
                   >
-                    {mapIndex(
-                      ({text, to, className}, index) => (
-                        <Link to={to} className={className} key={index}>
-                          <ArrowText>
-                            <SmallText fontWeight={700}>{text}</SmallText>
-                          </ArrowText>
-                        </Link>
-                      ),
-                      productList
-                    )}
+                    <ProductNavDropDownMobile />
                     <Flex
                       pt={2}
                       borderBottom={`1px solid ${colors.white}`}
