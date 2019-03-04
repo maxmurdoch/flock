@@ -1,10 +1,11 @@
 import React from 'react'
 import {Sticky} from 'react-sticky'
-import {Collapse} from 'react-collapse'
 import {withState} from 'recompose'
 import R from 'ramda'
 import {css} from 'react-emotion'
 
+import Collapse from './NavMenuCollapse'
+import ProductNavDropDownMobile from './ProductNavDropDownMobile'
 import Link from './Link'
 import ArrowText from './ArrowText'
 import Flex from './Flex'
@@ -137,9 +138,7 @@ const MobileNav = ({
               </Box>
             </Flex>
             <Collapse
-              isOpened={isOpen}
-              className={css({width: '100%'})}
-              springConfig={{stiffness: 1000, damping: 50}}
+              isOpen={isOpen}
             >
               <Flex background={colors.backgrounds.dark} width="100%" pb={2}>
                 <SiteContainer>
@@ -148,16 +147,7 @@ const MobileNav = ({
                       width: '100%'
                     })}
                   >
-                    {mapIndex(
-                      ({text, to, className}, index) => (
-                        <Link to={to} className={className} key={index}>
-                          <ArrowText>
-                            <SmallText fontWeight={700}>{text}</SmallText>
-                          </ArrowText>
-                        </Link>
-                      ),
-                      productList
-                    )}
+                    <ProductNavDropDownMobile />
                     <Flex
                       pt={2}
                       borderBottom={`1px solid ${colors.white}`}
