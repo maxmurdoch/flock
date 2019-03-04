@@ -14,6 +14,7 @@ import ShowIf from '../components/ShowIf'
 import FlightSchool from '../components/FlightSchool'
 import Testimonial from '../components/Testimonial'
 import RenewalBanner from '../components/RenewalBanner'
+import ProductTypeSection from '../components/ProductTypeSection'
 
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
@@ -27,6 +28,7 @@ const SegmentPageTemplate = ({data}) => {
     coverNote,
     flightSchool,
     siteMetadataOverride,
+    productTypes,
     doINeedInsurance,
     testimonial,
     renewalBanner
@@ -66,7 +68,17 @@ const SegmentPageTemplate = ({data}) => {
             <BigSectionLine />
             <FlightSchool title={flightSchool.title} list={flightSchool.list} />
           </ShowIf>
-          <BigSectionLine pb={0} />
+
+          <ShowIf predicate={productTypes.show}>
+            <Box mb={4}>
+              <BigSectionLine />
+              <ProductTypeSection
+                title={productTypes.title}
+                description={productTypes.description}
+                productCards={productTypes.productCards}
+              />
+            </Box>
+          </ShowIf>
           {coverNote.isShowing ? (
             <CoverNote
               image={coverNote.image}
@@ -138,6 +150,27 @@ export const query = graphql`
           list {
             title
             text
+          }
+        }
+        productTypes {
+          show
+          title
+          description
+          productCards {
+            buttonOneText
+            buttonTwoText
+            buttonOneUrl
+            buttonTwoUrl
+            buttonOneExternal
+            buttonTwoExternal
+            fromPrice
+            policyFeatureList {
+              text
+            }
+            productType
+            fromText
+            perText
+            icon
           }
         }
         coverNote {
