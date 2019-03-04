@@ -103,52 +103,6 @@ coverNote:
   title: Applying for your PfCO?
 doINeedInsurance:
   title: ''
-how:
-  description: >-
-    Insuring your drone flight has never been simpler. All it takes is a matter
-    of taps on your mobile phone.
-  list:
-    - image: /images/uploads/training-1.png
-      text: >-
-        Choose where and when you want to fly. See your quote change in
-        real-time.
-      title: 1. Enter your flight details
-    - image: /images/uploads/training-personalise.png
-      text: Customise your policy length and equipment cover to suit your needs.
-      title: 2. Customise your policy
-    - image: ../../images/uploads/screens/get-flying-screen.png
-      text: >-
-        Pay to instantly receive your policy documents by email. Enjoy the
-        flight!
-      title: 3. Get flying
-  title: How Flock Cover works
-risk:
-  description: >-
-    With Flock Cover you get much more than just an insurance policy. The app
-    analyses real-time data from your Flight Area to generate a unique Risk
-    Report for each flight in seconds. Here's what we look out for:
-  list:
-    - icon: ../../images/uploads/icons-house.svg
-      text: >-
-        High-risk buildings such as schools, hospitals, prisons, and densely
-        populated areas.
-      title: Inhabited spaces
-    - icon: ../../images/uploads/icons-circle.svg
-      text: >-
-        Including dangerous areas such as nuclear power plants, military
-        airbases, and busy roads.
-      title: Ground hazards
-    - icon: ../../images/uploads/icons-plane.svg
-      text: >-
-        Be alerted to airports, heliports, and temporary restrictions of
-        airspaces.
-      title: Restricted airspace
-    - icon: ../../images/uploads/icons-cloud.svg
-      text: >
-        Receive real-time weather updates, such as wind speed and probability of
-        rainfall.  
-      title: Hyperlocal weather
-  title: Know your risks before you fly
 testimonial:
   - author: 'Gareth, Media Business Owner'
     image: /images/uploads/testimonial/1@2x.png
@@ -161,22 +115,12 @@ testimonial:
       Ease of use is a key factor, and Flock represents a good way for new UAV
       service operators to establish their businesses without paying for
       'unused' insurance cover.
-otherProducts:
-  description: We offer instant drone insurance tailored to your specific needs.
-  products:
-    - icon: /images/uploads/commercial-pilot.svg
-      link: /insurance/commercial
-      text: >-
-        Flock’s EC785/2004 compliant policies offer equipment and Public
-        Liability insurance from just £4.95 a day.
-      title: Commercial pilot
-    - icon: /images/uploads/recreational-pilot.svg
-      link: /insurance/recreational
-      text: >-
-        Enjoy your favourite hobby with peace of mind. Get covered from just
-        £2.95 for up to a day of flying.
-      title: Recreational pilot
-  title: What kind of drone pilot are you?
+renewalBanner:
+  image: /images/uploads/renewal-drone.jpg
+  mainText: Take to the skies with Flock today.
+  buttonText: GET A PRICE IN 60 SECONDS
+  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
+  buttonTrack: WebApp Navigation Clicked
 siteMetadataOverride:
   description: drone insurance for trainee pilots
   keywords:
