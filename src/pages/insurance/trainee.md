@@ -51,6 +51,27 @@ why:
         operator](https://www.flyflock.io/insurance/commercial/) account.
       title: 'Free to Upgrade '
   title: Why do trainee pilots fly with Flock?
+productTypes:
+  show: false
+  title: Find the cover that's right for you
+  description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
+  productCards:
+    - productType: PAY-AS-YOU-FLY
+      buttonOneText: GET A PRICE
+      buttonTwoText: VIEW ALL FEATURES
+      buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
+      buttonTwoUrl: https://flockcover.com/insurance/commercial/
+      buttonOneExternal: true
+      buttonTwoExternal: false
+      fromPrice: £4.95
+      policyFeatureList:
+        - text: On-demand cover from 1-8 hours
+        - text: Customise your insurance per flight
+        - text: Up to £25K drone and accessory cover
+        - text: Public Liability insurance up to £10M
+      fromText: from
+      perText: per flight
+      icon: /images/uploads/drone.svg
 flightSchool:
   list:
     - image: ../../images/uploads/3iC.png
