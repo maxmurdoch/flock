@@ -7,7 +7,7 @@ const Collapse = ({isOpen, children}) => (
     className={css({
       position: 'relative',
       width: '100%',
-      height: 'calc(100vh - 63px)',
+      height: isOpen ? 'calc(100vh - 63px)' : '0',
       transformOrigin: '50% 0',
       transition: 'transform 250ms ease-out, opacity 250ms ease-out',
       pointerEvents: isOpen ? 'default' : 'none',
