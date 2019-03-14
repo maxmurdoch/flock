@@ -1,29 +1,27 @@
 ---
 title: Recreational
 templateKey: product
-navColor: light
 hero:
   backgroundImage: ../../images/uploads/hobbyist-header.jpg
-  textColor: white
   buttons:
-    - title: DOWNLOAD
-      to: 'https://flockcover.app.link/6IW6kTmgfP'
+    - branch: true
       color: yellow
       external: true
-      branch: true
-      track: 'Application Download Viewed'
-  features:
-    - title: Underwritten by
-      rightIcon: /images/uploads/allianz.png
-    - leftIcon: /images/uploads/black-tick-icon.png
-      title: FCA & CAA compliant
-    - leftIcon: /images/uploads/support-icon.png
-      title: Instant customer support
+      title: DOWNLOAD
+      to: 'https://flockcover.app.link/6IW6kTmgfP'
+      track: Application Download Viewed
   description: |-
     * On-demand insurance from £2.95
     * Short-term cover (from 1-8 hours)
     * Public Liability insurance (£250,000)
     * Real-time flight risk assessment
+  features:
+    - rightIcon: /images/uploads/allianz.png
+      title: Underwritten by
+    - leftIcon: /images/uploads/black-tick-icon.png
+      title: FCA & CAA compliant
+    - leftIcon: /images/uploads/support-icon.png
+      title: 24/7 customer support
   header: 'Pay-as-you-fly drone insurance for recreational pilots  '
 why:
   description: >-
@@ -72,7 +70,7 @@ coverNote:
   isShowing: false
   link:
     text: Learn how to get your cover note within our app →
-    to: https://flockcover.app.link/6IW6kTmgfP
+    to: 'https://flockcover.app.link/6IW6kTmgfP'
   smallText: >-
     Flock’s Cover Note is accepted by the CAA as proof of EC785/2004 compliant
     insurance, and you can get yours instantly without having to pay a penny.
@@ -180,3 +178,4 @@ siteMetadataOverride:
     - leisure drone insurance
   title: Recreational
 ---
+
