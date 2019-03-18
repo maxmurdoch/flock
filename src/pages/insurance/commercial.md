@@ -4,26 +4,25 @@ templateKey: commercial
 navColor: dark
 hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
-  textColor: black
   buttons:
-    - title: DOWNLOAD
-      to: 'https://flockcover.app.link/6IW6kTmgfP'
+    - branch: true
       color: yellow
       external: true
-      branch: true
-      track: 'Application Download Viewed'
-  features:
-    - title: Underwritten by
-      rightIcon: /images/uploads/allianz.png
-    - leftIcon: /images/uploads/black-tick-icon.png
-      title: FCA & CAA compliant
-    - leftIcon: /images/uploads/support-icon.png
-      title: Instant customer support
+      title: DOWNLOAD
+      to: 'https://flockcover.app.link/6IW6kTmgfP'
+      track: Application Download Viewed
   description: |-
     * Pay-as-you-fly and monthly subscription options
     * EC785/2004 compliant
     * Customisable Public Liability limits from £1-10M
     * Drone and accessory cover up to £25,000
+  features:
+    - rightIcon: /images/uploads/allianz.png
+      title: Underwritten by
+    - leftIcon: /images/uploads/black-tick-icon.png
+      title: FCA & CAA compliant
+    - leftIcon: /images/uploads/support-icon.png
+      title: 24/7 customer support
   header: Fully flexible drone insurance for commercial pilots
 why:
   description: Thousands of drone pilots across the UK now use the Flock Cover app.
@@ -50,9 +49,9 @@ why:
         give us a call, we’re here to help.
       title: Claim simply
     - text: >-
-        Chat to our friendly customer support team in the app. We typically
-        respond in 2 minutes or less!
-      title: Instant support
+        We may be built on technology, but our support team are all human - not
+        robots. Chat with us via the app or web, or give us a call.
+      title: 24/7 support
   title: 'Why do commercial pilots fly with Flock? '
 productTypes:
   show: true
