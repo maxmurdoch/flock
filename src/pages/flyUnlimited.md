@@ -22,7 +22,7 @@ hero:
     - leftIcon: /images/uploads/black-tick-icon.png
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
-      title: Instant customer support
+      title: 24/7 customer support
   description: Introducing Fly Unlimited, our new subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
 why:

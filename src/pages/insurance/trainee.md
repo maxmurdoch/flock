@@ -18,7 +18,7 @@ hero:
     - leftIcon: /images/uploads/black-tick-icon.png
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
-      title: Instant customer support
+      title: 24/7 support
   description: |-
     * Flight assessment and training insurance from £5.95
     * Drone and accessory cover (up to £3,000)
@@ -43,7 +43,7 @@ why:
     - text: >-
         Our customer support team will guide you through applying for your
         licence.
-      title: Instant PfCO support
+      title: PfCO support
     - text: Flock’s policies are EC785/2004 compliant and approved by the CAA.
       title: 'Fully Compliant '
     - text: >-
