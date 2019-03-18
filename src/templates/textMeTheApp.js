@@ -192,7 +192,7 @@ const styles = {
     alignItems: 'center',
     width: '100%',
     padding: '0 16px',
-    
+
     '@media (min-width: 1024px)': {
       width: 1024
     }
