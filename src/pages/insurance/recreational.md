@@ -44,27 +44,6 @@ why:
         assessment.
       title: Safety Tool
   title: Why do recreational pilots fly with Flock?
-productTypes:
-  show: false
-  title: Find the cover that's right for you
-  description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
-  productCards:
-    - productType: PAY-AS-YOU-FLY
-      buttonOneText: GET A PRICE
-      buttonTwoText: VIEW ALL FEATURES
-      buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
-      buttonTwoUrl: https://flockcover.com/insurance/commercial/
-      buttonOneExternal: true
-      buttonTwoExternal: false
-      fromPrice: £4.95
-      policyFeatureList:
-        - text: On-demand cover from 1-8 hours
-        - text: Customise your insurance per flight
-        - text: Up to £25K drone and accessory cover
-        - text: Public Liability insurance up to £10M
-      fromText: from
-      perText: per flight
-      icon: /images/uploads/drone.svg
 flightSchool:
   list:
     - image: ../../images/uploads/uav-trade-craft.png
@@ -114,6 +93,54 @@ doINeedInsurance:
   title: |-
     I fly my drone for fun,
     do I need insurance?
+how:
+  description: >-
+    Insuring your drone flight has never been simpler. All it takes is a matter
+    of taps on your mobile phone.
+  list:
+    - image: /images/uploads/recreational-1.png
+      text: >-
+        Choose where and when you want to fly. See your quote change in
+        real-time.
+      title: 1. Enter your flight details
+    - image: /images/uploads/recreational-2.png
+      text: >-
+        With options from 1-8 hours, customise your policy length to suit your
+        needs.
+      title: 2. Customise your policy
+    - image: ../../images/uploads/screens/get-flying-screen.png
+      text: >-
+        Pay to instantly receive your policy documents by email. Enjoy the
+        flight!
+      title: 3. Get flying
+  title: 'How Flock Cover works '
+risk:
+  description: >-
+    With Flock Cover you get much more than just an insurance policy. The app
+    analyses real-time data from your Flight Area to generate a unique Risk
+    Report for each flight in seconds. Here's what we look out for:
+  list:
+    - icon: ../../images/uploads/icons-house.svg
+      text: >-
+        High-risk buildings such as schools, hospitals, prisons, and densely
+        populated areas.
+      title: Inhabited spaces
+    - icon: ../../images/uploads/icons-circle.svg
+      text: >-
+        Including dangerous areas such as nuclear power plants, military
+        airbases, and busy roads.
+      title: Ground hazards
+    - icon: ../../images/uploads/icons-plane.svg
+      text: >-
+        Be alerted to surrounding airports and heliports to avoid flying your
+        drone illegally.
+      title: Restricted airspace
+    - icon: ../../images/uploads/icons-cloud.svg
+      text: >
+        Receive real-time weather updates, such as wind speed and probability of
+        rainfall.  
+      title: Hyperlocal weather
+  title: Know your risks before you fly
 testimonial:
   - author: 'Kim '
     image: /images/uploads/testimonial/3@2x.png
@@ -126,12 +153,22 @@ testimonial:
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
       that’s easy to access, what more could you want?
-renewalBanner:
-  image: /images/uploads/renewal-drone.jpg
-  mainText: Take to the skies with Flock today.
-  buttonText: GET A PRICE IN 60 SECONDS
-  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
-  buttonTrack: WebApp Navigation Clicked
+otherProducts:
+  description: We offer instant drone insurance tailored to your specific needs.
+  products:
+    - icon: /images/uploads/commercial-pilot.svg
+      link: /insurance/commercial
+      text: >-
+        Flock’s EC785/2004 compliant policies offer equipment and Public
+        Liability insurance from just £4.95 a day.
+      title: Commercial pilot
+    - icon: /images/uploads/trainee-pilot.svg
+      link: /insurance/trainee
+      text: >-
+        From flight assessment insurance, to providing proof-of-insurance in
+        your PfCO application, Flock’s got you covered.
+      title: Trainee pilot
+  title: What kind of drone pilot are you?
 siteMetadataOverride:
   description: drone insurance
   keywords:

@@ -10,15 +10,11 @@ import DarkNav from '../components/DarkNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
-import DownloadFlock from '../components/DownloadFlock'
-import Featured from '../components/Featured'
-import OtherProducts from '../components/OtherProducts'
-import ToggleiPhone from '../components/ToggleiPhone'
 import ShowIf from '../components/ShowIf'
-import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import FlightSchool from '../components/FlightSchool'
 import Testimonial from '../components/Testimonial'
-import MapBackground from '../components/MapBackground'
+import RenewalBanner from '../components/RenewalBanner'
+import ProductTypeSection from '../components/ProductTypeSection'
 
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
@@ -32,11 +28,10 @@ const SegmentPageTemplate = ({data}) => {
     coverNote,
     flightSchool,
     siteMetadataOverride,
+    productTypes,
     doINeedInsurance,
-    how,
-    risk,
     testimonial,
-    otherProducts
+    renewalBanner
   } = data.markdownRemark.frontmatter
 
   return (
@@ -73,7 +68,17 @@ const SegmentPageTemplate = ({data}) => {
             <BigSectionLine />
             <FlightSchool title={flightSchool.title} list={flightSchool.list} />
           </ShowIf>
-          <BigSectionLine pb={0} />
+
+          <ShowIf predicate={productTypes.show}>
+            <Box mb={4}>
+              <BigSectionLine />
+              <ProductTypeSection
+                title={productTypes.title}
+                description={productTypes.description}
+                productCards={productTypes.productCards}
+              />
+            </Box>
+          </ShowIf>
           {coverNote.isShowing ? (
             <CoverNote
               image={coverNote.image}
@@ -90,34 +95,19 @@ const SegmentPageTemplate = ({data}) => {
             />
           )}
         </Box>
-        <MapBackground>
-          <ToggleiPhone
-            title={how.title}
-            description={how.description}
-            list={how.list}
-          />
-          <CalculateRiskDropDown
-            title={risk.title}
-            list={risk.list}
-            description={risk.description}
-          />
-        </MapBackground>
 
         <Box className={css({backgroundColor: 'white'})}>
-          <Box pt={[3, 5]}>
+          <Box pt={[3, 3]}>
             <Testimonial testimonials={testimonial} />
           </Box>
-          <Box pt={[3, 5]}>
-            <DownloadFlock to={'https://flockcover.app.link/6IW6kTmgfP'} />
-          </Box>
-          <BigSectionLine />
-          <OtherProducts
-            title={otherProducts.title}
-            description={otherProducts.description}
-            products={otherProducts.products}
-          />
-          <Box pt={[3, 5]}>
-            <Featured />
+          <Box pt={[3, 6]}>
+            <RenewalBanner
+              image={renewalBanner.image}
+              mainText={renewalBanner.mainText}
+              buttonText={renewalBanner.buttonText}
+              buttonUrl={renewalBanner.buttonUrl}
+              buttonTrack={renewalBanner.buttonTrack}
+            />
           </Box>
         </Box>
         <Footer />
@@ -129,7 +119,7 @@ const SegmentPageTemplate = ({data}) => {
 export default SegmentPageTemplate
 
 export const query = graphql`
-  query ProductPageQuery($id: String!) {
+  query CommercialPageQuery($id: String!) {
     markdownRemark(id: {eq: $id}) {
       html
       frontmatter {
@@ -162,6 +152,27 @@ export const query = graphql`
             text
           }
         }
+        productTypes {
+          show
+          title
+          description
+          productCards {
+            buttonOneText
+            buttonTwoText
+            buttonOneUrl
+            buttonTwoUrl
+            buttonOneExternal
+            buttonTwoExternal
+            fromPrice
+            policyFeatureList {
+              text
+            }
+            productType
+            fromText
+            perText
+            icon
+          }
+        }
         coverNote {
           isShowing
           image
@@ -186,38 +197,17 @@ export const query = graphql`
           bigText
           smallText
         }
-        how {
-          title
-          description
-          list {
-            title
-            image
-            text
-          }
-        }
-        risk {
-          title
-          description
-          list {
-            title
-            icon
-            text
-          }
-        }
         testimonial {
           quote
           author
           image
         }
-        otherProducts {
-          title
-          description
-          products {
-            title
-            text
-            icon
-            link
-          }
+        renewalBanner {
+          image
+          mainText
+          buttonText
+          buttonUrl
+          buttonTrack
         }
         siteMetadataOverride {
           title

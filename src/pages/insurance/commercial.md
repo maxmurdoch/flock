@@ -1,6 +1,6 @@
 ---
 title: Commercial
-templateKey: product
+templateKey: commercial
 navColor: dark
 hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
