@@ -43,7 +43,7 @@ why:
     - text: >-
         Our customer support team will guide you through applying for your
         licence.
-      title: PfCO support
+      title: Instant PfCO support
     - text: Flock’s policies are EC785/2004 compliant and approved by the CAA.
       title: 'Fully Compliant '
     - text: >-
