@@ -99,7 +99,7 @@ class TextMeTheAppTemplate extends Component {
   }
 
   renderIphone () {
-    return(<Media query="(min-width: 1024px)">
+    return(<Media query="(min-width: 1024px) and (min-height: 750px)">
       {(matches) => matches
         ? <img style={{width: 475, marginTop: 125}} src={iPhone} />
         : null
