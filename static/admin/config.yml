@@ -87,6 +87,38 @@ collections:
                   - {label: 'Title', name: 'title', widget: 'string'}
                   - {label: 'Text', name: 'text', widget: 'markdown'}
                   - {label: 'Icon', name: 'icon', widget: 'image'}
+          - label: 'Product Tabs'
+            name: 'productTabs'
+            widget: 'object'
+            fields:
+              - {label: 'Title', name: 'title', widget: 'string'}
+              - {label: 'Description', name: 'description', widget: 'markdown'}
+              - label: Customer Type List
+                name: customerTypeList
+                widget: list
+                fields:
+                  - {label: 'Title', name: 'title', widget: 'string'}
+                  - {label: 'Customer Type Description', name: 'customerTypeDesc', widget: 'string'}
+                  - label: Product Cards
+                    name: productCards
+                    widget: list
+                    fields:
+                      - {label: 'Product Type', name: 'productType', widget: 'string'}
+                      - {label: 'Button One Text', name: 'buttonOneText', widget: 'string'}
+                      - {label: 'Button Two Text', name: 'buttonTwoText', widget: 'string'}
+                      - {label: 'Button One URL', name: 'buttonOneUrl', widget: 'string'}
+                      - {label: 'Button Two URL', name: 'buttonTwoUrl', widget: 'string'}
+                      - {label: 'Button One External', name: 'buttonOneExternal', widget: 'boolean'}
+                      - {label: 'Button Two External', name: 'buttonTwoExternal', widget: 'boolean'}
+                      - {label: 'From Price', name: 'fromPrice', widget: 'string'}
+                      - {label: 'From Text', name: 'fromText', widget: 'string'}
+                      - {label: 'Per Text', name: 'perText', widget: 'string'}
+                      - {label: 'Icon', name: 'icon', widget: 'string'}
+                      - label: Policy Feature List
+                        name: policyFeatureList
+                        widget: list
+                        fields:
+                          - {label: 'Text', name: 'text', widget: 'string'}
           - label: 'Second testimonials'
             name: 'secondTestimonial'
             widget: 'list'
