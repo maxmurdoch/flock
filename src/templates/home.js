@@ -93,13 +93,15 @@ const HomeTemplate = ({
           </Box>
 
           <Box pt={[3, 5]} pb={[3, 5]}>
-            <RenewalBanner
-              image={renewalBanner.image}
-              mainText={renewalBanner.mainText}
-              buttonText={renewalBanner.buttonText}
-              buttonUrl={renewalBanner.buttonUrl}
-              buttonTrack={renewalBanner.buttonTrack}
-            />
+            {!renewalBanner.hidden && (
+              <RenewalBanner
+                image={renewalBanner.image}
+                mainText={renewalBanner.mainText}
+                buttonText={renewalBanner.buttonText}
+                buttonUrl={renewalBanner.buttonUrl}
+                buttonTrack={renewalBanner.buttonTrack}
+              />
+            )}
           </Box>
           <Featured title={featured.title} image={featured.image} />
         </div>
@@ -217,6 +219,7 @@ export const query = graphql`
           image
         }
         renewalBanner {
+          hidden
           image
           mainText
           buttonText

@@ -143,6 +143,7 @@ secondTestimonial:
     image: /images/uploads/testimonial/4.jpg
     quote: Easy to use and comprehensive insurance. Would highly recommend!
 renewalBanner:
+  hidden: false
   image: /images/uploads/renewal-drone.jpg
   mainText: Take to the skies with Flock today.
   buttonText: GET A PRICE IN 60 SECONDS
