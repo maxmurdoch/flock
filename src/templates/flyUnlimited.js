@@ -123,16 +123,18 @@ class FlyUnlimitedPageTemplate extends Component {
             />
           )}
 
-          <Box className={css({backgroundColor: 'white'})}>
-            <FaqSection
-              header={faqSection.header}
-              body={faqSection.body}
-              buttonText={faqSection.buttonText}
-              buttonUrl={faqSection.buttonUrl}
-              disclosureIndicator={faqSection.disclosureIndicator}
-              faqs={faqSection.faqs}
-            />
-          </Box>
+          {!faqSection.hidden && (
+            <Box className={css({backgroundColor: 'white'})}>
+              <FaqSection
+                header={faqSection.header}
+                body={faqSection.body}
+                buttonText={faqSection.buttonText}
+                buttonUrl={faqSection.buttonUrl}
+                disclosureIndicator={faqSection.disclosureIndicator}
+                faqs={faqSection.faqs}
+              />
+            </Box>
+          )}
 
           <Footer />
         </div>
@@ -235,6 +237,7 @@ export const query = graphql`
           }
         }
         faqSection {
+          hidden
           header
           body
           buttonText

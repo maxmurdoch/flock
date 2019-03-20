@@ -114,6 +114,7 @@ whatIsCovered:
   fromText: from
   perText: per month**
 faqSection:
+  hidden: false
   header: Frequently asked questions
   body: Got other questions? Visit our help centre, or chat live with us now.
   buttonText: VIEW ALL FAQs
