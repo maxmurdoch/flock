@@ -485,7 +485,68 @@ collections:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
 
-
+      - name: commercial
+        label: Commercial
+        file: src/pages/commercial.md
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: Template key, widget: 'hidden', default: commercial }
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - name: backgroundImage
+                label: Background Image
+                widget: image
+              - name: header
+                label: Header
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: buttons
+                label: Buttons
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: to
+                    label: To
+                    widget: string
+                  - name: color
+                    label: Color
+                    widget: select
+                    options:
+                      - { label: Yellow, value: yellow }
+                      - { label: Black, value: black }
+                    default: yellow
+                  - name: external
+                    label: External
+                    widget: boolean
+                  - name: branch
+                    label: Branch
+                    widget: boolean
+                  - name: track
+                    label: Track
+                    widget: select
+                    options:
+                      - { label: Download, value: 'Application Download Viewed' }
+                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: leftIcon
+                    label: Left Icon
+                    widget: image
+                  - name: rightIcon
+                    label: Right Icon
+                    widget: image
+                    
       - name: payAsYouFly
         label: Pay As You Fly
         file: "src/pages/payAsYouFly.md"

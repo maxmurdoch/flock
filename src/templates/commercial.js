@@ -20,20 +20,18 @@ import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
 import {colors} from '../constants/theme'
 
-const SegmentPageTemplate = ({data}) => {
-  const {
-    navColor,
-    hero,
-    why,
-    coverNote,
-    flightSchool,
-    siteMetadataOverride,
-    productTypes,
-    doINeedInsurance,
-    testimonial,
-    renewalBanner
-  } = data.markdownRemark.frontmatter
-
+const CommercialTemplate = ({
+  navColor,
+  hero,
+  why,
+  coverNote,
+  flightSchool,
+  siteMetadataOverride,
+  productTypes,
+  doINeedInsurance,
+  testimonial,
+  renewalBanner
+}) => {
   return (
     <StickyContainer>
       <div>
@@ -116,12 +114,44 @@ const SegmentPageTemplate = ({data}) => {
   )
 }
 
-export default SegmentPageTemplate
+export {CommercialTemplate}
+
+const Commercial = ({data}) => {
+  const {
+    navColor,
+    hero,
+    why,
+    coverNote,
+    flightSchool,
+    siteMetadataOverride,
+    productTypes,
+    doINeedInsurance,
+    testimonial,
+    renewalBanner
+  } = data.markdownRemark.frontmatter
+
+  return (
+    <CommercialTemplate
+      hero={hero}
+      navColor={navColor}
+      why={why}
+      coverNote={coverNote}
+      flightSchool={flightSchool}
+      siteMetadataOverride={siteMetadataOverride}
+      productTypes={productTypes}
+      doINeedInsurance={doINeedInsurance}
+      testimonial={testimonial}
+      renewalBanner={renewalBanner}
+    />
+  )
+}
+
+export default Commercial
 
 export const query = graphql`
-  query CommercialPageQuery($id: String!) {
+  query Commercial($id: String!) {
     markdownRemark(id: {eq: $id}) {
-      html
+      id
       frontmatter {
         title
         navColor
