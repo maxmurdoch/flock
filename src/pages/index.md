@@ -25,6 +25,7 @@ hero:
       title: 24/7 customer support
   header: 'Simpler, smarter drone insurance'
 stopWorrying:
+  hidden: false
   description: >-
     Our community helps to shape the products and features we build. The result: flexible policies that our pilots love, and smart tools that provide much more than just insurance.
   reasons:
@@ -42,6 +43,7 @@ stopWorrying:
       title: Backed by Allianz
   title: 'Built for drone pilots, with drone pilots'
 productTabs:
+  hidden: false
   title: Find the cover that's right for you
   description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
   customerTypeList:
@@ -150,6 +152,7 @@ renewalBanner:
   buttonUrl: https://flockcover.app.link/6IW6kTmgfP
   buttonTrack: WebApp Navigation Clicked
 featured:
+  hidden: false
   image: images/uploads/featured-list.png
   title: As featured in
 siteMetadataOverride:
