@@ -11,7 +11,6 @@ import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import ShowIf from '../components/ShowIf'
-import FlightSchool from '../components/FlightSchool'
 import Testimonial from '../components/Testimonial'
 import RenewalBanner from '../components/RenewalBanner'
 import ProductTypeSection from '../components/ProductTypeSection'
@@ -25,10 +24,8 @@ const CommercialTemplate = ({
   hero,
   why,
   coverNote,
-  flightSchool,
   siteMetadataOverride,
   productTypes,
-  doINeedInsurance,
   testimonial,
   renewalBanner
 }) => {
@@ -116,10 +113,8 @@ const Commercial = ({data}) => {
     hero,
     why,
     coverNote,
-    flightSchool,
     siteMetadataOverride,
     productTypes,
-    doINeedInsurance,
     testimonial,
     renewalBanner
   } = data.markdownRemark.frontmatter
@@ -130,10 +125,8 @@ const Commercial = ({data}) => {
       navColor={navColor}
       why={why}
       coverNote={coverNote}
-      flightSchool={flightSchool}
       siteMetadataOverride={siteMetadataOverride}
       productTypes={productTypes}
-      doINeedInsurance={doINeedInsurance}
       testimonial={testimonial}
       renewalBanner={renewalBanner}
     />
@@ -178,7 +171,7 @@ export const query = graphql`
           }
         }
         productTypes {
-          show
+          hidden
           title
           description
           productCards {
@@ -208,19 +201,6 @@ export const query = graphql`
             to
             text
           }
-        }
-        flightSchool {
-          hidden
-          title
-          list {
-            image
-            to
-          }
-        }
-        doINeedInsurance {
-          title
-          bigText
-          smallText
         }
         testimonial {
           quote
