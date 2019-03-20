@@ -54,38 +54,42 @@ const HomeTemplate = ({
             buttons={hero.buttons}
             features={hero.features}
           />
-          <Box pt={[3, 3]} background="white">
-            <TextGrid
-              title={stopWorrying.title}
-              description={stopWorrying.description}
-              list={stopWorrying.reasons}
-            />
-          </Box>
-          <BigSectionLine id="product-tabs" />
+          {!stopWorrying.hidden && (
+            <Box pt={[3, 3]} background="white">
+              <TextGrid
+                title={stopWorrying.title}
+                description={stopWorrying.description}
+                list={stopWorrying.reasons}
+              />
+              <BigSectionLine id="product-tabs" />
+            </Box>
+          )}
         </Box>
 
-        <div className={css({backgroundColor: 'white'})}>
-          <Box background="white">
-            <TabSection
-              title={productTabs.title}
-              description={productTabs.description}
-            >
-              {productTabs.customerTypeList.map(
-                ({customerTypeDesc, productCards, title}) => (
-                  <TabSection.Tab title={title} key={title}>
-                    <Box pb={5}>
-                      <ProductCardTabs
-                        title={title}
-                        customerTypeDesc={customerTypeDesc}
-                        productCards={productCards}
-                      />
-                    </Box>
-                  </TabSection.Tab>
-                )
-              )}
-            </TabSection>
-          </Box>
-        </div>
+        {!productTabs.hidden && (
+          <div className={css({backgroundColor: 'white'})}>
+            <Box background="white">
+              <TabSection
+                title={productTabs.title}
+                description={productTabs.description}
+              >
+                {productTabs.customerTypeList.map(
+                  ({customerTypeDesc, productCards, title}) => (
+                    <TabSection.Tab title={title} key={title}>
+                      <Box pb={5}>
+                        <ProductCardTabs
+                          title={title}
+                          customerTypeDesc={customerTypeDesc}
+                          productCards={productCards}
+                        />
+                      </Box>
+                    </TabSection.Tab>
+                  )
+                )}
+              </TabSection>
+            </Box>
+          </div>
+        )}
 
         <div className={css({backgroundColor: 'white'})}>
           <Box pt={[3, 5]}>
@@ -93,15 +97,19 @@ const HomeTemplate = ({
           </Box>
 
           <Box pt={[3, 5]} pb={[3, 5]}>
-            <RenewalBanner
-              image={renewalBanner.image}
-              mainText={renewalBanner.mainText}
-              buttonText={renewalBanner.buttonText}
-              buttonUrl={renewalBanner.buttonUrl}
-              buttonTrack={renewalBanner.buttonTrack}
-            />
+            {!renewalBanner.hidden && (
+              <RenewalBanner
+                image={renewalBanner.image}
+                mainText={renewalBanner.mainText}
+                buttonText={renewalBanner.buttonText}
+                buttonUrl={renewalBanner.buttonUrl}
+                buttonTrack={renewalBanner.buttonTrack}
+              />
+            )}
           </Box>
-          <Featured title={featured.title} image={featured.image} />
+          {!featured.hidden && (
+            <Featured title={featured.title} image={featured.image} />
+          )}
         </div>
         <Footer />
       </div>
@@ -199,6 +207,7 @@ export const query = graphql`
           }
         }
         stopWorrying {
+          hidden
           title
           description
           reasons {
@@ -213,10 +222,12 @@ export const query = graphql`
           image
         }
         featured {
+          hidden
           title
           image
         }
         renewalBanner {
+          hidden
           image
           mainText
           buttonText
@@ -224,6 +235,7 @@ export const query = graphql`
           buttonTrack
         }
         productTabs {
+          hidden
           title
           description
           customerTypeList {
