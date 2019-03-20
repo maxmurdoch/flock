@@ -55,19 +55,17 @@ const CommercialTemplate = ({
             buttons={hero.buttons}
             features={hero.features}
           />
-          <Box mt={[3, 5]}>
-            <TextGrid
-              title={why.title}
-              description={why.description}
-              list={why.list}
-            />
-          </Box>
-          <ShowIf predicate={flightSchool.show}>
-            <BigSectionLine />
-            <FlightSchool title={flightSchool.title} list={flightSchool.list} />
-          </ShowIf>
+          {!why.hidden && (
+            <Box mt={[3, 5]}>
+              <TextGrid
+                title={why.title}
+                description={why.description}
+                list={why.list}
+              />
+            </Box>
+          )}
 
-          <ShowIf predicate={productTypes.show}>
+          {!productTypes.hidden && (
             <Box mb={4}>
               <BigSectionLine />
               <ProductTypeSection
@@ -76,20 +74,14 @@ const CommercialTemplate = ({
                 productCards={productTypes.productCards}
               />
             </Box>
-          </ShowIf>
-          {coverNote.isShowing ? (
+          )}
+          {!coverNote.hidden && (
             <CoverNote
               image={coverNote.image}
               title={coverNote.title}
               bodyText={coverNote.bodyText}
               smallText={coverNote.smallText}
               link={coverNote.link}
-            />
-          ) : (
-            <TextSection
-              title={doINeedInsurance.title}
-              bigText={doINeedInsurance.bigText}
-              smallText={doINeedInsurance.smallText}
             />
           )}
         </Box>
@@ -98,15 +90,17 @@ const CommercialTemplate = ({
           <Box pt={[3, 3]}>
             <Testimonial testimonials={testimonial} />
           </Box>
-          <Box pt={[3, 6]}>
-            <RenewalBanner
-              image={renewalBanner.image}
-              mainText={renewalBanner.mainText}
-              buttonText={renewalBanner.buttonText}
-              buttonUrl={renewalBanner.buttonUrl}
-              buttonTrack={renewalBanner.buttonTrack}
-            />
-          </Box>
+          {!renewalBanner.hidden && (
+            <Box pt={[3, 6]}>
+              <RenewalBanner
+                image={renewalBanner.image}
+                mainText={renewalBanner.mainText}
+                buttonText={renewalBanner.buttonText}
+                buttonUrl={renewalBanner.buttonUrl}
+                buttonTrack={renewalBanner.buttonTrack}
+              />
+            </Box>
+          )}
         </Box>
         <Footer />
       </div>
@@ -175,6 +169,7 @@ export const query = graphql`
           backgroundImage
         }
         why {
+          hidden
           title
           description
           list {
@@ -204,7 +199,7 @@ export const query = graphql`
           }
         }
         coverNote {
-          isShowing
+          hidden
           image
           title
           bodyText
@@ -215,7 +210,7 @@ export const query = graphql`
           }
         }
         flightSchool {
-          show
+          hidden
           title
           list {
             image
@@ -233,6 +228,7 @@ export const query = graphql`
           image
         }
         renewalBanner {
+          hidden
           image
           mainText
           buttonText

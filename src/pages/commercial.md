@@ -25,6 +25,7 @@ hero:
       title: 24/7 customer support
   header: Fully flexible drone insurance for commercial pilots
 why:
+  hidden: false
   description: Thousands of drone pilots across the UK now use the Flock Cover app.
   list:
     - text: >-
@@ -54,7 +55,7 @@ why:
       title: 24/7 support
   title: 'Why do commercial pilots fly with Flock? '
 productTypes:
-  show: true
+  hidden: false
   title: Find the cover that's right for you
   description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
   productCards:
@@ -90,18 +91,12 @@ productTypes:
       fromText: from
       perText: a month
       icon: /images/uploads/double-drone.svg
-flightSchool:
-  list:
-    - image: ''
-      to: ''
-  show: false
-  title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
+  hidden: false
   bodyText: >-
     Good news! You no longer need to commit to an annual policy in order to get
     your proof-of-insurance for your PfCO application.
   image: ../../images/uploads/cover-note.svg
-  isShowing: true
   link:
     text: Get your proof of insurance document →
     to: 'https://landing.flockcover.com/cover-note/'
@@ -110,8 +105,6 @@ coverNote:
     insurance. And you can get your document instantly emailed to you, without
     even having to purchase a policy first. Oh, and it's free!
   title: Getting or renewing your PfCO?
-doINeedInsurance:
-  title: ''
 testimonial:
   - author: 'Keith, Land Surveyor'
     image: /images/uploads/testimonial/4@2x.png
@@ -122,6 +115,7 @@ testimonial:
     image: /images/uploads/testimonial/2@2x.png
     quote: Easy to use and comprehensive insurance. Would highly recommend!
 renewalBanner:
+  hidden: false
   image: /images/uploads/renewal-drone.jpg
   mainText: Take to the skies with Flock today.
   buttonText: GET A PRICE IN 60 SECONDS
