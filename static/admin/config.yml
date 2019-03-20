@@ -78,6 +78,10 @@ collections:
             name: 'stopWorrying'
             widget: 'object'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'markdown'}
               - label: 'Reasons'
@@ -91,6 +95,10 @@ collections:
             name: 'productTabs'
             widget: 'object'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'markdown'}
               - label: Customer Type List
@@ -123,6 +131,10 @@ collections:
             name: 'secondTestimonial'
             widget: 'list'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Author', name: 'author', widget: 'string'}
               - {label: 'Quote', name: 'quote', widget: 'markdown'}
               - {label: 'Image', name: 'image', widget: 'image'}
@@ -130,6 +142,10 @@ collections:
             name: 'featured'
             widget: 'object'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Image', name: 'image', widget: 'image'}
           - name: renewalBanner
@@ -357,6 +373,10 @@ collections:
             label: FAQ Section
             widget: object
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - name: header
                 label: Header
                 widget: string
@@ -531,6 +551,10 @@ collections:
             name: 'stopWorrying'
             widget: 'object'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'markdown'}
               - label: 'Reasons'
@@ -544,6 +568,10 @@ collections:
             name: 'how'
             widget: 'object'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'markdown'}
               - label: 'List'
@@ -557,6 +585,10 @@ collections:
             name: 'risk'
             widget: 'object'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'markdown'}
               - label: 'List'
@@ -570,6 +602,10 @@ collections:
             name: 'calculator'
             widget: 'object'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'string'}
               - {label: 'Disclaimer', name: 'disclaimer', widget: 'string'}
@@ -577,6 +613,10 @@ collections:
             name: 'productTabs'
             widget: 'object'
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'description', widget: 'markdown'}
               - label: Customer Type List
@@ -653,6 +693,10 @@ collections:
             label: FAQ Section
             widget: object
             fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
               - name: header
                 label: Header
                 widget: string
