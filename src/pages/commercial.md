@@ -26,7 +26,7 @@ why:
   description: Thousands of drone pilots across the UK have flocked to our simpler, smarter drone insurance.
   list:
     - text: >-
-        Choose from short-term cover on-demand, or unlimited flights on a rolling monthly subscription.
+        Choose from on-demand cover by the hour, or a flexible monthly subscription policy.
       title: Flexible policies
       icon: /images/uploads/infinity.svg
     - text: >-
@@ -53,7 +53,8 @@ productTypes:
       fromPrice: £4.95
       policyFeatureList:
         - text: On-demand cover from 1-8 hours
-        - text: In-flight drone and accessory insurance
+        - text: In-flight equipment insurance
+        - text: Public Liability insurance
         - text: Fly anywhere in the UK
         - text: Customise your cover flight-by-flight
         - text: Pay for insurance only when you fly
@@ -69,9 +70,10 @@ productTypes:
       buttonTwoExternal: false
       fromPrice: £24.95
       policyFeatureList:
-        - text: Unlimited flights on a rolling monthly subscription
-        - text: In-and-out of flight drone and accessory insurance
-        - text: Fly anywhere in the UK, plus worldwide cover options
+        - text: Unlimited flights on a monthly subscription
+        - text: In-and-out of flight equipment insurance
+        - text: Public Liability insurance
+        - text: Unlimited UK flights, plus worldwide options
         - text: Adjust your policy anytime, with no admin fees
         - text: Pay monthly, with no annual contracts
       fromText: from
@@ -83,7 +85,7 @@ coverNote:
     Good news! You no longer need to commit to an annual policy in order to get your insurance certificate for your PfCO application or renewal.
   image: ../../images/uploads/cover-note.svg
   link:
-    text: Get your proof of insurance document →
+    text: Get your insurance certificate →
     to: 'https://landing.flockcover.com/cover-note/'
   smallText: >-
     Instead, you can use our ‘Cover Note’ which is accepted by the CAA as proof of EC785/2004 compliant insurance. Get yours instantly via the Flock Cover mobile app for free.
@@ -101,10 +103,10 @@ testimonial:
 renewalBanner:
   hidden: false
   image: /images/uploads/renewal-drone.jpg
-  mainText: Take to the skies with Flock today.
-  buttonText: GET A PRICE IN 60 SECONDS
-  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
-  buttonTrack: WebApp Navigation Clicked
+  mainText: Read our PfCO application tips.
+  buttonText: TAKE ME TO THE POST
+  buttonUrl: https://blog.flockcover.com/flocks-essential-guide-to-pfco-renewals-dac39542e16a
+  buttonTrack: ''
 siteMetadataOverride:
   description: drone insurance
   keywords:

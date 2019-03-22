@@ -5,10 +5,10 @@ import {Collapse} from 'react-collapse'
 
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
-import Box from './Box'
+// import Box from './Box'
 import PrimaryButton from './NavPrimaryButton'
-import SecondaryButton from './NavSecondaryButton'
-import ProductLink from './ProductLink'
+// import SecondaryButton from './NavSecondaryButton'
+// import ProductLink from './ProductLink'
 import {colors, breakpoints} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
@@ -102,7 +102,7 @@ const buttonContent = [
         icon: 'PAYF'
       }
     ]
-  },
+  }
   // {
   //   to: '',
   //   text: 'ENTERPRISE',
