@@ -125,7 +125,7 @@ productTabs:
         buttonOneText: GET A QUOTE
         buttonOneUrl: https://flockcover.app.link/qdaEw2EMsU
         buttonTwoText: FIND OUT MORE
-        buttonTwoUrl: https://flockcover.com/insurance/commercial/
+        buttonTwoUrl: https://drive.google.com/file/d/1qnr7o1N6sgakvdjt9kzrPV3KZzbzVqDL/view?usp=sharing
         fromPrice: £4.95
         samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
         policyFeatureList:

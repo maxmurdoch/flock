@@ -71,15 +71,16 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           frontmatter: {title}
         } = node
 
+        const pageSlug = slug === '/commercial/' ? '/insurance' + slug : slug
         createPage({
-          path: node.fields.slug,
+          path: pageSlug,
           component: path.resolve(
             `src/templates/${String(node.frontmatter.templateKey)}.js`
           ),
           context: {
             title,
             id,
-            slug
+            slug: pageSlug
           }
         })
       })
