@@ -29,7 +29,7 @@ why:
   description: Thousands of drone pilots across the UK have flocked to our simpler, smarter drone insurance.
   list:
     - text: >-
-        Choose from on-demand cover by the hour, or a flexible monthly subscription policy.
+        Choose from on-demand cover, or a monthly subscription policy. You can even switch between the two throughout the year.
       title: Flexible policies
       icon: /images/uploads/infinity.svg
     - text: >-
