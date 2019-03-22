@@ -24,15 +24,16 @@ const ProductNavDropDown = ({productsIsOpen}) => {
         justifyContent="center"
         width="100%"
         background={colors.backgrounds.dark}
-        pt={30}
-        pb={30}
+        pt={20}
+        pb={20}
       >
         <SiteContainer edgeToEdge>
-          <Flex justifyContent="flex-start" alignItems="flex-start" flexWrap p={'15px'}>
+          <Flex justifyContent="space-between" alignItems="flex-start" flexWrap p={'15px'}>
             {mapIndex(
               ({to, text, options, hasIcon}, index) => (
                 <Flex
                   p='5px'
+                  pr='15px'
                   key={index}
                   flexDirection="column"
                   className={css({
@@ -41,23 +42,13 @@ const ProductNavDropDown = ({productsIsOpen}) => {
                     },
 
                     '@media (min-width: 1200px)': {
-                      width: '25%'
+                      width: '33%'
                     }
                   })}
                 >
                   <Flex flexDirection="column">
                     <PrimaryButton to={to} title={text} mb={12} hasIcon={hasIcon}/>
-                    {mapIndex(
-                      ({to, text, icon}) => (
-                        <SecondaryButton
-                          to={to}
-                          title={text}
-                          flexGrow={1}
-                          icon={icon}
-                        />
-                      ),
-                      options
-                    )}
+
                   </Flex>
                 </Flex>
               ),
@@ -112,17 +103,17 @@ const buttonContent = [
       }
     ]
   },
-  {
-    to: '',
-    text: 'ENTERPRISE',
-    hasIcon: false,
-    options: [
-      {
-        to: '',
-        text: 'Coming soon!'
-      }
-    ]
-  }
+  // {
+  //   to: '',
+  //   text: 'ENTERPRISE',
+  //   hasIcon: false,
+  //   options: [
+  //     {
+  //       to: '',
+  //       text: 'Coming soon!'
+  //     }
+  //   ]
+  // }
 ]
 
 export default ProductNavDropDown

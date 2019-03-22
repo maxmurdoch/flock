@@ -22,17 +22,7 @@ const ProductNavDropDown = () => {
           ({to, text, options, hasIcon}, index) => (
             <Flex flexDirection="column" mb="20px" key={index}>
               <PrimaryButton to={to} title={text} hasIcon={hasIcon} />
-              {mapIndex(
-                ({to, text, icon}) => (
-                  <SecondaryButton
-                    to={to}
-                    title={text}
-                    flexGrow={1}
-                    icon={icon}
-                  />
-                ),
-                options
-              )}
+
             </Flex>
           ),
           buttonContent
@@ -41,6 +31,18 @@ const ProductNavDropDown = () => {
     </Flex>
   )
 }
+// 
+// {mapIndex(
+//   ({to, text, icon}) => (
+//     <SecondaryButton
+//       to={to}
+//       title={text}
+//       flexGrow={1}
+//       icon={icon}
+//     />
+//   ),
+//   options
+// )}
 
 const buttonContent = [
   {
@@ -84,17 +86,17 @@ const buttonContent = [
       }
     ]
   },
-  {
-    to: '',
-    text: 'ENTERPRISE',
-    hasIcon: false,
-    options: [
-      {
-        to: '',
-        text: 'Coming soon!'
-      }
-    ]
-  }
+  // {
+  //   to: '',
+  //   text: 'ENTERPRISE',
+  //   hasIcon: false,
+  //   options: [
+  //     {
+  //       to: '',
+  //       text: 'Coming soon!'
+  //     }
+  //   ]
+  // }
 ]
 
 export default ProductNavDropDown

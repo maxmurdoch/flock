@@ -64,7 +64,10 @@ const CommercialTemplate = ({
 
           {!productTypes.hidden && (
             <Box mb={4}>
+              <div id="product-types" />
+
               <BigSectionLine />
+
               <ProductTypeSection
                 title={productTypes.title}
                 description={productTypes.description}
@@ -168,6 +171,7 @@ export const query = graphql`
           list {
             title
             text
+            icon
           }
         }
         productTypes {

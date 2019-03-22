@@ -7,15 +7,12 @@ hero:
   buttons:
     - branch: true
       color: yellow
-      external: true
-      title: DOWNLOAD
-      to: 'https://flockcover.app.link/6IW6kTmgfP'
-      track: Application Download Viewed
-  description: |-
-    * Pay-as-you-fly and monthly subscription options
-    * EC785/2004 compliant
-    * Customisable Public Liability limits from £1-10M
-    * Drone and accessory cover up to £25,000
+      external: false
+      title: GET A QUOTE
+      to: '#product-types'
+      track: ''
+  description: >-
+    Commercial drone insurance that fits the way you work. Get covered by the hour, day, or month - whatever suits you.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -26,52 +23,40 @@ hero:
   header: Fully flexible drone insurance for commercial pilots
 why:
   hidden: false
-  description: Thousands of drone pilots across the UK now use the Flock Cover app.
+  description: Thousands of drone pilots across the UK have flocked to our simpler, smarter drone insurance.
   list:
     - text: >-
-        Pay for insurance only when you fly. Get on-demand cover for 1 to 8
-        hours, with commercial policies starting from £4.95.
-      title: Pay-as-you-fly
+        Choose from short-term cover on-demand, or unlimited flights on a rolling monthly subscription.
+      title: Flexible policies
+      icon: /images/uploads/infinity.svg
     - text: >-
-        [Unlimited flights](https://landing.flockcover.com/flyunlimited/) in the
-        UK (or abroad) on a monthly subscription. Adjust, pause or cancel your
-        cover without any admin fees.
-      title: Fly Unlimited
+        Our policies are EC785/2004 compliant. It’s also quick and easy to get your PfCO insurance certificate.
+      title: CAA compliant
+      icon: /images/uploads/shield-icon.svg       
     - text: >-
-        Fly with peace of mind knowing Flock’s policies are EC785/2004 compliant
-        and CAA-approved.
-      title: Fully compliant
-    - text: >-
-        With Pay-as-you-fly cover, you can purchase insurance for each job and
-        expense it to your clients.
-      title: Bill as an expense
-    - text: >-
-        If something goes wrong, make claim via the app in a couple of taps. Or
-        give us a call, we’re here to help.
+        If something goes wrong, make claim via our mobile app in a couple of taps. Or give us a call, we’re always here to help.
       title: Claim simply
-    - text: >-
-        We may be built on technology, but our support team are all human - not
-        robots. Chat with us via the app or web, or give us a call.
-      title: 24/7 support
+      icon: /images/uploads/finger-icon.svg
   title: 'Why do commercial pilots fly with Flock? '
 productTypes:
   hidden: false
-  title: Find the cover that's right for you
-  description: Whether you’re operating commercially, completing your training, or flying for fun - we offer flexible cover that’s tailored to you.
+  title: Choose the cover that’s right for you
+  description: We’re doing things differently. Our two flexible policy options let you completely customise your insurance. Stick with one, or switch between the two throughout the year. It could cut your annual insurance cost.
   productCards:
     - productType: PAY-AS-YOU-FLY
       buttonOneText: GET A PRICE
       buttonTwoText: VIEW ALL FEATURES
       buttonOneUrl: https://flockcover.app.link/6IW6kTmgfP
-      buttonTwoUrl: https://flockcover.com/insurance/commercial/
+      buttonTwoUrl: https://flockcover.com/payasyoufly
       buttonOneExternal: true
       buttonTwoExternal: false
       fromPrice: £4.95
       policyFeatureList:
         - text: On-demand cover from 1-8 hours
-        - text: Customise your insurance per flight
-        - text: Up to £25K drone and accessory cover
-        - text: Public Liability insurance up to £10M
+        - text: In-flight drone and accessory insurance
+        - text: Fly anywhere in the UK
+        - text: Customise your cover flight-by-flight
+        - text: Pay for insurance only when you fly
       fromText: from
       perText: per flight
       icon: /images/uploads/drone.svg
@@ -84,35 +69,34 @@ productTypes:
       buttonTwoExternal: false
       fromPrice: £24.95
       policyFeatureList:
-        - text: Unlimited UK flights, plus worldwide options
-        - text: Equipment and Public Liability protection
-        - text: Theft, storage and transit insurance
-        - text: Cover for multiple pilots (up to 10)
+        - text: Unlimited flights on a rolling monthly subscription
+        - text: In-and-out of flight drone and accessory insurance
+        - text: Fly anywhere in the UK, plus worldwide cover options
+        - text: Adjust your policy anytime, with no admin fees
+        - text: Pay monthly, with no annual contracts
       fromText: from
       perText: a month
       icon: /images/uploads/double-drone.svg
 coverNote:
   hidden: false
   bodyText: >-
-    Good news! You no longer need to commit to an annual policy in order to get
-    your proof-of-insurance for your PfCO application.
+    Good news! You no longer need to commit to an annual policy in order to get your insurance certificate for your PfCO application or renewal.
   image: ../../images/uploads/cover-note.svg
   link:
     text: Get your proof of insurance document →
     to: 'https://landing.flockcover.com/cover-note/'
   smallText: >-
-    Flock's Cover Note is accepted by the CAA as proof of EC785/2004 compliant
-    insurance. And you can get your document instantly emailed to you, without
-    even having to purchase a policy first. Oh, and it's free!
-  title: Getting or renewing your PfCO?
+    Instead, you can use our ‘Cover Note’ which is accepted by the CAA as proof of EC785/2004 compliant insurance. Get yours instantly via the Flock Cover mobile app for free.
+
+  title: Need a PfCO insurance certificate?
 testimonial:
   - author: 'Keith, Land Surveyor'
-    image: /images/uploads/testimonial/4@2x.png
+    image: /images/uploads/grey-testimonial-background.png
     quote: >-
       Fantastic app, speedy human response to any question, very cheap insurance
       that’s easy to access, what more could you want?
   - author: 'Calum, Aerial Photographer '
-    image: /images/uploads/testimonial/2@2x.png
+    image: /images/uploads/grey-testimonial-background.png
     quote: Easy to use and comprehensive insurance. Would highly recommend!
 renewalBanner:
   hidden: false
