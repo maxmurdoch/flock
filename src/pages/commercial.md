@@ -12,7 +12,10 @@ hero:
       to: '#product-types'
       track: ''
   description: >-
-    Commercial drone insurance that fits the way you work. Get covered by the hour, day, or month - whatever suits you.
+    Commercial drone insurance that fits the way you work.
+
+
+    Get covered by the hour, day, or month - whatever suits you.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -57,7 +60,6 @@ productTypes:
         - text: Public Liability insurance
         - text: Fly anywhere in the UK
         - text: Customise your cover flight-by-flight
-        - text: Pay for insurance only when you fly
       fromText: from
       perText: per flight
       icon: /images/uploads/drone.svg
@@ -75,7 +77,6 @@ productTypes:
         - text: Public Liability insurance
         - text: Unlimited UK flights, plus worldwide options
         - text: Adjust your policy anytime, with no admin fees
-        - text: Pay monthly, with no annual contracts
       fromText: from
       perText: a month
       icon: /images/uploads/double-drone.svg
