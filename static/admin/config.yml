@@ -369,39 +369,6 @@ collections:
                   - name: icon
                     label: Icon
                     widget: image
-          - name: faqSection
-            label: FAQ Section
-            widget: object
-            fields:
-              - name: hidden
-                label: Hidden
-                widget: boolean
-                default: false
-              - name: header
-                label: Header
-                widget: string
-              - name: body
-                label: Body
-                widget: markdown
-              - name: buttonText
-                label: Button Text
-                widget: string
-              - name: buttonUrl
-                label: Button URL
-                widget: string
-              - name: disclosureIndicator
-                label: Disclosure Indicator
-                widget: image
-              - name: faqs
-                label: FAQ's
-                widget: list
-                fields:
-                  - name: title
-                    label: Title
-                    widget: string
-                  - name: body
-                    label: Body
-                    widget: markdown
           - name: whatIsCovered
             label: What is covered
             widget: object
@@ -410,9 +377,6 @@ collections:
                 label: Hidden
                 widget: boolean
                 default: false
-              - name: cardTitle
-                label: Card Title
-                widget: string
               - name: mainList
                 label: Main List
                 widget: list
@@ -484,6 +448,39 @@ collections:
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
+          - name: faqSection
+            label: FAQ Section
+            widget: object
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - name: header
+                label: Header
+                widget: string
+              - name: body
+                label: Body
+                widget: markdown
+              - name: buttonText
+                label: Button Text
+                widget: string
+              - name: buttonUrl
+                label: Button URL
+                widget: string
+              - name: disclosureIndicator
+                label: Disclosure Indicator
+                widget: image
+              - name: faqs
+                label: FAQ's
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: body
+                    label: Body
+                    widget: markdown
 
       - name: commercial
         label: Commercial
@@ -546,103 +543,104 @@ collections:
                   - name: rightIcon
                     label: Right Icon
                     widget: image
-              - label: 'Why'
-                name: 'why'
-                widget: 'object'
-                fields:
-                  - name: hidden
-                    label: Hidden
-                    widget: boolean
-                    default: false
-                  - {label: 'Title', name: 'title', widget: 'string'}
-                  - {label: 'Description', name: 'description', widget: 'markdown'}
-                  - label: 'List'
-                    name: 'list'
-                    widget: 'list'
-                    fields:
-                      - {label: 'Title', name: 'title', widget: 'string'}
-                      - {label: 'Text', name: 'text', widget: 'markdown'}
-              - label: 'Product Types'
-                name: 'productTypes'
-                widget: 'object'
-                fields:
-                  - name: hidden
-                    label: Hidden
-                    widget: boolean
-                    default: false
-                  - {label: 'Title', name: 'title', widget: 'string'}
-                  - {label: 'Description', name: 'description', widget: 'markdown'}
-                  - label: Product Cards
-                    name: productCards
-                    widget: list
-                    fields:
-                      - {label: 'Product Type', name: 'productType', widget: 'string'}
-                      - {label: 'Button One Text', name: 'buttonOneText', widget: 'string'}
-                      - {label: 'Button Two Text', name: 'buttonTwoText', widget: 'string'}
-                      - {label: 'Button One URL', name: 'buttonOneUrl', widget: 'string'}
-                      - {label: 'Button Two URL', name: 'buttonTwoUrl', widget: 'string'}
-                      - {label: 'Button One External', name: 'buttonOneExternal', widget: 'boolean'}
-                      - {label: 'Button Two External', name: 'buttonTwoExternal', widget: 'boolean'}
-                      - {label: 'From Price', name: 'fromPrice', widget: 'string'}
-                      - {label: 'From Text', name: 'fromText', widget: 'string'}
-                      - {label: 'Per Text', name: 'perText', widget: 'string'}
-                      - {label: 'Icon', name: 'icon', widget: 'image'}
-                      - label: Policy Feature List
-                        name: policyFeatureList
-                        widget: list
-                        fields:
-                          - {label: 'Text', name: 'text', widget: 'string'}
-              - label: 'Cover note'
-                name: coverNote
-                widget: object
-                fields:
-                  - name: hidden
-                    label: Hidden
-                    widget: boolean
-                    default: false
-                  - {name: image, label: Image, widget: image}
-                  - {name: title, label: Title, widget: string}
-                  - {name: bodyText, label: Body text, widget: string}
-                  - {name: smallText, label: Small text, widget: string}
-                  - name: link
-                    label: Link
-                    widget: object
-                    fields:
-                      - {name: to, label: To, widget: string}
-                      - {name: text, label: Text, widget: string}
-              - label: 'Testimonials'
-                name: 'testimonial'
+          - label: 'Why'
+            name: 'why'
+            widget: 'object'
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - {label: 'Title', name: 'title', widget: 'string'}
+              - {label: 'Description', name: 'description', widget: 'markdown'}
+              - label: 'List'
+                name: 'list'
                 widget: 'list'
                 fields:
-                  - {label: 'Author', name: 'author', widget: 'string'}
-                  - {label: 'Quote', name: 'quote', widget: 'markdown'}
-                  - {label: 'Image', name: 'image', widget: 'image'}
-              - name: renewalBanner
-                label: Renewal Banner
+                  - {label: 'Title', name: 'title', widget: 'string'}
+                  - {label: 'Text', name: 'text', widget: 'markdown'}
+                  - {label: 'Icon', name: 'icon', widget: 'image'}
+          - label: 'Product Types'
+            name: 'productTypes'
+            widget: 'object'
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - {label: 'Title', name: 'title', widget: 'string'}
+              - {label: 'Description', name: 'description', widget: 'markdown'}
+              - label: Product Cards
+                name: productCards
+                widget: list
+                fields:
+                  - {label: 'Product Type', name: 'productType', widget: 'string'}
+                  - {label: 'Button One Text', name: 'buttonOneText', widget: 'string'}
+                  - {label: 'Button Two Text', name: 'buttonTwoText', widget: 'string'}
+                  - {label: 'Button One URL', name: 'buttonOneUrl', widget: 'string'}
+                  - {label: 'Button Two URL', name: 'buttonTwoUrl', widget: 'string'}
+                  - {label: 'Button One External', name: 'buttonOneExternal', widget: 'boolean'}
+                  - {label: 'Button Two External', name: 'buttonTwoExternal', widget: 'boolean'}
+                  - {label: 'From Price', name: 'fromPrice', widget: 'string'}
+                  - {label: 'From Text', name: 'fromText', widget: 'string'}
+                  - {label: 'Per Text', name: 'perText', widget: 'string'}
+                  - {label: 'Icon', name: 'icon', widget: 'image'}
+                  - label: Policy Feature List
+                    name: policyFeatureList
+                    widget: list
+                    fields:
+                      - {label: 'Text', name: 'text', widget: 'string'}
+          - label: 'Cover note'
+            name: coverNote
+            widget: object
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - {name: image, label: Image, widget: image}
+              - {name: title, label: Title, widget: string}
+              - {name: bodyText, label: Body text, widget: string}
+              - {name: smallText, label: Small text, widget: string}
+              - name: link
+                label: Link
                 widget: object
                 fields:
-                  - name: hidden
-                    label: Hidden
-                    widget: boolean
-                    default: false
-                  - name: image
-                    label: Image
-                    widget: image
-                  - name: mainText
-                    label: Main Text
-                    widget: string
-                  - name: buttonText
-                    label: Button Text
-                    widget: string
-                  - name: buttonUrl
-                    label: Button URL
-                    widget: string
-                  - name: buttonTrack
-                    label: Button Track
-                    widget: select
-                    options:
-                      - { label: Download, value: 'Application Download Viewed' }
-                      - { label: Web App, value: 'WebApp Navigation Clicked' }
+                  - {name: to, label: To, widget: string}
+                  - {name: text, label: Text, widget: string}
+          - label: 'Testimonials'
+            name: 'testimonial'
+            widget: 'list'
+            fields:
+              - {label: 'Author', name: 'author', widget: 'string'}
+              - {label: 'Quote', name: 'quote', widget: 'markdown'}
+              - {label: 'Image', name: 'image', widget: 'image'}
+          - name: renewalBanner
+            label: Renewal Banner
+            widget: object
+            fields:
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
+              - name: image
+                label: Image
+                widget: image
+              - name: mainText
+                label: Main Text
+                widget: string
+              - name: buttonText
+                label: Button Text
+                widget: string
+              - name: buttonUrl
+                label: Button URL
+                widget: string
+              - name: buttonTrack
+                label: Button Track
+                widget: select
+                options:
+                  - { label: Download, value: 'Application Download Viewed' }
+                  - { label: Web App, value: 'WebApp Navigation Clicked' }
 
       - name: payAsYouFly
         label: Pay As You Fly
