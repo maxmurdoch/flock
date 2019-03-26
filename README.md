@@ -1,31 +1,21 @@
-## Install
+## How do I install and get this thing running?
 
 Make sure that you have the Gatsby CLI program installed:
 ```sh
-npm install --global gatsby-cli
+yarn global add gatsby-cli
+```
+
+Install the dependencies:
+```sh
+yarn install
 ```
 
 To start a development server:
 ```sh
-gatsby develop
+yarn develop
 ```
 
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-## Code style
-
-**React component**
-Import order
-- library imports
-- component imports
-- local js imports (constants, images)
-
-File order
-- imports
-- helpers functions and local vars
-- Component
-- style object
-- PropTypes
-- export
+## Any gotchas?
