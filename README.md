@@ -33,7 +33,7 @@ The JAMstack offers an alternative to the LAMP and MEAN stacks and has some adva
 
 The three main pieces of the stack we're using here is:
 
-- Gatsby for static site as our static site generator. 
+- Gatsby as our static site generator. 
 - Netlify for hosting and deployment (including staging).
 - NetlifyCMS for our headless CMS.
 
@@ -43,7 +43,9 @@ It uses GraphQL to grab the data it needs in order to render content on the web 
 
 Each GraphQL query will pull from a specific markdown file. These files are located in the `/pages` directory.
 
-NetlifyCMS is our self hosted admin/CMS system. It allows us, or other teams to edit the content on the webpages, whether that be copy, icons or links. 
+Netlify is our hosting and CI service.
+
+NetlifyCMS is an open-source project of Netlify and is our self hosted admin/CMS system. It allows us, or other teams to edit the content on the webpages, whether that be copy, icons or links. 
 
 This then creates another branch on github, with the new markdown in th repo. Once this has been previewed, it can then be merged to production. This will all be done under the hood in the NetlifyCMS admin dashboard.
 
