@@ -47,7 +47,7 @@ Netlify is our hosting and CI service.
 
 NetlifyCMS is an open-source project of Netlify and is our self hosted admin/CMS system. It allows us, or other teams to edit the content on the webpages, whether that be copy, icons or links. 
 
-This then creates another branch on github, with the new markdown in th repo. Once this has been previewed, it can then be merged to production. This will all be done under the hood in the NetlifyCMS admin dashboard.
+This then creates another branch on github, with the new markdown in the repo. Once this has been previewed, it can then be merged to production. This will all be done under the hood in the NetlifyCMS admin dashboard.
 
 NetlifyCMS uses a `config.yml` file to determine which widgets to present in the CMS, so that it can edit the appropriate markdown.
 
