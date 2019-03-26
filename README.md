@@ -51,6 +51,8 @@ This then creates another branch on github, with the new markdown in th repo. On
 
 NetlifyCMS uses a `config.yml` file to determine which widgets to present in the CMS, so that it can edit the appropriate markdown.
 
+`gatsby-config.js` is the entry point of the site, but you'll rarely need to go into here. This is what essentially tells determines how the pages are built. It will create the page slugs and routing structure of the site based on the file directory structure of our markdown.
+
 
 ## How do I add a new web page? 
 
