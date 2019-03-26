@@ -1,3 +1,11 @@
+# FlockCover.com
+
+## What is this?
+
+This is the codebase for our main website: flockcover.com
+
+It has an admin panel (CMS) located at flockcover.com/admin/
+
 ## How do I install and get this thing running?
 
 Make sure that you have the Gatsby CLI program installed:
@@ -17,7 +25,7 @@ yarn develop
 
 ## How does this project work?
 
-This project/codebase is our main website. You can visit the production deployment here: https://www.flockcover.com
+This project/codebase is our main website. You can visit the production deployment here: https://flockcover.com
 
 The architectural tech stack used is something called the JAMstack. JAMstack stand for client-side JavaScript, reusable APIs, and prebuilt Markup. 
 
