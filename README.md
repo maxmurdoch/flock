@@ -2,9 +2,9 @@
 
 ## What is this?
 
-This is the codebase for our main website: flockcover.com
+This is the codebase for our main website: https://flockcover.com
 
-It has an admin panel (CMS) located at flockcover.com/admin/
+It has an admin panel (CMS) located at https://flockcover.com/admin/
 
 ## How do I install and get this thing running?
 
