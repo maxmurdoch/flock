@@ -56,3 +56,15 @@ Once you have your web page looking how you like, you'll need to do an extra ste
 
 You'll need to go into the `static/config.yml` and add your new page as a collection. Essentially, you'll declare all the content that you want to expose to the CMS and which widget you want to provide access. These widgets may include a switch (for toggling), image uploaders, markdown fields or string inputs.
 
+A little gotcha is that you'll first need to merge your static page to master before you can test that the CMS is pulling in the right markdown. This is due to NetlifyCMS currently only reading from master.
+
+Once you've done this, you can check that your `config.yml` is set up properly by going to `localhost:3000/admin`.
+
+
+## How do I deploy? 
+
+This is all done for you. 
+
+When you create a new PR, Netlify will create a new staging build for you to review. This will be linked to in the PR checks.
+
+Once you've merged to master, Netlify will automatically start building and if successfuly, deploy to production.
