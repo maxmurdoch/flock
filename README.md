@@ -60,7 +60,7 @@ To do this you'll need to first do three things:
 2. Create a new markdown file in the `pages` directory. 
 3. Go back into your page template and wire it up to the markdown file in a GraphQL query.
 
-If making changes to both markdown and GraphQL query. Gatsby may complain and error in the terminal. You may need to `CTRL+C` and rerun `yarn develop`. This will wipe the cache and rebuild.
+If making changes to both markdown and GraphQL query, Gatsby may complain and error in the terminal. You may need to `CTRL+C` and rerun `yarn develop`. This will wipe the cache and rebuild.
 
 Once you have your web page looking how you like, you'll need to do an extra step to be able to edit the content in the admin (via Netlify CMS).
 
