@@ -29,5 +29,16 @@ The three main pieces of the stack we're using here is:
 - Netlify for hosting and deployment (including staging).
 - NetlifyCMS for our headless CMS.
 
+Gatsby is what wraps the vast majority of our code. It packages all the React that we write and generates a static site.
+
+It uses GraphQL to grab the data it needs in order to render content on the web pages.
+
+Each GraphQL query will pull from a specific markdown file.
+
+NetlifyCMS is our self hosted admin/CMS system. It allows us, or other teams to edit the content on the webpages, whether that be copy, icons or links. 
+
+This then creates another branch on github, with the new markdown in th repo. Once this has been previewed, it can then be merged to production. This will all be done under the hood in the NetlifyCMS admin dashboard.
+
+NetlifyCMS uses a `config.yml` file to determine which widgets to present in the CMS, so that it can edit the appropriate markdown.
 
 ## Any gotchas?
