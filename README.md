@@ -15,7 +15,7 @@ To start a development server:
 yarn develop
 ```
 
-## How do this project work?
+## How does this project work?
 
 This project/codebase is our main website. You can visit the production deployment here: https://www.flockcover.com
 
