@@ -79,4 +79,4 @@ This is all done for you.
 
 When you create a new PR, Netlify will create a new staging build for you to review. This will be linked to in the PR checks.
 
-Once you've merged to master, Netlify will automatically start building and if successfuly, deploy to production.
+Once you've merged to master, Netlify will automatically start building and if successful, deploy to production.
