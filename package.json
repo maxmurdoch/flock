@@ -14,7 +14,6 @@
     "emotion-server": "9.2.12",
     "emotion-theming": "9.2.9",
     "gatsby": "2.3.4",
-    "gatsby-link": "1.6.46",
     "gatsby-plugin-emotion": "1.1.17",
     "gatsby-plugin-intercom-spa": "0.0.5",
     "gatsby-plugin-netlify": "1.0.21",
