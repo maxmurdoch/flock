@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import {Collapse} from 'react-collapse'

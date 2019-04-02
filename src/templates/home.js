@@ -4,6 +4,7 @@ import * as R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
+import Layout from '../components/Layout'
 import BigSectionLine from '../components/BigSectionLine'
 import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
@@ -21,7 +22,7 @@ import {colors, breakpoints} from '../constants/theme'
 import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
 import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 
 const HomeTemplate = ({
   secondTestimonial,
@@ -163,16 +164,18 @@ const HomePage = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <HomeTemplate
-      secondTestimonial={secondTestimonial}
-      hero={hero}
-      downloadLink={downloadLink}
-      siteMetadataOverride={siteMetadataOverride}
-      stopWorrying={stopWorrying}
-      featured={featured}
-      renewalBanner={renewalBanner}
-      productTabs={productTabs}
-    />
+    <Layout>
+      <HomeTemplate
+        secondTestimonial={secondTestimonial}
+        hero={hero}
+        downloadLink={downloadLink}
+        siteMetadataOverride={siteMetadataOverride}
+        stopWorrying={stopWorrying}
+        featured={featured}
+        renewalBanner={renewalBanner}
+        productTabs={productTabs}
+      />
+    </Layout>
   )
 }
 

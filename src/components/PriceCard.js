@@ -1,7 +1,7 @@
 import React from 'react'
 import {css, cx} from 'react-emotion'
 import * as R from 'ramda'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 
 import Flex from './Flex'
 import H1 from './H1'

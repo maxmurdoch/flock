@@ -1,16 +1,16 @@
 import React from 'react'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
+import {graphql} from 'gatsby'
 
+import Layout from '../components/Layout'
 import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
-import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
 import DarkNav from '../components/DarkNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
-import ShowIf from '../components/ShowIf'
 import Testimonial from '../components/Testimonial'
 import RenewalBanner from '../components/RenewalBanner'
 import ProductTypeSection from '../components/ProductTypeSection'
@@ -18,7 +18,6 @@ import ProductTypeSection from '../components/ProductTypeSection'
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
 import {colors} from '../constants/theme'
-import { graphql } from 'gatsby'
 
 const CommercialTemplate = ({
   navColor,
@@ -124,16 +123,18 @@ const Commercial = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <CommercialTemplate
-      hero={hero}
-      navColor={navColor}
-      why={why}
-      coverNote={coverNote}
-      siteMetadataOverride={siteMetadataOverride}
-      productTypes={productTypes}
-      testimonial={testimonial}
-      renewalBanner={renewalBanner}
-    />
+    <Layout>
+      <CommercialTemplate
+        hero={hero}
+        navColor={navColor}
+        why={why}
+        coverNote={coverNote}
+        siteMetadataOverride={siteMetadataOverride}
+        productTypes={productTypes}
+        testimonial={testimonial}
+        renewalBanner={renewalBanner}
+      />
+    </Layout>
   )
 }
 

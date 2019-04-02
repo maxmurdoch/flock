@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import * as R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
+import {graphql} from 'gatsby'
 
+import Layout from '../components/Layout'
 import SiteMetadata from '../components/SiteMetadata'
 import Download from '../components/DownloadFlock'
 import LightNav from '../components/LightNav'
@@ -16,7 +18,6 @@ import AboutHero from '../components/AboutHero'
 import {colors, breakpoints, space} from '../constants/theme'
 import MeetTheTeam from '../components/MeetTheTeam'
 import investors from '../images/investors.png'
-import { graphql } from 'gatsby'
 
 const AboutTemplate = ({
   hero,
@@ -75,7 +76,7 @@ const AboutTemplate = ({
           team={meetTheTeam.team}
         />
         <BigSectionLine />
-        <Download to={'https://flockcover.app.link/6IW6kTmgfP'}/>
+        <Download to={'https://flockcover.app.link/6IW6kTmgfP'} />
         <Footer
           containerClassName={css({
             marginTop: R.nth(3, space),
@@ -107,13 +108,15 @@ const AboutPage = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <AboutTemplate
-      hero={hero}
-      flockStory={flockStory}
-      siteMetadataOverride={siteMetadataOverride}
-      coreValues={coreValues}
-      meetTheTeam={meetTheTeam}
-    />
+    <Layout>
+      <AboutTemplate
+        hero={hero}
+        flockStory={flockStory}
+        siteMetadataOverride={siteMetadataOverride}
+        coreValues={coreValues}
+        meetTheTeam={meetTheTeam}
+      />
+    </Layout>
   )
 }
 

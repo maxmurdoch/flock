@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 import {css} from 'react-emotion'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 
 import H2 from './H2'
 import H3 from './H3'

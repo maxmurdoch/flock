@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
+import Layout from '../components/Layout'
 import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
 import WhatIsCoveredSection from '../components/WhatIsCoveredSection'
@@ -17,7 +18,7 @@ import FaqSection from '../components/FaqSection'
 
 import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 
 class FlyUnlimitedPageTemplate extends Component {
   render() {
@@ -33,113 +34,115 @@ class FlyUnlimitedPageTemplate extends Component {
     } = this.props.data.markdownRemark.frontmatter
 
     return (
-      <StickyContainer>
-        <div>
-          <SiteMetadata
-            title={siteMetadataOverride.title}
-            description={siteMetadataOverride.description}
-            keywords={siteMetadataOverride.keywords}
-          />
-          <LightNav />
-          <Box className={css({backgroundColor: 'white', paddingBottom: 75})}>
-            <Hero
-              headerClassName={css({
-                backgroundImage: `url(${hero.backgroundImage})`,
-                backgroundPosition: 'top left',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'
-              })}
-              textColor={colors.white}
-              header={hero.header}
-              description={hero.description}
-              buttons={hero.buttons}
-              features={hero.features}
+      <Layout>
+        <StickyContainer>
+          <div>
+            <SiteMetadata
+              title={siteMetadataOverride.title}
+              description={siteMetadataOverride.description}
+              keywords={siteMetadataOverride.keywords}
             />
+            <LightNav />
+            <Box className={css({backgroundColor: 'white', paddingBottom: 75})}>
+              <Hero
+                headerClassName={css({
+                  backgroundImage: `url(${hero.backgroundImage})`,
+                  backgroundPosition: 'top left',
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat'
+                })}
+                textColor={colors.white}
+                header={hero.header}
+                description={hero.description}
+                buttons={hero.buttons}
+                features={hero.features}
+              />
 
-            {!why.hidden && (
-              <Box mt={[3, 5]}>
-                <TextGrid
-                  title={why.title}
-                  description={why.description}
-                  list={why.list}
+              {!why.hidden && (
+                <Box mt={[3, 5]}>
+                  <TextGrid
+                    title={why.title}
+                    description={why.description}
+                    list={why.list}
+                  />
+                </Box>
+              )}
+            </Box>
+
+            {!how.hidden && (
+              <BlackBackground className={css({paddingBottom: 40})}>
+                <NonToggleiPhone
+                  title={how.title}
+                  description={how.description}
+                  list={how.list}
+                  image={how.image}
+                  policyPauseSmallPrint={how.policyPauseSmallPrint}
+                />
+              </BlackBackground>
+            )}
+
+            <Box className={css({backgroundColor: 'white', paddingTop: 40})}>
+              {!control.hidden && (
+                <React.Fragment>
+                  <Box mt={[3, 5]}>
+                    <TextGrid
+                      yellowUnderline
+                      title={control.title}
+                      description={control.description}
+                      list={control.list}
+                    />
+                  </Box>
+
+                  <div id="what-is-covered">
+                    <BigSectionLine />
+                  </div>
+                </React.Fragment>
+              )}
+
+              {!whatIsCovered.hidden && (
+                <WhatIsCoveredSection
+                  mainTitle={whatIsCovered.mainTitle}
+                  mainList={whatIsCovered.mainList}
+                  mainDescription={whatIsCovered.mainDescription}
+                  buttonOneText={whatIsCovered.buttonOneText}
+                  buttonOneUrl={whatIsCovered.buttonOneUrl}
+                  fromPrice={whatIsCovered.fromPrice}
+                  policyFeatureList={whatIsCovered.policyFeatureList}
+                  smallPrints={whatIsCovered.smallPrints}
+                  productType={whatIsCovered.productType}
+                  fromText={whatIsCovered.fromText}
+                  perText={whatIsCovered.perText}
+                />
+              )}
+            </Box>
+
+            {!renewalBanner.hidden && (
+              <RenewalBanner
+                image={renewalBanner.image}
+                mainText={renewalBanner.mainText}
+                buttonText={renewalBanner.buttonText}
+                buttonUrl={renewalBanner.buttonUrl}
+                buttonTrack={renewalBanner.buttonTrack}
+              />
+            )}
+
+            {!faqSection.hidden && (
+              <Box className={css({backgroundColor: 'white'})}>
+                <FaqSection
+                  header={faqSection.header}
+                  body={faqSection.body}
+                  buttonText={faqSection.buttonText}
+                  buttonUrl={faqSection.buttonUrl}
+                  disclosureIndicator={faqSection.disclosureIndicator}
+                  faqs={faqSection.faqs}
                 />
               </Box>
             )}
-          </Box>
 
-          {!how.hidden && (
-            <BlackBackground className={css({paddingBottom: 40})}>
-              <NonToggleiPhone
-                title={how.title}
-                description={how.description}
-                list={how.list}
-                image={how.image}
-                policyPauseSmallPrint={how.policyPauseSmallPrint}
-              />
-            </BlackBackground>
-          )}
-
-          <Box className={css({backgroundColor: 'white', paddingTop: 40})}>
-            {!control.hidden && (
-              <React.Fragment>
-                <Box mt={[3, 5]}>
-                  <TextGrid
-                    yellowUnderline
-                    title={control.title}
-                    description={control.description}
-                    list={control.list}
-                  />
-                </Box>
-
-                <div id="what-is-covered">
-                  <BigSectionLine />
-                </div>
-              </React.Fragment>
-            )}
-
-            {!whatIsCovered.hidden && (
-              <WhatIsCoveredSection
-                mainTitle={whatIsCovered.mainTitle}
-                mainList={whatIsCovered.mainList}
-                mainDescription={whatIsCovered.mainDescription}
-                buttonOneText={whatIsCovered.buttonOneText}
-                buttonOneUrl={whatIsCovered.buttonOneUrl}
-                fromPrice={whatIsCovered.fromPrice}
-                policyFeatureList={whatIsCovered.policyFeatureList}
-                smallPrints={whatIsCovered.smallPrints}
-                productType={whatIsCovered.productType}
-                fromText={whatIsCovered.fromText}
-                perText={whatIsCovered.perText}
-              />
-            )}
-          </Box>
-
-          {!renewalBanner.hidden && (
-            <RenewalBanner
-              image={renewalBanner.image}
-              mainText={renewalBanner.mainText}
-              buttonText={renewalBanner.buttonText}
-              buttonUrl={renewalBanner.buttonUrl}
-              buttonTrack={renewalBanner.buttonTrack}
-            />
-          )}
-
-          {!faqSection.hidden && (
-            <Box className={css({backgroundColor: 'white'})}>
-              <FaqSection
-                header={faqSection.header}
-                body={faqSection.body}
-                buttonText={faqSection.buttonText}
-                buttonUrl={faqSection.buttonUrl}
-                disclosureIndicator={faqSection.disclosureIndicator}
-                faqs={faqSection.faqs}
-              />
-            </Box>
-          )}
-
-          <Footer />
-        </div>
-      </StickyContainer>
+            <Footer />
+          </div>
+        </StickyContainer>
+      </Layout>
     )
   }
 }

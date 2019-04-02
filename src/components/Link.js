@@ -1,6 +1,6 @@
 import React from 'react'
 import * as R from 'ramda'
-import GatsbyLink from 'gatsby-link'
+import GatsbyLink from 'gatsby'
 import PropTypes from 'prop-types'
 import {isURL, isEmail} from 'validator'
 

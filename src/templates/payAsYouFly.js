@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import * as R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
+import {graphql} from 'gatsby'
 
+import Layout from '../components/Layout'
 import LightNav from '../components/LightNav'
 import Hero from '../components/Hero'
 import Box from '../components/Box'
@@ -24,7 +26,6 @@ import {colors, breakpoints} from '../constants/theme'
 
 import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
-import { graphql } from 'gatsby'
 
 const PayAsYouFlyTemplate = ({
   downloadLink,
@@ -40,142 +41,144 @@ const PayAsYouFlyTemplate = ({
   productTabs
 }) => {
   return (
-    <StickyContainer>
-      <div>
-        <SiteMetadata
-          title={siteMetadataOverride.title}
-          description={siteMetadataOverride.description}
-          keywords={siteMetadataOverride.keywords}
-        />
-        <LightNav to={downloadLink} />
-        <Box className={css({backgroundColor: 'white'})}>
-          <Hero
-            headerClassName={css({
-              backgroundImage: `url(${hero.backgroundImage})`,
-              backgroundPosition: 'top left',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat'
-            })}
-            textColor={colors[hero.textColor]}
-            headerContainerClassName={style.headerContainer}
-            header={hero.header}
-            textShadow={false}
-            description={hero.description}
-            buttons={hero.buttons}
-            features={hero.features}
+    <Layout>
+      <StickyContainer>
+        <div>
+          <SiteMetadata
+            title={siteMetadataOverride.title}
+            description={siteMetadataOverride.description}
+            keywords={siteMetadataOverride.keywords}
           />
-          <Box pt={[3, 3]} pb={[2, 6]} background="white">
-            <TextGrid
-              title={stopWorrying.title}
-              description={stopWorrying.description}
-              list={stopWorrying.reasons}
+          <LightNav to={downloadLink} />
+          <Box className={css({backgroundColor: 'white'})}>
+            <Hero
+              headerClassName={css({
+                backgroundImage: `url(${hero.backgroundImage})`,
+                backgroundPosition: 'top left',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+              })}
+              textColor={colors[hero.textColor]}
+              headerContainerClassName={style.headerContainer}
+              header={hero.header}
+              textShadow={false}
+              description={hero.description}
+              buttons={hero.buttons}
+              features={hero.features}
+            />
+            <Box pt={[3, 3]} pb={[2, 6]} background="white">
+              <TextGrid
+                title={stopWorrying.title}
+                description={stopWorrying.description}
+                list={stopWorrying.reasons}
+              />
+            </Box>
+          </Box>
+
+          <MapBackground>
+            <ToggleiPhone
+              title={how.title}
+              description={how.description}
+              list={how.list}
+            />
+            <CalculateRiskDropDown
+              title={risk.title}
+              list={risk.list}
+              description={risk.description}
+            />
+          </MapBackground>
+
+          <div className={css({backgroundColor: 'white'})}>
+            <Box pt={[3, 6]}>
+              <TitleAndDescription
+                title={calculator.title}
+                description={calculator.description}
+              />
+              <Calculator disclaimer={calculator.disclaimer} />
+            </Box>
+
+            <div id="what-is-covered" />
+            <Box pt={[3, 6]} background="white">
+              <TabSection
+                title={productTabs.title}
+                description={productTabs.description}
+              >
+                {productTabs.customerTypeList.map(
+                  ({
+                    title,
+                    customerTypeDesc,
+                    whatIsCovered: {
+                      mainTitle,
+                      mainList,
+                      mainDescription,
+                      buttonOneText,
+                      buttonOneUrl,
+                      buttonTwoText,
+                      buttonTwoUrl,
+                      fromPrice,
+                      policyFeatureList,
+                      smallPrints,
+                      productType,
+                      fromText,
+                      perText
+                    }
+                  }) => (
+                    <TabSection.Tab title={title} key={title}>
+                      <Box>
+                        <SmallText
+                          className={css({color: 'white'})}
+                          mb={4}
+                          ml={2}
+                          mr={2}
+                        >
+                          {customerTypeDesc}
+                        </SmallText>
+                        <WhatIsCoveredSection
+                          headerTextColor="white"
+                          itemTextColor="white"
+                          smallPrintColor="white"
+                          mainTitle={mainTitle}
+                          mainList={mainList}
+                          buttonOneText={buttonOneText}
+                          buttonOneUrl={buttonOneUrl}
+                          buttonTwoText={buttonTwoText}
+                          buttonTwoUrl={buttonTwoUrl}
+                          fromPrice={fromPrice}
+                          smallPrints={smallPrints}
+                          policyFeatureList={policyFeatureList}
+                          productType={productType}
+                          fromText={fromText}
+                          perText={perText}
+                        />
+                      </Box>
+                    </TabSection.Tab>
+                  )
+                )}
+              </TabSection>
+            </Box>
+
+            <RenewalBanner
+              image={renewalBanner.image}
+              mainText={renewalBanner.mainText}
+              buttonText={renewalBanner.buttonText}
+              buttonUrl={renewalBanner.buttonUrl}
+              buttonTrack={renewalBanner.buttonTrack}
+            />
+          </div>
+          <Box className={css({backgroundColor: 'white'})}>
+            <FaqSection
+              header={faqSection.header}
+              body={faqSection.body}
+              buttonText={faqSection.buttonText}
+              buttonUrl={faqSection.buttonUrl}
+              disclosureIndicator={faqSection.disclosureIndicator}
+              faqs={faqSection.faqs}
             />
           </Box>
-        </Box>
-
-        <MapBackground>
-          <ToggleiPhone
-            title={how.title}
-            description={how.description}
-            list={how.list}
-          />
-          <CalculateRiskDropDown
-            title={risk.title}
-            list={risk.list}
-            description={risk.description}
-          />
-        </MapBackground>
-
-        <div className={css({backgroundColor: 'white'})}>
-          <Box pt={[3, 6]}>
-            <TitleAndDescription
-              title={calculator.title}
-              description={calculator.description}
-            />
-            <Calculator disclaimer={calculator.disclaimer} />
-          </Box>
-
-          <div id="what-is-covered" />
-          <Box pt={[3, 6]} background="white">
-            <TabSection
-              title={productTabs.title}
-              description={productTabs.description}
-            >
-              {productTabs.customerTypeList.map(
-                ({
-                  title,
-                  customerTypeDesc,
-                  whatIsCovered: {
-                    mainTitle,
-                    mainList,
-                    mainDescription,
-                    buttonOneText,
-                    buttonOneUrl,
-                    buttonTwoText,
-                    buttonTwoUrl,
-                    fromPrice,
-                    policyFeatureList,
-                    smallPrints,
-                    productType,
-                    fromText,
-                    perText
-                  }
-                }) => (
-                  <TabSection.Tab title={title} key={title}>
-                    <Box>
-                      <SmallText
-                        className={css({color: 'white'})}
-                        mb={4}
-                        ml={2}
-                        mr={2}
-                      >
-                        {customerTypeDesc}
-                      </SmallText>
-                      <WhatIsCoveredSection
-                        headerTextColor="white"
-                        itemTextColor="white"
-                        smallPrintColor="white"
-                        mainTitle={mainTitle}
-                        mainList={mainList}
-                        buttonOneText={buttonOneText}
-                        buttonOneUrl={buttonOneUrl}
-                        buttonTwoText={buttonTwoText}
-                        buttonTwoUrl={buttonTwoUrl}
-                        fromPrice={fromPrice}
-                        smallPrints={smallPrints}
-                        policyFeatureList={policyFeatureList}
-                        productType={productType}
-                        fromText={fromText}
-                        perText={perText}
-                      />
-                    </Box>
-                  </TabSection.Tab>
-                )
-              )}
-            </TabSection>
-          </Box>
-
-          <RenewalBanner
-            image={renewalBanner.image}
-            mainText={renewalBanner.mainText}
-            buttonText={renewalBanner.buttonText}
-            buttonUrl={renewalBanner.buttonUrl}
-            buttonTrack={renewalBanner.buttonTrack}
-          />
+          <Footer />
         </div>
-        <Box className={css({backgroundColor: 'white'})}>
-          <FaqSection
-            header={faqSection.header}
-            body={faqSection.body}
-            buttonText={faqSection.buttonText}
-            buttonUrl={faqSection.buttonUrl}
-            disclosureIndicator={faqSection.disclosureIndicator}
-            faqs={faqSection.faqs}
-          />
-        </Box>
-        <Footer />
-      </div>
-    </StickyContainer>
+      </StickyContainer>
+    </Layout>
   )
 }
 

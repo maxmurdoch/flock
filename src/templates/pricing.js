@@ -3,7 +3,9 @@ import React from 'react'
 import {StickyContainer} from 'react-sticky'
 import * as R from 'ramda'
 import {css} from 'emotion'
+import {graphql} from 'gatsby'
 
+import Layout from '../components/Layout'
 import LightNav from '../components/LightNav'
 import Testimonial from '../components/Testimonial'
 import Download from '../components/DownloadFlock'
@@ -18,7 +20,6 @@ import BigSectionLine from '../components/BigSectionLine'
 import PricingHero from '../components/PricingHero'
 import {colors, breakpoints} from '../constants/theme'
 import Calculator from '../components/Calculator'
-import { graphql } from 'gatsby'
 
 const PricingTemplate = ({data}) => {
   const {
@@ -30,62 +31,64 @@ const PricingTemplate = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <StickyContainer>
-      <div>
-        <SiteMetadata
-          title={siteMetadataOverride.title}
-          description={siteMetadataOverride.description}
-          keywords={siteMetadataOverride.keywords}
-        />
-        <LightNav />
-        <div
-          className={css({
-            position: 'relative'
-          })}
-        >
-          <PricingHero
-            headerClassName={css({
-              backgroundImage: `url(${backgroundImage})`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat'
-            })}
-            textColor={colors.white}
-            header={header}
+    <Layout>
+      <StickyContainer>
+        <div>
+          <SiteMetadata
+            title={siteMetadataOverride.title}
+            description={siteMetadataOverride.description}
+            keywords={siteMetadataOverride.keywords}
           />
-          <Box
+          <LightNav />
+          <div
             className={css({
-              transform: 'translateY(-20%)',
-              [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-                transform: 'translateY(-30%)'
-              },
-              [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
-                transform: 'translateY(-50%)'
-              }
+              position: 'relative'
             })}
           >
-            <Calculator />
-          </Box>
-        </div>
-        <TextGrid
-          description={riskCalculations.description}
-          list={riskCalculations.list}
-          image={riskCalculations.image}
-        />
-        <Flex mt={[3, 5]} mb={[3, 5]} justifyContent="center">
-          <Testimonial testimonials={testimonials} />
-        </Flex>
-        <Download />
-        <BigSectionLine />
-        <Box mb={[3, 5]}>
-          <OtherProducts
-            products={otherProducts.products}
-            description={otherProducts.description}
-            title={otherProducts.title}
+            <PricingHero
+              headerClassName={css({
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+              })}
+              textColor={colors.white}
+              header={header}
+            />
+            <Box
+              className={css({
+                transform: 'translateY(-20%)',
+                [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+                  transform: 'translateY(-30%)'
+                },
+                [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
+                  transform: 'translateY(-50%)'
+                }
+              })}
+            >
+              <Calculator />
+            </Box>
+          </div>
+          <TextGrid
+            description={riskCalculations.description}
+            list={riskCalculations.list}
+            image={riskCalculations.image}
           />
-        </Box>
-        <Footer />
-      </div>
-    </StickyContainer>
+          <Flex mt={[3, 5]} mb={[3, 5]} justifyContent="center">
+            <Testimonial testimonials={testimonials} />
+          </Flex>
+          <Download />
+          <BigSectionLine />
+          <Box mb={[3, 5]}>
+            <OtherProducts
+              products={otherProducts.products}
+              description={otherProducts.description}
+              title={otherProducts.title}
+            />
+          </Box>
+          <Footer />
+        </div>
+      </StickyContainer>
+    </Layout>
   )
 }
 

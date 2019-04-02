@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 import PropTypes from 'prop-types'
 import {inc, addIndex, map, nth, path, F, equals, length, gte} from 'ramda'
 import {css, cx, keyframes} from 'emotion'

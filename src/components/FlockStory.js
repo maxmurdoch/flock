@@ -1,5 +1,5 @@
 import React from 'react'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 import Markdown from 'react-remarkable'
 import * as R from 'ramda'
 import {css} from 'react-emotion'
