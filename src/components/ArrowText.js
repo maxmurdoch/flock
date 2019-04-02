@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import R from 'ramda'
+import * as R from 'ramda'
 import {css} from 'react-emotion'
 
 class ArrowText extends Component {

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
 import {css, cx} from 'emotion'

@@ -23,6 +23,7 @@ import MapBackground from '../components/MapBackground'
 import Hero from '../components/Hero'
 import CoverNote from '../components/CoverNote'
 import {colors} from '../constants/theme'
+import { graphql } from 'gatsby'
 
 const SegmentPageTemplate = ({data}) => {
   const {

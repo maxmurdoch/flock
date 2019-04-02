@@ -1,4 +1,4 @@
-import R from 'ramda'
+import * as R from 'ramda'
 import PropTypes from 'prop-types'
 import React, {Component} from 'react'
 import {Sticky} from 'react-sticky'

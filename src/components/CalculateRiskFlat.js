@@ -3,7 +3,7 @@ import {withPrefix} from 'gatsby-link'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import {css} from 'emotion'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'

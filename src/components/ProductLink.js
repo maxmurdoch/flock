@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {withPrefix} from 'gatsby-link'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import {css} from 'react-emotion'
 
 import Link from './Link'

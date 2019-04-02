@@ -17,6 +17,7 @@ import FaqSection from '../components/FaqSection'
 
 import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
+import { graphql } from 'gatsby'
 
 class FlyUnlimitedPageTemplate extends Component {
   render() {

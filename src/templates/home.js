@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
@@ -21,6 +21,7 @@ import {colors, breakpoints} from '../constants/theme'
 import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
 import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
+import { graphql } from 'gatsby'
 
 const HomeTemplate = ({
   secondTestimonial,

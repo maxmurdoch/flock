@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import ReactModalVideo from 'react-modal-video'
 import {css, injectGlobal} from 'react-emotion'
 

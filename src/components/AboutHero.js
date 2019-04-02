@@ -1,7 +1,7 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import Media from 'react-media'
 
 import H1 from './H1'

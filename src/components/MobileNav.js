@@ -1,7 +1,7 @@
 import React from 'react'
 import {Sticky} from 'react-sticky'
 import {withState} from 'recompose'
-import R from 'ramda'
+import * as R from 'ramda'
 import {css} from 'react-emotion'
 
 import Collapse from './NavMenuCollapse'

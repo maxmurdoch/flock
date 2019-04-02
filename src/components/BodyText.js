@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
 import {css, cx} from 'emotion'
@@ -46,12 +45,12 @@ const style = {
       marginBottom: 15
     },
 
-    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+    [`@media (min-width: ${breakpoints[0]})`]: {
       fontSize: 20,
       lineHeight: '28px'
     },
 
-    [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
+    [`@media (min-width: ${breakpoints[1]})`]: {
       fontSize: 20,
       lineHeight: '28px'
     }

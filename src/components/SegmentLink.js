@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {withPrefix} from 'gatsby-link'
 import {css} from 'emotion'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import Link from './Link'
 import ArrowText from './ArrowText'

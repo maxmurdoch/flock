@@ -1,6 +1,6 @@
 import React from 'react'
 import {withPrefix} from 'gatsby-link'
-import R from 'ramda'
+import * as R from 'ramda'
 import PropTypes from 'prop-types'
 import {css} from 'react-emotion'
 

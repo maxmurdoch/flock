@@ -1,5 +1,5 @@
 import React from 'react'
-import R from 'ramda'
+import * as R from 'ramda'
 import styled from 'react-emotion'
 import NewLineToBr from './NewLineToBr'
 import PropTypes from 'prop-types'

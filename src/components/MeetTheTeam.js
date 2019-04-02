@@ -2,7 +2,7 @@ import React from 'react'
 import {withPrefix} from 'gatsby-link'
 import {css} from 'react-emotion'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import SiteContainer from './SiteContainer'
 import SmallText from './SmallText'

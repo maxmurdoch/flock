@@ -10,10 +10,11 @@
 
 import smoothscroll from 'smoothscroll-polyfill'
 
-exports.shouldUpdateScroll = () => {
-  return false
-}
-
-exports.onClientEntry = () => {
-  smoothscroll.polyfill()
+export default {
+  shouldUpdateScroll: () => {
+    return false
+  },
+  onClientEntry: () => {
+    smoothscroll.polyfill()
+  }
 }

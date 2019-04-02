@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import {StickyContainer} from 'react-sticky'
-import R from 'ramda'
+import * as R from 'ramda'
 import {css} from 'emotion'
 
 import LightNav from '../components/LightNav'
@@ -18,6 +18,7 @@ import BigSectionLine from '../components/BigSectionLine'
 import PricingHero from '../components/PricingHero'
 import {colors, breakpoints} from '../constants/theme'
 import Calculator from '../components/Calculator'
+import { graphql } from 'gatsby'
 
 const PricingTemplate = ({data}) => {
   const {

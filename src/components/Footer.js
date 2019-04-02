@@ -1,6 +1,6 @@
 import React from 'react'
 import {css} from 'emotion'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import logo from '../images/logo-white.svg'
 import Link from './Link'

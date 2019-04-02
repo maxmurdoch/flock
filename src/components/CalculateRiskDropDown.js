@@ -4,7 +4,7 @@ import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import {Collapse} from 'react-collapse'
 import {css} from 'emotion'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'

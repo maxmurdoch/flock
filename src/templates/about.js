@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
@@ -16,6 +16,7 @@ import AboutHero from '../components/AboutHero'
 import {colors, breakpoints, space} from '../constants/theme'
 import MeetTheTeam from '../components/MeetTheTeam'
 import investors from '../images/investors.png'
+import { graphql } from 'gatsby'
 
 const AboutTemplate = ({
   hero,

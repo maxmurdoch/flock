@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import BodyText from './BodyText'
 
 const mapIndex = R.addIndex(R.map)

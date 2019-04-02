@@ -1,7 +1,7 @@
 import React from 'react'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import Media from 'react-media'
 import {css} from 'emotion'
 

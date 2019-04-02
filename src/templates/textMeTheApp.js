@@ -10,6 +10,7 @@ import {css} from 'react-emotion'
 import Media from 'react-media'
 import arrowWhite from '../images/icons/arrow-white.svg'
 import iPhone from '../images/phones/text-me-the-app.png'
+import { graphql } from 'gatsby'
 
 class TextMeTheAppTemplate extends Component {
   constructor(props) {

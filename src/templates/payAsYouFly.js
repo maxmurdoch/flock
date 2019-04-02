@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
@@ -24,6 +24,7 @@ import {colors, breakpoints} from '../constants/theme'
 
 import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
 import mobileFlock from '../images/mobile-arrow-hero.svg'
+import { graphql } from 'gatsby'
 
 const PayAsYouFlyTemplate = ({
   downloadLink,

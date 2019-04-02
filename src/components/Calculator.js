@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import R from 'ramda'
+import * as R from 'ramda'
 import {css, injectGlobal} from 'react-emotion'
 import Select from 'react-select'
 import 'react-select/dist/react-select.css'
