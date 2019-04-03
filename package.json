@@ -16,7 +16,7 @@
     "gatsby": "2.3.9",
     "gatsby-plugin-emotion": "1.1.17",
     "gatsby-plugin-intercom-spa": "0.0.5",
-    "gatsby-plugin-netlify": "1.0.21",
+    "gatsby-plugin-netlify": "^2.0.13",
     "gatsby-plugin-netlify-cms": "3.0.17",
     "gatsby-plugin-react-helmet": "3.0.11",
     "gatsby-plugin-segment-js": "2.1.2",
