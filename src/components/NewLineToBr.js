@@ -5,7 +5,7 @@ import BodyText from './BodyText'
 
 const mapIndex = R.addIndex(R.map)
 
-const hasNewLine = str => R.contains('\n', str) || R.contains('\r', str)
+const hasNewLine = str => R.includes('\n', str) || R.includes('\r', str)
 
 const NewLineToBr = ({Component = BodyText, children, ...props}) => {
   const text = R.is(Array, children) ? children.reduce((memo, child) => {
