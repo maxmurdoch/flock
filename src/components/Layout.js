@@ -8,7 +8,7 @@ import CookieConsent from 'react-cookie-consent'
 import Media from 'react-media'
 import favicon from '../images/icons/favicon.ico'
 import theme, {fontFamilies, colors, breakpoints} from '../constants/theme'
-import './layout.css'
+import './Layout.css'
 import {StaticQuery, graphql} from 'gatsby'
 
 import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
