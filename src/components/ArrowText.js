@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import * as R from 'ramda'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 class ArrowText extends Component {
   static defaultProps = {
@@ -22,11 +22,11 @@ class ArrowText extends Component {
         onMouseOut={() => {
           this.setState({isHovered: false})
         }}
-        className={css({display: 'flex'}, className)}
+        css={css({display: 'flex'}, className)}
       >
         {children}
         <i
-          className={css({
+          css={css({
             color: 'inherit',
             fontStyle: 'normal',
             transition: '200ms padding ease-in-out',

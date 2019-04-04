@@ -1,6 +1,6 @@
 import React from 'react'
 import * as R from 'ramda'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 import {Collapse} from 'react-collapse'
 
 import SiteContainer from './SiteContainer'
@@ -17,7 +17,7 @@ const ProductNavDropDown = ({productsIsOpen}) => {
   return (
     <Collapse
       isOpened={productsIsOpen}
-      className={css({width: '100%'})}
+      css={css({width: '100%'})}
       springConfig={{stiffness: 1000, damping: 50}}
     >
       <Flex
@@ -36,7 +36,7 @@ const ProductNavDropDown = ({productsIsOpen}) => {
                   pr='15px'
                   key={index}
                   flexDirection="column"
-                  className={css({
+                  css={css({
                     [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
                       width: '50%'
                     },

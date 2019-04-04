@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
 
 import {breakpoints} from '../constants/theme'
@@ -18,7 +18,7 @@ class TabSection extends Component {
   renderTabs = tabs =>
     tabs.map(({title}) => (
       <Tab
-        className={styles.tabStyle}
+        css={styles.tabStyle}
         selectedClassName={css(styles.selectedTabStyle)}
         key={title}
       >
@@ -58,15 +58,15 @@ class TabSection extends Component {
           </SiteContainer>
         </Flex>
 
-        <div className={css({background: '#363636'})}>
+        <div css={css({background: '#363636'})}>
           <Tabs selectedTabPanelClassName={css(selectedTabPanelStyle)}>
             <Flex
               justifyContent="center"
-              className={css({backgroundColor: 'white'})}
+              css={css({backgroundColor: 'white'})}
             >
               <SiteContainer
                 edgeToEdge
-                className={css({
+                css={css({
                   scrollbarWidth: 'none',
                   overflowX: 'scroll',
                   '-ms-overflow-style': '-ms-autohiding-scrollbar',
@@ -75,7 +75,7 @@ class TabSection extends Component {
                   }
                 })}
               >
-                <TabList className={css(tabListStyle)}>
+                <TabList css={css(tabListStyle)}>
                   {renderTabs(tabs)}
                 </TabList>
               </SiteContainer>

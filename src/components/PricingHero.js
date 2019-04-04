@@ -12,7 +12,7 @@ const PricingHero = ({textColor = colors.dark, headerClassName, header}) => {
     <Flex
       alignItems="center"
       justifyContent="center"
-      className={headerClassName}
+      css={headerClassName}
       flex="1 1 auto"
       width="100%"
       height="66vh"

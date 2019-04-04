@@ -43,10 +43,10 @@ const HomeTemplate = ({
           keywords={siteMetadataOverride.keywords}
         />
         <DarkNav to={downloadLink} />
-        <Box className={css({backgroundColor: 'white'})}>
+        <Box css={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
-              <img src={iPhone} className={style.iphone} />
+              <img src={iPhone} css={style.iphone} />
             )}
             headerClassName={style.header}
             headerContainerClassName={style.headerContainer}
@@ -69,7 +69,7 @@ const HomeTemplate = ({
         </Box>
 
         {!productTabs.hidden && (
-          <div className={css({backgroundColor: 'white'})}>
+          <div css={css({backgroundColor: 'white'})}>
             <Box background="white">
               <TabSection
                 title={productTabs.title}
@@ -93,7 +93,7 @@ const HomeTemplate = ({
           </div>
         )}
 
-        <div className={css({backgroundColor: 'white'})}>
+        <div css={css({backgroundColor: 'white'})}>
           <Box pt={[3, 5]}>
             <Testimonial testimonials={secondTestimonial} />
           </Box>

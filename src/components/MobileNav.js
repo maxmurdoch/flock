@@ -2,7 +2,7 @@ import React from 'react'
 import {Sticky} from 'react-sticky'
 import {withState} from 'recompose'
 import * as R from 'ramda'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import Collapse from './NavMenuCollapse'
 import ProductNavDropDownMobile from './ProductNavDropDownMobile'
@@ -101,14 +101,14 @@ const MobileNav = ({
               pl={2}
               justifyContent="space-between"
               width="100%"
-              className={css({
+              css={css({
                 transition: '200ms background ease-in-out'
               })}
             >
               <Box>
                 <Link to="/">
                   <img
-                    className={css({
+                    css={css({
                       marginBottom: 0,
                       width: R.nth(5, space)
                     })}
@@ -118,7 +118,7 @@ const MobileNav = ({
               </Box>
               <Box>
                 <button
-                  className={css({
+                  css={css({
                     border: 0,
                     background: 'none',
                     display: 'flex',
@@ -127,7 +127,7 @@ const MobileNav = ({
                   onClick={() => toggleMenu(isOpen => R.not(isOpen))}
                 >
                   <img
-                    className={css({
+                    css={css({
                       marginBottom: 0,
                       paddingRight: 5
                     })}
@@ -143,7 +143,7 @@ const MobileNav = ({
               <Flex background={colors.backgrounds.dark} width="100%" pb={2}>
                 <SiteContainer>
                   <nav
-                    className={css({
+                    css={css({
                       width: '100%'
                     })}
                   >
@@ -155,7 +155,7 @@ const MobileNav = ({
                     />
                     {mapIndex(
                       ({text, to, className}, key) => (
-                        <Link key={key} to={to} className={className}>
+                        <Link key={key} to={to} css={className}>
                           <SmallText>{text}</SmallText>
                         </Link>
                       ),
@@ -166,7 +166,7 @@ const MobileNav = ({
                       borderBottom={`1px solid ${colors.white}`}
                       width="100%"
                     />
-                    <Link to="https://flockcover.app.link/6IW6kTmgfP" className={styles.product}>
+                    <Link to="https://flockcover.app.link/6IW6kTmgfP" css={styles.product}>
                       <ArrowText>
                         <SmallText fontWeight={700}>Download</SmallText>
                       </ArrowText>

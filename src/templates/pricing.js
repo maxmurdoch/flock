@@ -41,7 +41,7 @@ const PricingTemplate = ({data}) => {
           />
           <LightNav />
           <div
-            className={css({
+            css={css({
               position: 'relative'
             })}
           >
@@ -55,7 +55,7 @@ const PricingTemplate = ({data}) => {
               header={header}
             />
             <Box
-              className={css({
+              css={css({
                 transform: 'translateY(-20%)',
                 [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
                   transform: 'translateY(-30%)'

@@ -1,6 +1,6 @@
 import React from 'react'
 import * as R from 'ramda'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import NewLineToBr from './NewLineToBr'
 import PropTypes from 'prop-types'
 import {

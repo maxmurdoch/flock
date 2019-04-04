@@ -1,5 +1,5 @@
 import React from 'react'
-import {css, cx} from 'react-emotion'
+import {css} from '@emotion/core'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 
@@ -8,7 +8,7 @@ import {breakpoints} from '../constants/theme'
 
 const H4 = ({children, tag = 'h4', className, mb = 1, ...props}) => {
   return (
-    <Text tag={tag} mb={mb} className={cx(style.text, className)} {...props}>
+    <Text tag={tag} mb={mb} css={[style.text, className]} {...props}>
       {children}
     </Text>
   )

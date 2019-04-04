@@ -1,6 +1,6 @@
 import React from 'react'
 import * as R from 'ramda'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import Flex from './Flex'
 import H4 from './H4'
@@ -18,7 +18,7 @@ const Featured = () => {
           </H4>
           <img
             src={featuredList}
-            className={css({
+            css={css({
               width: '100%',
               paddingTop: R.nth(2, space),
               paddingBottom: R.nth(2, space)

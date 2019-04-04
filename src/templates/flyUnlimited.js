@@ -43,7 +43,7 @@ class FlyUnlimitedPageTemplate extends Component {
               keywords={siteMetadataOverride.keywords}
             />
             <LightNav />
-            <Box className={css({backgroundColor: 'white', paddingBottom: 75})}>
+            <Box css={css({backgroundColor: 'white', paddingBottom: 75})}>
               <Hero
                 headerClassName={css({
                   backgroundImage: `url(${hero.backgroundImage})`,
@@ -70,7 +70,7 @@ class FlyUnlimitedPageTemplate extends Component {
             </Box>
 
             {!how.hidden && (
-              <BlackBackground className={css({paddingBottom: 40})}>
+              <BlackBackground css={css({paddingBottom: 40})}>
                 <NonToggleiPhone
                   title={how.title}
                   description={how.description}
@@ -81,7 +81,7 @@ class FlyUnlimitedPageTemplate extends Component {
               </BlackBackground>
             )}
 
-            <Box className={css({backgroundColor: 'white', paddingTop: 40})}>
+            <Box css={css({backgroundColor: 'white', paddingTop: 40})}>
               {!control.hidden && (
                 <React.Fragment>
                   <Box mt={[3, 5]}>
@@ -127,7 +127,7 @@ class FlyUnlimitedPageTemplate extends Component {
             )}
 
             {!faqSection.hidden && (
-              <Box className={css({backgroundColor: 'white'})}>
+              <Box css={css({backgroundColor: 'white'})}>
                 <FaqSection
                   header={faqSection.header}
                   body={faqSection.body}

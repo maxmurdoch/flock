@@ -2,7 +2,7 @@ import React from 'react'
 import {withPrefix} from 'gatsby'
 import Markdown from 'react-remarkable'
 import * as R from 'ramda'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 import PropTypes from 'prop-types'
 
 import Flex from './Flex'
@@ -27,7 +27,7 @@ const FlockStory = ({header, bigText, smallText, image, imageHeader}) => {
         >
           <Box width={['100%', `${(100 / 12) * 7}%`]}>
             <BodyText mb={3}>{bigText}</BodyText>
-            <div className={css({p: {marginBottom: R.nth(1, space)}})}>
+            <div css={css({p: {marginBottom: R.nth(1, space)}})}>
               <SmallText mb={2}>
                 <Markdown container="span">{smallText}</Markdown>
               </SmallText>

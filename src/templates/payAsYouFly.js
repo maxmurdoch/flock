@@ -50,7 +50,7 @@ const PayAsYouFlyTemplate = ({
             keywords={siteMetadataOverride.keywords}
           />
           <LightNav to={downloadLink} />
-          <Box className={css({backgroundColor: 'white'})}>
+          <Box css={css({backgroundColor: 'white'})}>
             <Hero
               headerClassName={css({
                 backgroundImage: `url(${hero.backgroundImage})`,
@@ -88,7 +88,7 @@ const PayAsYouFlyTemplate = ({
             />
           </MapBackground>
 
-          <div className={css({backgroundColor: 'white'})}>
+          <div css={css({backgroundColor: 'white'})}>
             <Box pt={[3, 6]}>
               <TitleAndDescription
                 title={calculator.title}
@@ -126,7 +126,7 @@ const PayAsYouFlyTemplate = ({
                     <TabSection.Tab title={title} key={title}>
                       <Box>
                         <SmallText
-                          className={css({color: 'white'})}
+                          css={css({color: 'white'})}
                           mb={4}
                           ml={2}
                           mr={2}
@@ -165,7 +165,7 @@ const PayAsYouFlyTemplate = ({
               buttonTrack={renewalBanner.buttonTrack}
             />
           </div>
-          <Box className={css({backgroundColor: 'white'})}>
+          <Box css={css({backgroundColor: 'white'})}>
             <FaqSection
               header={faqSection.header}
               body={faqSection.body}

@@ -6,7 +6,7 @@ import {colors} from '../constants/theme'
 const MapBackground = ({children}) => {
   return (
     <div
-      className={css({
+      css={css({
         overflow: 'hidden',
         paddingBottom: 80,
         position: 'relative',

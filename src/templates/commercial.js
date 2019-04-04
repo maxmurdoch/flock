@@ -38,7 +38,7 @@ const CommercialTemplate = ({
           keywords={siteMetadataOverride.keywords}
         />
         {navColor === 'light' ? <LightNav /> : <DarkNav />}
-        <Box className={css({backgroundColor: 'white'})}>
+        <Box css={css({backgroundColor: 'white'})}>
           <Hero
             headerClassName={css({
               backgroundImage: `url(${hero.backgroundImage})`,
@@ -86,7 +86,7 @@ const CommercialTemplate = ({
           )}
         </Box>
 
-        <Box className={css({backgroundColor: 'white'})}>
+        <Box css={css({backgroundColor: 'white'})}>
           <Box pt={[3, 3]}>
             <Testimonial testimonials={testimonial} />
           </Box>

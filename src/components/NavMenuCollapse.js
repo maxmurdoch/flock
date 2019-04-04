@@ -1,10 +1,10 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 const Collapse = ({isOpen, children}) => (
   <div
     id="collapse"
-    className={css({
+    css={css({
       position: 'relative',
       width: '100%',
       height: isOpen ? 'calc(100vh - 63px)' : '0',
@@ -27,7 +27,7 @@ const Collapse = ({isOpen, children}) => (
     })}
   >
     <div
-      className={css({
+      css={css({
         width: '100%',
         height: '100%',
         overflowY: 'scroll'

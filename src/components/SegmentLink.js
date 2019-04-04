@@ -29,11 +29,11 @@ class SegmentLink extends Component {
           onMouseOut={() => {
             this.setState({isHovered: false})
           }}
-          className={styles.link}
+          css={styles.link}
           to={link}
         >
           <img
-            className={css({
+            css={css({
               marginTop: '0.5rem',
               marginBottom: '1rem',
               height: '2rem'

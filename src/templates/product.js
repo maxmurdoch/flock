@@ -51,7 +51,7 @@ const SegmentPageTemplate = ({data}) => {
             keywords={siteMetadataOverride.keywords}
           />
           {navColor === 'light' ? <LightNav /> : <DarkNav />}
-          <Box className={css({backgroundColor: 'white'})}>
+          <Box css={css({backgroundColor: 'white'})}>
             <Hero
               headerClassName={css({
                 backgroundImage: `url(${hero.backgroundImage})`,
@@ -109,7 +109,7 @@ const SegmentPageTemplate = ({data}) => {
             />
           </MapBackground>
 
-          <Box className={css({backgroundColor: 'white'})}>
+          <Box css={css({backgroundColor: 'white'})}>
             <Box pt={[3, 5]}>
               <Testimonial testimonials={testimonial} />
             </Box>

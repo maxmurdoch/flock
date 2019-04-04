@@ -1,5 +1,5 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
@@ -17,7 +17,7 @@ const TextSection = ({title, bigText, smallText}) => {
       pt={[3, 5]}
       pb={[3, 5]}
       justifyContent="center"
-      className={css({
+      css={css({
         background: `url(${yellowArrowCorner}), url(${greyArrow})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'bottom left'

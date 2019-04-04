@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 import {withPrefix} from 'gatsby'
 
 import H2 from './H2'
@@ -45,7 +45,7 @@ const TextGrid = ({title, description, list, image, yellowUnderline}) => (
                 <ShowIf predicate={!!icon}>
                   <img
                     src={withPrefix(icon)}
-                    className={css({marginBottom: 10, width: 40, height: 40})}
+                    css={css({marginBottom: 10, width: 40, height: 40})}
                   />
                 </ShowIf>
                 <H3 yellowUnderline={yellowUnderline}>{title}</H3>

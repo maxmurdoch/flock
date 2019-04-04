@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {withPrefix} from 'gatsby'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import Link from './Link'
 import ArrowText from './ArrowText'
@@ -25,17 +25,17 @@ class ProductLink extends Component {
           this.setState({isHovered: false})
         }}
         to={to}
-        className={styles.link}
+        css={styles.link}
       >
         <img
-          className={css({
+          css={css({
             height: '2rem',
             marginBottom: R.nth(1, space)
           })}
           src={withPrefix(image)}
         />
         <ArrowText
-          className={css({fontFamily: fontFamilies.chivo})}
+          css={css({fontFamily: fontFamilies.chivo})}
           isHovered={this.state.isHovered}
         >
           <SmallText fontWeight={700} color={colors.white}>

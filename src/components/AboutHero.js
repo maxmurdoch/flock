@@ -31,7 +31,7 @@ const AboutHero = ({
       <Flex
         alignItems="center"
         justifyContent="center"
-        className={headerClassName}
+        css={headerClassName}
         flex="1 1 auto"
       >
         <SiteContainer>

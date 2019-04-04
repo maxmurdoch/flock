@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import * as R from 'ramda'
-import {css, injectGlobal} from 'react-emotion'
+import {css} from '@emotion/core'
+import {injectGlobal} from 'emotion'
 import Select from 'react-select'
 import 'react-select/dist/react-select.css'
 import PropTypes from 'prop-types'
@@ -138,14 +139,14 @@ class Calculator extends Component {
   render() {
     const { disclaimer } = this.props
     return (
-      <Flex justifyContent="center" className={styles.outerContainer}>
+      <Flex justifyContent="center" css={styles.outerContainer}>
         <SiteContainer>
           <Flex
             pt={[2, 0]}
             pl={[2, 3]}
             pr={[2, 3]}
             pb={[2, 3]}
-            className={styles.container}
+            css={styles.container}
             flexDirection={['column', 'row']}
             flexWrap="wrap"
           >
@@ -210,12 +211,12 @@ class Calculator extends Component {
                 </SmallText>
 
                 {(this.state.pilotTypeValue.label === 'Trainee') ? (
-                  <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
+                  <BodyText textAlign="center" fontWeight={700} css={css({marginBottom: 0})}>
                     £{Math.round(this.state.pricePerFlight)} per flight
                   </BodyText>
                 ) : (
                   <Fragment>
-                    <BodyText textAlign="center" fontWeight={700} className={css({marginBottom: 0})}>
+                    <BodyText textAlign="center" fontWeight={700} css={css({marginBottom: 0})}>
                       £{Math.round(this.state.pricePerYear)} per year
                     </BodyText>
                     <SmallText textAlign="center" mt={1}>
@@ -226,7 +227,7 @@ class Calculator extends Component {
               </Flex>
             </Flex>
           </Flex>
-          <Text textAlign="left" mb={1} className={css({marginBottom: 0, paddingTop: 20, paddingLeft: 3, fontSize: 12, color: 'grey'})}>
+          <Text textAlign="left" mb={1} css={css({marginBottom: 0, paddingTop: 20, paddingLeft: 3, fontSize: 12, color: 'grey'})}>
             * {disclaimer}
           </Text>
         </SiteContainer>

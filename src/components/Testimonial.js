@@ -35,7 +35,7 @@ class Testimonial extends Component {
             flexWrap="wrap"
             justifyContent={['flex-start', 'center']}
             background={`url(${R.prop('image', activeTestimonial)})`}
-            className={styles.background}
+            css={styles.background}
             pt={[3, 5]}
             pb={[2, 3]}
             pl={2}
@@ -113,7 +113,7 @@ class Testimonial extends Component {
                   return (
                     <button
                       key={index}
-                      className={button}
+                      css={button}
                       onClick={event => {
                         event.preventDefault()
 
@@ -123,7 +123,7 @@ class Testimonial extends Component {
                       }}
                     >
                       <div
-                        className={`${dot} ${isActive ? activeDot : null} dot`}
+                        css={`${dot} ${isActive ? activeDot : null} dot`}
                       />
                     </button>
                   )

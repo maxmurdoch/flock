@@ -1,5 +1,5 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 import Button from './Button'
 import BodyText from './BodyText'
 import {colors} from '../constants/theme'
@@ -7,7 +7,7 @@ import {colors} from '../constants/theme'
 const SecondaryButton = ({children, Text = BodyText, ...props}) => {
   return (
     <Button
-      className={css({
+      css={css({
         cursor: 'pointer'
       })}
       background={colors.dark}

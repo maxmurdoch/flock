@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import * as R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
-import {css, cx} from 'emotion'
+import {css} from '@emotion/core'
 import remark from 'remark'
 import remark2react from 'remark-react'
 
 const LargeBodyText = ({children, mb = 0, className, ...props}) => {
   return (
-    <Text tag="div" mb={mb} className={cx(style.text, className)} {...props}>
+    <Text tag="div" mb={mb} css={[style.text, className]} {...props}>
       {
         remark()
           .use(remark2react)

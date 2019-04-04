@@ -1,5 +1,5 @@
 import React from 'react'
-import {css, cx} from 'react-emotion'
+import {css} from '@emotion/core'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 
@@ -11,11 +11,7 @@ const H3 = ({children, tag = 'h3', className, yellowUnderline, ...props}) => {
     <Text
       tag={tag}
       mb={1}
-      className={cx(
-        style.text,
-        yellowUnderline ? style.underline : '',
-        className
-      )}
+      css={[style.text, yellowUnderline ? style.underline : '', className]}
       {...props}
     >
       {children}

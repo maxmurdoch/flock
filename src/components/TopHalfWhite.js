@@ -1,12 +1,12 @@
 // @flow strict
 
 import * as React from 'react'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 import Media from 'react-media'
 
 const TopHalfWhite = ({ title, subTitle }) =>
   <div
-    className={css({
+    css={css({
       display: 'flex',
       justifyContent: 'center',
       minHeight: '50vh',
@@ -15,7 +15,7 @@ const TopHalfWhite = ({ title, subTitle }) =>
   >
     <Media query="(min-width: 1024px)">
       {(matches) => matches
-        ? <div className={css({
+        ? <div css={css({
             position: 'relative',
             display: 'flex',
             flexDirection: 'column',
@@ -23,14 +23,14 @@ const TopHalfWhite = ({ title, subTitle }) =>
             minHeight: '40vh',
             marginTop: '40px'
           })}>
-            <div className={css({
+            <div css={css({
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
               flex: 1,
               padding: '16px'
             })}>
-              <h2 className={css({
+              <h2 css={css({
                 marginBottom: '16px',
                 maxWidth: '400px',
                 fontFamily: 'ITC, sans-serif',
@@ -38,7 +38,7 @@ const TopHalfWhite = ({ title, subTitle }) =>
                 fontWeight: 700,
                 lineHeight: 1.3
               })}>{title}</h2>
-              <p className={css({
+              <p css={css({
                 marginBottom: '16px',
                 maxWidth: '400px',
                 fontFamily: 'Chivo, sans-serif',
@@ -48,7 +48,7 @@ const TopHalfWhite = ({ title, subTitle }) =>
               })}>{subTitle}</p>
             </div>
           </div>
-        : <div className={css({
+        : <div css={css({
             position: 'relative',
             display: 'flex',
             flexDirection: 'column',
@@ -56,14 +56,14 @@ const TopHalfWhite = ({ title, subTitle }) =>
             minHeight: '40vh',
             marginTop: '40px'
           })}>
-            <div className={css({
+            <div css={css({
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
               flex: 1,
               padding: '16px'
             })}>
-              <h2 className={css({
+              <h2 css={css({
                 marginBottom: '16px',
                 fontFamily: 'ITC, sans-serif',
                 fontSize: '24px',
@@ -71,7 +71,7 @@ const TopHalfWhite = ({ title, subTitle }) =>
                 fontWeight: 700,
                 lineHeight: 1.3
               })}>{title}</h2>
-              <p className={css({
+              <p css={css({
                 marginBottom: '16px',
                 fontFamily: 'Chivo, sans-serif',
                 fontSize: '14px',

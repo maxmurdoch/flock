@@ -2,7 +2,7 @@ import React from 'react'
 import {withPrefix} from 'gatsby'
 import * as R from 'ramda'
 import PropTypes from 'prop-types'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import Link from './Link'
 import Flex from './Flex'
@@ -23,7 +23,7 @@ const CoverNote = ({title, image, bodyText, smallText, link}) => {
             <BodyText mb={2}>{bodyText}</BodyText>
             <SmallText mb={2}>{smallText}</SmallText>
             <SmallText mb={2}>
-              <Link to={link.to} className={css({color: 'initial'})}>
+              <Link to={link.to} css={css({color: 'initial'})}>
                 {link.text}
               </Link>
             </SmallText>
@@ -36,7 +36,7 @@ const CoverNote = ({title, image, bodyText, smallText, link}) => {
             pr={[2, 0]}
           >
             <Box width={['80%', 'auto']}>
-              <img className={style.image} src={withPrefix(image)} />
+              <img css={style.image} src={withPrefix(image)} />
             </Box>
           </Flex>
         </Flex>

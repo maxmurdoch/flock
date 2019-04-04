@@ -1,5 +1,6 @@
 import React from 'react'
-import {css, injectGlobal} from 'react-emotion'
+import {css} from '@emotion/core'
+import {injectGlobal} from 'emotion'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 
@@ -11,7 +12,7 @@ const H1 = ({children, tag = 'h1', ...props}) => {
     <Text
       tag={tag}
       mb={1}
-      className={css`
+      css={css`
         ${style.text};
       `}
       {...props}

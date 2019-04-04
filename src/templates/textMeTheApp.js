@@ -9,7 +9,7 @@ import SiteMetadata from '../components/SiteMetadata'
 import NavBarExternal from '../components/NavBarExternal'
 import TopHalfWhite from '../components/TopHalfWhite'
 import blackLogo from '../images/logo-black.svg'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 import Media from 'react-media'
 import arrowWhite from '../images/icons/arrow-white.svg'
 import iPhone from '../images/phones/text-me-the-app.png'
@@ -134,7 +134,7 @@ class TextMeTheAppTemplate extends Component {
     return (
       <Layout>
         <StickyContainer>
-          <div className={css(styles.root)}>
+          <div css={css(styles.root)}>
             <SiteMetadata
               title={siteMetadataOverride.title}
               description={siteMetadataOverride.description}
@@ -147,9 +147,9 @@ class TextMeTheAppTemplate extends Component {
             />
             <TopHalfWhite title={topHalf.title} subTitle={topHalf.subTitle} />
 
-            <div className={css(styles.container)}>
-              <div className={css(styles.content)}>
-                <div className={css(styles.toolbar)}>
+            <div css={css(styles.container)}>
+              <div css={css(styles.content)}>
+                <div css={css(styles.toolbar)}>
                   {this.renderInput(textField)}
                   {this.renderButton(textField)}
                   {this.renderHelperText(textField)}

@@ -26,7 +26,7 @@ const CalculateRiskFlat = ({title, description, list}) => (
         </Box>
         <Box width="100%">
           <ul
-            className={css({
+            css={css({
               display: 'flex',
               flexWrap: 'wrap',
               marginLeft: 0,
@@ -37,7 +37,7 @@ const CalculateRiskFlat = ({title, description, list}) => (
             {mapIndex(({title, text, icon}, index) => {
               return (
                 <LI
-                  className={css({
+                  css={css({
                     display: 'flex',
                     flexDirection: 'column'
                   })}
