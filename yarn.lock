@@ -4692,12 +4692,14 @@ emotion-server@^10.0.9:
   dependencies:
     create-emotion-server "10.0.0"
 
-emotion-theming@9.2.9:
-  version "9.2.9"
-  resolved "https://registry.yarnpkg.com/emotion-theming/-/emotion-theming-9.2.9.tgz#2bfd77fdd47d3f5e60d59d97dd4cea4622657220"
-  integrity sha512-Ncyr1WocmDDrTbuYAzklIUC5iKiGtHy3e5ymoFXcka6SuvZl/EDMawegk4wVp72Agrcm1xemab3QOHfnOkpoMA==
+emotion-theming@^10.0.10:
+  version "10.0.10"
+  resolved "https://registry.yarnpkg.com/emotion-theming/-/emotion-theming-10.0.10.tgz#efe8751119751bdc70fdc1795fe4cde0fb0cf14c"
+  integrity sha512-E4SQ3Y91avxxydDgubi/po/GaC5MM1XHm8kcClKg1PA/TeOye0PiLBzAzlgt9dBzDRV9+qHDunsayPvzVYIYng==
   dependencies:
-    hoist-non-react-statics "^2.3.1"
+    "@emotion/weak-memoize" "0.2.2"
+    hoist-non-react-statics "^3.3.0"
+    object-assign "^4.1.1"
 
 emotion@^10.0.9:
   version "10.0.9"
@@ -6279,10 +6281,10 @@ gatsby-transformer-sharp@^1.6.24:
     fs-extra "^4.0.2"
     probe-image-size "^4.0.0"
 
-gatsby@2.3.9:
-  version "2.3.9"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.9.tgz#72dadd66282697eacd02ee2a4b81d2ef5243e17f"
-  integrity sha512-FyPqMTvDfa29aaeqfHp0Oyhh9f5HfanVJRsyNdPWwbOqlPqqyOumrMu4XvwLuq4JLv/hMxrUSnEGRHl5/zhN2g==
+gatsby@^2.3.12:
+  version "2.3.12"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.12.tgz#22f1eda449723b4afb3c12ca379fa17d9b19e300"
+  integrity sha512-bHqlP0qP8AZt/W6nBE+N9YVgG/BYTlmVt5HgY2uqq5rj3Y9JKRuyUjtGxyxfM4Q5cpKIOfDJ7wBqdTWxjNiSkw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
