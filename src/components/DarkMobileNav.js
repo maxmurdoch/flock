@@ -85,7 +85,7 @@ const MobileNav = ({
               pl={2}
               justifyContent="space-between"
               width="100%"
-              css={css({
+              className={css({
                 transition: '200ms background ease-in-out'
               })}
             >
@@ -139,7 +139,7 @@ const MobileNav = ({
                     />
                     {mapIndex(
                       ({text, to, className}, key) => (
-                        <Link key={key} to={to} css={className}>
+                        <Link key={key} to={to} className={className}>
                           <SmallText>{text}</SmallText>
                         </Link>
                       ),
@@ -150,7 +150,7 @@ const MobileNav = ({
                       borderBottom={`1px solid ${colors.white}`}
                       width="100%"
                     />
-                    <Link to={to.to} css={styles.product}>
+                    <Link to={to.to} className={styles.product}>
                       <ArrowText>
                         <SmallText fontWeight={700}>Download</SmallText>
                       </ArrowText>

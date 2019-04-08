@@ -27,7 +27,7 @@ const FlightSchool = ({title, list}) => {
           >
             {mapIndex(({image, to}, key) => {
               return (
-                <Link target="_blank" css={style.link} to={to} key={key}>
+                <Link target="_blank" className={style.link} to={to} key={key}>
                   <img src={withPrefix(image)} css={style.image} />
                 </Link>
               )

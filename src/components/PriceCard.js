@@ -126,7 +126,7 @@ const PriceCard = ({
 
     <Flex
       flexDirection="column"
-      css={css({
+      className={css({
         backgroundColor: '#F7F7F4',
         alignItems: 'flex-start',
         paddingTop: 5,

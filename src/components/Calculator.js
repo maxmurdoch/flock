@@ -139,14 +139,14 @@ class Calculator extends Component {
   render() {
     const { disclaimer } = this.props
     return (
-      <Flex justifyContent="center" css={styles.outerContainer}>
+      <Flex justifyContent="center" className={styles.outerContainer}>
         <SiteContainer>
           <Flex
             pt={[2, 0]}
             pl={[2, 3]}
             pr={[2, 3]}
             pb={[2, 3]}
-            css={styles.container}
+            className={styles.container}
             flexDirection={['column', 'row']}
             flexWrap="wrap"
           >

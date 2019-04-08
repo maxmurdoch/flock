@@ -45,9 +45,9 @@ const HomeTemplate = ({
         <DarkNav to={downloadLink} />
         <Box css={css({backgroundColor: 'white'})}>
           <Hero
-            RightSideComponent={() => (
-              <img src={iPhone} css={style.iphone} />
-            )}
+            // RightSideComponent={() => (
+            //   <img src={iPhone} css={style.iphone} />
+            // )}
             headerClassName={style.header}
             headerContainerClassName={style.headerContainer}
             header={hero.header}

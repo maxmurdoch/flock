@@ -72,7 +72,7 @@ class FUfaqSection extends React.Component {
                       justifyContent="space-between"
                       pt={20}
                       pb={20}
-                      css={css({
+                      className={css({
                         borderWidth: '0px 0px 1px 0px',
                         borderStyle: 'solid',
                         borderColor: openIdx === idx ? 'transparent' : 'gray',

@@ -18,7 +18,7 @@ class TabSection extends Component {
   renderTabs = tabs =>
     tabs.map(({title}) => (
       <Tab
-        css={styles.tabStyle}
+        className={styles.tabStyle}
         selectedClassName={css(styles.selectedTabStyle)}
         key={title}
       >
@@ -66,7 +66,7 @@ class TabSection extends Component {
             >
               <SiteContainer
                 edgeToEdge
-                css={css({
+                className={css({
                   scrollbarWidth: 'none',
                   overflowX: 'scroll',
                   '-ms-overflow-style': '-ms-autohiding-scrollbar',
@@ -75,7 +75,7 @@ class TabSection extends Component {
                   }
                 })}
               >
-                <TabList css={css(tabListStyle)}>
+                <TabList className={css(tabListStyle)}>
                   {renderTabs(tabs)}
                 </TabList>
               </SiteContainer>

@@ -29,7 +29,7 @@ const HeroFeaturesBanner = ({features}) => (
                 {matches =>
                   matches ? (
                     <img
-                      css={css({
+                      className={css({
                         marginBottom: 0,
                         marginRight: '0.5rem',
                         width: '1rem'
@@ -39,14 +39,14 @@ const HeroFeaturesBanner = ({features}) => (
                   ) : null
                 }
               </Media>
-              
+
               <SmallText>
                 {feature.title}
               </SmallText>
-              
+
               {feature.rightIcon &&
                 <img
-                  css={css({
+                  className={css({
                     marginLeft: '0.3rem',
                     width: '5rem',
                     marginBottom: 0

@@ -12,7 +12,7 @@ const link = ({children, onClick, className, target, to = '', ...props}) => {
       {children}
     </a>
   ) : (
-    <Link to={to} onClick={onClick} css={className} {...props}>
+    <Link to={to} onClick={onClick} className={className} {...props}>
       {children}
     </Link>
   )

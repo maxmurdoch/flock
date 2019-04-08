@@ -54,7 +54,7 @@ class ModalVideo extends Component {
             onClick={this.openModal}
           >
             <Flex
-              css={`background ${style.background(coverImage)}`}
+              className={`background ${style.background(coverImage)}`}
               pt={[4, 5]}
               pb={[4, 5]}
               justifyContent="center"

@@ -101,7 +101,7 @@ const MobileNav = ({
               pl={2}
               justifyContent="space-between"
               width="100%"
-              css={css({
+              className={css({
                 transition: '200ms background ease-in-out'
               })}
             >
@@ -166,7 +166,7 @@ const MobileNav = ({
                       borderBottom={`1px solid ${colors.white}`}
                       width="100%"
                     />
-                    <Link to="https://flockcover.app.link/6IW6kTmgfP" css={styles.product}>
+                    <Link to="https://flockcover.app.link/6IW6kTmgfP" className={styles.product}>
                       <ArrowText>
                         <SmallText fontWeight={700}>Download</SmallText>
                       </ArrowText>

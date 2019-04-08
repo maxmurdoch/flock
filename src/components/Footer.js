@@ -91,7 +91,7 @@ const Footer = ({containerClassName}) => {
 
   return (
     <Flex
-      css={containerClassName}
+      className={containerClassName}
       background={colors.backgrounds.dark}
       justifyContent="center"
       pt={[1, 3]}
@@ -99,7 +99,7 @@ const Footer = ({containerClassName}) => {
     >
       <SiteContainer>
         <Flex flexWrap={true}>
-          <Flex css={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Insurance
@@ -107,13 +107,13 @@ const Footer = ({containerClassName}) => {
             </Box>
             {mapIndex(({to, text}, index) => {
               return (
-                <Link css={styles.link} to={to} key={index}>
+                <Link className={styles.link} to={to} key={index}>
                   <SmallText>{text}</SmallText>
                 </Link>
               )
             }, firstFooterLinks)}
           </Flex>
-          <Flex css={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Company
@@ -121,22 +121,22 @@ const Footer = ({containerClassName}) => {
             </Box>
             {mapIndex(({to, text}, index) => {
               return (
-                <Link css={styles.link} to={to} key={index}>
+                <Link className={styles.link} to={to} key={index}>
                   <SmallText>{text}</SmallText>
                 </Link>
               )
             }, secondFooterLinks)}
           </Flex>
-          <Flex css={styles.lastFlexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex className={styles.lastFlexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Got a question? Get in touch:
               </SmallText>
             </Box>
-            <Link to="mailto:hello@flockcover.com" css={styles.link}>
+            <Link to="mailto:hello@flockcover.com" className={styles.link}>
               <SmallText>hello@flockcover.com</SmallText>
             </Link>
-            <Link to="tel:+44 (0) 1234 480260" css={styles.header}>
+            <Link to="tel:+44 (0) 1234 480260" className={styles.header}>
               <SmallText>+44 (0) 1234 480260</SmallText>
             </Link>
             <Flex alignItems="flex-end" pt={2}>
@@ -162,13 +162,13 @@ const Footer = ({containerClassName}) => {
             <Flex flexDirection="row" justifyContent="center">
               {mapIndex(({to, text}, index) => {
                 return (
-                  <Link css={styles.horizontalLink} to={to} key={index}>
+                  <Link className={styles.horizontalLink} to={to} key={index}>
                     <SmallText>{text}</SmallText>
                   </Link>
                 )
               }, bottomFooterLinks)}
             </Flex>
-            <Box pb={2} css={styles.centeredFooterText}>
+            <Box pb={2} className={styles.centeredFooterText}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={100}>
                 Flock Limited (FCA #785551) is an Appointed Representative of Worry+Peace (a trading name of Innovative Risk Limited, authorised and regulated by the Financial Conduct Authority, FCA #609155) who have arranged for the insurance provided by Flock to be underwritten by Allianz Global Corporate & Specialty.
               </SmallText>

@@ -36,11 +36,11 @@ const Hero = ({
       <Flex
         alignItems="center"
         justifyContent="center"
-        css={headerClassName}
+        className={headerClassName}
         flex="1 1 auto"
         overflow="hidden"
       >
-        <SiteContainer css={css({overflow: 'visible'})}>
+        <SiteContainer className={css({overflow: 'visible'})}>
           <Flex mt={[3, 5]}>
             <Flex
               justifyContent="center"

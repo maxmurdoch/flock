@@ -25,7 +25,7 @@ class ProductLink extends Component {
           this.setState({isHovered: false})
         }}
         to={to}
-        css={styles.link}
+        className={styles.link}
       >
         <img
           css={css({
