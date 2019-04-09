@@ -7,7 +7,7 @@ import Flex from './Flex'
 import SiteContainer from './SiteContainer'
 import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
-import {breakpoints, fontFamilies} from '../constants/theme'
+import {breakpoints, fontFamilies, colors} from '../constants/theme'
 import Text from './Text'
 
 const RenewalBanner = ({
@@ -28,7 +28,11 @@ const RenewalBanner = ({
       justifyContent="center"
       position="relative"
       style={{backgroundImage: `url(${image})`}}
-      className={css(styles.background)}
+      className={cx(
+        css`
+          ${styles.background}
+        `
+      )}
     >
       <SiteContainer>
         <Flex
@@ -76,6 +80,10 @@ const styles = {
     background-size: cover;
     background-position-x: right;
     background-position-y: center;
+
+    @media (max-width: ${R.nth(1, breakpoints)}) {
+      background: ${colors.yellow}
+    }
   `,
 
   renewalButton: `
