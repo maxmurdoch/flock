@@ -11,16 +11,14 @@ import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
 import TabSection from '../components/ProductTabs'
 import ProductCardTabs from '../components/ProductCardTabs'
-import RenewalBanner from '../components/RenewalBanner'
+import PromotionBanner from '../components/PromotionBanner'
 import Testimonial from '../components/Testimonial'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
 import SiteMetadata from '../components/SiteMetadata'
 import {colors, breakpoints} from '../constants/theme'
 
-import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
-import mobileFlock from '../images/mobile-arrow-hero.svg'
-import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
+import funDrone from '../../static/images/uploads/FuNDrone.png'
 
 const HomeTemplate = ({
   secondTestimonial,
@@ -29,7 +27,7 @@ const HomeTemplate = ({
   siteMetadataOverride,
   stopWorrying,
   featured,
-  renewalBanner,
+  promotionBanner,
   productTabs
 }) => {
   return (
@@ -44,7 +42,7 @@ const HomeTemplate = ({
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
-              <img src={iPhone} className={style.iphone} />
+              <img src={funDrone} className={style.iphone} />
             )}
             headerClassName={style.header}
             headerContainerClassName={style.headerContainer}
@@ -97,13 +95,14 @@ const HomeTemplate = ({
           </Box>
 
           <Box pt={[3, 5]} pb={[3, 5]}>
-            {!renewalBanner.hidden && (
-              <RenewalBanner
-                image={renewalBanner.image}
-                mainText={renewalBanner.mainText}
-                buttonText={renewalBanner.buttonText}
-                buttonUrl={renewalBanner.buttonUrl}
-                buttonTrack={renewalBanner.buttonTrack}
+            {!promotionBanner.hidden && (
+              <PromotionBanner
+                image={promotionBanner.image}
+                mainText={promotionBanner.mainText}
+                buttonText={promotionBanner.buttonText}
+                buttonUrl={promotionBanner.buttonUrl}
+                buttonTrack={promotionBanner.buttonTrack}
+                buttonColor={promotionBanner.buttonColor}
               />
             )}
           </Box>
@@ -123,16 +122,16 @@ const style = {
     display: 'block'
   }),
   header: css({
-    background: colors.backgrounds.light,
-    backgroundImage: `url(${mobileFlock})`,
-    backgroundSize: '45rem',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'bottom left',
-    width: '100%',
-    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-      backgroundImage: `url(${bigFlock})`,
-      backgroundPosition: 'bottom right'
-    }
+    background: colors.yellow,
+    // backgroundImage: `url(${mobileFlock})`,
+    // backgroundSize: '45rem',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundPosition: 'bottom left',
+    // width: '100%',
+    // [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+    //   backgroundImage: `none`,
+    //   backgroundPosition: 'bottom right'
+    // }
   })
 }
 
@@ -143,7 +142,7 @@ HomeTemplate.propTypes = {
   siteMetadataOverride: PropTypes.object,
   stopWorrying: PropTypes.object,
   featured: PropTypes.object,
-  renewalBanner: PropTypes.object,
+  promotionBanner: PropTypes.object,
   productTabs: PropTypes.object
 }
 
@@ -158,7 +157,7 @@ const HomePage = ({data}) => {
     siteMetadataOverride,
     stopWorrying,
     featured,
-    renewalBanner
+    promotionBanner
   } = data.markdownRemark.frontmatter
 
   return (
@@ -169,7 +168,7 @@ const HomePage = ({data}) => {
       siteMetadataOverride={siteMetadataOverride}
       stopWorrying={stopWorrying}
       featured={featured}
-      renewalBanner={renewalBanner}
+      promotionBanner={promotionBanner}
       productTabs={productTabs}
     />
   )
@@ -226,13 +225,14 @@ export const query = graphql`
           title
           image
         }
-        renewalBanner {
+        promotionBanner {
           hidden
           image
           mainText
           buttonText
           buttonUrl
           buttonTrack
+          buttonColor
         }
         productTabs {
           hidden

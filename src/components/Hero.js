@@ -1,5 +1,4 @@
 import React from 'react'
-import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
@@ -12,7 +11,6 @@ import BodyText from './BodyText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import PrimaryButton from './PrimaryButton'
 import {colors, breakpoints} from '../constants/theme'
-import {downloadClickHandler} from '../utils/trackDownload'
 
 const Hero = ({
   textColor = colors.dark,
@@ -48,7 +46,7 @@ const Hero = ({
               alignItems="flex-start"
               width={['100%', '75%', '64%']}
               mt={[4, 5]}
-              mb={[3, 6]}
+              mb={[3, 5]}
             >
               <H1
                 textShadow={textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'}
@@ -83,9 +81,12 @@ const Hero = ({
                 {matches =>
                   matches ? (
                     <Flex
-                      alignItems="flex-end"
+                      alignItems={['center', 'center', 'flex-end']}
                       justifyContent="center"
                       width={['100%', '50%']}
+                      className={css({
+                        minWidth: '300px'
+                      })}
                     >
                       <RightSideComponent />
                     </Flex>

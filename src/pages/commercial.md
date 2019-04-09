@@ -64,7 +64,7 @@ productTypes:
       perText: per flight
       icon: /images/uploads/drone.svg
     - productType: FLY UNLIMITED
-      buttonOneText: GET A PRICE
+      buttonOneText: GET FREE MONTH
       buttonTwoText: VIEW ALL FEATURES
       buttonOneUrl: https://my.flockcover.com/
       buttonTwoUrl: https://flockcover.com/flyunlimited/

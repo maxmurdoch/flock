@@ -4,7 +4,7 @@ templateKey: flyUnlimited
 hero:
   backgroundImage: ../../images/uploads/fly-unlimited-header.jpg
   buttons:
-    - title: GET A QUOTE
+    - title: START FREE MONTH
       to: 'https://my.flockcover.com'
       color: yellow
       external: true
@@ -23,7 +23,13 @@ hero:
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
-  description: Introducing Fly Unlimited, our new subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
+  description: >-
+    Introducing Fly Unlimited, our new subscription product for commercial pilots.
+
+
+
+    Get your first month on us. No commitments, cancel anytime.
+    Don’t miss out - offer ends 11th May!*
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
 why:
   hidden: false
@@ -101,7 +107,7 @@ whatIsCovered:
   smallPrints:
     - text: \** Prices depend on factors such as experience, equipment and claims history.
     - text: \+ Available if multiple pilots are operating under a single PfCO.
-  buttonOneText: GET A QUOTE
+  buttonOneText: GET FREE MONTH
   buttonOneUrl: 'https://my.flockcover.com'
   fromPrice: £24.95
   samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
