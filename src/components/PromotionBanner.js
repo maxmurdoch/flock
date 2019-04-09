@@ -1,8 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import R from 'ramda'
 
-import {css, injectGlobal, cx} from 'react-emotion'
+import {css, injectGlobal} from 'react-emotion'
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
 import ArrowText from './ArrowText'
@@ -10,7 +9,7 @@ import PrimaryButton from './PrimaryButton'
 import {breakpoints, fontFamilies, colors} from '../constants/theme'
 import Text from './Text'
 
-const RenewalBanner = ({
+const PromotionBanner = ({
   image,
   mainText,
   buttonText,
@@ -28,11 +27,7 @@ const RenewalBanner = ({
       justifyContent="center"
       position="relative"
       style={{backgroundImage: `url(${image})`}}
-      className={cx(
-        css`
-          ${styles.background}
-        `
-      )}
+      className={css(styles.background)}
     >
       <SiteContainer>
         <Flex
@@ -44,14 +39,7 @@ const RenewalBanner = ({
           pl={2}
           pr={2}
         >
-          <Text
-            mb={1}
-            className={cx(
-              css`
-                ${styles.text};
-              `
-            )}
-          >
+          <Text mb={1} className={css(styles.text)}>
             {mainText}
           </Text>
           {buttonText && buttonUrl && (
@@ -68,11 +56,8 @@ const RenewalBanner = ({
   )
 }
 
-export default RenewalBanner
+export default PromotionBanner
 
-RenewalBanner.propTypes = {
-  testimonials: PropTypes.array
-}
 
 const styles = {
   background: `
