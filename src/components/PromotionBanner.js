@@ -1,15 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import R from 'ramda'
-import {css} from 'react-emotion'
-import Media from 'react-media'
 
+import {css, injectGlobal, cx} from 'react-emotion'
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
+import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
-import {breakpoints, fontFamilies, colors} from '../constants/theme'
+import {breakpoints, fontFamilies} from '../constants/theme'
 import Text from './Text'
 
-const PromotionBanner = ({
+const RenewalBanner = ({
   image,
   mainText,
   buttonText,
@@ -26,56 +27,65 @@ const PromotionBanner = ({
     <Flex
       justifyContent="center"
       position="relative"
-      background={colors.yellow}
-      backgroundSize="cover"
+      style={{backgroundImage: `url(${image})`}}
+      className={css(styles.background)}
     >
       <SiteContainer>
-        <Flex>
-          <Flex
-            flex={3}
-            flexWrap="wrap"
-            alignItems="flex-start"
-            flexDirection="column"
-            pt={[3, 5]}
-            pb={[3, 5]}
-            pl={2}
-            pr={2}
-          >
-            <Text
-              mb={1}
-              className={css`
+        <Flex
+          flexWrap="wrap"
+          alignItems="flex-start"
+          flexDirection="column"
+          pt={[3, 5]}
+          pb={[3, 5]}
+          pl={2}
+          pr={2}
+        >
+          <Text
+            mb={1}
+            className={cx(
+              css`
                 ${styles.text};
-              `}
-            >
-              {mainText}
-            </Text>
-            {buttonText && buttonUrl && (
-              <PrimaryButton
-                to={buttonUrl}
-                track={buttonTrack}
-                title={buttonText}
-                color={buttonColor || 'yellow'}
-              />
+              `
             )}
-          </Flex>
-          <Media query={`(min-width: ${breakpoints[1]})`}>
-            {matches => {
-              return matches ? (
-                <Flex flex={1}>
-                  <img src={image} className={css({height: '100%', marginBottom: 0})} />
-                </Flex>
-              ) : null
-            }}
-          </Media>
+          >
+            {mainText}
+          </Text>
+          {buttonText && buttonUrl && (
+            <PrimaryButton
+              to={buttonUrl}
+              track={buttonTrack}
+              title={buttonText}
+              color={buttonColor || 'yellow'}
+            />
+          )}
         </Flex>
       </SiteContainer>
     </Flex>
   )
 }
 
-export default PromotionBanner
+export default RenewalBanner
+
+RenewalBanner.propTypes = {
+  testimonials: PropTypes.array
+}
 
 const styles = {
+  background: `
+    position: relative;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+  `,
+
+  renewalButton: `
+    align-self: 'flex-start';
+    cursor: pointer;
+    @media (max-width: ${R.nth(0, breakpoints)}) {
+      text-align: left;
+    }
+  `,
+
   text: `
     font-family: ${fontFamilies.itc};
     font-weight: 700;
@@ -93,6 +103,15 @@ const styles = {
     @media (min-width: ${R.nth(1, breakpoints)}) {
       font-size: 36px;
       line-height: 44px;
+      max-width: 70%;
     }
     `
 }
+
+const style = {}
+
+injectGlobal`
+  h2 {
+    ${style.text}
+  }
+`

@@ -14,7 +14,8 @@ const RenewalBanner = ({
   mainText,
   buttonText,
   buttonUrl,
-  buttonTrack
+  buttonTrack,
+  buttonColor
 }) => {
   const download = () => {
     if (buttonTrack) analytics.track(buttonTrack)
@@ -53,7 +54,7 @@ const RenewalBanner = ({
               to={buttonUrl}
               track={buttonTrack}
               title={buttonText}
-              color="yellow"
+              color={buttonColor || "yellow"}
             />
           )}
         </Flex>
