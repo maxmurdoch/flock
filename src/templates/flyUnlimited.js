@@ -11,6 +11,7 @@ import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import RenewalBanner from '../components/RenewalBanner'
+import PromotionBanner from '../components/PromotionBanner'
 import NonToggleiPhone from '../components/NonToggleIphone'
 import BlackBackground from '../components/BlackBackground'
 import FaqSection from '../components/FaqSection'
@@ -27,6 +28,7 @@ class FlyUnlimitedPageTemplate extends Component {
       how,
       control,
       renewalBanner,
+      promotionBanner,
       whatIsCovered,
       faqSection
     } = this.props.data.markdownRemark.frontmatter
@@ -123,6 +125,17 @@ class FlyUnlimitedPageTemplate extends Component {
             />
           )}
 
+          {!promotionBanner.hidden && (
+            <PromotionBanner
+              image={promotionBanner.image}
+              mainText={promotionBanner.mainText}
+              buttonText={promotionBanner.buttonText}
+              buttonUrl={promotionBanner.buttonUrl}
+              buttonTrack={promotionBanner.buttonTrack}
+              buttonColor={promotionBanner.buttonColor}
+            />
+          )}
+
           {!faqSection.hidden && (
             <Box className={css({backgroundColor: 'white'})}>
               <FaqSection
@@ -206,6 +219,15 @@ export const query = graphql`
             title
             text
           }
+        }
+        promotionBanner {
+          hidden
+          image
+          mainText
+          buttonText
+          buttonUrl
+          buttonTrack
+          buttonColor
         }
         renewalBanner {
           hidden

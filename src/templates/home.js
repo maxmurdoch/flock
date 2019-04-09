@@ -16,7 +16,7 @@ import Testimonial from '../components/Testimonial'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
 import SiteMetadata from '../components/SiteMetadata'
-import {colors, breakpoints} from '../constants/theme'
+import {colors} from '../constants/theme'
 
 import funDrone from '../../static/images/uploads/FuNDrone.png'
 

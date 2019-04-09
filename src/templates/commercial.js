@@ -4,15 +4,14 @@ import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
-import TextSection from '../components/TextSection'
 import LightNav from '../components/LightNav'
 import DarkNav from '../components/DarkNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
-import ShowIf from '../components/ShowIf'
 import Testimonial from '../components/Testimonial'
 import RenewalBanner from '../components/RenewalBanner'
+import PromotionBanner from '../components/PromotionBanner'
 import ProductTypeSection from '../components/ProductTypeSection'
 
 import Hero from '../components/Hero'
@@ -27,7 +26,8 @@ const CommercialTemplate = ({
   siteMetadataOverride,
   productTypes,
   testimonial,
-  renewalBanner
+  renewalBanner,
+  promotionBanner
 }) => {
   return (
     <StickyContainer>
@@ -101,6 +101,19 @@ const CommercialTemplate = ({
               />
             </Box>
           )}
+
+          {!promotionBanner.hidden && (
+            <Box pt={[3, 6]}>
+              <PromotionBanner
+                image={promotionBanner.image}
+                mainText={promotionBanner.mainText}
+                buttonText={promotionBanner.buttonText}
+                buttonUrl={promotionBanner.buttonUrl}
+                buttonTrack={promotionBanner.buttonTrack}
+                buttonColor={promotionBanner.buttonColor}
+              />
+            </Box>
+          )}
         </Box>
         <Footer />
       </div>
@@ -119,7 +132,8 @@ const Commercial = ({data}) => {
     siteMetadataOverride,
     productTypes,
     testimonial,
-    renewalBanner
+    renewalBanner,
+    promotionBanner
   } = data.markdownRemark.frontmatter
 
   return (
@@ -132,6 +146,7 @@ const Commercial = ({data}) => {
       productTypes={productTypes}
       testimonial={testimonial}
       renewalBanner={renewalBanner}
+      promotionBanner={promotionBanner}
     />
   )
 }
@@ -210,6 +225,15 @@ export const query = graphql`
           quote
           author
           image
+        }
+        promotionBanner {
+          hidden
+          image
+          mainText
+          buttonText
+          buttonUrl
+          buttonTrack
+          buttonColor
         }
         renewalBanner {
           hidden

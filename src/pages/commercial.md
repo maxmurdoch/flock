@@ -102,12 +102,20 @@ testimonial:
     image: /images/uploads/grey-testimonial-background.png
     quote: Easy to use and comprehensive insurance. Would highly recommend!
 renewalBanner:
-  hidden: false
+  hidden: true
   image: /images/uploads/renewal-drone.jpg
   mainText: Read our PfCO application tips.
   buttonText: TAKE ME TO THE POST
   buttonUrl: https://blog.flockcover.com/flocks-essential-guide-to-pfco-renewals-dac39542e16a
   buttonTrack: ''
+promotionBanner:
+  hidden: false
+  image: /images/uploads/yellowBanner.png
+  mainText: Get covered with Fly Unlimited. Your first month is free!*
+  buttonText: SIGN UP NOW
+  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
+  buttonTrack: WebApp Navigation Clicked
+  buttonColor: black
 siteMetadataOverride:
   description: drone insurance
   keywords:

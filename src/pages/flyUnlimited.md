@@ -77,12 +77,20 @@ control:
       title: Need the odd job covered?
   title: Control your costs throughout the year
 renewalBanner:
-  hidden: false
+  hidden: true
   image: /images/uploads/renewal-drone.jpg
   mainText: Switching to Flock is easy - even before your policy has expired. Join Flock today!
   buttonText: GET A QUOTE IN 60 SECONDS
   buttonUrl: 'https://my.flockcover.com'
   buttonTrack: WebApp Navigation Clicked
+promotionBanner:
+  hidden: false
+  image: /images/uploads/yellowBanner.png
+  mainText: Get covered with Fly Unlimited. Your first month is free!*
+  buttonText: SIGN UP NOW
+  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
+  buttonTrack: WebApp Navigation Clicked
+  buttonColor: black
 whatIsCovered:
   hidden: false
   mainList:

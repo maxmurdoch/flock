@@ -1,10 +1,9 @@
 import React from 'react'
 import R from 'ramda'
+import {css} from 'react-emotion'
 
-import {css, injectGlobal} from 'react-emotion'
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
-import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import {breakpoints, fontFamilies, colors} from '../constants/theme'
 import Text from './Text'
@@ -58,7 +57,6 @@ const PromotionBanner = ({
 
 export default PromotionBanner
 
-
 const styles = {
   background: `
     position: relative;
@@ -100,11 +98,3 @@ const styles = {
     }
     `
 }
-
-const style = {}
-
-injectGlobal`
-  h2 {
-    ${style.text}
-  }
-`
