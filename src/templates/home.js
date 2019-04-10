@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
 import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
+import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
 import TabSection from '../components/ProductTabs'
@@ -42,7 +42,14 @@ const HomeTemplate = ({
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
-              <img src={funDrone} className={style.heroImage} />
+              <Flex
+                alignItems={'center'}
+                justifyContent="center"
+                width={['100%', '50%']}
+                ml={3}
+              >
+                <img src={funDrone} className={style.heroImage} />
+              </Flex>
             )}
             headerClassName={style.header}
             headerContainerClassName={style.headerContainer}
@@ -124,7 +131,7 @@ const style = {
     width: '100%'
   }),
   header: css({
-    background: colors.yellow,
+    background: colors.yellow
     // backgroundImage: `url(${mobileFlock})`,
     // backgroundSize: '45rem',
     // backgroundRepeat: 'no-repeat',

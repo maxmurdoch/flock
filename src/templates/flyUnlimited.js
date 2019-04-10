@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {StickyContainer} from 'react-sticky'
+import R from 'ramda'
 import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
@@ -10,14 +11,16 @@ import LightNav from '../components/LightNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
+import Flex from '../components/Flex'
 import RenewalBanner from '../components/RenewalBanner'
 import PromotionBanner from '../components/PromotionBanner'
 import NonToggleiPhone from '../components/NonToggleIphone'
 import BlackBackground from '../components/BlackBackground'
 import FaqSection from '../components/FaqSection'
-
 import Hero from '../components/Hero'
-import {colors} from '../constants/theme'
+import {colors, breakpoints} from '../constants/theme'
+
+import FUnBadge from '../../static/images/uploads/FUnBadge.svg'
 
 class FlyUnlimitedPageTemplate extends Component {
   render() {
@@ -50,6 +53,16 @@ class FlyUnlimitedPageTemplate extends Component {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
               })}
+              RightSideComponent={() => (
+                <Flex
+                  alignItems={'center'}
+                  justifyContent="center"
+                  width={['100%', '20%', '30%']}
+                  ml={3}
+                >
+                  <img src={FUnBadge} className={style.heroImage} />
+                </Flex>
+              )}
               textColor={colors.white}
               header={hero.header}
               description={hero.description}
@@ -154,6 +167,18 @@ class FlyUnlimitedPageTemplate extends Component {
       </StickyContainer>
     )
   }
+}
+
+const style = {
+  heroImage: css({
+    marginBottom: 0,
+    display: 'block',
+    height: 'auto',
+    width: '60%',
+    [`@media (max-width: ${R.nth(1, breakpoints)})`]: {
+      width: '100%'
+    }
+  })
 }
 
 FlyUnlimitedPageTemplate.propTypes = {

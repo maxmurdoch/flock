@@ -1,0 +1,59 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.13546 158.13546">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+        stroke: #ffda00;
+        stroke-miterlimit: 10;
+        stroke-width: 9.27245px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        isolation: isolate;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 25.13538px;
+        font-family: ITCAvantGardePro-Bold, ITC Avant Garde Gothic Pro;
+        font-weight: 700;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.019em;
+      }
+
+      .cls-5 {
+        font-size: 8.8163px;
+        font-family: Chivo-Regular, Chivo;
+      }
+    </style>
+  </defs>
+  <title>FUn Badge</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1-2">
+      <g>
+        <circle class="cls-1" cx="79.06773" cy="79.06773" r="74.4315"/>
+        <g class="cls-2">
+          <text class="cls-3" transform="translate(56.96063 52.93719) rotate(6.05249)">Fi</text>
+          <text class="cls-4" transform="translate(76.75689 55.03618) rotate(6.05249)">r</text>
+          <text class="cls-3" transform="translate(86.32916 56.05108) rotate(6.05249)">st</text>
+          <text class="cls-3" transform="translate(39.14544 81.37993) rotate(6.05249)">Month</text>
+          <text class="cls-3" transform="translate(48.22564 112.67388) rotate(6.05249)">FREE</text>
+        </g>
+        <text class="cls-5" transform="translate(49.62755 131.48701) rotate(26.93685)">T</text>
+        <text class="cls-5" transform="translate(54.48537 133.95572) rotate(21.34161)">&amp;</text>
+        <text class="cls-5" transform="translate(60.28591 136.20102) rotate(15.37401)">C</text>
+        <text class="cls-5" transform="translate(66.25713 137.79852) rotate(10.03857)">s</text>
+        <text class="cls-5" transform="translate(73.45735 138.93906) rotate(2.69505)">A</text>
+        <text class="cls-5" transform="matrix(0.99878, -0.04943, 0.04943, 0.99878, 79.5552, 139.19476)">p</text>
+        <text class="cls-5" transform="translate(85.02717 138.9078) rotate(-8.09583)">p</text>
+        <text class="cls-5" transform="translate(90.32137 138.10118) rotate(-11.9144)">l</text>
+        <text class="cls-5" transform="translate(92.86299 137.59091) rotate(-15.44014)">y</text>
+      </g>
+    </g>
+  </g>
+</svg>
