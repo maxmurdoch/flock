@@ -58,7 +58,9 @@ const HomeTemplate = ({
             description={hero.description}
             buttons={hero.buttons}
             features={hero.features}
-            smallPrint={hero.smallPrint}
+            smallPrint={
+              '*Maximum £75 discount off first month. [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+            }
           />
           {!stopWorrying.hidden && (
             <Box pt={[3, 3]} background="white">
@@ -118,7 +120,11 @@ const HomeTemplate = ({
             <Featured title={featured.title} image={featured.image} />
           )}
         </div>
-        <Footer />
+        <Footer
+          FUnSmallPrint={
+            '*One free month insurance for new Fly Unlimited customers who start their cover before 11/05/19. Credit card required. Maximum discount is £75. Policies over this amount will be charged at the full policy price, and £75 refunded back. After your free month, we’ll automatically renew your subscription and charge you the full ongoing monthly policy price. Cancel anytime. Full [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+          }
+        />
       </div>
     </StickyContainer>
   )

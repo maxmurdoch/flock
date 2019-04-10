@@ -8,7 +8,7 @@ hero:
       color: black
       external: true
       title: START FREE MONTH
-      to: '#product-tabs'
+      to: 'https://my.flockcover.com/'
       track: ''
     - branch: false
       color: black
@@ -29,7 +29,7 @@ hero:
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
   header: 'Simpler, smarter drone insurance'
-  smallPrint: '*Maximum £75 discount off first month. [T&Cs](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+  smallPrint: "*Maximum £75 discount off first month. [T&C's](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply."
 stopWorrying:
   hidden: false
   description: >-

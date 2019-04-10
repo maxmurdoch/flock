@@ -24,7 +24,14 @@ const textShadow = style({
   alias: 'sh'
 })
 
-const Text = ({tag = 'p', fontWeight = 300, children, linkColor, linkDecoration,...props}) => {
+const Text = ({
+  tag = 'p',
+  fontWeight = 300,
+  children,
+  linkColor,
+  linkDecoration,
+  ...props
+}) => {
   const Component = styled(tag)`
   margin: 0;
   line-height: 1.5;
