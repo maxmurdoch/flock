@@ -68,6 +68,7 @@ const Hero = ({
                       to={button.to}
                       color={button.color}
                       external={button.external}
+                      border={button.border}
                       branch={button.branch}
                       track={button.track}
                       mb={15}
@@ -84,6 +85,7 @@ const Hero = ({
                   color={textColor}
                   linkDecoration="underline"
                   linkColor={textColor}
+                  style={{fontSize: 14}}
                 >
                   {smallPrint}
                 </SmallText>

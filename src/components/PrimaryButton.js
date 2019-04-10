@@ -17,6 +17,7 @@ const NavButton = ({
   track,
   mb,
   mr,
+  border,
   flexGrow,
   ...props
 }) => {
@@ -47,8 +48,8 @@ const NavButton = ({
         appearance: 'none',
         display: 'inline-block',
         padding: '18px 16px',
+        border: border ? '2px solid black' : 'none',
         backgroundColor: color === 'yellow' ? colors.yellow : colors.dark,
-        border: 'none',
         outline: 'none',
         textDecoration: 'none',
         textAlign: 'left',

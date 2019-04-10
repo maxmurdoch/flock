@@ -211,6 +211,7 @@ export const query = graphql`
             title
             to
             color
+            border
             external
             branch
             track

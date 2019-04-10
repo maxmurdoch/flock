@@ -11,16 +11,17 @@ hero:
       to: 'https://my.flockcover.com/'
       track: ''
     - branch: false
-      color: black
+      color: yellow
+      border: true
       external: false
       title: WHAT'S COVERED?
       to: 'https://flockcover.com/flyUnlimited/#what-is-covered'
       track: ''
   description: >-
-    See how flexible drone insurance can be. Try Fly Unlimited and get one month of commercial drone insurance on us. No commitments, cancel anytime.
+    See how flexible drone insurance can be. Try Fly Unlimited and get one month of commercial drone insurance on us*. No commitments, cancel anytime.
 
 
-    Don’t miss out - offer ends 11th May!*
+    Don’t miss out - offer ends 11th May!
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -74,7 +75,7 @@ productTabs:
           perText: per flight
           icon: /images/uploads/drone.svg
         - productType: FLY UNLIMITED
-          buttonOneText: GET FREE MONTH
+          buttonOneText: START FREE MONTH
           buttonTwoText: VIEW ALL FEATURES
           buttonOneUrl: https://my.flockcover.com/
           buttonTwoUrl: https://flockcover.com/flyunlimited/
@@ -154,8 +155,8 @@ promotionBanner:
   hidden: false
   image: /images/uploads/yellowBanner.png
   mainText: Get covered with Fly Unlimited. Your first month is free!*
-  buttonText: SIGN UP NOW
-  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
+  buttonText: START FREE MONTH
+  buttonUrl: 'https://my.flockcover.com/'
   buttonTrack: WebApp Navigation Clicked
   buttonColor: black
 featured:

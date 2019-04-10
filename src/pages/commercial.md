@@ -8,14 +8,14 @@ hero:
     - branch: true
       color: yellow
       external: false
-      title: GET A QUOTE
-      to: '#product-types'
+      title: START FREE MONTH
+      to: 'https://my.flockcover.com'
       track: ''
   description: >-
-    Commercial drone insurance that fits the way you work.
+    Commercial drone insurance that fits the way you work. Get covered by the hour, day, or month - whatever suits you.
 
 
-    Get covered by the hour, day, or month - whatever suits you.
+    Try Fly Unlimited and get one month of commercial drone insurance on us*. No commitments, cancel anytime.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -64,7 +64,7 @@ productTypes:
       perText: per flight
       icon: /images/uploads/drone.svg
     - productType: FLY UNLIMITED
-      buttonOneText: GET FREE MONTH
+      buttonOneText: START FREE MONTH
       buttonTwoText: VIEW ALL FEATURES
       buttonOneUrl: https://my.flockcover.com/
       buttonTwoUrl: https://flockcover.com/flyunlimited/
@@ -112,8 +112,8 @@ promotionBanner:
   hidden: false
   image: /images/uploads/yellowBanner.png
   mainText: Get covered with Fly Unlimited. Your first month is free!*
-  buttonText: SIGN UP NOW
-  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
+  buttonText: START FREE MONTH
+  buttonUrl: 'https://my.flockcover.com/'
   buttonTrack: WebApp Navigation Clicked
   buttonColor: black
 siteMetadataOverride:
