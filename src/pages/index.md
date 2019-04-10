@@ -18,9 +18,9 @@ hero:
       to: 'https://flockcover.com/flyUnlimited/#what-is-covered'
       track: ''
   description: >-
-    See how flexible drone insurance can be.Try Fly Unlimited and get one month of commercial drone insurance on us*. No commitments, cancel anytime.
+    See how flexible drone insurance can be. Try Fly Unlimited and get one month of commercial drone insurance on us*. No commitments, cancel anytime.
 
-    
+
     Don’t miss out - offer ends 11th May!
   features:
     - rightIcon: /images/uploads/allianz.png
