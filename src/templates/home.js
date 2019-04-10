@@ -1,26 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
 import {StickyContainer} from 'react-sticky'
 import {css} from 'emotion'
 
 import BigSectionLine from '../components/BigSectionLine'
 import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
+import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
 import TabSection from '../components/ProductTabs'
 import ProductCardTabs from '../components/ProductCardTabs'
-import RenewalBanner from '../components/RenewalBanner'
+import PromotionBanner from '../components/PromotionBanner'
 import Testimonial from '../components/Testimonial'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
 import SiteMetadata from '../components/SiteMetadata'
-import {colors, breakpoints} from '../constants/theme'
+import {colors} from '../constants/theme'
 
-import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
-import mobileFlock from '../images/mobile-arrow-hero.svg'
-import iPhone from '../../static/images/uploads/white-phone-cropped-2@2x.png'
+import funDrone from '../../static/images/uploads/funDrone.svg'
 
 const HomeTemplate = ({
   secondTestimonial,
@@ -29,7 +27,7 @@ const HomeTemplate = ({
   siteMetadataOverride,
   stopWorrying,
   featured,
-  renewalBanner,
+  promotionBanner,
   productTabs
 }) => {
   return (
@@ -44,7 +42,14 @@ const HomeTemplate = ({
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
-              <img src={iPhone} className={style.iphone} />
+              <Flex
+                alignItems={'center'}
+                justifyContent="center"
+                width={['100%', '50%']}
+                ml={3}
+              >
+                <img src={funDrone} className={style.heroImage} />
+              </Flex>
             )}
             headerClassName={style.header}
             headerContainerClassName={style.headerContainer}
@@ -53,6 +58,9 @@ const HomeTemplate = ({
             description={hero.description}
             buttons={hero.buttons}
             features={hero.features}
+            smallPrint={
+              '*Maximum £75 discount off first month. [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+            }
           />
           {!stopWorrying.hidden && (
             <Box pt={[3, 3]} background="white">
@@ -97,13 +105,14 @@ const HomeTemplate = ({
           </Box>
 
           <Box pt={[3, 5]} pb={[3, 5]}>
-            {!renewalBanner.hidden && (
-              <RenewalBanner
-                image={renewalBanner.image}
-                mainText={renewalBanner.mainText}
-                buttonText={renewalBanner.buttonText}
-                buttonUrl={renewalBanner.buttonUrl}
-                buttonTrack={renewalBanner.buttonTrack}
+            {!promotionBanner.hidden && (
+              <PromotionBanner
+                image={promotionBanner.image}
+                mainText={promotionBanner.mainText}
+                buttonText={promotionBanner.buttonText}
+                buttonUrl={promotionBanner.buttonUrl}
+                buttonTrack={promotionBanner.buttonTrack}
+                buttonColor={promotionBanner.buttonColor}
               />
             )}
           </Box>
@@ -111,28 +120,34 @@ const HomeTemplate = ({
             <Featured title={featured.title} image={featured.image} />
           )}
         </div>
-        <Footer />
+        <Footer
+          FUnSmallPrint={
+            '*One free month insurance for new Fly Unlimited customers who start their cover before 11/05/19. Credit card required. Maximum discount is £75. Policies over this amount will be charged at the full policy price, and £75 refunded back. After your free month, we’ll automatically renew your subscription and charge you the full ongoing monthly policy price. Cancel anytime. Full [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+          }
+        />
       </div>
     </StickyContainer>
   )
 }
 
 const style = {
-  iphone: css({
+  heroImage: css({
     marginBottom: 0,
-    display: 'block'
+    display: 'block',
+    height: '70%',
+    width: '100%'
   }),
   header: css({
-    background: colors.backgrounds.light,
-    backgroundImage: `url(${mobileFlock})`,
-    backgroundSize: '45rem',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'bottom left',
-    width: '100%',
-    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-      backgroundImage: `url(${bigFlock})`,
-      backgroundPosition: 'bottom right'
-    }
+    background: colors.yellow
+    // backgroundImage: `url(${mobileFlock})`,
+    // backgroundSize: '45rem',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundPosition: 'bottom left',
+    // width: '100%',
+    // [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
+    //   backgroundImage: `none`,
+    //   backgroundPosition: 'bottom right'
+    // }
   })
 }
 
@@ -143,7 +158,7 @@ HomeTemplate.propTypes = {
   siteMetadataOverride: PropTypes.object,
   stopWorrying: PropTypes.object,
   featured: PropTypes.object,
-  renewalBanner: PropTypes.object,
+  promotionBanner: PropTypes.object,
   productTabs: PropTypes.object
 }
 
@@ -158,7 +173,7 @@ const HomePage = ({data}) => {
     siteMetadataOverride,
     stopWorrying,
     featured,
-    renewalBanner
+    promotionBanner
   } = data.markdownRemark.frontmatter
 
   return (
@@ -169,7 +184,7 @@ const HomePage = ({data}) => {
       siteMetadataOverride={siteMetadataOverride}
       stopWorrying={stopWorrying}
       featured={featured}
-      renewalBanner={renewalBanner}
+      promotionBanner={promotionBanner}
       productTabs={productTabs}
     />
   )
@@ -196,6 +211,7 @@ export const query = graphql`
             title
             to
             color
+            border
             external
             branch
             track
@@ -205,6 +221,7 @@ export const query = graphql`
             title
             rightIcon
           }
+          smallPrint
         }
         stopWorrying {
           hidden
@@ -226,13 +243,14 @@ export const query = graphql`
           title
           image
         }
-        renewalBanner {
+        promotionBanner {
           hidden
           image
           mainText
           buttonText
           buttonUrl
           buttonTrack
+          buttonColor
         }
         productTabs {
           hidden

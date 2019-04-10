@@ -7,15 +7,21 @@ hero:
     - branch: true
       color: black
       external: true
-      title: GET A QUOTE
-      to: '#product-tabs'
+      title: START FREE MONTH
+      to: 'https://my.flockcover.com/'
+      track: ''
+    - branch: false
+      color: yellow
+      border: true
+      external: false
+      title: WHAT'S COVERED?
+      to: 'https://flockcover.com/flyUnlimited/#what-is-covered'
       track: ''
   description: >-
-    Welcome to fully flexible insurance you control. In a couple of taps, get
-    covered for an hour, day or month.
+    See how flexible drone insurance can be.Try Fly Unlimited and get one month of commercial drone insurance on us*. No commitments, cancel anytime.
 
-
-    Join thousands of pilots using Flock Cover today.
+    
+    Don’t miss out - offer ends 11th May!
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -24,6 +30,7 @@ hero:
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
   header: 'Simpler, smarter drone insurance'
+  smallPrint: "*Maximum £75 discount off first month. [T&C's](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply."
 stopWorrying:
   hidden: false
   description: >-
@@ -68,7 +75,7 @@ productTabs:
           perText: per flight
           icon: /images/uploads/drone.svg
         - productType: FLY UNLIMITED
-          buttonOneText: GET A PRICE
+          buttonOneText: START FREE MONTH
           buttonTwoText: VIEW ALL FEATURES
           buttonOneUrl: https://my.flockcover.com/
           buttonTwoUrl: https://flockcover.com/flyunlimited/
@@ -144,13 +151,14 @@ secondTestimonial:
   - author: 'Calum, Aerial Photographer'
     image: /images/uploads/testimonial/4.jpg
     quote: Easy to use and comprehensive insurance. Would highly recommend!
-renewalBanner:
+promotionBanner:
   hidden: false
-  image: /images/uploads/renewal-drone.jpg
-  mainText: Take to the skies with Flock today.
-  buttonText: GET A PRICE IN 60 SECONDS
-  buttonUrl: https://flockcover.app.link/6IW6kTmgfP
+  image: /images/uploads/yellowBanner.png
+  mainText: Get covered with Fly Unlimited. Your first month is free!*
+  buttonText: START FREE MONTH
+  buttonUrl: 'https://my.flockcover.com/'
   buttonTrack: WebApp Navigation Clicked
+  buttonColor: black
 featured:
   hidden: false
   image: images/uploads/featured-list.png

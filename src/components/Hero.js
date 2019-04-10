@@ -1,5 +1,4 @@
 import React from 'react'
-import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import R from 'ramda'
 import Media from 'react-media'
@@ -9,10 +8,10 @@ import H1 from './H1'
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
 import BodyText from './BodyText'
+import SmallText from './SmallText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import PrimaryButton from './PrimaryButton'
 import {colors, breakpoints} from '../constants/theme'
-import {downloadClickHandler} from '../utils/trackDownload'
 
 const Hero = ({
   textColor = colors.dark,
@@ -21,6 +20,7 @@ const Hero = ({
   header,
   RightSideComponent,
   description,
+  smallPrint,
   buttons = [],
   features = []
 }) => {
@@ -48,7 +48,7 @@ const Hero = ({
               alignItems="flex-start"
               width={['100%', '75%', '64%']}
               mt={[4, 5]}
-              mb={[3, 6]}
+              mb={[3, 5]}
             >
               <H1
                 textShadow={textShadow ? '0 1px 0 rgba(0, 0, 0, 0.3)' : 'none'}
@@ -68,6 +68,7 @@ const Hero = ({
                       to={button.to}
                       color={button.color}
                       external={button.external}
+                      border={button.border}
                       branch={button.branch}
                       track={button.track}
                       mb={15}
@@ -77,20 +78,22 @@ const Hero = ({
                   )
                 })}
               </Flex>
+
+              {smallPrint && (
+                <SmallText
+                  mt={1}
+                  color={textColor}
+                  linkDecoration="underline"
+                  linkColor={textColor}
+                  style={{fontSize: 14}}
+                >
+                  {smallPrint}
+                </SmallText>
+              )}
             </Flex>
             {R.not(R.isNil(RightSideComponent)) ? (
               <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
-                {matches =>
-                  matches ? (
-                    <Flex
-                      alignItems="flex-end"
-                      justifyContent="center"
-                      width={['100%', '50%']}
-                    >
-                      <RightSideComponent />
-                    </Flex>
-                  ) : null
-                }
+                {matches => (matches ? <RightSideComponent /> : null)}
               </Media>
             ) : null}
           </Flex>

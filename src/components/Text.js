@@ -24,7 +24,14 @@ const textShadow = style({
   alias: 'sh'
 })
 
-const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
+const Text = ({
+  tag = 'p',
+  fontWeight = 300,
+  children,
+  linkColor,
+  linkDecoration,
+  ...props
+}) => {
   const Component = styled(tag)`
   margin: 0;
   line-height: 1.5;
@@ -43,8 +50,8 @@ const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
 
   a {
     font-family: 'Chivo';
-    text-decoration: none;
-    color: #00C0FF;
+    text-decoration: ${linkDecoration || 'none'};
+    color: ${linkColor || '#00C0FF'};
   }
 `
   return (

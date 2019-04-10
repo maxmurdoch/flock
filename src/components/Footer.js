@@ -35,7 +35,7 @@ const socialMediaLinks = [
   }
 ]
 
-const Footer = ({containerClassName}) => {
+const Footer = ({containerClassName, FUnSmallPrint}) => {
   const firstFooterLinks = [
     {
       to: '/insurance/commercial',
@@ -99,7 +99,12 @@ const Footer = ({containerClassName}) => {
     >
       <SiteContainer>
         <Flex flexWrap={true}>
-          <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex
+            className={styles.flexiFooter}
+            width={['100%', '33.33%']}
+            flexDirection="column"
+            pt={3}
+          >
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Insurance
@@ -113,7 +118,12 @@ const Footer = ({containerClassName}) => {
               )
             }, firstFooterLinks)}
           </Flex>
-          <Flex className={styles.flexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex
+            className={styles.flexiFooter}
+            width={['100%', '33.33%']}
+            flexDirection="column"
+            pt={3}
+          >
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Company
@@ -127,7 +137,12 @@ const Footer = ({containerClassName}) => {
               )
             }, secondFooterLinks)}
           </Flex>
-          <Flex className={styles.lastFlexiFooter} width={['100%', '33.33%']} flexDirection="column" pt={3}>
+          <Flex
+            className={styles.lastFlexiFooter}
+            width={['100%', '33.33%']}
+            flexDirection="column"
+            pt={3}
+          >
             <Box pb={2}>
               <SmallText tag="h3" color="white" mb={0} fontWeight={700}>
                 Got a question? Get in touch:
@@ -169,8 +184,17 @@ const Footer = ({containerClassName}) => {
               }, bottomFooterLinks)}
             </Flex>
             <Box pb={2} className={styles.centeredFooterText}>
+              {FUnSmallPrint && (
+                <SmallText tag="h3" color="white" mb={3} fontWeight={100}>
+                  {FUnSmallPrint}
+                </SmallText>
+              )}
               <SmallText tag="h3" color="white" mb={0} fontWeight={100}>
-                Flock Limited (FCA #785551) is an Appointed Representative of Worry+Peace (a trading name of Innovative Risk Limited, authorised and regulated by the Financial Conduct Authority, FCA #609155) who have arranged for the insurance provided by Flock to be underwritten by Allianz Global Corporate & Specialty.
+                Flock Limited (FCA #785551) is an Appointed Representative of
+                Worry+Peace (a trading name of Innovative Risk Limited,
+                authorised and regulated by the Financial Conduct Authority, FCA
+                #609155) who have arranged for the insurance provided by Flock
+                to be underwritten by Allianz Global Corporate & Specialty.
               </SmallText>
             </Box>
           </Box>

@@ -4,7 +4,7 @@ templateKey: flyUnlimited
 hero:
   backgroundImage: ../../images/uploads/fly-unlimited-header.jpg
   buttons:
-    - title: GET A QUOTE
+    - title: START FREE MONTH
       to: 'https://my.flockcover.com'
       color: yellow
       external: true
@@ -23,8 +23,13 @@ hero:
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
-  description: Introducing Fly Unlimited, our new subscription product for commercial pilots. Get comprehensive in-and-out of flight cover on a monthly basis. Cancel or pause anytime. There’s no catch.
+  description: >-
+    Introducing Fly Unlimited, our fully flexible subscription product for commercial pilots. Get your first month on us*. No commitments, cancel anytime.
+
+    
+    Don’t miss out - offer ends 11th May!
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
+  smallPrint: "*Maximum £75 discount off first month. [T&C's](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply."
 why:
   hidden: false
   description: With Fly Unlimited, you’ll receive all the benefits you’d expect from an annual policy - without the long-term commitment.
@@ -71,12 +76,20 @@ control:
       title: Need the odd job covered?
   title: Control your costs throughout the year
 renewalBanner:
-  hidden: false
+  hidden: true
   image: /images/uploads/renewal-drone.jpg
   mainText: Switching to Flock is easy - even before your policy has expired. Join Flock today!
   buttonText: GET A QUOTE IN 60 SECONDS
   buttonUrl: 'https://my.flockcover.com'
   buttonTrack: WebApp Navigation Clicked
+promotionBanner:
+  hidden: false
+  image: /images/uploads/yellowBanner.png
+  mainText: Get covered with Fly Unlimited. Your first month is free!*
+  buttonText: START FREE MONTH
+  buttonUrl: 'https://my.flockcover.com'
+  buttonTrack: WebApp Navigation Clicked
+  buttonColor: black
 whatIsCovered:
   hidden: false
   mainList:
@@ -101,7 +114,7 @@ whatIsCovered:
   smallPrints:
     - text: \** Prices depend on factors such as experience, equipment and claims history.
     - text: \+ Available if multiple pilots are operating under a single PfCO.
-  buttonOneText: GET A QUOTE
+  buttonOneText: START FREE MONTH
   buttonOneUrl: 'https://my.flockcover.com'
   fromPrice: £24.95
   samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
