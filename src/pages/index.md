@@ -29,6 +29,7 @@ hero:
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
   header: 'Simpler, smarter drone insurance'
+  smallPrint: '*Maximum £75 discount off first month. [T&Cs](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
 stopWorrying:
   hidden: false
   description: >-

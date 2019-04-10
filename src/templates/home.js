@@ -58,6 +58,7 @@ const HomeTemplate = ({
             description={hero.description}
             buttons={hero.buttons}
             features={hero.features}
+            smallPrint={hero.smallPrint}
           />
           {!stopWorrying.hidden && (
             <Box pt={[3, 3]} background="white">
@@ -213,6 +214,7 @@ export const query = graphql`
             title
             rightIcon
           }
+          smallPrint
         }
         stopWorrying {
           hidden

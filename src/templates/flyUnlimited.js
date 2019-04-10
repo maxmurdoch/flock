@@ -68,6 +68,7 @@ class FlyUnlimitedPageTemplate extends Component {
               description={hero.description}
               buttons={hero.buttons}
               features={hero.features}
+              smallPrint={hero.smallPrint}
             />
 
             {!why.hidden && (
@@ -213,6 +214,7 @@ export const query = graphql`
           }
           description
           header
+          smallPrint
           backgroundImage
         }
         why {

@@ -31,6 +31,7 @@ hero:
     Get your first month on us. No commitments, cancel anytime.
     Don’t miss out - offer ends 11th May!*
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
+  smallPrint: '*Maximum £75 discount off first month. [T&Cs](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
 why:
   hidden: false
   description: With Fly Unlimited, you’ll receive all the benefits you’d expect from an annual policy - without the long-term commitment.

@@ -8,6 +8,7 @@ import H1 from './H1'
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
 import BodyText from './BodyText'
+import SmallText from './SmallText'
 import HeroFeaturesBanner from './HeroFeaturesBanner'
 import PrimaryButton from './PrimaryButton'
 import {colors, breakpoints} from '../constants/theme'
@@ -19,6 +20,7 @@ const Hero = ({
   header,
   RightSideComponent,
   description,
+  smallPrint,
   buttons = [],
   features = []
 }) => {
@@ -75,6 +77,17 @@ const Hero = ({
                   )
                 })}
               </Flex>
+
+              {smallPrint && (
+                <SmallText
+                  mt={1}
+                  color={textColor}
+                  linkDecoration="underline"
+                  linkColor={textColor}
+                >
+                  {smallPrint}
+                </SmallText>
+              )}
             </Flex>
             {R.not(R.isNil(RightSideComponent)) ? (
               <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
