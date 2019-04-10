@@ -81,12 +81,10 @@ const Hero = ({
                 {matches =>
                   matches ? (
                     <Flex
-                      alignItems={['center', 'center', 'flex-end']}
+                      alignItems={'center'}
                       justifyContent="center"
                       width={['100%', '50%']}
-                      className={css({
-                        minWidth: '300px'
-                      })}
+                      ml={3}
                     >
                       <RightSideComponent />
                     </Flex>

@@ -18,7 +18,7 @@ import Footer from '../components/Footer'
 import SiteMetadata from '../components/SiteMetadata'
 import {colors} from '../constants/theme'
 
-import funDrone from '../../static/images/uploads/FuNDrone.png'
+import funDrone from '../../static/images/uploads/funDrone.svg'
 
 const HomeTemplate = ({
   secondTestimonial,
@@ -42,7 +42,7 @@ const HomeTemplate = ({
         <Box className={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
-              <img src={funDrone} className={style.iphone} />
+              <img src={funDrone} className={style.heroImage} />
             )}
             headerClassName={style.header}
             headerContainerClassName={style.headerContainer}
@@ -117,9 +117,11 @@ const HomeTemplate = ({
 }
 
 const style = {
-  iphone: css({
+  heroImage: css({
     marginBottom: 0,
-    display: 'block'
+    display: 'block',
+    height: '70%',
+    width: '100%'
   }),
   header: css({
     background: colors.yellow,
