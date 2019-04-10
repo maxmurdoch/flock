@@ -24,11 +24,9 @@ hero:
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
   description: >-
-    Introducing Fly Unlimited, our fully flexible subscription product for commercial pilots.
+    Introducing Fly Unlimited, our fully flexible subscription product for commercial pilots. Get your first month on us*. No commitments, cancel anytime.
 
-
-
-    Get your first month on us*. No commitments, cancel anytime.
+    
     Don’t miss out - offer ends 11th May!
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
   smallPrint: "*Maximum £75 discount off first month. [T&C's](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply."
