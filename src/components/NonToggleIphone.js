@@ -61,7 +61,7 @@ class NonToggleiPhone extends Component {
                       >
                         <Flex
                           flexDirection="column"
-                          className={css({
+                          css={css({
                             paddingLeft: nth(1, space),
                             marginLeft: `-${nth(1, space)}`
                           })}

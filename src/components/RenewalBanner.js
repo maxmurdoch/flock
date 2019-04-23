@@ -28,7 +28,7 @@ const RenewalBanner = ({
       justifyContent="center"
       position="relative"
       background={`url(${image})`}
-      className={styles.background}
+      css={styles.background}
     >
       <SiteContainer>
         <Flex

@@ -9,7 +9,7 @@ import {space} from '../constants/theme'
 const SiteContainer = ({children, edgeToEdge = false, className}) => {
   return (
     <Box
-      className={[
+      css={[
         css({
           width: '100%',
           maxWidth: 1200,

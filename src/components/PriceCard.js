@@ -38,7 +38,7 @@ const PriceCard = ({
         boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
         transition: '0.3s'
       }),
-      className
+      ...className
     ]}
   >
     {productType && (
@@ -126,7 +126,7 @@ const PriceCard = ({
 
     <Flex
       flexDirection="column"
-      className={css({
+      css={css({
         backgroundColor: '#F7F7F4',
         alignItems: 'flex-start',
         paddingTop: 5,

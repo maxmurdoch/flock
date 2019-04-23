@@ -40,7 +40,7 @@ const Hero = ({
         flex="1 1 auto"
         overflow="hidden"
       >
-        <SiteContainer className={css({overflow: 'visible'})}>
+        <SiteContainer css={css({overflow: 'visible'})}>
           <Flex mt={[3, 5]}>
             <Flex
               justifyContent="center"
