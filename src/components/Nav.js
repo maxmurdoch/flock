@@ -98,7 +98,7 @@ class Nav extends Component {
                           }}
                         >
                           <SmallText
-                            css={css({
+                            className={css({
                               position: 'relative',
                               display: 'flex',
                               '&::after': {
