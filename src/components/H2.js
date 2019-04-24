@@ -7,7 +7,7 @@ import * as R from 'ramda'
 import Text from './Text'
 import {breakpoints, fontFamilies} from '../constants/theme'
 
-const H2 = ({children, tag = 'h2', className, ...props}) => {
+const H2 = ({children, tag = 'h2', css: CSS, ...props}) => {
   return (
     <Text
       tag={tag}
@@ -16,7 +16,7 @@ const H2 = ({children, tag = 'h2', className, ...props}) => {
         css`
           ${style.text};
         `,
-        className
+        CSS
       ]}
       {...props}
     >

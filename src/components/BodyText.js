@@ -6,13 +6,13 @@ import {css} from '@emotion/core'
 import remark from 'remark'
 import remark2react from 'remark-react'
 
-const BodyText = ({children, mb = 0, className,...props}) => {
+const BodyText = ({children, mb = 0, css,...props}) => {
   if (typeof children === 'string') {
     return (
       <Text
         tag="div"
         mb={mb}
-        css={[style.text, className]}
+        css={[style.text, css]}
         {...props}
       >
         {
@@ -26,7 +26,7 @@ const BodyText = ({children, mb = 0, className,...props}) => {
     return (
       <Text
         mb={mb}
-        css={[style.text, className]}
+        css={[style.text, css]}
         {...props}
       >
         {' '}

@@ -40,7 +40,7 @@ const CommercialTemplate = ({
         {navColor === 'light' ? <LightNav /> : <DarkNav />}
         <Box css={css({backgroundColor: 'white'})}>
           <Hero
-            headerClassName={css({
+            headerCSS={css({
               backgroundImage: `url(${hero.backgroundImage})`,
               backgroundPosition: 'top left',
               backgroundSize: 'cover',

@@ -48,8 +48,7 @@ const HomeTemplate = ({
             // RightSideComponent={() => (
             //   <img src={iPhone} css={style.iphone} />
             // )}
-            headerClassName={style.header}
-            headerContainerClassName={style.headerContainer}
+            headerCSS={style.header}
             header={hero.header}
             textShadow={false}
             description={hero.description}

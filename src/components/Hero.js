@@ -16,7 +16,7 @@ import {downloadClickHandler} from '../utils/trackDownload'
 
 const Hero = ({
   textColor = colors.dark,
-  headerClassName,
+  headerCSS,
   textShadow = true,
   header,
   RightSideComponent,
@@ -36,7 +36,7 @@ const Hero = ({
       <Flex
         alignItems="center"
         justifyContent="center"
-        className={headerClassName}
+        css={headerCSS}
         flex="1 1 auto"
         overflow="hidden"
       >
@@ -107,7 +107,7 @@ Hero.propTypes = {
   RightSideComponent: PropTypes.func,
   textColor: PropTypes.string,
   textShadow: PropTypes.bool,
-  headerClassName: PropTypes.string,
+  headerCSS: PropTypes.string,
   header: PropTypes.string,
   description: PropTypes.string,
   buttonOne: PropTypes.object,

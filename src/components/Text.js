@@ -55,7 +55,7 @@ const Text = ({tag = 'p', fontWeight = 300, children, ...props}) => {
 }
 
 Text.propTypes = {
-  className: PropTypes.string,
+  css: PropTypes.string,
   tag: PropTypes.string,
   fontWeight: PropTypes.number,
   markdown: PropTypes.bool,

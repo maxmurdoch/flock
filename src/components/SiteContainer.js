@@ -6,7 +6,7 @@ import {css} from '@emotion/core'
 import Box from './Box'
 import {space} from '../constants/theme'
 
-const SiteContainer = ({children, edgeToEdge = false, className}) => {
+const SiteContainer = ({children, edgeToEdge = false, css: CSS}) => {
   return (
     <Box
       css={[
@@ -16,7 +16,7 @@ const SiteContainer = ({children, edgeToEdge = false, className}) => {
           paddingLeft: edgeToEdge ? 0 : R.nth(2, space),
           paddingRight: edgeToEdge ? 0 : R.nth(2, space)
         }),
-        className
+        CSS
       ]}
     >
       {children}
@@ -27,7 +27,7 @@ const SiteContainer = ({children, edgeToEdge = false, className}) => {
 SiteContainer.propTypes = {
   children: PropTypes.node,
   edgeToEdge: PropTypes.bool,
-  className: PropTypes.string
+  CSS: PropTypes.string
 }
 
 export default SiteContainer

@@ -7,12 +7,12 @@ import Box from './Box'
 import Flex from './Flex'
 import {colors} from '../constants/theme'
 
-const PricingHero = ({textColor = colors.dark, headerClassName, header}) => {
+const PricingHero = ({textColor = colors.dark, headerCSS, header}) => {
   return (
     <Flex
       alignItems="center"
       justifyContent="center"
-      className={headerClassName}
+      css={headerCSS}
       flex="1 1 auto"
       width="100%"
       height="66vh"

@@ -87,7 +87,7 @@ class Nav extends Component {
                       <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
-                          className={linkClass}
+                          css={linkClass}
                           to="/insurance"
                           onClick={event => {
                             event.preventDefault()
@@ -98,7 +98,7 @@ class Nav extends Component {
                           }}
                         >
                           <SmallText
-                            className={css({
+                            css={css({
                               position: 'relative',
                               display: 'flex',
                               '&::after': {
@@ -125,7 +125,7 @@ class Nav extends Component {
                       <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
-                          className={linkClass}
+                          css={linkClass}
                           exact={true}
                           to="/about"
                         >
@@ -145,7 +145,7 @@ class Nav extends Component {
                       <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
-                          className={linkClass}
+                          css={linkClass}
                           exact={true}
                           to="https://blog.flockcover.com/"
                         >
@@ -156,7 +156,7 @@ class Nav extends Component {
                       <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
-                          className={linkClass}
+                          css={linkClass}
                           exact={true}
                           to="https://flockcover.workable.com"
                         >

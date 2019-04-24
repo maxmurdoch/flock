@@ -23,7 +23,7 @@ const CoverNote = ({title, image, bodyText, smallText, link}) => {
             <BodyText mb={2}>{bodyText}</BodyText>
             <SmallText mb={2}>{smallText}</SmallText>
             <SmallText mb={2}>
-              <Link to={link.to} className={css({color: 'initial'})}>
+              <Link to={link.to} css={css({color: 'initial'})}>
                 {link.text}
               </Link>
             </SmallText>

@@ -10,7 +10,7 @@ import remark2react from 'remark-react'
 const SmallText = ({
   children,
   fontWeight = 400,
-  className,
+  css,
   mb = 0,
   ...props
 }) => {
@@ -20,7 +20,7 @@ const SmallText = ({
         tag="div"
         fontWeight={fontWeight}
         mb={mb}
-        css={[style.smallTextStyle, className]}
+        css={[style.smallTextStyle, css]}
         {...props}
       >
         {
@@ -35,7 +35,7 @@ const SmallText = ({
       <Text
         fontWeight={fontWeight}
         mb={mb}
-        css={[style.smallTextStyle, className]}
+        css={[style.smallTextStyle, css]}
         {...props}
       >
         {children}
@@ -46,7 +46,7 @@ const SmallText = ({
 
 SmallText.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string,
+  css: PropTypes.string,
   mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array]),
   fontWeight: PropTypes.number
 }

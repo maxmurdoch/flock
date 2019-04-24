@@ -37,7 +37,7 @@ const AboutTemplate = ({
         <LightNav />
         <AboutHero
           center={true}
-          headerClassName={css({
+          headerCSS={css({
             backgroundImage: `url(${hero.backgroundImage})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
@@ -78,7 +78,7 @@ const AboutTemplate = ({
         <BigSectionLine />
         <Download to={'https://flockcover.app.link/6IW6kTmgfP'} />
         <Footer
-          containerClassName={css({
+          containerCSS={css({
             marginTop: R.nth(3, space),
             [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
               marginTop: R.nth(5, space)

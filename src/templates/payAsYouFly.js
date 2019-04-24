@@ -52,14 +52,13 @@ const PayAsYouFlyTemplate = ({
           <LightNav to={downloadLink} />
           <Box css={css({backgroundColor: 'white'})}>
             <Hero
-              headerClassName={css({
+              headerCSS={css({
                 backgroundImage: `url(${hero.backgroundImage})`,
                 backgroundPosition: 'top left',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
               })}
               textColor={colors[hero.textColor]}
-              headerContainerClassName={style.headerContainer}
               header={hero.header}
               textShadow={false}
               description={hero.description}

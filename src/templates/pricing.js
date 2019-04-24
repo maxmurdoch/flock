@@ -46,7 +46,7 @@ const PricingTemplate = ({data}) => {
             })}
           >
             <PricingHero
-              headerClassName={css({
+              headerCSS={css({
                 backgroundImage: `url(${backgroundImage})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'

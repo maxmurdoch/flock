@@ -6,12 +6,12 @@ import * as R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
 
-const H3 = ({children, tag = 'h3', className, yellowUnderline, ...props}) => {
+const H3 = ({children, tag = 'h3', css: CSS, yellowUnderline, ...props}) => {
   return (
     <Text
       tag={tag}
       mb={1}
-      css={[style.text, yellowUnderline ? style.underline : '', className]}
+      css={[style.text, yellowUnderline ? style.underline : '', CSS]}
       {...props}
     >
       {children}

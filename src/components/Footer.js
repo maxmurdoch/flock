@@ -35,7 +35,7 @@ const socialMediaLinks = [
   }
 ]
 
-const Footer = ({containerClassName}) => {
+const Footer = ({containerCSS}) => {
   const firstFooterLinks = [
     {
       to: '/insurance/commercial',
@@ -91,7 +91,7 @@ const Footer = ({containerClassName}) => {
 
   return (
     <Flex
-      css={containerClassName}
+      css={containerCSS}
       background={colors.backgrounds.dark}
       justifyContent="center"
       pt={[1, 3]}

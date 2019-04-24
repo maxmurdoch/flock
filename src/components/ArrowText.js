@@ -12,7 +12,7 @@ class ArrowText extends Component {
   }
 
   render() {
-    const {className, children, moveOnHover, isHovered} = this.props
+    const {css: CSS, children, moveOnHover, isHovered} = this.props
 
     return (
       <span
@@ -22,7 +22,7 @@ class ArrowText extends Component {
         onMouseOut={() => {
           this.setState({isHovered: false})
         }}
-        css={css({display: 'flex'}, className)}
+        css={css({display: 'flex'}, CSS)}
       >
         {children}
         <i

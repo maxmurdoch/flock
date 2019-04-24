@@ -66,7 +66,7 @@ class TabSection extends Component {
             >
               <SiteContainer
                 edgeToEdge
-                className={css({
+                css={css({
                   scrollbarWidth: 'none',
                   overflowX: 'scroll',
                   '-ms-overflow-style': '-ms-autohiding-scrollbar',
