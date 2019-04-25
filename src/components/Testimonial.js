@@ -110,10 +110,15 @@ class Testimonial extends Component {
                     background: 'rgba(255, 255, 255, 1)'
                   })
 
+                  const dotStyle = [
+                    dot,
+                    isActive ? activeDot : undefined
+                  ]
+
                   return (
                     <button
                       key={index}
-                      className={button}
+                      css={button}
                       onClick={event => {
                         event.preventDefault()
 
@@ -122,9 +127,7 @@ class Testimonial extends Component {
                         })
                       }}
                     >
-                      <div
-                        className={`${dot} ${isActive ? activeDot : null} dot`}
-                      />
+                      <div css={dotStyle} />
                     </button>
                   )
                 }, testimonials)}
