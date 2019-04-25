@@ -1,5 +1,5 @@
 import React from 'react'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 import * as R from 'ramda'
 
 import logo from '../images/logo-white.svg'

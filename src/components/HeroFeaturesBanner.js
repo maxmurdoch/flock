@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 import Media from 'react-media'
 
 import SiteContainer from './SiteContainer'

@@ -2,7 +2,7 @@ import React from 'react'
 import {withPrefix} from 'gatsby'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 import * as R from 'ramda'
 
 import SiteContainer from './SiteContainer'

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 import Flex from './Flex'
 import Box from './Box'
 import H2 from './H2'

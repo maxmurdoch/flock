@@ -1,6 +1,6 @@
 import React from 'react'
 import * as R from 'ramda'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
 import BodyText from './BodyText'
 import SmallText from './SmallText'

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {withPrefix} from 'gatsby'
 import PropTypes from 'prop-types'
 import {addIndex, map, nth} from 'ramda'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
 import Flex from './Flex'
 import Box from './Box'

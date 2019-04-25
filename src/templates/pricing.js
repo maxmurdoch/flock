@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import {StickyContainer} from 'react-sticky'
 import * as R from 'ramda'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 import {graphql} from 'gatsby'
 
 import Layout from '../components/Layout'

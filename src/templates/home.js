@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 import {StickyContainer} from 'react-sticky'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
 import Layout from '../components/Layout'
 import BigSectionLine from '../components/BigSectionLine'

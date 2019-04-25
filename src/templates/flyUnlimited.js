@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {StickyContainer} from 'react-sticky'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
 import Layout from '../components/Layout'
 import BigSectionLine from '../components/BigSectionLine'
