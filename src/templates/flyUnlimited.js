@@ -45,12 +45,12 @@ class FlyUnlimitedPageTemplate extends Component {
             <LightNav />
             <Box css={css({backgroundColor: 'white', paddingBottom: 75})}>
               <Hero
-                headerCSS={css({
+                headerCSS={{
                   backgroundImage: `url(${hero.backgroundImage})`,
                   backgroundPosition: 'top left',
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat'
-                })}
+                }}
                 textColor={colors.white}
                 header={hero.header}
                 description={hero.description}

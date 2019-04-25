@@ -37,13 +37,13 @@ const AboutTemplate = ({
         <LightNav />
         <AboutHero
           center={true}
-          headerCSS={css({
+          headerCSS={{
             backgroundImage: `url(${hero.backgroundImage})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             height: '66vh'
-          })}
+          }}
           textColor={colors.white}
           header={hero.header}
         />

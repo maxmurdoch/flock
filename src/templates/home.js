@@ -123,7 +123,7 @@ const style = {
     marginBottom: 0,
     display: 'block'
   }),
-  header: css({
+  header: {
     background: colors.backgrounds.light,
     backgroundImage: `url(${mobileFlock})`,
     backgroundSize: '45rem',
@@ -134,7 +134,7 @@ const style = {
       backgroundImage: `url(${bigFlock})`,
       backgroundPosition: 'bottom right'
     }
-  })
+  }
 }
 
 HomeTemplate.propTypes = {

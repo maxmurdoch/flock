@@ -22,7 +22,7 @@ class ArrowText extends Component {
         onMouseOut={() => {
           this.setState({isHovered: false})
         }}
-        css={css({display: 'flex'}, CSS)}
+        css={[css({display: 'flex'}), CSS]}
       >
         {children}
         <i

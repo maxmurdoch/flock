@@ -3,7 +3,7 @@ import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 import Media from 'react-media'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
 import H1 from './H1'
 import SiteContainer from './SiteContainer'

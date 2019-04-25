@@ -46,11 +46,11 @@ const PricingTemplate = ({data}) => {
             })}
           >
             <PricingHero
-              headerCSS={css({
+              headerCSS={{
                 backgroundImage: `url(${backgroundImage})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
-              })}
+              }}
               textColor={colors.white}
               header={header}
             />

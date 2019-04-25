@@ -113,7 +113,7 @@ class Testimonial extends Component {
                   return (
                     <button
                       key={index}
-                      css={button}
+                      className={button}
                       onClick={event => {
                         event.preventDefault()
 
@@ -123,7 +123,7 @@ class Testimonial extends Component {
                       }}
                     >
                       <div
-                        css={`${dot} ${isActive ? activeDot : null} dot`}
+                        className={`${dot} ${isActive ? activeDot : null} dot`}
                       />
                     </button>
                   )
