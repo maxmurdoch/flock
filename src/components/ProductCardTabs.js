@@ -38,7 +38,7 @@ const productCardTabPanel = ({customerTypeDesc, productCards}) => {
           buttonTwoUrl={buttonTwoUrl}
           buttonOneExternal={buttonOneExternal}
           buttonTwoExternal={buttonTwoExternal}
-          css={css({marginRight: 16, marginBottom: 16})}
+          style={{marginRight: 16, marginBottom: 16}}
         />
       )
     )

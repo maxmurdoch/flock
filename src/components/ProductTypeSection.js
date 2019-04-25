@@ -43,7 +43,7 @@ const TabSection = ({title, description, productCards}) => {
           buttonTwoUrl={buttonTwoUrl}
           buttonOneExternal={buttonOneExternal}
           buttonTwoExternal={buttonTwoExternal}
-          css={css({marginRight: 16, marginBottom: 16})}
+          style={{marginRight: 16, marginBottom: 16}}
         />
       )
     )
