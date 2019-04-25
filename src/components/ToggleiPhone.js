@@ -109,12 +109,10 @@ class ToggleiPhone extends Component {
                       >
                         <Flex
                           flexDirection="column"
-                          style={{
+                          css={css({
                             borderLeft: equals(this.state.activeIndex, index)
                               ? `3px solid ${colors.yellow}`
-                              : '3px solid transparent'
-                          }}
-                          css={css({
+                              : '3px solid transparent',
                             cursor: path(['isHovered', index], this.state)
                               ? 'pointer'
                               : 'default',
