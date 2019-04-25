@@ -23,7 +23,7 @@ const DarkDesktopNav = (to) => {
         <img css={css({width: '6rem', margin: 0})} src={blackLogo} />
       )}
       DownloadButton={() => (
-        <SecondaryButton Text={SmallText} onClick={download}>Download</SecondaryButton>
+        <SecondaryButton Text={SmallText} onClick={download}>Get the app</SecondaryButton>
       )}
     />
   )

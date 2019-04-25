@@ -78,12 +78,12 @@ const AboutTemplate = ({
         <BigSectionLine />
         <Download to={'https://flockcover.app.link/6IW6kTmgfP'} />
         <Footer
-          containerCSS={css({
+          containerCSS={{
             marginTop: R.nth(3, space),
             [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
               marginTop: R.nth(5, space)
             }
-          })}
+          }}
         />
       </div>
     </StickyContainer>

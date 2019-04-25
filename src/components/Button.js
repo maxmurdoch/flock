@@ -6,6 +6,7 @@ const StyledButton = styled.button`
   border: 0;
   font-weight: 700;
   outline: none;
+  white-space: nowrap;
   ${background}
   ${space}
   ${color}

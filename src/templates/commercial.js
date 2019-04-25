@@ -1,7 +1,6 @@
 import React from 'react'
 import {StickyContainer} from 'react-sticky'
 import {css} from '@emotion/core'
-import {graphql} from 'gatsby'
 
 import Layout from '../components/Layout'
 import BigSectionLine from '../components/BigSectionLine'
@@ -13,6 +12,7 @@ import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import Testimonial from '../components/Testimonial'
 import RenewalBanner from '../components/RenewalBanner'
+import PromotionBanner from '../components/PromotionBanner'
 import ProductTypeSection from '../components/ProductTypeSection'
 
 import Hero from '../components/Hero'
@@ -27,7 +27,8 @@ const CommercialTemplate = ({
   siteMetadataOverride,
   productTypes,
   testimonial,
-  renewalBanner
+  renewalBanner,
+  promotionBanner
 }) => {
   return (
     <StickyContainer>
@@ -51,6 +52,9 @@ const CommercialTemplate = ({
             description={hero.description}
             buttons={hero.buttons}
             features={hero.features}
+            smallPrint={
+              '*Maximum £75 discount off first month. [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+            }
           />
           {!why.hidden && (
             <Box mt={[3, 5]}>
@@ -86,7 +90,7 @@ const CommercialTemplate = ({
           )}
         </Box>
 
-        <Box css={css({backgroundColor: 'white'})}>
+        <Box className={css({backgroundColor: 'white'})}>
           <Box pt={[3, 3]}>
             <Testimonial testimonials={testimonial} />
           </Box>
@@ -101,8 +105,26 @@ const CommercialTemplate = ({
               />
             </Box>
           )}
+
+          {!promotionBanner.hidden && (
+            <Box pt={[3, 6]}>
+              <PromotionBanner
+                image={promotionBanner.image}
+                mainText={promotionBanner.mainText}
+                buttonText={promotionBanner.buttonText}
+                buttonUrl={promotionBanner.buttonUrl}
+                buttonTrack={promotionBanner.buttonTrack}
+                buttonColor={promotionBanner.buttonColor}
+              />
+            </Box>
+          )}
         </Box>
-        <Footer />
+
+        <Footer
+          FUnSmallPrint={
+            '*One free month insurance for new Fly Unlimited customers who start their cover before 11/05/19. Credit card required. Maximum discount is £75. Policies over this amount will be charged at the full policy price, and £75 refunded back. After your free month, we’ll automatically renew your subscription and charge you the full ongoing monthly policy price. Cancel anytime. Full [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+          }
+        />
       </div>
     </StickyContainer>
   )
@@ -119,7 +141,8 @@ const Commercial = ({data}) => {
     siteMetadataOverride,
     productTypes,
     testimonial,
-    renewalBanner
+    renewalBanner,
+    promotionBanner
   } = data.markdownRemark.frontmatter
 
   return (
@@ -133,6 +156,7 @@ const Commercial = ({data}) => {
         productTypes={productTypes}
         testimonial={testimonial}
         renewalBanner={renewalBanner}
+        promotionBanner={promotionBanner}
       />
     </Layout>
   )
@@ -212,6 +236,15 @@ export const query = graphql`
           quote
           author
           image
+        }
+        promotionBanner {
+          hidden
+          image
+          mainText
+          buttonText
+          buttonUrl
+          buttonTrack
+          buttonColor
         }
         renewalBanner {
           hidden

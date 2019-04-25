@@ -8,6 +8,7 @@ import remark from 'remark'
 import remark2react from 'remark-react'
 
 const SmallText = ({
+  id,
   children,
   fontWeight = 400,
   css,
@@ -17,6 +18,7 @@ const SmallText = ({
   if (typeof children === 'string') {
     return (
       <Text
+        id={id}
         tag="div"
         fontWeight={fontWeight}
         mb={mb}
@@ -33,6 +35,7 @@ const SmallText = ({
   } else {
     return (
       <Text
+        id={id}
         fontWeight={fontWeight}
         mb={mb}
         css={[style.smallTextStyle, css]}

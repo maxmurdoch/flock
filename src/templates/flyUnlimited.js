@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {StickyContainer} from 'react-sticky'
+import * as R from 'ramda'
 import {css} from '@emotion/core'
+import {graphql} from 'gatsby'
 
 import Layout from '../components/Layout'
 import BigSectionLine from '../components/BigSectionLine'
@@ -11,14 +13,16 @@ import LightNav from '../components/LightNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
+import Flex from '../components/Flex'
 import RenewalBanner from '../components/RenewalBanner'
+import PromotionBanner from '../components/PromotionBanner'
 import NonToggleiPhone from '../components/NonToggleIphone'
 import BlackBackground from '../components/BlackBackground'
 import FaqSection from '../components/FaqSection'
-
 import Hero from '../components/Hero'
-import {colors} from '../constants/theme'
-import {graphql} from 'gatsby'
+import {colors, breakpoints} from '../constants/theme'
+
+import FUnBadge from '../../static/images/uploads/FUnBadge.svg'
 
 class FlyUnlimitedPageTemplate extends Component {
   render() {
@@ -29,6 +33,7 @@ class FlyUnlimitedPageTemplate extends Component {
       how,
       control,
       renewalBanner,
+      promotionBanner,
       whatIsCovered,
       faqSection
     } = this.props.data.markdownRemark.frontmatter
@@ -51,11 +56,24 @@ class FlyUnlimitedPageTemplate extends Component {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat'
                 }}
+                RightSideComponent={() => (
+                  <Flex
+                    alignItems={'center'}
+                    justifyContent="center"
+                    width={['100%', '20%', '30%']}
+                    ml={3}
+                  >
+                    <img src={FUnBadge} css={style.heroImage} />
+                  </Flex>
+                )}
                 textColor={colors.white}
                 header={hero.header}
                 description={hero.description}
                 buttons={hero.buttons}
                 features={hero.features}
+                smallPrint={
+                  '*Maximum £75 discount off first month. [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+                }
               />
 
               {!why.hidden && (
@@ -126,6 +144,17 @@ class FlyUnlimitedPageTemplate extends Component {
               />
             )}
 
+            {!promotionBanner.hidden && (
+              <PromotionBanner
+                image={promotionBanner.image}
+                mainText={promotionBanner.mainText}
+                buttonText={promotionBanner.buttonText}
+                buttonUrl={promotionBanner.buttonUrl}
+                buttonTrack={promotionBanner.buttonTrack}
+                buttonColor={promotionBanner.buttonColor}
+              />
+            )}
+
             {!faqSection.hidden && (
               <Box css={css({backgroundColor: 'white'})}>
                 <FaqSection
@@ -139,12 +168,28 @@ class FlyUnlimitedPageTemplate extends Component {
               </Box>
             )}
 
-            <Footer />
+            <Footer
+              FUnSmallPrint={
+                '*One free month insurance for new Fly Unlimited customers who start their cover before 11/05/19. Credit card required. Maximum discount is £75. Policies over this amount will be charged at the full policy price, and £75 refunded back. After your free month, we’ll automatically renew your subscription and charge you the full ongoing monthly policy price. Cancel anytime. Full [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
+              }
+            />
           </div>
         </StickyContainer>
       </Layout>
     )
   }
+}
+
+const style = {
+  heroImage: css({
+    marginBottom: 0,
+    display: 'block',
+    height: 'auto',
+    width: '60%',
+    [`@media (max-width: ${R.nth(1, breakpoints)})`]: {
+      width: '100%'
+    }
+  })
 }
 
 FlyUnlimitedPageTemplate.propTypes = {
@@ -179,6 +224,7 @@ export const query = graphql`
           }
           description
           header
+          smallPrint
           backgroundImage
         }
         why {
@@ -210,6 +256,15 @@ export const query = graphql`
             title
             text
           }
+        }
+        promotionBanner {
+          hidden
+          image
+          mainText
+          buttonText
+          buttonUrl
+          buttonTrack
+          buttonColor
         }
         renewalBanner {
           hidden

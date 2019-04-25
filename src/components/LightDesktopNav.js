@@ -34,11 +34,11 @@ const LightDesktopNav = (to) => {
              onClick={download}
             Text={SmallText}
           >
-            Download
+            Get the app
           </SecondaryButton>
         ) : (
           <WhiteButton Text={SmallText} onClick={download}>
-            Download
+            Get the app
           </WhiteButton>
         )
       }
