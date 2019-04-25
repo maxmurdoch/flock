@@ -3,7 +3,7 @@ import {withPrefix} from 'gatsby'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import {Collapse} from 'react-collapse'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 import * as R from 'ramda'
 
 import SiteContainer from './SiteContainer'
@@ -61,10 +61,10 @@ class CalculateRiskDropDown extends Component {
                   return (
                     <LI
                       width={['100%', '100%', '66.66%']}
-                      css={css({
+                      style={{
                         borderBottom: isLast ? 'none' : '1px solid white',
                         cursor: isHovered ? 'pointer' : 'default'
-                      })}
+                      }}
                       pt={3}
                       key={index}
                       pb={3}

@@ -135,7 +135,7 @@ class ToggleiPhone extends Component {
                                 ? colors.yellow
                                 : colors.white
                             }
-                            css="title"
+                            className="title"
                           >
                             {title}
                           </H3>
