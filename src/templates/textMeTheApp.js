@@ -4,7 +4,7 @@ import {StickyContainer} from 'react-sticky'
 import {injectGlobal} from 'emotion'
 import {graphql} from 'gatsby'
 
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/Layout'
 import SiteMetadata from '../components/SiteMetadata'
 import NavBarExternal from '../components/NavBarExternal'
 import TopHalfWhite from '../components/TopHalfWhite'

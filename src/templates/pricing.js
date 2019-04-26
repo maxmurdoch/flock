@@ -5,7 +5,7 @@ import * as R from 'ramda'
 import {css} from '@emotion/core'
 import {graphql} from 'gatsby'
 
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/Layout'
 import LightNav from '../components/LightNav'
 import Testimonial from '../components/Testimonial'
 import Download from '../components/DownloadFlock'

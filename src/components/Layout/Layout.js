@@ -6,13 +6,13 @@ import Helmet from 'react-helmet'
 import {ThemeProvider} from 'emotion-theming'
 import CookieConsent from 'react-cookie-consent'
 import Media from 'react-media'
-import favicon from '../images/icons/favicon.ico'
-import theme, {fontFamilies, colors, breakpoints} from '../constants/theme'
+import favicon from '../../images/icons/favicon.ico'
+import theme, {fontFamilies, colors, breakpoints} from '../../constants/theme'
 import './Layout.css'
 import {StaticQuery, graphql} from 'gatsby'
 
-import itc from '../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
-import chivo from '../fonts/chivo/Chivo-Regular.woff2'
+import itc from '../../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
+import chivo from '../../fonts/chivo/Chivo-Regular.woff2'
 
 injectGlobal`
 ::selection {
