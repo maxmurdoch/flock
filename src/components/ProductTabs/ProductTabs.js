@@ -2,11 +2,10 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 import {css} from '@emotion/core'
-
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
+
 import './ProductTabs.css'
 
-import {breakpoints} from '../../constants/theme'
 import H2 from '../H2'
 import BodyText from '../BodyText'
 import SiteContainer from '../SiteContainer'
