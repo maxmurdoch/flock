@@ -25,7 +25,7 @@ class ProductLink extends Component {
           this.setState({isHovered: false})
         }}
         to={to}
-        css={styles.link}
+        style={styles.link}
       >
         <img
           css={css({
@@ -50,7 +50,7 @@ class ProductLink extends Component {
 export default ProductLink
 
 const styles = {
-  link: css({
+  link: {
     textDecoration: 'none',
     display: 'flex',
     flexDirection: 'column',
@@ -59,7 +59,7 @@ const styles = {
     height: '100%',
     paddingTop: R.nth(3, space),
     paddingBottom: R.nth(3, space)
-  })
+  }
 }
 
 ProductLink.propTypes = {

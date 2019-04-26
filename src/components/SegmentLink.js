@@ -29,7 +29,7 @@ class SegmentLink extends Component {
           onMouseOut={() => {
             this.setState({isHovered: false})
           }}
-          css={styles.link}
+          style={styles.link}
           to={link}
         >
           <img
@@ -63,7 +63,7 @@ class SegmentLink extends Component {
 export default SegmentLink
 
 const styles = {
-  link: css({
+  link: {
     zIndex: 1,
     display: 'flex',
     fontFamily: fontFamilies.chivo,
@@ -76,7 +76,7 @@ const styles = {
     '&:hover': {
       transform: 'translateY(-10px)'
     }
-  })
+  }
 }
 
 SegmentLink.propTypes = {
