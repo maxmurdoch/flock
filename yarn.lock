@@ -921,10 +921,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.2.tgz#63985d3d8b02530e0869962f4da09142ee8e200e"
   integrity sha512-n/VQ4mbfr81aqkx/XmVicOLjviMuy02eenSdJY33SVA7S2J42EU0P1H0mOogfYedb3wXA0d/LVtBrgTSm04WEA==
 
-"@flockcover/gatsby-plugin-branch-web-sdk@1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@flockcover/gatsby-plugin-branch-web-sdk/-/gatsby-plugin-branch-web-sdk-1.0.12.tgz#a7830c5e0486c67c49fb955057fe357e1258776c"
-  integrity sha512-95+1qQPdYxDG3W2hwL560dIDEd1vubVtHoRY9+i72VdCgDiWMPsw6oVPeO4asv0EoHS4uHHNKA8N8tWMR2zt+g==
+"@flockcover/gatsby-plugin-branch-web-sdk@1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@flockcover/gatsby-plugin-branch-web-sdk/-/gatsby-plugin-branch-web-sdk-1.0.13.tgz#3faafe04a35bd5dff8c0241d126cabefa2df5bfb"
+  integrity sha512-Rvt510B/68vChWeAS7QzW+mKOhAHX5qbj/e07kukgWsj3SYS2GnlgUtdoKiK1aXM+lENUAR/MLBqasUXn4mevg==
 
 "@gatsbyjs/relay-compiler@2.0.0-printer-fix.2":
   version "2.0.0-printer-fix.2"
