@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {withPrefix} from 'gatsby'
 import PropTypes from 'prop-types'
 import {inc, addIndex, map, nth, path, F, equals, length, gte} from 'ramda'
-import {css, keyframes} from '@emotion/core'
+import {css} from '@emotion/core'
 
 import Flex from './Flex'
 import Box from './Box'
@@ -158,13 +158,7 @@ class ToggleiPhone extends Component {
                       ({image}, index) => (
                         <img
                           key={index}
-                          css={[
-                            style.animated,
-                            equals(index, this.state.activeIndex)
-                              ? style.fadeInRight
-                              : style.fadeOutLeft,
-                            style.screen
-                          ]}
+                          css={style.screen}
                           src={withPrefix(image)}
                         />
                       ),
@@ -180,29 +174,6 @@ class ToggleiPhone extends Component {
       </Flex>
     )
   }
-}
-
-const animations = {
-  fadeInRight: keyframes`
-    from {
-      z-index: 1;
-      transform: translate3d(200%, 0, 0);
-    }
-
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-`,
-  fadeOutLeft: keyframes`
-    from {
-      z-index: 0;
-      transform: translate3d(0, 0, 0);
-    }
-
-    to {
-      transform: translate3d(-200%, 0, 0);
-    }
-`
 }
 
 const style = {
@@ -250,18 +221,6 @@ const style = {
       borderRadius: '53px',
       width: '18rem'
     }
-  }),
-  animated: css({
-    animationDuration: '300ms',
-    animationFillMode: 'both'
-  }),
-  fadeOutLeft: css({
-    zIndex: 0,
-    animationName: animations.fadeOutLeft
-  }),
-  fadeInRight: css({
-    zIndex: 1,
-    animationName: animations.fadeInRight
   })
 }
 
