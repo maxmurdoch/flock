@@ -20,39 +20,39 @@ import {colors, space} from '../constants/theme'
 const mapIndex = R.addIndex(R.map)
 
 const styles = {
-  product: css({
+  product: {
     fontWeight: 700,
     display: 'flex',
     color: colors.white,
     textDecoration: 'none',
     marginTop: R.nth(2, space)
-  })
+  }
 }
 
 const navList = [
   {
     to: '/',
-    css: styles.product,
+    style: styles.product,
     text: 'Home'
   },
   {
     to: '/about',
-    css: styles.product,
+    style: styles.product,
     text: 'About us'
   },
   {
     to: 'https://help.flockcover.com',
-    css: styles.product,
+    style: styles.product,
     text: 'FAQ'
   },
   {
     to: 'https://blog.flockcover.com/',
-    css: styles.product,
+    style: styles.product,
     text: 'Blog'
   },
   {
     to: 'https://flockcover.workable.com',
-    css: styles.product,
+    style: styles.product,
     text: 'Jobs'
   }
 ]
@@ -138,8 +138,8 @@ const MobileNav = ({
                       width="100%"
                     />
                     {mapIndex(
-                      ({text, to, css}, key) => (
-                        <Link key={key} to={to} css={css}>
+                      ({text, to, style}, key) => (
+                        <Link key={key} to={to} style={style}>
                           <SmallText>{text}</SmallText>
                         </Link>
                       ),
@@ -150,7 +150,7 @@ const MobileNav = ({
                       borderBottom={`1px solid ${colors.white}`}
                       width="100%"
                     />
-                    <Link to={to.to} css={styles.product}>
+                    <Link to={to.to} style={styles.product}>
                       <ArrowText>
                         <SmallText fontWeight={700}>Download</SmallText>
                       </ArrowText>

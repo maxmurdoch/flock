@@ -27,7 +27,7 @@ const FlightSchool = ({title, list}) => {
           >
             {mapIndex(({image, to}, key) => {
               return (
-                <Link target="_blank" css={style.link} to={to} key={key}>
+                <Link target="_blank" style={style.link} to={to} key={key}>
                   <img src={withPrefix(image)} css={style.image} />
                 </Link>
               )
@@ -45,12 +45,12 @@ const style = {
     paddingLeft: R.nth(1, space),
     paddingRight: R.nth(1, space)
   }),
-  link: css({
+  link: {
     width: '10rem',
     [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
       width: '25%'
     }
-  })
+  }
 }
 
 FlightSchool.propTypes = {
