@@ -165,7 +165,7 @@ export default ({children}) => (
                       This website uses cookies to enhance the user experience.
                       &nbsp;{' '}
                       <a
-                        css="cookiesLinkSmall"
+                        className="cookiesLinkSmall"
                         href="https://help.flockcover.com/legal/cookies-policy"
                         target="_blank"
                       >
@@ -206,7 +206,7 @@ export default ({children}) => (
                       This website uses cookies to enhance the user experience.
                       &nbsp;{' '}
                       <a
-                        css="cookiesLink"
+                        className="cookiesLink"
                         href="https://help.flockcover.com/legal/cookies-policy"
                         target="_blank"
                       >
