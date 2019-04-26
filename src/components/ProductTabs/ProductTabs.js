@@ -59,7 +59,7 @@ class TabSection extends Component {
         </Flex>
 
         <div css={css({background: '#363636'})}>
-          <Tabs>
+          <Tabs className="product-tabs">
             <Flex justifyContent="center" css={css({backgroundColor: 'white'})}>
               <SiteContainer
                 edgeToEdge

@@ -1,10 +1,10 @@
-.react-tabs__tab-list {
+.product-tabs .react-tabs__tab-list {
   margin-left: 20px;
   margin-bottom: 0px;
   display: flex;
 }
 
-.react-tabs__tab {
+.product-tabs .react-tabs__tab {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,35 +21,35 @@
   background-color: #f7f7f4;
 }
 
-.react-tabs__tab:focus {
+.product-tabs .react-tabs__tab:focus {
   box-shadow: none;
   outline: none;
 }
 
 @media (min-width: 38em)  {
-  .react-tabs__tab {
+  .product-tabs .react-tabs__tab {
     margin-right: 10px;
   }
 }
 
 @media (min-width: 52em) {
-  .react-tabs__tab {
+  .product-tabs .react-tabs__tab {
     margin-right: 15px;
   }
 }
 
-.react-tabs__tab--selected {
+.product-tabs .react-tabs__tab--selected {
   box-sizing: border-box;
   background-color: #363636;
   color: white;
   border-top: 7px solid #ffe001;
 }
 
-.react-tabs__tab-panel {
+.product-tabs .react-tabs__tab-panel {
   display: none;
 }
 
-.react-tabs__tab-panel--selected {
+.product-tabs .react-tabs__tab-panel--selected {
   display: block;
   background: #363636;
   padding-top: 30px;
