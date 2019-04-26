@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 import {css} from '@emotion/core'
-import {injectGlobal} from 'emotion'
 
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
@@ -105,11 +104,3 @@ const styles = {
     }
     `
 }
-
-const style = {}
-
-injectGlobal`
-  h2 {
-    ${style.text}
-  }
-`
