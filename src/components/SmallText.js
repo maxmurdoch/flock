@@ -1,7 +1,7 @@
 import React from 'react'
-import {css, cx} from 'react-emotion'
+import {css} from '@emotion/core'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import Text from './Text'
 import {breakpoints} from '../constants/theme'
 import remark from 'remark'
@@ -11,30 +11,34 @@ const SmallText = ({
   id,
   children,
   fontWeight = 400,
-  className,
+  css,
   mb = 0,
   ...props
 }) => {
-  if (typeof(children) === 'string') {
+  if (typeof children === 'string') {
     return (
       <Text
         id={id}
         tag="div"
         fontWeight={fontWeight}
         mb={mb}
-        className={cx(style.smallTextStyle, className)}
+        css={[style.smallTextStyle, css]}
         {...props}
       >
-        {remark().use(remark2react).processSync(children).contents}
+        {
+          remark()
+            .use(remark2react)
+            .processSync(children).contents
+        }
       </Text>
     )
   } else {
-    return(
+    return (
       <Text
         id={id}
         fontWeight={fontWeight}
         mb={mb}
-        className={cx(style.smallTextStyle, className)}
+        css={[style.smallTextStyle, css]}
         {...props}
       >
         {children}
@@ -45,7 +49,7 @@ const SmallText = ({
 
 SmallText.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string,
+  css: PropTypes.string,
   mb: PropTypes.oneOfType([PropTypes.number, PropTypes.array]),
   fontWeight: PropTypes.number
 }

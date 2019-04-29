@@ -1,5 +1,5 @@
 import React from 'react'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import H2 from './H2'
 import Flex from './Flex'

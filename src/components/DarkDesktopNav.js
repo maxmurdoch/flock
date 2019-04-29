@@ -1,5 +1,5 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import SecondaryButton from './SecondaryButton'
 import SmallText from './SmallText'
@@ -20,7 +20,7 @@ const DarkDesktopNav = (to) => {
       textColor={() => colors.dark}
       arrowImage={() => blackDownArrow}
       Logo={() => (
-        <img className={css({width: '6rem', margin: 0})} src={blackLogo} />
+        <img css={css({width: '6rem', margin: 0})} src={blackLogo} />
       )}
       DownloadButton={() => (
         <SecondaryButton Text={SmallText} onClick={download}>Get the app</SecondaryButton>

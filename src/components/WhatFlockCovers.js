@@ -1,6 +1,6 @@
 import React from 'react'
-import R from 'ramda'
-import {css} from 'emotion'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
 
 import BodyText from './BodyText'
 import SmallText from './SmallText'
@@ -18,7 +18,7 @@ const TickGrid = ({list}) => {
       {mapIndex(({text}, index) => {
         return (
           <Box width={['100%', '33.33%']} display="flex" pb={4} key={index}>
-            <img className={css({marginBottom: 0})} src={tick} />
+            <img css={css({marginBottom: 0})} src={tick} />
             <SmallText pl={2}>{text}</SmallText>
           </Box>
         )

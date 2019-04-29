@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 import PropTypes from 'prop-types'
-import R from 'ramda'
-import {css} from 'react-emotion'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
 
 import Link from './Link'
 import ArrowText from './ArrowText'
@@ -25,17 +25,17 @@ class ProductLink extends Component {
           this.setState({isHovered: false})
         }}
         to={to}
-        className={styles.link}
+        style={styles.link}
       >
         <img
-          className={css({
+          css={css({
             height: '2rem',
             marginBottom: R.nth(1, space)
           })}
           src={withPrefix(image)}
         />
         <ArrowText
-          className={css({fontFamily: fontFamilies.chivo})}
+          css={css({fontFamily: fontFamilies.chivo})}
           isHovered={this.state.isHovered}
         >
           <SmallText fontWeight={700} color={colors.white}>
@@ -50,7 +50,7 @@ class ProductLink extends Component {
 export default ProductLink
 
 const styles = {
-  link: css({
+  link: {
     textDecoration: 'none',
     display: 'flex',
     flexDirection: 'column',
@@ -59,7 +59,7 @@ const styles = {
     height: '100%',
     paddingTop: R.nth(3, space),
     paddingBottom: R.nth(3, space)
-  })
+  }
 }
 
 ProductLink.propTypes = {

@@ -2,11 +2,14 @@ import React, {Component, Fragment} from 'react'
 import Card from '@material-ui/core/Card'
 import {StickyContainer} from 'react-sticky'
 import {injectGlobal} from 'emotion'
+import {graphql} from 'gatsby'
+
+import Layout from '../components/Layout/Layout'
 import SiteMetadata from '../components/SiteMetadata'
 import NavBarExternal from '../components/NavBarExternal'
 import TopHalfWhite from '../components/TopHalfWhite'
 import blackLogo from '../images/logo-black.svg'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 import Media from 'react-media'
 import arrowWhite from '../images/icons/arrow-white.svg'
 import iPhone from '../images/phones/text-me-the-app.png'
@@ -43,33 +46,46 @@ class TextMeTheAppTemplate extends Component {
     this.setState({value: '', sent: true})
   }
 
-  renderButton (textField) {
-    const text = this.state.sent ? textField.buttonTextAfter : textField.buttonText
+  renderButton(textField) {
+    const text = this.state.sent
+      ? textField.buttonTextAfter
+      : textField.buttonText
     return (
       <button style={styles.buttonStyle} onClick={this.sendSMS}>
-        <span style={
-          styles.buttonContainer
-        }>
+        <span style={styles.buttonContainer}>
           <Media query="(min-width: 400px)">
-            {(matches) => matches
-            ? <Fragment><span style={styles.buttonText}>{text}</span>
-              <Media query="(min-width: 610px)">
-                {(matches) => matches
-                  ? <img style={styles.buttonIcon} src={arrowWhite}></img>
-                  : null
-                }
-              </Media></Fragment>
-            : <Fragment><span style={{
-                fontSize: '14px',
-                lineHeight: '20px',
-                ...styles.buttonText
-              }}>{text}</span>
-              <Media query="(min-width: 610px)">
-                {(matches) => matches
-                  ? <img style={styles.buttonIcon} src={arrowWhite}></img>
-                  : null
-                }
-              </Media></Fragment>
+            {matches =>
+              matches ? (
+                <Fragment>
+                  <span style={styles.buttonText}>{text}</span>
+                  <Media query="(min-width: 610px)">
+                    {matches =>
+                      matches ? (
+                        <img style={styles.buttonIcon} src={arrowWhite} />
+                      ) : null
+                    }
+                  </Media>
+                </Fragment>
+              ) : (
+                <Fragment>
+                  <span
+                    style={{
+                      fontSize: '14px',
+                      lineHeight: '20px',
+                      ...styles.buttonText
+                    }}
+                  >
+                    {text}
+                  </span>
+                  <Media query="(min-width: 610px)">
+                    {matches =>
+                      matches ? (
+                        <img style={styles.buttonIcon} src={arrowWhite} />
+                      ) : null
+                    }
+                  </Media>
+                </Fragment>
+              )
             }
           </Media>
         </span>
@@ -77,8 +93,8 @@ class TextMeTheAppTemplate extends Component {
     )
   }
 
-  renderInput (textField) {
-    return(
+  renderInput(textField) {
+    return (
       <input
         id="phone"
         name="phone"
@@ -92,47 +108,59 @@ class TextMeTheAppTemplate extends Component {
     )
   }
 
-  renderHelperText (textField) {
-    return(
-      <p style={styles.helperParagraph}>{textField.subText}</p>
+  renderHelperText(textField) {
+    return <p style={styles.helperParagraph}>{textField.subText}</p>
+  }
+
+  renderIphone() {
+    return (
+      <Media query="(min-width: 1024px) and (min-height: 750px)">
+        {matches =>
+          matches ? (
+            <img style={{width: 475, marginTop: 125}} src={iPhone} />
+          ) : null
+        }
+      </Media>
     )
   }
 
-  renderIphone () {
-    return(<Media query="(min-width: 1024px) and (min-height: 750px)">
-      {(matches) => matches
-        ? <img style={{width: 475, marginTop: 125}} src={iPhone} />
-        : null
-      }
-    </Media>)
-  }
-
   render() {
-    const { siteMetadataOverride, header, topHalf, textField } = this.props.data.markdownRemark.frontmatter
+    const {
+      siteMetadataOverride,
+      header,
+      topHalf,
+      textField
+    } = this.props.data.markdownRemark.frontmatter
     return (
-      <StickyContainer>
-        <div className={css(styles.root)}>
-          <SiteMetadata
-            title={siteMetadataOverride.title}
-            description={siteMetadataOverride.description}
-            keywords={siteMetadataOverride.keywords}
-          />
-          <NavBarExternal backIcon={header.backIcon} backText={header.backText} backUrl={header.backUrl}/>
-          <TopHalfWhite title={topHalf.title} subTitle={topHalf.subTitle}/>
+      <Layout>
+        <StickyContainer>
+          <div css={css(styles.root)}>
+            <SiteMetadata
+              title={siteMetadataOverride.title}
+              description={siteMetadataOverride.description}
+              keywords={siteMetadataOverride.keywords}
+            />
+            <NavBarExternal
+              backIcon={header.backIcon}
+              backText={header.backText}
+              backUrl={header.backUrl}
+            />
+            <TopHalfWhite title={topHalf.title} subTitle={topHalf.subTitle} />
 
-          <div className={css(styles.container)}>
-            <div className={css(styles.content)}>
-              <div className={css(styles.toolbar)}>
-                {this.renderInput(textField)}
-                {this.renderButton(textField)}
-                {this.renderHelperText(textField)}
+            <div css={css(styles.container)}>
+              <div css={css(styles.content)}>
+                <div css={css(styles.toolbar)}>
+                  {this.renderInput(textField)}
+                  {this.renderButton(textField)}
+                  {this.renderHelperText(textField)}
+                </div>
+
+                {this.renderIphone()}
               </div>
-
-              {this.renderIphone()}
             </div>
           </div>
-        </div>
-      </StickyContainer>
+        </StickyContainer>
+      </Layout>
     )
   }
 }

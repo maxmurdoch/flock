@@ -2,25 +2,25 @@ import * as React from 'react'
 import Media from 'react-media'
 import flock from '../images/icons/flock.svg'
 import flockSmall from '../images/icons/flockSmall.svg'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 const NavBarExternal = ({ backIcon, backText, backUrl }) => {
-  return (<div className={css(styles.wrapper)}>
-    <div className={css(styles.container)}>
+  return (<div css={css(styles.wrapper)}>
+    <div css={css(styles.container)}>
       <Media query="(min-width: 768px)">
         {(matches) => matches
-          ? <button className={css(styles.hidden)}></button>
-          : <a className={css(styles.smallLink)} href={backUrl}>
+          ? <button css={css(styles.hidden)}></button>
+          : <a css={css(styles.smallLink)} href={backUrl}>
               <img src={backIcon} alt="Back Arrow" />
             </a>
         }
       </Media>
       <Media query="(min-width: 768px)">
         {(matches) => matches
-          ? <div className={css(styles.largeImageWrapper)}>
-              <img className={css(styles.largeImage)} src={flock} alt="Flock Logo" />
+          ? <div css={css(styles.largeImageWrapper)}>
+              <img css={css(styles.largeImage)} src={flock} alt="Flock Logo" />
             </div>
-          : <div className={css(styles.smallImageWrapper)}>
+          : <div css={css(styles.smallImageWrapper)}>
               <img src={flockSmall} alt="Flock Logo" />
             </div>
         }
@@ -28,9 +28,9 @@ const NavBarExternal = ({ backIcon, backText, backUrl }) => {
 
       <Media query="(min-width: 768px)">
         {(matches) => matches
-          ? <div className={css(styles.linkTextWrapper)}>
-              <a className={css(styles.linkText)} href={backUrl}>
-                <img className={css(styles.linkImage)} src={backIcon} alt="Back Arrow" />
+          ? <div css={css(styles.linkTextWrapper)}>
+              <a css={css(styles.linkText)} href={backUrl}>
+                <img css={css(styles.linkImage)} src={backIcon} alt="Back Arrow" />
                 {backText}
               </a>
             </div>

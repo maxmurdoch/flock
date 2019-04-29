@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import Media from 'react-media'
-import {css, injectGlobal, cx} from 'react-emotion'
+import {css} from '@emotion/core'
+import {injectGlobal} from 'emotion'
+
 import Flex from './Flex'
 import H2 from './H2'
 import BodyText from './BodyText'
@@ -70,7 +72,7 @@ class FUfaqSection extends React.Component {
                       justifyContent="space-between"
                       pt={20}
                       pb={20}
-                      className={css({
+                      css={css({
                         borderWidth: '0px 0px 1px 0px',
                         borderStyle: 'solid',
                         borderColor: openIdx === idx ? 'transparent' : 'gray',
@@ -83,7 +85,7 @@ class FUfaqSection extends React.Component {
 
                       <img
                         src={disclosureIndicator}
-                        className={css({
+                        css={css({
                           transform: `rotate(${
                             openIdx === idx ? '180' : '0'
                           }deg)`,
@@ -96,7 +98,7 @@ class FUfaqSection extends React.Component {
                     {openIdx === idx && (
                       <SmallText
                         pb={2}
-                        className={css({
+                        css={css({
                           borderWidth: '0px 0px 1px 0px',
                           borderStyle: 'solid',
                           borderColor: 'gray',

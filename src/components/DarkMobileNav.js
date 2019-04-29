@@ -1,8 +1,8 @@
 import React from 'react'
 import {Sticky} from 'react-sticky'
 import {withState} from 'recompose'
-import R from 'ramda'
-import {css} from 'react-emotion'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
 
 import Collapse from './NavMenuCollapse'
 import Link from './Link'
@@ -20,39 +20,39 @@ import {colors, space} from '../constants/theme'
 const mapIndex = R.addIndex(R.map)
 
 const styles = {
-  product: css({
+  product: {
     fontWeight: 700,
     display: 'flex',
     color: colors.white,
     textDecoration: 'none',
     marginTop: R.nth(2, space)
-  })
+  }
 }
 
 const navList = [
   {
     to: '/',
-    className: styles.product,
+    style: styles.product,
     text: 'Home'
   },
   {
     to: '/about',
-    className: styles.product,
+    style: styles.product,
     text: 'About us'
   },
   {
     to: 'https://help.flockcover.com',
-    className: styles.product,
+    style: styles.product,
     text: 'FAQ'
   },
   {
     to: 'https://blog.flockcover.com/',
-    className: styles.product,
+    style: styles.product,
     text: 'Blog'
   },
   {
     to: 'https://flockcover.workable.com',
-    className: styles.product,
+    style: styles.product,
     text: 'Jobs'
   }
 ]
@@ -85,14 +85,14 @@ const MobileNav = ({
               pl={2}
               justifyContent="space-between"
               width="100%"
-              className={css({
+              css={css({
                 transition: '200ms background ease-in-out'
               })}
             >
               <Box>
                 <Link to="/">
                   <img
-                    className={css({
+                    css={css({
                       marginBottom: 0,
                       width: R.nth(5, space)
                     })}
@@ -102,7 +102,7 @@ const MobileNav = ({
               </Box>
               <Box>
                 <button
-                  className={css({
+                  css={css({
                     border: 0,
                     background: 'none',
                     display: 'flex',
@@ -113,7 +113,7 @@ const MobileNav = ({
                   }}
                 >
                   <img
-                    className={css({
+                    css={css({
                       marginBottom: 0,
                       paddingRight: 5
                     })}
@@ -127,7 +127,7 @@ const MobileNav = ({
               <Flex background={colors.backgrounds.dark} width="100%" pb={150}>
                 <SiteContainer>
                   <nav
-                    className={css({
+                    css={css({
                       width: '100%'
                     })}
                   >
@@ -138,8 +138,8 @@ const MobileNav = ({
                       width="100%"
                     />
                     {mapIndex(
-                      ({text, to, className}, key) => (
-                        <Link key={key} to={to} className={className}>
+                      ({text, to, style}, key) => (
+                        <Link key={key} to={to} style={style}>
                           <SmallText>{text}</SmallText>
                         </Link>
                       ),
@@ -150,7 +150,7 @@ const MobileNav = ({
                       borderBottom={`1px solid ${colors.white}`}
                       width="100%"
                     />
-                    <Link to={to.to} className={styles.product}>
+                    <Link to={to.to} style={styles.product}>
                       <ArrowText>
                         <SmallText fontWeight={700}>Download</SmallText>
                       </ArrowText>

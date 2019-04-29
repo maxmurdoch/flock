@@ -1,7 +1,7 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import Media from 'react-media'
 
 import H1 from './H1'
@@ -16,7 +16,7 @@ import {colors, breakpoints} from '../constants/theme'
 
 const AboutHero = ({
   textColor = colors.dark,
-  headerClassName,
+  headerCSS,
   header,
   description,
   button
@@ -31,7 +31,7 @@ const AboutHero = ({
       <Flex
         alignItems="center"
         justifyContent="center"
-        className={headerClassName}
+        css={headerCSS}
         flex="1 1 auto"
       >
         <SiteContainer>
@@ -64,7 +64,7 @@ export default AboutHero
 
 AboutHero.propTypes = {
   textColor: PropTypes.string,
-  headerClassName: PropTypes.string,
+  headerCSS: PropTypes.string,
   header: PropTypes.string,
   description: PropTypes.string,
   button: PropTypes.object,

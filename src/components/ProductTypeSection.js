@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
-import {css} from 'react-emotion'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
 
 import {breakpoints} from '../constants/theme'
 import H2 from './H2'
@@ -43,7 +43,7 @@ const TabSection = ({title, description, productCards}) => {
           buttonTwoUrl={buttonTwoUrl}
           buttonOneExternal={buttonOneExternal}
           buttonTwoExternal={buttonTwoExternal}
-          className={css({marginRight: 16, marginBottom: 16})}
+          style={{marginRight: 16, marginBottom: 16}}
         />
       )
     )

@@ -1,8 +1,8 @@
 import React from 'react'
-import {withPrefix} from 'gatsby-link'
-import {css} from 'react-emotion'
+import {withPrefix} from 'gatsby'
+import {css} from '@emotion/core'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import SiteContainer from './SiteContainer'
 import SmallText from './SmallText'
@@ -29,7 +29,7 @@ const MeetTheTeam = ({title, description, team}) => {
                   width={['50%', '33.33%', `${100 / 6}%`]}
                 >
                   <ShowIf predicate={!!image}>
-                    <img src={withPrefix(image)} className={style.image} />
+                    <img src={withPrefix(image)} css={style.image} />
                   </ShowIf>
                   <SmallText fontWeight={700}>{member}</SmallText>
                   <SmallText>{role}</SmallText>

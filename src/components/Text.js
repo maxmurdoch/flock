@@ -1,6 +1,6 @@
 import React from 'react'
-import R from 'ramda'
-import styled from 'react-emotion'
+import * as R from 'ramda'
+import styled from '@emotion/styled'
 import NewLineToBr from './NewLineToBr'
 import PropTypes from 'prop-types'
 import {
@@ -62,7 +62,7 @@ const Text = ({
 }
 
 Text.propTypes = {
-  className: PropTypes.string,
+  css: PropTypes.string,
   tag: PropTypes.string,
   fontWeight: PropTypes.number,
   markdown: PropTypes.bool,

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import {downloadClickHandler} from '../utils/trackDownload'
 import {colors} from '../constants/theme'
@@ -43,7 +43,7 @@ const NavButton = ({
   }
   return (
     <button
-      className={css({
+      css={css({
         cursor: 'pointer',
         appearance: 'none',
         display: 'inline-block',
@@ -62,7 +62,7 @@ const NavButton = ({
       onClick={clickHandler}
     >
       <span
-        className={css({
+        css={css({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -71,7 +71,7 @@ const NavButton = ({
         })}
       >
         <span
-          className={css({
+          css={css({
             fontFamily: 'ITC, sans-serif',
             fontSize: '16px',
             fontWeight: '700',
@@ -83,7 +83,7 @@ const NavButton = ({
           {title}
         </span>
         <img
-          className={css({marginLeft: 24, marginBottom: 0})}
+          css={css({marginLeft: 24, marginBottom: 0})}
           src={color === 'yellow' ? BlackArrow : WhiteArrow}
         />
       </span>

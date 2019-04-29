@@ -1,7 +1,7 @@
 import React from 'react'
-import {css, cx} from 'react-emotion'
-import R from 'ramda'
-import {withPrefix} from 'gatsby-link'
+import {css} from '@emotion/core'
+import * as R from 'ramda'
+import {withPrefix} from 'gatsby'
 
 import Flex from './Flex'
 import H1 from './H1'
@@ -27,19 +27,19 @@ const PriceCard = ({
   buttonOneExternal,
   buttonTwoExternal,
   flex = null,
-  className
+  style
 }) => (
   <Flex
     flex={flex || '0 0 auto'}
     flexDirection="column"
     width={[300, 400, 400]}
-    className={cx(
+    css={[
       css({
         boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
         transition: '0.3s'
       }),
-      className
-    )}
+      css(style)
+    ]}
   >
     {productType && (
       <Flex
@@ -59,7 +59,7 @@ const PriceCard = ({
         {icon && (
           <img
             src={withPrefix(icon)}
-            className={css({marginBottom: 0, height: 30})}
+            css={css({marginBottom: 0, height: 30})}
           />
         )}
       </Flex>
@@ -83,7 +83,7 @@ const PriceCard = ({
             {fromPrice}
           </H1>
           <SmallText
-            className={css({
+            css={css({
               marginLeft: 10,
               lineHeight: '28px'
             })}
@@ -110,7 +110,7 @@ const PriceCard = ({
           {mapIndex(
             ({text}) => (
               <SmallText
-                className={css({
+                css={css({
                   fontSize: 15,
                   marginBottom: 10
                 })}
@@ -126,7 +126,7 @@ const PriceCard = ({
 
     <Flex
       flexDirection="column"
-      className={css({
+      css={css({
         backgroundColor: '#F7F7F4',
         alignItems: 'flex-start',
         paddingTop: 5,

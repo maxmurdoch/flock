@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
-import {css} from 'emotion'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
 import Flex from './Flex'
 import Box from './Box'
 import H2 from './H2'
@@ -35,7 +35,7 @@ class Testimonial extends Component {
             flexWrap="wrap"
             justifyContent={['flex-start', 'center']}
             background={`url(${R.prop('image', activeTestimonial)})`}
-            className={styles.background}
+            css={styles.background}
             pt={[3, 5]}
             pb={[2, 3]}
             pl={2}
@@ -110,10 +110,15 @@ class Testimonial extends Component {
                     background: 'rgba(255, 255, 255, 1)'
                   })
 
+                  const dotStyle = [
+                    dot,
+                    isActive ? activeDot : undefined
+                  ]
+
                   return (
                     <button
                       key={index}
-                      className={button}
+                      css={button}
                       onClick={event => {
                         event.preventDefault()
 
@@ -122,9 +127,7 @@ class Testimonial extends Component {
                         })
                       }}
                     >
-                      <div
-                        className={`${dot} ${isActive ? activeDot : null} dot`}
-                      />
+                      <div css={dotStyle} />
                     </button>
                   )
                 }, testimonials)}

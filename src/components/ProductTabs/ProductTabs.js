@@ -1,16 +1,17 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
-import {css} from 'react-emotion'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
 import {Tabs, TabList, Tab, TabPanel} from 'react-tabs'
 
-import {breakpoints} from '../constants/theme'
-import H2 from './H2'
-import BodyText from './BodyText'
-import SiteContainer from './SiteContainer'
-import ShowIf from './ShowIf'
-import Flex from './Flex'
-import Box from './Box'
+import './ProductTabs.css'
+
+import H2 from '../H2'
+import BodyText from '../BodyText'
+import SiteContainer from '../SiteContainer'
+import ShowIf from '../ShowIf'
+import Flex from '../Flex'
+import Box from '../Box'
 
 class TabSection extends Component {
   static Tab = () => {}
@@ -18,8 +19,7 @@ class TabSection extends Component {
   renderTabs = tabs =>
     tabs.map(({title}) => (
       <Tab
-        className={styles.tabStyle}
-        selectedClassName={css(styles.selectedTabStyle)}
+
         key={title}
       >
         {title}
@@ -35,7 +35,6 @@ class TabSection extends Component {
       renderTabPanel,
       props: {title, description, children}
     } = this
-    const {tabListStyle, selectedTabPanelStyle} = styles
     const tabs = React.Children.toArray(children).map(tab => tab.props)
 
     return (
@@ -58,24 +57,21 @@ class TabSection extends Component {
           </SiteContainer>
         </Flex>
 
-        <div className={css({background: '#363636'})}>
-          <Tabs selectedTabPanelClassName={css(selectedTabPanelStyle)}>
-            <Flex
-              justifyContent="center"
-              className={css({backgroundColor: 'white'})}
-            >
+        <div css={css({background: '#363636'})}>
+          <Tabs className="product-tabs">
+            <Flex justifyContent="center" css={css({backgroundColor: 'white'})}>
               <SiteContainer
                 edgeToEdge
-                className={css({
+                style={{
                   scrollbarWidth: 'none',
                   overflowX: 'scroll',
                   '-ms-overflow-style': '-ms-autohiding-scrollbar',
                   '&::-webkit-scrollbar': {
                     display: 'none'
                   }
-                })}
+                }}
               >
-                <TabList className={css(tabListStyle)}>
+                <TabList>
                   {renderTabs(tabs)}
                 </TabList>
               </SiteContainer>
@@ -104,52 +100,4 @@ TabSection.propTypes = {
       icon: PropTypes.string
     })
   )
-}
-
-const styles = {
-  tabListStyle: {
-    marginBottom: 0,
-    marginLeft: 20,
-    display: 'flex'
-  },
-  tabStyle: css({
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    cursor: 'pointer',
-    listStyle: 'none',
-    fontFamily: 'Chivo',
-    position: 'relative',
-    padding: '10px 30px',
-    marginBottom: 0,
-    textAlign: 'left',
-    width: 250,
-    marginRight: 10,
-    borderTop: '7px solid #F7F7F4',
-    backgroundColor: '#F7F7F4',
-
-    ':focus': {
-      boxShadow: 'none',
-      outline: 'none'
-    },
-
-    [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
-      marginRight: 10
-    },
-
-    [`@media (min-width: ${R.nth(1, breakpoints)})`]: {
-      marginRight: 15
-    }
-  }),
-  selectedTabStyle: {
-    boxSizing: 'border-box',
-    backgroundColor: '#363636',
-    color: 'white',
-    borderTop: '7px solid #FFE001'
-  },
-  selectedTabPanelStyle: {
-    display: 'block',
-    background: '#363636',
-    paddingTop: 30
-  }
 }

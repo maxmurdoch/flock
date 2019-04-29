@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 import PropTypes from 'prop-types'
 import {inc, addIndex, map, nth, path, F, equals, length, gte} from 'ramda'
-import {css, cx, keyframes} from 'emotion'
+import {css, keyframes} from '@emotion/core'
 
 import Flex from './Flex'
 import Box from './Box'
@@ -87,7 +87,7 @@ class ToggleiPhone extends Component {
             <Box width={['100%', '50%']} order={2} pb={[3, 5]}>
               <Box width={['100%', '100%', '66.66%']}>
                 <ol
-                  className={css({
+                  css={css({
                     marginLeft: 0,
                     listStyleType: 'none'
                   })}
@@ -95,7 +95,7 @@ class ToggleiPhone extends Component {
                   {mapIndex(({title, text}, index) => {
                     return (
                       <li
-                        className={css({
+                        css={css({
                           marginBottom: nth(3, space),
                           borderBottom: `1px solid ${colors.white}`,
                           paddingBottom: nth(3, space),
@@ -109,12 +109,10 @@ class ToggleiPhone extends Component {
                       >
                         <Flex
                           flexDirection="column"
-                          style={{
+                          css={css({
                             borderLeft: equals(this.state.activeIndex, index)
                               ? `3px solid ${colors.yellow}`
-                              : '3px solid transparent'
-                          }}
-                          className={css({
+                              : '3px solid transparent',
                             cursor: path(['isHovered', index], this.state)
                               ? 'pointer'
                               : 'default',
@@ -154,26 +152,26 @@ class ToggleiPhone extends Component {
               height={[450, 450, 'auto']}
             >
               <Flex justifyContent="center" position="relative">
-                <div className={style.container}>
-                  <div className={style.screenContainer}>
+                <div css={style.container}>
+                  <div css={style.screenContainer}>
                     {mapIndex(
                       ({image}, index) => (
                         <img
                           key={index}
-                          className={cx(
+                          css={[
                             style.animated,
                             equals(index, this.state.activeIndex)
                               ? style.fadeInRight
                               : style.fadeOutLeft,
                             style.screen
-                          )}
+                          ]}
                           src={withPrefix(image)}
                         />
                       ),
                       list
                     )}
                   </div>
-                  <img src={iPhone} className={style.phone} />
+                  <img src={iPhone} css={style.phone} />
                 </div>
               </Flex>
             </Box>

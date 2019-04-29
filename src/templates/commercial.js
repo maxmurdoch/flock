@@ -1,7 +1,8 @@
 import React from 'react'
 import {StickyContainer} from 'react-sticky'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
+import Layout from '../components/Layout/Layout'
 import BigSectionLine from '../components/BigSectionLine'
 import Box from '../components/Box'
 import LightNav from '../components/LightNav'
@@ -38,14 +39,14 @@ const CommercialTemplate = ({
           keywords={siteMetadataOverride.keywords}
         />
         {navColor === 'light' ? <LightNav /> : <DarkNav />}
-        <Box className={css({backgroundColor: 'white'})}>
+        <Box css={css({backgroundColor: 'white'})}>
           <Hero
-            headerClassName={css({
+            headerCSS={{
               backgroundImage: `url(${hero.backgroundImage})`,
               backgroundPosition: 'top left',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat'
-            })}
+            }}
             textColor={colors[hero.textColor]}
             header={hero.header}
             description={hero.description}
@@ -145,17 +146,19 @@ const Commercial = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <CommercialTemplate
-      hero={hero}
-      navColor={navColor}
-      why={why}
-      coverNote={coverNote}
-      siteMetadataOverride={siteMetadataOverride}
-      productTypes={productTypes}
-      testimonial={testimonial}
-      renewalBanner={renewalBanner}
-      promotionBanner={promotionBanner}
-    />
+    <Layout>
+      <CommercialTemplate
+        hero={hero}
+        navColor={navColor}
+        why={why}
+        coverNote={coverNote}
+        siteMetadataOverride={siteMetadataOverride}
+        productTypes={productTypes}
+        testimonial={testimonial}
+        renewalBanner={renewalBanner}
+        promotionBanner={promotionBanner}
+      />
+    </Layout>
   )
 }
 

@@ -1,8 +1,8 @@
-import R from 'ramda'
+import * as R from 'ramda'
 import PropTypes from 'prop-types'
 import React, {Component} from 'react'
 import {Sticky} from 'react-sticky'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import Link from './Link'
 import SiteContainer from './SiteContainer'
@@ -44,10 +44,10 @@ class Nav extends Component {
               activateStickyStyle ? colors.white : colors.yellow
             }`
           }
-          const linkClass = css({
+          const linkClass = {
             color: textColor({isSticky: activateStickyStyle}),
             textDecoration: 'none'
-          })
+          }
           const downloadButtonClass = css({
             marginLeft: R.nth(1, space),
             paddingLeft: R.nth(1, space)
@@ -56,7 +56,7 @@ class Nav extends Component {
           return (
             <header
               style={style}
-              className={css({
+              css={css({
                 display: 'flex',
                 flexWrap: 'wrap',
                 position: 'fixed',
@@ -83,11 +83,11 @@ class Nav extends Component {
                     </Link>
                   </Box>
                   <Box width="100%">
-                    <nav className={navClass}>
+                    <nav css={navClass}>
                       <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
-                          className={linkClass}
+                          style={linkClass}
                           to="/insurance"
                           onClick={event => {
                             event.preventDefault()
@@ -98,7 +98,7 @@ class Nav extends Component {
                           }}
                         >
                           <SmallText
-                            className={css({
+                            css={css({
                               position: 'relative',
                               display: 'flex',
                               '&::after': {
@@ -125,7 +125,7 @@ class Nav extends Component {
                       <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
-                          className={linkClass}
+                          style={linkClass}
                           exact={true}
                           to="/about"
                         >
@@ -135,7 +135,7 @@ class Nav extends Component {
 
                       <Flex p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <a
-                          className={linkClass}
+                          style={linkClass}
                           href="https://help.flockcover.com"
                         >
                           <SmallText>FAQ</SmallText>
@@ -145,7 +145,7 @@ class Nav extends Component {
                       <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
-                          className={linkClass}
+                          style={linkClass}
                           exact={true}
                           to="https://blog.flockcover.com/"
                         >
@@ -156,14 +156,14 @@ class Nav extends Component {
                       <Flex style={{whiteSpace: 'nowrap'}} p={1} mr={[0, 0, 1]} ml={[0, 0, 1]}>
                         <Link
                           activeStyle={activeLinkStyle}
-                          className={linkClass}
+                          style={linkClass}
                           exact={true}
                           to="https://flockcover.workable.com"
                         >
                           <SmallText>Jobs</SmallText>
                         </Link>
                       </Flex>
-                      <div className={downloadButtonClass}>
+                      <div css={downloadButtonClass}>
                         <DownloadButton isSticky={activateStickyStyle} />
                       </div>
                     </nav>

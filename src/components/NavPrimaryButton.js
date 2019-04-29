@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import {colors} from '../constants/theme'
 import ArrowIcon from '../images/icons/arrow-head.svg'
@@ -11,7 +11,7 @@ const NavPrimaryButton = ({title, to, flexGrow, mb, hasIcon, ...props}) => {
   }
   return (
     <button
-      className={css({
+      css={css({
         cursor: 'pointer',
         appearance: 'none',
         display: 'inline-block',
@@ -29,7 +29,7 @@ const NavPrimaryButton = ({title, to, flexGrow, mb, hasIcon, ...props}) => {
       onClick={clickHandler}
     >
       <span
-        className={css({
+        css={css({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -38,7 +38,7 @@ const NavPrimaryButton = ({title, to, flexGrow, mb, hasIcon, ...props}) => {
         })}
       >
         <span
-          className={css({
+          css={css({
             fontFamily: 'ITC, sans-serif',
             fontSize: '16px',
             fontWeight: '700',
@@ -49,7 +49,7 @@ const NavPrimaryButton = ({title, to, flexGrow, mb, hasIcon, ...props}) => {
           {title}
         </span>
         <img
-          className={css({marginLeft: 5, marginBottom: 0})}
+          css={css({marginLeft: 5, marginBottom: 0})}
           src={hasIcon && ArrowIcon}
         />
       </span>

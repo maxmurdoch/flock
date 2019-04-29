@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import {colors} from '../constants/theme'
 import PAYFDroneIcon from '../images/icons/drone-white-icon.svg'
@@ -12,7 +12,7 @@ const NavSecondaryButton = ({title, to, icon, flexGrow, ...props}) => {
   }
   return (
     <button
-      className={css({
+      css={css({
         cursor: 'pointer',
         appearance: 'none',
         display: 'inline-block',
@@ -32,7 +32,7 @@ const NavSecondaryButton = ({title, to, icon, flexGrow, ...props}) => {
       onClick={clickHandler}
     >
       <span
-        className={css({
+        css={css({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -41,7 +41,7 @@ const NavSecondaryButton = ({title, to, icon, flexGrow, ...props}) => {
         })}
       >
         <span
-          className={css({
+          css={css({
             fontFamily: 'Chivo, sans-serif',
             fontSize: '16px',
             flex: '1 1 auto',
@@ -51,7 +51,7 @@ const NavSecondaryButton = ({title, to, icon, flexGrow, ...props}) => {
           {title}
         </span>
         <img
-          className={css({marginBottom: 0, height: 28})}
+          css={css({marginBottom: 0, height: 28})}
           src={icon && (icon === 'PAYF' ? PAYFDroneIcon : FUDroneIcon)}
         />
       </span>

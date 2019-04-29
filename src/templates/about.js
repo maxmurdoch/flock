@@ -1,9 +1,10 @@
 import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import {StickyContainer} from 'react-sticky'
-import {css} from 'emotion'
+import {graphql} from 'gatsby'
 
+import Layout from '../components/Layout/Layout'
 import SiteMetadata from '../components/SiteMetadata'
 import Download from '../components/DownloadFlock'
 import LightNav from '../components/LightNav'
@@ -35,13 +36,13 @@ const AboutTemplate = ({
         <LightNav />
         <AboutHero
           center={true}
-          headerClassName={css({
+          headerCSS={{
             backgroundImage: `url(${hero.backgroundImage})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             height: '66vh'
-          })}
+          }}
           textColor={colors.white}
           header={hero.header}
         />
@@ -74,14 +75,14 @@ const AboutTemplate = ({
           team={meetTheTeam.team}
         />
         <BigSectionLine />
-        <Download to={'https://flockcover.app.link/6IW6kTmgfP'}/>
+        <Download to={'https://flockcover.app.link/6IW6kTmgfP'} />
         <Footer
-          containerClassName={css({
+          containerCSS={{
             marginTop: R.nth(3, space),
             [`@media (min-width: ${R.nth(0, breakpoints)})`]: {
               marginTop: R.nth(5, space)
             }
-          })}
+          }}
         />
       </div>
     </StickyContainer>
@@ -106,13 +107,15 @@ const AboutPage = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <AboutTemplate
-      hero={hero}
-      flockStory={flockStory}
-      siteMetadataOverride={siteMetadataOverride}
-      coreValues={coreValues}
-      meetTheTeam={meetTheTeam}
-    />
+    <Layout>
+      <AboutTemplate
+        hero={hero}
+        flockStory={flockStory}
+        siteMetadataOverride={siteMetadataOverride}
+        coreValues={coreValues}
+        meetTheTeam={meetTheTeam}
+      />
+    </Layout>
   )
 }
 

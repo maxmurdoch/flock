@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
 import {Collapse} from 'react-collapse'
-import {css} from 'emotion'
-import R from 'ramda'
+import {css} from '@emotion/core'
+import * as R from 'ramda'
 
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
@@ -43,13 +43,13 @@ class CalculateRiskDropDown extends Component {
           <Flex flexDirection={['column', 'row']}>
             <Flex justifyContent="center" width={['100%', '50%']}>
               <Box width={phoneWidths}>
-                <img width="100%" className={style.iPhone} src={iPhone} />
+                <img width="100%" css={style.iPhone} src={iPhone} />
               </Box>
             </Flex>
             <Box width={['100%', '50%']}>
               <H2 color="yellow">{title}</H2>
               <BodyText color="white">{description}</BodyText>
-              <ul className={css({marginLeft: 0, listStyleType: 'none'})}>
+              <ul css={css({marginLeft: 0, listStyleType: 'none'})}>
                 {mapIndex(({title, text, icon}, index) => {
                   const isActive = R.equals(this.state.activeIndex, index)
                   const isHovered = R.path(['isHovered', index], this.state)
@@ -61,10 +61,10 @@ class CalculateRiskDropDown extends Component {
                   return (
                     <LI
                       width={['100%', '100%', '66.66%']}
-                      className={css({
+                      style={{
                         borderBottom: isLast ? 'none' : '1px solid white',
                         cursor: isHovered ? 'pointer' : 'default'
-                      })}
+                      }}
                       pt={3}
                       key={index}
                       pb={3}
@@ -107,7 +107,7 @@ class CalculateRiskDropDown extends Component {
                       <Flex justifyContent="space-between">
                         <Box display="flex" position="relative">
                           <img
-                            className={css({
+                            css={css({
                               position: 'absolute',
                               left: 0,
                               marginBottom: 0
@@ -126,7 +126,7 @@ class CalculateRiskDropDown extends Component {
                           </SmallText>
                         </Box>
                         <img
-                          className={css({
+                          css={css({
                             transform: isActive ? 'rotate(180deg)' : 'none'
                           })}
                           src={downArrow}

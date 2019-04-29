@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import ReactModalVideo from 'react-modal-video'
-import {css, injectGlobal} from 'react-emotion'
+import {css} from '@emotion/core'
+import {injectGlobal} from 'emotion'
 
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
@@ -37,7 +38,7 @@ class ModalVideo extends Component {
       <Flex justifyContent="center">
         <SiteContainer>
           <button
-            className={css({
+            css={css({
               background: 'none',
               cursor: 'pointer',
               border: 0,
@@ -53,7 +54,7 @@ class ModalVideo extends Component {
             onClick={this.openModal}
           >
             <Flex
-              className={`background ${style.background(coverImage)}`}
+              css={css({background: style.background(coverImage)})}
               pt={[4, 5]}
               pb={[4, 5]}
               justifyContent="center"
@@ -61,7 +62,7 @@ class ModalVideo extends Component {
               flexDirection="column"
             >
               <img
-                className={`image ${css({
+                css={`image ${css({
                   transition: 'transform 400ms ease-in-out',
                   marginBottom: 0,
                   paddingBottom: R.nth(2, space)

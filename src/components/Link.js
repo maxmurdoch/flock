@@ -1,29 +1,30 @@
 import React from 'react'
-import R from 'ramda'
-import GatsbyLink from 'gatsby-link'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
+import {Link} from 'gatsby'
 import PropTypes from 'prop-types'
 import {isURL, isEmail} from 'validator'
 
-const Link = ({children, onClick, className, target, to = '', ...props}) => {
+const link = ({children, onClick, style, target, to = '', ...props}) => {
   const validators = [isURL(to), isEmail(to), R.test(/^tel:/, to)]
 
   return to && R.anyPass(validators) ? (
-    <a href={to} onClick={onClick} className={className} target={target}>
+    <a href={to} onClick={onClick} css={css(style)} target={target}>
       {children}
     </a>
   ) : (
-    <GatsbyLink to={to} onClick={onClick} className={className} {...props}>
+    <Link to={to} onClick={onClick} css={css(style)} {...props}>
       {children}
-    </GatsbyLink>
+    </Link>
   )
 }
 
-Link.propTypes = {
+link.propTypes = {
   children: PropTypes.node,
   target: PropTypes.string,
   onClick: PropTypes.func,
-  className: PropTypes.string,
+  css: PropTypes.string,
   to: PropTypes.string
 }
 
-export default Link
+export default link

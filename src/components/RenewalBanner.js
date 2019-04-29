@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
-import {css, injectGlobal, cx} from 'react-emotion'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
+
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
 import ArrowText from './ArrowText'
@@ -27,7 +28,7 @@ const RenewalBanner = ({
       justifyContent="center"
       position="relative"
       background={`url(${image})`}
-      className={styles.background}
+      css={styles.background}
     >
       <SiteContainer>
         <Flex
@@ -41,11 +42,9 @@ const RenewalBanner = ({
         >
           <Text
             mb={1}
-            className={cx(
-              css`
-                ${styles.text};
-              `
-            )}
+            css={css`
+              ${styles.text};
+            `}
           >
             {mainText}
           </Text>
@@ -105,11 +104,3 @@ const styles = {
     }
     `
 }
-
-const style = {}
-
-injectGlobal`
-  h2 {
-    ${style.text}
-  }
-`

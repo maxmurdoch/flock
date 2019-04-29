@@ -1,5 +1,5 @@
 import React from 'react'
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import WhiteButton from './WhiteButton'
 import SecondaryButton from './SecondaryButton'
@@ -24,7 +24,7 @@ const LightDesktopNav = (to) => {
       arrowImage={({isSticky}) => (isSticky ? blackDownArrow : whiteDownArrow)}
       Logo={({isSticky}) => (
         <img
-          className={css({width: '6rem', margin: 0})}
+          css={css({width: '6rem', margin: 0})}
           src={isSticky ? blackLogo : whiteLogo}
         />
       )}

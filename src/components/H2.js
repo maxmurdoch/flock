@@ -1,22 +1,23 @@
 import React from 'react'
-import {css, injectGlobal, cx} from 'react-emotion'
+import {css} from '@emotion/core'
+import {injectGlobal} from 'emotion'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 
 import Text from './Text'
 import {breakpoints, fontFamilies} from '../constants/theme'
 
-const H2 = ({children, tag = 'h2', className, ...props}) => {
+const H2 = ({children, tag = 'h2', css: CSS, ...props}) => {
   return (
     <Text
       tag={tag}
       mb={1}
-      className={cx(
+      css={[
         css`
           ${style.text};
         `,
-        className
-      )}
+        CSS
+      ]}
       {...props}
     >
       {children}

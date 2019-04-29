@@ -1,6 +1,6 @@
 import React from 'react'
-import R from 'ramda'
-import {css} from 'react-emotion'
+import * as R from 'ramda'
+import {css} from '@emotion/core'
 
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
@@ -26,7 +26,7 @@ const PromotionBanner = ({
       justifyContent="center"
       position="relative"
       style={{backgroundImage: `url(${image})`}}
-      className={css(styles.background)}
+      css={css(styles.background)}
     >
       <SiteContainer>
         <Flex
@@ -38,7 +38,7 @@ const PromotionBanner = ({
           pl={2}
           pr={2}
         >
-          <Text mb={1} className={css(styles.text)}>
+          <Text mb={1} css={css(styles.text)}>
             {mainText}
           </Text>
           {buttonText && buttonUrl && (

@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 import PropTypes from 'prop-types'
 import {addIndex, map, nth} from 'ramda'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
 import Flex from './Flex'
 import Box from './Box'
@@ -39,7 +39,7 @@ class NonToggleiPhone extends Component {
             <Box width={['100%', '50%']} order={2}>
               <Box width={['100%', '100%', '66.66%']}>
                 <ol
-                  className={css({
+                  css={css({
                     marginLeft: 0,
                     listStyleType: 'none'
                   })}
@@ -47,7 +47,7 @@ class NonToggleiPhone extends Component {
                   {mapIndex(({title, text}, index) => {
                     return (
                       <li
-                        className={css({
+                        css={css({
                           marginBottom: nth(3, space),
                           borderBottom: `1px solid ${colors.white}`,
                           paddingBottom: nth(3, space),
@@ -61,12 +61,12 @@ class NonToggleiPhone extends Component {
                       >
                         <Flex
                           flexDirection="column"
-                          className={css({
+                          css={css({
                             paddingLeft: nth(1, space),
                             marginLeft: `-${nth(1, space)}`
                           })}
                         >
-                          <H3 color={colors.white} className="title">
+                          <H3 color={colors.white} css="title">
                             {title}
                           </H3>
                           <SmallText color="white">{text}</SmallText>
@@ -79,7 +79,7 @@ class NonToggleiPhone extends Component {
 
               <Text
                 textAlign="left"
-                className={css({
+                css={css({
                   marginTop: 75,
                   marginBottom: 20,
                   fontSize: 12,
@@ -98,11 +98,11 @@ class NonToggleiPhone extends Component {
                 height={[450, 450, 'auto']}
               >
                 <Flex justifyContent="center" position="relative">
-                  <div className={style.container}>
-                    <div className={style.screenContainer}>
-                      <img className={style.screen} src={withPrefix(image)} />
+                  <div css={style.container}>
+                    <div css={style.screenContainer}>
+                      <img css={style.screen} src={withPrefix(image)} />
                     </div>
-                    <img src={iPhone} className={style.phone} />
+                    <img src={iPhone} css={style.phone} />
                   </div>
                 </Flex>
               </Box>

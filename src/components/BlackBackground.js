@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 import {colors} from '../constants/theme'
 
 const MapBackground = ({children}) => {
   return (
     <div
-      className={css({
+      css={css({
         overflow: 'hidden',
         paddingBottom: 80,
         position: 'relative',

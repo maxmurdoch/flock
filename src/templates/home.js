@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {graphql} from 'gatsby'
 import {StickyContainer} from 'react-sticky'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
+import Layout from '../components/Layout/Layout'
 import BigSectionLine from '../components/BigSectionLine'
 import DarkNav from '../components/DarkNav'
 import Hero from '../components/Hero'
 import Flex from '../components/Flex'
 import Box from '../components/Box'
 import TextGrid from '../components/TextGrid'
-import TabSection from '../components/ProductTabs'
+import TabSection from '../components/ProductTabs/ProductTabs'
 import ProductCardTabs from '../components/ProductCardTabs'
 import PromotionBanner from '../components/PromotionBanner'
 import Testimonial from '../components/Testimonial'
@@ -39,7 +41,7 @@ const HomeTemplate = ({
           keywords={siteMetadataOverride.keywords}
         />
         <DarkNav to={downloadLink} />
-        <Box className={css({backgroundColor: 'white'})}>
+        <Box css={css({backgroundColor: 'white'})}>
           <Hero
             RightSideComponent={() => (
               <Flex
@@ -48,11 +50,10 @@ const HomeTemplate = ({
                 width={['100%', '50%']}
                 ml={3}
               >
-                <img src={funDrone} className={style.heroImage} />
+                <img src={funDrone} css={style.heroImage} />
               </Flex>
             )}
-            headerClassName={style.header}
-            headerContainerClassName={style.headerContainer}
+            headerCSS={style.header}
             header={hero.header}
             textShadow={false}
             description={hero.description}
@@ -75,7 +76,7 @@ const HomeTemplate = ({
         </Box>
 
         {!productTabs.hidden && (
-          <div className={css({backgroundColor: 'white'})}>
+          <div css={css({backgroundColor: 'white'})}>
             <Box background="white">
               <TabSection
                 title={productTabs.title}
@@ -99,7 +100,7 @@ const HomeTemplate = ({
           </div>
         )}
 
-        <div className={css({backgroundColor: 'white'})}>
+        <div css={css({backgroundColor: 'white'})}>
           <Box pt={[3, 5]}>
             <Testimonial testimonials={secondTestimonial} />
           </Box>
@@ -137,7 +138,7 @@ const style = {
     height: '70%',
     width: '100%'
   }),
-  header: css({
+  header: {
     background: colors.yellow
     // backgroundImage: `url(${mobileFlock})`,
     // backgroundSize: '45rem',
@@ -148,7 +149,7 @@ const style = {
     //   backgroundImage: `none`,
     //   backgroundPosition: 'bottom right'
     // }
-  })
+  }
 }
 
 HomeTemplate.propTypes = {
@@ -177,16 +178,18 @@ const HomePage = ({data}) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <HomeTemplate
-      secondTestimonial={secondTestimonial}
-      hero={hero}
-      downloadLink={downloadLink}
-      siteMetadataOverride={siteMetadataOverride}
-      stopWorrying={stopWorrying}
-      featured={featured}
-      promotionBanner={promotionBanner}
-      productTabs={productTabs}
-    />
+    <Layout>
+      <HomeTemplate
+        secondTestimonial={secondTestimonial}
+        hero={hero}
+        downloadLink={downloadLink}
+        siteMetadataOverride={siteMetadataOverride}
+        stopWorrying={stopWorrying}
+        featured={featured}
+        promotionBanner={promotionBanner}
+        productTabs={productTabs}
+      />
+    </Layout>
   )
 }
 

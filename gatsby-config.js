@@ -55,7 +55,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-emotion',
-    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-segment-js',
       options: {
@@ -72,6 +71,7 @@ module.exports = {
       options: {
         app_id: 'db51wrth'
       }
-    }
+    },
+    'gatsby-plugin-netlify-cms'
   ]
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import Media from 'react-media'
-import {css} from 'emotion'
+import {css} from '@emotion/core'
 
 import H1 from './H1'
 import SiteContainer from './SiteContainer'
@@ -15,7 +15,7 @@ import {colors, breakpoints} from '../constants/theme'
 
 const Hero = ({
   textColor = colors.dark,
-  headerClassName,
+  headerCSS,
   textShadow = true,
   header,
   RightSideComponent,
@@ -36,11 +36,11 @@ const Hero = ({
       <Flex
         alignItems="center"
         justifyContent="center"
-        className={headerClassName}
+        css={headerCSS}
         flex="1 1 auto"
         overflow="hidden"
       >
-        <SiteContainer className={css({overflow: 'visible'})}>
+        <SiteContainer css={css({overflow: 'visible'})}>
           <Flex mt={[3, 5]}>
             <Flex
               justifyContent="center"
@@ -110,7 +110,7 @@ Hero.propTypes = {
   RightSideComponent: PropTypes.func,
   textColor: PropTypes.string,
   textShadow: PropTypes.bool,
-  headerClassName: PropTypes.string,
+  headerCSS: PropTypes.string,
   header: PropTypes.string,
   description: PropTypes.string,
   buttonOne: PropTypes.object,

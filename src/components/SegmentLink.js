@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {withPrefix} from 'gatsby-link'
-import {css} from 'emotion'
-import R from 'ramda'
+import {withPrefix} from 'gatsby'
+import {css} from '@emotion/core'
+import * as R from 'ramda'
 
 import Link from './Link'
 import ArrowText from './ArrowText'
@@ -29,11 +29,11 @@ class SegmentLink extends Component {
           onMouseOut={() => {
             this.setState({isHovered: false})
           }}
-          className={styles.link}
+          style={styles.link}
           to={link}
         >
           <img
-            className={css({
+            css={css({
               marginTop: '0.5rem',
               marginBottom: '1rem',
               height: '2rem'
@@ -63,7 +63,7 @@ class SegmentLink extends Component {
 export default SegmentLink
 
 const styles = {
-  link: css({
+  link: {
     zIndex: 1,
     display: 'flex',
     fontFamily: fontFamilies.chivo,
@@ -76,7 +76,7 @@ const styles = {
     '&:hover': {
       transform: 'translateY(-10px)'
     }
-  })
+  }
 }
 
 SegmentLink.propTypes = {

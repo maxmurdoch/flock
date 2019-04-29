@@ -1,7 +1,7 @@
 import React from 'react'
-import {css} from 'react-emotion'
-import {withPrefix} from 'gatsby-link'
-import R from 'ramda'
+import {css} from '@emotion/core'
+import {withPrefix} from 'gatsby'
+import * as R from 'ramda'
 
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
@@ -76,7 +76,7 @@ const whatIsCovered = ({
             </H2>
             <Flex
               flexWrap={true}
-              className={css({
+              css={css({
                 flex: 1
               })}
             >
@@ -93,7 +93,7 @@ const whatIsCovered = ({
                     <ShowIf predicate={!!icon}>
                       <img
                         src={withPrefix(icon)}
-                        className={css({
+                        css={css({
                           marginBottom: 10,
                           width: 40,
                           height: 40
@@ -121,7 +121,7 @@ const whatIsCovered = ({
                   <SmallText
                     textAlign="left"
                     style={{fontSize: 14}}
-                    className={css({
+                    css={css({
                       color: smallPrintColor
                     })}
                   >

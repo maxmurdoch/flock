@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {css} from 'react-emotion'
+import {css} from '@emotion/core'
 
 import ProductCard from './PriceCard'
 
@@ -38,18 +38,18 @@ const productCardTabPanel = ({customerTypeDesc, productCards}) => {
           buttonTwoUrl={buttonTwoUrl}
           buttonOneExternal={buttonOneExternal}
           buttonTwoExternal={buttonTwoExternal}
-          className={css({marginRight: 16, marginBottom: 16})}
+          style={{marginRight: 16, marginBottom: 16}}
         />
       )
     )
 
   return (
     <div>
-      <SmallText className={css({color: 'white'})} mb={4} ml={2} mr={2}>
+      <SmallText css={css({color: 'white'})} mb={4} ml={2} mr={2}>
         {customerTypeDesc}
       </SmallText>
       <div
-        className={css({
+        css={css({
           overflowX: 'scroll',
           WebkitOverflowScrolling: 'touch',
           '-ms-overflow-style': 'none',
@@ -59,7 +59,7 @@ const productCardTabPanel = ({customerTypeDesc, productCards}) => {
           }
         })}
       >
-        <div className={css({display: 'inline-flex', padding: '0 20px'})}>
+        <div css={css({display: 'inline-flex', padding: '0 20px'})}>
           {productCards && productCards.length > 0
             ? renderProductCards(productCards)
             : null}

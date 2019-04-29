@@ -1,9 +1,9 @@
 import React from 'react'
-import {withPrefix} from 'gatsby-link'
+import {withPrefix} from 'gatsby'
 import Markdown from 'react-remarkable'
 import PropTypes from 'prop-types'
-import {css} from 'emotion'
-import R from 'ramda'
+import {css} from '@emotion/core'
+import * as R from 'ramda'
 
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
@@ -26,7 +26,7 @@ const CalculateRiskFlat = ({title, description, list}) => (
         </Box>
         <Box width="100%">
           <ul
-            className={css({
+            css={css({
               display: 'flex',
               flexWrap: 'wrap',
               marginLeft: 0,
@@ -37,7 +37,7 @@ const CalculateRiskFlat = ({title, description, list}) => (
             {mapIndex(({title, text, icon}, index) => {
               return (
                 <LI
-                  className={css({
+                  css={css({
                     display: 'flex',
                     flexDirection: 'column'
                   })}

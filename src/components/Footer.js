@@ -1,6 +1,6 @@
 import React from 'react'
-import {css} from 'emotion'
-import R from 'ramda'
+import {css} from '@emotion/core'
+import * as R from 'ramda'
 
 import logo from '../images/logo-white.svg'
 import Link from './Link'
@@ -35,7 +35,7 @@ const socialMediaLinks = [
   }
 ]
 
-const Footer = ({containerClassName, FUnSmallPrint}) => {
+const Footer = ({containerCSS, FUnSmallPrint}) => {
   const firstFooterLinks = [
     {
       to: '/insurance/commercial',
@@ -91,7 +91,7 @@ const Footer = ({containerClassName, FUnSmallPrint}) => {
 
   return (
     <Flex
-      className={containerClassName}
+      css={containerCSS}
       background={colors.backgrounds.dark}
       justifyContent="center"
       pt={[1, 3]}
@@ -100,7 +100,7 @@ const Footer = ({containerClassName, FUnSmallPrint}) => {
       <SiteContainer>
         <Flex flexWrap={true}>
           <Flex
-            className={styles.flexiFooter}
+            css={styles.flexiFooter}
             width={['100%', '33.33%']}
             flexDirection="column"
             pt={3}
@@ -112,14 +112,14 @@ const Footer = ({containerClassName, FUnSmallPrint}) => {
             </Box>
             {mapIndex(({to, text}, index) => {
               return (
-                <Link className={styles.link} to={to} key={index}>
+                <Link style={styles.link} to={to} key={index}>
                   <SmallText>{text}</SmallText>
                 </Link>
               )
             }, firstFooterLinks)}
           </Flex>
           <Flex
-            className={styles.flexiFooter}
+            css={styles.flexiFooter}
             width={['100%', '33.33%']}
             flexDirection="column"
             pt={3}
@@ -131,14 +131,14 @@ const Footer = ({containerClassName, FUnSmallPrint}) => {
             </Box>
             {mapIndex(({to, text}, index) => {
               return (
-                <Link className={styles.link} to={to} key={index}>
+                <Link style={styles.link} to={to} key={index}>
                   <SmallText>{text}</SmallText>
                 </Link>
               )
             }, secondFooterLinks)}
           </Flex>
           <Flex
-            className={styles.lastFlexiFooter}
+            css={styles.lastFlexiFooter}
             width={['100%', '33.33%']}
             flexDirection="column"
             pt={3}
@@ -148,10 +148,10 @@ const Footer = ({containerClassName, FUnSmallPrint}) => {
                 Got a question? Get in touch:
               </SmallText>
             </Box>
-            <Link to="mailto:hello@flockcover.com" className={styles.link}>
+            <Link to="mailto:hello@flockcover.com" style={styles.link}>
               <SmallText>hello@flockcover.com</SmallText>
             </Link>
-            <Link to="tel:+44 (0) 1234 480260" className={styles.header}>
+            <Link to="tel:+44 (0) 1234 480260" style={styles.header}>
               <SmallText>+44 (0) 1234 480260</SmallText>
             </Link>
             <Flex alignItems="flex-end" pt={2}>
@@ -167,7 +167,7 @@ const Footer = ({containerClassName, FUnSmallPrint}) => {
             </Flex>
             <Box width={['100%', '33.33%']} mb={[2, 0]}>
               <Link to={'/'}>
-                <img src={logo} className={css({marginBottom: 0})} />
+                <img src={logo} css={css({marginBottom: 0})} />
               </Link>
             </Box>
           </Flex>
@@ -177,13 +177,13 @@ const Footer = ({containerClassName, FUnSmallPrint}) => {
             <Flex flexDirection="row" justifyContent="center">
               {mapIndex(({to, text}, index) => {
                 return (
-                  <Link className={styles.horizontalLink} to={to} key={index}>
+                  <Link style={styles.horizontalLink} to={to} key={index}>
                     <SmallText>{text}</SmallText>
                   </Link>
                 )
               }, bottomFooterLinks)}
             </Flex>
-            <Box pb={2} className={styles.centeredFooterText}>
+            <Box pb={2} css={styles.centeredFooterText}>
               {FUnSmallPrint && (
                 <SmallText tag="h3" color="white" mb={3} fontWeight={100}>
                   {FUnSmallPrint}
@@ -207,22 +207,22 @@ const Footer = ({containerClassName, FUnSmallPrint}) => {
 export default Footer
 
 const styles = {
-  link: css({
+  link: {
     color: R.prop('yellow', colors),
     textDecoration: 'none',
     paddingBottom: R.nth(2, space)
-  }),
-  header: css({
+  },
+  header: {
     color: R.prop('white', colors),
     textDecoration: 'none',
     paddingBottom: R.nth(1, space)
-  }),
-  horizontalLink: css({
+  },
+  horizontalLink: {
     color: R.prop('yellow', colors),
     textDecoration: 'none',
     paddingRight: R.nth(2, space),
     marginBottom: '40px'
-  }),
+  },
   centeredFooterText: css({
     margin: '0 auto',
     width: '60%'
