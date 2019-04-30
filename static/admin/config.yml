@@ -26,7 +26,7 @@ collections:
               - name: backgroundImage
                 label: Background Image
                 widget: image
-                - name: header
+              - name: header
                 label: Header
                 widget: string
               - name: description
