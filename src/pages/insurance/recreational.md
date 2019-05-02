@@ -1,8 +1,10 @@
 ---
 title: Recreational
 templateKey: product
+navColor: light
 hero:
   backgroundImage: ../../images/uploads/hobbyist-header.jpg
+  textColor: white
   buttons:
     - branch: true
       color: yellow
