@@ -1100,9 +1100,9 @@ collections:
         name: 'doINeedInsurance'
         widget: object
         fields:
-          - {title: Title, name: title, widget: markdown}
-          - {title: BigText, name: bigText, widget: markdown}
-          - {title: SmallText, name: smallText, widget: markdown}
+          - {title: Title, name: title, widget: markdown, required: false}
+          - {title: BigText, name: bigText, widget: markdown, required: false}
+          - {title: SmallText, name: smallText, widget: markdown, required: false}
       - label: 'How'
         name: 'how'
         widget: 'object'
