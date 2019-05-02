@@ -1099,6 +1099,7 @@ collections:
       - label: 'Do I need insurance'
         name: 'doINeedInsurance'
         widget: object
+        required: false
         fields:
           - {title: Title, name: title, widget: markdown, required: false}
           - {title: BigText, name: bigText, widget: markdown, required: false}
