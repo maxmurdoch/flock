@@ -67,6 +67,8 @@ flightSchool:
       to: 'https://www.dronepilotacademy.co.uk/'
     - image: ../../images/uploads/flyby-technology-logo.png
       to: 'https://www.flybydronetraining.co.uk/'
+    - image: /images/uploads/halo-drones.png
+      to: 'https://www.halodrones.co.uk/'
     - image: ../../images/uploads/uav-hummingbird.png
       to: 'https://www.hummingbird-uav.co.uk/'
     - image: /images/uploads/canva-photo-editor-1-.png
@@ -83,8 +85,6 @@ flightSchool:
       to: 'https://uavtradecraft.com/'
     - image: /images/uploads/upliftlighter.png
       to: 'https://www.upliftdronetraining.com/'
-    - image: /images/uploads/halo-drones-1-.jpg
-      to: 'https://www.halodrones.co.uk/'
   show: true
   title: Flock is proud to work with the leading flight schools in the UK
 coverNote:
