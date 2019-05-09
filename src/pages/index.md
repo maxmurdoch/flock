@@ -5,15 +5,13 @@ downloadLink: 'https://flockcover.app.link/6IW6kTmgfP'
 hero:
   buttons:
     - branch: true
-      backgroundColor: black
-      textColor: white
+      color: black
       external: true
       title: START FREE MONTH
       to: 'https://my.flockcover.com/'
       track: ''
     - branch: false
-      backgroundColor: yellow
-      textColor: black
+      color: yellow
       border: true
       external: false
       title: WHAT'S COVERED?

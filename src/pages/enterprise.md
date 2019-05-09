@@ -6,15 +6,13 @@ hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
   buttons:
     - branch: true
-      backgroundColor: yellow
-      textColor: black
+      color: yellow
       external: false
       title: GET IN TOUCH
       to: 'https://my.flockcover.com'
       track: ''
     - branch: true
-      backgroundColor: white
-      textColor: black
+      color: white
       border: true
       external: false
       title: DOWNLOAD WHITE PAPER

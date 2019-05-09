@@ -17,7 +17,6 @@ const RenewalBanner = ({
   buttonUrl,
   buttonTrack,
   buttonColor,
-  buttonTextColor,
   buttonBorder
 }) => {
   const download = () => {
@@ -64,8 +63,7 @@ const RenewalBanner = ({
               to={buttonUrl}
               track={buttonTrack}
               title={buttonText}
-              backgroundColor={buttonColor || 'yellow'}
-              textColor={buttonTextColor || 'black'}
+              color={buttonColor || 'yellow'}
               border={buttonBorder || false}
             />
           )}

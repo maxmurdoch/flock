@@ -8,8 +8,7 @@ hero:
   buttons:
     - title: DOWNLOAD
       to: 'https://flockcover.app.link/6IW6kTmgfP'
-      backgroundColor: yellow
-      textColor: black
+      color: yellow
       external: true
       branch: true
       track: 'Application Download Viewed'

@@ -10,8 +10,7 @@ import WhiteArrow from '../images/icons/arrow-white.svg'
 const NavButton = ({
   title,
   download,
-  backgroundColor,
-  textColor,
+  color,
   to,
   external,
   branch,
@@ -43,23 +42,7 @@ const NavButton = ({
     window.open(link, external ? '_blank' : '_self')
   }
 
-  function colorSelect(colorCode) {
-    let color
-    switch (colorCode) {
-      case 'yellow':
-        color = colors.yellow
-        break
-      case 'black':
-        color = colors.dark
-        break
-      case 'white':
-        color = 'white'
-        break
-      default:
-        color = colors.dark
-    }
-    return color
-  }
+  const {backgroundColor, textColor, arrowColor} = colorGenerator(color)
 
   return (
     <button
@@ -69,11 +52,11 @@ const NavButton = ({
         display: 'inline-block',
         padding: '18px 16px',
         border: border ? '2px solid black' : 'none',
-        backgroundColor: colorSelect(backgroundColor),
+        backgroundColor,
         outline: 'none',
         textDecoration: 'none',
         textAlign: 'left',
-        color: colorSelect(textColor),
+        color: textColor,
         marginRight: mr,
         marginBottom: mb,
         flexGrow
@@ -104,7 +87,7 @@ const NavButton = ({
         </span>
         <img
           css={css({marginLeft: 24, marginBottom: 0})}
-          src={backgroundColor === 'black' ? WhiteArrow : BlackArrow}
+          src={arrowColor === 'black' ? BlackArrow : WhiteArrow}
         />
       </span>
     </button>
@@ -118,6 +101,28 @@ NavButton.propTypes = {
   external: PropTypes.bool,
   branch: PropTypes.bool,
   track: PropTypes.string
+}
+
+function colorGenerator(colorCode) {
+  const colorScheme = {}
+  switch (colorCode) {
+    case 'yellow':
+      colorScheme.backgroundColor = colors.yellow
+      colorScheme.textColor = colors.dark
+      colorScheme.arrowColor = 'black'
+      break
+    case 'white':
+      colorScheme.backgroundColor = colors.white
+      colorScheme.textColor = colors.dark
+      colorScheme.arrowColor = 'black'
+      break
+    case 'black':
+    default:
+      colorScheme.backgroundColor = colors.dark
+      colorScheme.textColor = colors.white
+      colorScheme.arrowColor = 'white'
+  }
+  return colorScheme
 }
 
 export default NavButton

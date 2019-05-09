@@ -143,8 +143,7 @@ class FUfaqSection extends React.Component {
               <PrimaryButton
                 to={buttonUrl}
                 title={buttonText}
-                backgroundColor="yellow"
-                textColor="black"
+                color="yellow"
               />
             </Flex>
           </Flex>

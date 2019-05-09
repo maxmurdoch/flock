@@ -176,8 +176,7 @@ export const query = graphql`
           buttons {
             title
             to
-            backgroundColor
-            textColor
+            color
             external
             branch
             track

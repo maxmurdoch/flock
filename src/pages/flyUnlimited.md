@@ -6,15 +6,13 @@ hero:
   buttons:
     - title: START FREE MONTH
       to: 'https://my.flockcover.com'
-      backgroundColor: yellow
-      textColor: black
+      color: yellow
       external: true
       branch: false
       track: ''
     - title: WHAT'S COVERED?
       to: '#what-is-covered'
-      backgroundColor: black
-      textColor: white
+      color: black
       external: true
       branch: false
       track: ''

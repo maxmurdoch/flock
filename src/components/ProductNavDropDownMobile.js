@@ -22,8 +22,7 @@ const ProductNavDropDown = () => {
           ({to, text, options, hasIcon}, index) => (
             <Flex flexDirection="column" mb="20px" key={index}>
               <PrimaryButton
-                backgroundColor="black"
-                textColor="white"
+                color="black"
                 to={to}
                 title={text}
                 hasIcon={hasIcon}

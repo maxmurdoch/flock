@@ -35,8 +35,7 @@ const DownloadFlock = ({to}) => {
               to={to}
               download
               title="DOWNLOAD"
-              backgroundColor="yellow"
-              textColor="black"
+              color="yellow"
             />
           </Box>
         </Flex>

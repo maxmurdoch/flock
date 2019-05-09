@@ -6,15 +6,13 @@ hero:
   backgroundImage: ../../images/uploads/PAYF-header.jpg
   textColor: white
   buttons:
-    - backgroundColor: yellow
-      textColor: black
+    - color: yellow
       title: GET A QUOTE
       external: false
       to: https://flockcover.app.link/qdaEw2EMsU
     - title: WHAT'S COVERED
       to: '#what-is-covered'
-      backgroundColor: black
-      textColor: white
+      color: black
   description: >-
     A flexible alternative to traditional insurance. Get short-term, customised cover for your drone flight in a matter of taps with the Flock Cover app.
 
