@@ -28,12 +28,17 @@ const ProductNavDropDown = ({productsIsOpen}) => {
         pb={20}
       >
         <SiteContainer edgeToEdge>
-          <Flex justifyContent="space-between" alignItems="flex-start" flexWrap p={'15px'}>
+          <Flex
+            justifyContent="space-between"
+            alignItems="flex-start"
+            flexWrap
+            p={'15px'}
+          >
             {mapIndex(
               ({to, text, options, hasIcon}, index) => (
                 <Flex
-                  p='5px'
-                  pr='15px'
+                  p="5px"
+                  pr="15px"
                   key={index}
                   flexDirection="column"
                   css={css({
@@ -42,13 +47,17 @@ const ProductNavDropDown = ({productsIsOpen}) => {
                     },
 
                     '@media (min-width: 1200px)': {
-                      width: '33%'
+                      width: '25%'
                     }
                   })}
                 >
                   <Flex flexDirection="column">
-                    <PrimaryButton to={to} title={text} mb={12} hasIcon={hasIcon}/>
-
+                    <PrimaryButton
+                      to={to}
+                      title={text}
+                      mb={12}
+                      hasIcon={hasIcon}
+                    />
                   </Flex>
                 </Flex>
               ),
@@ -102,18 +111,13 @@ const buttonContent = [
         icon: 'PAYF'
       }
     ]
+  },
+  {
+    to: '/enterprise',
+    text: 'ENTERPRISE',
+    hasIcon: true,
+    options: []
   }
-  // {
-  //   to: '',
-  //   text: 'ENTERPRISE',
-  //   hasIcon: false,
-  //   options: [
-  //     {
-  //       to: '',
-  //       text: 'Coming soon!'
-  //     }
-  //   ]
-  // }
 ]
 
 export default ProductNavDropDown

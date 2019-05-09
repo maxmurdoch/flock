@@ -31,7 +31,7 @@ const ProductNavDropDown = () => {
     </Flex>
   )
 }
-// 
+//
 // {mapIndex(
 //   ({to, text, icon}) => (
 //     <SecondaryButton
@@ -86,17 +86,17 @@ const buttonContent = [
       }
     ]
   },
-  // {
-  //   to: '',
-  //   text: 'ENTERPRISE',
-  //   hasIcon: false,
-  //   options: [
-  //     {
-  //       to: '',
-  //       text: 'Coming soon!'
-  //     }
-  //   ]
-  // }
+  {
+    to: '',
+    text: 'ENTERPRISE',
+    hasIcon: true,
+    options: [
+      {
+        to: '',
+        text: 'Coming soon!'
+      }
+    ]
+  }
 ]
 
 export default ProductNavDropDown
