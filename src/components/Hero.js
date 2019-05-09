@@ -66,7 +66,8 @@ const Hero = ({
                     <PrimaryButton
                       key={idx}
                       to={button.to}
-                      color={button.color}
+                      backgroundColor={button.backgroundColor}
+                      textColor={button.textColor}
                       external={button.external}
                       border={button.border}
                       branch={button.branch}

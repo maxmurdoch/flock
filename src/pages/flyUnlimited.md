@@ -6,13 +6,15 @@ hero:
   buttons:
     - title: START FREE MONTH
       to: 'https://my.flockcover.com'
-      color: yellow
+      backgroundColor: yellow
+      textColor: black
       external: true
       branch: false
       track: ''
     - title: WHAT'S COVERED?
       to: '#what-is-covered'
-      color: black
+      backgroundColor: black
+      textColor: white
       external: true
       branch: false
       track: ''
@@ -26,7 +28,7 @@ hero:
   description: >-
     Introducing Fly Unlimited, our fully flexible subscription product for commercial pilots. Get your first month on us*. No commitments, cancel anytime.
 
-    
+
     Don’t miss out - offer ends 11th May!
   header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
   smallPrint: "*Maximum £75 discount off first month. [T&C's](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply."

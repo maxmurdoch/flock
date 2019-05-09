@@ -21,8 +21,13 @@ const ProductNavDropDown = () => {
         {mapIndex(
           ({to, text, options, hasIcon}, index) => (
             <Flex flexDirection="column" mb="20px" key={index}>
-              <PrimaryButton to={to} title={text} hasIcon={hasIcon} />
-
+              <PrimaryButton
+                backgroundColor="black"
+                textColor="white"
+                to={to}
+                title={text}
+                hasIcon={hasIcon}
+              />
             </Flex>
           ),
           buttonContent

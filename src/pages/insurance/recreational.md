@@ -7,7 +7,8 @@ hero:
   textColor: black
   buttons:
     - branch: true
-      color: yellow
+      backgroundColor: yellow
+      textColor: black
       external: true
       title: DOWNLOAD
       to: 'https://flockcover.app.link/6IW6kTmgfP'

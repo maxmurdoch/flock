@@ -53,6 +53,8 @@ const ProductNavDropDown = ({productsIsOpen}) => {
                 >
                   <Flex flexDirection="column">
                     <PrimaryButton
+                      backgroundColor="black"
+                      textColor="white"
                       to={to}
                       title={text}
                       mb={12}

@@ -11,6 +11,7 @@ import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
 import Testimonial from '../components/Testimonial'
 import Banner from '../components/RenewalBanner'
+import Featured from '../components/Featured'
 
 import Hero from '../components/Hero'
 import {colors} from '../constants/theme'
@@ -21,7 +22,7 @@ const EnterpriseTemplate = ({
   why,
   siteMetadataOverride,
   testimonial,
-  banner,
+  banner
 }) => {
   return (
     <StickyContainer>
@@ -45,9 +46,6 @@ const EnterpriseTemplate = ({
             description={hero.description}
             buttons={hero.buttons}
             features={hero.features}
-            smallPrint={
-              '*Maximum £75 discount off first month. [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
-            }
           />
           {!why.hidden && (
             <Box mt={[3, 5]} mb={[3, 5]}>
@@ -67,21 +65,25 @@ const EnterpriseTemplate = ({
           {!banner.hidden && (
             <Box pt={[3, 6]}>
               <Banner
+                header={banner.header}
                 image={banner.image}
                 mainText={banner.mainText}
                 buttonText={banner.buttonText}
                 buttonUrl={banner.buttonUrl}
                 buttonTrack={banner.buttonTrack}
+                buttonColor={banner.buttonColor}
+                buttonTextColor={banner.buttonTextColor}
+                buttonBorder={banner.buttonBorder}
               />
             </Box>
           )}
         </Box>
 
-        <Footer
-          FUnSmallPrint={
-            '*One free month insurance for new Fly Unlimited customers who start their cover before 11/05/19. Credit card required. Maximum discount is £75. Policies over this amount will be charged at the full policy price, and £75 refunded back. After your free month, we’ll automatically renew your subscription and charge you the full ongoing monthly policy price. Cancel anytime. Full [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
-          }
-        />
+        <Box pt={[3, 5]}>
+          <Featured />
+        </Box>
+
+        <Footer />
       </div>
     </StickyContainer>
   )
@@ -127,7 +129,9 @@ export const query = graphql`
           buttons {
             title
             to
-            color
+            backgroundColor
+            textColor
+            border
             external
             branch
             track
@@ -159,10 +163,14 @@ export const query = graphql`
         banner {
           hidden
           image
+          header
           mainText
           buttonText
           buttonUrl
           buttonTrack
+          buttonTextColor
+          buttonColor
+          buttonBorder
         }
         siteMetadataOverride {
           title

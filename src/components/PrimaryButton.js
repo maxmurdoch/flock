@@ -10,7 +10,8 @@ import WhiteArrow from '../images/icons/arrow-white.svg'
 const NavButton = ({
   title,
   download,
-  color,
+  backgroundColor,
+  textColor,
   to,
   external,
   branch,
@@ -41,6 +42,25 @@ const NavButton = ({
       : to
     window.open(link, external ? '_blank' : '_self')
   }
+
+  function colorSelect(colorCode) {
+    let color
+    switch (colorCode) {
+      case 'yellow':
+        color = colors.yellow
+        break
+      case 'black':
+        color = colors.dark
+        break
+      case 'white':
+        color = 'white'
+        break
+      default:
+        color = colors.dark
+    }
+    return color
+  }
+
   return (
     <button
       css={css({
@@ -49,11 +69,11 @@ const NavButton = ({
         display: 'inline-block',
         padding: '18px 16px',
         border: border ? '2px solid black' : 'none',
-        backgroundColor: color === 'yellow' ? colors.yellow : colors.dark,
+        backgroundColor: colorSelect(backgroundColor),
         outline: 'none',
         textDecoration: 'none',
         textAlign: 'left',
-        color: color === 'yellow' ? 'black' : 'white',
+        color: colorSelect(textColor),
         marginRight: mr,
         marginBottom: mb,
         flexGrow
@@ -84,7 +104,7 @@ const NavButton = ({
         </span>
         <img
           css={css({marginLeft: 24, marginBottom: 0})}
-          src={color === 'yellow' ? BlackArrow : WhiteArrow}
+          src={backgroundColor === 'black' ? WhiteArrow : BlackArrow}
         />
       </span>
     </button>

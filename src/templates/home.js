@@ -213,7 +213,8 @@ export const query = graphql`
           buttons {
             title
             to
-            color
+            backgroundColor
+            textColor
             border
             external
             branch

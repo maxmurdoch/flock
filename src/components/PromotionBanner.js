@@ -46,7 +46,8 @@ const PromotionBanner = ({
               to={buttonUrl}
               track={buttonTrack}
               title={buttonText}
-              color={buttonColor || 'yellow'}
+              backgroundColor={buttonColor || 'yellow'}
+              textColor='white'
             />
           )}
         </Flex>

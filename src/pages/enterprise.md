@@ -6,13 +6,16 @@ hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
   buttons:
     - branch: true
-      color: yellow
+      backgroundColor: yellow
+      textColor: black
       external: false
       title: GET IN TOUCH
       to: 'https://my.flockcover.com'
       track: ''
     - branch: true
-      color: white
+      backgroundColor: white
+      textColor: black
+      border: true
       external: false
       title: DOWNLOAD WHITE PAPER
       to: 'https://my.flockcover.com'
@@ -56,10 +59,14 @@ testimonial:
 banner:
   hidden: false
   image: /images/uploads/renewal-drone.jpg
-  mainText: The future of insurance for commercial drone fleets
+  header: FREE WHITE PAPER
+  mainText: The future of insurance for connected drone fleets
   buttonText: DOWNLOAD WHITE PAPER
   buttonUrl: https://blog.flockcover.com/flocks-essential-guide-to-pfco-renewals-dac39542e16a
   buttonTrack: ''
+  buttonColor: white
+  buttonTextColor: black
+  buttonBorder: true
 siteMetadataOverride:
   description: drone insurance
   keywords:

@@ -5,13 +5,15 @@ downloadLink: 'https://flockcover.app.link/6IW6kTmgfP'
 hero:
   buttons:
     - branch: true
-      color: black
+      backgroundColor: black
+      textColor: white
       external: true
       title: START FREE MONTH
       to: 'https://my.flockcover.com/'
       track: ''
     - branch: false
-      color: yellow
+      backgroundColor: yellow
+      textColor: black
       border: true
       external: false
       title: WHAT'S COVERED?
@@ -137,6 +139,9 @@ productTabs:
           buttonOneText: CONTACT US
           buttonOneUrl: mailto:hello@flockcover.com
           buttonOneExternal: false
+          buttonTwoText: LEARN MORE
+          buttonTwoUrl: https://flockcover.com/enterprise
+          buttonTwoExternal: false
           fromPrice: £POA
           policyFeatureList:
             - text: Comprehensive annual risk-based cover (in-and-out of flight)

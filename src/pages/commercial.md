@@ -6,7 +6,8 @@ hero:
   backgroundImage: ../../images/uploads/commercial-header.jpg
   buttons:
     - branch: true
-      color: yellow
+      backgroundColor: yellow
+      textColor: black
       external: false
       title: START FREE MONTH
       to: 'https://my.flockcover.com'

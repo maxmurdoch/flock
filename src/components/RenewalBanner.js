@@ -5,18 +5,20 @@ import {css} from '@emotion/core'
 
 import Flex from './Flex'
 import SiteContainer from './SiteContainer'
-import ArrowText from './ArrowText'
 import PrimaryButton from './PrimaryButton'
 import {breakpoints, fontFamilies} from '../constants/theme'
 import Text from './Text'
 
 const RenewalBanner = ({
   image,
+  header,
   mainText,
   buttonText,
   buttonUrl,
   buttonTrack,
-  buttonColor
+  buttonColor,
+  buttonTextColor,
+  buttonBorder
 }) => {
   const download = () => {
     if (buttonTrack) analytics.track(buttonTrack)
@@ -40,10 +42,19 @@ const RenewalBanner = ({
           pl={2}
           pr={2}
         >
+          {header && (
+            <Text
+              css={css`
+                ${styles.header};
+              `}
+            >
+              {header}
+            </Text>
+          )}
           <Text
             mb={1}
             css={css`
-              ${styles.text};
+              ${styles.mainText};
             `}
           >
             {mainText}
@@ -53,7 +64,9 @@ const RenewalBanner = ({
               to={buttonUrl}
               track={buttonTrack}
               title={buttonText}
-              color={buttonColor || "yellow"}
+              backgroundColor={buttonColor || 'yellow'}
+              textColor={buttonTextColor || 'black'}
+              border={buttonBorder || false}
             />
           )}
         </Flex>
@@ -82,7 +95,7 @@ const styles = {
     }
   `,
 
-  text: `
+  mainText: `
     font-family: ${fontFamilies.itc};
     font-weight: 700;
     font-size: 25px;
@@ -102,5 +115,19 @@ const styles = {
       line-height: 44px;
       max-width: 75%;
     }
-    `
+  `,
+
+  header: `
+    font-family: ${fontFamilies.itc};
+    font-weight: 700;
+    font-size: 16px;
+
+    @media (min-width: ${R.nth(0, breakpoints)}) {
+      font-size: 18px;
+    }
+
+    @media (min-width: ${R.nth(1, breakpoints)}) {
+      font-size: 21px;
+    }
+  `
 }
