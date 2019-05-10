@@ -79,9 +79,6 @@ meetTheTeam:
     - image: /images/uploads/img_0442-edit.jpg
       member: 'Dara Cormican '
       role: Marketing Executive
-    - image: /images/uploads/img_0996.jpg
-      member: 'Tim Ollier '
-      role: Drone Partnerships Lead
     - image: /images/uploads/img_0586-edit.jpg
       member: 'Matt Cleary '
       role: Software Engineer
@@ -94,9 +91,6 @@ meetTheTeam:
     - image: /images/uploads/chris.jpg
       member: 'Chris Fothergill '
       role: Software Engineer
-    - image: /images/uploads/img_3821.jpg
-      member: 'Andrew Norman '
-      role: Customer Success Executive
     - image: /images/uploads/screen-shot-2019-01-10-at-11.08.42.png
       member: 'Kieran Mulholland '
       role: Business Intelligence Analyst
@@ -111,4 +105,3 @@ siteMetadataOverride:
     - commercial drone insurance
   title: "Flock –\_About"
 ---
-
