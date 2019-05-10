@@ -94,6 +94,9 @@ meetTheTeam:
     - image: /images/uploads/screen-shot-2019-01-10-at-11.08.42.png
       member: 'Kieran Mulholland '
       role: Business Intelligence Analyst
+    - image: /images/uploads/tommy-wilson-headshot.jpg
+      member: 'Tommy Wilson '
+      role: Drone Partnerships Manager
   title: Meet the team
 siteMetadataOverride:
   description: drone insurance
