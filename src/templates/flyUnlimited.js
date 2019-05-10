@@ -13,16 +13,13 @@ import LightNav from '../components/LightNav'
 import SiteMetadata from '../components/SiteMetadata'
 import TextGrid from '../components/TextGrid'
 import Footer from '../components/Footer'
-import Flex from '../components/Flex'
-import RenewalBanner from '../components/RenewalBanner'
-import PromotionBanner from '../components/PromotionBanner'
+import Banner from '../components/Banner'
 import NonToggleiPhone from '../components/NonToggleIphone'
 import BlackBackground from '../components/BlackBackground'
 import FaqSection from '../components/FaqSection'
 import Hero from '../components/Hero'
 import {colors, breakpoints} from '../constants/theme'
 
-import FUnBadge from '../../static/images/uploads/FUnBadge.svg'
 
 class FlyUnlimitedPageTemplate extends Component {
   render() {
@@ -32,8 +29,7 @@ class FlyUnlimitedPageTemplate extends Component {
       siteMetadataOverride,
       how,
       control,
-      renewalBanner,
-      promotionBanner,
+      banner,
       whatIsCovered,
       faqSection
     } = this.props.data.markdownRemark.frontmatter
@@ -56,24 +52,11 @@ class FlyUnlimitedPageTemplate extends Component {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat'
                 }}
-                RightSideComponent={() => (
-                  <Flex
-                    alignItems={'center'}
-                    justifyContent="center"
-                    width={['100%', '20%', '30%']}
-                    ml={3}
-                  >
-                    <img src={FUnBadge} css={style.heroImage} />
-                  </Flex>
-                )}
                 textColor={colors.white}
                 header={hero.header}
                 description={hero.description}
                 buttons={hero.buttons}
                 features={hero.features}
-                smallPrint={
-                  '*Maximum £75 discount off first month. [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
-                }
               />
 
               {!why.hidden && (
@@ -134,24 +117,13 @@ class FlyUnlimitedPageTemplate extends Component {
               )}
             </Box>
 
-            {!renewalBanner.hidden && (
-              <RenewalBanner
-                image={renewalBanner.image}
-                mainText={renewalBanner.mainText}
-                buttonText={renewalBanner.buttonText}
-                buttonUrl={renewalBanner.buttonUrl}
-                buttonTrack={renewalBanner.buttonTrack}
-              />
-            )}
-
-            {!promotionBanner.hidden && (
-              <PromotionBanner
-                image={promotionBanner.image}
-                mainText={promotionBanner.mainText}
-                buttonText={promotionBanner.buttonText}
-                buttonUrl={promotionBanner.buttonUrl}
-                buttonTrack={promotionBanner.buttonTrack}
-                buttonColor={promotionBanner.buttonColor}
+            {!banner.hidden && (
+              <Banner
+                image={banner.image}
+                mainText={banner.mainText}
+                buttonText={banner.buttonText}
+                buttonUrl={banner.buttonUrl}
+                buttonTrack={banner.buttonTrack}
               />
             )}
 
@@ -169,9 +141,7 @@ class FlyUnlimitedPageTemplate extends Component {
             )}
 
             <Footer
-              FUnSmallPrint={
-                '*One free month insurance for new Fly Unlimited customers who start their cover before 11/05/19. Credit card required. Maximum discount is £75. Policies over this amount will be charged at the full policy price, and £75 refunded back. After your free month, we’ll automatically renew your subscription and charge you the full ongoing monthly policy price. Cancel anytime. Full [T&C\'s](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply.'
-              }
+
             />
           </div>
         </StickyContainer>
@@ -257,16 +227,7 @@ export const query = graphql`
             text
           }
         }
-        promotionBanner {
-          hidden
-          image
-          mainText
-          buttonText
-          buttonUrl
-          buttonTrack
-          buttonColor
-        }
-        renewalBanner {
+        banner {
           hidden
           image
           mainText

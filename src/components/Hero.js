@@ -93,7 +93,17 @@ const Hero = ({
             </Flex>
             {R.not(R.isNil(RightSideComponent)) ? (
               <Media query={`(min-width: ${R.nth(0, breakpoints)})`}>
-                {matches => (matches ? <RightSideComponent /> : null)}
+                {matches =>
+                  matches ? (
+                    <Flex
+                      alignItems="flex-end"
+                      justifyContent="center"
+                      width={['100%', '50%']}
+                    >
+                      <RightSideComponent />
+                    </Flex>
+                  ) : null
+                }
               </Media>
             ) : null}
           </Flex>

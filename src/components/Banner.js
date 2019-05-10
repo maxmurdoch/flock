@@ -9,7 +9,7 @@ import PrimaryButton from './PrimaryButton'
 import {breakpoints, fontFamilies} from '../constants/theme'
 import Text from './Text'
 
-const RenewalBanner = ({
+const Banner = ({
   image,
   header,
   mainText,
@@ -73,9 +73,9 @@ const RenewalBanner = ({
   )
 }
 
-export default RenewalBanner
+export default Banner
 
-RenewalBanner.propTypes = {
+Banner.propTypes = {
   testimonials: PropTypes.array
 }
 

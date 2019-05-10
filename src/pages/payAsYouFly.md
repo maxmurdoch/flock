@@ -7,7 +7,7 @@ hero:
   textColor: white
   buttons:
     - color: yellow
-      title: GET A QUOTE
+      title: GET A PRICE
       external: false
       to: https://flockcover.app.link/qdaEw2EMsU
     - title: WHAT'S COVERED
@@ -122,7 +122,7 @@ productTabs:
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
         smallPrints:
           - text: \* Equipment cover only available for commercial and trainee pilots whilst in flight.
-        buttonOneText: GET A QUOTE
+        buttonOneText: GET A PRICE
         buttonOneUrl: https://flockcover.app.link/qdaEw2EMsU
         buttonTwoText: FIND OUT MORE
         buttonTwoUrl: https://drive.google.com/file/d/1qnr7o1N6sgakvdjt9kzrPV3KZzbzVqDL/view?usp=sharing
@@ -162,7 +162,7 @@ productTabs:
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
         smallPrints:
           - text: \* Equipment cover only available for commercial and trainee pilots whilst in flight.
-        buttonOneText: GET A QUOTE
+        buttonOneText: GET A PRICE
         buttonOneUrl: https://flockcover.app.link/qdaEw2EMsU
         buttonTwoText: FIND OUT MORE
         buttonTwoUrl: https://flockcover.com/insurance/trainee/
@@ -191,7 +191,7 @@ productTabs:
             title: Invasion of privacy
         mainTitle: What's covered?
         mainDescription: View the [Key Facts](https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf) for details of what's covered.
-        buttonOneText: GET A QUOTE
+        buttonOneText: GET A PRICE
         buttonOneUrl: https://flockcover.app.link/qdaEw2EMsU
         buttonTwoText: FIND OUT MORE
         buttonTwoUrl: https://flockcover.com/insurance/recreational/
@@ -204,7 +204,7 @@ productTabs:
         productType: PAY-AS-YOU-FLY
         fromText: from
         perText: per flight        
-renewalBanner:
+banner:
   image: /images/uploads/renewal-drone.jpg
   mainText: Take to the skies with Flock today.
   buttonText: GET A PRICE IN 60 SECONDS

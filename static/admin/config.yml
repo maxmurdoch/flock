@@ -149,7 +149,7 @@ collections:
                 default: false
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Image', name: 'image', widget: 'image'}
-          - name: renewalBanner
+          - name: banner
             label: Renewal Banner
             widget: object
             fields:
@@ -424,7 +424,7 @@ collections:
                   - name: text
                     label: Text
                     widget: string
-          - name: renewalBanner
+          - name: banner
             label: Renewal Banner
             widget: object
             fields:
@@ -621,7 +621,7 @@ collections:
               - {label: 'Author', name: 'author', widget: 'string'}
               - {label: 'Quote', name: 'quote', widget: 'markdown'}
               - {label: 'Image', name: 'image', widget: 'image'}
-          - name: renewalBanner
+          - name: banner
             label: Renewal Banner
             widget: object
             fields:
@@ -828,7 +828,7 @@ collections:
                           - name: icon
                             label: Text
                             widget: image
-          - name: renewalBanner
+          - name: banner
             label: Renewal Banner
             widget: object
             fields:

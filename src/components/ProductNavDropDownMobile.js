@@ -90,17 +90,17 @@ const buttonContent = [
       }
     ]
   },
-  {
-    to: '',
-    text: 'ENTERPRISE',
-    hasIcon: true,
-    options: [
-      {
-        to: '',
-        text: 'Coming soon!'
-      }
-    ]
-  }
+  // {
+  //   to: '',
+  //   text: 'ENTERPRISE',
+  //   hasIcon: true,
+  //   options: [
+  //     {
+  //       to: '',
+  //       text: 'Coming soon!'
+  //     }
+  //   ]
+  // }
 ]
 
 export default ProductNavDropDown
