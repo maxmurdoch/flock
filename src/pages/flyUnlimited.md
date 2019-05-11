@@ -4,7 +4,7 @@ templateKey: flyUnlimited
 hero:
   backgroundImage: ../../images/uploads/fly-unlimited-header.jpg
   buttons:
-    - title: START FREE MONTH
+    - title: GET A PRICE
       to: 'https://my.flockcover.com'
       color: yellow
       external: true
@@ -24,11 +24,11 @@ hero:
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
   description: >-
-    Introducing Fly Unlimited, our fully flexible subscription product for commercial pilots. Get your first month on us*. No commitments, cancel anytime.
+    Introducing Fly Unlimited, our month-by-month policy for commercial pilots. Switch your cover on and off throughout the year, and make changes anytime.
 
-    
-    Don’t miss out - offer ends 11th May!
-  header: Start. Stop. Adjust. Drone Insurance has never been this flexible.
+
+    No annual commitments, no admin fees - just full flexibility.
+  header: Month-by-month commercial drone insurance that grows with you
   smallPrint: "*Maximum £75 discount off first month. [T&C's](https://help.flockcover.com/legal/free-month-fly-unlimited-tcs) apply."
 why:
   hidden: false
@@ -75,21 +75,14 @@ control:
         No problem. Even if you've paused your monthly policy, you can get covered for as little as one hour with our Pay-as-you-fly product.
       title: Need the odd job covered?
   title: Control your costs throughout the year
-renewalBanner:
-  hidden: true
-  image: /images/uploads/renewal-drone.jpg
-  mainText: Switching to Flock is easy - even before your policy has expired. Join Flock today!
-  buttonText: GET A QUOTE IN 60 SECONDS
-  buttonUrl: 'https://my.flockcover.com'
-  buttonTrack: WebApp Navigation Clicked
-promotionBanner:
+banner:
   hidden: false
-  image: /images/uploads/yellowBanner.png
-  mainText: Get covered with Fly Unlimited. Your first month is free!*
-  buttonText: START FREE MONTH
-  buttonUrl: 'https://my.flockcover.com'
-  buttonTrack: WebApp Navigation Clicked
-  buttonColor: black
+  image: /images/uploads/renewal-drone.jpg
+  mainText: Applying for your PfCO? Get a Flock insurance certificate.
+  buttonText: FIND OUT HOW
+  buttonUrl: https://help.flockcover.com/drone-regulation/how-do-i-get-my-proof-of-insurance-document-for-my-pfco-application
+  buttonTrack: ''
+  buttonColor: yellow
 whatIsCovered:
   hidden: false
   mainList:
@@ -114,7 +107,7 @@ whatIsCovered:
   smallPrints:
     - text: \** Prices depend on factors such as experience, equipment and claims history.
     - text: \+ Available if multiple pilots are operating under a single PfCO.
-  buttonOneText: START FREE MONTH
+  buttonOneText: GET A PRICE
   buttonOneUrl: 'https://my.flockcover.com'
   fromPrice: £24.95
   samplePolicyWordingUrl: https://s3.eu-west-2.amazonaws.com/flock-cover-static/IPID-fly-unlimited.pdf
@@ -129,7 +122,7 @@ whatIsCovered:
 faqSection:
   hidden: false
   header: Frequently asked questions
-  body: Got other questions? Visit our help centre, or chat live with us now.
+  body: Have other questions? Visit our help centre, or chat live with us now.
   buttonText: VIEW ALL FAQs
   buttonUrl: https://help.flockcover.com/
   disclosureIndicator: /images/uploads/small-arrow-yellow.svg

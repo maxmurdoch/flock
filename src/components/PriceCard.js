@@ -150,6 +150,7 @@ const PriceCard = ({
           to={buttonTwoUrl}
           external={buttonTwoExternal}
           title={buttonTwoText}
+          color="black"
         />
       )}
     </Flex>

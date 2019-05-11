@@ -41,6 +41,9 @@ const NavButton = ({
       : to
     window.open(link, external ? '_blank' : '_self')
   }
+
+  const {backgroundColor, textColor, arrowColor} = colorGenerator(color)
+
   return (
     <button
       css={css({
@@ -49,11 +52,11 @@ const NavButton = ({
         display: 'inline-block',
         padding: '18px 16px',
         border: border ? '2px solid black' : 'none',
-        backgroundColor: color === 'yellow' ? colors.yellow : colors.dark,
+        backgroundColor,
         outline: 'none',
         textDecoration: 'none',
         textAlign: 'left',
-        color: color === 'yellow' ? 'black' : 'white',
+        color: textColor,
         marginRight: mr,
         marginBottom: mb,
         flexGrow
@@ -84,7 +87,7 @@ const NavButton = ({
         </span>
         <img
           css={css({marginLeft: 24, marginBottom: 0})}
-          src={color === 'yellow' ? BlackArrow : WhiteArrow}
+          src={arrowColor === 'black' ? BlackArrow : WhiteArrow}
         />
       </span>
     </button>
@@ -98,6 +101,28 @@ NavButton.propTypes = {
   external: PropTypes.bool,
   branch: PropTypes.bool,
   track: PropTypes.string
+}
+
+function colorGenerator(colorCode) {
+  const colorScheme = {}
+  switch (colorCode) {
+    case 'yellow':
+      colorScheme.backgroundColor = colors.yellow
+      colorScheme.textColor = colors.dark
+      colorScheme.arrowColor = 'black'
+      break
+    case 'white':
+      colorScheme.backgroundColor = colors.white
+      colorScheme.textColor = colors.dark
+      colorScheme.arrowColor = 'black'
+      break
+    case 'black':
+    default:
+      colorScheme.backgroundColor = colors.dark
+      colorScheme.textColor = colors.white
+      colorScheme.arrowColor = 'white'
+  }
+  return colorScheme
 }
 
 export default NavButton

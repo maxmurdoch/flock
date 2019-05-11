@@ -8,14 +8,11 @@ hero:
     - branch: true
       color: yellow
       external: false
-      title: START FREE MONTH
+      title: GET A PRICE
       to: 'https://my.flockcover.com'
       track: ''
   description: >-
     Commercial drone insurance that fits the way you work. Get covered by the hour, day, or month - whatever suits you.
-
-
-    Try Fly Unlimited and get one month of commercial drone insurance on us*. No commitments, cancel anytime.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -64,7 +61,7 @@ productTypes:
       perText: per flight
       icon: /images/uploads/drone.svg
     - productType: FLY UNLIMITED
-      buttonOneText: START FREE MONTH
+      buttonOneText: GET A PRICE
       buttonTwoText: VIEW ALL FEATURES
       buttonOneUrl: https://my.flockcover.com/
       buttonTwoUrl: https://flockcover.com/flyunlimited/
@@ -101,21 +98,14 @@ testimonial:
   - author: 'Calum, Aerial Photographer '
     image: /images/uploads/grey-testimonial-background.png
     quote: Easy to use and comprehensive insurance. Would highly recommend!
-renewalBanner:
-  hidden: true
-  image: /images/uploads/renewal-drone.jpg
-  mainText: Read our PfCO application tips.
-  buttonText: TAKE ME TO THE POST
-  buttonUrl: https://blog.flockcover.com/flocks-essential-guide-to-pfco-renewals-dac39542e16a
-  buttonTrack: ''
-promotionBanner:
+banner:
   hidden: false
-  image: /images/uploads/yellowBanner.png
-  mainText: Get covered with Fly Unlimited. Your first month is free!*
-  buttonText: START FREE MONTH
-  buttonUrl: 'https://my.flockcover.com/'
-  buttonTrack: WebApp Navigation Clicked
-  buttonColor: black
+  image: /images/uploads/renewal-drone.jpg
+  mainText: Have a question? Take a look at our FAQ collection.
+  buttonText: TAKE ME THERE
+  buttonUrl: https://help.flockcover.com/
+  buttonTrack: ''
+  buttonColor: yellow
 siteMetadataOverride:
   description: drone insurance
   keywords:

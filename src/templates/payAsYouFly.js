@@ -13,7 +13,7 @@ import SmallText from '../components/SmallText'
 import TextGrid from '../components/TextGrid'
 import TabSection from '../components/ProductTabs/ProductTabs'
 import WhatIsCoveredSection from '../components/WhatIsCoveredSection'
-import RenewalBanner from '../components/RenewalBanner'
+import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import MapBackground from '../components/MapBackground'
 import FaqSection from '../components/FaqSection'
@@ -23,9 +23,6 @@ import CalculateRiskDropDown from '../components/CalculateRiskDropDown'
 import ToggleiPhone from '../components/ToggleiPhone'
 import SiteMetadata from '../components/SiteMetadata'
 import {colors, breakpoints} from '../constants/theme'
-
-import bigFlock from '../../static/images/uploads/hero-arrow-cropped.svg'
-import mobileFlock from '../images/mobile-arrow-hero.svg'
 
 const PayAsYouFlyTemplate = ({
   downloadLink,
@@ -37,7 +34,7 @@ const PayAsYouFlyTemplate = ({
   stopWorrying,
   featured,
   faqSection,
-  renewalBanner,
+  banner,
   productTabs
 }) => {
   return (
@@ -156,12 +153,12 @@ const PayAsYouFlyTemplate = ({
               </TabSection>
             </Box>
 
-            <RenewalBanner
-              image={renewalBanner.image}
-              mainText={renewalBanner.mainText}
-              buttonText={renewalBanner.buttonText}
-              buttonUrl={renewalBanner.buttonUrl}
-              buttonTrack={renewalBanner.buttonTrack}
+            <Banner
+              image={banner.image}
+              mainText={banner.mainText}
+              buttonText={banner.buttonText}
+              buttonUrl={banner.buttonUrl}
+              buttonTrack={banner.buttonTrack}
             />
           </div>
           <Box css={css({backgroundColor: 'white'})}>
@@ -195,7 +192,7 @@ PayAsYouFlyTemplate.propTypes = {
   siteMetadataOverride: PropTypes.object,
   stopWorrying: PropTypes.object,
   featured: PropTypes.object,
-  renewalBanner: PropTypes.object,
+  banner: PropTypes.object,
   productTabs: PropTypes.object
 }
 
@@ -212,7 +209,7 @@ const PayAsYouFly = ({data}) => {
     stopWorrying,
     featured,
     faqSection,
-    renewalBanner,
+    banner,
     how,
     risk
   } = data.markdownRemark.frontmatter
@@ -224,7 +221,7 @@ const PayAsYouFly = ({data}) => {
       calculator={calculator}
       siteMetadataOverride={siteMetadataOverride}
       stopWorrying={stopWorrying}
-      renewalBanner={renewalBanner}
+      banner={banner}
       productTabs={productTabs}
       faqSection={faqSection}
       how={how}
@@ -298,7 +295,7 @@ export const query = graphql`
           description
           disclaimer
         }
-        renewalBanner {
+        banner {
           image
           mainText
           buttonText
