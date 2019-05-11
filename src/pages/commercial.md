@@ -9,7 +9,7 @@ hero:
       color: yellow
       external: false
       title: GET A PRICE
-      to: 'https://my.flockcover.com'
+      to: '#product-types'
       track: ''
   description: >-
     Commercial drone insurance that fits the way you work. Get covered by the hour, day, or month - whatever suits you.
