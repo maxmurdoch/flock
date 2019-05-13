@@ -35,7 +35,7 @@ const ProductNavDropDown = ({productsIsOpen}) => {
             p={'15px'}
           >
             {mapIndex(
-              ({to, text, options, hasIcon}, index) => (
+              ({to, text, hasIcon}, index) => (
                 <Flex
                   p="5px"
                   pr="15px"
@@ -47,7 +47,7 @@ const ProductNavDropDown = ({productsIsOpen}) => {
                     },
 
                     '@media (min-width: 1200px)': {
-                      width: '33.3333%'
+                      width: '25%'
                     }
                   })}
                 >
@@ -113,12 +113,12 @@ const buttonContent = [
       }
     ]
   },
-  // {
-  //   to: '/enterprise',
-  //   text: 'ENTERPRISE',
-  //   hasIcon: true,
-  //   options: []
-  // }
+  {
+    to: '/enterprise',
+    text: 'ENTERPRISE',
+    hasIcon: true,
+    options: []
+  }
 ]
 
 export default ProductNavDropDown
