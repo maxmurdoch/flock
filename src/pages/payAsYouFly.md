@@ -4,11 +4,14 @@ templateKey: payAsYouFly
 hero:
   backgroundImage: ../../images/uploads/PAYF-header.jpg
   buttons:
-    - color: yellow
+    - branch: false
+      color: yellow
       external: false
       title: GET A PRICE
       to: 'https://flockcover.app.link/qdaEw2EMsU'
-    - color: black
+    - branch: false
+      color: black
+      external: false
       title: WHAT'S COVERED
       to: '#what-is-covered'
   description: >-
@@ -31,6 +34,7 @@ stopWorrying:
     Whether you’re a new pilot, fly a few times a month, or only take your drone
     out for part of the year, Pay-as-you-fly drone insurance could cut your
     insurance bill.
+  hidden: false
   reasons:
     - icon: /images/uploads/drone.svg
       text: >-
@@ -52,6 +56,7 @@ how:
   description: >-
     Insuring your drone flight has never been easier. It’s as simple as tap,
     tap, take-off!
+  hidden: false
   list:
     - image: /images/uploads/commercial-1-.png
       text: Select where and when you’re flying. See your quote change in real-time.
@@ -70,6 +75,7 @@ risk:
     With Flock, you get much more than just an insurance policy. The app
     analyses real-time data from your Flight Area to generate a unique Risk
     Report for each flight in seconds. Here’s what we look out for:
+  hidden: false
   list:
     - icon: images/uploads/icons-house.svg
       text: >-
@@ -99,6 +105,7 @@ calculator:
   disclaimer: >-
     Your estimate is based on average usage. Actual prices will depend on the
     real-time risks of each flight.
+  hidden: false
   title: Get a quick Pay-as-you-fly quote
 productTabs:
   customerTypeList:
@@ -230,15 +237,17 @@ productTabs:
   description: >-
     Whether you’re operating commercially, completing your training, or flying
     for fun - we’ve got a Pay-as-you-fly policy that’s tailored to you.
+  hidden: false
   title: Find the cover that's right for you
 banner:
   buttonText: GET A PRICE IN 60 SECONDS
   buttonTrack: WebApp Navigation Clicked
   buttonUrl: 'https://flockcover.app.link/6IW6kTmgfP'
+  hidden: false
   image: /images/uploads/renewal-drone.jpg
   mainText: Take to the skies with Flock today.
 faqSection:
-  body: Have other questions? Visit our help centre or chat live with us now.
+  body: Have other questions? Visit our help centrde or chat live with us now.
   buttonText: VIEW ALL FAQs
   buttonUrl: 'https://help.flockcover.com/'
   disclosureIndicator: /images/uploads/small-arrow-yellow.svg
@@ -275,5 +284,12 @@ faqSection:
         available to commercial and trainee pilots.
       title: Do Flock’s recreational policies provide equipment cover?
   header: Frequently asked questions
+  hidden: false
+siteMetadataOverride:
+  description: >-
+    We provide fully flexible drone insurance for commercial, trainee and
+    recreational pilots. Policies are underwritten by Allianz, the world’s
+    leading aviation insurer.
+  title: 'Flock | Simpler, smarter drone insurance'
 ---
 
