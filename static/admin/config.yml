@@ -26,12 +26,17 @@ collections:
               - name: backgroundImage
                 label: Background Image
                 widget: image
+                required: false
               - name: header
                 label: Header
                 widget: string
               - name: description
                 label: Description
                 widget: markdown
+              - name: smallPrint
+                label: Small Print
+                widget: string
+                required: false
               - name: buttons
                 label: Buttons
                 widget: list
@@ -53,11 +58,14 @@ collections:
                   - name: external
                     label: External
                     widget: boolean
+                    default: false
                   - name: branch
                     label: Branch
                     widget: boolean
+                    default: false
                   - name: track
                     label: Track
+                    required: false
                     widget: select
                     options:
                       - { label: Download, value: 'Application Download Viewed' }
@@ -72,9 +80,11 @@ collections:
                   - name: leftIcon
                     label: Left Icon
                     widget: image
+                    required: false
                   - name: rightIcon
                     label: Right Icon
                     widget: image
+                    required: false
           - label: 'Stop worrying'
             name: 'stopWorrying'
             widget: 'object'
@@ -114,14 +124,14 @@ collections:
                     fields:
                       - {label: 'Product Type', name: 'productType', widget: 'string'}
                       - {label: 'Button One Text', name: 'buttonOneText', widget: 'string'}
-                      - {label: 'Button Two Text', name: 'buttonTwoText', widget: 'string'}
+                      - {label: 'Button Two Text', name: 'buttonTwoText', widget: 'string', required: false}
                       - {label: 'Button One URL', name: 'buttonOneUrl', widget: 'string'}
-                      - {label: 'Button Two URL', name: 'buttonTwoUrl', widget: 'string'}
-                      - {label: 'Button One External', name: 'buttonOneExternal', widget: 'boolean'}
-                      - {label: 'Button Two External', name: 'buttonTwoExternal', widget: 'boolean'}
+                      - {label: 'Button Two URL', name: 'buttonTwoUrl', widget: 'string', required: false}
+                      - {label: 'Button One External', name: 'buttonOneExternal', widget: 'boolean', default: false}
+                      - {label: 'Button Two External', name: 'buttonTwoExternal', widget: 'boolean', default: false, required: false}
                       - {label: 'From Price', name: 'fromPrice', widget: 'string'}
-                      - {label: 'From Text', name: 'fromText', widget: 'string'}
-                      - {label: 'Per Text', name: 'perText', widget: 'string'}
+                      - {label: 'From Text', name: 'fromText', widget: 'string', required: false}
+                      - {label: 'Per Text', name: 'perText', widget: 'string', required: false}
                       - {label: 'Icon', name: 'icon', widget: 'image'}
                       - label: Policy Feature List
                         name: policyFeatureList
@@ -136,6 +146,7 @@ collections:
                 label: Hidden
                 widget: boolean
                 default: false
+                required: false
               - {label: 'Author', name: 'author', widget: 'string'}
               - {label: 'Quote', name: 'quote', widget: 'markdown'}
               - {label: 'Image', name: 'image', widget: 'image'}
@@ -150,7 +161,7 @@ collections:
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Image', name: 'image', widget: 'image'}
           - name: banner
-            label: Renewal Banner
+            label: Banner
             widget: object
             fields:
               - name: hidden
@@ -172,9 +183,17 @@ collections:
               - name: buttonTrack
                 label: Button Track
                 widget: select
+                required: false
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: buttonColor
+                label: Button Color
+                widget: select
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                  - { label: White, value: white }
           - name: "siteMetadataOverride"
             required: false
             label: "Site metadata override"
@@ -250,6 +269,10 @@ collections:
               - name: description
                 label: Description
                 widget: markdown
+              - name: smallPrint
+                label: Small Print
+                widget: string
+                required: false
               - name: buttons
                 label: Buttons
                 widget: list
@@ -271,12 +294,15 @@ collections:
                   - name: external
                     label: External
                     widget: boolean
+                    default: false
                   - name: branch
                     label: Branch
                     widget: boolean
+                    default: false
                   - name: track
                     label: Track
                     widget: select
+                    required: false
                     options:
                       - { label: Download, value: 'Application Download Viewed' }
                       - { label: Web App, value: 'WebApp Navigation Clicked' }
@@ -290,9 +316,11 @@ collections:
                   - name: leftIcon
                     label: Left Icon
                     widget: image
+                    required: false
                   - name: rightIcon
                     label: Right Icon
                     widget: image
+                    required: false
           - name: why
             label: Why
             widget: object
@@ -307,8 +335,8 @@ collections:
               - name: description
                 label: Description
                 widget: string
-              - name: items
-                label: Items
+              - name: list
+                label: List
                 widget: list
                 fields:
                   - name: icon
@@ -317,8 +345,8 @@ collections:
                   - name: title
                     label: Title
                     widget: string
-                  - name: body
-                    label: Body
+                  - name: text
+                    label: Text
                     widget: markdown
           - name: how
             label: How
@@ -368,9 +396,12 @@ collections:
                 label: List
                 widget: list
                 fields:
-                  - name: icon
-                    label: Icon
-                    widget: image
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: text
+                    label: Text
+                    widget: string
           - name: whatIsCovered
             label: What is covered
             widget: object
@@ -411,9 +442,11 @@ collections:
               - name: buttonTwoText
                 label: Button Two Text
                 widget: string
+                required: false
               - name: buttonTwoUrl
                 label: Button Two URL
                 widget: string
+                required: false
               - name: fromPrice
                 label: From Price
                 widget: string
@@ -425,28 +458,35 @@ collections:
                     label: Text
                     widget: string
           - name: banner
-            label: Renewal Banner
+            label: Banner
             widget: object
+            required: false
             fields:
               - name: hidden
                 label: Hidden
                 widget: boolean
                 default: false
+                required: false
               - name: image
                 label: Image
                 widget: image
+                required: false
               - name: mainText
                 label: Main Text
                 widget: string
+                required: false
               - name: buttonText
                 label: Button Text
                 widget: string
+                required: false
               - name: buttonUrl
                 label: Button URL
                 widget: string
+                required: false
               - name: buttonTrack
                 label: Button Track
                 widget: select
+                required: false
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
@@ -458,6 +498,7 @@ collections:
                 label: Hidden
                 widget: boolean
                 default: false
+                required: false
               - name: header
                 label: Header
                 widget: string
@@ -483,6 +524,14 @@ collections:
                   - name: body
                     label: Body
                     widget: markdown
+          - name: "siteMetadataOverride"
+            label: "Site metadata override"
+            required: false
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
 
       - name: commercial
         label: Commercial
@@ -527,12 +576,15 @@ collections:
                   - name: external
                     label: External
                     widget: boolean
+                    default: false
                   - name: branch
                     label: Branch
                     widget: boolean
+                    default: false
                   - name: track
                     label: Track
                     widget: select
+                    required: false
                     options:
                       - { label: Download, value: 'Application Download Viewed' }
                       - { label: Web App, value: 'WebApp Navigation Clicked' }
@@ -546,9 +598,11 @@ collections:
                   - name: leftIcon
                     label: Left Icon
                     widget: image
+                    required: false
                   - name: rightIcon
                     label: Right Icon
                     widget: image
+                    required: false
           - label: 'Why'
             name: 'why'
             widget: 'object'
@@ -585,8 +639,8 @@ collections:
                   - {label: 'Button Two Text', name: 'buttonTwoText', widget: 'string'}
                   - {label: 'Button One URL', name: 'buttonOneUrl', widget: 'string'}
                   - {label: 'Button Two URL', name: 'buttonTwoUrl', widget: 'string'}
-                  - {label: 'Button One External', name: 'buttonOneExternal', widget: 'boolean'}
-                  - {label: 'Button Two External', name: 'buttonTwoExternal', widget: 'boolean'}
+                  - {label: 'Button One External', name: 'buttonOneExternal', widget: 'boolean', default: false}
+                  - {label: 'Button Two External', name: 'buttonTwoExternal', widget: 'boolean', default: false}
                   - {label: 'From Price', name: 'fromPrice', widget: 'string'}
                   - {label: 'From Text', name: 'fromText', widget: 'string'}
                   - {label: 'Per Text', name: 'perText', widget: 'string'}
@@ -622,7 +676,7 @@ collections:
               - {label: 'Quote', name: 'quote', widget: 'markdown'}
               - {label: 'Image', name: 'image', widget: 'image'}
           - name: banner
-            label: Renewal Banner
+            label: Banner
             widget: object
             fields:
               - name: hidden
@@ -641,12 +695,27 @@ collections:
               - name: buttonUrl
                 label: Button URL
                 widget: string
+              - name: buttonColor
+                label: Button Color
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                  - { label: White, value: white }
               - name: buttonTrack
                 label: Button Track
                 widget: select
+                required: false
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
+          - name: "siteMetadataOverride"
+            label: "Site metadata override"
+            required: false
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
 
       - name: payAsYouFly
         label: Pay As You Fly
@@ -691,12 +760,15 @@ collections:
                   - name: external
                     label: External
                     widget: boolean
+                    default: false
                   - name: branch
                     label: Branch
                     widget: boolean
+                    default: false
                   - name: track
                     label: Track
                     widget: select
+                    required: false
                     options:
                       - { label: Download, value: 'Application Download Viewed' }
                       - { label: Web App, value: 'WebApp Navigation Clicked' }
@@ -710,9 +782,11 @@ collections:
                   - name: leftIcon
                     label: Left Icon
                     widget: image
+                    required: false
                   - name: rightIcon
                     label: Right Icon
                     widget: image
+                    required: false
           - label: 'Stop worrying'
             name: 'stopWorrying'
             widget: 'object'
@@ -829,7 +903,7 @@ collections:
                             label: Text
                             widget: image
           - name: banner
-            label: Renewal Banner
+            label: Banner
             widget: object
             fields:
               - name: hidden
@@ -851,6 +925,7 @@ collections:
               - name: buttonTrack
                 label: Button Track
                 widget: select
+                required: false
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
@@ -887,6 +962,14 @@ collections:
                   - name: body
                     label: Body
                     widget: markdown
+          - name: "siteMetadataOverride"
+            label: "Site metadata override"
+            required: false
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
 
       - name: enterprise
         label: Enterprise
@@ -923,6 +1006,7 @@ collections:
                   - name: border
                     label: Border
                     widget: boolean
+                    default: false
                   - name: color
                     label: Color
                     widget: select
@@ -934,12 +1018,15 @@ collections:
                   - name: external
                     label: External
                     widget: boolean
+                    default: false
                   - name: branch
                     label: Branch
                     widget: boolean
+                    default: false
                   - name: track
                     label: Track
                     widget: select
+                    required: false
                     options:
                       - { label: Download, value: 'Application Download Viewed' }
                       - { label: Web App, value: 'WebApp Navigation Clicked' }
@@ -953,9 +1040,11 @@ collections:
                   - name: leftIcon
                     label: Left Icon
                     widget: image
+                    required: false
                   - name: rightIcon
                     label: Right Icon
                     widget: image
+                    required: false
           - label: 'Why'
             name: 'why'
             widget: 'object'
@@ -1003,12 +1092,28 @@ collections:
               - name: buttonUrl
                 label: Button URL
                 widget: string
+              - name: buttonColor
+                label: Button Color
+                widget: select
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                  - { label: White, value: white }
               - name: buttonTrack
                 label: Button Track
                 widget: select
+                required: false
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
+          - name: "siteMetadataOverride"
+            label: "Site metadata override"
+            required: false
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
 
       - name: about
         label: About
@@ -1050,12 +1155,15 @@ collections:
                   - name: external
                     label: External
                     widget: boolean
+                    default: false
                   - name: branch
                     label: Branch
                     widget: boolean
+                    default: false
                   - name: track
                     label: Track
                     widget: select
+                    required: false
                     options:
                       - { label: Download, value: 'Application Download Viewed' }
                       - { label: Web App, value: 'WebApp Navigation Clicked' }
@@ -1069,9 +1177,11 @@ collections:
                   - name: leftIcon
                     label: Left Icon
                     widget: image
+                    required: false
                   - name: rightIcon
                     label: Right Icon
                     widget: image
+                    required: false
           - name: flockStory
             label: Flock story
             widget: object
@@ -1085,7 +1195,7 @@ collections:
             label: Core values
             widget: object
             fields:
-              - {name: isShowing, label: 'Show Core Values?', widget: boolean}
+              - {name: isShowing, label: 'Show Core Values?', widget: boolean, default: false}
               - {name: 'title', label: 'Title', widget: 'string'}
               - {name: 'description', label: 'Description', widget: 'markdown'}
               - label: 'List'
@@ -1162,12 +1272,15 @@ collections:
               - name: external
                 label: External
                 widget: boolean
+                default: false
               - name: branch
                 label: Branch
                 widget: boolean
+                default: false
               - name: track
                 label: Track
                 widget: select
+                required: false
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
@@ -1181,9 +1294,11 @@ collections:
               - name: leftIcon
                 label: Left Icon
                 widget: image
+                required: false
               - name: rightIcon
                 label: Right Icon
                 widget: image
+                required: false
       - label: 'Why'
         name: 'why'
         widget: 'object'
@@ -1200,7 +1315,7 @@ collections:
         name: 'flightSchool'
         widget: 'object'
         fields:
-          - {label: 'Show flight school list?', name: 'show', widget: 'boolean'}
+          - {label: 'Show flight school list?', name: 'show', widget: 'boolean', default: false}
           - {label: 'Title', name: 'title', widget: 'string'}
           - name: 'list'
             label: 'Flight schools'
@@ -1212,7 +1327,7 @@ collections:
         name: coverNote
         widget: object
         fields:
-          - {name: isShowing, label: 'Show cover note?', widget: boolean}
+          - {name: isShowing, label: 'Show cover note?', widget: boolean, default: false}
           - {name: image, label: Image, widget: image}
           - {name: title, label: Title, widget: string}
           - {name: bodyText, label: Body text, widget: string}
