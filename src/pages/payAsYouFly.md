@@ -27,7 +27,7 @@ hero:
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
-  header: Pay-as-you-fly drone insuranced
+  header: Pay-as-you-fly drone insurance
   textColor: white
 stopWorrying:
   description: >-
