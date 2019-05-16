@@ -85,14 +85,6 @@ const styles = {
     backgroundSize: 'cover'
   }),
 
-  renewalButton: `
-    align-self: 'flex-start';
-    cursor: pointer;
-    @media (max-width: ${R.nth(0, breakpoints)}) {
-      text-align: left;
-    }
-  `,
-
   mainText: `
     font-family: ${fontFamilies.itc};
     font-weight: 700;
