@@ -345,8 +345,8 @@ collections:
                   - name: title
                     label: Title
                     widget: string
-                  - name: body
-                    label: Body
+                  - name: text
+                    label: Text
                     widget: markdown
           - name: how
             label: How
@@ -524,6 +524,14 @@ collections:
                   - name: body
                     label: Body
                     widget: markdown
+          - name: "siteMetadataOverride"
+            label: "Site metadata override"
+            required: false
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
 
       - name: commercial
         label: Commercial
