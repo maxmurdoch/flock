@@ -33,6 +33,10 @@ collections:
               - name: description
                 label: Description
                 widget: markdown
+              - name: smallPrint
+                label: Small Print
+                widget: string
+                required: false
               - name: buttons
                 label: Buttons
                 widget: list
@@ -183,6 +187,13 @@ collections:
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
+              - name: buttonColor
+                label: Button Color
+                widget: select
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                  - { label: White, value: white }
           - name: "siteMetadataOverride"
             required: false
             label: "Site metadata override"
