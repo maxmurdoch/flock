@@ -161,7 +161,7 @@ collections:
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Image', name: 'image', widget: 'image'}
           - name: banner
-            label: Renewal Banner
+            label: Banner
             widget: object
             fields:
               - name: hidden
@@ -458,7 +458,7 @@ collections:
                     label: Text
                     widget: string
           - name: banner
-            label: Renewal Banner
+            label: Banner
             widget: object
             required: false
             fields:
@@ -676,7 +676,7 @@ collections:
               - {label: 'Quote', name: 'quote', widget: 'markdown'}
               - {label: 'Image', name: 'image', widget: 'image'}
           - name: banner
-            label: Renewal Banner
+            label: Banner
             widget: object
             fields:
               - name: hidden
@@ -903,7 +903,7 @@ collections:
                             label: Text
                             widget: image
           - name: banner
-            label: Renewal Banner
+            label: Banner
             widget: object
             fields:
               - name: hidden
