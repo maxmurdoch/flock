@@ -269,6 +269,10 @@ collections:
               - name: description
                 label: Description
                 widget: markdown
+              - name: smallPrint
+                label: Small Print
+                widget: string
+                required: false
               - name: buttons
                 label: Buttons
                 widget: list
@@ -331,8 +335,8 @@ collections:
               - name: description
                 label: Description
                 widget: string
-              - name: items
-                label: Items
+              - name: list
+                label: List
                 widget: list
                 fields:
                   - name: icon
@@ -392,9 +396,12 @@ collections:
                 label: List
                 widget: list
                 fields:
-                  - name: icon
-                    label: Icon
-                    widget: image
+                  - name: title
+                    label: Title
+                    widget: string
+                  - name: text
+                    label: Text
+                    widget: string
           - name: whatIsCovered
             label: What is covered
             widget: object
@@ -435,9 +442,11 @@ collections:
               - name: buttonTwoText
                 label: Button Two Text
                 widget: string
+                required: false
               - name: buttonTwoUrl
                 label: Button Two URL
                 widget: string
+                required: false
               - name: fromPrice
                 label: From Price
                 widget: string
@@ -451,23 +460,29 @@ collections:
           - name: banner
             label: Renewal Banner
             widget: object
+            required: false
             fields:
               - name: hidden
                 label: Hidden
                 widget: boolean
                 default: false
+                required: false
               - name: image
                 label: Image
                 widget: image
+                required: false
               - name: mainText
                 label: Main Text
                 widget: string
+                required: false
               - name: buttonText
                 label: Button Text
                 widget: string
+                required: false
               - name: buttonUrl
                 label: Button URL
                 widget: string
+                required: false
               - name: buttonTrack
                 label: Button Track
                 widget: select
@@ -483,6 +498,7 @@ collections:
                 label: Hidden
                 widget: boolean
                 default: false
+                required: false
               - name: header
                 label: Header
                 widget: string
@@ -574,9 +590,11 @@ collections:
                   - name: leftIcon
                     label: Left Icon
                     widget: image
+                    required: false
                   - name: rightIcon
                     label: Right Icon
                     widget: image
+                    required: false
           - label: 'Why'
             name: 'why'
             widget: 'object'
@@ -669,6 +687,12 @@ collections:
               - name: buttonUrl
                 label: Button URL
                 widget: string
+              - name: buttonColor
+                label: Button Color
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                  - { label: White, value: white }
               - name: buttonTrack
                 label: Button Track
                 widget: select
@@ -676,6 +700,14 @@ collections:
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
+          - name: "siteMetadataOverride"
+            label: "Site metadata override"
+            required: false
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
 
       - name: payAsYouFly
         label: Pay As You Fly
@@ -922,6 +954,14 @@ collections:
                   - name: body
                     label: Body
                     widget: markdown
+          - name: "siteMetadataOverride"
+            label: "Site metadata override"
+            required: false
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
 
       - name: enterprise
         label: Enterprise
@@ -1044,6 +1084,13 @@ collections:
               - name: buttonUrl
                 label: Button URL
                 widget: string
+              - name: buttonColor
+                label: Button Color
+                widget: select
+                options:
+                  - { label: Yellow, value: yellow }
+                  - { label: Black, value: black }
+                  - { label: White, value: white }
               - name: buttonTrack
                 label: Button Track
                 widget: select
@@ -1051,6 +1098,14 @@ collections:
                 options:
                   - { label: Download, value: 'Application Download Viewed' }
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
+          - name: "siteMetadataOverride"
+            label: "Site metadata override"
+            required: false
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
 
       - name: about
         label: About
