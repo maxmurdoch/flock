@@ -1099,6 +1099,10 @@ collections:
                   - { label: Yellow, value: yellow }
                   - { label: Black, value: black }
                   - { label: White, value: white }
+              - name: buttonBorder
+                label: Button Border
+                widget: boolean
+                default: false
               - name: buttonTrack
                 label: Button Track
                 widget: select
