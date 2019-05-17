@@ -12,13 +12,6 @@ hero:
       title: GET IN TOUCH
       to: "#intercom"
       track: ''
-    - branch: true
-      color: white
-      border: true
-      external: false
-      title: DOWNLOAD WHITE PAPER
-      to: 'https://my.flockcover.com'
-      track: ''
   description: >-
     Needs change as your business grows. With Flock Enterprise, you’ll receive insurance that evolves with drone fleet, along with risk intelligence insights that help you fly safer.
   features:
@@ -52,7 +45,7 @@ testimonial:
     quote: >-
       Flock’s insurance platform provides a transparent view of risk and pricing; we can now understand where exactly we are incurring insurance costs on a per-flight, per-drone and per-pilot basis.
 banner:
-  hidden: false
+  hidden: true
   image: /images/uploads/white-paper-banner.jpg
   header: FREE WHITE PAPER
   mainText: The future of insurance for connected drone fleets
