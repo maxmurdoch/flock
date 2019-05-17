@@ -67,9 +67,10 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms'
     },
     {
-      resolve: `gatsby-plugin-intercom-spa`,
+      resolve: 'gatsby-plugin-intercom-spa',
       options: {
-        app_id: 'db51wrth'
+        app_id: 'db51wrth',
+        include_in_development: true
       }
     },
     'gatsby-plugin-netlify-cms'

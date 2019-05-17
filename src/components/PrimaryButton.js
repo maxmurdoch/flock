@@ -27,6 +27,8 @@ const NavButton = ({
       analytics.track(track)
     }
 
+    if (to === '#intercom') return window.Intercom('show')
+
     if (to.indexOf('#') === 0) {
       window.scrollTo({
         top: document.querySelector(to).offsetTop,
@@ -43,7 +45,6 @@ const NavButton = ({
   }
 
   const {backgroundColor, textColor, arrowColor} = colorGenerator(color)
-
   return (
     <button
       css={css({

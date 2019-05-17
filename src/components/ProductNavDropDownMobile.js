@@ -4,7 +4,7 @@ import * as R from 'ramda'
 import SiteContainer from './SiteContainer'
 import Flex from './Flex'
 import PrimaryButton from './NavPrimaryButton'
-import SecondaryButton from './NavSecondaryButton'
+// import SecondaryButton from './NavSecondaryButton'
 import {colors} from '../constants/theme'
 
 const mapIndex = R.addIndex(R.map)
@@ -19,7 +19,7 @@ const ProductNavDropDown = () => {
     >
       <SiteContainer edgeToEdge>
         {mapIndex(
-          ({to, text, options, hasIcon}, index) => (
+          ({to, text, hasIcon}, index) => (
             <Flex flexDirection="column" mb="20px" key={index}>
               <PrimaryButton
                 color="black"
@@ -91,15 +91,10 @@ const buttonContent = [
     ]
   },
   // {
-  //   to: '',
+  //   to: '/enterprise',
   //   text: 'ENTERPRISE',
   //   hasIcon: true,
-  //   options: [
-  //     {
-  //       to: '',
-  //       text: 'Coming soon!'
-  //     }
-  //   ]
+  //   options: []
   // }
 ]
 

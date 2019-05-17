@@ -103,7 +103,7 @@ const styles = {
     @media (min-width: ${R.nth(1, breakpoints)}) {
       font-size: 36px;
       line-height: 44px;
-      max-width: 75%;
+      max-width: 70%;
     }
   `,
 

@@ -135,8 +135,7 @@ productTabs:
       productCards:
         - buttonOneExternal: false
           buttonOneText: CONTACT US
-          buttonOneUrl: 'mailto:hello@flockcover.com'
-          buttonTwoExternal: false
+          buttonOneUrl: '#intercom'
           fromPrice: £POA
           icon: /images/uploads/double-drone.svg
           policyFeatureList:
@@ -186,4 +185,3 @@ siteMetadataOverride:
     - Flock Cover
   title: 'Flock | Simpler, smarter drone insurance'
 ---
-
