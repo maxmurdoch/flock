@@ -73,7 +73,6 @@ const EnterpriseTemplate = ({
                 buttonUrl={banner.buttonUrl}
                 buttonTrack={banner.buttonTrack}
                 buttonColor={banner.buttonColor}
-                buttonTextColor={banner.buttonTextColor}
                 buttonBorder={banner.buttonBorder}
               />
             </Box>
@@ -172,7 +171,6 @@ export const query = graphql`
           buttonText
           buttonUrl
           buttonTrack
-          buttonTextColor
           buttonColor
           buttonBorder
         }

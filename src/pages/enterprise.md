@@ -23,7 +23,7 @@ hero:
     * Needs change as your business grows.
 
     * With Flock Enterprise, you’ll receive insurance that evolves with drone fleet,
-    
+
     * along with risk intelligence insights that help you fly safer.
   features:
     - rightIcon: /images/uploads/allianz.png
@@ -64,7 +64,6 @@ banner:
   buttonUrl: https://blog.flockcover.com/flocks-essential-guide-to-pfco-renewals-dac39542e16a
   buttonTrack: ''
   buttonColor: white
-  buttonTextColor: black
   buttonBorder: true
 trustedBy:
   hidden: false
