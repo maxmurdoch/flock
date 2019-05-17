@@ -36,15 +36,15 @@ why:
     - text: >-
         Your premium is tailored to your fleet’s usage and risk exposure, with safer flights rewarded with lower prices. Transparency such as this ensures you have the ultimate control over the price of your insurance.
       title: Fairer pricing
-      icon: /images/uploads/money.svg  
+      icon: /images/uploads/money-shield-icon.svg  
     - text: >-
         A granular understanding into the risk profile of your fleet unlocks actionable insights that combine to improve the overall safety of your organisation, and the likelihood of claims.
       title: Risk Management
-      icon: /images/uploads/shield-icon.svg       
+      icon: /images/uploads/hazard-icon.svg       
     - text: >-
         Rather than a static annual premium, Flock Enterprise seamlessly evolves with your dynamic drone fleet. Add new equipment, or change liability limits as and when you need, with no additional fees.
       title: Ultimate adaptability
-      icon: /images/uploads/shield-icon.svg  
+      icon: /images/uploads/wireless-icon.svg  
   title: 'Safer and smarter with every drone flight'
 testimonial:
   - author: 'David Williams, Chief Operating Officer Texo iHUB'
