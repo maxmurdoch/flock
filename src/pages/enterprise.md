@@ -20,7 +20,11 @@ hero:
       to: 'https://my.flockcover.com'
       track: ''
   description: >-
-    Needs change as your business grows. With Flock Enterprise, you’ll receive insurance that evolves with drone fleet, along with risk intelligence insights that help you fly safer.
+    * Needs change as your business grows.
+
+    * With Flock Enterprise, you’ll receive insurance that evolves with drone fleet,
+    
+    * along with risk intelligence insights that help you fly safer.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
