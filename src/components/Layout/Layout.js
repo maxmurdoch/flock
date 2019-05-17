@@ -11,6 +11,10 @@ import theme, {fontFamilies, colors, breakpoints} from '../../constants/theme'
 import './Layout.css'
 import {StaticQuery, graphql} from 'gatsby'
 
+import hijackIntercomLinks from '../../utils/hijackIntercomLinks'
+hijackIntercomLinks()
+
+
 import itc from '../../fonts/avantgarde/itcavantgardestd-bold-webfont.woff'
 import chivo from '../../fonts/chivo/Chivo-Regular.woff2'
 
