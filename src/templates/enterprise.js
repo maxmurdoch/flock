@@ -22,7 +22,8 @@ const EnterpriseTemplate = ({
   why,
   siteMetadataOverride,
   testimonial,
-  banner
+  banner,
+  trustedBy
 }) => {
   return (
     <StickyContainer>
@@ -79,9 +80,11 @@ const EnterpriseTemplate = ({
           )}
         </Box>
 
-        <Box pt={[3, 5]}>
-          <Featured />
-        </Box>
+        {!trustedBy.hidden && (
+          <Box pt={[3, 5]}>
+            <Featured header={trustedBy.header} image={trustedBy.image}/>
+          </Box>
+        )}
 
         <Footer />
       </div>
@@ -98,7 +101,8 @@ const Enterprise = ({data}) => {
     why,
     siteMetadataOverride,
     testimonial,
-    banner
+    banner,
+    trustedBy
   } = data.markdownRemark.frontmatter
 
   return (
@@ -110,6 +114,7 @@ const Enterprise = ({data}) => {
         siteMetadataOverride={siteMetadataOverride}
         testimonial={testimonial}
         banner={banner}
+        trustedBy={trustedBy}
       />
     </Layout>
   )
@@ -170,6 +175,11 @@ export const query = graphql`
           buttonTextColor
           buttonColor
           buttonBorder
+        }
+        trustedBy {
+          hidden
+          image
+          header
         }
         siteMetadataOverride {
           title

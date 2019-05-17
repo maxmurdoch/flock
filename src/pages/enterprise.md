@@ -3,13 +3,14 @@ title: Enterprise
 templateKey: enterprise
 navColor: dark
 hero:
-  backgroundImage: ../../images/uploads/commercial-header.jpg
+  backgroundImage: ../../images/uploads/enterprise-hero.png
   buttons:
     - branch: true
       color: yellow
       external: false
+      border: false
       title: GET IN TOUCH
-      to: 'https://my.flockcover.com'
+      to: "#intercom"
       track: ''
     - branch: true
       color: white
@@ -19,7 +20,7 @@ hero:
       to: 'https://my.flockcover.com'
       track: ''
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Needs change as your business grows. With Flock Enterprise, you’ll receive insurance that evolves with drone fleet, along with risk intelligence insights that help you fly safer.
   features:
     - rightIcon: /images/uploads/allianz.png
       title: Underwritten by
@@ -27,36 +28,32 @@ hero:
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
       title: 24/7 customer support
-  header: Smarter drone insurance that rewards safe fleets
+  header: Drone insurance that adapts to your dynamic fleet
 why:
   hidden: false
-  description: Flock's proprietary Risk Intelligence Engine assesses and prices risk for each and every drone flight, giving you unprecedented visibility into the risk exposure of your entire drone fleet.
+  description: Our proprietary algorithms analyse each and every drone flight to unlock usage-based insurance that rewards safe fleets.
   list:
     - text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Your premium is tailored to your fleet’s usage and risk exposure, with safer flights rewarded with lower prices. Transparency such as this ensures you have the ultimate control over the price of your insurance.
       title: Fairer pricing
-      icon: /images/uploads/shield-icon.svg  
+      icon: /images/uploads/money.svg  
     - text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        A granular understanding into the risk profile of your fleet unlocks actionable insights that combine to improve the overall safety of your organisation, and the likelihood of claims.
       title: Risk Management
       icon: /images/uploads/shield-icon.svg       
     - text: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      title: Seamless Connectivity
+        Rather than a static annual premium, Flock Enterprise seamlessly evolves with your dynamic drone fleet. Add new equipment, or change liability limits as and when you need, with no additional fees.
+      title: Ultimate adaptability
       icon: /images/uploads/shield-icon.svg  
-  title: 'Smarter with every drone flight'
+  title: 'Safer and smarter with every drone flight'
 testimonial:
-  - author: 'Keith, Land Surveyor'
+  - author: 'David Williams, Chief Operating Officer Texo iHUB'
     image: /images/uploads/grey-testimonial-background.png
     quote: >-
-      Fantastic app, speedy human response to any question, very cheap insurance
-      that’s easy to access, what more could you want?
-  - author: 'Calum, Aerial Photographer '
-    image: /images/uploads/grey-testimonial-background.png
-    quote: Easy to use and comprehensive insurance. Would highly recommend!
+      Flock’s insurance platform provides a transparent view of risk and pricing; we can now understand where exactly we are incurring insurance costs on a per-flight, per-drone and per-pilot basis.
 banner:
   hidden: false
-  image: /images/uploads/renewal-drone.jpg
+  image: /images/uploads/white-paper-banner.jpg
   header: FREE WHITE PAPER
   mainText: The future of insurance for connected drone fleets
   buttonText: DOWNLOAD WHITE PAPER
@@ -65,6 +62,10 @@ banner:
   buttonColor: white
   buttonTextColor: black
   buttonBorder: true
+trustedBy:
+  hidden: false
+  image: /images/uploads/enterprise-trusted-banner.png
+  header: Trusted by the best
 siteMetadataOverride:
   description: drone insurance
   keywords:
