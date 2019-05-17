@@ -135,7 +135,7 @@ productTabs:
       productCards:
         - buttonOneExternal: false
           buttonOneText: CONTACT US
-          buttonOneUrl: mailto:hello@flockcover.com
+          buttonOneUrl: #intercom
           buttonTwoText: LEARN MORE
           buttonTwoUrl: https://flockcover.com/enterprise
           buttonTwoExternal: false
