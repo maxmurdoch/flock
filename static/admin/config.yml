@@ -1112,7 +1112,6 @@ collections:
                   - { label: Web App, value: 'WebApp Navigation Clicked' }
           - name: trustedBy
             label: Trusted By
-            hidden: false
             widget: object
             fields:
               - name: header
@@ -1121,6 +1120,10 @@ collections:
               - name: image
                 label: Image
                 widget: image
+              - name: hidden
+                label: Hidden
+                widget: boolean
+                default: false
           - name: "siteMetadataOverride"
             label: "Site metadata override"
             required: false
