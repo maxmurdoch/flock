@@ -28,7 +28,7 @@ hero:
     - leftIcon: /images/uploads/black-tick-icon.png
       title: FCA & CAA compliant
     - leftIcon: /images/uploads/support-icon.png
-      title: Live customer support
+      title: Live customer supprort
   header: Month-by-month commercial drone insurance that grows with you
   smallPrint: >-
     *Maximum £75 discount off first month.
